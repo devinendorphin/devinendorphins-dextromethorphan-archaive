@@ -17,6 +17,8 @@ Running locally:
     No cookies needed — just run the script directly.
 """
 
+from __future__ import annotations
+
 import argparse
 import json
 import os
