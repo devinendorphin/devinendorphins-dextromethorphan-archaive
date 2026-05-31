@@ -20,6 +20,7 @@ Running locally:
 import argparse
 import json
 import os
+import random
 import re
 import subprocess
 import sys
@@ -38,6 +39,8 @@ def get_video_list(cookies_path: str | None) -> list[dict]:
         "--print", "%(id)s\t%(title)s\t%(upload_date)s\t%(duration)s",
         "--no-warnings",
         "--no-check-certificates",
+        "--sleep-interval", "1",
+        "--max-sleep-interval", "3",
     ]
     if cookies_path:
         cmd += ["--cookies", cookies_path]
@@ -82,6 +85,8 @@ def fetch_transcript_ytdlp(video_id: str, cookies_path: str | None, tmp_dir: Pat
         "--convert-subs", "vtt",
         "--no-check-certificates",
         "--no-warnings",
+        "--sleep-interval", "1",
+        "--max-sleep-interval", "4",
         "-o", str(tmp_dir / "%(id)s.%(ext)s"),
     ]
     if cookies_path:
@@ -189,9 +194,8 @@ def collect_all_transcripts(cookies_path: str | None, output_dir: Path):
             print("NO TRANSCRIPT")
             failed.append(video)
 
-        # Brief pause to avoid rate-limiting
-        if i % 10 == 0:
-            time.sleep(2)
+        # Randomized per-video pause — mimics human browsing pace
+        time.sleep(random.uniform(1.5, 4.0))
 
     # Clean up tmp dir
     tmp_dir.rmdir() if not any(tmp_dir.iterdir()) else None
