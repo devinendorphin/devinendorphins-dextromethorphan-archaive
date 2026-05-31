@@ -44,7 +44,7 @@ def cookie_args(cookies_path: str | None, browser: str | None) -> list[str]:
 def get_video_list(cookies_path: str | None, browser: str | None) -> list[dict]:
     """Fetch the full list of videos from the channel using yt-dlp."""
     cmd = [
-        "yt-dlp",
+        sys.executable, "-m", "yt_dlp",
         "--flat-playlist",
         "--print", "%(id)s\t%(title)s\t%(upload_date)s\t%(duration)s",
         "--no-warnings",
@@ -85,7 +85,7 @@ def get_video_list(cookies_path: str | None, browser: str | None) -> list[dict]:
 def fetch_transcript_ytdlp(video_id: str, cookies_path: str | None, browser: str | None, tmp_dir: Path) -> str | None:
     """Download auto-generated subtitles via yt-dlp and parse them to plain text."""
     cmd = [
-        "yt-dlp",
+        sys.executable, "-m", "yt_dlp",
         "--skip-download",
         "--write-auto-subs",
         "--write-subs",
@@ -282,10 +282,6 @@ def main():
     parser.add_argument("--output-dir", default="transcripts",
                         help="Directory to save transcripts (default: transcripts/)")
     args = parser.parse_args()
-
-    if not shutil_which("yt-dlp"):
-        print("Error: yt-dlp not found. Install with: pip install yt-dlp")
-        sys.exit(1)
 
     collect_all_transcripts(
         cookies_path=args.cookies,
