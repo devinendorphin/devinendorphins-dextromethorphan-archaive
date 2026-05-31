@@ -33,7 +33,15 @@ from pathlib import Path
 CHANNEL_URL = "https://www.youtube.com/@glubose/videos"
 
 
-def get_video_list(cookies_path: str | None) -> list[dict]:
+def cookie_args(cookies_path: str | None, browser: str | None) -> list[str]:
+    if cookies_path:
+        return ["--cookies", cookies_path]
+    if browser:
+        return ["--cookies-from-browser", browser]
+    return []
+
+
+def get_video_list(cookies_path: str | None, browser: str | None) -> list[dict]:
     """Fetch the full list of videos from the channel using yt-dlp."""
     cmd = [
         "yt-dlp",
@@ -44,8 +52,7 @@ def get_video_list(cookies_path: str | None) -> list[dict]:
         "--sleep-interval", "1",
         "--max-sleep-interval", "3",
     ]
-    if cookies_path:
-        cmd += ["--cookies", cookies_path]
+    cmd += cookie_args(cookies_path, browser)
     cmd.append(CHANNEL_URL)
 
     print(f"Fetching video list from {CHANNEL_URL} ...")
@@ -75,7 +82,7 @@ def get_video_list(cookies_path: str | None) -> list[dict]:
     return videos
 
 
-def fetch_transcript_ytdlp(video_id: str, cookies_path: str | None, tmp_dir: Path) -> str | None:
+def fetch_transcript_ytdlp(video_id: str, cookies_path: str | None, browser: str | None, tmp_dir: Path) -> str | None:
     """Download auto-generated subtitles via yt-dlp and parse them to plain text."""
     cmd = [
         "yt-dlp",
@@ -91,8 +98,7 @@ def fetch_transcript_ytdlp(video_id: str, cookies_path: str | None, tmp_dir: Pat
         "--max-sleep-interval", "4",
         "-o", str(tmp_dir / "%(id)s.%(ext)s"),
     ]
-    if cookies_path:
-        cmd += ["--cookies", cookies_path]
+    cmd += cookie_args(cookies_path, browser)
     cmd.append(f"https://www.youtube.com/watch?v={video_id}")
 
     subprocess.run(cmd, capture_output=True, text=True)
@@ -170,12 +176,12 @@ def format_eta(seconds: float) -> str:
     return f"{s}s"
 
 
-def collect_all_transcripts(cookies_path: str | None, output_dir: Path):
+def collect_all_transcripts(cookies_path: str | None, browser: str | None, output_dir: Path):
     output_dir.mkdir(parents=True, exist_ok=True)
     tmp_dir = output_dir / "_tmp"
     tmp_dir.mkdir(exist_ok=True)
 
-    videos = get_video_list(cookies_path)
+    videos = get_video_list(cookies_path, browser)
 
     # Save video list as JSON index
     index_path = output_dir / "video_index.json"
@@ -215,7 +221,7 @@ def collect_all_transcripts(cookies_path: str | None, output_dir: Path):
         t0 = time.monotonic()
 
         # Try yt-dlp first (works with cookies in cloud), then API (works locally)
-        text = fetch_transcript_ytdlp(vid_id, cookies_path, tmp_dir)
+        text = fetch_transcript_ytdlp(vid_id, cookies_path, browser, tmp_dir)
         if not text:
             text = fetch_transcript_api(vid_id)
 
@@ -270,7 +276,9 @@ def collect_all_transcripts(cookies_path: str | None, output_dir: Path):
 def main():
     parser = argparse.ArgumentParser(description="Collect all @glubose YouTube transcripts")
     parser.add_argument("--cookies", metavar="cookies.txt",
-                        help="Netscape-format cookies file (required when running from a cloud/server environment)")
+                        help="Netscape-format cookies file")
+    parser.add_argument("--browser", metavar="BROWSER",
+                        help="Read cookies from browser: safari, chrome, firefox, etc.")
     parser.add_argument("--output-dir", default="transcripts",
                         help="Directory to save transcripts (default: transcripts/)")
     args = parser.parse_args()
@@ -281,6 +289,7 @@ def main():
 
     collect_all_transcripts(
         cookies_path=args.cookies,
+        browser=args.browser,
         output_dir=Path(args.output_dir),
     )
 
