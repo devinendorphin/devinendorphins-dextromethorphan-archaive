@@ -94,6 +94,7 @@ def fetch_transcript_ytdlp(video_id: str, cookies_path: str | None, browser: str
         "--convert-subs", "vtt",
         "--no-check-certificates",
         "--no-warnings",
+        "--ignore-no-formats-error",
         "--sleep-interval", "1",
         "--max-sleep-interval", "4",
         "-o", str(tmp_dir / "%(id)s.%(ext)s"),
@@ -101,7 +102,15 @@ def fetch_transcript_ytdlp(video_id: str, cookies_path: str | None, browser: str
     cmd += cookie_args(cookies_path, browser)
     cmd.append(f"https://www.youtube.com/watch?v={video_id}")
 
-    subprocess.run(cmd, capture_output=True, text=True)
+    for attempt in range(3):
+        result = subprocess.run(cmd, capture_output=True, text=True)
+        # Check for 429 rate limit in stderr — back off and retry
+        if "429" in result.stderr or "Too Many Requests" in result.stderr:
+            wait = (attempt + 1) * 30
+            print(f"rate-limited, waiting {wait}s...", end=" ", flush=True)
+            time.sleep(wait)
+            continue
+        break
 
     # Find any .vtt file written for this video
     for vtt_file in tmp_dir.glob(f"{video_id}*.vtt"):
