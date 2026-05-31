@@ -157,6 +157,17 @@ def safe_filename(title: str, video_id: str) -> str:
     return f"{safe}__{video_id}"
 
 
+def format_eta(seconds: float) -> str:
+    seconds = int(seconds)
+    h, rem = divmod(seconds, 3600)
+    m, s = divmod(rem, 60)
+    if h:
+        return f"{h}h {m}m"
+    if m:
+        return f"{m}m {s}s"
+    return f"{s}s"
+
+
 def collect_all_transcripts(cookies_path: str | None, output_dir: Path):
     output_dir.mkdir(parents=True, exist_ok=True)
     tmp_dir = output_dir / "_tmp"
@@ -171,12 +182,35 @@ def collect_all_transcripts(cookies_path: str | None, output_dir: Path):
 
     results = []
     failed = []
+    times = []  # per-video elapsed times for ETA
 
     for i, video in enumerate(videos, 1):
         vid_id = video["id"]
         title = video["title"]
         date = video.get("upload_date", "")
-        print(f"[{i}/{len(videos)}] {title} ({vid_id})", end="  ", flush=True)
+
+        # Resume: skip videos whose transcript file already exists
+        existing_filename = safe_filename(title, vid_id) + ".txt"
+        existing_path = output_dir / existing_filename
+        if existing_path.exists():
+            eta_str = ""
+            if times:
+                avg = sum(times) / len(times)
+                remaining = len(videos) - i
+                eta_str = f"  ETA {format_eta(avg * remaining)}"
+            print(f"[{i}/{len(videos)}] SKIP (already done) {title}{eta_str}")
+            results.append({**video, "transcript_file": existing_filename,
+                            "char_count": existing_path.stat().st_size})
+            continue
+
+        eta_str = ""
+        if times:
+            avg = sum(times) / len(times)
+            remaining = len(videos) - i
+            eta_str = f"  ETA {format_eta(avg * remaining)}"
+
+        print(f"[{i}/{len(videos)}]{eta_str}  {title} ({vid_id})", end="  ", flush=True)
+        t0 = time.monotonic()
 
         # Try yt-dlp first (works with cookies in cloud), then API (works locally)
         text = fetch_transcript_ytdlp(vid_id, cookies_path, tmp_dir)
@@ -184,18 +218,20 @@ def collect_all_transcripts(cookies_path: str | None, output_dir: Path):
             text = fetch_transcript_api(vid_id)
 
         if text:
-            filename = safe_filename(title, vid_id) + ".txt"
-            out_path = output_dir / filename
+            out_path = output_dir / existing_filename
             header = f"TITLE: {title}\nVIDEO ID: {vid_id}\nURL: {video['url']}\nDATE: {date}\n\n"
             out_path.write_text(header + text, encoding="utf-8")
             print(f"OK ({len(text)} chars)")
-            results.append({**video, "transcript_file": filename, "char_count": len(text)})
+            results.append({**video, "transcript_file": existing_filename, "char_count": len(text)})
         else:
             print("NO TRANSCRIPT")
             failed.append(video)
 
-        # Randomized per-video pause — mimics human browsing pace
-        time.sleep(random.uniform(1.5, 4.0))
+        elapsed = time.monotonic() - t0
+        times.append(elapsed)
+
+        # Small extra pause on top of yt-dlp's own internal sleep
+        time.sleep(random.uniform(0.5, 1.5))
 
     # Clean up tmp dir
     tmp_dir.rmdir() if not any(tmp_dir.iterdir()) else None
