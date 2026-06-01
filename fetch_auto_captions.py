@@ -1,29 +1,27 @@
 #!/usr/bin/env python3
 """
 Second-pass transcript collector for videos that had no captions via the YouTube API.
-Uses yt-dlp with --ignore-no-formats-error to fetch auto-generated captions,
-including age-restricted videos (uses Chrome cookies for auth).
+Uses youtube-transcript-api to fetch auto-generated captions.
 
 Run after youtube_api_transcripts.py has completed:
   python3 fetch_auto_captions.py
 
+NOTE: If you get IpBlocked errors, your IP was temporarily banned by YouTube
+from doing too many requests. Wait a few hours (or overnight) and try again.
+
 Reads no_captions.json, skips already-saved files, rebuilds combined file when done.
-Designed to run overnight — uses 10-20s delays per video to avoid 429s.
 """
 
 from __future__ import annotations
 
 import json
 import re
-import subprocess
-import sys
 import time
 import random
 from pathlib import Path
 
 
 OUTPUT_DIR = Path("transcripts")
-BROWSER = "chrome"  # change to "firefox" or "safari" if needed
 
 
 def safe_filename(title: str, video_id: str) -> str:
@@ -38,56 +36,20 @@ def format_eta(seconds: float) -> str:
     return f"{h}h {m}m" if h else (f"{m}m {s}s" if m else f"{s}s")
 
 
-def parse_vtt(vtt_path: Path) -> str:
-    raw = vtt_path.read_text(encoding="utf-8", errors="replace")
-    text_lines = []
-    for line in raw.splitlines():
-        if any(line.startswith(x) for x in ("WEBVTT", "NOTE", "Kind:", "Language:")):
-            continue
-        if re.match(r"^\d+$", line.strip()) or "-->" in line:
-            continue
-        line = re.sub(r"<[^>]+>", "", line).strip()
-        if line:
-            text_lines.append(line)
-    deduped = []
-    for line in text_lines:
-        if not deduped or line != deduped[-1]:
-            deduped.append(line)
-    return " ".join(deduped)
-
-
-def fetch_via_ytdlp(video_id: str, tmp_dir: Path) -> str | None:
-    cmd = [
-        sys.executable, "-m", "yt_dlp",
-        "--skip-download",
-        "--write-auto-subs",
-        "--write-subs",
-        "--sub-langs", "en.*",
-        "--sub-format", "vtt",
-        "--convert-subs", "vtt",
-        "--no-check-certificates",
-        "--no-warnings",
-        "--ignore-no-formats-error",
-        "--cookies-from-browser", BROWSER,
-        "-o", str(tmp_dir / "%(id)s.%(ext)s"),
-        f"https://www.youtube.com/watch?v={video_id}",
-    ]
-
-    for attempt in range(3):
-        result = subprocess.run(cmd, capture_output=True, text=True)
-        if "429" in result.stderr or "Too Many Requests" in result.stderr:
-            wait = (attempt + 1) * 300  # 5min, 10min, 15min
-            print(f"\n  rate-limited — sleeping {wait//60}min...", end=" ", flush=True)
-            time.sleep(wait)
-            continue
-        break
-
-    for vtt_file in tmp_dir.glob(f"{video_id}*.vtt"):
-        text = parse_vtt(vtt_file)
-        vtt_file.unlink()
-        if text:
-            return text
-    return None
+def fetch_transcript(video_id: str) -> tuple[str | None, str | None]:
+    """Returns (text, error_type). error_type is None on success."""
+    try:
+        from youtube_transcript_api import YouTubeTranscriptApi
+        api = YouTubeTranscriptApi()
+        try:
+            transcript = api.fetch(video_id, languages=["en"])
+        except Exception:
+            listing = api.list(video_id)
+            transcript = listing.find_generated_transcript(["en"]).fetch()
+        return " ".join(s.text for s in transcript), None
+    except Exception as e:
+        error_type = type(e).__name__
+        return None, error_type
 
 
 def rebuild_combined():
@@ -100,10 +62,7 @@ def rebuild_combined():
         for v in json.loads(index_path.read_text()):
             id_to_date[v["id"]] = v.get("upload_date", "")
 
-    def file_date(p: Path) -> str:
-        return id_to_date.get(p.stem.split("__")[-1], "")
-
-    all_files.sort(key=file_date)
+    all_files.sort(key=lambda p: id_to_date.get(p.stem.split("__")[-1], ""))
 
     with combined.open("w", encoding="utf-8") as f:
         f.write("@glubose YouTube Channel — All Transcripts\n")
@@ -125,15 +84,10 @@ def run():
         return
 
     videos = json.loads(no_captions_path.read_text())
-    print(f"Attempting yt-dlp auto-captions for {len(videos)} videos...")
-    print("Using conservative delays (10-20s/video) — designed to run overnight.\n")
+    print(f"Fetching auto-captions for {len(videos)} videos via youtube-transcript-api...\n")
 
-    tmp_dir = OUTPUT_DIR / "_tmp"
-    tmp_dir.mkdir(exist_ok=True)
-
-    results = []
-    still_failed = []
-    times = []
+    results, still_failed, times = [], [], []
+    ip_blocked_count = 0
 
     for i, video in enumerate(videos, 1):
         vid_id = video["id"]
@@ -142,7 +96,6 @@ def run():
 
         filename = safe_filename(title, vid_id) + ".txt"
         out_path = OUTPUT_DIR / filename
-
         eta = f"  ETA {format_eta(sum(times)/len(times) * (len(videos)-i))}" if times else ""
 
         if out_path.exists():
@@ -153,33 +106,33 @@ def run():
         print(f"[{i}/{len(videos)}]{eta}  {title}", end="  ", flush=True)
         t0 = time.monotonic()
 
-        text = fetch_via_ytdlp(vid_id, tmp_dir)
+        text, error = fetch_transcript(vid_id)
 
         if text:
             header = f"TITLE: {title}\nVIDEO ID: {vid_id}\nURL: {video['url']}\nDATE: {date}\n\n"
             out_path.write_text(header + text, encoding="utf-8")
             print(f"OK ({len(text)} chars)")
             results.append({**video, "transcript_file": filename, "char_count": len(text)})
+            ip_blocked_count = 0  # reset on success
         else:
-            print("NO TRANSCRIPT")
-            still_failed.append(video)
+            print(f"NO TRANSCRIPT ({error})")
+            still_failed.append({**video, "error": error})
+            if error in ("IpBlocked", "RequestBlocked"):
+                ip_blocked_count += 1
+                if ip_blocked_count >= 3:
+                    print("\nIP is blocked — stopping early. Wait a few hours and run again.")
+                    print("Progress is saved; it will resume from where it left off.")
+                    break
 
         times.append(time.monotonic() - t0)
+        time.sleep(random.uniform(1.5, 3.0))
 
-        # Conservative delay — 10-20s between requests to stay under rate limits
-        time.sleep(random.uniform(10.0, 20.0))
-
-    # Clean up tmp
-    try:
-        tmp_dir.rmdir()
-    except OSError:
-        pass
-
-    print(f"\nDone: {len(results)} new transcripts, {len(still_failed)} still no transcript.")
+    print(f"\nDone: {len(results)} new transcripts, {len(still_failed)} no transcript.")
 
     if still_failed:
-        (OUTPUT_DIR / "no_transcript_final.json").write_text(json.dumps(still_failed, indent=2))
-        print(f"Remaining failures saved to: transcripts/no_transcript_final.json")
+        (OUTPUT_DIR / "no_captions.json").write_text(json.dumps(
+            [v for v in still_failed], indent=2))
+        print("no_captions.json updated with remaining videos.")
 
     rebuild_combined()
 
