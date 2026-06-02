@@ -6,6 +6,9 @@ Uses youtube-transcript-api to fetch auto-generated captions.
 Run after youtube_api_transcripts.py has completed:
   python3 fetch_auto_captions.py
 
+Cap each run to stay under YouTube's rate limiter (progress is saved):
+  python3 fetch_auto_captions.py --max-minutes 30
+
 If no_captions.json was lost or corrupted by an early IP-block exit, rebuild it:
   python3 fetch_auto_captions.py --rebuild
 
@@ -104,7 +107,7 @@ def rebuild_no_captions():
     print(f"  {len(missing)} still need fetching → written to no_captions.json")
 
 
-def run():
+def run(max_minutes: float | None = None):
     no_captions_path = OUTPUT_DIR / "no_captions.json"
     if not no_captions_path.exists():
         print("no_captions.json not found.")
@@ -112,10 +115,13 @@ def run():
         return
 
     videos = json.loads(no_captions_path.read_text())
-    print(f"Fetching auto-captions for {len(videos)} videos via youtube-transcript-api...\n")
+    cap_note = f"  (stopping after {format_eta(max_minutes * 60)})" if max_minutes else ""
+    print(f"Fetching auto-captions for {len(videos)} videos via youtube-transcript-api...{cap_note}\n")
 
     results, still_failed, times = [], [], []
     ip_blocked_count = 0
+    start = time.monotonic()
+    deadline = start + max_minutes * 60 if max_minutes else None
 
     for i, video in enumerate(videos, 1):
         vid_id = video["id"]
@@ -130,6 +136,13 @@ def run():
             print(f"[{i}/{len(videos)}]{eta}  SKIP  {title}")
             results.append({**video, "transcript_file": filename})
             continue
+
+        # Time cap: stop voluntarily before YouTube's rate limiter trips
+        if deadline and time.monotonic() >= deadline:
+            print(f"\nTime cap reached ({format_eta(max_minutes * 60)}) — stopping.")
+            print("Progress is saved; it will resume from where it left off.")
+            still_failed.extend(videos[i - 1:])
+            break
 
         print(f"[{i}/{len(videos)}]{eta}  {title}", end="  ", flush=True)
         t0 = time.monotonic()
@@ -173,9 +186,14 @@ if __name__ == "__main__":
         help="Rebuild no_captions.json by scanning video_index.json vs existing .txt files. "
              "Use this if no_captions.json was lost or truncated by an early exit."
     )
+    parser.add_argument(
+        "--max-minutes", type=float, default=None, metavar="N",
+        help="Stop after N minutes (progress saved). Lets you cap each run "
+             "below YouTube's rate-limit threshold instead of running until banned."
+    )
     args = parser.parse_args()
 
     if args.rebuild:
         rebuild_no_captions()
     else:
-        run()
+        run(max_minutes=args.max_minutes)
