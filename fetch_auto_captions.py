@@ -43,8 +43,27 @@ def format_eta(seconds: float) -> str:
     return f"{h}h {m}m" if h else (f"{m}m {s}s" if m else f"{s}s")
 
 
-def fetch_transcript(video_id: str) -> tuple[str | None, str | None]:
-    """Returns (text, error_type). error_type is None on success."""
+def extract_reason(e: Exception) -> str | None:
+    """Pull a short human-readable reason out of a youtube-transcript-api exception."""
+    # Newer versions expose .reason directly (e.g. "Sign in to confirm your age")
+    reason = getattr(e, "reason", None)
+    if reason:
+        return str(reason).strip()
+    # Otherwise mine str(e) for the meaningful line, skipping boilerplate/URLs
+    boilerplate = (
+        "Could not retrieve", "This is most likely", "If you are sure",
+        "request to YouTube", "Ip belonging to", "youtube-transcript-api",
+        "https://", "For more information", "the video is no longer",
+    )
+    for line in str(e).splitlines():
+        line = line.strip()
+        if line and not any(line.startswith(b) for b in boilerplate):
+            return line[:120]
+    return None
+
+
+def fetch_transcript(video_id: str) -> tuple[str | None, str | None, str | None]:
+    """Returns (text, error_type, reason). error_type and reason are None on success."""
     try:
         from youtube_transcript_api import YouTubeTranscriptApi
         api = YouTubeTranscriptApi()
@@ -53,10 +72,10 @@ def fetch_transcript(video_id: str) -> tuple[str | None, str | None]:
         except Exception:
             listing = api.list(video_id)
             transcript = listing.find_generated_transcript(["en"]).fetch()
-        return " ".join(s.text for s in transcript), None
+        return " ".join(s.text for s in transcript), None, None
     except Exception as e:
         error_type = type(e).__name__
-        return None, error_type
+        return None, error_type, extract_reason(e)
 
 
 def rebuild_combined():
@@ -147,7 +166,7 @@ def run(max_minutes: float | None = None):
         print(f"[{i}/{len(videos)}]{eta}  {title}", end="  ", flush=True)
         t0 = time.monotonic()
 
-        text, error = fetch_transcript(vid_id)
+        text, error, reason = fetch_transcript(vid_id)
 
         if text:
             header = f"TITLE: {title}\nVIDEO ID: {vid_id}\nURL: {video['url']}\nDATE: {date}\n\n"
@@ -156,8 +175,9 @@ def run(max_minutes: float | None = None):
             results.append({**video, "transcript_file": filename, "char_count": len(text)})
             ip_blocked_count = 0
         else:
-            print(f"NO TRANSCRIPT ({error})")
-            still_failed.append({**video, "error": error})
+            detail = f"{error}: {reason}" if reason else error
+            print(f"NO TRANSCRIPT ({detail})")
+            still_failed.append({**video, "error": error, "reason": reason})
             if error in ("IpBlocked", "RequestBlocked"):
                 ip_blocked_count += 1
                 if ip_blocked_count >= 3:
