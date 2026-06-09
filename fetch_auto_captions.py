@@ -103,7 +103,10 @@ def rebuild_combined():
     print(f"Combined file rebuilt: {combined}  ({len(all_files)} transcripts)")
 
 
-def rebuild_no_captions():
+SHORTS_MAX_SECONDS = 60
+
+
+def rebuild_no_captions(skip_shorts: bool = True):
     """Rebuild no_captions.json by scanning video_index.json for videos without .txt files."""
     index_path = OUTPUT_DIR / "video_index.json"
     if not index_path.exists():
@@ -111,19 +114,31 @@ def rebuild_no_captions():
         return
 
     all_videos = json.loads(index_path.read_text())
-    missing = []
+    has_durations = any("duration_seconds" in v for v in all_videos)
+    if skip_shorts and not has_durations:
+        print("Note: video_index.json has no duration data — Shorts can't be filtered.")
+        print("Run python3 add_durations.py first to enable Shorts filtering.")
+        skip_shorts = False
+
+    missing, skipped_short, already_have = [], 0, 0
     for v in all_videos:
         filename = safe_filename(v["title"], v["id"]) + ".txt"
-        if not (OUTPUT_DIR / filename).exists():
-            missing.append(v)
+        if (OUTPUT_DIR / filename).exists():
+            already_have += 1
+            continue
+        if skip_shorts and v.get("duration_seconds", 9999) <= SHORTS_MAX_SECONDS:
+            skipped_short += 1
+            continue
+        missing.append(v)
 
     no_captions_path = OUTPUT_DIR / "no_captions.json"
     no_captions_path.write_text(json.dumps(missing, indent=2))
-    have = len(all_videos) - len(missing)
     print(f"Rebuilt no_captions.json:")
     print(f"  {len(all_videos)} total videos")
-    print(f"  {have} already have transcripts")
-    print(f"  {len(missing)} still need fetching → written to no_captions.json")
+    print(f"  {already_have} already have transcripts")
+    if skip_shorts:
+        print(f"  {skipped_short} skipped as Shorts (≤{SHORTS_MAX_SECONDS}s)")
+    print(f"  {len(missing)} queued for fetching → written to no_captions.json")
 
 
 def run(max_minutes: float | None = None):
@@ -204,7 +219,12 @@ if __name__ == "__main__":
     parser.add_argument(
         "--rebuild", action="store_true",
         help="Rebuild no_captions.json by scanning video_index.json vs existing .txt files. "
-             "Use this if no_captions.json was lost or truncated by an early exit."
+             "Shorts (≤60s) are filtered out automatically if duration data is present. "
+             "Run add_durations.py first to enable Shorts filtering."
+    )
+    parser.add_argument(
+        "--no-skip-shorts", action="store_true",
+        help="Include Shorts (≤60s) when rebuilding no_captions.json (default: skip them)."
     )
     parser.add_argument(
         "--max-minutes", type=float, default=None, metavar="N",
@@ -214,6 +234,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.rebuild:
-        rebuild_no_captions()
+        rebuild_no_captions(skip_shorts=not args.no_skip_shorts)
     else:
         run(max_minutes=args.max_minutes)
