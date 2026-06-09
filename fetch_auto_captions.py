@@ -6,10 +6,11 @@ Uses youtube-transcript-api to fetch auto-generated captions.
 Run after youtube_api_transcripts.py has completed:
   python3 fetch_auto_captions.py
 
-Cap each run to stay under YouTube's rate limiter (progress is saved):
-  python3 fetch_auto_captions.py --max-minutes 30
-
 If no_captions.json was lost or corrupted by an early IP-block exit, rebuild it:
+  python3 fetch_auto_captions.py --rebuild
+
+To skip Shorts, run mark_shorts.py first (one-time), then --rebuild:
+  python3 mark_shorts.py
   python3 fetch_auto_captions.py --rebuild
 
 NOTE: If you get IpBlocked errors, your IP was temporarily banned by YouTube
@@ -103,9 +104,6 @@ def rebuild_combined():
     print(f"Combined file rebuilt: {combined}  ({len(all_files)} transcripts)")
 
 
-SHORTS_MAX_SECONDS = 60
-
-
 def rebuild_no_captions(skip_shorts: bool = True):
     """Rebuild no_captions.json by scanning video_index.json for videos without .txt files."""
     index_path = OUTPUT_DIR / "video_index.json"
@@ -114,10 +112,9 @@ def rebuild_no_captions(skip_shorts: bool = True):
         return
 
     all_videos = json.loads(index_path.read_text())
-    has_durations = any("duration_seconds" in v for v in all_videos)
-    if skip_shorts and not has_durations:
-        print("Note: video_index.json has no duration data — Shorts can't be filtered.")
-        print("Run python3 add_durations.py first to enable Shorts filtering.")
+    has_short_marks = any("is_short" in v for v in all_videos)
+    if skip_shorts and not has_short_marks:
+        print("Note: video_index.json has no Shorts data — run mark_shorts.py first to enable filtering.")
         skip_shorts = False
 
     missing, skipped_short, already_have = [], 0, 0
@@ -126,7 +123,7 @@ def rebuild_no_captions(skip_shorts: bool = True):
         if (OUTPUT_DIR / filename).exists():
             already_have += 1
             continue
-        if skip_shorts and v.get("duration_seconds", 9999) <= SHORTS_MAX_SECONDS:
+        if skip_shorts and v.get("is_short", False):
             skipped_short += 1
             continue
         missing.append(v)
@@ -137,7 +134,7 @@ def rebuild_no_captions(skip_shorts: bool = True):
     print(f"  {len(all_videos)} total videos")
     print(f"  {already_have} already have transcripts")
     if skip_shorts:
-        print(f"  {skipped_short} skipped as Shorts (≤{SHORTS_MAX_SECONDS}s)")
+        print(f"  {skipped_short} skipped as Shorts")
     print(f"  {len(missing)} queued for fetching → written to no_captions.json")
 
 
@@ -219,12 +216,12 @@ if __name__ == "__main__":
     parser.add_argument(
         "--rebuild", action="store_true",
         help="Rebuild no_captions.json by scanning video_index.json vs existing .txt files. "
-             "Shorts (≤60s) are filtered out automatically if duration data is present. "
-             "Run add_durations.py first to enable Shorts filtering."
+             "Shorts are filtered out automatically if mark_shorts.py has been run. "
+             "Use --no-skip-shorts to include them anyway."
     )
     parser.add_argument(
         "--no-skip-shorts", action="store_true",
-        help="Include Shorts (≤60s) when rebuilding no_captions.json (default: skip them)."
+        help="Include Shorts when rebuilding no_captions.json (default: skip them)."
     )
     parser.add_argument(
         "--max-minutes", type=float, default=None, metavar="N",
