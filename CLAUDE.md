@@ -15,7 +15,7 @@ intention, and the territory turned out to be unrelated. The name is the name.
 
 ## Working on this corpus
 
-Four hard-won rules, each earned by a headline number that turned out to be measuring the
+Five hard-won rules, each earned by a headline number that turned out to be measuring the
 tool rather than the author. `sessions/LATEST.md` carries the full standing-notes list;
 these are the ones that will bite fastest:
 
@@ -27,6 +27,8 @@ these are the ones that will bite fastest:
 - **Check whether a setting is in the enabled sampler order before reading its value.**
   Erato stores a neutral temperature of 1.0 in a field its pipeline never reads.
 - **This corpus cannot benchmark models.** Settings moved with model choice.
+- **Match on length before comparing text overlap.** A longer passage contains more of
+  anything; an unmatched control turned a 63% effect into a 66% one.
 
 The unit of analysis is the **turn**, not the passage — see `FINDINGS.md`'s frame section.
 Four analysis passes died asking what made a generation good enough to keep.

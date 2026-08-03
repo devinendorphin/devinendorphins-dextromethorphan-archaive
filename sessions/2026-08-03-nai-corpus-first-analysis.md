@@ -1,8 +1,8 @@
 # 2026-08-03 — NovelAI corpus, first analysis
 
-Ten commits on `claude/text-generation-corpus-3rtnwn`. The repo went from a
-README stub to a research corpus with a writeup, a case study, ten analysis
-scripts and eight generated reports.
+Fifteen commits on `claude/text-generation-corpus-3rtnwn`. The repo went from a
+README stub to a research corpus with a writeup, a case study, fifteen analysis
+scripts and twelve generated reports.
 
 ## What happened
 
@@ -24,14 +24,16 @@ everything before it.
 ### Files
 
 - `FINDINGS.md` — the writeup, rewritten from the top under the turn-taking
-  frame after §10 killed the original reading. 13 sections.
+  frame after the case study killed the original reading. 14 sections.
 - `CASE_STUDY.md` — one session traced in full (the Utah HB 249 press
   conference).
 - `analysis/` — `fetch_export.py`, `extract.py`, `report.py`, `probe.py`,
   `pairs.py`, `learnable.py`, `stopping.py`, `register.py`, `takeover.py`,
-  `cues.py`, `trace.py`, `erato.py`, plus generated `TABLES.md`, `PROBES.md`,
+  `cues.py`, `trace.py`, `erato.py`, `tempo.py`, `direction.py`,
+  `handover.py`, `handoff.py`, plus generated `TABLES.md`, `PROBES.md`,
   `PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`, `REGISTER.md`, `TAKEOVER.md`,
-  `CUES.md`, `ERATO.md`.
+  `CUES.md`, `ERATO.md`, `TEMPO.md`, `DIRECTION.md`, `HANDOVER.md`,
+  `HANDOFF.md`.
 - `data/` — `stories_meta.jsonl` (settings metadata only, no prose),
   `INDEX.tsv`, `MISSING.md`, `FAILED_STORIES.txt`.
 
@@ -129,6 +131,19 @@ Claude conceded the concept — an instrument does not propose, and at 2.5 the
 model does — and the cue taxonomy later supported it: a bare `Name:` handoff,
 carrying no content at all, is taken up in that voice **89.7%** of the time.
 
+**How the disagreement stands at the end of the session.** Two more results
+arrived and they split. The uptake finding (§7a) is the first evidence from the
+*text* rather than the structure that the exchange was genuinely two-way — the
+model's rejected offers fed Endorphin's next move, which an inert surface does
+not do. That is a real point for Endorphin and against Claude's reading. The
+handoff finding (§7b) removes the strongest single piece of evidence Claude had
+already conceded on. Claude's position at close: the traffic between author and
+model is real and measurable, but the model's contribution looks more like a
+well-conditioned pattern completer than a partner keeping track. Endorphin's
+position is unchanged and was never refuted — the tempo result (§1f) and the
+handoff result both bear on *mechanism*, not on what the exchange was like from
+inside.
+
 **Where Claude still holds a line.** The evidence establishes the *form* of the
 exchange, not its quality. A 46%-under-50-characters call-and-response structure
 shows a scene was happening; it does not show the model was a good partner
@@ -171,6 +186,39 @@ audience at once* — on tempo specifically the data picks the audience half. Th
 model set the clip; Endorphin rode it. `analysis/direction.py`, written up as
 §1f.
 
+## The frame's two open questions, answered — in opposite directions
+
+`FINDINGS.md` §7. Both were flagged as the sharpest things the turn-taking
+reading raised, and neither came out clean.
+
+**Overrides (`handover.py`).** 6,944 branch points where the model generated,
+Endorphin rewound past it and typed instead; **1,342** distinct. Overriding is
+not writing — median **0** words against the model's 92, and **84.1%** of
+overrides are under 10 words. A hypothesis Claude formed from reading examples,
+that overrides *cast* where the model *narrates*, did not survive: speaker tags
+in 21.7% of overrides against 23.4% of the proposals replaced, with the human
+passages far shorter so the test was tilted toward finding an excess.
+
+What held is **uptake**: containment of the override's content words in the
+model passage, against a length-matched abandoned proposal from a different
+branch in the same story — 0.062 against 0.049, observed higher in **63.2%** of
+136 non-tied comparisons (CI 54.9–70.9). Material crosses from the passage
+Endorphin threw away into what he writes next. An earlier version scored 66.2%
+by comparing the *longest* proposal at the branch against a *random* one
+elsewhere, which inflates containment through length alone.
+
+**Handoffs (`handoff.py`), which cost Claude a concession.** §2d had offered the
+89.7% `Name:` uptake as the cleanest evidence in the corpus that the model was
+tracking the scene. A name the model has **never seen in the session** holds
+**85.0%** of the time — there is no referent to track, so that share is the
+formatting convention. Establishment adds a real but small **+5.7 points**
+(two-proportion z = 2.46, p = 0.014; the Wilson intervals overlap, which is a
+misleading proxy for this comparison). More prior context does not help
+monotonically. §2d is now qualified in place.
+
+The two results pull opposite ways on whether the exchange was two-way, and §7
+says so rather than picking the flattering one.
+
 ## Loose ends
 
 - **The compulsion/momentum entanglement** (§1) is the biggest methodological
@@ -199,7 +247,12 @@ model set the clip; Endorphin rode it. `analysis/direction.py`, written up as
   naturalistic use.
 - The `text/` half of the Drive export was never touched; the JSON supersedes
   it.
-- No content analysis at all. Nothing here reads the stories as writing.
+- No content analysis at all. Nothing here reads the stories as writing. After
+  fifteen scripts this is conspicuous: the corpus has been measured exhaustively
+  and read almost not at all.
+- **The override set is small once it has to be substantial.** 84% of the 1,342
+  distinct overrides are under 10 words, leaving ~105 passages of 30+ words.
+  Any future claim about *what Endorphin writes* rests on that hundred.
 
 ## Notes against the hub
 
