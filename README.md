@@ -22,14 +22,16 @@ The name is the name.
 ## Layout
 
 ```
-FINDINGS.md              first-pass writeup — read this
+FINDINGS.md              the writeup — read this
 analysis/
   fetch_export.py        mirror the Drive export locally
   extract.py             story JSON -> stories.jsonl + blocks.jsonl
   report.py              descriptive tables
   probe.py               disconfirming tests for the claims in FINDINGS
-  TABLES.md              generated
-  PROBES.md              generated
+  pairs.py               build chosen/rejected pairs from branch points
+  learnable.py           is there signal in the rejected text? (no)
+  stopping.py            what actually ends a retry run
+  TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md   generated
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)
   INDEX.tsv              the export's own manifest, 2,500 stories
@@ -47,6 +49,9 @@ python3 analysis/fetch_export.py <json-folder-id> --out corpus/json --check
 python3 analysis/extract.py corpus/json --out out --with-blocks
 python3 analysis/report.py out/stories.jsonl --out analysis/TABLES.md
 python3 analysis/probe.py out --report analysis/PROBES.md
+python3 analysis/pairs.py out --out out/pairs.jsonl --report analysis/PAIRS.md
+python3 analysis/learnable.py out/pairs.jsonl --report analysis/LEARNABLE.md
+python3 analysis/stopping.py out --report analysis/STOPPING.md
 ```
 
 `blocks.jsonl` comes out around 524 MB — every revision's full text. Everything
@@ -62,5 +67,11 @@ the tests that killed claims alongside the ones that survived.
 
 ## Status
 
-Register: **open**. One analysis pass done, no interpretation of the writing
-itself, and a ranked list of what looks worth chasing next in `FINDINGS.md` §7.
+Register: **open**. Two analysis passes done, no interpretation of the writing
+itself. The second pass chased the most promising lead from the first — the
+abandoned generations as preference data — and killed it; see `FINDINGS.md` §7.
+What remains open is in §8.
+
+Standing warning, earned twice: **the obvious metric here measures the tool, not
+the author.** Once the text editor, once the habit of duplicating stories. Run
+the control that should fail before believing the one that succeeded.

@@ -1,4 +1,4 @@
-# Findings — first pass
+# Findings
 
 2,016 NovelAI story files, March 2023 to July 2026. 280M characters of model
 output, 88M of human text, and — the part that matters — **760,611 edit-history
@@ -9,7 +9,8 @@ stamped with which model made it and at what settings.
 Epistemic status: descriptive statistics over one person's practice. Nothing
 here is a controlled comparison of models, and where the data pretends to be
 one, that is called out. Numbers regenerate from `analysis/`; see
-`analysis/TABLES.md` for the full tables and `analysis/PROBES.md` for the tests.
+`analysis/` for the full tables and the tests, including the ones that failed:
+`TABLES.md`, `PROBES.md`, `PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`.
 
 ---
 
@@ -162,24 +163,116 @@ it is legible only because the export kept the settings alongside the text.
 - One file, `New_Story__eQm-Fkr_ZGaaeaykmh5bu.json`, is truncated at 411 bytes
   in Drive itself and cannot be recovered by re-downloading. 2,016 of 2,017.
 
-## 7. Where this could go next
+## 7. Second pass: the preference data does not work, and the reason is the finding
 
-Roughly in order of how much I think is actually there:
+§8 below was the top of the "next" list: 22,196 abandoned generations sitting
+next to the one you kept from the identical prompt state, built over three years
+with no annotation task. It looked like the best thing in the corpus. It was
+chased, and it does not hold up. Three results, in the order they killed each
+other.
 
-1. **The abandoned branches are preference data.** 22,196 abandoned AI blocks,
-   across 1,475 stories, sit next to the generation you kept from the same
-   prompt state (against 495,138 kept blocks). That is a
-   naturally-occurring chosen/rejected pair set, built by one person with a
-   stable aesthetic over three years, with no annotation task and no rubric.
-   That is rare, and it is the thing an alignment researcher would actually want.
-   The obvious question: is there a *learnable* signal in what you rewind past,
-   or is it mostly noise and mechanics?
-2. **Prompt-state → acceptance.** Does accepted-vs-abandoned correlate with
-   anything measurable in the preceding context — length, who wrote the previous
-   block, how far into the session you are?
-3. **Session-level dynamics.** Do abandonment rates rise or fall within a
-   session? Does a long session converge on the model's voice, or your own?
+**7a. You are not picking a favourite, you are rolling until satisfied.** Across
+8,450 extractable pairs, the generation you kept was the *last one generated*
+**99.6%** of the time — 99.9% at branch points with exactly two attempts. So
+these are not best-of-N comparisons. They are rejection sampling against a
+threshold, and the label "chosen" is perfectly predicted by position. Position
+therefore has to be kept away from any model, and the only question left is
+whether the *text* carries the signal.
+
+**7b. It does not, and a story-level split will tell you it does.** A TF-IDF
+classifier evaluated within-pair — score both continuations from one branch
+point, ask whether the kept one wins — scores **0.950** when split by story id.
+That is memorisation. Duplicating a story in NovelAI ("Working Copy", "New Story
+(2)") copies its whole branch history, so **91%** of pairs share text with
+another story id and the answers are sitting in the training set. The tell is
+that the mismatched-pair control — where each kept text is scored against a
+rejected text it never competed with — scored **0.987**, *higher* than the real
+thing. A control that beats the treatment means the model was recognising
+individual texts, not comparing them.
+
+Re-split by connected components of shared text, and deduplicated, 8,450 pairs
+collapse to 1,649 distinct comparisons in 1,125 independent groups:
+
+| condition | within-pair accuracy |
+|---|---:|
+| text classifier, true pairing | 0.559 ± 0.034 |
+| length only | 0.548 |
+| label permutation control | 0.511 ± 0.033 |
+| **mismatched-pair control** | **0.566 ± 0.032** |
+
+Breaking the pairing does not hurt — it helps, fractionally. The true pairing
+barely clears "keep the longer one". **There is no within-pair signal.** What
+little is there is a global difference between the two pools (kept generations
+run slightly longer, and end on a complete sentence 63% vs 56% of the time), and
+it applies just as well to texts that were never in competition. These pairs do
+not support a reward model.
+
+**7c. What is actually happening is more interesting than the reward model would
+have been.** If the rejected text does not predict rejection, look at the
+process instead. Of 13,336 resolved re-roll events:
+
+| resolution | share |
+|---|---:|
+| you wrote it yourself | **52.1%** |
+| you accepted a generation | 47.9% |
+
+**More than half of all re-rolls end with you taking over and writing it.** When
+you do accept, the median is 2 attempts — you re-roll once. When you don't, the
+median is 1: you read one generation, and write it yourself.
+
+That is the thing a pair set structurally cannot see, because it only keeps the
+branches where a generation eventually won. The dominant rejection event in
+three and a half years of this corpus is *not* "this generation is worse than
+that one" — it is "none of these, I'll do it", decided fast, usually on the
+first try. Your bar is not a ranking over model outputs. It is a threshold, and
+half the time nothing clears it.
+
+The model-by-model split is the one place a comparison survives, because it is
+a rate rather than a ranking:
+
+| model | re-roll events | you wrote it yourself |
+|---|---:|---:|
+| `glm-4-6` | 809 | 61.9% |
+| `euterpe-v2` | 429 | 60.8% |
+| `kayra-v1` | 7,968 | 55.0% |
+| `clio-v1` | 946 | 50.3% |
+| `krake-v2` | 678 | 44.7% |
+| `llama-3-erato-v1` | 2,491 | **40.7%** |
+
+Erato is the model you hand-write over least — and from §5, the one you let run
+longest and abandon most characters of. Longer leash, more rope, but a better
+hit rate per attempt. Same §3 caveat applies: settings move with model choice,
+so read this as a fact about your sessions, not a benchmark.
+
+## 8. Where this could go next
+
+~~1. The abandoned branches are preference data.~~ **Chased in §7. Dead.**
+The pairs are rejection sampling, not preference ranking, and the rejected text
+carries no recoverable signal. Not worth another pass in this form.
+
+Still open, reordered after what §7 taught:
+
+1. **The takeover moment.** §7c says 52% of re-rolls end with you writing it
+   yourself, usually after one look. *That* is the labelled event worth
+   modelling: not "which generation is better" but "does this one clear the
+   bar at all". Every AI block in the corpus is implicitly labelled by whether
+   you kept going or took the keyboard, which is ~517k labels rather than 8k
+   pairs, and it does not depend on the branch structure that turned out to be
+   so leaky.
+2. **What you write when you take over.** In 6,944 cases you rejected the
+   model's continuation and immediately wrote your own from the identical
+   context. That is a paired human/model sample from matched prompts — a
+   cleaner comparison than anything in the pair set, and it survives the
+   duplication problem because the human text is what varies.
+3. **Session-level dynamics.** Does the takeover rate rise or fall within a
+   session? Does a long session converge on the model's voice, or on yours?
 4. **The high-temperature regime specifically.** You have 310 stories at
    temp ≥ 2.2, which is far outside where these models were tuned or
    evaluated. Whatever is characteristic about model behaviour out there, this
    may be one of the larger extant samples of it.
+
+A methodological note worth carrying to any future pass, since it has now bitten
+twice: **this corpus punishes the obvious metric.** Both §1 and §7b produced a
+striking, publishable-looking number that turned out to be measuring the tool
+rather than the author — once the text editor, once the duplicate-story habit.
+Run the control that should fail before believing the one that succeeded.
