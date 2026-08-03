@@ -56,11 +56,11 @@ version is kept, because how these metrics failed is the most transferable thing
 in the project.
 
 **Epistemic status.** Descriptive statistics over one person's practice. Not a
-sample of anything, and not a benchmark — §9 works through why that is
+sample of anything, and not a benchmark — §10 works through why that is
 structurally impossible here. Everything regenerates from `analysis/`, where the
 tests that killed claims are kept alongside the ones that survived: `PROBES.md`,
 `PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`, `REGISTER.md`, `TAKEOVER.md`,
-`CUES.md`, `TABLES.md`.
+`CUES.md`, `ERATO.md`, `TABLES.md`.
 
 ---
 
@@ -127,7 +127,7 @@ story, like every setting, so the per-generation truncation that would decide it
 is not recorded.
 
 **1d. And the words do not matter.** A TF-IDF classifier over the generation's
-own text, grouped by text content so the duplication leak in §8b cannot recur:
+own text, grouped by text content so the duplication leak in §9b cannot recur:
 
 | predictor | AUC |
 |---|---:|
@@ -160,7 +160,7 @@ turns:
 | instruction (`[...]`) | 1.9% | 34 | `[A partial list of people to bleach.]` |
 
 A further 737 distinct blocks were empty and are **excluded**: not turns but the
-delete half of the §8a rewrite. Left in they top every table, which is worth
+delete half of the §9a rewrite. Left in they top every table, which is worth
 recording as a third instance of the same trap.
 
 **2a. What a turn buys.** Measuring forward — how many generations follow before
@@ -200,7 +200,7 @@ cue:
 
 Inside a model the next-generation column is flat — Kayra 442–509 for every cue
 kind, Erato 1,028–1,133. **Generation length is set by `max_length`, not by how
-the turn was phrased.** Third time the same lesson: §8's rule applies to this
+the turn was phrased.** Third time the same lesson: §9's rule applies to this
 section too.
 
 **2c. What survives it.** The run column, and one result in particular:
@@ -224,7 +224,7 @@ handoff carries no content — no sentence to continue, no instruction, just a
 name and a colon. Nearly all of its effect has to come from the model correctly
 inferring whose turn it is.
 
-**2e. The repertoire moves with the model**, though §9's confound forbids
+**2e. The repertoire moves with the model**, though §10's confound forbids
 reading that as a fact about the models. `stage direction {}` is 17.9% of Kayra
 turns and ~0% in Clio, Krake and Euterpe; `instruction []` is 14.9% of Erato
 turns and ~1% everywhere else. These are conventions the author adopted in
@@ -420,7 +420,7 @@ feature surface, not a confirmed account.
 - **The decryption cliff.** §10 records losses of 0–7% a month before 2025-10,
   then 67%, 58%, 74%, 94%, 89%, 93%, 90%. It starts the same month.
 
-§10 offers "a single damaging event or a client change around October 2025" as
+§11 offers "a single damaging event or a client change around October 2025" as
 the two readings of that cliff. The model roster, the sampler surface, the
 schema bump and the slider granularity all move together at exactly that
 boundary, which favours the second strongly.
@@ -444,10 +444,79 @@ truncate with. Everything in §4 describes the 2021–2025 native era.
 (`TABLES.md`, `PROBES.md`, `REGISTER.md`) but drop out of most within-model
 control tables, which impose minimum-n thresholds of 100–500. That is correct —
 9 generating Xialong stories cannot support a controlled comparison — but it
-means the controls in §2b, §4b and §9 describe the native era only, and should
+means the controls in §2b, §4b and §10 describe the native era only, and should
 not be read as covering the last nine months of the corpus.
 
-## 6. Rewinds and re-rolls
+## 6. The Erato era, and a second border
+
+Erato (Llama 3 70B, Nov 2024 – Jul 2026, 374 generating stories, 52.9M
+characters) is the one stretch where the whole configuration approach changed at
+once. Full tables in `analysis/ERATO.md`.
+
+**6a. Temperature is not in the pipeline.** In **227 of 374** Erato stories
+(61%) `temperature` does not appear in the enabled sampler order at all, and in
+**226 of those 227** the stored value is exactly **1.0** — the neutral number,
+sitting unused in a field the pipeline never reads. When temperature *is*
+enabled the median is 1.37. This is Erato-only; every other model has it enabled
+in 100% of stories.
+
+So Erato's apparent "median temperature 1.00" was never a setting. NovelAI's
+Unified sampler (`math1`) replaced the temperature stage outright, and any claim
+resting on that number — including the one §9 originally made — is comparing a
+live control against a switched-off one. It also means §4's corpus temperature
+statistics are dragged down by 227 inert 1.0 values.
+
+**6b. What the regime was.** Four stock presets carry almost the whole era, and
+the settings are collinear with them, so no knob-level test is possible —
+`linear` and `quad` never vary independently of each other or of the rest of the
+stack:
+
+| preset | stories | linear | quad | min_p | order |
+|---|---:|---:|---:|---:|---|
+| `dragonfruit` | 141 | 0.900 | 0.07 | 0.035 | `temperature > typical_p > math1 > min_p > mirostat > top_a` |
+| `goldenarrow` | 87 | 0.500 | 0.19 | 0.000 | `math1 > top_p` |
+| `zanyscribe` | 79 | −0.275 | 0.35 | 0.080 | `math1 > top_p` |
+| `wilder` | 59 | 0.000 | 0.19 | 0.010 | `math1 > min_p` |
+
+That is itself a shift. On Kayra the corpus shows 48 distinct presets and heavy
+hand-tuning; the Erato era runs on four stock ones.
+
+**6c. The border moved outward and stayed just as steep.** Re-running §4c's
+measure — `wordfreq` splitting non-words (noise) from real-but-rare words
+(register) — across the Unified configuration:
+
+| configuration | non-word % | rare word % | rare : non |
+|---|---:|---:|---:|
+| classic, cool | 0.62 | 1.10 | 1.77 |
+| **classic, hot, truncation first** | 0.96 | 1.58 | **1.65** |
+| Unified, `goldenarrow` | 0.53 | 0.86 | 1.63 |
+| Unified, `zanyscribe` | **2.45** | **3.24** | 1.32 |
+| classic, hot, temperature first | 2.00 | 1.46 | 0.73 |
+
+**No Erato preset beats the classic stack's exchange rate.** `goldenarrow` ties
+it — 1.63 against 1.65 — and gets there at a much lower absolute level of both
+quantities, so it is cleaner without reaching as far.
+
+**What the Unified sampler adds is range.** `zanyscribe` (linear −0.275, quad
+0.35) reaches a rare-word rate of **3.24%**, roughly double anything the classic
+stack managed at any temperature, at a **2.45%** non-word rate — the highest
+noise floor measured anywhere in the corpus. Temperature-plus-truncation could
+not get the register that high at any price. `math1` could, and the price was a
+noise floor two and a half times the corpus norm.
+
+So the answer to "does the Unified sampler dissolve the border" is no. It
+**extended the reachable range without improving the exchange rate.** The trade
+between strangeness and dissolution is the same trade; `math1` just lets you buy
+further along it.
+
+There is one thing this cannot settle. Because the presets bundle `linear`,
+`quad`, `min_p`, `top_p` and the sampler order together, the 3.24% is a property
+of `zanyscribe`, not of any one knob. Whether the range came from the negative
+`linear`, the high `quad`, or their interaction is not recoverable from
+naturalistic use — it would need settings varied one at a time, which is exactly
+what a preset prevents.
+
+## 7. Rewinds and re-rolls
 
 Distinct from the turn: sometimes the author rewinds and generates again from
 the identical document state. Measured by branch reachability — walk `prevBlock`
@@ -472,7 +541,7 @@ nothing cleared. Under the frame that is wrong for the same reason §1d is: thos
 human blocks are mostly 55 characters long. The re-roll ends because the turn
 came back, not because the model failed an audition.
 
-## 7. What is not learnable
+## 8. What is not learnable
 
 The abandoned branches looked like the best thing in the corpus: 22,196
 generations sitting next to the one kept from an identical prompt state,
@@ -509,7 +578,7 @@ Breaking the pairing does not hurt; it helps, fractionally. The true pairing
 barely clears "keep the longer one". There is no within-pair signal, and these
 pairs do not support a reward model.
 
-## 8. Two metrics that had to be thrown away
+## 9. Two metrics that had to be thrown away
 
 The most transferable content here. Both produced a striking,
 publishable-looking number that was measuring the tool rather than the author.
@@ -529,25 +598,30 @@ returns stamped `origin: user`. A story where the author pasted their own text
 back in scores as ~50% "rejected". It looked flat across five years of models
 because it was measuring a constant.
 
-**6b. Story-level splits.** Covered in §7b. Grouping by story id is not grouping
+**6b. Story-level splits.** Covered in §8b. Grouping by story id is not grouping
 by content, because the same text lives under many story ids.
 
 The rule, earned twice: **run the control that should fail before believing the
 one that succeeded.** In both cases the diagnostic was a control performing as
 well as or better than the treatment.
 
-## 9. Why this cannot benchmark models
+## 10. Why this cannot benchmark models
 
 Pooling all models and asking which loops most produces a clean-looking table
 saying the two newest heavily-used models are worst: Erato (Llama 3 70B) 6.7%,
 Kayra 6.9%, against Euterpe 0.0% and Krake 0.1%.
 
 It is confounding, not a result. Euterpe and Krake were used at median
-temperatures of 1.54 and 1.92; Erato at **1.00**. §4b shows temperature alone
-moves looping sevenfold, larger than any gap between models here. Model choice
-and sampler settings are entangled because they were entangled in use — the
-sampling changed *when* the model changed, following each model's recommended
-presets.
+temperatures of 1.54 and 1.92; §4b shows temperature alone moves looping
+sevenfold, larger than any gap between models here. Model choice and sampler
+settings are entangled because they were entangled in use — the sampling
+changed *when* the model changed, following each model's recommended presets.
+
+The Erato row is worse than confounded, it is meaningless: **61% of Erato
+stories do not have temperature in their sampler pipeline at all** (§6). An
+earlier draft of this section read Erato's stored median of 1.00 as "run cool".
+It is the neutral value of a disabled field. Erato ran on the Unified sampler,
+which has no temperature stage.
 
 The same trap catches the turn-taking measures. Raw turn rate looks like it
 falls with temperature (30.5% below 1.2, 24.9% above 2.4), which would suggest
@@ -571,7 +645,7 @@ re-roll events, the share ending with the author typing: GLM 61.9%, Euterpe
 typed over least and given the longest leash. A fact about these sessions, not a
 benchmark.
 
-## 10. What the record cannot hold
+## 11. What the record cannot hold
 
 - **No per-block timestamps exist.** Elapsed time is unrecoverable, so tempo —
   turn latency, who was waiting for whom, the pace of the exchange — is absent.
@@ -596,7 +670,7 @@ benchmark.
 - **One file** (`New_Story__eQm-Fkr_ZGaaeaykmh5bu.json`) is truncated at 411
   bytes in Drive itself and cannot be recovered. 2,016 of 2,017.
 
-## 11. What I did not do
+## 12. What I did not do
 
 - **No content analysis.** Every number is structural — settings, block graph,
   turn lengths, word-frequency statistics. Nothing here characterises what the
@@ -608,13 +682,13 @@ benchmark.
   export via `analysis/`.
 - The `text/` half of the export is untouched; the JSON supersedes it.
 
-## 12. Where this could go next
+## 13. Where this could go next
 
 1. **What the author writes when they take the turn.** In 6,944 cases the model
    was rewound and a human continuation written from the identical context. That
    is a paired human/model sample from matched prompts, and it survives the
    duplication problem because the human side is what varies. It is also the
-   only route to the question §9 leaves open: whether the exchange at high
+   only route to the question §10 leaves open: whether the exchange at high
    temperature looks more like uptake and less like correction.
 2. **Why a handoff works.** §2d shows a bare `Name:` gets taken up 89.7% of
    the time on no content at all. Whether that is the model tracking the scene
@@ -631,4 +705,4 @@ benchmark.
    samples of model behaviour out there.
 
 Dropped, and worth recording as dropped: the abandoned branches as preference
-data (§7). Not worth another pass in this form.
+data (§8). Not worth another pass in this form.
