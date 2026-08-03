@@ -12,6 +12,10 @@ Branch: `claude/text-generation-corpus-3rtnwn` (15 commits, pushed, no PR opened
 - `FINDINGS.md` — **stable.** 14 sections under the turn-taking frame. Read
   this first.
 - `CASE_STUDY.md` — **stable.** The Utah HB 249 press conference, traced in full.
+- `READINGS.md` — **active, and the live front.** Criticism: Latour/Austin on
+  the convened chamber, Bakhtin on polyphony without a novelist, Shklovsky on
+  the temperature dial as an *ostranenie* control. Deliberately not held to the
+  measurement standard.
 - `analysis/*.py` — **stable.** 16 scripts, all reproducible from the Drive
   export. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
   `scikit-learn`.
@@ -23,12 +27,12 @@ Branch: `claude/text-generation-corpus-3rtnwn` (15 commits, pushed, no PR opened
 
 ## Top priorities for next session
 
-1. **Read the corpus as writing.** Sixteen scripts in, there has been *no*
-   content analysis at all — nothing characterises what the stories are about
-   or reads them as text. That is now the largest unexplored surface, and the
-   one an outside reader would expect a "research corpus" to have. It needs a
-   scope decision from Endorphin, since it means engaging the material rather
-   than its structure.
+1. **Keep reading.** `READINGS.md` is one pass over four stories out of 2,016.
+   The convened-speech genre alone — AI Alignment Interviews, Counterfactual
+   Interviews, the press conferences, the DIVINE JAVITS CENTER sequence — runs
+   to dozens of stories and millions of characters, and only two have been read.
+   The summoning thesis in the coda is the strongest thing to test against more
+   material, and the easiest to over-fit if it is not.
 2. **Separate compulsion from momentum** (§1c). The biggest open methodological
    hole: a short `max_length` cutting generations mid-sentence would *compel*
    the next one, manufacturing runs that look like momentum. `max_length` is

@@ -24,6 +24,7 @@ The name is the name.
 ```
 FINDINGS.md              the writeup — read this
 CASE_STUDY.md            one session traced in full — the press conference
+READINGS.md              criticism — three lenses on the corpus, read not measured
 analysis/
   fetch_export.py        mirror the Drive export locally
   extract.py             story JSON -> stories.jsonl + blocks.jsonl
@@ -76,6 +77,14 @@ python3 analysis/handoff.py out --report analysis/HANDOFF.md
 
 `blocks.jsonl` comes out around 524 MB — every revision's full text. Everything
 derived from it is regenerable, so it stays out of git.
+
+## Two registers
+
+`FINDINGS.md` and `analysis/` **measure**. `READINGS.md` **reads**. They are not
+the same activity and are not held to the same standard: nothing in `READINGS.md`
+is a finding, and no script can falsify it. Kept apart deliberately, and neither
+is a substitute for the other — the corpus has had several hundred hours of
+measurement and about four of reading.
 
 ## Reading the numbers
 
