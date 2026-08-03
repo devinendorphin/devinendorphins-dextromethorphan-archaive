@@ -1,6 +1,8 @@
 # Findings
 
-2,016 NovelAI story files, March 2023 to July 2026. 280M characters of model
+2,016 NovelAI story files. Last edited between March 2023 and July 2026, but
+*created* as far back as **June 2021** — 163 of them predate 2023, 39 are from
+2021. 280M characters of model
 output, 88M of human text, and — the part that matters — **760,611 edit-history
 blocks**, because the export preserves the whole undo tree rather than the final
 text. Every generation you kept, rewound past, or typed over is still in there,
@@ -10,7 +12,8 @@ Epistemic status: descriptive statistics over one person's practice. Nothing
 here is a controlled comparison of models, and where the data pretends to be
 one, that is called out. Numbers regenerate from `analysis/`; see
 `analysis/` for the full tables and the tests, including the ones that failed:
-`TABLES.md`, `PROBES.md`, `PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`.
+`TABLES.md`, `PROBES.md`, `PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`,
+`REGISTER.md`.
 
 ---
 
@@ -82,10 +85,18 @@ confound it:
 
 Running hot cut your looping rate by roughly seven-fold. Repetitive degeneration
 is *the* characteristic failure of the 2021–2023 models you started on, and the
-thing every sampler in the NovelAI stack exists to suppress. You appear to have
-solved it by feel, with the crudest available knob, and then kept the habit for
-years across five model generations — including onto models that no longer
-needed it.
+thing every sampler in the NovelAI stack exists to suppress.
+
+**Correction, from Endorphin after this was written.** The first draft said you
+solved this "by feel". That is wrong, or at least half wrong: part of the
+temperature spread is a deliberate procedure — pick a preset, work a
+mythological or poetic register, step temperature up across several iterations
+until the output degrades, repeat across roughly three presets, looking for
+where novel structure lives before it dissolves. §8 finds 33 of those sweeps
+sitting in the metadata, and they terminate at 2.5 almost every time. So the
+habit is partly designed testing and partly retained practice. What remains
+accidental is the *anti-looping* consequence — that was not what the sweeps were
+looking for, and it is not visible from inside a session.
 
 ## 3. The corpus cannot rank the models, and that is itself the finding
 
@@ -227,6 +238,17 @@ that one" — it is "none of these, I'll do it", decided fast, usually on the
 first try. Your bar is not a ranking over model outputs. It is a threshold, and
 half the time nothing clears it.
 
+**Caveat, from Endorphin after this was written.** A good deal of this
+generation was performed live on stream, concentrated in the early and middle
+history of that channel. That reframes both §7a and §7c: under an audience and
+a clock, taking the keyboard after one look is improv, not deliberation, and
+"retry until satisfied" is partly "retry until the scene can continue". The
+speed of the takeover decision — median one attempt — reads very differently as
+a performance constraint than as an editorial one. The corpus carries no
+stream markers, so this cannot currently be separated out; timestamp clustering
+against the channel's schedule would be the way in if the dates exist
+elsewhere.
+
 The model-by-model split is the one place a comparison survives, because it is
 a rate rather than a ranking:
 
@@ -244,7 +266,90 @@ longest and abandon most characters of. Longer leash, more rope, but a better
 hit rate per attempt. Same §3 caveat applies: settings move with model choice,
 so read this as a fact about your sessions, not a benchmark.
 
-## 8. Where this could go next
+## 8. The sweeps, the border, and pressing enter
+
+Three things Endorphin raised after §7, all of which turn out to be measurable.
+
+**9a. The sweeps are in the metadata.** Filtering for runs of three or more
+stories that share a model *and* preset, were created within six hours of each
+other, and step temperature strictly upward finds **33** of them. A
+representative sample:
+
+| model | steps | temperature climb | when |
+|---|---:|---|---|
+| `kayra-v1` | 4 | 1 → 1.44 → 1.82 → 2.5 | 2024-04-09 |
+| `kayra-v1` | 4 | 1.35 → 1.4 → 1.44 → 2.5 | 2023-11-17 |
+| `kayra-v1` | 4 | 1.42 → 1.47 → 1.7 → 2.5 | 2024-03-05 |
+| `kayra-v1` | 3 | 1.4 → 2 → 2.5 | 2024-03-05 |
+
+They terminate at **2.5 almost every time**, which is the NovelAI slider's
+ceiling. So the sweeps were not finding a natural breaking point — they were
+running out of dial. That is worth knowing: the top of the observed range is an
+interface limit, not a discovered edge.
+
+**9b. The border is a configuration, not a temperature.** The obvious way to
+locate "where structure dissolves" is to plot noise against temperature. Doing
+that produces a **flat line**, which cannot be right — and the reason it is flat
+is the answer.
+
+Temperature is one stage in an *ordered* pipeline. At temp ≥ 2.2 this corpus
+runs `top_k` at a median of **82** — *tighter* than the median of 150 at temp
+< 1.2 — plus `tail_free_sampling` 0.97 and `top_a` 0.02. Temperature 2.5 here
+never means 2.5 across the full vocabulary. So the question is not how hot but
+hot *in what order*. Splitting every generation by whether a truncating sampler
+ran before temperature, using `wordfreq` to separate real-but-rare words (the
+register climbing) from non-words (the noise floor):
+
+| temperature | sampler order | generations | non-word % | rare word % |
+|---|---|---:|---:|---:|
+| cool (<1.2) | temperature first | 2,500 | 0.62 | 1.10 |
+| cool (<1.2) | truncation first | 2,500 | 0.86 | 1.11 |
+| mid (1.2–2.2) | temperature first | 2,500 | 0.70 | 1.74 |
+| mid (1.2–2.2) | truncation first | 2,500 | 0.86 | 1.08 |
+| hot (≥2.2) | temperature first | 2,500 | **2.00** | 1.46 |
+| hot (≥2.2) | **truncation first** | 2,500 | **0.96** | **1.58** |
+
+At high temperature the ordering roughly **halves** the non-word rate while
+*raising* rare vocabulary — about **42% more rare real words than the cool
+baseline at essentially unchanged noise**. At cool and mid temperatures the
+ordering barely matters, which is exactly what a mechanical account predicts:
+order only bites once temperature has moved real mass onto the tail.
+
+So: truncate to a shortlist of continuations the model considers sayable, *then*
+flatten across that shortlist, and you get maximum surprise inside the space of
+the sayable. Flatten first and the same nominal 2.5 spends half its budget on
+noise. **That is the border you were looking for, and it is a two-knob answer.**
+
+One caveat governs all of this. NovelAI stores settings per *story*, as current
+state — there is no per-generation record, so every temperature above is the
+story's last setting attributed to all of its generations. For a sweep that is
+flatly wrong for the early steps. The error is non-differential, so it attenuates
+real effects rather than manufacturing them: the flat pooled curve is weak
+evidence, but the order effect that survived it is real.
+
+**9c. Pressing enter.** Unbroken runs of model generation with no human text
+between them, on the surviving branch: **135,567** of them. Median 2, p90 7,
+p99 24, and a maximum of **212**.
+
+| run length | share of runs |
+|---|---:|
+| 1 | 39.6% |
+| 2–3 | 32.6% |
+| 4–9 | 20.9% |
+| 10–24 | 5.9% |
+| 25+ | 1.0% |
+
+The 212-run is *I Remind The Body Electric*, created **April 2022** — almost
+certainly the story you were thinking of. It survives in six duplicates under
+six different model settings, which is its own kind of evidence: you kept
+re-running the same seed text through successive models as they came out.
+
+Those long runs are also, incidentally, the cleanest experimental material in
+the corpus. A stretch of 212 consecutive generations with no human intervention
+is a single-condition sample — fixed settings, fixed model, no author steering —
+which is exactly what nothing else here provides.
+
+## 9. Where this could go next
 
 ~~1. The abandoned branches are preference data.~~ **Chased in §7. Dead.**
 The pairs are rejection sampling, not preference ranking, and the rejected text
