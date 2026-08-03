@@ -13,7 +13,7 @@ here is a controlled comparison of models, and where the data pretends to be
 one, that is called out. Numbers regenerate from `analysis/`; see
 `analysis/` for the full tables and the tests, including the ones that failed:
 `TABLES.md`, `PROBES.md`, `PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`,
-`REGISTER.md`.
+`REGISTER.md`, `TAKEOVER.md`.
 
 ---
 
@@ -349,7 +349,94 @@ the corpus. A stretch of 212 consecutive generations with no human intervention
 is a single-condition sample — fixed settings, fixed model, no author steering —
 which is exactly what nothing else here provides.
 
-## 9. Where this could go next
+## 9. The takeover moment
+
+The label §7 pointed at, with 60× the volume of the pair set that failed:
+**476,839** generations on surviving branches, each labelled by whether the next
+thing was another generation or the author typing. Overall takeover rate
+**28.1%** (79% new typing, 21% in-place edits). Endorphin supplied two accounts
+to separate, and the data supports both — then produces a third that neither
+predicted.
+
+**Hard limit first.** NovelAI stores no per-block timestamps. Elapsed time is
+not recoverable at all, so the dead-air account can only be tested through
+length as a proxy for speech duration, never directly.
+
+**9a. Momentum is real.** Among generations reaching position *k* of an unbroken
+run, the share that ended it:
+
+| position in run | generations | takeover rate |
+|---|---:|---:|
+| 1 | 135,103 | **39.4%** |
+| 3 | 54,527 | 30.8% |
+| 5 | 27,042 | 23.1% |
+| 9 | 11,026 | 15.4% |
+| 20 | 2,132 | **5.4%** |
+| 50 | 250 | 9.2% |
+
+A memoryless process would be flat. This falls by a factor of seven. Long runs
+are a genuinely different mode, not a lucky streak of independent decisions.
+
+**9b. Dead air shows up, with the sign the account predicts.** Bucketing by how
+long the passage takes to read aloud (155 wpm):
+
+| speech seconds | generations | takeover rate |
+|---|---:|---:|
+| 0–5 | 6,319 | **45.8%** |
+| 5–10 | 7,595 | 42.2% |
+| 30–45 | 269,116 | 26.3% |
+| 90+ | 1,599 | **22.8%** |
+
+Short generations double the takeover rate. This is not just run position in
+disguise — holding position fixed, short (<20s) beats long (≥45s) at every one
+of the first five positions, by +10.0, +4.7, +11.3, +2.6 and +6.9 points. A
+generation that yields only a few seconds of speech does not buy enough time,
+and the author steps in. The middle of the range is non-monotonic (10–20s sits
+below 20–30s), so the effect is real at the extremes rather than a clean
+gradient.
+
+**9c. The thing neither of us predicted, and the strongest result in the pass.**
+
+| generation ends | generations | takeover rate |
+|---|---:|---:|
+| on sentence-final punctuation | 305,197 | **37.5%** |
+| mid-sentence | 171,642 | **11.5%** |
+
+The intuition — a generation that breaks off mid-clause is defective, so you
+step in — is not merely wrong, it is inverted, by more than 3×.
+
+A clean ending is an **invitation**; a mid-sentence cut is a **compulsion**.
+When the model stops on a full stop it has handed the turn back, and that is
+where a human takes it. When it stops mid-clause the only graceful move is to
+press enter again — especially with the text being read aloud, where a hanging
+clause is worse than silence.
+
+Which means a good deal of §8c's enter-chain behaviour may not be momentum by
+choice at all. It may be a short `max_length` cutting generations mid-sentence
+and *compelling* the next one. The two accounts are entangled and this corpus
+cannot fully separate them: `max_length` is stored per story, like every other
+setting, so the per-generation truncation that would decide it is not recorded.
+
+**9d. And the text does not matter.** A TF-IDF classifier over the generation's
+own words, grouped by text content so the §7b duplication leak cannot recur:
+
+| predictor | AUC |
+|---|---:|
+| TF-IDF over the full text | 0.623 |
+| **does it end on sentence-final punctuation** | **0.647** |
+| length alone | 0.559 |
+
+**A single bit beats every word in the passage.** The takeover decision is not
+legible in the writing. It is legible in the punctuation — in whether the model
+handed the turn back or left it hanging.
+
+Taken with §7b, that is now twice that the *content* of a generation has failed
+to predict what the author did with it, while structural facts — how long it
+was, where it stopped — predict it comparatively well. For a corpus built
+entirely out of aesthetic play, the aesthetics are the part that does not
+register in the behaviour.
+
+## 10. Where this could go next
 
 ~~1. The abandoned branches are preference data.~~ **Chased in §7. Dead.**
 The pairs are rejection sampling, not preference ranking, and the rejected text

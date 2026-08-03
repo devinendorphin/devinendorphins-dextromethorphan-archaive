@@ -32,7 +32,8 @@ analysis/
   learnable.py           is there signal in the rejected text? (no)
   stopping.py            what actually ends a retry run
   register.py            rare-word vs non-word by sampler order; enter-chains
-  TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md REGISTER.md  generated
+  takeover.py            what makes the author stop pressing enter and type
+  TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md REGISTER.md TAKEOVER.md  generated
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)
   INDEX.tsv              the export's own manifest, 2,500 stories
@@ -54,6 +55,7 @@ python3 analysis/pairs.py out --out out/pairs.jsonl --report analysis/PAIRS.md
 python3 analysis/learnable.py out/pairs.jsonl --report analysis/LEARNABLE.md
 python3 analysis/stopping.py out --report analysis/STOPPING.md
 python3 analysis/register.py out --report analysis/REGISTER.md   # needs wordfreq
+python3 analysis/takeover.py out --report analysis/TAKEOVER.md
 ```
 
 `blocks.jsonl` comes out around 524 MB — every revision's full text. Everything
@@ -73,7 +75,8 @@ Register: **open**. Two analysis passes done, no interpretation of the writing
 itself. The second pass chased the most promising lead from the first — the
 abandoned generations as preference data — and killed it; see `FINDINGS.md` §7.
 A third pass (§8) answered three questions Endorphin raised about his own
-procedure. What remains open is in §9.
+procedure; a fourth (§9) went after the takeover moment. What remains open
+is in §10.
 
 Standing warning, earned twice: **the obvious metric here measures the tool, not
 the author.** Once the text editor, once the habit of duplicating stories. Run
