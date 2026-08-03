@@ -71,7 +71,7 @@ derived from it is regenerable, so it stays out of git.
 Everything is descriptive statistics over **one person's practice**. It is not a
 sample of anything, and it cannot benchmark models against each other — the way
 the settings changed alongside the models makes those two things inseparable in
-this data. `FINDINGS.md` §8 works through why, and `analysis/PROBES.md` keeps
+this data. `FINDINGS.md` §9 works through why, and `analysis/PROBES.md` keeps
 the tests that killed claims alongside the ones that survived.
 
 ## Status
@@ -80,12 +80,12 @@ Register: **open**. `FINDINGS.md` is written under the turn-taking frame: the
 corpus records an exchange, not an authorship. Five passes went into it, and
 the frame arrived last — the first four asked what made a generation good
 enough to keep, and every version of that question came back null or
-artifactual. §§6–8 keep those failures rather than tidying them away, because
+artifactual. §§7–9 keep those failures rather than tidying them away, because
 how they failed is the most reusable thing here.
 
 Standing warning, earned three times: **the obvious metric measures the tool,
-not the author.** Once the text editor (§7a), once the habit of duplicating
-stories (§7b), once `max_length` masquerading as an effect of phrasing (§2b).
+not the author.** Once the text editor (§8a), once the habit of duplicating
+stories (§8b), once `max_length` masquerading as an effect of phrasing (§2b).
 Each time the tell was the same — a control matching or beating the treatment,
 or a number that could not move. Run the control that should fail before
 believing the one that succeeded.

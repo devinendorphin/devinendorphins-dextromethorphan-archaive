@@ -56,7 +56,7 @@ version is kept, because how these metrics failed is the most transferable thing
 in the project.
 
 **Epistemic status.** Descriptive statistics over one person's practice. Not a
-sample of anything, and not a benchmark — §8 works through why that is
+sample of anything, and not a benchmark — §9 works through why that is
 structurally impossible here. Everything regenerates from `analysis/`, where the
 tests that killed claims are kept alongside the ones that survived: `PROBES.md`,
 `PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`, `REGISTER.md`, `TAKEOVER.md`,
@@ -127,7 +127,7 @@ story, like every setting, so the per-generation truncation that would decide it
 is not recorded.
 
 **1d. And the words do not matter.** A TF-IDF classifier over the generation's
-own text, grouped by text content so the duplication leak in §7b cannot recur:
+own text, grouped by text content so the duplication leak in §8b cannot recur:
 
 | predictor | AUC |
 |---|---:|
@@ -160,7 +160,7 @@ turns:
 | instruction (`[...]`) | 1.9% | 34 | `[A partial list of people to bleach.]` |
 
 A further 737 distinct blocks were empty and are **excluded**: not turns but the
-delete half of the §7a rewrite. Left in they top every table, which is worth
+delete half of the §8a rewrite. Left in they top every table, which is worth
 recording as a third instance of the same trap.
 
 **2a. What a turn buys.** Measuring forward — how many generations follow before
@@ -200,7 +200,7 @@ cue:
 
 Inside a model the next-generation column is flat — Kayra 442–509 for every cue
 kind, Erato 1,028–1,133. **Generation length is set by `max_length`, not by how
-the turn was phrased.** Third time the same lesson: §7's rule applies to this
+the turn was phrased.** Third time the same lesson: §8's rule applies to this
 section too.
 
 **2c. What survives it.** The run column, and one result in particular:
@@ -224,7 +224,7 @@ handoff carries no content — no sentence to continue, no instruction, just a
 name and a colon. Nearly all of its effect has to come from the model correctly
 inferring whose turn it is.
 
-**2e. The repertoire moves with the model**, though §8's confound forbids
+**2e. The repertoire moves with the model**, though §9's confound forbids
 reading that as a fact about the models. `stage direction {}` is 17.9% of Kayra
 turns and ~0% in Clio, Krake and Euterpe; `instruction []` is 14.9% of Erato
 turns and ~1% everywhere else. These are conventions the author adopted in
@@ -290,9 +290,11 @@ upward:
 | `kayra-v1` | 4 | 1.35 → 1.4 → 1.44 → 2.5 |
 | `kayra-v1` | 4 | 1.42 → 1.47 → 1.7 → 2.5 |
 
-They terminate at **2.5 almost every time**, which is the slider's ceiling. The
-sweeps were not finding a natural breaking point; they ran out of dial. The top
-of the observed range is an interface limit, not a discovered edge.
+They terminate at **2.5 almost every time**, which is the ceiling for every
+NovelAI-native model in the corpus. The sweeps were not finding a natural
+breaking point; they ran out of dial. The top of the observed range is an
+interface limit, not a discovered edge — and §5 shows it is an era-specific
+one, since `xialong-v1` later runs at 3.5.
 
 **3b. What running hot bought, unintentionally.** Holding the model fixed at
 `kayra-v1` (990 stories spanning 0.1–2.5), measuring degeneration as trigram
@@ -343,7 +345,75 @@ the sayable. Flatten first and the same nominal 2.5 spends half its budget on
 noise. For a partner in an improvised scene that is precisely the right
 constraint: surprising, but in key.
 
-## 5. Rewinds and re-rolls
+## 5. The October 2025 discontinuity
+
+Two models here are not part of NovelAI's original lineup, and they are easy to
+miss because their story counts are small:
+
+| model | stories | AI characters | active | temperature range |
+|---|---:|---:|---|---|
+| `glm-4-6` | 62 | **16,164,340** | 2025-10 – 2026-07 | 1.00 – 1.75 |
+| `xialong-v1` | 11 | 651,813 | 2026-04 – 2026-07 | 0.85 and 3.50 |
+
+The character count is the tell. GLM-4.6 is 3.4% of generating stories and
+**5.8% of all model output in the corpus** — a median GLM story carries 129,158
+characters, the largest of any model. These are not stray experiments.
+
+And from October 2025 they are almost the whole practice:
+
+| month | models in use |
+|---|---|
+| 2025-08 | kayra 17, krake 4, erato 4, euterpe 1, clio 1 |
+| 2025-09 | 3 stories total |
+| **2025-10** | **glm 22**, kayra 2, krake 2, erato 2, euterpe 1 |
+| 2025-11 | **glm 16**, krake 4 |
+| 2025-12 | **glm 9** |
+| 2026-01 | glm 3, erato 2 |
+| 2026-02 | **glm 4** |
+| 2026-03 | **glm 3** |
+| 2026-04 | **xialong 6**, clio 2, kayra 1 |
+
+Several things change in the same month, and they are visible in the metadata
+rather than inferred:
+
+- **New models**, with their own presets (`default-glm`, `default-xialong`).
+- **A new settings schema.** Version 8 first appears 2025-11; `xialong-v1` is
+  v8-only, `glm-4-6` splits v7/v8. Every native model before this sits on v3–v7.
+- **Finer `max_length` granularity.** Values that are not multiples of ten:
+  3% of Kayra stories, 28% of Erato, **68% of GLM, 73% of Xialong** — 282, 273,
+  258 rather than 250 or 300.
+- **The decryption cliff.** §10 records that losses run 0–7% a month before
+  2025-10 and then 67%, 58%, 74%, 94%, 89%, 93%, 90%. It starts the same month.
+
+§10 offers "a single damaging event or a client change around October 2025" as
+the two readings of that cliff. The schema bump, the model roster and the
+slider granularity all move together at exactly that boundary, which favours
+the second strongly. The export cannot say whether NovelAI added these models
+or the practice moved to a different client writing the same format — but the
+tooling changed, and the data loss is coincident with the change rather than
+with any gradual decay.
+
+**Two corrections follow.**
+
+§4a states that the temperature sweeps terminate at 2.5, "which is the slider's
+ceiling". That holds for every NovelAI-native model — Kayra, Erato, Clio,
+Euterpe and Krake all top out at exactly 2.5 — but `xialong-v1` runs at **3.5**.
+The ceiling is era-specific, not a fact about temperature.
+
+More consequentially: **`glm-4-6` never exceeds 1.75.** The high-temperature
+habit that §4a and §4b treat as the corpus's most distinctive feature stops
+dead at the platform change. Everything in §4 describes the 2021–2025 native
+era, and the period since is a different regime — bigger sessions, longer
+generations, conventional sampling.
+
+**A note on where these models appear.** They are in the aggregate tables
+(`TABLES.md`, `PROBES.md`, `REGISTER.md`) but drop out of most within-model
+control tables, which impose minimum-n thresholds of 100–500. That is correct
+— 9 generating Xialong stories cannot support a controlled comparison — but it
+means the controls in §2b, §4b and §9 describe the native era only, and should
+not be read as covering the last nine months of the corpus.
+
+## 6. Rewinds and re-rolls
 
 Distinct from the turn: sometimes the author rewinds and generates again from
 the identical document state. Measured by branch reachability — walk `prevBlock`
@@ -368,7 +438,7 @@ nothing cleared. Under the frame that is wrong for the same reason §1d is: thos
 human blocks are mostly 55 characters long. The re-roll ends because the turn
 came back, not because the model failed an audition.
 
-## 6. What is not learnable
+## 7. What is not learnable
 
 The abandoned branches looked like the best thing in the corpus: 22,196
 generations sitting next to the one kept from an identical prompt state,
@@ -405,7 +475,7 @@ Breaking the pairing does not hurt; it helps, fractionally. The true pairing
 barely clears "keep the longer one". There is no within-pair signal, and these
 pairs do not support a reward model.
 
-## 7. Two metrics that had to be thrown away
+## 8. Two metrics that had to be thrown away
 
 The most transferable content here. Both produced a striking,
 publishable-looking number that was measuring the tool rather than the author.
@@ -425,14 +495,14 @@ returns stamped `origin: user`. A story where the author pasted their own text
 back in scores as ~50% "rejected". It looked flat across five years of models
 because it was measuring a constant.
 
-**6b. Story-level splits.** Covered in §6b. Grouping by story id is not grouping
+**6b. Story-level splits.** Covered in §7b. Grouping by story id is not grouping
 by content, because the same text lives under many story ids.
 
 The rule, earned twice: **run the control that should fail before believing the
 one that succeeded.** In both cases the diagnostic was a control performing as
 well as or better than the treatment.
 
-## 8. Why this cannot benchmark models
+## 9. Why this cannot benchmark models
 
 Pooling all models and asking which loops most produces a clean-looking table
 saying the two newest heavily-used models are worst: Erato (Llama 3 70B) 6.7%,
@@ -467,7 +537,7 @@ re-roll events, the share ending with the author typing: GLM 61.9%, Euterpe
 typed over least and given the longest leash. A fact about these sessions, not a
 benchmark.
 
-## 9. What the record cannot hold
+## 10. What the record cannot hold
 
 - **No per-block timestamps exist.** Elapsed time is unrecoverable, so tempo —
   turn latency, who was waiting for whom, the pace of the exchange — is absent.
@@ -492,7 +562,7 @@ benchmark.
 - **One file** (`New_Story__eQm-Fkr_ZGaaeaykmh5bu.json`) is truncated at 411
   bytes in Drive itself and cannot be recovered. 2,016 of 2,017.
 
-## 10. What I did not do
+## 11. What I did not do
 
 - **No content analysis.** Every number is structural — settings, block graph,
   turn lengths, word-frequency statistics. Nothing here characterises what the
@@ -504,13 +574,13 @@ benchmark.
   export via `analysis/`.
 - The `text/` half of the export is untouched; the JSON supersedes it.
 
-## 11. Where this could go next
+## 12. Where this could go next
 
 1. **What the author writes when they take the turn.** In 6,944 cases the model
    was rewound and a human continuation written from the identical context. That
    is a paired human/model sample from matched prompts, and it survives the
    duplication problem because the human side is what varies. It is also the
-   only route to the question §8 leaves open: whether the exchange at high
+   only route to the question §9 leaves open: whether the exchange at high
    temperature looks more like uptake and less like correction.
 2. **Why a handoff works.** §2d shows a bare `Name:` gets taken up 89.7% of
    the time on no content at all. Whether that is the model tracking the scene
@@ -527,4 +597,4 @@ benchmark.
    samples of model behaviour out there.
 
 Dropped, and worth recording as dropped: the abandoned branches as preference
-data (§6). Not worth another pass in this form.
+data (§7). Not worth another pass in this form.
