@@ -33,9 +33,16 @@ enough to be a substantive rewrite.
 
 These are not edits. They are **turns**. The corpus records an exchange
 conducted at speed — much of it performed live on stream, with the text read
-aloud by text-to-speech — in which the author's move is usually a cue, a name, a
-question, or a character walking on stage, and the model's move is to perform
-whatever just arrived.
+aloud by text-to-speech over a lo-fi backing track — in which the author's move
+is usually a cue, a name, a question, or a character walking on stage, and the
+model's move is to perform whatever just arrived.
+
+The backing track matters more than it sounds. With a beat under it, the
+synthesised voice reads as continuous freestyle or poetry, which makes the
+constraint not "avoid silence" but **keep the audio flowing at a steady clip**.
+And it put the author on both sides at once — driving the generation, and
+listening to it in real time as an audience member, with what he heard informing
+the next move. §1e shows that loop left a measurable trace.
 
 `CASE_STUDY.md` traces one session in full. It pastes Utah HB 249 verbatim — a
 statute preemptively denying legal personhood to artificial intelligence,
@@ -60,7 +67,7 @@ sample of anything, and not a benchmark — §10 works through why that is
 structurally impossible here. Everything regenerates from `analysis/`, where the
 tests that killed claims are kept alongside the ones that survived: `PROBES.md`,
 `PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`, `REGISTER.md`, `TAKEOVER.md`,
-`CUES.md`, `ERATO.md`, `TABLES.md`.
+`CUES.md`, `ERATO.md`, `TEMPO.md`, `TABLES.md`.
 
 ---
 
@@ -139,6 +146,37 @@ own text, grouped by text content so the duplication leak in §9b cannot recur:
 was baffling. Under the turn-taking frame it is nearly tautological: the human
 move is not a verdict on the passage, so no property of the passage predicts it.
 What predicts it is whether the turn was handed back.
+
+**1e. And the pacing left a trace after all.** §11 records that no per-block
+timestamps exist, so tempo is unrecoverable. That is true of *duration*. It is
+not true of *rhythm*. Within unbroken runs of at least 8 generations (12,921 of
+them), the absolute difference in word count between generations *lag* apart,
+against the same run with its order shuffled:
+
+| lag | pairs | observed \|Δ words\| | shuffled | reduction |
+|---:|---:|---:|---:|---:|
+| 1 | 178,979 | 11.03 | 13.69 | **19.5%** |
+| 2 | 166,058 | 12.03 | 13.73 | 12.4% |
+| 3 | 153,137 | 12.59 | 13.67 | 7.9% |
+| 4 | 140,216 | 13.07 | 13.68 | 4.4% |
+| 6 | 114,374 | 13.59 | 13.69 | **0.7%** |
+| 8 | 88,532 | 13.71 | 13.65 | −0.5% |
+
+Shuffling preserves the run's entire length distribution — so `max_length`
+capping, model choice and session habits all cancel — and destroys only the
+sequence.
+
+**The decay is the result.** A slow drift across a session would show the same
+reduction at every lag, because shuffling kills a trend as thoroughly as a
+rhythm. Largest at lag 1 and gone by lag 6 is short-memory coupling: each
+generation's length tracks the one just before it over a window of about five
+turns. That is what keeping a voice fed at a steady clip looks like from the
+outside.
+
+What it cannot show is **direction**. A steady clip could be the author pacing
+the model, the model's own length autocorrelation pacing the author, or both
+locked together — which is what the collaboration account would actually
+predict. Nothing here separates them.
 
 ## 2. A taxonomy of the turn
 
@@ -647,8 +685,10 @@ benchmark.
 
 ## 11. What the record cannot hold
 
-- **No per-block timestamps exist.** Elapsed time is unrecoverable, so tempo —
-  turn latency, who was waiting for whom, the pace of the exchange — is absent.
+- **No per-block timestamps exist.** Elapsed time is unrecoverable, so
+  *duration* — turn latency, who was waiting for whom — is absent. §1e shows
+  *rhythm* partly survives in the sequence of lengths, but that is a weaker
+  thing and cannot recover direction.
   Given that the collaboration was constituted in real time, this is a fossil of
   a live practice with the liveness stripped out. Everything about the dead-air
   clock in §1b is inferred through a length proxy.

@@ -67,6 +67,17 @@ On the streaming/TTS constraint, which reframed the whole takeover analysis:
 > flow and that means having to make a make a passage and enter it before the
 > voice stoppee creating deadt air"
 
+On the lo-fi backing track, which arrived last and reframed the dead-air
+constraint into something more specific — `[?Wi-Fi→lo-fi]`, `[?extra speech→
+text-to-speech]`:
+
+> "I also learned that if you paired [lo-fi] to that [text-to-speech] voice it
+> gave the voice a sense that it was either doing freestyle rap all the time or
+> if a poetry on any subject 24/7. so a lot of the generation and allowing it to
+> flow was also to be a simultaneous artist but also audience member listening
+> in real time the generation happening which also informed the live performance
+> of its generation."
+
 The correction that mattered most, against my "instrument, not collaborator"
 reading:
 
@@ -127,6 +138,24 @@ find it — raw turn rate looks like it falls with temperature, but holding mode
 ending and length fixed it is flat and non-monotone (26.8 / 30.1 / 26.8 / 26.0).
 That is a null on a coarse measure, not a refutation of the phenomenology, and
 it is recorded as such.
+
+## The one place Claude was wrong in Endorphin's favour
+
+The log above says tempo is unrecoverable because there are no per-block
+timestamps. That is true of *duration* and was stated too broadly. Endorphin's
+lo-fi detail implied a testable prediction — if the point was keeping a voice
+fed at a steady clip, the length of each generation should track the one before
+it — and it holds. Within 12,921 runs of 8+ generations, adjacent generations
+are **19.5%** closer in word count than the same generations scrambled, and the
+effect decays cleanly: 19.5 → 12.4 → 7.9 → 4.4 → 0.7% by lag 6. A slow drift
+would show the same reduction at every lag; this is short-memory coupling over
+about five turns. `analysis/tempo.py`, written up as §1e.
+
+It cannot show direction — author pacing model, model's own autocorrelation
+pacing author, or both locked together, which is what the collaboration account
+would predict. But "the record has no tempo in it" was wrong, and the thing that
+found it was Endorphin's account of the listening loop rather than anything in
+the data.
 
 ## Loose ends
 

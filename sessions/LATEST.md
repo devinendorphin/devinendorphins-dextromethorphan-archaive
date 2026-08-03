@@ -21,7 +21,7 @@ Branch: `claude/text-generation-corpus-3rtnwn` (10 commits, pushed, no PR opened
   Refetch with `analysis/fetch_export.py <json-folder-id>`.
 - The Drive `text/` half — **untouched.** JSON supersedes it.
 
-## Top 3 for next session
+## Top priorities for next session
 
 1. **What Endorphin writes when they take the turn.** 6,944 cases where the
    model was rewound and a human continuation written from the identical
@@ -35,7 +35,14 @@ Branch: `claude/text-generation-corpus-3rtnwn` (10 commits, pushed, no PR opened
    compare uptake for names established earlier in the session against names
    appearing for the first time. This is the sharpest open question the frame
    raises.
-3. **Send `data/FAILED_STORIES.txt` to NovelAI support.** 483 stories will not
+3. **Direction of the tempo coupling** (§1e). Adjacent generations are 19.5%
+   closer in length than chance, decaying to nothing by lag 6 — real short-memory
+   rhythm. Whether the author paced the model, the model's own length
+   autocorrelation paced the author, or both locked together is unresolved, and
+   it is the one measurable question that bears directly on the collaboration
+   disagreement. Per-generation `max_length` is not recorded, which is the
+   obstacle.
+4. **Send `data/FAILED_STORIES.txt` to NovelAI support.** 483 stories will not
    decrypt, clustered hard from 2025-10. Needs Endorphin to do it — and to say
    whether anything happened that month (client switch, subscription change,
    migration), because the causal link is still circumstantial.
@@ -59,10 +66,14 @@ Branch: `claude/text-generation-corpus-3rtnwn` (10 commits, pushed, no PR opened
   because Endorphin adapted them to each model. Anything model-comparative needs
   within-model matched-setting slices, and most are too thin.
 - **Much of the generation was performed live on stream with TTS reading the
-  output**, concentrated in the early and middle part of the channel's history.
-  Endorphin said they would "talk about later" — the later part is less so. This
-  is load-bearing context for anything about pacing, speed of decision, or
-  abandonment. Do not read fast decisions as editorial deliberation.
+  output over a lo-fi backing track**, concentrated in the early and middle part
+  of the channel's history. Endorphin said they would "talk about later" — the
+  later part is less so. With a beat under it the synthesised voice reads as
+  continuous freestyle or poetry, so the constraint was *keep the audio flowing
+  at a steady clip*, not merely avoid silence — and Endorphin was artist and
+  audience at once, letting what he heard inform the next move. This is
+  load-bearing for anything about pacing, speed of decision, or abandonment. Do
+  not read fast decisions as editorial deliberation.
 - **The unit is the turn, not the passage.** The human move following a
   generation is a cue (median 55 characters), not an edit. Do not ask what made
   a generation good enough to keep — four passes died on that question.
