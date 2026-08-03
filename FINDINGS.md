@@ -63,11 +63,11 @@ version is kept, because how these metrics failed is the most transferable thing
 in the project.
 
 **Epistemic status.** Descriptive statistics over one person's practice. Not a
-sample of anything, and not a benchmark — §10 works through why that is
+sample of anything, and not a benchmark — §11 works through why that is
 structurally impossible here. Everything regenerates from `analysis/`, where the
 tests that killed claims are kept alongside the ones that survived: `PROBES.md`,
 `PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`, `REGISTER.md`, `TAKEOVER.md`,
-`CUES.md`, `ERATO.md`, `TEMPO.md`, `DIRECTION.md`, `TABLES.md`.
+`CUES.md`, `ERATO.md`, `TEMPO.md`, `DIRECTION.md`, `HANDOVER.md`, `HANDOFF.md`, `TABLES.md`.
 
 ---
 
@@ -134,7 +134,7 @@ story, like every setting, so the per-generation truncation that would decide it
 is not recorded.
 
 **1d. And the words do not matter.** A TF-IDF classifier over the generation's
-own text, grouped by text content so the duplication leak in §9b cannot recur:
+own text, grouped by text content so the duplication leak in §10b cannot recur:
 
 | predictor | AUC |
 |---|---:|
@@ -147,7 +147,7 @@ was baffling. Under the turn-taking frame it is nearly tautological: the human
 move is not a verdict on the passage, so no property of the passage predicts it.
 What predicts it is whether the turn was handed back.
 
-**1e. And the pacing left a trace after all.** §11 records that no per-block
+**1e. And the pacing left a trace after all.** §12 records that no per-block
 timestamps exist, so tempo is unrecoverable. That is true of *duration*. It is
 not true of *rhythm*. Within unbroken runs of at least 8 generations (12,921 of
 them), the absolute difference in word count between generations *lag* apart,
@@ -238,7 +238,7 @@ turns:
 | instruction (`[...]`) | 1.9% | 34 | `[A partial list of people to bleach.]` |
 
 A further 737 distinct blocks were empty and are **excluded**: not turns but the
-delete half of the §9a rewrite. Left in they top every table, which is worth
+delete half of the §10a rewrite. Left in they top every table, which is worth
 recording as a third instance of the same trap.
 
 **2a. What a turn buys.** Measuring forward — how many generations follow before
@@ -278,7 +278,7 @@ cue:
 
 Inside a model the next-generation column is flat — Kayra 442–509 for every cue
 kind, Erato 1,028–1,133. **Generation length is set by `max_length`, not by how
-the turn was phrased.** Third time the same lesson: §9's rule applies to this
+the turn was phrased.** Third time the same lesson: §10's rule applies to this
 section too.
 
 **2c. What survives it.** The run column, and one result in particular:
@@ -297,12 +297,13 @@ author finishes a line, a switch to another speaker is dialogue working. Only
 the handoff row measures uptake, and roughly nine times in ten the model takes
 the cue it was handed.
 
-That is the cleanest evidence in the corpus for the partner reading. A pure
-handoff carries no content — no sentence to continue, no instruction, just a
-name and a colon. Nearly all of its effect has to come from the model correctly
-inferring whose turn it is.
+A pure handoff carries no content — no sentence to continue, no instruction,
+just a name and a colon — so this looked like the cleanest evidence in the
+corpus for the partner reading. **§7b tests it and takes most of it back:** a
+name the model has never seen holds 85.0% of the time, so the bulk of the effect
+is the `Name:` convention rather than the model tracking who is in the room.
 
-**2e. The repertoire moves with the model**, though §10's confound forbids
+**2e. The repertoire moves with the model**, though §11's confound forbids
 reading that as a fact about the models. `stage direction {}` is 17.9% of Kayra
 turns and ~0% in Clio, Krake and Euterpe; `instruction []` is 14.9% of Erato
 turns and ~1% everywhere else. These are conventions the author adopted in
@@ -498,7 +499,7 @@ feature surface, not a confirmed account.
 - **The decryption cliff.** §10 records losses of 0–7% a month before 2025-10,
   then 67%, 58%, 74%, 94%, 89%, 93%, 90%. It starts the same month.
 
-§11 offers "a single damaging event or a client change around October 2025" as
+§12 offers "a single damaging event or a client change around October 2025" as
 the two readings of that cliff. The model roster, the sampler surface, the
 schema bump and the slider granularity all move together at exactly that
 boundary, which favours the second strongly.
@@ -522,7 +523,7 @@ truncate with. Everything in §4 describes the 2021–2025 native era.
 (`TABLES.md`, `PROBES.md`, `REGISTER.md`) but drop out of most within-model
 control tables, which impose minimum-n thresholds of 100–500. That is correct —
 9 generating Xialong stories cannot support a controlled comparison — but it
-means the controls in §2b, §4b and §10 describe the native era only, and should
+means the controls in §2b, §4b and §11 describe the native era only, and should
 not be read as covering the last nine months of the corpus.
 
 ## 6. The Erato era, and a second border
@@ -594,7 +595,89 @@ of `zanyscribe`, not of any one knob. Whether the range came from the negative
 naturalistic use — it would need settings varied one at a time, which is exactly
 what a preset prevents.
 
-## 7. Rewinds and re-rolls
+## 7. The two questions the frame left open
+
+Both were flagged as the sharpest things the turn-taking reading raised. Both
+now have answers, and the answers cut in opposite directions.
+
+**7a. What the author writes when they take it back.** At 6,944 branch points
+the model generated a continuation, the author rewound past it, and typed their
+own from the identical document state — a matched human/model sample where only
+the human side varies. Deduplicated: **1,342** distinct overrides. Full tables
+in `analysis/HANDOVER.md`.
+
+The first result is that overriding is not writing:
+
+| | median words | mean | p90 |
+|---|---:|---:|---:|
+| human override | **0** | 21 | 19 |
+| model proposal it replaced | 92 | 101 | 152 |
+
+**84.1%** of overrides are under 10 words. The author rejects a ~90-word
+proposal and answers with a handful of words. That is §2 from the other side:
+even when actively refusing what the model offered, the reply is a cue.
+
+A hypothesis formed from reading the examples — that overrides *cast* where the
+model *narrates* — does not survive. Passages containing a speaker tag: human
+overrides **21.7%** (CI 17.8–26.3), the model proposals they replaced **23.4%**
+(CI 19.3–28.0). Indistinguishable, and the human passages are far shorter, so if
+anything the test was tilted toward finding an excess.
+
+The result that does hold is uptake. Measuring **containment** — the share of
+the override's content words that also appear in the model passage — against a
+control of an abandoned proposal from a *different* branch in the same story,
+length-matched to within ±30%:
+
+| | comparisons | mean content words | mean containment |
+|---|---:|---:|---:|
+| the proposal actually replaced | 245 | 53.3 | **0.062** |
+| elsewhere in the story, length-matched | 245 | 52.7 | 0.049 |
+
+Of 245 comparisons 109 are ties at zero; among the 136 that differ the observed
+pairing is higher **63.2%** of the time (95% CI 54.9–70.9, chance 50).
+
+**The author carries material forward from the passage they just threw away.**
+Modest — mean containment 0.062 against a 0.049 floor, and nearly half the
+comparisons show no overlap at all — but the interval clears chance after length
+matching. Rejecting the offer as stated is not the same as discarding it, which
+is the "yes, and" shape rather than the correction shape.
+
+One honest note on that number: an earlier version scored 66.2% by comparing the
+*longest* proposal at the branch against a *random* one elsewhere. Longer text
+inflates containment mechanically. 63.2% is what survives fixing it.
+
+**7b. Why a bare `Name:` works — and it is mostly not what I claimed.** §2d
+offered the 89.7% handoff uptake as the cleanest evidence in the corpus that the
+model was tracking the scene. Testing it properly:
+
+| the name | handoffs | voice held | 95% CI |
+|---|---:|---:|---|
+| already used earlier in the session | 547 | 90.7% | 87.9–92.8% |
+| **first appearance in the session** | 287 | **85.0%** | 80.4–88.7% |
+
+A name the model has **never seen** holds 85.0% of the time. There is no
+referent for it anywhere in the session — the model cannot be tracking a cast
+member it has not met — so that share is `Name:` working as a formatting
+template, nothing more.
+
+Establishment does add something real: **+5.7 points**, two-proportion
+z = 2.46, p = 0.014. (The Wilson intervals overlap slightly, which is a
+conservative and misleading proxy for this comparison; the direct test is the
+right one.) More prior session text does not help monotonically either — 85.2 /
+81.0 / 85.9 / 89.7% across increasing context.
+
+So both things are true and **the larger one is the convention.** §2d's reading
+was too generous: most of the 89.7% is the strength of a formatting pattern, and
+the scene-tracking component is a few points on top of it.
+
+Taken together, 7a and 7b move in opposite directions on the same question. The
+uptake result is evidence the exchange was genuinely two-way — material crossed
+from the model's rejected offer into the author's next move. The handoff result
+takes away the strongest piece of evidence that the model was holding the scene
+in mind. Neither is decisive, and they should be read together rather than
+either one alone.
+
+## 8. Rewinds and re-rolls
 
 Distinct from the turn: sometimes the author rewinds and generates again from
 the identical document state. Measured by branch reachability — walk `prevBlock`
@@ -619,7 +702,7 @@ nothing cleared. Under the frame that is wrong for the same reason §1d is: thos
 human blocks are mostly 55 characters long. The re-roll ends because the turn
 came back, not because the model failed an audition.
 
-## 8. What is not learnable
+## 9. What is not learnable
 
 The abandoned branches looked like the best thing in the corpus: 22,196
 generations sitting next to the one kept from an identical prompt state,
@@ -656,7 +739,7 @@ Breaking the pairing does not hurt; it helps, fractionally. The true pairing
 barely clears "keep the longer one". There is no within-pair signal, and these
 pairs do not support a reward model.
 
-## 9. Two metrics that had to be thrown away
+## 10. Two metrics that had to be thrown away
 
 The most transferable content here. Both produced a striking,
 publishable-looking number that was measuring the tool rather than the author.
@@ -676,14 +759,14 @@ returns stamped `origin: user`. A story where the author pasted their own text
 back in scores as ~50% "rejected". It looked flat across five years of models
 because it was measuring a constant.
 
-**6b. Story-level splits.** Covered in §8b. Grouping by story id is not grouping
+**6b. Story-level splits.** Covered in §9b. Grouping by story id is not grouping
 by content, because the same text lives under many story ids.
 
 The rule, earned twice: **run the control that should fail before believing the
 one that succeeded.** In both cases the diagnostic was a control performing as
 well as or better than the treatment.
 
-## 10. Why this cannot benchmark models
+## 11. Why this cannot benchmark models
 
 Pooling all models and asking which loops most produces a clean-looking table
 saying the two newest heavily-used models are worst: Erato (Llama 3 70B) 6.7%,
@@ -723,7 +806,7 @@ re-roll events, the share ending with the author typing: GLM 61.9%, Euterpe
 typed over least and given the longest leash. A fact about these sessions, not a
 benchmark.
 
-## 11. What the record cannot hold
+## 12. What the record cannot hold
 
 - **No per-block timestamps exist.** Elapsed time is unrecoverable, so
   *duration* — turn latency, who was waiting for whom — is absent. §1e shows
@@ -750,7 +833,7 @@ benchmark.
 - **One file** (`New_Story__eQm-Fkr_ZGaaeaykmh5bu.json`) is truncated at 411
   bytes in Drive itself and cannot be recovered. 2,016 of 2,017.
 
-## 12. What I did not do
+## 13. What I did not do
 
 - **No content analysis.** Every number is structural — settings, block graph,
   turn lengths, word-frequency statistics. Nothing here characterises what the
@@ -762,13 +845,13 @@ benchmark.
   export via `analysis/`.
 - The `text/` half of the export is untouched; the JSON supersedes it.
 
-## 13. Where this could go next
+## 14. Where this could go next
 
 1. **What the author writes when they take the turn.** In 6,944 cases the model
    was rewound and a human continuation written from the identical context. That
    is a paired human/model sample from matched prompts, and it survives the
    duplication problem because the human side is what varies. It is also the
-   only route to the question §10 leaves open: whether the exchange at high
+   only route to the question §11 leaves open: whether the exchange at high
    temperature looks more like uptake and less like correction.
 2. **Why a handoff works.** §2d shows a bare `Name:` gets taken up 89.7% of
    the time on no content at all. Whether that is the model tracking the scene
@@ -785,4 +868,4 @@ benchmark.
    samples of model behaviour out there.
 
 Dropped, and worth recording as dropped: the abandoned branches as preference
-data (§8). Not worth another pass in this form.
+data (§9). Not worth another pass in this form.

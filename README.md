@@ -38,9 +38,12 @@ analysis/
   erato.py               the Erato era; the border re-tested on the Unified sampler
   tempo.py               did the generation keep a beat? (lag structure of turn length)
   direction.py           who keeps it — author selection vs the model's own autocorrelation
+  handover.py            what the author writes when they override the model
+  handoff.py             why a bare `Name:` works — convention or scene-tracking
   trace.py               render one story's live path turn by turn
   TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md
-  REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md DIRECTION.md   generated
+  REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md
+  DIRECTION.md HANDOVER.md HANDOFF.md                       generated
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)
   INDEX.tsv              the export's own manifest, 2,500 stories
@@ -67,6 +70,8 @@ python3 analysis/cues.py out --report analysis/CUES.md
 python3 analysis/erato.py out --report analysis/ERATO.md     # needs wordfreq
 python3 analysis/tempo.py out --report analysis/TEMPO.md
 python3 analysis/direction.py out --report analysis/DIRECTION.md
+python3 analysis/handover.py out --report analysis/HANDOVER.md
+python3 analysis/handoff.py out --report analysis/HANDOFF.md
 ```
 
 `blocks.jsonl` comes out around 524 MB — every revision's full text. Everything
@@ -77,7 +82,7 @@ derived from it is regenerable, so it stays out of git.
 Everything is descriptive statistics over **one person's practice**. It is not a
 sample of anything, and it cannot benchmark models against each other — the way
 the settings changed alongside the models makes those two things inseparable in
-this data. `FINDINGS.md` §10 works through why, and `analysis/PROBES.md` keeps
+this data. `FINDINGS.md` §11 works through why, and `analysis/PROBES.md` keeps
 the tests that killed claims alongside the ones that survived.
 
 ## Status
@@ -86,12 +91,12 @@ Register: **open**. `FINDINGS.md` is written under the turn-taking frame: the
 corpus records an exchange, not an authorship. Five passes went into it, and
 the frame arrived last — the first four asked what made a generation good
 enough to keep, and every version of that question came back null or
-artifactual. §§8–10 keep those failures rather than tidying them away, because
+artifactual. §§9–11 keep those failures rather than tidying them away, because
 how they failed is the most reusable thing here.
 
 Standing warning, earned four times: **the obvious metric measures the tool,
-not the author.** Once the text editor (§9a), once the habit of duplicating
-stories (§9b), once `max_length` masquerading as an effect of phrasing (§2b),
+not the author.** Once the text editor (§10a), once the habit of duplicating
+stories (§10b), once `max_length` masquerading as an effect of phrasing (§2b),
 once a disabled sampler read as a live setting (§6a).
 Each time the tell was the same — a control matching or beating the treatment,
 or a number that could not move. Run the control that should fail before

@@ -23,19 +23,7 @@ Branch: `claude/text-generation-corpus-3rtnwn` (10 commits, pushed, no PR opened
 
 ## Top priorities for next session
 
-1. **What Endorphin writes when they take the turn.** 6,944 cases where the
-   model was rewound and a human continuation written from the identical
-   context. Paired human/model sample from matched prompts, and it survives the
-   duplication problem because the human side is what varies. It is also the
-   only route to the question left open in the disagreement below — whether the
-   exchange at high temperature looks like uptake rather than correction.
-2. **Why a handoff works.** A bare `Name:` is taken up in that voice 89.7% of
-   the time on no content at all. Is that the model tracking the scene, or the
-   sheer strength of the `Name:` convention in its training data? Answerable:
-   compare uptake for names established earlier in the session against names
-   appearing for the first time. This is the sharpest open question the frame
-   raises.
-3. **Send `data/FAILED_STORIES.txt` to NovelAI support.** 483 stories will not
+1. **Send `data/FAILED_STORIES.txt` to NovelAI support.** 483 stories will not
    decrypt, clustered hard from 2025-10. Needs Endorphin to do it — and to say
    whether anything happened that month (client switch, subscription change,
    migration), because the causal link is still circumstantial.
@@ -72,6 +60,13 @@ Branch: `claude/text-generation-corpus-3rtnwn` (10 commits, pushed, no PR opened
   re-rolls the kept generation is closer in length to the preceding one only
   48.4% of the time. Do not re-litigate this as an open question; the remaining
   uncertainty is only whether a sub-1-point selection effect exists.
+- **§7 answered both of the frame's open questions, in opposite directions.**
+  Overrides show real uptake (63.2% containment against a length-matched
+  control) — material crosses from the rejected proposal into what the author
+  writes. But the 89.7% handoff figure is mostly the `Name:` convention: a name
+  the model has never seen holds 85.0%, with establishment worth only +5.7
+  points (p = 0.014). Do not cite the handoff number as evidence of
+  scene-tracking without that qualification.
 - **The unit is the turn, not the passage.** The human move following a
   generation is a cue (median 55 characters), not an edit. Do not ask what made
   a generation good enough to keep — four passes died on that question.
