@@ -151,11 +151,25 @@ effect decays cleanly: 19.5 → 12.4 → 7.9 → 4.4 → 0.7% by lag 6. A slow d
 would show the same reduction at every lag; this is short-memory coupling over
 about five turns. `analysis/tempo.py`, written up as §1e.
 
-It cannot show direction — author pacing model, model's own autocorrelation
-pacing author, or both locked together, which is what the collaboration account
-would predict. But "the record has no tempo in it" was wrong, and the thing that
-found it was Endorphin's account of the listening loop rather than anything in
-the data.
+**Then the direction question resolved, against the reading Claude was leaning
+toward.** Two designs, agreeing. At a re-roll, kept and rejected siblings come
+from the identical document state under the same model, so the model's own
+autocorrelation applies to both equally; if the author were pacing, the kept
+generation would sit closer in length to the preceding one. Across 1,354
+distinct comparisons it does so **48.4%** of the time (CI 45.8–51.1%, chance
+50%), with median |Δ| of 14 for both. And runs where the author never re-rolled
+— no selection at all — reproduce the whole-corpus curve exactly: 19.1 → 12.6 →
+8.0 → 1.1%.
+
+**The beat is the model's.** The rhythm is there in full where Endorphin did
+nothing but press enter. Within a run, re-roll selection is the only lever on
+generation length, so the tests cover the available channel.
+
+This is a null for "the author paced the model" and is recorded as one. It is
+not a null on the collaboration account, which described being *artist and
+audience at once* — on tempo specifically the data picks the audience half. The
+model set the clip; Endorphin rode it. `analysis/direction.py`, written up as
+§1f.
 
 ## Loose ends
 

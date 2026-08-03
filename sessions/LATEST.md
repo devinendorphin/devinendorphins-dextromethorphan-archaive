@@ -35,14 +35,7 @@ Branch: `claude/text-generation-corpus-3rtnwn` (10 commits, pushed, no PR opened
    compare uptake for names established earlier in the session against names
    appearing for the first time. This is the sharpest open question the frame
    raises.
-3. **Direction of the tempo coupling** (§1e). Adjacent generations are 19.5%
-   closer in length than chance, decaying to nothing by lag 6 — real short-memory
-   rhythm. Whether the author paced the model, the model's own length
-   autocorrelation paced the author, or both locked together is unresolved, and
-   it is the one measurable question that bears directly on the collaboration
-   disagreement. Per-generation `max_length` is not recorded, which is the
-   obstacle.
-4. **Send `data/FAILED_STORIES.txt` to NovelAI support.** 483 stories will not
+3. **Send `data/FAILED_STORIES.txt` to NovelAI support.** 483 stories will not
    decrypt, clustered hard from 2025-10. Needs Endorphin to do it — and to say
    whether anything happened that month (client switch, subscription change,
    migration), because the causal link is still circumstantial.
@@ -74,6 +67,11 @@ Branch: `claude/text-generation-corpus-3rtnwn` (10 commits, pushed, no PR opened
   audience at once, letting what he heard inform the next move. This is
   load-bearing for anything about pacing, speed of decision, or abandonment. Do
   not read fast decisions as editorial deliberation.
+- **The tempo coupling is the model's, not the author's** (§1f). Runs with no
+  re-rolls — no selection at all — reproduce the full 19.5% lag-1 coupling. At
+  re-rolls the kept generation is closer in length to the preceding one only
+  48.4% of the time. Do not re-litigate this as an open question; the remaining
+  uncertainty is only whether a sub-1-point selection effect exists.
 - **The unit is the turn, not the passage.** The human move following a
   generation is a cue (median 55 characters), not an edit. Do not ask what made
   a generation good enough to keep — four passes died on that question.

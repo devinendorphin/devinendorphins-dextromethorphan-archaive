@@ -37,9 +37,10 @@ analysis/
   cues.py                taxonomy of the author's turns, and what each buys
   erato.py               the Erato era; the border re-tested on the Unified sampler
   tempo.py               did the generation keep a beat? (lag structure of turn length)
+  direction.py           who keeps it — author selection vs the model's own autocorrelation
   trace.py               render one story's live path turn by turn
   TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md
-  REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md          generated
+  REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md DIRECTION.md   generated
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)
   INDEX.tsv              the export's own manifest, 2,500 stories
@@ -65,6 +66,7 @@ python3 analysis/takeover.py out --report analysis/TAKEOVER.md
 python3 analysis/cues.py out --report analysis/CUES.md
 python3 analysis/erato.py out --report analysis/ERATO.md     # needs wordfreq
 python3 analysis/tempo.py out --report analysis/TEMPO.md
+python3 analysis/direction.py out --report analysis/DIRECTION.md
 ```
 
 `blocks.jsonl` comes out around 524 MB — every revision's full text. Everything

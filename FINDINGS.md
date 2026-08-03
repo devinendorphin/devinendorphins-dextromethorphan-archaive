@@ -67,7 +67,7 @@ sample of anything, and not a benchmark — §10 works through why that is
 structurally impossible here. Everything regenerates from `analysis/`, where the
 tests that killed claims are kept alongside the ones that survived: `PROBES.md`,
 `PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`, `REGISTER.md`, `TAKEOVER.md`,
-`CUES.md`, `ERATO.md`, `TEMPO.md`, `TABLES.md`.
+`CUES.md`, `ERATO.md`, `TEMPO.md`, `DIRECTION.md`, `TABLES.md`.
 
 ---
 
@@ -173,10 +173,50 @@ generation's length tracks the one just before it over a window of about five
 turns. That is what keeping a voice fed at a steady clip looks like from the
 outside.
 
-What it cannot show is **direction**. A steady clip could be the author pacing
-the model, the model's own length autocorrelation pacing the author, or both
-locked together — which is what the collaboration account would actually
-predict. Nothing here separates them.
+**1f. The beat is the model's.** §1e could not say who produced the coupling.
+Two designs separate them, and they agree.
+
+*Selection.* At a re-roll the author generated, rewound, and generated again
+from the identical document state, so kept and rejected siblings are draws from
+the same conditional distribution under the same model and settings — the
+model's own autocorrelation applies equally to both. If the author were pacing,
+the kept generation would sit closer in length to the preceding one than its
+rejected sibling. Across 1,354 distinct comparisons it does so **48.4%** of the
+time (95% CI 45.8–51.1%). Chance is 50%. Median |Δ words| from the preceding
+generation is **14 for kept and 14 for rejected**.
+
+Nor is there a cruder length preference doing the work. Split by how long the
+preceding generation was, the kept sibling is longer 51.8% / 50.3% / 46.2% of
+the time and closer 49.8% / 49.0% / 47.9% — flat at chance in both columns,
+including the bands where matching would mean choosing the *shorter* sibling.
+
+*Exposure.* Runs in which the author never re-rolled contain no selection at
+all, so their coupling is the model's alone:
+
+| run type | runs | lag 1 | lag 2 | lag 3 | lag 6 |
+|---|---:|---:|---:|---:|---:|
+| **no re-rolls (model only)** | 11,654 | **19.1%** | 12.6% | 8.0% | 1.1% |
+| contains re-rolls | 1,267 | 21.8% | 10.9% | 7.2% | −1.5% |
+
+The clean runs reproduce the whole-corpus curve (19.5 → 12.4 → 7.9 → 0.7)
+essentially exactly. **The rhythm is there in full where the author did nothing
+but press enter.**
+
+Within a run, re-roll selection is the author's only lever on generation length
+— taking a turn ends the run rather than shaping it — so these two tests cover
+the available channel. The tempo in §1e is the model's own output-length
+autocorrelation.
+
+Power, stated honestly: the selection interval excludes anything larger than
+about one point above chance, so a small effect cannot be ruled out. What can
+be ruled out is the author being the source of a 19.5% coupling.
+
+**What this does and does not settle.** It is a null for "the author paced the
+model", and it should be read as one. It is not a null on the collaboration
+account, which described being *artist and audience at once*. On tempo
+specifically, the data picks the audience half: the model set the clip, and the
+author rode it. That is a coherent thing for the record to show — and it is not
+the answer this analysis expected to find.
 
 ## 2. A taxonomy of the turn
 
@@ -687,8 +727,8 @@ benchmark.
 
 - **No per-block timestamps exist.** Elapsed time is unrecoverable, so
   *duration* — turn latency, who was waiting for whom — is absent. §1e shows
-  *rhythm* partly survives in the sequence of lengths, but that is a weaker
-  thing and cannot recover direction.
+  *rhythm* partly survives in the sequence of lengths — and §1f shows that
+  rhythm is the model's, not the author's.
   Given that the collaboration was constituted in real time, this is a fossil of
   a live practice with the liveness stripped out. Everything about the dead-air
   clock in §1b is inferred through a length proxy.
