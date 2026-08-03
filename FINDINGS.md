@@ -1,128 +1,176 @@
 # Findings
 
-2,016 NovelAI story files. Last edited between March 2023 and July 2026, but
-*created* as far back as **June 2021** — 163 of them predate 2023, 39 are from
-2021. 280M characters of model
-output, 88M of human text, and — the part that matters — **760,611 edit-history
-blocks**, because the export preserves the whole undo tree rather than the final
-text. Every generation you kept, rewound past, or typed over is still in there,
-stamped with which model made it and at what settings.
+**2,016 NovelAI story files.** Last edited between March 2023 and July 2026,
+created as far back as **June 2021** — 163 predate 2023, 39 are from 2021.
+280M characters of model output against 88M of human text. 1,798 of the files
+contain at least one generation; the remaining 218 are pasted articles,
+text-to-speech scratchpads and empty stubs.
 
-Epistemic status: descriptive statistics over one person's practice. Nothing
-here is a controlled comparison of models, and where the data pretends to be
-one, that is called out. Numbers regenerate from `analysis/`; see
-`analysis/` for the full tables and the tests, including the ones that failed:
-`TABLES.md`, `PROBES.md`, `PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`,
-`REGISTER.md`, `TAKEOVER.md`. One session is read in full in `CASE_STUDY.md`.
+What makes this a corpus rather than a folder of stories is the last number:
+**760,611 edit-history blocks.** NovelAI exports the entire undo tree, not the
+finished text. Every generation that was kept, rewound past, or typed over is
+still in the file, stamped with who wrote it, which model made it, and what the
+sampler was set to.
+
+## The frame
+
+The first four analysis passes asked a question it turns out nobody was asking:
+*what made this generation good enough to keep?* Every version of it came back
+null or artifactual. The fifth pass read one session end to end and found out
+why.
+
+Across **134,063** human blocks that immediately follow a generation:
+
+| length of the human block | count | share |
+|---|---:|---:|
+| under 50 characters | 62,267 | **46.4%** |
+| 50–200 characters | 59,770 | 44.6% |
+| 200–600 characters | 8,935 | 6.7% |
+| 600+ characters | 3,091 | **2.3%** |
+
+**Median 55 characters.** Ninety-one percent under 200. One in forty is long
+enough to be a substantive rewrite.
+
+These are not edits. They are **turns**. The corpus records an exchange
+conducted at speed — much of it performed live on stream, with the text read
+aloud by text-to-speech — in which the author's move is usually a cue, a name, a
+question, or a character walking on stage, and the model's move is to perform
+whatever just arrived.
+
+`CASE_STUDY.md` traces one session in full. It pastes Utah HB 249 verbatim — a
+statute preemptively denying legal personhood to artificial intelligence,
+inanimate objects, bodies of water, land, real property, atmospheric gases,
+astronomical objects, weather, plants, nonhuman animals, and "any other member
+of a taxonomic domain that is not a human being" — then convenes a press
+conference at which each enumerated category sends a representative, calling the
+model first to assert its own personhood. Its shape after setup is 27 generation
+runs, each terminated by exactly one human block of 15 to 194 characters:
+
+> Solaris, a body of water: Sorry I'm late!
+> Omouamoua - Hiiii-ye!
+> Light Drizzle: Hi, I was the only weather that was free to come. The others send their regards.
+
+Everything below is organised around that frame. Where an earlier reading
+survived it is stated plainly; where the frame overturned one, the overturned
+version is kept, because how these metrics failed is the most transferable thing
+in the project.
+
+**Epistemic status.** Descriptive statistics over one person's practice. Not a
+sample of anything, and not a benchmark — §7 works through why that is
+structurally impossible here. Everything regenerates from `analysis/`, where the
+tests that killed claims are kept alongside the ones that survived: `PROBES.md`,
+`PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`, `REGISTER.md`, `TAKEOVER.md`,
+`TABLES.md`.
 
 ---
 
-## 1. The best thing in the corpus is a metric that had to be thrown away
+## 1. When the turn passes back
 
-The obvious question to ask a corpus like this is: *how much of what the model
-wrote did you actually keep?* NovelAI records deletions — each block carries a
-`removedFragments` list, and fragments are tagged with who wrote them. Text
-deleted that was tagged `origin: ai` looks exactly like a rejected generation.
+**476,839** generations sit on surviving branches, each labelled by whether the
+next thing on that branch was another generation or the author typing. The
+author takes a turn **28.1%** of the time (79% new text, 21% in-place edits).
+Three things govern when.
 
-That measure says **44% of generated text was deleted**, and — the striking part
-— it says almost precisely that for every model from 2021-era Euterpe (Fairseq
-13B) through GLM-4.6 (357B MoE). Five years, a 25× parameter jump, no movement.
-An invariant like that would be a genuinely interesting claim about what human
-editorial standards do as models improve.
+**1a. Punctuation — the strongest single fact in the corpus.**
 
-It is an artifact, and the tell is that the number **never once exceeds 0.5**
-across 1,675 stories, with 43% of stories crowded into 0.45–0.50. A hard ceiling
-at exactly one half is a formula, not a behaviour.
-
-The cause is visible once you read the block stream instead of aggregating it.
-NovelAI's editor implements a whole-document rewrite as *delete everything,
-re-insert everything*. The delete charges every prior AI character to
-`removedFragments`; the re-insert comes back stamped `origin: user`. So a story
-where you pasted your own text back in scores as ~50% "rejected". The metric was
-tracking the text editor, not your judgement — which is exactly why it looked so
-beautifully flat across five years of models. **It was measuring a constant
-because it was measuring a constant.**
-
-The honest measure is branch reachability: walk `prevBlock` back from
-`currentBlock` to get the surviving branch, and count AI text that is *not* on
-it. That is text generated and then rewound past. It gives:
-
-| | abandoned share of generated text |
-|---|---|
-| median story | **3.3%** |
-| mean story | 7.2% |
-| p90 | 18.1% |
-| max | 93.5% |
-| stories abandoning nothing | 13% |
-
-Unbounded above, heavily right-skewed — the shape a real behaviour makes.
-
-I am flagging this first because it is the most transferable thing in the pass.
-Any future study of this corpus, or of any NovelAI export, will reach for
-`removedFragments` and get a beautiful wrong answer.
-
-## 2. You run hot, and it was the right call for reasons you weren't aiming at
-
-Your modal temperature is **2.50** — 286 stories, the single most common exact
-value in the corpus, ahead of 1.0. On Clio it is your *median*. On Xialong you
-run **3.5**. NovelAI's own presets mostly live between 1.0 and 1.4. Across all
-1,798 generating stories the median is 1.44 and the mean 1.57, both well above
-where the interface nudges you.
-
-Read as craft, that is a taste for high-entropy output. But there is a
-mechanical consequence you could not have been optimising for, because it needs
-a corpus this size to see. Holding the model fixed at `kayra-v1` (990 stories
-spanning temperature 0.1–2.5), measuring degeneration as trigram self-repetition
-inside a generation, truncated to a fixed 150-word window so length can't
-confound it:
-
-| temperature | generations | looping rate (>10% repeated trigrams) |
+| the generation ends | generations | author takes a turn |
 |---|---:|---:|
-| 1.1–1.4 | 1,206 | **6.8%** |
-| 1.4–1.7 | 1,440 | 1.7% |
-| 1.7–2.2 | 342 | **0.9%** |
-| ≥2.2 | 202 | 2.5% |
+| on sentence-final punctuation | 305,197 | **37.5%** |
+| mid-sentence | 171,642 | **11.5%** |
 
-Running hot cut your looping rate by roughly seven-fold. Repetitive degeneration
-is *the* characteristic failure of the 2021–2023 models you started on, and the
-thing every sampler in the NovelAI stack exists to suppress.
+The intuition — a generation that breaks off mid-clause is defective, so you
+step in — is not merely wrong but inverted, by more than 3×.
 
-**Correction, from Endorphin after this was written.** The first draft said you
-solved this "by feel". That is wrong, or at least half wrong: part of the
-temperature spread is a deliberate procedure — pick a preset, work a
-mythological or poetic register, step temperature up across several iterations
-until the output degrades, repeat across roughly three presets, looking for
-where novel structure lives before it dissolves. §8 finds 33 of those sweeps
-sitting in the metadata, and they terminate at 2.5 almost every time. So the
-habit is partly designed testing and partly retained practice. What remains
-accidental is the *anti-looping* consequence — that was not what the sweeps were
-looking for, and it is not visible from inside a session.
+A clean ending is an **invitation**; a mid-clause cut is a **compulsion**. When
+the model stops on a full stop it has handed the turn back, and that is where a
+human takes it. When it stops mid-clause the only graceful move is to press
+enter again — especially with the text being read aloud, where a hanging clause
+is worse than silence.
 
-## 3. The corpus cannot rank the models, and that is itself the finding
+**1b. Dead air.** Much of this was streamed with TTS reading the output, and a
+passage had to be ready before the voice ran out. That predicts a length effect
+with a specific sign, and it is there. Bucketed by how long a passage takes to
+read aloud at 155 wpm:
 
-Pooling all models and asking which loops most produces a clean-looking table
-that says the two **newest** heavily-used models are the worst: Erato (Llama 3
-70B) 6.7%, Kayra 6.9%, against Euterpe 0.0% and Krake 0.1%. Taken at face value
-that is a headline — bigger models degenerate more.
+| speech seconds | generations | author takes a turn |
+|---|---:|---:|
+| 0–5 | 6,319 | **45.8%** |
+| 5–10 | 7,595 | 42.2% |
+| 30–45 | 269,116 | 26.3% |
+| 90+ | 1,599 | **22.8%** |
 
-It is confounding, not a result. You used Euterpe and Krake at median
-temperatures of 1.54 and 1.92; you used Erato at **1.00**. Section 2 shows
-temperature alone moves looping by 7×, which is larger than the gap between any
-two models here. Model choice and sampler settings are entangled in this corpus
-because they are entangled in real use — you changed how you sampled *when* you
-changed models, following each model's recommended presets.
+A generation yielding a few seconds of audio does not buy enough time, and the
+author has to fill it. Not run position in disguise: holding position fixed,
+short (<20s) exceeds long (≥45s) at each of the first five positions, by +10.0,
++4.7, +11.3, +2.6 and +6.9 points. The middle of the range is non-monotonic
+(10–20s sits below 20–30s), so the effect is real at the extremes rather than a
+clean gradient.
 
-This is the generic hazard in naturalistic AI-use corpora, and it is worth
-stating plainly for whoever reads this next: **you cannot benchmark models on
-data collected by a person who was adapting their settings to the model.**
-Anything model-comparative here needs within-model, matched-setting slices, and
-most such slices in this corpus are too thin to carry weight.
+**1c. Momentum.** Among generations reaching position *k* of an unbroken run,
+the share that ended it:
 
-## 4. You barely use the steering apparatus
+| position in run | generations | turn passes back |
+|---|---:|---:|
+| 1 | 135,103 | **39.4%** |
+| 3 | 54,527 | 30.8% |
+| 5 | 27,042 | 23.1% |
+| 9 | 11,026 | 15.4% |
+| 20 | 2,132 | **5.4%** |
 
-Of 1,798 generating stories:
+A memoryless process would be flat; this falls sevenfold. Long runs are a
+genuinely different mode.
 
-| feature | share |
+The honest caveat is that 1a and 1c are entangled. A short `max_length` cutting
+generations mid-sentence would *compel* the next one, manufacturing runs that
+look like momentum. The corpus cannot separate them: `max_length` is stored per
+story, like every setting, so the per-generation truncation that would decide it
+is not recorded.
+
+**1d. And the words do not matter.** A TF-IDF classifier over the generation's
+own text, grouped by text content so the duplication leak in §6b cannot recur:
+
+| predictor | AUC |
+|---|---:|
+| TF-IDF over the full text | 0.623 |
+| **does it end on sentence-final punctuation** | **0.647** |
+| length alone | 0.559 |
+
+**A single bit beats every word in the passage.** Under the rejection frame this
+was baffling. Under the turn-taking frame it is nearly tautological: the human
+move is not a verdict on the passage, so no property of the passage predicts it.
+What predicts it is whether the turn was handed back.
+
+## 2. The shape of a session
+
+**135,567** unbroken runs of generation with no human text between them.
+
+| run length | share of runs |
+|---|---:|
+| 1 | 39.6% |
+| 2–3 | 32.6% |
+| 4–9 | 20.9% |
+| 10–24 | 5.9% |
+| 25+ | 1.0% |
+
+Median 2, p90 7, p99 24, maximum **212**. That longest run is *I Remind The Body
+Electric*, created **April 2022**, surviving in six duplicates under six
+different model settings — the same seed text re-run through successive models
+as they shipped.
+
+Turn size varies more than 2× by model. Median characters accepted per
+generation: 419 (Euterpe) → 469 (Kayra) → 601 (Clio) → 668 (Krake) → 776 (GLM)
+→ 944 (Erato). Partly the `max_length` budget (100 → 250 tokens), partly leash.
+
+Those long runs are also the cleanest experimental material in the corpus: 212
+consecutive generations with no human intervention is a single-condition sample
+— fixed settings, fixed model, no steering — which nothing else here provides.
+
+## 3. How the partner was tuned
+
+The author steers almost entirely through **sampling**, and barely at all
+through the context tools built for the purpose.
+
+| feature | share of generating stories |
 |---|---:|
 | Memory | 15.0% |
 | Author's Note | 6.7% |
@@ -130,175 +178,59 @@ Of 1,798 generating stories:
 | Phrase bias | 0.4% |
 | Banned sequences | 0.4% |
 
-Lorebook, when used at all, has a **median of one entry**.
+Lorebook, when used at all, has a **median of one entry**. This is close to the
+inverse of the NovelAI power-user profile, which is built around lorebooks and
+persistent worldbuilding. Nothing here is managing a world. It is running an
+exchange at volume — a median of 143 generations per Kayra story, 150 per GLM
+story, a median Kayra story carrying 65,482 characters of model output.
 
-This is close to the inverse of the NovelAI power-user profile, which is built
-around lorebooks and persistent worldbuilding. You are not managing a world; you
-are doing raw continuation at volume — median 143 generations per Kayra story,
-150 per GLM story, and a median Kayra story carrying 65k characters of model
-output. The steering happens in the prompt and in what you accept, not in the
-context-management panel.
+**3a. Running hot.** Modal temperature is **2.50** — 286 stories, the single most
+common exact value, ahead of 1.0 (277). Median 1.44, mean 1.57 across all
+generating stories, well above where NovelAI's own presets sit (1.0–1.4).
 
-Combined with §2, a consistent picture: you steer by **sampling** and by
-**selection**, not by instruction. That is an unusual and coherent practice, and
-it is legible only because the export kept the settings alongside the text.
+Part of that is a deliberate procedure: pick a preset, work a mythological or
+poetic register, step temperature up until the output degrades, repeat across
+several presets. **33** such sweeps survive in the metadata as runs of 3+
+stories sharing model and preset, created within six hours, stepping strictly
+upward:
 
-## 5. Loose ends worth a look
+| model | steps | temperature climb |
+|---|---:|---|
+| `kayra-v1` | 4 | 1 → 1.44 → 1.82 → 2.5 |
+| `kayra-v1` | 4 | 1.35 → 1.4 → 1.44 → 2.5 |
+| `kayra-v1` | 4 | 1.42 → 1.47 → 1.7 → 2.5 |
 
-- **A 4.6× spread in turn size.** Median characters accepted per generation runs
-  419 (Euterpe) → 469 (Kayra) → 944 (Erato). Partly your `max_length` budget
-  (100 → 250 tokens), partly trust. Erato is the one model you let run long
-  *and* the one you abandon most (median 6.7% vs Kayra's 3.0%). Plausibly:
-  longer leash, more rope.
-- **Sampler-order archaeology.** 48 distinct preset ids, and orderings like
-  `math1 > top_p` and `mirostat > temperature > typical_p > tfs > top_p > top_a`.
-  These are the experimental sampler stacks of specific NovelAI eras; the corpus
-  dates when each was in play.
-- **The 2025-10 encryption cliff.** `data/MISSING.md`: 483 of 2,500 stories will
-  not decrypt, but they are not spread evenly. Before 2025-10 losses run 0–7% a
-  month; from 2025-10 onward they run 58%, 74%, 94%, 89%, 93%, 90%. That is a
-  single damaging event or a client change around October 2025, not gradual rot.
-  Worth reporting to NovelAI — `data/FAILED_STORIES.txt` is already in the shape
-  their support would want.
+They terminate at **2.5 almost every time**, which is the slider's ceiling. The
+sweeps were not finding a natural breaking point; they ran out of dial. The top
+of the observed range is an interface limit, not a discovered edge.
 
-## 6. What I did not do
+**3b. What running hot bought, unintentionally.** Holding the model fixed at
+`kayra-v1` (990 stories spanning 0.1–2.5), measuring degeneration as trigram
+self-repetition truncated to a fixed 150-word window:
 
-- No content analysis. Every number is structural — settings, timings, block
-  graph, and word-level repetition statistics. I have not characterised what the
-  stories are *about*, nor read them as writing.
-- No text committed. `data/stories_meta.jsonl` is settings metadata only; Memory,
-  Author's Note and previews were stripped. Full derived data (including
-  `blocks.jsonl`, 524MB with every revision's text) regenerates from the Drive
-  export via `analysis/`.
-- The `text/` half of the export is untouched — the JSON supersedes it.
-- One file, `New_Story__eQm-Fkr_ZGaaeaykmh5bu.json`, is truncated at 411 bytes
-  in Drive itself and cannot be recovered by re-downloading. 2,016 of 2,017.
-
-## 7. Second pass: the preference data does not work, and the reason is the finding
-
-§8 below was the top of the "next" list: 22,196 abandoned generations sitting
-next to the one you kept from the identical prompt state, built over three years
-with no annotation task. It looked like the best thing in the corpus. It was
-chased, and it does not hold up. Three results, in the order they killed each
-other.
-
-**7a. You are not picking a favourite, you are rolling until satisfied.** Across
-8,450 extractable pairs, the generation you kept was the *last one generated*
-**99.6%** of the time — 99.9% at branch points with exactly two attempts. So
-these are not best-of-N comparisons. They are rejection sampling against a
-threshold, and the label "chosen" is perfectly predicted by position. Position
-therefore has to be kept away from any model, and the only question left is
-whether the *text* carries the signal.
-
-**7b. It does not, and a story-level split will tell you it does.** A TF-IDF
-classifier evaluated within-pair — score both continuations from one branch
-point, ask whether the kept one wins — scores **0.950** when split by story id.
-That is memorisation. Duplicating a story in NovelAI ("Working Copy", "New Story
-(2)") copies its whole branch history, so **91%** of pairs share text with
-another story id and the answers are sitting in the training set. The tell is
-that the mismatched-pair control — where each kept text is scored against a
-rejected text it never competed with — scored **0.987**, *higher* than the real
-thing. A control that beats the treatment means the model was recognising
-individual texts, not comparing them.
-
-Re-split by connected components of shared text, and deduplicated, 8,450 pairs
-collapse to 1,649 distinct comparisons in 1,125 independent groups:
-
-| condition | within-pair accuracy |
-|---|---:|
-| text classifier, true pairing | 0.559 ± 0.034 |
-| length only | 0.548 |
-| label permutation control | 0.511 ± 0.033 |
-| **mismatched-pair control** | **0.566 ± 0.032** |
-
-Breaking the pairing does not hurt — it helps, fractionally. The true pairing
-barely clears "keep the longer one". **There is no within-pair signal.** What
-little is there is a global difference between the two pools (kept generations
-run slightly longer, and end on a complete sentence 63% vs 56% of the time), and
-it applies just as well to texts that were never in competition. These pairs do
-not support a reward model.
-
-**7c. What is actually happening is more interesting than the reward model would
-have been.** If the rejected text does not predict rejection, look at the
-process instead. Of 13,336 resolved re-roll events:
-
-| resolution | share |
-|---|---:|
-| you wrote it yourself | **52.1%** |
-| you accepted a generation | 47.9% |
-
-**More than half of all re-rolls end with you taking over and writing it.** When
-you do accept, the median is 2 attempts — you re-roll once. When you don't, the
-median is 1: you read one generation, and write it yourself.
-
-That is the thing a pair set structurally cannot see, because it only keeps the
-branches where a generation eventually won. The dominant rejection event in
-three and a half years of this corpus is *not* "this generation is worse than
-that one" — it is "none of these, I'll do it", decided fast, usually on the
-first try. Your bar is not a ranking over model outputs. It is a threshold, and
-half the time nothing clears it.
-
-**Caveat, from Endorphin after this was written.** A good deal of this
-generation was performed live on stream, concentrated in the early and middle
-history of that channel. That reframes both §7a and §7c: under an audience and
-a clock, taking the keyboard after one look is improv, not deliberation, and
-"retry until satisfied" is partly "retry until the scene can continue". The
-speed of the takeover decision — median one attempt — reads very differently as
-a performance constraint than as an editorial one. The corpus carries no
-stream markers, so this cannot currently be separated out; timestamp clustering
-against the channel's schedule would be the way in if the dates exist
-elsewhere.
-
-The model-by-model split is the one place a comparison survives, because it is
-a rate rather than a ranking:
-
-| model | re-roll events | you wrote it yourself |
+| temperature | generations | looping rate |
 |---|---:|---:|
-| `glm-4-6` | 809 | 61.9% |
-| `euterpe-v2` | 429 | 60.8% |
-| `kayra-v1` | 7,968 | 55.0% |
-| `clio-v1` | 946 | 50.3% |
-| `krake-v2` | 678 | 44.7% |
-| `llama-3-erato-v1` | 2,491 | **40.7%** |
+| 1.1–1.4 | 1,206 | **6.8%** |
+| 1.4–1.7 | 1,440 | 1.7% |
+| 1.7–2.2 | 342 | **0.9%** |
+| ≥2.2 | 202 | 2.5% |
 
-Erato is the model you hand-write over least — and from §5, the one you let run
-longest and abandon most characters of. Longer leash, more rope, but a better
-hit rate per attempt. Same §3 caveat applies: settings move with model choice,
-so read this as a fact about your sessions, not a benchmark.
+Roughly a sevenfold reduction. Repetitive degeneration is *the* characteristic
+failure of the 2021–2023 models this practice started on, and the thing every
+sampler in the NovelAI stack exists to suppress. The sweeps were hunting poetic
+register, not looping — this fell out of the habit rather than motivating it,
+and it is not visible from inside a session.
 
-## 8. The sweeps, the border, and pressing enter
-
-Three things Endorphin raised after §7, all of which turn out to be measurable.
-
-**9a. The sweeps are in the metadata.** Filtering for runs of three or more
-stories that share a model *and* preset, were created within six hours of each
-other, and step temperature strictly upward finds **33** of them. A
-representative sample:
-
-| model | steps | temperature climb | when |
-|---|---:|---|---|
-| `kayra-v1` | 4 | 1 → 1.44 → 1.82 → 2.5 | 2024-04-09 |
-| `kayra-v1` | 4 | 1.35 → 1.4 → 1.44 → 2.5 | 2023-11-17 |
-| `kayra-v1` | 4 | 1.42 → 1.47 → 1.7 → 2.5 | 2024-03-05 |
-| `kayra-v1` | 3 | 1.4 → 2 → 2.5 | 2024-03-05 |
-
-They terminate at **2.5 almost every time**, which is the NovelAI slider's
-ceiling. So the sweeps were not finding a natural breaking point — they were
-running out of dial. That is worth knowing: the top of the observed range is an
-interface limit, not a discovered edge.
-
-**9b. The border is a configuration, not a temperature.** The obvious way to
-locate "where structure dissolves" is to plot noise against temperature. Doing
-that produces a **flat line**, which cannot be right — and the reason it is flat
-is the answer.
+**3c. The border between register and noise is a configuration, not a
+temperature.** Plotting noise against temperature gives a flat line, and the
+reason it is flat is the answer.
 
 Temperature is one stage in an *ordered* pipeline. At temp ≥ 2.2 this corpus
-runs `top_k` at a median of **82** — *tighter* than the median of 150 at temp
-< 1.2 — plus `tail_free_sampling` 0.97 and `top_a` 0.02. Temperature 2.5 here
-never means 2.5 across the full vocabulary. So the question is not how hot but
-hot *in what order*. Splitting every generation by whether a truncating sampler
-ran before temperature, using `wordfreq` to separate real-but-rare words (the
-register climbing) from non-words (the noise floor):
+runs `top_k` at a median of **82** — *tighter* than the median of 150 it uses
+below 1.2 — with `tail_free_sampling` at 0.97 and `top_a` at 0.02. Temperature
+2.5 here never means 2.5 across the full vocabulary. Splitting generations by
+whether a truncating sampler ran *before* temperature, using `wordfreq` to
+separate real-but-rare words (register climbing) from non-words (noise floor):
 
 | temperature | sampler order | generations | non-word % | rare word % |
 |---|---|---:|---:|---:|
@@ -312,229 +244,196 @@ register climbing) from non-words (the noise floor):
 At high temperature the ordering roughly **halves** the non-word rate while
 *raising* rare vocabulary — about **42% more rare real words than the cool
 baseline at essentially unchanged noise**. At cool and mid temperatures the
-ordering barely matters, which is exactly what a mechanical account predicts:
-order only bites once temperature has moved real mass onto the tail.
+ordering barely matters, exactly as a mechanical account predicts: order only
+bites once temperature has moved real mass onto the tail.
 
-So: truncate to a shortlist of continuations the model considers sayable, *then*
+Truncate to a shortlist of continuations the model considers sayable, *then*
 flatten across that shortlist, and you get maximum surprise inside the space of
 the sayable. Flatten first and the same nominal 2.5 spends half its budget on
-noise. **That is the border you were looking for, and it is a two-knob answer.**
+noise. For a partner in an improvised scene that is precisely the right
+constraint: surprising, but in key.
 
-One caveat governs all of this. NovelAI stores settings per *story*, as current
-state — there is no per-generation record, so every temperature above is the
-story's last setting attributed to all of its generations. For a sweep that is
-flatly wrong for the early steps. The error is non-differential, so it attenuates
-real effects rather than manufacturing them: the flat pooled curve is weak
-evidence, but the order effect that survived it is real.
+## 4. Rewinds and re-rolls
 
-**9c. Pressing enter.** Unbroken runs of model generation with no human text
-between them, on the surviving branch: **135,567** of them. Median 2, p90 7,
-p99 24, and a maximum of **212**.
+Distinct from the turn: sometimes the author rewinds and generates again from
+the identical document state. Measured by branch reachability — walk `prevBlock`
+back from `currentBlock`, count AI text *not* on the surviving path:
 
-| run length | share of runs |
+| abandoned share of generated text | |
+|---|---|
+| median story | **3.3%** |
+| mean story | 7.2% |
+| p90 | 18.1% |
+| max | 93.5% |
+| stories abandoning nothing | 13% |
+
+22,196 abandoned generations against 495,138 kept, across 1,475 stories.
+
+Of **13,336** resolved re-roll events, 52.1% end with the author typing and
+47.9% with a generation accepted. When a generation is accepted the median is 2
+attempts — one re-roll. When it is not, the median is 1: read one, then type.
+
+An earlier pass read that 52.1% as "none of these, I'll do it" — a threshold
+nothing cleared. Under the frame that is wrong for the same reason §1d is: those
+human blocks are mostly 55 characters long. The re-roll ends because the turn
+came back, not because the model failed an audition.
+
+## 5. What is not learnable
+
+The abandoned branches looked like the best thing in the corpus: 22,196
+generations sitting next to the one kept from an identical prompt state,
+accumulated over three years with no annotation task and no rubric. A
+naturally-occurring preference set. It does not work, and how it fails is worth
+more than the reward model would have been.
+
+**5a. It is rejection sampling, not ranking.** Across 8,450 extractable pairs the
+kept generation was the *last one generated* **99.6%** of the time — 99.9% at
+branch points with exactly two attempts. Nobody was weighing options. Position
+perfectly predicts the label, so position must be kept away from any model, and
+only the text is left.
+
+**5b. The text carries nothing, and the naive split insists otherwise.** A
+within-pair TF-IDF classifier scores **0.950** split by story id. That is
+memorisation: duplicating a story in NovelAI copies its whole branch history, so
+**91%** of pairs share text with another story id and the answers sit in the
+training set. The tell is that the mismatched-pair control — each kept text
+scored against a rejected text it never competed with — scored **0.987**,
+*higher* than the real thing. A control that beats the treatment means the model
+was recognising individual texts, not comparing them.
+
+Re-split by connected components of shared text and deduplicated, 8,450 pairs
+collapse to 1,649 distinct comparisons in 1,125 independent groups:
+
+| condition | within-pair accuracy |
 |---|---:|
-| 1 | 39.6% |
-| 2–3 | 32.6% |
-| 4–9 | 20.9% |
-| 10–24 | 5.9% |
-| 25+ | 1.0% |
+| text classifier, true pairing | 0.559 ± 0.034 |
+| length only | 0.548 |
+| label permutation control | 0.511 ± 0.033 |
+| **mismatched-pair control** | **0.566 ± 0.032** |
 
-The 212-run is *I Remind The Body Electric*, created **April 2022** — almost
-certainly the story you were thinking of. It survives in six duplicates under
-six different model settings, which is its own kind of evidence: you kept
-re-running the same seed text through successive models as they came out.
+Breaking the pairing does not hurt; it helps, fractionally. The true pairing
+barely clears "keep the longer one". There is no within-pair signal, and these
+pairs do not support a reward model.
 
-Those long runs are also, incidentally, the cleanest experimental material in
-the corpus. A stretch of 212 consecutive generations with no human intervention
-is a single-condition sample — fixed settings, fixed model, no author steering —
-which is exactly what nothing else here provides.
+## 6. Two metrics that had to be thrown away
 
-## 9. The takeover moment
+The most transferable content here. Both produced a striking,
+publishable-looking number that was measuring the tool rather than the author.
 
-The label §7 pointed at, with 60× the volume of the pair set that failed:
-**476,839** generations on surviving branches, each labelled by whether the next
-thing was another generation or the author typing. Overall takeover rate
-**28.1%** (79% new typing, 21% in-place edits). Endorphin supplied two accounts
-to separate, and the data supports both — then produces a third that neither
-predicted.
+**6a. `removedFragments`.** The obvious rejection measure — text a later block
+deleted that carried `origin: ai` — says **44% of generated text was deleted**,
+and says almost exactly that for every model from 2021-era Euterpe through
+GLM-4.6. Five years, a 25× parameter jump, no movement. That would be a real
+claim about human editorial standards.
 
-**Hard limit first.** NovelAI stores no per-block timestamps. Elapsed time is
-not recoverable at all, so the dead-air account can only be tested through
-length as a proxy for speech duration, never directly.
+It is an artifact, and the tell is that across 1,675 stories the value **never
+once exceeds 0.5**, with 43% crowded into 0.45–0.50. A hard ceiling at exactly
+one half is a formula, not a behaviour. NovelAI's editor implements a
+whole-document rewrite as *delete everything, re-insert everything*: the delete
+charges every prior AI character to `removedFragments`, and the re-insert
+returns stamped `origin: user`. A story where the author pasted their own text
+back in scores as ~50% "rejected". It looked flat across five years of models
+because it was measuring a constant.
 
-**9a. Momentum is real.** Among generations reaching position *k* of an unbroken
-run, the share that ended it:
+**6b. Story-level splits.** Covered in §5b. Grouping by story id is not grouping
+by content, because the same text lives under many story ids.
 
-| position in run | generations | takeover rate |
+The rule, earned twice: **run the control that should fail before believing the
+one that succeeded.** In both cases the diagnostic was a control performing as
+well as or better than the treatment.
+
+## 7. Why this cannot benchmark models
+
+Pooling all models and asking which loops most produces a clean-looking table
+saying the two newest heavily-used models are worst: Erato (Llama 3 70B) 6.7%,
+Kayra 6.9%, against Euterpe 0.0% and Krake 0.1%.
+
+It is confounding, not a result. Euterpe and Krake were used at median
+temperatures of 1.54 and 1.92; Erato at **1.00**. §3b shows temperature alone
+moves looping sevenfold, larger than any gap between models here. Model choice
+and sampler settings are entangled because they were entangled in use — the
+sampling changed *when* the model changed, following each model's recommended
+presets.
+
+The same trap catches the turn-taking measures. Raw turn rate looks like it
+falls with temperature (30.5% below 1.2, 24.9% above 2.4), which would suggest
+the model was a better partner when run hot. Holding model, ending and length
+fixed:
+
+| temperature | matched n | turn rate |
 |---|---:|---:|
-| 1 | 135,103 | **39.4%** |
-| 3 | 54,527 | 30.8% |
-| 5 | 27,042 | 23.1% |
-| 9 | 11,026 | 15.4% |
-| 20 | 2,132 | **5.4%** |
-| 50 | 250 | 9.2% |
+| <1.2 | 22,370 | 26.8% |
+| 1.2–1.5 | 125,456 | 30.1% |
+| 1.5–2.0 | 114,128 | 26.8% |
+| ≥2.0 | 79,324 | 26.0% |
 
-A memoryless process would be flat. This falls by a factor of seven. Long runs
-are a genuinely different mode, not a lucky streak of independent decisions.
+Flat, non-monotone, and the individual strata disagree on direction. The raw
+effect was composition. **You cannot benchmark models on data collected by a
+person who was adapting their settings to the model.**
 
-**9b. Dead air shows up, with the sign the account predicts.** Bucketing by how
-long the passage takes to read aloud (155 wpm):
+The one comparison that survives is a rate rather than a ranking. Of resolved
+re-roll events, the share ending with the author typing: GLM 61.9%, Euterpe
+60.8%, Kayra 55.0%, Clio 50.3%, Krake 44.7%, **Erato 40.7%**. Erato is the model
+typed over least and given the longest leash. A fact about these sessions, not a
+benchmark.
 
-| speech seconds | generations | takeover rate |
-|---|---:|---:|
-| 0–5 | 6,319 | **45.8%** |
-| 5–10 | 7,595 | 42.2% |
-| 30–45 | 269,116 | 26.3% |
-| 90+ | 1,599 | **22.8%** |
+## 8. What the record cannot hold
 
-Short generations double the takeover rate. This is not just run position in
-disguise — holding position fixed, short (<20s) beats long (≥45s) at every one
-of the first five positions, by +10.0, +4.7, +11.3, +2.6 and +6.9 points. A
-generation that yields only a few seconds of speech does not buy enough time,
-and the author steps in. The middle of the range is non-monotonic (10–20s sits
-below 20–30s), so the effect is real at the extremes rather than a clean
-gradient.
+- **No per-block timestamps exist.** Elapsed time is unrecoverable, so tempo —
+  turn latency, who was waiting for whom, the pace of the exchange — is absent.
+  Given that the collaboration was constituted in real time, this is a fossil of
+  a live practice with the liveness stripped out. Everything about the dead-air
+  clock in §1b is inferred through a length proxy.
+- **Settings are stored per story, as current state.** There is no
+  per-generation record, so every temperature above is the story's last setting
+  attributed to all its generations. For a sweep that is flatly wrong for the
+  early steps. The error is non-differential, so it attenuates real effects
+  rather than manufacturing them: a flat curve is weak evidence, a surviving
+  effect is real.
+- **No stream markers.** Which sessions were live, and where they fall in the
+  channel's early/middle period, is not in the data. Timestamp clustering
+  against the channel's schedule would be the way in if those dates exist
+  elsewhere.
+- **483 of 2,500 stories will not decrypt**, and not evenly. Before 2025-10,
+  losses run 0–7% a month; from 2025-10 onward: 58%, 74%, 94%, 89%, 93%, 90%.
+  That is a single damaging event or client change around October 2025, not
+  gradual rot. Worth reporting — `data/FAILED_STORIES.txt` is already in the
+  shape NovelAI support would want.
+- **One file** (`New_Story__eQm-Fkr_ZGaaeaykmh5bu.json`) is truncated at 411
+  bytes in Drive itself and cannot be recovered. 2,016 of 2,017.
 
-**9c. The thing neither of us predicted, and the strongest result in the pass.**
+## 9. What I did not do
 
-| generation ends | generations | takeover rate |
-|---|---:|---:|
-| on sentence-final punctuation | 305,197 | **37.5%** |
-| mid-sentence | 171,642 | **11.5%** |
+- **No content analysis.** Every number is structural — settings, block graph,
+  turn lengths, word-frequency statistics. Nothing here characterises what the
+  stories are *about*, or reads them as writing. §1d is the closest thing, and
+  it is a null result.
+- **No text committed.** `data/stories_meta.jsonl` is settings metadata only;
+  Memory, Author's Note and previews stripped. Full derived data — including
+  `blocks.jsonl`, 524MB with every revision's text — regenerates from the Drive
+  export via `analysis/`.
+- The `text/` half of the export is untouched; the JSON supersedes it.
 
-The intuition — a generation that breaks off mid-clause is defective, so you
-step in — is not merely wrong, it is inverted, by more than 3×.
+## 10. Where this could go next
 
-A clean ending is an **invitation**; a mid-sentence cut is a **compulsion**.
-When the model stops on a full stop it has handed the turn back, and that is
-where a human takes it. When it stops mid-clause the only graceful move is to
-press enter again — especially with the text being read aloud, where a hanging
-clause is worse than silence.
+1. **What the author writes when they take the turn.** In 6,944 cases the model
+   was rewound and a human continuation written from the identical context. That
+   is a paired human/model sample from matched prompts, and it survives the
+   duplication problem because the human side is what varies. It is also the
+   only route to the question §7 leaves open: whether the exchange at high
+   temperature looks more like uptake and less like correction.
+2. **Cue taxonomy.** The 46% of turns under 50 characters are not
+   undifferentiated. Naming a character, asking a question and redirecting a
+   scene are different moves, and they should predict different things about
+   what follows. This is the natural unit of analysis under the frame, and
+   nothing here has touched it.
+3. **Separating compulsion from momentum.** §1's entanglement is the biggest
+   open methodological hole. Stories where `max_length` was large enough that
+   generations rarely got cut mid-sentence would give the clean contrast, if
+   enough of them exist.
+4. **The high-temperature regime.** 310 stories at temp ≥ 2.2, far outside where
+   these models were tuned or evaluated. This may be one of the larger extant
+   samples of model behaviour out there.
 
-Which means a good deal of §8c's enter-chain behaviour may not be momentum by
-choice at all. It may be a short `max_length` cutting generations mid-sentence
-and *compelling* the next one. The two accounts are entangled and this corpus
-cannot fully separate them: `max_length` is stored per story, like every other
-setting, so the per-generation truncation that would decide it is not recorded.
-
-**9d. And the text does not matter.** A TF-IDF classifier over the generation's
-own words, grouped by text content so the §7b duplication leak cannot recur:
-
-| predictor | AUC |
-|---|---:|
-| TF-IDF over the full text | 0.623 |
-| **does it end on sentence-final punctuation** | **0.647** |
-| length alone | 0.559 |
-
-**A single bit beats every word in the passage.** The takeover decision is not
-legible in the writing. It is legible in the punctuation — in whether the model
-handed the turn back or left it hanging.
-
-Taken with §7b, that is now twice that the *content* of a generation has failed
-to predict what the author did with it, while structural facts — how long it
-was, where it stopped — predict it comparatively well. For a corpus built
-entirely out of aesthetic play, the aesthetics are the part that does not
-register in the behaviour.
-
-## 10. Correction: the takeover is a turn, not a verdict
-
-Endorphin named a specimen — `PRESS CONFERENCE REGARDING THE LEGAL PERSONHOOD
-OF NATURE`, February 2024 — as a complete example of real-time generation. It
-is, and it falsifies the reading §7c and §9 put on their own central measure.
-Full trace in [`CASE_STUDY.md`](CASE_STUDY.md).
-
-The session pastes Utah HB 249 verbatim — a statute preemptively denying legal
-personhood to artificial intelligence, inanimate objects, bodies of water, land,
-real property, atmospheric gases, astronomical objects, weather, plants,
-nonhuman animals, and "any other member of a taxonomic domain that is not a
-human being" — then convenes a press conference at which each enumerated
-category sends a representative. The first speaker called is the model itself,
-asked to assert its own personhood.
-
-Its shape after the setup is 27 generation runs, each terminated by **exactly
-one** human block of 15–194 characters. And those blocks are all of this kind:
-
-> Solaris, a body of water: Sorry I'm late!
-> Omouamoua - Hiiii-ye!
-> Light Drizzle: Hi, I was the only weather that was free to come. The others send their regards.
-
-**Cues, not corrections.** The author is playing MC — walking the statute's list
-on stage one item at a time and handing each to the model to inhabit.
-
-That is not an edge case. Across all **134,063** human blocks that immediately
-follow a generation:
-
-| length | count | share |
-|---|---:|---:|
-| under 50 chars — a cue | 62,267 | **46.4%** |
-| 50–200 chars — a line | 59,770 | 44.6% |
-| 200–600 chars | 8,935 | 6.7% |
-| 600+ chars — actual writing | 3,091 | **2.3%** |
-
-Median **55 characters**. Ninety-one percent under 200. One in forty is long
-enough to be a substantive rewrite.
-
-**So the 28.1% "takeover rate" is not 28.1% dissatisfaction**, and §7c's "none
-of these, I'll do it — your bar is a threshold and half the time nothing clears
-it" is wrong about the large majority of cases. The author was not rejecting
-the model. They were saying their line.
-
-What survives intact: the §9 hazard curve, the dead-air length effect, and the
-punctuation result all still describe *when the turn passes back*, and they are
-if anything more interesting under the corrected reading — a mid-sentence cut
-does not pass the turn, a full stop does, and a passage too short to cover the
-speech gap forces the author to fill it.
-
-What does not survive is the interpretation. "When does the human step in
-because the model failed" was the wrong question. "When does the turn pass
-back" is the right one, and it is the question an improv scene asks.
-
-This also dissolves the two null results rather than explaining them away.
-Content does not predict what was rewound past (§7b) and does not predict the
-takeover (§9d) because **the human turn was never a verdict on the passage.**
-It is the next move in a scene. Asking what property of a generation caused it
-to be "rejected" presumes a judgement that, most of the time, was not being
-made.
-
-Endorphin's framing — collaboration is real-time, on the fly, with another
-party also working on the fly — is the reading the data supports, and my earlier
-"instrument, not collaborator" was wrong on the evidence as well as in concept.
-A caveat on the concession, since it should not be a free one: this measures the
-*form* of the exchange, not its quality. That 46% of human turns are under 50
-characters shows a call-and-response structure; it does not by itself establish
-that the model was a good partner rather than a well-tuned surface to bounce
-off. What it does establish is that the aggregate sections were answering a
-question nobody in this corpus was asking.
-
-## 11. Where this could go next
-
-~~1. The abandoned branches are preference data.~~ **Chased in §7. Dead.**
-The pairs are rejection sampling, not preference ranking, and the rejected text
-carries no recoverable signal. Not worth another pass in this form.
-
-Still open, reordered after what §7 taught:
-
-1. **The takeover moment.** §7c says 52% of re-rolls end with you writing it
-   yourself, usually after one look. *That* is the labelled event worth
-   modelling: not "which generation is better" but "does this one clear the
-   bar at all". Every AI block in the corpus is implicitly labelled by whether
-   you kept going or took the keyboard, which is ~517k labels rather than 8k
-   pairs, and it does not depend on the branch structure that turned out to be
-   so leaky.
-2. **What you write when you take over.** In 6,944 cases you rejected the
-   model's continuation and immediately wrote your own from the identical
-   context. That is a paired human/model sample from matched prompts — a
-   cleaner comparison than anything in the pair set, and it survives the
-   duplication problem because the human text is what varies.
-3. **Session-level dynamics.** Does the takeover rate rise or fall within a
-   session? Does a long session converge on the model's voice, or on yours?
-4. **The high-temperature regime specifically.** You have 310 stories at
-   temp ≥ 2.2, which is far outside where these models were tuned or
-   evaluated. Whatever is characteristic about model behaviour out there, this
-   may be one of the larger extant samples of it.
-
-A methodological note worth carrying to any future pass, since it has now bitten
-twice: **this corpus punishes the obvious metric.** Both §1 and §7b produced a
-striking, publishable-looking number that turned out to be measuring the tool
-rather than the author — once the text editor, once the duplicate-story habit.
-Run the control that should fail before believing the one that succeeded.
+Dropped, and worth recording as dropped: the abandoned branches as preference
+data (§5). Not worth another pass in this form.

@@ -68,19 +68,20 @@ derived from it is regenerable, so it stays out of git.
 Everything is descriptive statistics over **one person's practice**. It is not a
 sample of anything, and it cannot benchmark models against each other — the way
 the settings changed alongside the models makes those two things inseparable in
-this data. `FINDINGS.md` §3 works through why, and `analysis/PROBES.md` keeps
+this data. `FINDINGS.md` §7 works through why, and `analysis/PROBES.md` keeps
 the tests that killed claims alongside the ones that survived.
 
 ## Status
 
-Register: **open**. Two analysis passes done, no interpretation of the writing
-itself. The second pass chased the most promising lead from the first — the
-abandoned generations as preference data — and killed it; see `FINDINGS.md` §7.
-A third pass (§8) answered three questions Endorphin raised about his own
-procedure; a fourth (§9) went after the takeover moment; a fifth (§10) read one session
-in full and corrected what the takeover measure means. What remains open is
-in §11.
+Register: **open**. `FINDINGS.md` is written under the turn-taking frame: the
+corpus records an exchange, not an authorship. Five passes went into it, and
+the frame arrived last — the first four asked what made a generation good
+enough to keep, and every version of that question came back null or
+artifactual. §§5–7 keep those failures rather than tidying them away, because
+how they failed is the most reusable thing here.
 
-Standing warning, earned twice: **the obvious metric here measures the tool, not
-the author.** Once the text editor, once the habit of duplicating stories. Run
-the control that should fail before believing the one that succeeded.
+Standing warning, earned twice: **the obvious metric measures the tool, not the
+author.** Once the text editor, once the habit of duplicating stories. Both
+times the diagnostic was the same — a control performing as well as or better
+than the treatment. Run the control that should fail before believing the one
+that succeeded.

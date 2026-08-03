@@ -98,8 +98,9 @@ The last one closes the loop on the statute's catch-all clause:
 ## Why this matters to the rest of the analysis
 
 `analysis/TAKEOVER.md` counts a human block following a generation as the author
-"taking the keyboard", and reports a 28.1% rate. `FINDINGS.md` §7c read the
-sibling measure as "none of these, I'll do it" — rejection.
+"taking the keyboard", and reports a 28.1% rate. `FINDINGS.md` §4 covers the
+sibling measure, which an earlier pass read as "none of these, I'll do it" —
+rejection.
 
 This session says that reading is wrong, and the corpus agrees at scale. Across
 all 134,063 human blocks that immediately follow a generation:
@@ -119,13 +120,13 @@ their turn — a cue, a name, a question, a new character walking in. The metric
 is measuring the *rhythm of an exchange* and the earlier sections mislabelled
 that rhythm as dissatisfaction.
 
-This does not overturn the §9 findings — the hazard curve, the dead-air length
+This does not overturn the §1 findings — the hazard curve, the dead-air length
 effect, and the punctuation result all still describe when the author's turn
 arrives. It overturns what the arrival *means*. "When does the human step in
 because the model failed" was the wrong question; "when does the turn pass
 back" is the right one, and it is the question an improv scene asks.
 
 It also explains the two null results cleanly. Content does not predict what was
-rewound past (§7b) and does not predict the takeover (§9d) because in a session
+rewound past (§5b) and does not predict the takeover (§1d) because in a session
 shaped like this one, the human turn is not a verdict on the passage. It is the
 next move.
