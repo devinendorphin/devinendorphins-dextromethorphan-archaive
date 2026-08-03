@@ -347,19 +347,30 @@ constraint: surprising, but in key.
 
 ## 5. The October 2025 discontinuity
 
-Two models here are not part of NovelAI's original lineup, and they are easy to
-miss because their story counts are small:
+Two models in this corpus sit outside the NovelAI-trained lineage, and they are
+easy to miss because their story counts are small:
 
-| model | stories | AI characters | active | temperature range |
+| model | stories | AI characters | active | temperature |
 |---|---:|---:|---|---|
 | `glm-4-6` | 62 | **16,164,340** | 2025-10 – 2026-07 | 1.00 – 1.75 |
 | `xialong-v1` | 11 | 651,813 | 2026-04 – 2026-07 | 0.85 and 3.50 |
 
 The character count is the tell. GLM-4.6 is 3.4% of generating stories and
-**5.8% of all model output in the corpus** — a median GLM story carries 129,158
+**5.8% of all model output in the corpus** — its median story carries 129,158
 characters, the largest of any model. These are not stray experiments.
 
-And from October 2025 they are almost the whole practice:
+**What they are.** GLM-4.6 is Z.ai's open-weights 355B Mixture-of-Experts
+model. NovelAI added it as GLM-4.5 on 25 September 2025, updated it to GLM-4.6
+on 1 October, and rolled it to all tiers mid-October. Xialong (夏龍, "Summer
+Dragon") is NovelAI's own 355B finetune *of GLM-4.6*, released 31 March 2026 as
+an Opus exclusive — so the two are one family, not two. Both carry 28,672 tokens
+of context plus an 8,192-token rollover, roughly quadruple Kayra's 8,192.
+
+The corpus dates match the releases to within days: `glm-4-6` first appears in
+2025-10, `xialong-v1` in 2026-04. That is a useful external check on the
+timestamps everything else here rests on.
+
+**And from October 2025 they are almost the whole practice:**
 
 | month | models in use |
 |---|---|
@@ -373,43 +384,66 @@ And from October 2025 they are almost the whole practice:
 | 2026-03 | **glm 3** |
 | 2026-04 | **xialong 6**, clio 2, kayra 1 |
 
-Several things change in the same month, and they are visible in the metadata
-rather than inferred:
+**5a. The experimental sampling regime was thrown out.** This is the sharpest
+change and it is visible in one field. NovelAI stores the sampler pipeline as an
+ordered array, including entries the user has switched off. Its *length* is
+therefore what the client offered, not what the author chose:
 
-- **New models**, with their own presets (`default-glm`, `default-xialong`).
+| model | order-array length | samplers ever enabled |
+|---|---|---|
+| `kayra-v1` | 9 or 11 | typical_p, temperature, top_k, tfs, mirostat, top_p, top_a, cfg, top_g, math1, min_p |
+| `llama-3-erato-v1` | 11 | **math1 (369/374)**, min_p, top_p, temperature, typical_p, mirostat, top_a |
+| `glm-4-6` | **3 or 4** | temperature, top_k, top_p |
+| `xialong-v1` | **4** | temperature, top_k, top_p, min_p |
+
+Erato ran NovelAI's experimental Unified sampler (`math1`) in **369 of 374**
+stories — that was its regime. GLM's array contains three entries *in total*.
+The other samplers are not disabled; they are absent. Whatever the author might
+have wanted, Tail-Free Sampling, Top-A, Typical-P, Mirostat, CFG and the Unified
+sampler stopped being on offer.
+
+The documentation corroborates a narrowed surface from the other direction:
+Banned Tokens are **not available** on GLM-4.6 and Xialong, while System Prompt
+is available **only** on them. Losing logit-level controls and gaining a system
+prompt is the signature of a different serving path — a chat-style API rather
+than the raw-completion access NovelAI's own inference stack gives it. The
+public posts do not describe the infrastructure, so this is inference from the
+feature surface, not a confirmed account.
+
+**5b. Everything else moves at the same boundary.**
+
 - **A new settings schema.** Version 8 first appears 2025-11; `xialong-v1` is
-  v8-only, `glm-4-6` splits v7/v8. Every native model before this sits on v3–v7.
+  v8-only, `glm-4-6` splits v7/v8. Every earlier model sits on v3–v7.
 - **Finer `max_length` granularity.** Values that are not multiples of ten:
   3% of Kayra stories, 28% of Erato, **68% of GLM, 73% of Xialong** — 282, 273,
   258 rather than 250 or 300.
-- **The decryption cliff.** §10 records that losses run 0–7% a month before
-  2025-10 and then 67%, 58%, 74%, 94%, 89%, 93%, 90%. It starts the same month.
+- **The decryption cliff.** §10 records losses of 0–7% a month before 2025-10,
+  then 67%, 58%, 74%, 94%, 89%, 93%, 90%. It starts the same month.
 
 §10 offers "a single damaging event or a client change around October 2025" as
-the two readings of that cliff. The schema bump, the model roster and the
-slider granularity all move together at exactly that boundary, which favours
-the second strongly. The export cannot say whether NovelAI added these models
-or the practice moved to a different client writing the same format — but the
-tooling changed, and the data loss is coincident with the change rather than
-with any gradual decay.
+the two readings of that cliff. The model roster, the sampler surface, the
+schema bump and the slider granularity all move together at exactly that
+boundary, which favours the second strongly.
 
 **Two corrections follow.**
 
 §4a states that the temperature sweeps terminate at 2.5, "which is the slider's
-ceiling". That holds for every NovelAI-native model — Kayra, Erato, Clio,
+ceiling". That holds for every NovelAI-trained model — Kayra, Erato, Clio,
 Euterpe and Krake all top out at exactly 2.5 — but `xialong-v1` runs at **3.5**.
 The ceiling is era-specific, not a fact about temperature.
 
 More consequentially: **`glm-4-6` never exceeds 1.75.** The high-temperature
-habit that §4a and §4b treat as the corpus's most distinctive feature stops
-dead at the platform change. Everything in §4 describes the 2021–2025 native
-era, and the period since is a different regime — bigger sessions, longer
-generations, conventional sampling.
+habit that §4a and §4b treat as the corpus's most distinctive feature stops dead
+at the platform change — which now has a mechanical explanation rather than
+being a change of taste. The samplers that made running hot survivable are the
+ones that disappeared: §4c shows the register/noise border depends on truncation
+running *before* temperature, and GLM offers only `top_k` and `top_p` to
+truncate with. Everything in §4 describes the 2021–2025 native era.
 
 **A note on where these models appear.** They are in the aggregate tables
 (`TABLES.md`, `PROBES.md`, `REGISTER.md`) but drop out of most within-model
-control tables, which impose minimum-n thresholds of 100–500. That is correct
-— 9 generating Xialong stories cannot support a controlled comparison — but it
+control tables, which impose minimum-n thresholds of 100–500. That is correct —
+9 generating Xialong stories cannot support a controlled comparison — but it
 means the controls in §2b, §4b and §9 describe the native era only, and should
 not be read as covering the last nine months of the corpus.
 

@@ -23,8 +23,8 @@ MODEL_NOTES = {
     "clio-v1": ("NovelAI in-house (Clio)", "3B", "2023-05"),
     "kayra-v1": ("NovelAI in-house (Kayra)", "13B", "2023-08"),
     "llama-3-erato-v1": ("Llama 3 70B (Erato)", "70B", "2024-10"),
-    "xialong-v1": ("Xialong", "?", "?"),
-    "glm-4-6": ("GLM-4.6 (external)", "357B MoE", "2025-09"),
+    "xialong-v1": ("Xialong (NovelAI finetune of GLM-4.6)", "355B MoE", "2026-03"),
+    "glm-4-6": ("GLM-4.6 (Z.ai, open weights)", "355B MoE", "2025-10"),
 }
 
 
