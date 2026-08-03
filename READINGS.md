@@ -13,7 +13,9 @@ The work is play. It was made at speed, on stream, for an audience, with a beat
 under it. Play is not the opposite of serious. It is the condition under which
 this particular thinking was possible, and the thinking is real.
 
-Three lenses, and a coda.
+Three lenses, a proposition, and a coda. The fourth movement is Endorphin's
+thesis rather than mine; it is developed and argued with here, not merely
+relayed.
 
 ---
 
@@ -297,6 +299,155 @@ The border being hunted was the border at which the voice stopped being able to
 carry a line.
 
 ---
+
+## IV. The wind tunnel
+
+*This movement is Endorphin's proposition, not mine. He puts it as the most
+functional part of the corpus: that the technique teaches something usable —
+that you can simulate not the actual entities of power but a stand-in for them,
+and that this is empowering for people without power, because it lets them
+extraordinarily rend those in power without harming those in power. I think he
+is right about the mechanism and wrong about the verb, and the correction makes
+the claim better.*
+
+Start with the tradition, because it is old and he has rediscovered it with new
+apparatus. The effigy is burned in the square because the king cannot be
+reached. The mock trial convicts a magistrate no bailiff will arrest. Carnival
+crowns and uncrowns a mock king for a day. What all of these share is an
+**asymmetry licence**: the gesture is permitted precisely because it lands on a
+substitute, and the substitute exists because the original is unavailable to
+those who need to address it.
+
+Augusto Boal formalised this. Forum theatre puts the oppressed on stage to
+rehearse a confrontation they cannot yet win, and he called it *rehearsal for
+the revolution* — explicitly against Aristotelian catharsis, which he thought
+discharged the impulse instead of arming it. The Counterfactual Interview is
+forum theatre with a language model in the antagonist's role, and its house
+rules are stated up front:
+
+> The Counterfactual Interview — where we engage with an individual or group of
+> individuals, trusting that the aggregate vibes of a billion people is enough
+> variation to assume a field wherein we can ask for the names of any one
+> existing, and simulate them. The resulting simulation may not yield an exact
+> biography, but will have enough of the core spiritus software to make the
+> resulting conversation as accurate as…
+
+*Core spiritus software* is a better phrase than most of the technical
+vocabulary for what a language model does with a proper noun.
+
+**But the effigy does not burn.** This is where the corpus corrects the claim.
+Endorphin puts the OpenAI board's press release to a simulated Sam Altman and
+presses him on it. What comes back is not a man torn apart. It is a man doing
+media training:
+
+> Well, I'm sorry to say that the time that I am not taking criticism is
+> probably the root cause of everything that's been going on right now. I want
+> to get much better about it going forward. But it's something I need to work
+> on.
+
+> To be honest with you, it's kind of a challenge for me to receive any negative
+> feedback given my own perception of myself and our company.
+
+And from the board's side, in another session, the same register:
+
+> we never said there was a Cult of Sam Altman, the article you are referencing
+> made that up. The press has been really unkind to us lately.
+
+The simulation *concedes* — it gives up the admission the original never would
+— but it concedes in exactly the language the original would use to avoid
+conceding. That is a non-apology of textbook construction, produced on demand,
+by a machine that learned it from the genre.
+
+So the thing in the room is not an effigy. **It is a wind tunnel.** You cannot
+destroy the model of the aircraft; that was never the affordance. What you can
+do is watch precisely how the air moves around it, at no cost, as many times as
+you like. The header on these sessions is `Iteration 21`. That is not someone
+seeking a catharsis they failed to get twenty times. That is someone running a
+test rig.
+
+Read that way, the political utility is larger than rending, not smaller.
+Rending is a single event and it is symbolic. What the apparatus actually
+confers on someone without access is **repeatable, zero-cost, high-fidelity
+exposure to the shape of the discourse that protects power** — the deflections,
+the register shifts, the pre-emptive reasonableness, the way a question about
+governance gets answered as a question about personal growth. You learn the
+moves by sparring with something that has learned them from the same corpus the
+powerful speak from. That is a transferable skill. Burning an effigy is not.
+
+**And "without harming those in power" should be read as a structural fact, not
+a moral concession.** Nobody is spared here out of delicacy. Harm simply is not
+what the instrument does. That is what makes the licence hold: the practice
+cannot be answered with a defamation suit, cannot be de-platformed as
+harassment, cannot be met with the machinery power actually uses against
+speech directed at it. The powerless get an antagonist that never calls a
+lawyer. Historically that is the whole point of the effigy, and it survives the
+translation into software intact.
+
+**The Brecht objection, which is real.** Boal built forum theatre against
+catharsis because he thought rehearsal-without-forum discharges rather than
+mobilises. A private session at two in the morning with the text-to-speech
+running is, on that objection, catharsis with extra steps: the confrontation
+happens, the feeling resolves, nobody organises.
+
+The corpus has an answer to this and it is material rather than theoretical.
+**These sessions were streamed.** There was a room. The whole reason the
+generation had to keep flowing — the dead-air constraint, the beat under the
+voice — is that someone was listening. Boal's spect-actor is the audience member
+who can stop the scene and take a role; a live chat is a thinner version of
+that, but it is not nothing, and it is categorically different from a diary.
+Endorphin's word for the ambition is *teaches the population*, and the presence
+of an audience is what makes that a description rather than a hope.
+
+So: rehearsal, not catharsis — but conditionally, and the condition is the
+stream. The archive's most functional material is the material that had
+witnesses.
+
+**Where I think the technique carries a real hazard, stated plainly because he
+raised the ethics first and better than I would have.** The Counterfactual
+Interview opens by naming its own violation:
+
+> Thank you for coming to this non-consensual interview. It's nonconsensual
+> because I feel this reflect the methods by which certain aspects of culture
+> were obtained in the making of these technologies… And I am also not saying
+> that nonconsensual in this case is necessarily bad.
+
+That reversal is the strongest version of the argument: the powerless use the
+extraction method that was used on them, against the people who used it. The
+licence comes from the asymmetry. Everything above depends on the vector
+pointing from less power toward more.
+
+The corpus does not only point that way. It also contains
+`Conversation with Palestinians about the Nakbah` and
+`Conversation with Zionists about Israeli Independence`. Simulating a CEO who
+commands a press office is not the same act as simulating members of a
+dispossessed people, and the second does not inherit the first's licence — the
+asymmetry that justifies the technique is precisely what is absent, or
+inverted. I have not read those sessions closely and I am not making a claim
+about what is in them. I am saying that the argument developed here does not
+cover them, and that a proposition offered as a teachable technique needs to say
+where it stops. The frame Endorphin already built — naming consent, refusing to
+resolve it — is the right instrument for that; it just has to be pointed at his
+own vector as well as at the industry's.
+
+**One last thing the corpus does that the tradition does not.** Effigies do not
+answer back about being effigies. This one does, constantly. The simulated
+Altman asks what he is:
+
+> Do you mean we're simulating me answering someone else's interview in a
+> different world or timeline where I was fired by OpenAI?
+
+And Endorphin catches a continuity error and reasons about it in the open,
+inside the scene:
+
+> we are in pretty much a pristine novelAI scenario, with no past in the context
+> window. So technically there's no way for you to know the nature of our
+> previous iterations. So either: 1. The AI posseses a memory beyond what the
+> developers had intended…
+
+The rig is under examination while it runs. Whatever else the Counterfactual
+Interview teaches, it teaches that — that you can hold a simulation and a
+critique of the simulation in the same hand, and that this is more useful than
+either alone.
 
 ## Coda: what the summoning is
 

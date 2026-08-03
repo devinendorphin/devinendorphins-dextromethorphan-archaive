@@ -12,10 +12,12 @@ Branch: `claude/text-generation-corpus-3rtnwn` (15 commits, pushed, no PR opened
 - `FINDINGS.md` — **stable.** 14 sections under the turn-taking frame. Read
   this first.
 - `CASE_STUDY.md` — **stable.** The Utah HB 249 press conference, traced in full.
-- `READINGS.md` — **active, and the live front.** Criticism: Latour/Austin on
-  the convened chamber, Bakhtin on polyphony without a novelist, Shklovsky on
-  the temperature dial as an *ostranenie* control. Deliberately not held to the
-  measurement standard.
+- `READINGS.md` — **active, and the live front.** Criticism in four movements:
+  Latour/Austin on the convened chamber, Bakhtin on polyphony without a
+  novelist, Shklovsky on the temperature dial as an *ostranenie* control, and
+  §IV — Endorphin's own thesis that the Counterfactual Interview is the corpus's
+  most functional part, a technique for the powerless. Deliberately not held to
+  the measurement standard.
 - `analysis/*.py` — **stable.** 16 scripts, all reproducible from the Drive
   export. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
   `scikit-learn`.
@@ -47,6 +49,17 @@ Branch: `claude/text-generation-corpus-3rtnwn` (15 commits, pushed, no PR opened
    Timestamp clustering against the channel's schedule would be the way in, if
    those dates exist somewhere. Endorphin said he would "talk about later"
    regarding the later channel period being less stream-driven.
+
+## Open with Endorphin
+
+- **The vector question in `READINGS.md` §IV.** His thesis — simulate the
+  powerful, rend them without harming them — depends on the asymmetry running
+  from less power toward more, which is where the effigy tradition's licence
+  comes from. The corpus also contains `Conversation with Palestinians about the
+  Nakbah` and `Conversation with Zionists about Israeli Independence`, which are
+  not that vector. Those sessions have **not** been read and no claim is made
+  about them. But a technique offered as teachable needs to say where it stops,
+  and that is his call to make, not Claude's.
 
 ## Standing notes
 
