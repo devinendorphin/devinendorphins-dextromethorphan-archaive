@@ -23,6 +23,7 @@ The name is the name.
 
 ```
 FINDINGS.md              the writeup — read this
+CASE_STUDY.md            one session traced in full — the press conference
 analysis/
   fetch_export.py        mirror the Drive export locally
   extract.py             story JSON -> stories.jsonl + blocks.jsonl
@@ -33,6 +34,7 @@ analysis/
   stopping.py            what actually ends a retry run
   register.py            rare-word vs non-word by sampler order; enter-chains
   takeover.py            what makes the author stop pressing enter and type
+  trace.py               render one story's live path turn by turn
   TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md REGISTER.md TAKEOVER.md  generated
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)
@@ -75,8 +77,9 @@ Register: **open**. Two analysis passes done, no interpretation of the writing
 itself. The second pass chased the most promising lead from the first — the
 abandoned generations as preference data — and killed it; see `FINDINGS.md` §7.
 A third pass (§8) answered three questions Endorphin raised about his own
-procedure; a fourth (§9) went after the takeover moment. What remains open
-is in §10.
+procedure; a fourth (§9) went after the takeover moment; a fifth (§10) read one session
+in full and corrected what the takeover measure means. What remains open is
+in §11.
 
 Standing warning, earned twice: **the obvious metric here measures the tool, not
 the author.** Once the text editor, once the habit of duplicating stories. Run

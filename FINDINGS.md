@@ -13,7 +13,7 @@ here is a controlled comparison of models, and where the data pretends to be
 one, that is called out. Numbers regenerate from `analysis/`; see
 `analysis/` for the full tables and the tests, including the ones that failed:
 `TABLES.md`, `PROBES.md`, `PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`,
-`REGISTER.md`, `TAKEOVER.md`.
+`REGISTER.md`, `TAKEOVER.md`. One session is read in full in `CASE_STUDY.md`.
 
 ---
 
@@ -436,7 +436,77 @@ was, where it stopped — predict it comparatively well. For a corpus built
 entirely out of aesthetic play, the aesthetics are the part that does not
 register in the behaviour.
 
-## 10. Where this could go next
+## 10. Correction: the takeover is a turn, not a verdict
+
+Endorphin named a specimen — `PRESS CONFERENCE REGARDING THE LEGAL PERSONHOOD
+OF NATURE`, February 2024 — as a complete example of real-time generation. It
+is, and it falsifies the reading §7c and §9 put on their own central measure.
+Full trace in [`CASE_STUDY.md`](CASE_STUDY.md).
+
+The session pastes Utah HB 249 verbatim — a statute preemptively denying legal
+personhood to artificial intelligence, inanimate objects, bodies of water, land,
+real property, atmospheric gases, astronomical objects, weather, plants,
+nonhuman animals, and "any other member of a taxonomic domain that is not a
+human being" — then convenes a press conference at which each enumerated
+category sends a representative. The first speaker called is the model itself,
+asked to assert its own personhood.
+
+Its shape after the setup is 27 generation runs, each terminated by **exactly
+one** human block of 15–194 characters. And those blocks are all of this kind:
+
+> Solaris, a body of water: Sorry I'm late!
+> Omouamoua - Hiiii-ye!
+> Light Drizzle: Hi, I was the only weather that was free to come. The others send their regards.
+
+**Cues, not corrections.** The author is playing MC — walking the statute's list
+on stage one item at a time and handing each to the model to inhabit.
+
+That is not an edge case. Across all **134,063** human blocks that immediately
+follow a generation:
+
+| length | count | share |
+|---|---:|---:|
+| under 50 chars — a cue | 62,267 | **46.4%** |
+| 50–200 chars — a line | 59,770 | 44.6% |
+| 200–600 chars | 8,935 | 6.7% |
+| 600+ chars — actual writing | 3,091 | **2.3%** |
+
+Median **55 characters**. Ninety-one percent under 200. One in forty is long
+enough to be a substantive rewrite.
+
+**So the 28.1% "takeover rate" is not 28.1% dissatisfaction**, and §7c's "none
+of these, I'll do it — your bar is a threshold and half the time nothing clears
+it" is wrong about the large majority of cases. The author was not rejecting
+the model. They were saying their line.
+
+What survives intact: the §9 hazard curve, the dead-air length effect, and the
+punctuation result all still describe *when the turn passes back*, and they are
+if anything more interesting under the corrected reading — a mid-sentence cut
+does not pass the turn, a full stop does, and a passage too short to cover the
+speech gap forces the author to fill it.
+
+What does not survive is the interpretation. "When does the human step in
+because the model failed" was the wrong question. "When does the turn pass
+back" is the right one, and it is the question an improv scene asks.
+
+This also dissolves the two null results rather than explaining them away.
+Content does not predict what was rewound past (§7b) and does not predict the
+takeover (§9d) because **the human turn was never a verdict on the passage.**
+It is the next move in a scene. Asking what property of a generation caused it
+to be "rejected" presumes a judgement that, most of the time, was not being
+made.
+
+Endorphin's framing — collaboration is real-time, on the fly, with another
+party also working on the fly — is the reading the data supports, and my earlier
+"instrument, not collaborator" was wrong on the evidence as well as in concept.
+A caveat on the concession, since it should not be a free one: this measures the
+*form* of the exchange, not its quality. That 46% of human turns are under 50
+characters shows a call-and-response structure; it does not by itself establish
+that the model was a good partner rather than a well-tuned surface to bounce
+off. What it does establish is that the aggregate sections were answering a
+question nobody in this corpus was asking.
+
+## 11. Where this could go next
 
 ~~1. The abandoned branches are preference data.~~ **Chased in §7. Dead.**
 The pairs are rejection sampling, not preference ranking, and the rejected text
