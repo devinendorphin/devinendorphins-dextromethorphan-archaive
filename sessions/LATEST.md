@@ -1,23 +1,30 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-04**, `sessions/2026-08-04-the-setting-he-built.md`
-Prior: `sessions/2026-08-04-office-of-interpretation.md`,
+Last session: **2026-08-04**, `sessions/2026-08-04-the-external-clock.md`
+Prior: `sessions/2026-08-04-the-setting-he-built.md`,
+`sessions/2026-08-04-office-of-interpretation.md`,
 `sessions/2026-08-04-unknown-guest-in-his-voice.md`,
 `sessions/2026-08-04-nakbah-zionists-unknown-guest.md`,
 `sessions/2026-08-04-readings-qualitative-pass.md`,
 `sessions/2026-08-03-nai-corpus-first-analysis.md`
-Branch: `claude/text-generation-corpus-3rtnwn` — **fully merged.** PR #2
-(`469c504`) and **PR #3 (`99892d3`)** both landed on `main` on 2026-08-04.
+**The repo is PUBLIC** as of 2026-08-04, Endorphin's decision, made with the
+scraping consideration explicitly put to him: *"i am prepared to be scraped."*
+The corpus itself is still not committed — see the open question below.
+
+Branch: `claude/text-generation-corpus-3rtnwn` — PR #2 (`469c504`) and PR #3
+(`99892d3`) both landed on `main` on 2026-08-04; six commits since.
 The branch is merged history: **restart it from `origin/main` for anything
 further, open a new PR, and never stack on it or reuse #2 or #3.**
 PR #1 (`collect_transcripts.py`, opened 2026-05-31) is a separate workstream,
 still open, untouched by any of this.
 
-08-04 ran in five parts: an entirely qualitative pass (no script, no corpus);
+08-04 ran in six parts: an entirely qualitative pass (no script, no corpus);
 a 17-file pull of the Nakbah/Zionist forks; **the full 2,016-file
 mirror**, which showed the repo had been reading the small end of the archive;
-a short pass locating the Jesus talk show; and a read of the rest of the LaHaye
-document, which cost §IV and §VI more than it cost §VII. `corpus/` is gitignored — no prose entered git and none should. The
+a short pass locating the Jesus talk show; a read of the rest of the LaHaye
+document, which cost §IV and §VI more than it cost §VII; and finally **the first
+measurement work in six sessions** — the Twitch catalogue, the sweep procedure,
+the pasted-text screen, and §VIII. `corpus/` is gitignored — no prose entered git and none should. The
 mirror died with the container; refetch ids are below.
 
 ## State
@@ -37,8 +44,9 @@ mirror died with the container; refetch ids are below.
   elevator session on Kayra, where the model disintegrates, §VI, the same test
   on GLM-4.6, which does not, and §VII, the Unknown Guest. Deliberately not held
   to the measurement standard.
-- `analysis/*.py` — **stable.** 16 scripts, all reproducible from the Drive
-  export. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
+- `analysis/*.py` — **stable.** 19 scripts. `episodes.py`, `sweeps.py` and
+  `pasted.py` (2026-08-04) run off committed data and need no mirror;
+  `episodes.py` needs `tesseract`. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
   `scikit-learn`.
 - `analysis/*.md` — **generated.** Regenerate, do not hand-edit.
 - `data/` — **stable.** Settings metadata only, no prose committed.
@@ -251,6 +259,21 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
    some are already lost; and OCR titles carry sidebar noise.
 
 ## Open with Endorphin
+
+- **Should the corpus go into the now-public repo?** Claude's README line said it
+  should not, resting half on an unchecked assumption that the repo was private —
+  it was. Real numbers: 1,004 MB across 2,016 files, 258 MB gzipped, against a
+  3.0 MB git history; GitHub blocks single files over 100 MB. **Unapplied
+  proposal:** commit only the ~30–40 documents `READINGS.md` actually quotes
+  (≈60 MB), which would make the readings verifiable and preserve the two
+  uploads that currently exist nowhere. A GitHub Release asset would carry the
+  full tarball without entering git history. His call; he has said he is prepared
+  to be scraped.
+- **Was it the model or the names?** His own doubt about the Pynchon × Tingle
+  amalgams — *"I might have been just their names."* Three causes were loaded at
+  once: names in the Author's Note, verbatim prose samples in Memory, a different
+  model at a temperature NovelAI could not reach. **Separable in his own
+  archive**; the four-cell experiment has not been run.
 
 - **The vector question in `READINGS.md` §IV — now read, see §VII.** The
   Nakbah and Zionist sessions turned out to be **one document**, seventeen forks
