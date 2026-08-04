@@ -238,10 +238,17 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
    whether anything happened that month (client switch, subscription change,
    migration). The schema/roster/sampler evidence favours a client change, but
    the causal link to the encryption failures is still circumstantial.
-5. **Identify the streamed sessions.** No stream markers exist in the data.
-   Timestamp clustering against the channel's schedule would be the way in, if
-   those dates exist somewhere. Endorphin said he would "talk about later"
-   regarding the later channel period being less stream-driven.
+5. **~~Identify the streamed sessions.~~ ANSWERED 2026-08-04.** Endorphin
+   supplied a Drive folder of 83 screenshots of the Twitch Video Producer
+   dashboard, captured 2025-03-01 before the YouTube migration. `analysis/
+   episodes.py` OCRs them into `data/EPISODES.tsv` — **1,492 of 1,604 broadcasts
+   (93%), 2020-11-27 .. 2024-12-25** — and joins them to story edits.
+   **Story edits land on broadcast days at 1.76x chance** (514 observed vs 292
+   under 1,000 circular shifts of the broadcast calendar, p = 0.001), and
+   **13 stories are named outright in episode titles**, `Sydney Bing
+   RE:Sequences` alone across 27 episodes. See `analysis/EPISODES.md`.
+   Remaining: episode numbering reaches 1646 against 1,604 surviving videos, so
+   some are already lost; and OCR titles carry sidebar noise.
 
 ## Open with Endorphin
 

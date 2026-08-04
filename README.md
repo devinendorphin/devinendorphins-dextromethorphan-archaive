@@ -42,14 +42,16 @@ analysis/
   handover.py            what the author writes when they override the model
   handoff.py             why a bare `Name:` works — convention or scene-tracking
   trace.py               render one story's live path turn by turn
+  episodes.py            OCR the Twitch dashboard; test it against story edits
   TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md
   REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md
-  DIRECTION.md HANDOVER.md HANDOFF.md                       generated
+  DIRECTION.md HANDOVER.md HANDOFF.md EPISODES.md            generated
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)
   INDEX.tsv              the export's own manifest, 2,500 stories
   MISSING.md             the 483 that would not decrypt, and when they died
   FAILED_STORIES.txt     their ids, in the shape NovelAI support would want
+  EPISODES.tsv           1,492 broadcasts recovered by OCR, 2020-11 to 2024-12
 ```
 
 ## Reproducing
@@ -73,6 +75,9 @@ python3 analysis/tempo.py out --report analysis/TEMPO.md
 python3 analysis/direction.py out --report analysis/DIRECTION.md
 python3 analysis/handover.py out --report analysis/HANDOVER.md
 python3 analysis/handoff.py out --report analysis/HANDOFF.md
+python3 analysis/episodes.py corpus/twitch \
+    --out data/EPISODES.tsv --join data/stories_meta.jsonl \
+    --titles data/INDEX.tsv > analysis/EPISODES.md      # needs tesseract
 ```
 
 `blocks.jsonl` comes out around 524 MB — every revision's full text. Everything
