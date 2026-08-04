@@ -1,20 +1,21 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-04**, `sessions/2026-08-04-office-of-interpretation.md`
-Prior: `sessions/2026-08-04-unknown-guest-in-his-voice.md`,
+Last session: **2026-08-04**, `sessions/2026-08-04-the-setting-he-built.md`
+Prior: `sessions/2026-08-04-office-of-interpretation.md`,
+`sessions/2026-08-04-unknown-guest-in-his-voice.md`,
 `sessions/2026-08-04-nakbah-zionists-unknown-guest.md`,
 `sessions/2026-08-04-readings-qualitative-pass.md`,
 `sessions/2026-08-03-nai-corpus-first-analysis.md`
 Branch: `claude/text-generation-corpus-3rtnwn` — **PR #2 merged to `main`**
-on 2026-08-04 (`469c504`); eight commits since, restarted from `origin/main`.
+on 2026-08-04 (`469c504`); eleven commits since, restarted from `origin/main`.
 Restart it from `origin/main` again for anything further, open a **new** PR, and
 never stack on the merged history or reuse #2.
 
-08-04 ran in four parts: an entirely qualitative pass (no script, no corpus);
+08-04 ran in five parts: an entirely qualitative pass (no script, no corpus);
 a 17-file pull of the Nakbah/Zionist forks; **the full 2,016-file
 mirror**, which showed the repo had been reading the small end of the archive;
-then a short pass locating the Jesus talk show and rebuilding §VII's mechanic
-argument. `corpus/` is gitignored — no prose entered git and none should. The
+a short pass locating the Jesus talk show; and a read of the rest of the LaHaye
+document, which cost §IV and §VI more than it cost §VII. `corpus/` is gitignored — no prose entered git and none should. The
 mirror died with the container; refetch ids are below.
 
 ## State
