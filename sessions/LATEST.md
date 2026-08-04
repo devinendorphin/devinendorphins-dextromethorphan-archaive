@@ -218,8 +218,11 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   fidelity to how power *deflects*. That is a claim about what he was doing, and
   he is the one who knows whether the later sessions still felt like
   reconnaissance or had turned into something else.
-- **§VII is wrong as written and Endorphin has supplied the correction; it has
-  NOT been applied.** He rejects "degeneration" outright: *"it is not
+- **§VII has been rewritten in Endorphin's voice (2026-08-04) — the §IV form.**
+  The degeneration paragraph is withdrawn, not softened, and the withdrawal is
+  argued from §III's own rule (*a disintegrated offer is still an offer*). What
+  follows is the record of how it got there; the disagreements marked below are
+  still live. He rejects "degeneration" outright: *"it is not
   degeneration thats just like saying the computer shut down while we are still
   running the simulation. the unnammed guest is the beast of all holocausts."*
   His reading: the Unknown Guest is the spirit of a slow-burn erasure, the
