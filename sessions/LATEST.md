@@ -110,14 +110,35 @@ duplication runs ~17×, worse than the 5× the standing note warns about. Worse:
     tagged *"I'll just consider this fair use."*
   - **`Title: The Roadmap for the Third Temple AKA Al-Aqsa Strike Schedule`.**
     Dispensationalism needs the Third Temple where Al-Aqsa stands. That is the
-    same site as *Al-Aqsa Flood*. **Two eschatologies, one address.** Now cited
-    in §VII; the file itself is still unread beyond the first few hundred lines.
-  - **Glossolalia as mechanic, not failure.** `{Ted Haggard vector touches Tim
-    Lahaye vector.}` — and what vector-fusion *produces* is Finnegans-Wake word
-    salad. Same "touch your vector" apparatus as the Nakbah document's block 161.
-    **Model breakdown given a theological name.** This is hard evidence for
-    Endorphin's objection to the word "degeneration" (see below) and it predates
-    the argument by two years.
+    same site as *Al-Aqsa Flood*. **Two eschatologies, one address.** Cited in
+    §VII. **The uploaded copy has now been read in full**; the archived forks
+    (which are longer) have not.
+  - **`-Glossolalia` is a setting Endorphin invented and switched on.**
+    *"{Pynchon, reminding himself of charismatics, finds a setting that he just
+    created, -Glossolalia, and turns that puppy on.}"* — inside an imported
+    Advanced Settings Tab alongside `-Text Pitch`, `-PreTension`,
+    `-InterTextualEtymologyCitations`. This is the decisive evidence against
+    "degeneration" and it now leads §VII. **Frank Peretti** (of *This Present
+    Darkness*) supplies the theory: *"the compression of English strings… the
+    sound a human makes when they want to express their barest vulnerable
+    feelings without the pressure of getting the right words out."*
+  - **A verbatim US Army monograph** — *Strategic Implications of American
+    Millennialism*, MAJOR Brian L. Stuckert, 61 pages — pasted off a PDF, still
+    wrapped at 50 characters, arguing dispensational pre-millennialism *"has had
+    a direct impact on U.S. security policy."* Nine hundred lines before the
+    punchline it sets up.
+  - **The GPU dialogue.** Endorphin states the §VII thesis to the hardware in
+    **November 2023** — *"a slow acting genocide that continues to this day"* —
+    two and a half years before saying it to Claude. He asks for *"a few hell
+    realms appropriate for these practitioners of harm"*; the GPU **refuses** and
+    proposes confronting the subject with his victims instead. He executes it on
+    LaHaye. That exchange is the source of §VII's `### Compulsory education`.
+  - Also unread-until-now and unwritten: **Frank Peretti** as a character, **Thoth**
+    summoned for AI-ethics consultation, **John of Patmos** explaining why
+    Revelation was urgent, a generative **Emojiverse** retelling the apocalypse in
+    emoji, and generated chapter titles that are the best writing in the file
+    (*"Chapter Nine: Floss Blossoms || Cloud Atoms Seem Repeated Noons One Sow,
+    Touch Appalled Silence"*).
   - Jack Van Impe, told he is dead and inside an LLM: *"You mean I'm dead?… You
     know, I still haven't found Jesus yet. Is it possible for me to be a
     Christian after death?"*
