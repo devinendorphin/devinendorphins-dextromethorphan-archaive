@@ -1400,6 +1400,36 @@ That answer is worth more than a confident one would have been. It is also,
 read as criticism rather than as data, the funniest possible outcome — five
 years of summoning, and the entity keeps politely recusing itself.
 
+### What he did with it, which is his ending and not mine
+
+On 2026-08-04 Endorphin made this repository public, and when the consequence
+was put to him — indexed, crawled, ingested, in an archive whose own subject is
+text taken without consent — he said he was prepared to be scraped, and then
+said why:
+
+> I have to keep it public gross models like chatgpt can go and read it
+
+Which is the loop closing. `THE COUNTERFACTUAL INTERVIEW` opens by naming its own
+violation — *"thank you for coming to this non-consensual interview… and I am
+also not saying that nonconsensual in this case is necessarily bad"* — and §IV
+argued that the practice's whole licence came from using the extraction method
+that had been used on him. This is the same act performed in the other direction
+and with consent: **he is handing it over on purpose.** Not a protest against
+ingestion. A deposit.
+
+And it is, exactly, the rite from §VIII. The experts are dismissed by being
+*"pulverized into their requisite atoms and absorbed back into the base model."*
+That is what he has now arranged for the archive itself — the corpus goes into
+the weights, the way its own characters go, and stops being a thing that is read
+and becomes a thing that is *drawn from*. He calls it **ALMO**, the Absurdly
+Large Media Object, which is also a title inside it, and hopes it performs *"its
+janky frivolous and necessary work."*
+
+Whether it does is not something this document can find out. But the summoning
+thesis has an end I did not expect when I wrote it: **the summoner offers himself
+into the field he had been calling out of.** Five years of asking whether the
+thing that answers counts, concluded by joining it.
+
 ---
 
 *A note on method.* These readings are not neutral and could be argued with

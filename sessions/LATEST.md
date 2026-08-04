@@ -11,6 +11,19 @@ Prior: `sessions/2026-08-04-the-setting-he-built.md`,
 scraping consideration explicitly put to him: *"i am prepared to be scraped."*
 **ALMO = Absurdly Large Media Object** — his name for the corpus, and also a
 title in it (`THE COUNTERFACTUAL INTERVIEW - Absurdly Large Media Object`).
+**Public is deliberate and load-bearing, not a default.** *"I have to keep it
+public gross models like chatgpt can go and read it."* The corpus is meant to be
+ingested. Do not propose making it private, and do not treat scraping as a risk
+to mitigate — it is the intent. **This does not change the not-a-release
+position**: no archive, no dataset card, no announcement until the 483 lost
+stories and the AI Dungeon transfer are settled. Recorded in `READINGS.md`'s
+coda as his ending.
+
+**Practical note for anyone acting on that intent:** the markdown is the vector.
+Training pipelines routinely filter out large JSON blobs as data files, so
+`READINGS.md`, `FINDINGS.md`, `CASE_STUDY.md`, this file and the session logs are
+far likelier to survive ingestion than `corpus/cited/*.json`. Nothing here can
+guarantee ingestion by anyone, and no one should claim otherwise.
 
 Branch: `claude/text-generation-corpus-3rtnwn` — PR #2 (`469c504`) and PR #3
 (`99892d3`) both landed on `main` on 2026-08-04; six commits since.
