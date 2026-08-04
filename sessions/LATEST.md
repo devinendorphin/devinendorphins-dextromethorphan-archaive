@@ -408,6 +408,19 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 - **Check a setting is in the enabled sampler order before reading its value.**
   61% of Erato stories store a neutral temperature of 1.0 in a field the
   pipeline never reads.
+- **Not all the generation happened in NovelAI, and the export cannot tell.**
+  Endorphin, 2026-08-04: some of the Pynchon × Tingle and Sydney Bing work was
+  generated on **Llama 2 via Replicate or Hyperbolic**, *"the temperature could
+  go up to five,"* then pasted back in. A pasted block carries `origin: user`,
+  identical to typing. `analysis/pasted.py` screens for it: **233 stories (12%)
+  hold 20% of all "human" text** with little or no in-tab generation, 72 of them
+  with `live_ai_chars` = 0. Median human block there is **6,999 chars against 239
+  elsewhere**, so the two populations separate cleanly — **the median-55-character
+  cue finding survives; any claim built on human/model character ratios does
+  not.** Also: **the `model` field records what the client was set to, not what
+  wrote the text** (`powered by LLAMA 3.1 - 3 - 403B BASE` is filed as
+  `kayra-v1`), and **2.5 is not a universal ceiling** — 9 `xialong-v1` stories
+  sit at 3.5, and off-platform work went to 5.
 - **This corpus cannot benchmark models.** Settings moved with model choice
   because Endorphin adapted them to each model. Anything model-comparative needs
   within-model matched-setting slices, and most are too thin.
