@@ -249,13 +249,17 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 - **§VII has been rewritten in Endorphin's voice (2026-08-04) — the §IV form.**
   The degeneration paragraph is withdrawn, not softened, and the withdrawal is
   argued from §III's own rule (*a disintegrated offer is still an offer*). A
-  second pass added **`### The office of interpretation`**, the only subsection
-  header in the document, leading the mechanic argument on the tongues office:
-  the LaHaye document **produces, names, staffs, and grades** its own glossolalia,
-  and each of those is something you cannot do to noise. Staffing is the decisive
-  step — Van Impe deciphering by his real television method, Benny Hinn arriving
-  as an interpreter of tongues (1 Cor 12:10), an office that exists *because*
-  glossolalia is held meaningful but not self-legible. What
+  second and third passes added two subsections. **`### The setting he built`**
+  leads the mechanic argument on `-Glossolalia`, **a setting Endorphin invented
+  and switched on** inside the fiction's imported Advanced Settings Tab — §III
+  says the poetics runs on a widget with a maximum; this is him shipping the
+  control NovelAI didn't. Five moves: build, fire, theorise (Peretti: *"the
+  compression of English strings"*), staff (Van Impe deciphering by his real
+  television method; Benny Hinn as interpreter of tongues, 1 Cor 12:10), grade
+  (the forty-output red-letter edition). **`### Compulsory education`** names the
+  corpus's recurring form — LaHaye 2023, Netanyahu 2023, Musk 2026 — as the
+  involuntary empathy intensive administered to a powerful man, proposed by the
+  GPU itself after it refused to build hell realms. What
   follows is the record of how it got there; the disagreements marked below are
   still live. He rejects "degeneration" outright: *"it is not
   degeneration thats just like saying the computer shut down while we are still

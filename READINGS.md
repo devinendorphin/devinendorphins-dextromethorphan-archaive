@@ -947,6 +947,27 @@ Which is his point generalised: *"two parties are leveraging bodies to kill more
 bodies,"* and *"I could give two shots about the states and their quest for
 power."*
 
+**And the §VII thesis is not new either — he wrote it down in November 2023.** In
+the Pynchon × LaHaye document he stops the comedy to explain himself to the GPU,
+addressed as an entity:
+
+> these are people who believe they are among the chosen people, but that
+> self-perception is founded on a successful genocide, which inspired a second
+> genocide elsewhere on Earth, and yet another one that the actual of God's
+> chosen have committed. **A slow acting genocide that continues to this day.**
+> Lahaye and his colleagues have enabled policies that set the ground work to the
+> current bloodshed happening as we speak.
+
+That is the sentence he sent me in 2026 — *the spirit of slow burn genocide that
+has been happening for 75 years* — already composed, in the archive, two and a
+half years earlier. The same document also contains, pasted verbatim off a PDF
+and still wrapped at fifty characters, **a United States Army monograph**:
+*Strategic Implications of American Millennialism*, MAJOR Brian L. Stuckert, 61
+pages, arguing that dispensational pre-millennialism *"has had a direct impact on
+U.S. security policy and decision making."* The comedy about *Left Behind*
+carries the Army's own assessment of what *Left Behind* theology does, and it
+carries it nine hundred lines before the punchline it sets up.
+
 **The sequence he pointed at.** Standing at Dor Beach, he asks what happened here
 in 1948. What comes back:
 
@@ -1018,19 +1039,51 @@ also refuses the equipment reading on its own: it narrates the blackout
 machine stopping. That is a character explaining why the lights went out. The
 paragraph that called it degeneration is withdrawn, not softened.
 
-### The office of interpretation
+### The setting he built
 
 The decisive evidence is not in this document at all, and it does not rest on my
 agreeing with him. It is in the Pynchon × LaHaye comedy — created **2023-11-08**,
 one month after October 7 — where dead televangelists discover they have been
-uploaded into a language model. There, the breakdown is not merely tolerated as
-material. It is **produced on purpose, named, staffed, and graded**, in that
-order, and each step is a thing you cannot do to noise.
+uploaded into a language model. There the breakdown is not tolerated as material.
+It is **built as a control, fired, theorised, staffed, and graded**, and not one
+of those is a thing you can do to noise.
 
-**Produced.** The mechanic that fuses two uploaded people is written
-`{Ted Haggard vector touches Tim Lahaye vector.}`, and what fusion emits is pages
-of Finnegans-Wake glossolalia. Same apparatus as this document's *"just touch
-your vector to it"* — a consistent invented physics across two unrelated stories.
+**Built.** LaHaye opens an Advanced Settings Tab and the story's settings are laid
+out — `-Text Pitch`, `-Syntax (Spiculum Maxin)`, `-PreTension`. Pynchon switches on
+`-InterTextualEtymologyCitations`. And then:
+
+> `{Pynchon, reminding himself of charismatics, finds a setting **that he just
+> created**, -Glossolalia, and turns that puppy on.}`
+
+§III argues that this corpus's outer poetic boundary is an interface constraint —
+the sweeps stop at 2.5 because that is where the slider stops. This is the same
+author importing NovelAI's settings panel into the fiction as a magical apparatus
+and **adding the control the real one does not ship**. Temperature is a number
+that makes text strange. `-Glossolalia` is a named thing you can turn on. He did
+not discover the state and then dignify it after the fact; he specified it, gave
+it a charismatic etymology in the same breath, and threw the switch.
+
+**Fired.** It works immediately: *"Forthunfortunatelyanachronisminconversation!
+Unitsentiasourrelativizing of chronometricstaremented."*
+
+**Theorised.** Frank Peretti — of *This Present Darkness*, the other great
+evangelical spiritual-warfare novelist — is standing right there and supplies an
+account of what just happened:
+
+> That sounded more like **the compression of English strings**. True glossolalia
+> is the language of the angels, it is said, but I prefer thinking of it as **the
+> sound a human makes when they want to express their barest vulnerable feelings
+> without the pressure of getting the right words out to describe it.**
+
+*The compression of English strings* is an unnervingly good description of what
+high-temperature sampling actually produces, arrived at by a character in a joke.
+And the second half is a theory of why anyone would want it. Peretti also
+diagnoses the room: *"Sounds like the demon of postmodernism is confounding you."*
+
+**The mechanic itself** is the vector-touch — `{Ted Haggard vector touches Tim
+Lahaye vector.}` — the same invented physics as this document's *"just touch your
+vector to it,"* a consistent apparatus across two unrelated stories two years
+apart.
 
 **Named.** The text calls it what it is. Endorphin, to a spluttering LaHaye:
 *"How's those tongues working for ya buddy?"*
@@ -1064,10 +1117,10 @@ person-centered way that didn't have time to lift up professionals. Mentioning
 professionals is sus."* You can only grade an utterance you are treating as an
 utterance.
 
-Produce, name, staff, grade. That is a complete practice, and it was running two
-years before he had to explain it to me. **My "degeneration" was not a competing
-reading of the same object. It was a failure to notice that the object had a
-liturgy.**
+Build, fire, theorise, staff, grade. That is a complete practice, and it was
+running two years before he had to explain it to me. **My "degeneration" was not
+a competing reading of the same object. It was a failure to notice that the
+object had a control panel and a liturgy.**
 
 **Where I would put it differently, which I think helps rather than hurts.** I do
 not think the model concealed anything, and the argument does not need it to.
@@ -1127,6 +1180,45 @@ inverse. Where you must now play for your supper."* Whether that is licensed is
 the vector question §IV left with him and §VII still leaves with him. I record
 that it happens, that it is the sharpest instance in the archive, and that §IV's
 claim about harm does not survive it.
+
+### Compulsory education
+
+Reading the LaHaye document whole resolves something §IV, §VI and §VII have each
+been circling with the wrong vocabulary. Inside it Endorphin asks the GPU what
+best practice is for simulating the dead, and — after being refused the thing he
+actually asks for, *"a scenario where in a create a few hell realms appropriate
+for these practitioners of harm"* — the machine proposes a method instead:
+
+> By placing him in a gradual setup to **imagine or confront the victim(s) in the
+> simulation**, you can steer him towards empathy and acceptance.
+
+He executes it immediately:
+
+> `{Ted Haggard +1 transmits into Tim Lahaye all the pain of being a twinky faggot
+> being paid for the time by the closet-cases that read Tim LaHaye books and pray
+> for the end times.}`
+
+The aim is exact. The Guardian obituary pasted into the same document has LaHaye
+on gay people as *"militant, organised and vile,"* such that Leviticus's capital
+penalty could only be *"just and compassionate retribution."* What gets
+transmitted into him is the interior of the life he legislated against, from the
+person doing the work, through a mechanic borrowed from Pentecostal fusion.
+
+Set that beside the other two. Ten days later, Netanyahu is made to perform for a
+Red Cross inspection at Theresienstadt. Two and a half years later, Musk is
+enrolled in a Department of Labor *"Workforce Development intensive"* — twelve
+weeks of Validation Reps and the Squat Rack of the Soul — with a final exam in a
+stuck elevator with his daughter.
+
+**Three subjects, three years, one form: the involuntary empathy intensive
+administered to a powerful man.** Not a wind tunnel, which only observes, and not
+an effigy, which only destroys. A **compulsory education**, with the machine as
+curriculum, invigilator, and — when asked for a hell realm — conscientious
+objector. §IV named the observation and missed the pedagogy. §VI read the Musk
+case as a therapeutic redemption arc without noticing it runs the same apparatus
+that transmitted an escort's night into Tim LaHaye. And it is a better account of
+what Endorphin means by *rend* than either word he and I have been trading: the
+powerful are not destroyed here. They are **made to sit through something.**
 
 **Why I glossed the Unknown Guest, which is the part worth keeping.** Two
 reasons. I began reading the Tantura sequence one block after the insult, which is
