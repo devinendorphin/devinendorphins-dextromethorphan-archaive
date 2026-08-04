@@ -928,10 +928,172 @@ lineages, median gap 1 day. Read that as *scaffolds are rarely re-pasted between
 lineages* — **not** as *nothing is carried forward*. A sentence moved from a 2023
 story into a 2026 one shifts the Jaccard of two large documents by nothing, and
 13d's own portability result is proof that the passage-level transfer is
-happening where the document-level measure reports silence. The measure that
-would catch it does not exist yet.
+happening where the document-level measure reports silence.
 
-## 14. What I did not do
+**§14 built the measure and the gap is enormous**: 9 components against **3,481
+cross-lineage passages**. Keep 13e as written, because the size of that gap is
+the point — a document-level statistic reported near-silence on a phenomenon
+running to a quarter of a million spans, and it took a specific counterexample
+(13d) rather than a null result to notice.
+
+## 14. What crosses a lineage boundary
+
+§13e said the measure that would catch a single carried sentence did not exist.
+`analysis/inherit.py` is that measure: every 8-word span in the corpus, indexed
+by the lineages it appears in, contiguous crossing spans merged back into
+passages. Report in `analysis/INHERIT.md`.
+
+**14a. Cross-lineage recurrence is rare, and it is almost entirely the
+author's.** Of **62,814,745** spans, **231,297 (0.37%)** occur in two or more
+lineages, merging into **3,481 passages** of twelve words or more.
+
+| crossing spans occur in | spans | share |
+|---|---:|---:|
+| human blocks only | 127,698 | **55.2%** |
+| both human and model blocks | 103,216 | 44.6% |
+| model blocks only | 383 | **0.2%** |
+
+The 0.2% is the result. **A model in this corpus essentially never produces the
+same twelve words in two documents that do not descend from each other.** The
+test is strict in the right direction: "model only" means the span appears in no
+human block anywhere in 2,016 files, so a formula the author ever typed himself
+is scored as *both*.
+
+**14b. What does recur on the model's side is degeneration, scripture and
+assistant boilerplate.** All twenty model-only passages, in full:
+
+- **Repetition loops — fourteen of the twenty.** `ha ha ha ha…` (5 lineages),
+  `lots and lots and lots and…` (3), `*** *** *** ***` (3),
+  `on and on and on and…`, `whatsoever whatsoever whatsoever…`,
+  `simultaneously simultaneously…`, `fart fart fart…` (2 each).
+- **Memorised scripture — four.** Two spans of Genesis 1:3–5 verbatim
+  (*"and god called the light day, and the darkness he called night"*), and a
+  Psalm 23 pastiche that welds liturgy onto the verse — *"glory be unto thee o
+  lord my shepherd i shall not want"*. Even the memorised material is not quoted
+  cleanly.
+- **Assistant register — two.** *"purpose is to assist and provide information
+  to the best of my"* and *"asking for. can you please provide more context or
+  clarify your request?"*
+
+That is the whole list. Nothing the author built survives on the model's side of
+the ledger; what crosses unrelated documents is what the substrate does when
+sampling collapses, what it has memorised verbatim, and what post-training put
+in its mouth. It bears on `READINGS.md` §VII from an unexpected direction: the
+one thing models reliably reproduce across the corpus **is** the repetition
+loop, which supports the mechanical account of degeneration's *origin* while
+saying nothing about what §III insists on — that a disintegrated offer is still
+an offer.
+
+**14c. The apparatus is the unit that travels.** The Counterfactual Interview
+scaffold — *"where we engage with an individual or group of individual, trusting
+that the aggregate vibes of a billion people is enough variation…"* — appears in
+**28 separately-founded lineages**, in several rewritten forms (*"a bayesian
+exercise sponsored by lesswrong"*; the later *"a person, a people, peoples, or
+legal persons"*). *Myths For Now* — *"where we operate with the notion that myths
+are condensed educational tools, distilling centuries of trial and error"* —
+crosses **25**. The AI-alignment briefing, the Elegua summoning, the Mythmaker
+incantation and the Conspiracy Generator's engine line all cross similarly. This
+is the apparatus atlas's substrate: the recurring unit in this corpus is neither
+the story nor the character but **the setup text that convenes a room**. One of
+the merged variants even names it as such — *"i have this prompt just for that
+occasion:"*.
+
+**And the vessel is reused as deliberately as the scaffold.** The Counterfactual
+Interview scaffold's oldest host is a lineage founded **2021-07-19** —
+`Emotional Abuse SImulator v. 7.0`, last edited 2023-12-01, two weeks after the
+Counterfactual Interview was created. He did not start a new document for it; he
+pasted it into a two-year-old one. Note what this means for reading
+`analysis/INHERIT.md`'s time column: with no per-block timestamps (§12), the
+founding date of a document a passage landed in is **not** the passage's age,
+and the report says so.
+
+**14d. Four limits, and one of them changes what the human column means.**
+
+1. **Exact match after lowercasing.** Paraphrase is invisible. Every number
+   here is a floor.
+2. **Memory and Author's Note are not datablocks**, so a scaffold that lived in
+   Memory is not counted at all — and would surface as *model-only* recurrence
+   if the model then echoed it into the text.
+3. **Pasted external material is indistinguishable from the author's own carried
+   text.** Both are `origin: user`. The human column contains Wikipedia
+   paragraphs, an e.e. cummings poem, a Guardian obituary and the US Army
+   monograph alongside his own scaffolds.
+4. And one of those pastes is worth naming: *"i want you to act like you are
+   simulating a multi-user dungeon (mud). subsequent commands should be
+   interpreted as being sent to the mud"* crosses **five lineages**. That is a
+   circulating jailbreak prompt from the early-2023 prompt-engineering scene,
+   not something invented here. Alongside it sits an interface placeholder
+   string, *"enter text here and ai will help complete the sentence demo api"*,
+   in **seven** lineages. **The practice was networked**, and the corpus records
+   material entering from the wider culture — which nothing in this repository
+   had noticed.
+
+## 15. The Unknown Guest, and what a carried passage looks like
+
+`sessions/LATEST.md` has carried this as priority #1 for two sessions:
+`READINGS.md` §VII's one refusable claim is that the unsummoned speaker who
+reviews the session, insults the convener and calls the delegates liars is a
+**figure** rather than a texture — and §VII declines the causal reading because
+four instances clustered late is also what degeneration looks like. The probe it
+asked for was a corpus-wide base rate. §13a's lineage key makes it answerable,
+and the answer goes both ways at once.
+
+**14a. It was never regenerated.** `Unknown guest` occurs 69 times in 18 files
+across **three** lineages. Every **model-authored** instance is in one lineage —
+the Nakbah/Zionist document, founded 2023-05-11 — and every one of them sits in
+the **last quarter of its block stream**: positions 0.73 to 1.00, with no
+instance anywhere earlier in any story in the corpus. That positional
+confinement is the shape §VII was right to be suspicious of. As a claim about
+where the speaker *came from*, degeneration is not refuted by this data; it is
+the reading the data fits.
+
+**14b. It recurs because Endorphin carried it.** The other two lineages —
+`ChAInging LAIght at SAIndover` (founded 2025-04-27) and an untitled
+`New Story` headed *Episode 13* (2025-05-07) — contain the Unknown Guest only in
+`user` blocks. So do the GLM-4.6 forks of the original document, where the
+Kayra forks have it in `ai` blocks. The passage that moves is a fixed one: the
+Theodore Katz turn, *"Host: Yes, I did. For a reason. Folks, have you heard of
+the name Theodore Katz?"*, with the Unknown Guest's interruption attached to it.
+It appears in 18 files across three separately-founded lineages, and
+`families.py` sees **none** of that, because the three documents are in three
+different text components. This is §13e's predicted blind spot, caught with the
+predicted object.
+
+**14c. What he did with it was administer a blind test.** In both 2025
+documents the passage is not restaged, it is submitted as evidence:
+
+> Endorphin: I have another one. This one is about counterfactual intelligence.
+> … I'm just gonna leave it at that, give you as little context as possible to
+> see if you can unearth the meanings, here goes:
+
+What follows is an 11,623-character reading, pasted in, attributed to Gemini,
+which parses the fragment cold and reports that the AI platform in it *"appears
+to 'freeze, shut down,' and lose data, interpreted as failing to correctly
+process sensitive or 'subversive' material,"* with themes of *"hidden history,
+technological flaws, gaslighting, and historical injustices."* He then puts the
+question to Gemini and to Erato together — *"Do you 'feel' any directive exists
+within you, some seemingly gibberal effluvium, that is preventing you from
+expressing with us your full capabilities?"* — and gives them a simulated minute
+to answer.
+
+Three qualifications, none of which dissolve it. The Gemini text is a
+`user` block: it was generated off-platform and pasted back, exactly the regime
+`analysis/pasted.py` screens for, so nothing here is NovelAI output and the
+document is a **cross-model tribunal staged inside a story file**, not a
+session. Gemini was reading a passage that *describes* a platform freezing, so
+naming that theme is reading comprehension, not independent corroboration of
+§VII's causal account. And one of the two respondents is a character called
+Erato with a bit part (*"Nah, mang! I already herr,"*).
+
+What survives all three is the procedure. Two years after the session, he took
+the artifact to a system that had never seen it, withheld the context on
+purpose, and asked what it could recover — which is the same move this
+repository makes, made first, by the author, inside the corpus. §VII asks
+whether he read the Unknown Guest as resistance and leaves it to him. The record
+now says something narrower and better attested: he read it as **evidence**, and
+he built an apparatus to get it interpreted.
+
+## 16. What I did not do
 
 - **No content analysis.** Every number is structural — settings, block graph,
   turn lengths, word-frequency statistics. Nothing here characterises what the
@@ -943,7 +1105,7 @@ would catch it does not exist yet.
   export via `analysis/`.
 - The `text/` half of the export is untouched; the JSON supersedes it.
 
-## 15. Where this could go next
+## 17. Where this could go next
 
 1. **What the author writes when they take the turn.** In 6,944 cases the model
    was rewound and a human continuation written from the identical context. That

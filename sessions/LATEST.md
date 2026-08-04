@@ -244,15 +244,15 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 ## Top priorities for next session
 
-1. **Count the Unknown Guest corpus-wide.** §VII's one refusable claim is that
-   the unsummoned speaker is a *figure* rather than a texture. Four instances in
-   878 blocks is not a background hum but it is four, and they cluster late where
-   degeneration lives. The probe: base rate of unnamed/uninvited speakers per
-   1,000 live blocks, corpus-wide, split by model and by position-in-session, with
-   the press conference (which is full of them) as the high-water control. If the
-   rate is flat and positional, §VII's figure is a temperature artifact and the
-   section should say so. **Needs the full ~1 GB mirror**; this container only ever
-   held 17 files.
+1. **~~Count the Unknown Guest corpus-wide.~~ ANSWERED 2026-08-04**, FINDINGS
+   §15 — see the standing note below. Both ways at once: positionally confined
+   exactly as feared (every model-authored instance at 0.73–1.00 of one
+   lineage's block stream), and carried forward by hand into two later lineages
+   where Endorphin submitted it to Gemini as a blind specimen. **The remaining
+   piece of the original probe was not run**: the base rate of *unnamed or
+   uninvited speakers in general* per 1,000 live blocks, with the press
+   conference as the high-water control. §15 counts the phrase, not the
+   phenomenon, so "an off-roster speaker is rare" is still unmeasured.
 2. **Keep reading.** `READINGS.md` is one pass over about eight stories out of
    2,016. The convened-speech genre alone — AI Alignment Interviews,
    Counterfactual Interviews, the press conferences, the DIVINE JAVITS CENTER
@@ -468,6 +468,27 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   groups.** `created_at` is *ancestry* and the Jaccard component is *divergence* —
   a lineage in two components is a real bifurcation (GROK: 29 forks created
   2023-11-17 02:39:18, split kayra/erato 13 vs erato/GLM 16), so keep both.
+- **The model reproduces nothing the author built.** `analysis/inherit.py`
+  (2026-08-04, FINDINGS §14) indexes every 8-word span by lineage: 231,297 of
+  62.8M spans cross a lineage boundary, and **only 0.2% of those occur in model
+  blocks alone** — 20 passages, fourteen of them repetition loops, four
+  memorised scripture, two assistant boilerplate. Cross-lineage recurrence is
+  the author's carrying, or material that changed hands. **The recurring unit is
+  the setup text that convenes a room**: the Counterfactual Interview scaffold
+  is in 28 separately-founded lineages. And the corpus is **not a closed
+  system** — an early-2023 MUD jailbreak prompt crosses five lineages, an
+  interface placeholder seven.
+- **~~Count the Unknown Guest corpus-wide.~~ ANSWERED 2026-08-04** (FINDINGS
+  §15). 69 occurrences, 18 files, three lineages. **Every model-authored
+  instance is in the 2023-05-11 lineage at position 0.73–1.00 of its block
+  stream** — the positional signature §VII feared. It recurs elsewhere only
+  because Endorphin carried the Theodore Katz passage by hand into two 2025
+  lineages, where it is `user`-origin. **And what he did with it was submit it
+  to Gemini with the context withheld** — *"give you as little context as
+  possible to see if you can unearth the meanings"* — then paste the reading
+  back and ask Gemini and Erato whether they feel engineered limitations. He
+  read it as evidence and built an apparatus to get it interpreted. §VII's
+  question is answered without either side losing.
 - **Never group by story id in this corpus.** Duplicating a story in NovelAI
   copies its whole branch history, so the same text lives under many story ids.
   Group by connected components of shared text. Raw counts routinely inflate 5×.

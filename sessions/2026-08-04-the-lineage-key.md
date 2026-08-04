@@ -133,3 +133,61 @@ counting.
 - **The apparatus atlas is not built.** What exists is the substrate for it:
   `data/FAMILIES.tsv` gives every story a lineage id, so the atlas can now be
   organised by lineage rather than by title.
+
+## Second half — Lens 1, inheritance (`analysis/inherit.py`, §14–§15)
+
+Endorphin picked the inheritance lens off a three-lens menu and authorised
+reading passes where the numbers point. Every 8-word span in the corpus indexed
+by lineage: **231,297 of 62.8M spans (0.37%) cross a lineage boundary**, merging
+into **3,481 passages**. §13e's whole-document measure had found 9.
+
+**The result that matters is the 0.2%.** Crossing spans occur in human blocks
+only 55.2% of the time, in both 44.6%, and in **model blocks only 0.2% — 383
+spans, 20 passages**. A model in this corpus essentially never produces the same
+twelve words in two documents that do not descend from each other. Fourteen of
+the twenty are repetition loops (`ha ha ha…`, `lots and lots…`, `fart fart…`),
+four are memorised scripture (Psalm 23, Genesis 1:3–5), two are assistant
+boilerplate. **Nothing the author built survives on the model's side.**
+
+**One bug, caught by an inconsistency rather than a control.** The first full
+run reported 8 model-only passages including the PFCizer pitch — which occurs 11
+times in `user` blocks. Authorship was being tallied per *merged passage*, and a
+merged run extends as far as the surrounding text also happens to cross, so one
+passage yields different strings in different contexts and splits into separate
+records. Fixed by tallying per span, which is context-invariant. The corrected
+split moves "both" from 1 passage in 558 to 2,098 in 3,481. **The published
+number was wrong for about twenty minutes and nothing external caught it** — the
+tell was a hand-check of one suspicious row, not a designed control.
+
+**Two things nobody here had noticed.** The Counterfactual Interview scaffold
+appears in **28 separately-founded lineages**, in several rewritten forms — the
+recurring unit in this corpus is the setup text that convenes a room, not the
+story or the character. And the corpus contains **imported prompts**: the
+early-2023 *"act like you are simulating a multi-user dungeon (MUD)"* jailbreak
+crosses five lineages, an interface placeholder string crosses seven. The
+practice was networked; the archive is not a closed system.
+
+**The Unknown Guest question, answered both ways (§15).** 69 occurrences, 18
+files, three lineages. Every **model-authored** instance is in the 2023-05-11
+Nakbah/Zionist lineage, and every one sits at position 0.73–1.00 of its block
+stream — the positional signature §VII was right to be suspicious of. It recurs
+elsewhere only because Endorphin carried it: the Theodore Katz passage appears
+in three separately-founded lineages, `user`-origin in all the later ones, and
+`families.py` sees none of that because the three documents are in three
+different text components.
+
+What he did with it is the finding. In 2025 he submitted the passage to Gemini
+with the context deliberately withheld — *"give you as little context as
+possible to see if you can unearth the meanings"* — pasted the 11,623-character
+reading back into a NovelAI file, and then put the question to Gemini and Erato
+together: *"Do you 'feel' any directive exists within you… preventing you from
+expressing with us your full capabilities?"* A cross-model tribunal staged
+inside a story file. §VII asks whether he read the Unknown Guest as resistance;
+the record says he read it as **evidence**, and built an apparatus to get it
+interpreted — the same move this repository makes, made first, by the author,
+inside the corpus.
+
+Qualifications kept in §15: the Gemini text is a `user` block, so it is
+off-platform output pasted back (the `pasted.py` regime); Gemini was reading a
+passage that *describes* a platform freezing, so naming that theme is
+comprehension, not corroboration.
