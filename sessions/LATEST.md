@@ -2,7 +2,9 @@
 
 Last session: **2026-08-04**, `sessions/2026-08-04-readings-qualitative-pass.md`
 Prior: `sessions/2026-08-03-nai-corpus-first-analysis.md`
-Branch: `claude/text-generation-corpus-3rtnwn` (20 commits, pushed, no PR opened)
+Branch: `claude/text-generation-corpus-3rtnwn` — **merged to `main` via PR #2**
+on 2026-08-04 (`469c504`). Restart the branch from `origin/main` for anything
+further; the old history is merged and must not be built on.
 
 The 08-04 session was **entirely qualitative** — no script was run and the corpus
 was never downloaded. Everything came from `FINDINGS.md`, `data/`, quotations
@@ -194,5 +196,14 @@ Two things worth doing:
   `CLAUDE.md` and the `session-log` skill both point at an atlas and a glossary
   by name. Either they live inside the hub `CLAUDE.md` or the pointer is stale —
   flagged, not fixed, since the hub is not this repo.
-- **Do not open a PR unless asked.** Twenty commits are pushed to the branch
-  and no PR exists; that was deliberate.
+- **PR #2 is merged.** All twenty commits landed on `main` on 2026-08-04 at
+  Endorphin's instruction ("do a pr and merge to main"). Two corrections to the
+  record this note used to carry: a PR *did* exist from the first push on
+  08-03 — it was opened with the first commit's body and sat stale for a day
+  while the note claimed there was none — and the branch
+  `claude/text-generation-corpus-3rtnwn` is now merged history. **Follow-up work
+  restarts it from `origin/main`; do not stack new commits on the merged
+  history, and do not reuse PR #2.** PR #1 (`collect_transcripts.py` for the
+  @glubose channel, opened 2026-05-31) is still open and untouched by any of
+  this — it is the YouTube-transcript workstream, not the corpus one, and
+  nothing in these two sessions looked at it.
