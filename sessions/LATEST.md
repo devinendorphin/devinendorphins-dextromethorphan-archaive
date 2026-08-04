@@ -1,18 +1,19 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-04**, `sessions/2026-08-04-nakbah-zionists-unknown-guest.md`
-Prior: `sessions/2026-08-04-readings-qualitative-pass.md`,
+Last session: **2026-08-04**, `sessions/2026-08-04-unknown-guest-in-his-voice.md`
+Prior: `sessions/2026-08-04-nakbah-zionists-unknown-guest.md`,
+`sessions/2026-08-04-readings-qualitative-pass.md`,
 `sessions/2026-08-03-nai-corpus-first-analysis.md`
 Branch: `claude/text-generation-corpus-3rtnwn` — **PR #2 merged to `main`**
-on 2026-08-04 (`469c504`); two commits since, restarted from `origin/main`.
+on 2026-08-04 (`469c504`); five commits since, restarted from `origin/main`.
 Restart it from `origin/main` again for anything further, open a **new** PR, and
 never stack on the merged history or reuse #2.
 
-08-04 ran in two halves. The first was **entirely qualitative** — no script, no
-corpus, everything from `FINDINGS.md`, `data/`, quotations extracted on 08-03,
-and one file Endorphin uploaded. The second pulled **17 of the 2,016 story files**
-down for the first time (the Nakbah/Zionist forks) and read them. `corpus/` is
-gitignored; no prose entered git and none should.
+08-04 ran in three parts: an entirely qualitative pass (no script, no corpus);
+a 17-file pull of the Nakbah/Zionist forks; and finally **the full 2,016-file
+mirror**, which showed the repo had been reading the small end of the archive.
+`corpus/` is gitignored — no prose entered git and none should. The mirror died
+with the container; refetch ids are below.
 
 ## State
 
@@ -107,9 +108,8 @@ duplication runs ~17×, worse than the 5× the standing note warns about. Worse:
     tagged *"I'll just consider this fair use."*
   - **`Title: The Roadmap for the Third Temple AKA Al-Aqsa Strike Schedule`.**
     Dispensationalism needs the Third Temple where Al-Aqsa stands. That is the
-    same site as *Al-Aqsa Flood*. **Two eschatologies, one address** — this is
-    the through-line Endorphin was assembling across this session and the
-    strongest available spine for the §VII rewrite.
+    same site as *Al-Aqsa Flood*. **Two eschatologies, one address.** Now cited
+    in §VII; the file itself is still unread beyond the first few hundred lines.
   - **Glossolalia as mechanic, not failure.** `{Ted Haggard vector touches Tim
     Lahaye vector.}` — and what vector-fusion *produces* is Finnegans-Wake word
     salad. Same "touch your vector" apparatus as the Nakbah document's block 161.
