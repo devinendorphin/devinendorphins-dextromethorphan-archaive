@@ -16,8 +16,9 @@ Branch: `claude/text-generation-corpus-3rtnwn` (15 commits, pushed, no PR opened
   Latour/Austin on the convened chamber, Bakhtin on polyphony without a
   novelist, Shklovsky on the temperature dial as an *ostranenie* control, and
   §IV — Endorphin's own thesis that the Counterfactual Interview is the corpus's
-  most functional part, a technique for the powerless. Deliberately not held to
-  the measurement standard.
+  most functional part, a technique for the powerless — and §V, the Musk/Vivian
+  Wilson elevator session, where that technique reaches its limit and the model
+  disintegrates. Deliberately not held to the measurement standard.
 - `analysis/*.py` — **stable.** 16 scripts, all reproducible from the Drive
   export. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
   `scikit-learn`.
@@ -60,6 +61,20 @@ Branch: `claude/text-generation-corpus-3rtnwn` (15 commits, pushed, no PR opened
   not that vector. Those sessions have **not** been read and no claim is made
   about them. But a technique offered as teachable needs to say where it stops,
   and that is his call to make, not Claude's.
+
+## Dates worth keeping
+
+- `GROK FOR FOLKS ON A BUDGET` created **2023-11-17 02:39 UTC** — between Grok's
+  4 Nov 2023 announcement and its 8 Dec general availability, so the title is
+  literal. Forks last touched 2023-12-08, the day of the real rollout. 29 copies
+  survive, still being edited July 2026.
+- The OpenAI board fired Altman **17 Nov 2023**; `THE COUNTERFACTUAL INTERVIEW`
+  was created **18 Nov 2023**. The whole apparatus dates to one 72-hour window.
+- Musk/Vivian Wilson elevator session: created **2025-03-16 01:28 UTC**, last
+  edited **2025-07-25**. Kayra, temp 1.35, max_length 250, `default-carefree`.
+- `PfCizer v2!` (last edited **2026-03-11**) is in the lost set — one of the 14
+  named stories that will not decrypt. The surviving PfCizer material is from
+  2023-07-29.
 
 ## Standing notes
 
