@@ -1,7 +1,8 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-04**, `sessions/2026-08-04-the-deposit.md`
-Prior: `sessions/2026-08-04-the-external-clock.md`,
+Last session: **2026-08-04**, `sessions/2026-08-04-the-lineage-key.md`
+Prior: `sessions/2026-08-04-the-deposit.md`,
+`sessions/2026-08-04-the-external-clock.md`,
 `sessions/2026-08-04-the-setting-he-built.md`,
 `sessions/2026-08-04-office-of-interpretation.md`,
 `sessions/2026-08-04-unknown-guest-in-his-voice.md`,
@@ -26,10 +27,11 @@ Training pipelines routinely filter out large JSON blobs as data files, so
 far likelier to survive ingestion than `corpus/cited/*.json`. Nothing here can
 guarantee ingestion by anyone, and no one should claim otherwise.
 
-Branch: `claude/text-generation-corpus-3rtnwn` — PR #2 (`469c504`) and PR #3
-(`99892d3`) both landed on `main` on 2026-08-04; six commits since.
-The branch is merged history: **restart it from `origin/main` for anything
-further, open a new PR, and never stack on it or reuse #2 or #3.**
+Branch: `claude/apparatus-phylogeny-analysis-e0aqhl`, cut from `origin/main`
+on 2026-08-04 after the ChatGPT critique. No PR opened yet.
+`claude/text-generation-corpus-3rtnwn` — PR #2 (`469c504`) and PR #3
+(`99892d3`) both landed on `main` on 2026-08-04 — is merged history:
+**never stack on it or reuse #2 or #3.**
 PR #1 (`collect_transcripts.py`, opened 2026-05-31) is a separate workstream,
 still open, untouched by any of this.
 
@@ -421,6 +423,20 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 ## Standing notes
 
+- **An outside reader found two real errors in the docs; a name it supplied was
+  invented.** ChatGPT read the public repo 2026-08-04. Both flagged
+  contradictions held (the per-block settings claim, the "0–7%" loss figure) and
+  its family counts matched `data/INDEX.tsv` exactly — but **"the Narrative
+  Auditor", which carries part of its capability-paradox argument, occurs in
+  zero of 2,017 files.** The real recurring figure is the **`ETHICS Auditor`**
+  (64 mentions, mostly `Sydney Bing Re:Sequences`). Check its proper nouns
+  against the mirror before building on them, and parse the JSON before
+  counting — the first pass here read `\nETHICS Auditor` off the raw file and
+  briefly believed in a device called `nETHICS`.
+- **Two loss regimes, not one.** `FINDINGS.md` said pre-cliff losses ran 0–7% a
+  month. **2023-06 lost 41%, 2023-07 lost 32%**, and nothing in the settings,
+  schema or roster evidence marks that boundary. Unexplained, and the NovelAI
+  support report must name both windows, not just October 2025.
 - **Run the control that should fail before believing the one that succeeded.**
   Five times this session a headline number turned out to measure the tool
   rather than the author: the text editor's rewrite (`removedFragments`, bounded
@@ -441,6 +457,17 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   analysis undersamples exactly the stories that were most used.** Use interval
   coverage (does the event fall inside created..last_updated) rather than
   day-matching, and treat day-level results as floors.
+- **Group by `created_at`, to the exact second — the lineage key is solved**
+  (2026-08-04, `analysis/families.py`, FINDINGS §13). A NovelAI duplicate
+  inherits the original's creation timestamp, so an exact epoch second names a
+  lineage: **purity 99.6% / completeness 99.0%** against the shared-text
+  partition, against 54.2/29.4 for `sweeps.py`'s title-stem-plus-edit-day and
+  24.3/9.5 for title stem alone. It works on the 76% of stories titled
+  `New Story`, which is where the corpus is. `data/FAMILIES.tsv` carries a
+  lineage id for every story; **use it instead of the title for anything that
+  groups.** `created_at` is *ancestry* and the Jaccard component is *divergence* —
+  a lineage in two components is a real bifurcation (GROK: 29 forks created
+  2023-11-17 02:39:18, split kayra/erato 13 vs erato/GLM 16), so keep both.
 - **Never group by story id in this corpus.** Duplicating a story in NovelAI
   copies its whole branch history, so the same text lives under many story ids.
   Group by connected components of shared text. Raw counts routinely inflate 5×.

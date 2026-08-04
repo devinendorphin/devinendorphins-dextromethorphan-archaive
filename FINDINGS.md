@@ -9,8 +9,9 @@ text-to-speech scratchpads and empty stubs.
 What makes this a corpus rather than a folder of stories is the last number:
 **760,611 edit-history blocks.** NovelAI exports the entire undo tree, not the
 finished text. Every generation that was kept, rewound past, or typed over is
-still in the file, stamped with who wrote it, which model made it, and what the
-sampler was set to.
+still in the file, stamped with who wrote it and where it sits in the branch
+history. It is **not** stamped with the model or the sampler settings: those are
+stored once per story, as current state, and §12 works through what that costs.
 
 ## The frame
 
@@ -847,7 +848,90 @@ benchmark.
 - **One file** (`New_Story__eQm-Fkr_ZGaaeaykmh5bu.json`) is truncated at 411
   bytes in Drive itself and cannot be recovered. 2,016 of 2,017.
 
-## 13. What I did not do
+## 13. Lineages
+
+Added 2026-08-04, after an outside reader proposed a phylogeny of the corpus's
+story families and named the ten largest by title. The proposal is right and the
+key is wrong: **1,537 of the 2,016 surviving stories (76%) are titled
+`New Story`**, so a title-stem family covers a quarter of the archive and misses
+most of the largest things in it.
+`analysis/families.py` builds the partition the way `CLAUDE.md`'s
+first standing rule always said to — connected components of shared text, MinHash
+over the full block stream — and reports in `analysis/FAMILIES.md`.
+
+**13a. There is a free key for ancestry, and it is not the title.** A NovelAI
+duplicate inherits the original's creation timestamp, so `created_at` to the
+exact second identifies a lineage. Scored against the text partition:
+
+| key | purity | completeness |
+|---|---:|---:|
+| `created_at` (exact second) | **99.6%** | **99.0%** |
+| title stem + last-edit day (`sweeps.py`'s key) | 54.2% | 29.4% |
+| last-edit day alone | 32.4% | 16.4% |
+| title stem alone | 24.3% | 9.5% |
+
+Purity = the key never joins stories that share no text. Completeness = it never
+splits a lineage. Both are quoted at the loose Jaccard threshold of 0.05, where a
+component means *shares any text at all*; the ordering is identical at 0.3, where
+`created_at` scores 74.4/82.6 and the others 50.4/28.5, 28.1/15.3, 22.1/9.2.
+`created_at`'s numbers fall as the threshold tightens and the others barely move,
+which is the tell: it is not that the key starts joining strangers, it is that a
+strict threshold **splits lineages that diverged**. The two measures are not
+rivals — **`created_at` is ancestry, Jaccard is divergence** — and a phylogeny
+needs both. At 0.3: 726 components, 518 singletons, 1,447 stories in a multi-fork
+lineage, 59 components spanning more than one model.
+
+**13b. The corpus is a year and a half older than the README said.** **163
+stories were founded before 2023** — 39 in 2021, 124 in 2022 — the earliest on
+**2021-06-29**. "March 2023" was the last-edit window mistaken for the corpus.
+The AI Dungeon layer noted in `sessions/LATEST.md` goes back further still, to
+December 2020, on another platform.
+
+**13c. And it has a ten-month hole at the other end.** Of 2,016 surviving
+stories, exactly **two** were founded after **2025-09-19**, both on 2026-07-28
+and 2026-07-29 — the last two days of the export. Between those dates the
+archive records no foundations at all. §12 reads the October 2025 cliff as a
+loss of *edits* from that month on; it is heavier than that. Almost every story
+started in the corpus's final ten months is inside the 483 that will not
+decrypt, so the surviving late material is late *work on old documents*, and any
+claim about what he was starting to build in that period has no evidence base.
+
+**13d. The largest apparatus in the corpus has no title, and it names its own
+engine.** *The Random Conspiracy Generator* runs to **159 stories across 15
+separately-founded lineages, 137 of them untitled** — larger than the Mythmaker
+lineage (92 forks, the biggest single component in the corpus) and invisible to
+every title-based pass this repo has made. Its opening incantation is fixed
+except for
+one slot: *"a device which uses **X**'s penchant for extracting patterns."* X is
+the substrate, and it was rewritten each time the apparatus was re-founded.
+
+| engine named inside the device | forks | lineage founded |
+|---|---:|---|
+| GPT NeoX 20B | 8 | 2023-01-08, 2023-01-10, 2023-03-04 |
+| GPT J 6B | 28 | 2023-03-15 |
+| GPT-4 | 27 | 2023-04-01 |
+| NAI-LM-13B | 64 | 2024-04-09 |
+| Gemini 2.5 Pro Experimental | 3 | 2025-05-30 |
+
+(29 further copies phrase the line differently and are not counted. The GPT-4
+lineage was founded eighteen days after GPT-4 shipped, the same literal-title
+behaviour as `GROK FOR FOLKS ON A BUDGET` between Grok's announcement and its
+release.) Two things follow. The device was **rebuilt, not duplicated** — each
+engine is a fresh `created_at`, so the migration is a re-founding rather than an
+inherited branch. And it is **portable**: it turns up inside the Pynchon ×
+Tingle document (9), `Sydney Bing Re:Sequences` (2) and the
+`Emotional Abuse SImulator` (1), carried in as a passage rather than forked.
+
+**13e. Whole-document overlap cannot see that portability, and this is the
+limit to hold onto.** Only 9 components, 26 stories, join two separately-created
+lineages, median gap 1 day. Read that as *scaffolds are rarely re-pasted between
+lineages* — **not** as *nothing is carried forward*. A sentence moved from a 2023
+story into a 2026 one shifts the Jaccard of two large documents by nothing, and
+13d's own portability result is proof that the passage-level transfer is
+happening where the document-level measure reports silence. The measure that
+would catch it does not exist yet.
+
+## 14. What I did not do
 
 - **No content analysis.** Every number is structural — settings, block graph,
   turn lengths, word-frequency statistics. Nothing here characterises what the
@@ -859,7 +943,7 @@ benchmark.
   export via `analysis/`.
 - The `text/` half of the export is untouched; the JSON supersedes it.
 
-## 14. Where this could go next
+## 15. Where this could go next
 
 1. **What the author writes when they take the turn.** In 6,944 cases the model
    was rewound and a human continuation written from the identical context. That

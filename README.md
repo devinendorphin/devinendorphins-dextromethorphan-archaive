@@ -1,8 +1,9 @@
 # devinendorphins-dextromethorphan-archaive
 
 **What kind of archive this is: a research corpus, in the formal/evidentiary
-register.** Three and a half years of text generation — 2,016 recovered NovelAI
-stories, March 2023 to July 2026 — kept not as finished writing but as an
+register.** Five years of text generation — 2,016 recovered NovelAI stories,
+founded between **June 2021** and September 2025 and edited through July 2026 —
+kept not as finished writing but as an
 instrumented record of how one person actually drove these models. The export
 preserves the full undo tree, so each of 760,611 edit blocks carries who wrote
 it (you or the model) and where it sits in the branch history. That is what

@@ -401,6 +401,48 @@ def report(rows, J, key_labels, text_labels, thresh, out):
         f"**{len(crossers)} components span more than one model**, covering "
         f"{sum(c[0] for c in crossers)} stories.",
         "",
+        "## Lineages that bifurcated",
+        "",
+        "One `created_at` lineage sitting in two or more text components is a "
+        "lineage that **diverged past the threshold** — the forks kept being "
+        "worked until they no longer shared a third of their text. `created_at` "
+        "supplies the ancestry these branches have in common; the Jaccard "
+        "supplies the split. Neither measure finds this alone.",
+        "",
+        "Listed only where **both branches carry two or more forks** — a lineage "
+        "with one stub fork hanging off it is a false start, not a divergence.",
+        "",
+        "| forks | created | branches | each branch: n, models, last-edit span |",
+        "|---:|---|---:|---|",
+    ]
+    for ct, idx in sorted(keyg.items(), key=lambda kv: -len(kv[1])):
+        if len(idx) < 3 or not ct:
+            continue
+        branches = collections.defaultdict(list)
+        for i in idx:
+            branches[text_labels[i]].append(i)
+        if len(branches) < 2:
+            continue
+        if sorted((len(v) for v in branches.values()), reverse=True)[1] < 2:
+            continue
+        parts = []
+        for _, bidx in sorted(branches.items(), key=lambda kv: -len(kv[1])):
+            rs = [rows[i] for i in bidx]
+            days = sorted(
+                d for d in (editday(r) for r in rs) if d
+            )
+            ms = "/".join(sorted({str(r["model"]) for r in rs}))
+            parts.append(
+                f"**{len(bidx)}** {ms[:34]} {days[0]}..{days[-1]}"
+                if days else f"**{len(bidx)}** {ms[:34]}"
+            )
+        L.append(
+            f"| {len(idx)} | "
+            f"{datetime.datetime.utcfromtimestamp(ct).strftime('%Y-%m-%d')} | "
+            f"{len(branches)} | {' — '.join(parts[:4])} |"
+        )
+    L += [
+        "",
         "## Transplanting between lineages",
         "",
         "A component holding two different `created_at` values is material that "
