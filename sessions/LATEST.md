@@ -147,9 +147,35 @@ duplication runs ~17×, worse than the 5× the standing note warns about. Worse:
   random faith, hear its homily, apply discernment. Sibling of
   `The Random Faith Generator` (12 forks, 1,746 blocks, 715K chars).
 - **`The Dork Forest`** — 2,460 blocks / 2,968,333 chars, talk-show frame.
-- **The Jesus talk-show interview Endorphin asked about is NOT yet located.**
-  Van Impe is found; Jesus-as-guest is not. Look in the untitled Sunday Go To
-  Meeting forks and `The Random Faith Generator` first.
+- **The Jesus talk-show interview: FOUND**, at the **end of the Left Behind
+  document** (the last few hundred lines) — not in the faith-generator stories
+  where Claude first looked. A full variety show: Endorphin Dorkestra, commercial
+  breaks, a Nun and Munch doing "coming up next," applause, *"Folks, here's
+  Jesus!"* Four things in it:
+  - **The dispensationalism indictment, stated plainly by Endorphin in-scene** —
+    *"those who are supporting Israel, namely America, who, operating under
+    dispensational Pre-Millenialism are pouring more money and weapons into
+    Israel… Accusing pro-Palestinian sentiment as anti-Semitism."* The Left Behind
+    comedy ends by naming what Left Behind theology does, in the same file as
+    `The Roadmap for the Third Temple AKA Al-Aqsa Strike Schedule`.
+  - **Independent replication of §VII's mechanism claim.** Asked to be Jesus, the
+    model returns moral appeal interleaved with the same lobby trope the Nakba
+    witnesses produced. Different frame, different figure, same undifferentiated
+    return. Stronger evidence than the Nakbah document alone.
+  - **A generated red-letter edition.** *"(Endorphin steps aside to let the
+    simulated Jesus… take the wheel and output for 40 outputs, which I will number
+    after-the-fact, and can color red if you wanna be biblical about it.)"* What
+    the forty produce is therapeutic boilerplate, which Endorphin grades against
+    the original: *"Jesus said all this better… Mentioning professionals is sus."*
+  - The recusal gesture at its purest: Endorphin starts *"There's no authe…."* and
+    stops; the model, playing Jesus, says **"Jesus is that actually Jesus sitting
+    there?!"**
+- **Glossolalia has a named office in the same document, which ends the
+  degeneration argument.** Jack Van Impe hears the word salad and says *"Oh, I
+  hear something that needs deciphering, let me check it out"* — then decodes it,
+  which was his actual television method. Benny Hinn arrives with **"Knock? Did
+  someone order an interpreter of tongues?"** (1 Cor 12:10). The text does not
+  merely produce breakdown as a mechanic; it **staffs the role for reading it.**
 
 **The mirror is gone.** It lived in `corpus/` in an ephemeral container and is
 gitignored by design. Refetch: json folder id **`1H7mP8VGdwtYK9EGK1IfCcRayNGiSGaDS`**
