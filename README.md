@@ -5,10 +5,17 @@ register.** Three and a half years of text generation — 2,016 recovered NovelA
 stories, March 2023 to July 2026 — kept not as finished writing but as an
 instrumented record of how one person actually drove these models. The export
 preserves the full undo tree, so each of 760,611 edit blocks carries who wrote
-it (you or the model), which model, and at what sampler settings. That
-combination is what makes it a corpus rather than a folder of stories: the
-generations you *rejected* are still in it, next to the ones you kept, next to
-the settings that produced both.
+it (you or the model) and where it sits in the branch history. That is what
+makes it a corpus rather than a folder of stories: the generations you
+*rejected* are still in it, next to the ones you kept.
+
+**What a block does *not* carry is the model and the settings.** Those are
+stored once per story, as current state — the last configuration the story was
+left in, attributed backward to every generation in it. §12 of `FINDINGS.md`
+states the consequence and every settings result in the repo is subject to it.
+An earlier version of this paragraph said each block carried its own model and
+sampler settings; it does not, and the two documents contradicted each other
+until 2026-08-04.
 
 It was not made as research. It was made by playing, for years, with no thought
 toward use. The claim here is that the record is analysable anyway, and that

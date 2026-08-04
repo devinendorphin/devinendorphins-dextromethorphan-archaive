@@ -496,8 +496,11 @@ feature surface, not a confirmed account.
 - **Finer `max_length` granularity.** Values that are not multiples of ten:
   3% of Kayra stories, 28% of Erato, **68% of GLM, 73% of Xialong** — 282, 273,
   258 rather than 250 or 300.
-- **The decryption cliff.** §10 records losses of 0–7% a month before 2025-10,
-  then 67%, 58%, 74%, 94%, 89%, 93%, 90%. It starts the same month.
+- **The decryption cliff.** §12 records a median monthly loss of 1% before
+  2025-10, then 67%, 58%, 74%, 94%, 89%, 93%, 90%, 81%, 88%, 43%. It starts the
+  same month. Note the qualifier: the pre-cliff *median* is 1%, but the pre-cliff
+  months are not uniform — see §12 for the June–July 2023 episode, which is a
+  second event and is not explained by anything here.
 
 §12 offers "a single damaging event or a client change around October 2025" as
 the two readings of that cliff. The model roster, the sampler surface, the
@@ -825,11 +828,22 @@ benchmark.
   channel's early/middle period, is not in the data. Timestamp clustering
   against the channel's schedule would be the way in if those dates exist
   elsewhere.
-- **483 of 2,500 stories will not decrypt**, and not evenly. Before 2025-10,
-  losses run 0–7% a month; from 2025-10 onward: 58%, 74%, 94%, 89%, 93%, 90%.
-  That is a single damaging event or client change around October 2025, not
-  gradual rot. Worth reporting — `data/FAILED_STORIES.txt` is already in the
-  shape NovelAI support would want.
+- **483 of 2,500 stories will not decrypt**, and not evenly. **There are two
+  loss regimes, not one.** From 2025-10 onward every month runs 43–94% lost
+  (67, 58, 74, 94, 89, 93, 90, 81, 88, 43) — that is the cliff, and it is a
+  single damaging event or client change, not gradual rot. But the months before
+  it are not flat either: **2023-06 lost 41% (30 of 74) and 2023-07 lost 32%
+  (18 of 56)**, with 2025-06 at 18%, 2025-08 at 13% and 2024-11 at 10%. The
+  pre-cliff *median* is 1% and 24 of 30 pre-cliff months are at or below 7%,
+  which is what the earlier "0–7% a month" phrasing was reaching for; as written
+  it was false, and it hid a second episode. The 2023 episode is a distinct
+  cluster — it takes down four of the fourteen named losses, including three
+  `Body Electric REDUX` forks and the bell hooks / Valerie Solanas session — and
+  nothing in the settings, schema or model evidence marks that boundary the way
+  §5b marks October 2025. **It is unexplained.** Worth reporting —
+  `data/FAILED_STORIES.txt` is already in the shape NovelAI support would want,
+  and the report should name both windows, because a support team looking only
+  at October 2025 will not find whatever took 2023-06.
 - **One file** (`New_Story__eQm-Fkr_ZGaaeaykmh5bu.json`) is truncated at 411
   bytes in Drive itself and cannot be recovered. 2,016 of 2,017.
 
