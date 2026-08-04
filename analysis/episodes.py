@@ -162,6 +162,71 @@ def broadcast(rows, index_path):
     return hits
 
 
+def coverage(rows, meta_path):
+    """Interval coverage -- the right statistic once you know how stories are kept.
+
+    Endorphin keeps two kinds of story. Some series (`The Dork Forest`,
+    `Sydney Bing RE:Sequences`) are **appended**: every new episode goes into one
+    file so the context keeps building. Others (`Random Conspiracy Generator`)
+    are one-offs, a fresh file each time.
+
+    That wrecks day-level matching. An appended series carries thousands of
+    blocks and exactly one `last_updated_at`, so twenty-seven broadcasts collapse
+    to a single date -- and the stories most often on air are the ones the join
+    can least see. Interval coverage asks the answerable question instead: does
+    the broadcast fall inside the story's life?
+    """
+    by_stem = collections.defaultdict(list)
+    for line in open(meta_path):
+        r = json.loads(line)
+        stem = re.sub(r"\s*\(\d+\)$", "", r["title"]).lower()
+        by_stem[stem].append((
+            datetime.datetime.fromtimestamp(
+                r["created_at"], datetime.timezone.utc).date(),
+            datetime.datetime.fromtimestamp(
+                r["last_updated_at"], datetime.timezone.utc).date(),
+            r["n_blocks"]))
+
+    out = []
+    for stem, forks in by_stem.items():
+        if len(stem) <= 14:
+            continue
+        eps = [d for d, _, ep in rows if stem in ep.lower()]
+        if not eps:
+            continue
+        lo = min(c for c, _, _ in forks)
+        hi = max(u for _, u, _ in forks)
+        inside = sum(1 for d in eps if lo <= d <= hi)
+        out.append((stem, len(eps), inside, lo, hi,
+                    max(b for _, _, b in forks),
+                    len({u for _, u, _ in forks})))
+    return sorted(out, key=lambda r: -r[1])
+
+
+def shape(meta_path):
+    """The append/one-off split, as block count against distinct edit-days."""
+    by_stem = collections.defaultdict(list)
+    for line in open(meta_path):
+        r = json.loads(line)
+        stem = re.sub(r"\s*\(\d+\)$", "", r["title"]).lower()
+        by_stem[stem].append((
+            datetime.datetime.fromtimestamp(
+                r["created_at"], datetime.timezone.utc).date(),
+            datetime.datetime.fromtimestamp(
+                r["last_updated_at"], datetime.timezone.utc).date(),
+            r["n_blocks"]))
+    buckets = {"appended (>=1000 blocks)": [], "one-off (<200 blocks)": []}
+    for forks in by_stem.values():
+        blocks = max(b for _, _, b in forks)
+        span = (max(u for _, u, _ in forks) - min(c for c, _, _ in forks)).days
+        days = len({u for _, u, _ in forks})
+        key = ("appended (>=1000 blocks)" if blocks >= 1000
+               else "one-off (<200 blocks)" if blocks < 200 else None)
+        if key:
+            buckets[key].append((span, blocks, days))
+    return buckets
+
+
 def report(r):
     def line(label, obs, null):
         mean = sum(null) / len(null)
@@ -184,6 +249,7 @@ def main():
     ap.add_argument("--out", type=pathlib.Path, help="write the episode index")
     ap.add_argument("--join", help="stories.jsonl or data/stories_meta.jsonl")
     ap.add_argument("--titles", help="data/INDEX.tsv -- which stories went to air")
+    ap.add_argument("--coverage", help="data/stories_meta.jsonl -- interval coverage")
     args = ap.parse_args()
 
     rows = episodes(args.shots)
@@ -202,6 +268,23 @@ def main():
         for story in sorted(hits, key=lambda s: hits[s][0][0]):
             eps = hits[story]
             print(f"  {eps[0][0]} .. {eps[-1][0]}  x{len(eps):<3} {story}")
+    if args.coverage:
+        import statistics
+        print("\nhow stories are kept (block count vs distinct edit-days):")
+        for name, v in shape(args.coverage).items():
+            if not v:
+                continue
+            print(f"  {name:26} n={len(v):4} median span "
+                  f"{statistics.median(x[0] for x in v):5.0f}d  median edit-days "
+                  f"{statistics.median(x[2] for x in v):.0f}")
+        cov = coverage(rows, args.coverage)
+        tot = sum(c[1] for c in cov)
+        ins = sum(c[2] for c in cov)
+        print(f"\ninterval coverage: {ins}/{tot} broadcasts fall inside their "
+              f"story's life ({100 * ins / tot:.0f}%)")
+        print(f"  {'story':44} {'eps':>4} {'in':>4} {'blocks':>7} {'edit-days':>10}")
+        for stem, n, inside, lo, hi, blocks, days in cov:
+            print(f"  {stem[:42]:44} {n:4} {inside:4} {blocks:7} {days:10}")
 
 
 if __name__ == "__main__":

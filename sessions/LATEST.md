@@ -380,6 +380,17 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   by comparing the longest proposal against a random one. Each time the
   diagnostic was a control matching or beating the treatment. This corpus
   punishes the obvious metric.
+- **Two kinds of story, and it decides which date statistic is honest.**
+  Endorphin's correction, 2026-08-04: *"some of the series like… the Dark Forest
+  is appended, each new episode appending to them to a single file to build the
+  context. not all of them are like that. random conspiracy generator is one
+  off."* The split is clean in the metadata — appended series (≥1000 blocks,
+  n=28) have a median 578-day span and **2** distinct edit-days; one-offs (<200
+  blocks, n=65) have a median span of 1 day. `Sydney Bing RE:Sequences` is 5,732
+  blocks with **one** `last_updated_at` and 27 broadcasts. **Any date-based
+  analysis undersamples exactly the stories that were most used.** Use interval
+  coverage (does the event fall inside created..last_updated) rather than
+  day-matching, and treat day-level results as floors.
 - **Never group by story id in this corpus.** Duplicating a story in NovelAI
   copies its whole branch history, so the same text lives under many story ids.
   Group by connected components of shared text. Raw counts routinely inflate 5×.

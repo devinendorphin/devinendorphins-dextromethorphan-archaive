@@ -27,33 +27,75 @@ edit-days that were broadcast days: observed 133, null mean 86 (95th 120), lift 
   2024-01-30 .. 2024-05-17  x3   putting the genie back in the bottle
   2024-05-15 .. 2024-05-17  x4   roko's basilisk
   2024-07-18 .. 2024-07-18  x3   counterfactual interview - djt
-  2024-08-06 .. 2024-08-06  x2   counterfactual interview - jd vance
+  2024-08-06 .. 2024-08-06  x2   the counterfactual interview
+
+how stories are kept (block count vs distinct edit-days):
+  appended (>=1000 blocks)   n=  28 median span   578d  median edit-days 2
+  one-off (<200 blocks)      n=  65 median span     1d  median edit-days 1
+
+interval coverage: 53/71 broadcasts fall inside their story's life (75%)
+  story                                         eps   in  blocks  edit-days
+  sydney bing re:sequences                       27   27    5732          1
+  sackcloth and ashes                             7    4    1159          6
+  the dork forest                                 7    7    2460          1
+  the bugs bunny optimization                     6    0       4          1
+  transmetropolitan                               5    5    1290          1
+  roko's basilisk                                 4    1     234          2
+  counterfactual interview - djt                  3    3    1056          7
+  putting the genie back in the bottle            3    3     367          4
+  counterfactual interview - jd vance             2    0    1392          1
+  day in life of grug                             2    0       3          1
+  grug gets ma shin learnt                        2    2     666          4
+  the counterfactual interview                    2    0    1581         14
+  young l@ddies illustrated primer                1    1     315          1
 ```
 
-## Reading it
+## Two kinds of story, and why it decides the statistic
 
-**The alignment is real and it is not a shared-busy-months artifact.** A flat
-base rate would credit any two habits that peaked in the same seasons, so the
-control circularly shifts the whole broadcast calendar — preserving its clumping,
-destroying only the day-level alignment. The observed overlap sits well outside
-1,000 such shifts.
+Endorphin keeps series in two different ways, and the difference is visible in
+the metadata as a clean split:
 
-**The title matches are the stronger result.** They name specific stories that
-went to air, which four earlier passes at timestamp clustering could not reach.
-`Sydney Bing RE:Sequences` alone accounts for 27 episodes.
+| | median span | median distinct edit-days |
+|---|---:|---:|
+| appended (≥1000 blocks) | 578 days | **2** |
+| one-off (<200 blocks) | 1 day | 1 |
 
-**What it does not establish.** `last_updated_at` is per story, not per block, so
-this tests *last touch* against broadcast days, not all activity. Missing OCR rows
-depress the statistic, making the estimate conservative. And a story edited on a
-broadcast day was not necessarily the story on air.
+**Appended** series — `The Dork Forest`, `Sydney Bing RE:Sequences` — put every
+new episode into a single file so the context keeps building. **One-offs** —
+`Random Conspiracy Generator` — get a fresh file each time.
+
+That decides which statistic is honest. `Sydney Bing RE:Sequences` is 5,732
+blocks across a 434-day life and carries **one** `last_updated_at`, while
+twenty-seven episodes of it went to air. Day-level matching cannot see any of
+them. **The stories most often broadcast are precisely the ones the day-level
+join is blindest to**, so the 1.76× alignment is a floor, and a biased one.
+
+Interval coverage asks the answerable question instead — does the broadcast fall
+inside the story's life? — and **75% do**, with `Sydney Bing` at 27/27, `The Dork
+Forest` at 7/7, `Transmetropolitan` at 5/5.
+
+The misses are diagnostic rather than disconfirming: `The Bugs Bunny
+Optimization` scores 0/6 against a **4-block** file, and `Day in Life of Grug`
+0/2 against **3 blocks**. Those files are stubs. The material that was actually
+on air is somewhere else — almost certainly among the untitled `New Story`
+forks, which is the same indexing problem that hid the Left Behind document.
+
+## What it does not establish
+
+`last_updated_at` is per story, not per block, and there are no per-block
+timestamps anywhere in the export. Missing OCR rows depress the join. A story
+edited on a broadcast day was not necessarily the story on air — only the title
+matches establish that, and title matching is substring-based, so it misses any
+episode that renamed its story.
 
 ## Dates
 
 The catalogue opens **2020-11-27** — *EPISODE 1 - Installing the Cobralingus
-Engine* — and the early episodes are explicitly AI Dungeon (*Episode 10: Teaching
-AI Dungeon How to Tell the Aristocrats Joke is How I Spend Sunday*, 2020-12-06).
-This independently confirms the pre-NovelAI layer that `README.md` and
-`CLAUDE.md` both currently understate.
+Engine* — and the early episodes are explicitly AI Dungeon (*Episode 10:
+Teaching AI Dungeon How to Tell the Aristocrats Joke is How I Spend Sunday*,
+2020-12-06). This independently confirms the pre-NovelAI layer that `README.md`
+and `CLAUDE.md` both currently understate.
 
 Episode numbering reaches **1646** while only 1,604 videos survive on the
-dashboard, so some episodes are already gone.
+dashboard, so some episodes are already gone. These screenshots are now the only
+record that they existed.
