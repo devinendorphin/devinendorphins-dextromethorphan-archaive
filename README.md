@@ -43,9 +43,10 @@ analysis/
   handoff.py             why a bare `Name:` works — convention or scene-tracking
   trace.py               render one story's live path turn by turn
   episodes.py            OCR the Twitch dashboard; test it against story edits
+  sweeps.py              recover the temperature-sweep procedure from the forks
   TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md
   REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md
-  DIRECTION.md HANDOVER.md HANDOFF.md EPISODES.md            generated
+  DIRECTION.md HANDOVER.md HANDOFF.md EPISODES.md SWEEPS.md  generated
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)
   INDEX.tsv              the export's own manifest, 2,500 stories
@@ -78,6 +79,7 @@ python3 analysis/handoff.py out --report analysis/HANDOFF.md
 python3 analysis/episodes.py corpus/twitch \
     --out data/EPISODES.tsv --join data/stories_meta.jsonl \
     --titles data/INDEX.tsv > analysis/EPISODES.md      # needs tesseract
+python3 analysis/sweeps.py data/stories_meta.jsonl --report analysis/SWEEPS.md
 ```
 
 `blocks.jsonl` comes out around 524 MB — every revision's full text. Everything

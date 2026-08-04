@@ -394,6 +394,15 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 - **Never group by story id in this corpus.** Duplicating a story in NovelAI
   copies its whole branch history, so the same text lives under many story ids.
   Group by connected components of shared text. Raw counts routinely inflate 5×.
+  **But the duplication is not a filing habit — it is the instrument.**
+  `analysis/sweeps.py` (2026-08-04) finds **216 same-day fork clusters covering
+  1,071 forks, 53% of the corpus**: three or more copies of one story, last
+  touched the same day, `max_length` held (51%), one model (83%), temperature
+  stepped, and topping out at exactly 2.5 in 42% of them. Each fork preserves one
+  run at one setting. §III argues the sweep procedure from settings
+  *distributions*; this is the same procedure as a within-document controlled
+  experiment, several hundred times over. Correct for the duplication when
+  counting; read it when asking what he was doing.
 - **`removedFragments` is not a rejection measure.** Use branch reachability —
   walk `prevBlock` back from `currentBlock`.
 - **Check a setting is in the enabled sampler order before reading its value.**
