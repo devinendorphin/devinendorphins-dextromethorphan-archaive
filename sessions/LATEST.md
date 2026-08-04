@@ -6,10 +6,12 @@ Prior: `sessions/2026-08-04-office-of-interpretation.md`,
 `sessions/2026-08-04-nakbah-zionists-unknown-guest.md`,
 `sessions/2026-08-04-readings-qualitative-pass.md`,
 `sessions/2026-08-03-nai-corpus-first-analysis.md`
-Branch: `claude/text-generation-corpus-3rtnwn` — **PR #2 merged to `main`**
-on 2026-08-04 (`469c504`); eleven commits since, restarted from `origin/main`.
-Restart it from `origin/main` again for anything further, open a **new** PR, and
-never stack on the merged history or reuse #2.
+Branch: `claude/text-generation-corpus-3rtnwn` — **fully merged.** PR #2
+(`469c504`) and **PR #3 (`99892d3`)** both landed on `main` on 2026-08-04.
+The branch is merged history: **restart it from `origin/main` for anything
+further, open a new PR, and never stack on it or reuse #2 or #3.**
+PR #1 (`collect_transcripts.py`, opened 2026-05-31) is a separate workstream,
+still open, untouched by any of this.
 
 08-04 ran in five parts: an entirely qualitative pass (no script, no corpus);
 a 17-file pull of the Nakbah/Zionist forks; **the full 2,016-file
