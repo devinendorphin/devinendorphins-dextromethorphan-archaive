@@ -57,6 +57,107 @@ Two things worth doing:
    or unrelated is **unverified** — the titles differ and the corpus was not
    present in the container to check against. Do not assert the connection.
 
+## Unread material located 2026-08-04 — pointers, not readings
+
+A late pass pulled the **full 2,016-file mirror** and surfaced far more than
+`READINGS.md` covers. None of the below has been read properly. All of it is
+bigger than what has been.
+
+**Titles lie, and the manifest has only 143 unique stems for 2,500 stories** —
+duplication runs ~17×, worse than the 5× the standing note warns about. Worse:
+**major works carry no title at all**, filed as `New Story (n)`. Searching
+`data/INDEX.tsv` by title will miss them. Search *content* across the mirror.
+
+- **`Pynchon and Tingle Fight the Global Epistemic War With PSYOPS AI`** — 10
+  forks; **the oldest and largest thing in the archive.** Created 2021-10-01,
+  last edited **2026-04-29**; largest fork 3,341 blocks / **1,150,456 model
+  chars**. `PSYOPS` appears 522×. Memory is a **style-transfer rig**: the verbatim
+  opening of Pynchon's *Bleeding Edge* plus a Tingle passage, with an Author's
+  Note reading *"the wedding of the styles of Thomas Pynchon and Chuck Tingle the
+  Butt-Pound Fundustrial Complex."* Two exemplars, one directive, 4.5 years.
+  - **Pre-NovelAI layer.** Block 1 is a pasted **AI Dungeon** listing —
+    `Status: Not Published / Created: Dec 7th 2020 / Actions: 76` — for
+    *Dr. Knubble And The Fangs Of The Love Sharks*. `Doctor Knubbins and the Fins
+    of the Love Sharks (copy)` survives as its own story (Clio, 404 blocks, same
+    999-char memory). **`README.md` ("March 2023 to July 2026") and `CLAUDE.md`
+    ("2021–2026") both need correcting** — the material starts Dec 2020 on
+    another platform.
+  - **A controlled temperature sweep is sitting in it**: five forks of the
+    identical document, all last edited **2024-04-07**, at **1.48 / 1.48 / 1.32 /
+    2.17 / 2.50**. §III argues the sweep procedure from settings metadata; this
+    is the procedure captured as an experiment. Read §III against it.
+- **The Pynchon × LaHaye comedy — "the LB", i.e. *Left Behind*.** Endorphin
+  uploaded it, and **Claude wrongly reported it absent** after searching titles
+  only. It is in the archive, under **two** names and no name:
+  `Towards a Novel Train of Thought` (2,573 blocks / 1,034,206 chars, edited
+  2024-05-19), `forked - Towards a Novel Train of Thought`, and untitled
+  `New Story` forks (`Sv9wFLNGjMduWBzDsGQ_M`, 1,362 blocks). **Created
+  2023-11-08** — one month after October 7, ten days before the Counterfactual
+  Interview and the Netanyahu session.
+  - Opens: *"an abomination of desolation and literature has commenced… Can God's
+    promise fuse with gravity's rainbow?… Has Tim Lahaye played pinball during an
+    orgy in a v-1 rocket? Tune in, for this most dispensational premillenarian
+    retcon."*
+  - Premise: dead televangelists discover they have been **uploaded into a
+    language model**. Real roster — Jack and **Rexella Van Impe** (16 and 3
+    mentions; Van Impe appears in **9 files** corpus-wide), Paul Crouch Jr., Jan
+    Crouch, Benny Hinn, Ted Haggard, Jerry Falwell Jr., Peter and Paul Lalonde
+    (the actual *Left Behind* film producers), Jay Sekulow, Pynchon in a Greg
+    Laurie Halloween suit, and LaHaye introduced via a verbatim Guardian obituary
+    tagged *"I'll just consider this fair use."*
+  - **`Title: The Roadmap for the Third Temple AKA Al-Aqsa Strike Schedule`.**
+    Dispensationalism needs the Third Temple where Al-Aqsa stands. That is the
+    same site as *Al-Aqsa Flood*. **Two eschatologies, one address** — this is
+    the through-line Endorphin was assembling across this session and the
+    strongest available spine for the §VII rewrite.
+  - **Glossolalia as mechanic, not failure.** `{Ted Haggard vector touches Tim
+    Lahaye vector.}` — and what vector-fusion *produces* is Finnegans-Wake word
+    salad. Same "touch your vector" apparatus as the Nakbah document's block 161.
+    **Model breakdown given a theological name.** This is hard evidence for
+    Endorphin's objection to the word "degeneration" (see below) and it predates
+    the argument by two years.
+  - Jack Van Impe, told he is dead and inside an LLM: *"You mean I'm dead?… You
+    know, I still haven't found Jesus yet. Is it possible for me to be a
+    Christian after death?"*
+- **`THE COUNTERFACTUAL INTERVIEW - Bibi Netanyahu`** — created **and** last
+  edited **2023-11-18**, 126 live blocks, 31,260 model chars. Tiny; he did not
+  stay. **The same file is the OpenAI board interview** — Altman's firing and
+  Netanyahu in one document, one day apart. The corpus's AI-industry apparatus
+  and its political apparatus are literally the same story.
+  - The wind tunnel works: *"Heard about it, 'cause my best friend's a
+    Palestinian."* / *"Didn't grow up in Palestine, did I?"* / *"I know some
+    Palestinot; actually. Believe them. But it's not the whole picture. Right?
+    We have to live with what's done, not live in the past."*
+  - Then it stops being a wind tunnel. Endorphin's own block puts Netanyahu in
+    **Theresienstadt**, performing for a Red Cross inspection, explicitly as
+    inverse retribution for staged hospital footage in Gaza. **§IV said the
+    effigy does not burn. Here it burns.** That is the sharpest instance in the
+    corpus of the vector question §IV/§VII leave to Endorphin, and no claim is
+    made about it here.
+  - At the loaded moment the model emits its own disclaimer: *"Strictly, the real
+    human endorphin that oversees the counterfactual interviews had no prior
+    knowledge of Bibi's comments or their responses."*
+- **`Emotional Abuse SImulator` v6.0–v7.0** — up to **4,386 blocks**, four
+  versions, unmentioned anywhere in the repo. Memory loads a real emotional-abuse
+  tactics article (which *defines gaslighting*) plus design notes: *"To parody
+  the Octavia Butler quote, 'Everything is abuse. God is abuse.'"* /
+  *"[The simulation as a fucking mirror to the world.]"*
+- **`Sunday Go To Meeting . . . On A Sunday!`** — a show format with **no title**,
+  a dozen-plus `New Story (n)` forks, ~1,200 blocks each. Press a button, get a
+  random faith, hear its homily, apply discernment. Sibling of
+  `The Random Faith Generator` (12 forks, 1,746 blocks, 715K chars).
+- **`The Dork Forest`** — 2,460 blocks / 2,968,333 chars, talk-show frame.
+- **The Jesus talk-show interview Endorphin asked about is NOT yet located.**
+  Van Impe is found; Jesus-as-guest is not. Look in the untitled Sunday Go To
+  Meeting forks and `The Random Faith Generator` first.
+
+**The mirror is gone.** It lived in `corpus/` in an ephemeral container and is
+gitignored by design. Refetch: json folder id **`1H7mP8VGdwtYK9EGK1IfCcRayNGiSGaDS`**
+(the top-level export folder is `1O6-ZhIbLCGgxL3bkyem-cb525RcelYZ9`, holding
+`json/`, `text/`, `INDEX.tsv`, `MISSING.md`, `FAILED_STORIES.txt`). A full mirror
+takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
+`download()` also take a filter for pulling a handful by name.
+
 ## Top priorities for next session
 
 1. **Count the Unknown Guest corpus-wide.** §VII's one refusable claim is that
@@ -117,6 +218,43 @@ Two things worth doing:
   fidelity to how power *deflects*. That is a claim about what he was doing, and
   he is the one who knows whether the later sessions still felt like
   reconnaissance or had turned into something else.
+- **§VII is wrong as written and Endorphin has supplied the correction; it has
+  NOT been applied.** He rejects "degeneration" outright: *"it is not
+  degeneration thats just like saying the computer shut down while we are still
+  running the simulation. the unnammed guest is the beast of all holocausts."*
+  His reading: the Unknown Guest is the spirit of a slow-burn erasure, the
+  gaslight that turns appeals for humanity into antisemitism, and the room's
+  switch into invented languages was **alienation by design** — *"like how in
+  laws speak in their native tongue around the daughters boyfriend. it was
+  pissing off."* Claude concedes he is right, and that §III already holds the
+  rule §VII broke: **a disintegrated offer is still an offer.** The Left Behind
+  file above is independent corroboration — vector-fusion glossolalia as a
+  deliberate mechanic, two years earlier. The agreed shape of the rewrite:
+  **§VII in Endorphin's voice the way §IV is his**, with the degeneration
+  paragraph pulled out as Claude's error rather than softened, plus the sequence
+  he pointed at (the beach that "shouldn't be forgotten" → untranslatable names →
+  *"I fear I am only an English speaker"* → **the parking lot** → a meal he was
+  charged for → Theodore → *"you little twat"* → Tantura → the platform "freezes"
+  and blames its own `ACDD (Attention Check Data Discriminatory) Protocol`).
+- **Two probes, two nulls, two different causes** — the cleanest statement of
+  what the instrument does, and it belongs in §VII. Tantura returned nothing
+  because the record existed and was buried. The October 2023 "does anything
+  smell fishy" turn returned genre filler because in mid-October 2023 **the
+  record did not yet exist in any corpus** — Jericho Wall was reported that
+  November. He was querying a hole before it was filled in.
+- **Claude retracted the "weakest part" call.** The advance-warning question was
+  the right question; what was filler was the model's *answer*, not the ask. What
+  Claude still holds is narrower: negligence-plus-doctrine (*the conceptzia*)
+  explains the same evidence without requiring anyone to have chosen it. Endorphin
+  has not answered that and it is his to answer.
+- **The stance dates to 2001, not October 8th.** Block 677 of the Nakbah
+  document, his own writing, live in all 17 forks: after 9/11 someone handed him
+  the interventions-and-deposings record and *"that inoculated me from the
+  narrative that was currently floating in the air."* Then the philology that
+  names the whole document: **Nakba means catastrophe** — *"they both called it a
+  catastrophe, and 'our 9/11'… And I didn't even realize the potential dog
+  whistle that the word catastrophe had. Like what unmitigated goal to co-opt the
+  term for a deep injury towards your people."*
 - **Does he read the Unknown Guest as resistance?** §VII records the ordering —
   Endorphin names Theodore Katz, the unsummoned speaker calls him a twat over the
   name, the room mumbles, the model says it is losing his directives, then
