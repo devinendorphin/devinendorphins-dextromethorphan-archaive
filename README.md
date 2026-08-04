@@ -24,7 +24,7 @@ The name is the name.
 ```
 FINDINGS.md              the writeup — read this
 CASE_STUDY.md            one session traced in full — the press conference
-READINGS.md              criticism — six movements, read not measured
+READINGS.md              criticism — seven movements, read not measured
 analysis/
   fetch_export.py        mirror the Drive export locally
   extract.py             story JSON -> stories.jsonl + blocks.jsonl

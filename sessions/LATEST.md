@@ -19,14 +19,14 @@ already extracted on 08-03, and one file Endorphin uploaded at the end.
 - `FINDINGS.md` — **stable.** 14 sections under the turn-taking frame. Read
   this first.
 - `CASE_STUDY.md` — **stable.** The Utah HB 249 press conference, traced in full.
-- `READINGS.md` — **active, and the live front.** Criticism in six movements:
+- `READINGS.md` — **active, and the live front.** Criticism in seven movements:
   Latour/Austin on the convened chamber, Bakhtin on polyphony without a
   novelist, Shklovsky on the temperature dial as an *ostranenie* control, §IV —
   Endorphin's own thesis that the Counterfactual Interview is the corpus's most
   functional part, a technique for the powerless — §V, the Musk/Vivian Wilson
-  elevator session on Kayra, where the model disintegrates, and §VI, the same
-  test on GLM-4.6, which does not. Deliberately not held to the measurement
-  standard.
+  elevator session on Kayra, where the model disintegrates, §VI, the same test
+  on GLM-4.6, which does not, and §VII, the Unknown Guest. Deliberately not held
+  to the measurement standard.
 - `analysis/*.py` — **stable.** 16 scripts, all reproducible from the Drive
   export. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
   `scikit-learn`.
@@ -79,15 +79,21 @@ Two things worth doing:
 
 ## Open with Endorphin
 
-- **The vector question in `READINGS.md` §IV.** His thesis — simulate the
-  powerful, rend them without harming them — depends on the asymmetry running
-  from less power toward more, which is where the effigy tradition's licence
-  comes from. The corpus also contains `Conversation with Palestinians about the
-  Nakbah` and `Conversation with Zionists about Israeli Independence`, which are
-  not that vector. Those sessions have **not** been read and no claim is made
-  about them. But a technique offered as teachable needs to say where it stops,
-  and that is his call to make, not Claude's.
-  **Partly answered by §VI**: the `New Story 5` stage direction marks the
+- **The vector question in `READINGS.md` §IV — now read, see §VII.** The
+  Nakbah and Zionist sessions turned out to be **one document**, seventeen forks
+  of a story created 2023-05-11, running Expert Generator → October 2023 →
+  Palestinian experience → Mossad officers → Nakba witnesses → 1948 Zionists in
+  a single sweep. Not a technique pointed at the dispossessed; closer to an
+  audit of the archive, culminating in a genuine training-data coverage probe
+  (Theodore Katz, then Tantura, then a null he correctly reported as a null).
+  §IV's hazard does show up concretely: pointed at *a people* rather than a
+  person, the counterfactual interview returns the discourse circulating about
+  them, and on this subject that includes a conspiracy literature the mechanism
+  cannot distinguish from testimony. He named propaganda as an ingredient going
+  in and got it coming out. He also built the audit in-frame (the ADL bit) and
+  it went unanswered. **Still his call where the technique stops** — §VII
+  describes, it does not rule.
+  **Partly answered by §VI too**: the `New Story 5` stage direction marks the
   non-powerful participant with an over-protesting consent joke — *"(the waiver
   has been signed, the sim is approved, we swear, she wants it this way!)"* —
   which is the 2023 non-consensual-interview move compressed into a parenthesis.
@@ -176,6 +182,15 @@ Two things worth doing:
   the astonishment is that *"GLM 4.6 sees the worker, and what that work means
   right down to their bones,"* i.e. about the model having a class politics he
   recognised, not about fluency. Positions unchanged; his evidence improved.
+- **A reading lens decides in advance what counts as a thing.** §VII exists
+  because Claude read the Nakbah/Zionist sessions looking for the *panel* — §I
+  and §II are both organised around who gets seated — and so had no slot for the
+  `Unknown guest`, an unsummoned speaker who reviews the session, insults the
+  convener, and calls the delegates liars. Endorphin had to point at it twice.
+  Before reading a session, ask what the frame in hand cannot see, and check the
+  blocks either side of the ones the frame wants. **This is not the same error as
+  the standing note below** — nothing was over-generalised; something was simply
+  invisible.
 - **The readings side has the same failure mode as the measurement side.** §V
   read one Kayra session's collapse as "the limit of the technique" because the
   collapse was thematically perfect. §VI, from a file Endorphin supplied after
