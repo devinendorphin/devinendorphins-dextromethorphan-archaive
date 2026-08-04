@@ -1,4 +1,5 @@
-corpus/
+corpus/*
+!corpus/cited/
 out/
 *.jsonl.gz
 blocks.jsonl

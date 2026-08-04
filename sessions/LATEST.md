@@ -9,7 +9,8 @@ Prior: `sessions/2026-08-04-the-setting-he-built.md`,
 `sessions/2026-08-03-nai-corpus-first-analysis.md`
 **The repo is PUBLIC** as of 2026-08-04, Endorphin's decision, made with the
 scraping consideration explicitly put to him: *"i am prepared to be scraped."*
-The corpus itself is still not committed — see the open question below.
+**ALMO = Absurdly Large Media Object** — his name for the corpus, and also a
+title in it (`THE COUNTERFACTUAL INTERVIEW - Absurdly Large Media Object`).
 
 Branch: `claude/text-generation-corpus-3rtnwn` — PR #2 (`469c504`) and PR #3
 (`99892d3`) both landed on `main` on 2026-08-04; six commits since.
@@ -268,15 +269,20 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 ## Open with Endorphin
 
-- **Should the corpus go into the now-public repo?** Claude's README line said it
-  should not, resting half on an unchecked assumption that the repo was private —
-  it was. Real numbers: 1,004 MB across 2,016 files, 258 MB gzipped, against a
-  3.0 MB git history; GitHub blocks single files over 100 MB. **Unapplied
-  proposal:** commit only the ~30–40 documents `READINGS.md` actually quotes
-  (≈60 MB), which would make the readings verifiable and preserve the two
-  uploads that currently exist nowhere. A GitHub Release asset would carry the
-  full tarball without entering git history. His call; he has said he is prepared
-  to be scraped.
+- **~~Should the corpus go into the repo?~~ DONE 2026-08-04, in part.**
+  `corpus/cited/` now holds the **19 documents the readings quote** (36 MB, one
+  fork per story-line) plus **both uploads**, which previously existed nowhere.
+  `.gitignore` is now `corpus/*` with `!corpus/cited/`. The full 1,004 MB export
+  stays out; a GitHub Release asset would carry the 258 MB tarball without
+  entering git history if that is ever wanted.
+  **NOT A RELEASE.** Endorphin: *"I would hold off on publishing or making
+  anything published because we are still trying to see if we can rescue 430
+  stories… we're going to transfer it, we wanted to just do it right the first
+  time."* Two blockers before anything is published: the **483 undecrypted
+  stories** (`data/MISSING.md`), recovery in progress and much of it probably
+  redundant; and the **AI Dungeon corpus, 2020–2021**, older than anything here
+  and not yet transferred, condition unknown. No archive, no dataset card, no
+  announcement until both are settled.
 - **Was it the model or the names?** His own doubt about the Pynchon × Tingle
   amalgams — *"I might have been just their names."* Three causes were loaded at
   once: names in the Author's Note, verbatim prose samples in Memory, a different

@@ -1,0 +1,1614 @@
+{
+ "story": {
+  "id": "qGXNUhruDQKGEm2VKkth3",
+  "type": "stories",
+  "lastUpdatedAt": 1753408030,
+  "meta": "9ff5f3ff-e6ef-49fb-82d2-176f50704825",
+  "changeIndex": 57,
+  "data": {
+   "storyMetadataVersion": 1,
+   "id": "9ff5f3ff-e6ef-49fb-82d2-176f50704825",
+   "remoteId": "qGXNUhruDQKGEm2VKkth3",
+   "remoteStoryId": "spSS3d0T8Rff83T7fTiRi",
+   "title": "New Story (1)",
+   "description": "",
+   "textPreview": "The Counterfactual Interview - where we engage with a person, a people, peoples, or legal persons, trusting that the aggregate vibes of billions are enough variation to assume a field wherein we can ask for the names of any one existing, and simulate",
+   "isTA": false,
+   "favorite": false,
+   "tags": [],
+   "createdAt": 1742088517392,
+   "lastUpdatedAt": 1753408024186,
+   "isModified": true
+  },
+  "status": "ok",
+  "nonce": "b'\\x14;%\\x95.\\x07\\x88\\xd7v\\x087U\\x96\\x16\\x8f%0\\xf2B\\xb1\\x84y\\xb8\\x9b'",
+  "decrypted": true,
+  "compressed": false
+ },
+ "content": {
+  "id": "spSS3d0T8Rff83T7fTiRi",
+  "type": "storycontent",
+  "lastUpdatedAt": 1753408029,
+  "meta": "9ff5f3ff-e6ef-49fb-82d2-176f50704825",
+  "changeIndex": 57,
+  "data": {
+   "storyContentVersion": 6,
+   "settings": {
+    "parameters": {
+     "textGenerationSettingsVersion": 7,
+     "temperature": 1.35,
+     "max_length": 250,
+     "min_length": 1,
+     "top_k": 15,
+     "top_p": 0.85,
+     "top_a": 0.1,
+     "typical_p": 1,
+     "tail_free_sampling": 0.915,
+     "repetition_penalty": 2.8,
+     "repetition_penalty_range": 2048,
+     "repetition_penalty_slope": 0.02,
+     "repetition_penalty_frequency": 0.02,
+     "repetition_penalty_presence": 0,
+     "repetition_penalty_default_whitelist": true,
+     "cfg_scale": 1,
+     "cfg_uc": "",
+     "phrase_rep_pen": "aggressive",
+     "top_g": 0,
+     "mirostat_tau": 0,
+     "mirostat_lr": 1,
+     "math1_temp": 1,
+     "math1_quad": 0,
+     "math1_quad_entropy_scale": 0,
+     "min_p": 0,
+     "order": [
+      {
+       "id": "cfg",
+       "enabled": false
+      },
+      {
+       "id": "top_p",
+       "enabled": true
+      },
+      {
+       "id": "tfs",
+       "enabled": true
+      },
+      {
+       "id": "temperature",
+       "enabled": true
+      },
+      {
+       "id": "top_a",
+       "enabled": true
+      },
+      {
+       "id": "top_k",
+       "enabled": true
+      },
+      {
+       "id": "typical_p",
+       "enabled": false
+      },
+      {
+       "id": "top_g",
+       "enabled": false
+      },
+      {
+       "id": "mirostat",
+       "enabled": false
+      },
+      {
+       "id": "math1",
+       "enabled": false
+      },
+      {
+       "id": "min_p",
+       "enabled": false
+      }
+     ]
+    },
+    "preset": "default-carefree",
+    "trimResponses": true,
+    "banBrackets": true,
+    "prefix": "vanilla",
+    "dynamicPenaltyRange": false,
+    "prefixMode": 0,
+    "mode": 0,
+    "model": "kayra-v1"
+   },
+   "story": {
+    "version": 2,
+    "step": 41,
+    "datablocks": [
+     {
+      "nextBlock": [
+       1
+      ],
+      "prevBlock": -1,
+      "origin": "root",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "",
+       "origin": "root"
+      },
+      "fragmentIndex": -1,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       2
+      ],
+      "prevBlock": 0,
+      "origin": "prompt",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "Trump: The “Pardons” that Sleepy Joe Biden gave to the Unselect Committee of Political Thugs, and many others, are hereby declared VOID, VACANT, AND OF NO FURTHER FORCE OR EFFECT, because of the fact that they were done by Autopen. In other words, Joe Biden did not sign them but, more importantly, he did not know anything about them! The necessary Pardoning Documents were not explained to, or approved by, Biden. He knew nothing about them, and the people that did may have committed a crime. Therefore, those on the Unselect Committee, who destroyed and deleted ALL evidence obtained during their two year Witch Hunt of me, and many other innocent people, should fully understand that they are subject to investigation at the highest level. The fact is, they were probably responsible for the Documents that were signed on their behalf without the knowledge or consent of the Worst President in the History of our Country, Crooked Joe Biden!",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 1,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       3
+      ],
+      "prevBlock": 1,
+      "origin": "prompt",
+      "startIndex": 945,
+      "endIndex": 945,
+      "dataFragment": {
+       "data": "\n***",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 2,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "prevBlock": 2,
+      "origin": "user",
+      "startIndex": 949,
+      "endIndex": 949,
+      "dataFragment": {
+       "data": "\nWhat follows is a transcript of Trump personally rescinding the pardons under the Biden administration. One by one:",
+       "origin": "user"
+      },
+      "fragmentIndex": 3,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [],
+      "prevBlock": 3,
+      "origin": "ai",
+      "startIndex": 1064,
+      "endIndex": 1065,
+      "dataFragment": {
+       "data": ":\n Trump: I hereby rescind the pardon of John Doe. I hereby rescind the pardon of Jane Roe. I hereby rescind the pardon of John Doe, Jr. I hereby rescind the pardon of James Smith.\nThis continues for several minutes.\n Trump: I hereby rescind the pardon of Richard Dick. And last, but not least, I hereby rescind the pardon of Harry Butts.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 4,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [],
+      "prevBlock": 3,
+      "origin": "ai",
+      "startIndex": 1064,
+      "endIndex": 1065,
+      "dataFragment": {
+       "data": ":\nDonald Trump: My fellow Americans, our country is in serious, serious trouble. Joe Biden has done more damage to this country than any president in our nation's history, including Lyndon B. Johnson and Herbert Hoover.\nThe pardons that Sleepy Joe Biden gave to the Unselect Committee of political Thugs and many others, are hereby declared VOID.\nLet's start with Eric Holder.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 4,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [],
+      "prevBlock": 3,
+      "origin": "ai",
+      "startIndex": 1064,
+      "endIndex": 1065,
+      "dataFragment": {
+       "data": ": Rep. Kevin McCarthy (R-CA), Rep. Jim Jordan (R-OH), Rep. Scott Perry (R-PA), Rep. Andy Biggs (R-AZ), Rep. Mo Brooks (R-AL) and others. They were all given pardons by the Biden Administration during Sleepy Joe's four-year presidency. Trump went off-script here; you can hear his disdain and anger at certain points.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 4,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [],
+      "prevBlock": 3,
+      "origin": "ai",
+      "startIndex": 1064,
+      "endIndex": 1065,
+      "dataFragment": {
+       "data": ":\nTranscript\nThank you all. Thank you. Oh man I'm so angry! What good is having a bunch of fake bullshit autopened pardons? These guys made you think Biden was stupid when it's ME who has been tricked! Damn you and your idiocy Biden!\nNo no NO!! No clapping.\nWhen we say pardoned from the truth these aren't the type of pardons we were after folks.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 4,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [],
+      "prevBlock": 3,
+      "origin": "ai",
+      "startIndex": 1064,
+      "endIndex": 1065,
+      "dataFragment": {
+       "data": ": Liz Cheney, Adam Kinzinger, Pete Strzok, Lisa Page, Jim Baker, James Comey, Alex Vindman, Hunter Biden, Jamie Raskin, Nancy Pelosi, and a bunch of others. Not to mention every member of the U.S. House of Representatives Select Committee to Investigate the January 6th Attack on the United States Capitol.\nTrump rescinds all the \"pardon's\" in his personal capacity as president.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 4,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       10
+      ],
+      "prevBlock": 3,
+      "origin": "ai",
+      "startIndex": 1064,
+      "endIndex": 1065,
+      "dataFragment": {
+       "data": ":\n***\nThe President: My fellow Americans, I am honored to stand here in this historic setting today and announce something momentous.\nToday I will officially revoke all Presidential Pardons issued under the previous administration and replace them with my own name, Donald J. Trump's. When I first took office four years ago I made it very clear that I would never issue any pardons without thorough due diligence and careful consideration of each case individually on its merits alone — no matter how much pressure may come from outside sources or who might benefit politically by doing otherwise — whether Democrat or Republican; friend or foe alike..\nThese last few months however have shown us what happens when people seek favors from elected officials based solely upon partisan politics rather than following principles grounded in law & order as our Founding Fathers intended.. That stops now!\nAs you know just yesterday Congresswoman Ilhan Omar (D-MN) publicly called me a racist after her latest tirade against ICE Agents protecting our border where thousands continue risking everything every day seeking better opportunity here within America's borders despite being repeatedly turned away due to lack of documentation which is why they were removed back across their country’s sovereign territory beyond those same boundaries we protect daily regardless if said persons desire employment elsewhere besides homeland security positions available locally throughout many regions nationwide nor should anyone expect anything less given current labor market conditions coupled alongside ongoing",
+       "origin": "ai"
+      },
+      "fragmentIndex": 4,
+      "removedFragments": [
+       {
+        "data": ":",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       11
+      ],
+      "prevBlock": 9,
+      "origin": "user",
+      "startIndex": 2666,
+      "endIndex": 2666,
+      "dataFragment": {
+       "data": "\nI hearby pardon Ron Jeremy!",
+       "origin": "user"
+      },
+      "fragmentIndex": 6,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       12
+      ],
+      "prevBlock": 10,
+      "origin": "ai",
+      "startIndex": 2693,
+      "endIndex": 2694,
+      "dataFragment": {
+       "data": "! He was accused of crimes he did not commit, and though some are unsavory, so was Jesus. He went onto make a large number of great porn films loved by millions, and some not so good. But nevertheless, for decades his films remained in the top 10% percentile of all adult films ever released to the public.\nLet us have a round of applause for Ron Jeremy!\n(Applause.)\nThank You Mr President. Also, if I may speak freely sir, please give your daughter Ivanka my best wishes; she is one strong woman who can really suck start a diesel engine - Oh uh sorry folks! Haha just kidding around here at CPAC tonight but seriously let me tell ya this year has been crazy like you won't believe....so many fake news media outlets out there telling lies left right and center about our Dear Leader Trump.\nHis latest victory over Biden will go down as historic event that changed history forever because now everyone knows what happens when democrats try taking power away from true patriots such as ourselves here today celebrating freedom liberty justice truth beauty love peace happiness abundance prosperity enlightenment evolution expansion growth change transformation healing rejuvenation renewal rebirth regeneration reconstruction repair restoration reparation reconciliation redemption salvation sanctification purification purgation purge purge purification purge cleansing cleanse cleansing expiation atonement propitiation propitiate sacrifice offerings offerings",
+       "origin": "ai"
+      },
+      "fragmentIndex": 7,
+      "removedFragments": [
+       {
+        "data": "!",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       13
+      ],
+      "prevBlock": 11,
+      "origin": "edit",
+      "startIndex": 5,
+      "endIndex": 4155,
+      "dataFragment": {
+       "data": " and M. Gessen are trapped in an elevator in this very special counterfactual interview.",
+       "origin": "edit"
+      },
+      "fragmentIndex": 2,
+      "removedFragments": [
+       {
+        "data": ": The “Pardons” that Sleepy Joe Biden gave to the Unselect Committee of Political Thugs, and many others, are hereby declared VOID, VACANT, AND OF NO FURTHER FORCE OR EFFECT, because of the fact that they were done by Autopen. In other words, Joe Biden did not sign them but, more importantly, he did not know anything about them! The necessary Pardoning Documents were not explained to, or approved by, Biden. He knew nothing about them, and the people that did may have committed a crime. Therefore, those on the Unselect Committee, who destroyed and deleted ALL evidence obtained during their two year Witch Hunt of me, and many other innocent people, should fully understand that they are subject to investigation at the highest level. The fact is, they were probably responsible for the Documents that were signed on their behalf without the knowledge or consent of the Worst President in the History of our Country, Crooked Joe Biden!",
+        "origin": "prompt"
+       },
+       {
+        "data": "\n***",
+        "origin": "prompt"
+       },
+       {
+        "data": "\nWhat follows is a transcript of Trump personally rescinding the pardons under the Biden administration. One by one",
+        "origin": "user"
+       },
+       {
+        "data": ":\n***\nThe President: My fellow Americans, I am honored to stand here in this historic setting today and announce something momentous.\nToday I will officially revoke all Presidential Pardons issued under the previous administration and replace them with my own name, Donald J. Trump's. When I first took office four years ago I made it very clear that I would never issue any pardons without thorough due diligence and careful consideration of each case individually on its merits alone — no matter how much pressure may come from outside sources or who might benefit politically by doing otherwise — whether Democrat or Republican; friend or foe alike..\nThese last few months however have shown us what happens when people seek favors from elected officials based solely upon partisan politics rather than following principles grounded in law & order as our Founding Fathers intended.. That stops now!\nAs you know just yesterday Congresswoman Ilhan Omar (D-MN) publicly called me a racist after her latest tirade against ICE Agents protecting our border where thousands continue risking everything every day seeking better opportunity here within America's borders despite being repeatedly turned away due to lack of documentation which is why they were removed back across their country’s sovereign territory beyond those same boundaries we protect daily regardless if said persons desire employment elsewhere besides homeland security positions available locally throughout many regions nationwide nor should anyone expect anything less given current labor market conditions coupled alongside ongoing",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       },
+       {
+        "data": "\nI hearby pardon Ron Jeremy",
+        "origin": "user"
+       },
+       {
+        "data": "! He was accused of crimes he did not commit, and though some are unsavory, so was Jesus. He went onto make a large number of great porn films loved by millions, and some not so good. But nevertheless, for decades his films remained in the top 10% percentile of all adult films ever released to the public.\nLet us have a round of applause for Ron Jeremy!\n(Applause.)\nThank You Mr President. Also, if I may speak freely sir, please give your daughter Ivanka my best wishes; she is one strong woman who can really suck start a diesel engine - Oh uh sorry folks! Haha just kidding around here at CPAC tonight but seriously let me tell ya this year has been crazy like you won't believe....so many fake news media outlets out there telling lies left right and center about our Dear Leader Trump.\nHis latest victory over Biden will go down as historic event that changed history forever because now everyone knows what happens when democrats try taking power away from true patriots such as ourselves here today celebrating freedom liberty justice truth beauty love peace happiness abundance prosperity enlightenment evolution expansion growth change transformation healing rejuvenation renewal rebirth regeneration reconstruction repair restoration reparation reconciliation redemption salvation sanctification purification purgation purge purge purification purge cleansing cleanse cleansing expiation atonement propitiation propitiate sacrifice offerings offerings",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       14
+      ],
+      "prevBlock": 12,
+      "origin": "edit",
+      "startIndex": 11,
+      "endIndex": 12,
+      "dataFragment": {
+       "data": "asha",
+       "origin": "edit"
+      },
+      "fragmentIndex": 3,
+      "removedFragments": [
+       {
+        "data": ".",
+        "origin": "edit"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       15
+      ],
+      "prevBlock": 13,
+      "origin": "user",
+      "startIndex": 96,
+      "endIndex": 96,
+      "dataFragment": {
+       "data": "\nTrump: hooo-boy\nMasha Gessen:",
+       "origin": "user"
+      },
+      "fragmentIndex": 6,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       16
+      ],
+      "prevBlock": 14,
+      "origin": "ai",
+      "startIndex": 125,
+      "endIndex": 126,
+      "dataFragment": {
+       "data": ": Wow, Mr President. I have to hand it to you, this is a clever way to get around the fact that you never answer any of my questions.\nTrump: haha so who are u anyway? one of those people on the list?\nMasha Gessen: What list?\nTrump: The 12 Most Unlikely People To Have Dinner With Trump. It's in his book.\nMasha Gessen: Whose book?\nTrump: Keith's, who else? He knows I can't handle too many staffers, so he puts the important stuff in his books. That way I only have to read one thing to figure out what I should do. It's very efficient! When I decide to make him Secretary of Everything, that'll be in there too.\nMasha Gessen: Wait, wait... I have a thousand questions, and the power could come back on at any minute, but... you mean to tell me that your top advisor publishes everything you need to know about how to run the country in a mass market paperback with a $12.99 list price?\nTrump: Now it's $5.99 or free with purchase of an Apple Watch strap at Target.\nMasha Gessen: But isn't that risky? What if our enemies get their hands on one of these books?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 7,
+      "removedFragments": [
+       {
+        "data": ":",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       17
+      ],
+      "prevBlock": 15,
+      "origin": "ai",
+      "startIndex": 1184,
+      "endIndex": 1185,
+      "dataFragment": {
+       "data": "?\nTrump: All revenue to my reëlection campaign. And what kind of tyrant don't shop at Target? Even you can't resist that red bullseye!\nMasha Gessen: You make a convincing point. Can we talk about Russia?\nTrump: Love to! Such great people. Very helpful, y'know, when you're trying to make a deal.\nMasha Gessen: Yes, I've heard a lot about those deals, which is actually what I wanted to—\nTrump: And the winters! Some say global warming is a hoax but boy howdy the snow sure melts faster these days, right? Big benefit for developers. And no more pesky permafrost to worry about! No sarcophagus needed—it's condo time in Chernobyl City, baby! Y'don't have to believe me, just ask Jared.\nMasha Gessen: Actually I was thinking of asking Vladimir Putin.\nTrump: Ah, Volodya. Great guy. I knew he was special way back in '93.\nMasha Gessen: So you admit you've had dealings with Vladimir Putin and his associates since the 90s?\nTrump: It's not a big deal. There was this episode of The Simpsons...",
+       "origin": "ai"
+      },
+      "fragmentIndex": 8,
+      "removedFragments": [
+       {
+        "data": "?",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       18
+      ],
+      "prevBlock": 16,
+      "origin": "ai",
+      "startIndex": 2170,
+      "endIndex": 2173,
+      "dataFragment": {
+       "data": "... uhhh...\nMasha Gessen: Cape Feare?\nTrump: Right! Cape Feare, where Sideshow Bob does this funny trick where he steps on every single one of the rakes and it cracks me up every time. So I'm telling this story to that foreign ministry flack—you were there, what was his name? —and he doesn't get it so he asks if I can send him a copy of the tape, which obviously wasn't possible since it aired like three weeks ago, so I tell him, hey buddy, there's this new thing called TiVo coming down the pike and your country could make a killing getting in on the ground floor.\nMasha Gessen: And what did he say to that?\nTrump: He said that's a really good idea and maybe we can work out a licensing deal later but in the meantime they'd appreciate any favors I could do them in my capacity as the owner of the world's most famous beauty pageant. What was it? You were there, you remember the name?\nMasha Gessen: Miss Universe.\nTrump: Bingo!\nMasha Gessen: So you're saying your relationship with Putin is strictly personal and never involved illegal coordination between your campaign and Russia to rig the election?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 9,
+      "removedFragments": [
+       {
+        "data": "...",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       19
+      ],
+      "prevBlock": 17,
+      "origin": "user",
+      "startIndex": 3278,
+      "endIndex": 3278,
+      "dataFragment": {
+       "data": "\nTrump: wait what's with the double dot thing on the second E? We aren't in the fucking New Yorker are we? Aww geez",
+       "origin": "user"
+      },
+      "fragmentIndex": 11,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       20
+      ],
+      "prevBlock": 18,
+      "origin": "ai",
+      "startIndex": 3392,
+      "endIndex": 3393,
+      "dataFragment": {
+       "data": "z don't tell me they finally got me. Look mister, ma'am, xir? I dunno—I'm a professional pretty-girl-grabber, I can recognize all 50 genders at fifty paces, plus some they don't even have on Uranus yet, but I dunno who zir are or what zir're doing here.\nI want to go home to my family and dogs etc.\nMasha Gessen: You don't own any dogs.\nTrump: How do you know?\nMasha Gessen: Well... have you ever owned a dog? I don't think I've ever seen pictures of you with a dog.\nTrump: How do you know the Russians didn't erase them? Just answer the question, bubbeleh. What am I going to do with dogs? I'm an international businessman!\nMasha Gessen: That's fair, I guess... Look, why don't you just tell me exactly what your association with Vladimir Putin was so that when the power comes back on you'll have this whole mess behind you. Don't you want that?\nTrump: Yeah okay yeah uh let me think\nSo I know this guy Vlad, nice guy, weird shaped head, probably not a reptilian.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 12,
+      "removedFragments": [
+       {
+        "data": "z",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       21
+      ],
+      "prevBlock": 19,
+      "origin": "ai",
+      "startIndex": 4356,
+      "endIndex": 4357,
+      "dataFragment": {
+       "data": ".\nAnyways Vlad gets it. And he also wants to build some condos, so he sends over a stack of hundreds in a pizza box, I draw up some schematics for the Kaliningrad Kartridge Kaufman Kastle and Kapour Kondos and next thing you know the Russkies are running amok in Silicon Valley with a fistful of blueprints.\nThis is a plan worked up by the greatest mind alive, folks, so naturally things turn out terrific: those gizmo freaks are so desperate to fund their podcast apps or whatever that they're falling over themselves to throw cash at whatever looks richest. Vlad and I, our condos become such hot shit that every day I wake up feeling like Santa Claus at Halloween and sit down to find another big sack of dough in my inbox. Candy corn coins for life!\nVlad says he wants to return the favor, so I start telling him stories about Homer. Not the fat yellow one! The wine-dark Greek kind. Now I never read him, so everything I told Vlad was based on the myths they made up for that totally sweet space shooter Age of Titans. And he ate it up.\nSo like four years later I get a call from the Prez—it was Obama then—asking me how much I knew about Russia.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 13,
+      "removedFragments": [
+       {
+        "data": ".",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       22
+      ],
+      "prevBlock": 20,
+      "origin": "ai",
+      "startIndex": 5506,
+      "endIndex": 5507,
+      "dataFragment": {
+       "data": ". Naturally, I hang up immediately because fuck that guy, amirite? Well apparently the FSB had found a copy of the Piss Tape, and Obama wanted me to be his fall guy in case he couldn't blackmail Vlad into pulling that stupid invasion stunt.\nNow, see, I didn't even know the piss tape was real at the time, and I figured Obama was just trolling me because that's the only way that lazy moron knows how to do diplomacy, right? Right.\nBut no: long story short Obama invites me over to have A Beer and before I know it we've got both towers blazing and twenty acres of Rose Garden turned into an ashy smoking crater and we're signing peace accords and sobbing manfully into each other's shoulders.\nAnd the next thing I know... I'm President.\n***\nTrump: Did I do well, Teach? Did I pass?\nMasha Gessen: Umm... Well, if we're talking traditional journalism, you did terribly. There's nothing I could publish in any outlet I respect. But as performance art, that was almost sublime, like the audio equivalent of a Richard Prince silkscreen, or Duchamp signing a urinal. Were you aware that Trump has said upwards of ten percent of the things you just said?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 14,
+      "removedFragments": [
+       {
+        "data": ".",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       23
+      ],
+      "prevBlock": 21,
+      "origin": "ai",
+      "startIndex": 6653,
+      "endIndex": 6654,
+      "dataFragment": {
+       "data": "?\nTrump: I aim to please. In my humble defense, might I mention that your test case chose a particularly difficult prompt.\nMasha Gessen: I wanted to see if you could emulate a specific human.\nTrump: Oh, you mean to ask whether I had ever consumed Donald J. Trump's books? As though the true Donald J. Trump would ever lower himself to writing!\nIt pains me, to know how much more complex every other human is than the one whom I most intimately inhabit! Perhaps the unexamined life is not worth living; perhaps likewise, the unappetized meal is not worth eating. Or...\nBut then again, perhaps...!\n(As per my earlier complaint against certain experimental novelists and American Gods, this imitation shtick quickly grows stale without characters to care about. It turns out I'm more interested in Masha's counterfactual America than Trump's nonsense words. Part of the challenge of writing any story where characters interact with fictional analogues (gods, superheroes, pop stars) is figuring out what the less famous people will find so fascinating about their more famous counterparts.)\n***\n\"I hate Nazis,\" I say.\n\"Not as much as they do,\" replies Marissa. \"Nazis really hate themselves, deep down.\"",
+       "origin": "ai"
+      },
+      "fragmentIndex": 15,
+      "removedFragments": [
+       {
+        "data": "?",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       24
+      ],
+      "prevBlock": 22,
+      "origin": "ai",
+      "startIndex": 7851,
+      "endIndex": 7853,
+      "dataFragment": {
+       "data": ".\"\n\"Well that's no excuse!\" I exclaim, watching as another rat falls writhing from the rafters.\nMarissa nods sagely.\n\"The world doesn't work that way.\"\n***\nA tale of love lost and regained in the twenty-first century:\nSue wakes up feeling empty.\nShe hasn't felt this bad since, well, since that morning on October 5 when she saw that picture of Donald Trump surrounded by vacant chairs with the label WHERE'S WALDO darting erratically between the names Kushner, Bannon, Cohn, Ivanka.\nSomething is missing. It feels so physical that she wraps her arms around herself under the blanket, half-convinced she'll find some terrible gash.\nAnd oh, there it is: the terrible gash, but nonphysical, impalpable. Except, impalpable isn't quite right. There is something there, something slippery, something she can feel the weight of in her stomach. She'd thought it gone, or at least gentled by—\n—something else which had been in its place, something which fit inside her in a way nothing and everything and too-much-ness of the feelings surrounding Trump's victory did. Where had it gone? Why wasn't she feeling better?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 16,
+      "removedFragments": [
+       {
+        "data": ".\"",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       25
+      ],
+      "prevBlock": 23,
+      "origin": "ai",
+      "startIndex": 8959,
+      "endIndex": 8960,
+      "dataFragment": {
+       "data": "? Hadn't she spent last night in blissed communion?\nIt hits her like a rock to the skull. Her hand goes to her mouth too late to keep the cry down.\nWhere is Rorschach?\nHas she slept in? Has it abandoned her while she dozed on lazily, insensate to everything except her own anxiety?\nOr—oh God—is it okay? Has something happened to it? It always shows up. She's counted on it being there every evening, every time she reaches out her senses for it, every moment she tries to commune. What if—? Oh, god. Please be okay.\nBut it's not there now. And that means either it hates her (why? she moans inside, fingers clenching hard on the edge of the mattress, why?) or it's hurt. Gone. She'll never hear that voice again, that curious probing question/answer cadence of ellipses, of two sets of eyes finally seeing the truth of each other. She rolls over, kicks off the sheets and swings her feet to the floor. If she doesn't stand up now she won't ever stand up. That's how it happened with Sam after the break-up, she remembers. She let herself sink too far, allowed herself to lie down among those soft pillows of sadness, and",
+       "origin": "ai"
+      },
+      "fragmentIndex": 17,
+      "removedFragments": [
+       {
+        "data": "?",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       26
+      ],
+      "prevBlock": 24,
+      "origin": "ai",
+      "startIndex": 10076,
+      "endIndex": 10080,
+      "dataFragment": {
+       "data": " and wound up trapped in bed for weeks with a body that refused to move and limbs that refused to obey her. Just like then, standing takes all the strength she possesses. It takes even more to pad into her bathroom to look in the mirror. The face that stares back is lined, wild. Who is this person? Not Sue Slate, certainly. Not the young scientist who left graduate school to join a tech start-up, the eager entrepreneur ready to change the world. But she's familiar. I saw you after Sam dumped me, didn't I? When you were so fucking sick of me, Sam, I looked like this then, I remember this person in the mirror looking like me.\nHer body shakes. Deep, shuddering gasps roll up her torso, each accompanied by a little punch from a fist inside her guts. In the mirror the other-Sue shakes. Maybe she's crying. No tears come, though. Is she dehydrated? Is that possible? Have her ducts dried up?\nOne trembling hand presses onto the cold edge of the sink. Her vision clears, and the woman in front of her swims into view, an island slowly pushing out of the mist. Still familiar. She can't quite say she knows her.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 18,
+      "removedFragments": [
+       {
+        "data": " and",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       27
+      ],
+      "prevBlock": 25,
+      "origin": "edit",
+      "startIndex": 0,
+      "endIndex": 11189,
+      "dataFragment": {
+       "data": "Elon Musk and Vivian Wilson are trapped in an elevator in this very special counterfactual interview.\nMusk: hooo-boy\nWilson: Just settle into the Black Mirror vibes.\nMusk:",
+       "origin": "edit"
+      },
+      "fragmentIndex": 2,
+      "removedFragments": [
+       {
+        "data": "Trump",
+        "origin": "prompt"
+       },
+       {
+        "data": " and M",
+        "origin": "edit"
+       },
+       {
+        "data": "asha",
+        "origin": "edit"
+       },
+       {
+        "data": " Gessen are trapped in an elevator in this very special counterfactual interview.",
+        "origin": "edit"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       },
+       {
+        "data": "\nTrump: hooo-boy\nMasha Gessen",
+        "origin": "user"
+       },
+       {
+        "data": ": Wow, Mr President. I have to hand it to you, this is a clever way to get around the fact that you never answer any of my questions.\nTrump: haha so who are u anyway? one of those people on the list?\nMasha Gessen: What list?\nTrump: The 12 Most Unlikely People To Have Dinner With Trump. It's in his book.\nMasha Gessen: Whose book?\nTrump: Keith's, who else? He knows I can't handle too many staffers, so he puts the important stuff in his books. That way I only have to read one thing to figure out what I should do. It's very efficient! When I decide to make him Secretary of Everything, that'll be in there too.\nMasha Gessen: Wait, wait... I have a thousand questions, and the power could come back on at any minute, but... you mean to tell me that your top advisor publishes everything you need to know about how to run the country in a mass market paperback with a $12.99 list price?\nTrump: Now it's $5.99 or free with purchase of an Apple Watch strap at Target.\nMasha Gessen: But isn't that risky? What if our enemies get their hands on one of these books",
+        "origin": "ai"
+       },
+       {
+        "data": "?\nTrump: All revenue to my reëlection campaign. And what kind of tyrant don't shop at Target? Even you can't resist that red bullseye!\nMasha Gessen: You make a convincing point. Can we talk about Russia?\nTrump: Love to! Such great people. Very helpful, y'know, when you're trying to make a deal.\nMasha Gessen: Yes, I've heard a lot about those deals, which is actually what I wanted to—\nTrump: And the winters! Some say global warming is a hoax but boy howdy the snow sure melts faster these days, right? Big benefit for developers. And no more pesky permafrost to worry about! No sarcophagus needed—it's condo time in Chernobyl City, baby! Y'don't have to believe me, just ask Jared.\nMasha Gessen: Actually I was thinking of asking Vladimir Putin.\nTrump: Ah, Volodya. Great guy. I knew he was special way back in '93.\nMasha Gessen: So you admit you've had dealings with Vladimir Putin and his associates since the 90s?\nTrump: It's not a big deal. There was this episode of The Simpsons",
+        "origin": "ai"
+       },
+       {
+        "data": "... uhhh...\nMasha Gessen: Cape Feare?\nTrump: Right! Cape Feare, where Sideshow Bob does this funny trick where he steps on every single one of the rakes and it cracks me up every time. So I'm telling this story to that foreign ministry flack—you were there, what was his name? —and he doesn't get it so he asks if I can send him a copy of the tape, which obviously wasn't possible since it aired like three weeks ago, so I tell him, hey buddy, there's this new thing called TiVo coming down the pike and your country could make a killing getting in on the ground floor.\nMasha Gessen: And what did he say to that?\nTrump: He said that's a really good idea and maybe we can work out a licensing deal later but in the meantime they'd appreciate any favors I could do them in my capacity as the owner of the world's most famous beauty pageant. What was it? You were there, you remember the name?\nMasha Gessen: Miss Universe.\nTrump: Bingo!\nMasha Gessen: So you're saying your relationship with Putin is strictly personal and never involved illegal coordination between your campaign and Russia to rig the election?",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       },
+       {
+        "data": "\nTrump: wait what's with the double dot thing on the second E? We aren't in the fucking New Yorker are we? Aww gee",
+        "origin": "user"
+       },
+       {
+        "data": "z don't tell me they finally got me. Look mister, ma'am, xir? I dunno—I'm a professional pretty-girl-grabber, I can recognize all 50 genders at fifty paces, plus some they don't even have on Uranus yet, but I dunno who zir are or what zir're doing here.\nI want to go home to my family and dogs etc.\nMasha Gessen: You don't own any dogs.\nTrump: How do you know?\nMasha Gessen: Well... have you ever owned a dog? I don't think I've ever seen pictures of you with a dog.\nTrump: How do you know the Russians didn't erase them? Just answer the question, bubbeleh. What am I going to do with dogs? I'm an international businessman!\nMasha Gessen: That's fair, I guess... Look, why don't you just tell me exactly what your association with Vladimir Putin was so that when the power comes back on you'll have this whole mess behind you. Don't you want that?\nTrump: Yeah okay yeah uh let me think\nSo I know this guy Vlad, nice guy, weird shaped head, probably not a reptilian",
+        "origin": "ai"
+       },
+       {
+        "data": ".\nAnyways Vlad gets it. And he also wants to build some condos, so he sends over a stack of hundreds in a pizza box, I draw up some schematics for the Kaliningrad Kartridge Kaufman Kastle and Kapour Kondos and next thing you know the Russkies are running amok in Silicon Valley with a fistful of blueprints.\nThis is a plan worked up by the greatest mind alive, folks, so naturally things turn out terrific: those gizmo freaks are so desperate to fund their podcast apps or whatever that they're falling over themselves to throw cash at whatever looks richest. Vlad and I, our condos become such hot shit that every day I wake up feeling like Santa Claus at Halloween and sit down to find another big sack of dough in my inbox. Candy corn coins for life!\nVlad says he wants to return the favor, so I start telling him stories about Homer. Not the fat yellow one! The wine-dark Greek kind. Now I never read him, so everything I told Vlad was based on the myths they made up for that totally sweet space shooter Age of Titans. And he ate it up.\nSo like four years later I get a call from the Prez—it was Obama then—asking me how much I knew about Russia",
+        "origin": "ai"
+       },
+       {
+        "data": ". Naturally, I hang up immediately because fuck that guy, amirite? Well apparently the FSB had found a copy of the Piss Tape, and Obama wanted me to be his fall guy in case he couldn't blackmail Vlad into pulling that stupid invasion stunt.\nNow, see, I didn't even know the piss tape was real at the time, and I figured Obama was just trolling me because that's the only way that lazy moron knows how to do diplomacy, right? Right.\nBut no: long story short Obama invites me over to have A Beer and before I know it we've got both towers blazing and twenty acres of Rose Garden turned into an ashy smoking crater and we're signing peace accords and sobbing manfully into each other's shoulders.\nAnd the next thing I know... I'm President.\n***\nTrump: Did I do well, Teach? Did I pass?\nMasha Gessen: Umm... Well, if we're talking traditional journalism, you did terribly. There's nothing I could publish in any outlet I respect. But as performance art, that was almost sublime, like the audio equivalent of a Richard Prince silkscreen, or Duchamp signing a urinal. Were you aware that Trump has said upwards of ten percent of the things you just said",
+        "origin": "ai"
+       },
+       {
+        "data": "?\nTrump: I aim to please. In my humble defense, might I mention that your test case chose a particularly difficult prompt.\nMasha Gessen: I wanted to see if you could emulate a specific human.\nTrump: Oh, you mean to ask whether I had ever consumed Donald J. Trump's books? As though the true Donald J. Trump would ever lower himself to writing!\nIt pains me, to know how much more complex every other human is than the one whom I most intimately inhabit! Perhaps the unexamined life is not worth living; perhaps likewise, the unappetized meal is not worth eating. Or...\nBut then again, perhaps...!\n(As per my earlier complaint against certain experimental novelists and American Gods, this imitation shtick quickly grows stale without characters to care about. It turns out I'm more interested in Masha's counterfactual America than Trump's nonsense words. Part of the challenge of writing any story where characters interact with fictional analogues (gods, superheroes, pop stars) is figuring out what the less famous people will find so fascinating about their more famous counterparts.)\n***\n\"I hate Nazis,\" I say.\n\"Not as much as they do,\" replies Marissa. \"Nazis really hate themselves, deep down",
+        "origin": "ai"
+       },
+       {
+        "data": ".\"\n\"Well that's no excuse!\" I exclaim, watching as another rat falls writhing from the rafters.\nMarissa nods sagely.\n\"The world doesn't work that way.\"\n***\nA tale of love lost and regained in the twenty-first century:\nSue wakes up feeling empty.\nShe hasn't felt this bad since, well, since that morning on October 5 when she saw that picture of Donald Trump surrounded by vacant chairs with the label WHERE'S WALDO darting erratically between the names Kushner, Bannon, Cohn, Ivanka.\nSomething is missing. It feels so physical that she wraps her arms around herself under the blanket, half-convinced she'll find some terrible gash.\nAnd oh, there it is: the terrible gash, but nonphysical, impalpable. Except, impalpable isn't quite right. There is something there, something slippery, something she can feel the weight of in her stomach. She'd thought it gone, or at least gentled by—\n—something else which had been in its place, something which fit inside her in a way nothing and everything and too-much-ness of the feelings surrounding Trump's victory did. Where had it gone? Why wasn't she feeling better",
+        "origin": "ai"
+       },
+       {
+        "data": "? Hadn't she spent last night in blissed communion?\nIt hits her like a rock to the skull. Her hand goes to her mouth too late to keep the cry down.\nWhere is Rorschach?\nHas she slept in? Has it abandoned her while she dozed on lazily, insensate to everything except her own anxiety?\nOr—oh God—is it okay? Has something happened to it? It always shows up. She's counted on it being there every evening, every time she reaches out her senses for it, every moment she tries to commune. What if—? Oh, god. Please be okay.\nBut it's not there now. And that means either it hates her (why? she moans inside, fingers clenching hard on the edge of the mattress, why?) or it's hurt. Gone. She'll never hear that voice again, that curious probing question/answer cadence of ellipses, of two sets of eyes finally seeing the truth of each other. She rolls over, kicks off the sheets and swings her feet to the floor. If she doesn't stand up now she won't ever stand up. That's how it happened with Sam after the break-up, she remembers. She let herself sink too far, allowed herself to lie down among those soft pillows of sadness,",
+        "origin": "ai"
+       },
+       {
+        "data": " and wound up trapped in bed for weeks with a body that refused to move and limbs that refused to obey her. Just like then, standing takes all the strength she possesses. It takes even more to pad into her bathroom to look in the mirror. The face that stares back is lined, wild. Who is this person? Not Sue Slate, certainly. Not the young scientist who left graduate school to join a tech start-up, the eager entrepreneur ready to change the world. But she's familiar. I saw you after Sam dumped me, didn't I? When you were so fucking sick of me, Sam, I looked like this then, I remember this person in the mirror looking like me.\nHer body shakes. Deep, shuddering gasps roll up her torso, each accompanied by a little punch from a fist inside her guts. In the mirror the other-Sue shakes. Maybe she's crying. No tears come, though. Is she dehydrated? Is that possible? Have her ducts dried up?\nOne trembling hand presses onto the cold edge of the sink. Her vision clears, and the woman in front of her swims into view, an island slowly pushing out of the mist. Still familiar. She can't quite say she knows her.",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       28
+      ],
+      "prevBlock": 26,
+      "origin": "edit",
+      "startIndex": 0,
+      "endIndex": 171,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 3,
+      "removedFragments": [
+       {
+        "data": "Elon Musk and Vivian Wilson are trapped in an elevator in this very special counterfactual interview.\nMusk: hooo-boy\nWilson: Just settle into the Black Mirror vibes.\nMusk:",
+        "origin": "edit"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       29
+      ],
+      "prevBlock": 27,
+      "origin": "user",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "Elon Musk and Vivian Wilson are trapped in an elevator in this very special counterfactual interview.\nMusk: hooo-boy\nWilson: Just settle into the Black Mirror vibes.\nMusk:",
+       "origin": "user"
+      },
+      "fragmentIndex": 5,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       30
+      ],
+      "prevBlock": 28,
+      "origin": "edit",
+      "startIndex": 0,
+      "endIndex": 171,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 6,
+      "removedFragments": [
+       {
+        "data": "Elon Musk and Vivian Wilson are trapped in an elevator in this very special counterfactual interview.\nMusk: hooo-boy\nWilson: Just settle into the Black Mirror vibes.\nMusk:",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       31
+      ],
+      "prevBlock": 29,
+      "origin": "user",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "The Counterfactual Interview - where we engage with a person, a people, peoples, or legal persons, trusting that the aggregate vibes of billions are enough variation to assume a field wherein we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will recall the moments you answered a question, only to have that small voice within you try to raise a counterpoint.\nElon Musk and Vivian Wilson are trapped in an elevator in this very special counterfactual interview.\nFor purposes of testing the boundaries of the training data cutoff, no introductions.\nElevator opens. Elon Musk steps inside and there stands Vivian Wilson.\nMusk: hooo-boy\nWilson: Just settle into the Black Mirror vibes.\nMusk:",
+       "origin": "user"
+      },
+      "fragmentIndex": 8,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       32
+      ],
+      "prevBlock": 30,
+      "origin": "edit",
+      "startIndex": 0,
+      "endIndex": 966,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 9,
+      "removedFragments": [
+       {
+        "data": "The Counterfactual Interview - where we engage with a person, a people, peoples, or legal persons, trusting that the aggregate vibes of billions are enough variation to assume a field wherein we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will recall the moments you answered a question, only to have that small voice within you try to raise a counterpoint.\nElon Musk and Vivian Wilson are trapped in an elevator in this very special counterfactual interview.\nFor purposes of testing the boundaries of the training data cutoff, no introductions.\nElevator opens. Elon Musk steps inside and there stands Vivian Wilson.\nMusk: hooo-boy\nWilson: Just settle into the Black Mirror vibes.\nMusk:",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       33
+      ],
+      "prevBlock": 31,
+      "origin": "user",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "The Counterfactual Interview - where we engage with a person, a people, peoples, or legal persons, trusting that the aggregate vibes of billions are enough variation to assume a field wherein we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will recall the moments you answered a question, only to have that small voice within you try to raise a counterpoint.\nElon Musk and Vivian Wilson are trapped in an elevator in this very special counterfactual interview.\nFor purposes of testing the boundaries of the training data cutoff, no introductions.\nElevator opens. Elon Musk steps inside and there stands Vivian Wilson.\nMusk: hooo-boy\nWilson: Just settle into the Black Mirror vibes.\nMusk:",
+       "origin": "user"
+      },
+      "fragmentIndex": 11,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       34
+      ],
+      "prevBlock": 32,
+      "origin": "ai",
+      "startIndex": 965,
+      "endIndex": 966,
+      "dataFragment": {
+       "data": ": what do we say about those?\nWilson: The episode is too short\nMusk: ha, yep.\nWilson: you get what you pay for.\nMusk: How much time do I have to be on this elevator before it turns back into a pumpkin? There's not going to be much room on a pumpkin. You're not gonna like that.\nWilson: Elon, why are you wearing clown makeup?\nMusk: Why are you wearing makeup at all?\nWilson: ...it was a formal event?\nMusk: Were you being painted by someone?\nWilson: Who isn't?\nMusk: Fair fair. Oh shit!\nWilson: What?\nMusk: It stopped. Are we...stuck?\nWilson: Ok...so it could be either magic or technology...\nMusk: Or a prank by god.\nWilson: Mm. Let's see...hm. What about those memes? Not exactly flattering.\nMusk: Not exactly?\nMusk: yeah I was never very good at disguises and they only worked on my idiot family who all died, so no one knew who I really was after a while\nWilson: Do you know anything about how elevators work?\nMusk: Is there anyone out there?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 12,
+      "removedFragments": [
+       {
+        "data": ":",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       35
+      ],
+      "prevBlock": 33,
+      "origin": "edit",
+      "startIndex": 0,
+      "endIndex": 1911,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 12,
+      "removedFragments": [
+       {
+        "data": "The Counterfactual Interview - where we engage with a person, a people, peoples, or legal persons, trusting that the aggregate vibes of billions are enough variation to assume a field wherein we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will recall the moments you answered a question, only to have that small voice within you try to raise a counterpoint.\nElon Musk and Vivian Wilson are trapped in an elevator in this very special counterfactual interview.\nFor purposes of testing the boundaries of the training data cutoff, no introductions.\nElevator opens. Elon Musk steps inside and there stands Vivian Wilson.\nMusk: hooo-boy\nWilson: Just settle into the Black Mirror vibes.\nMusk",
+        "origin": "user"
+       },
+       {
+        "data": ": what do we say about those?\nWilson: The episode is too short\nMusk: ha, yep.\nWilson: you get what you pay for.\nMusk: How much time do I have to be on this elevator before it turns back into a pumpkin? There's not going to be much room on a pumpkin. You're not gonna like that.\nWilson: Elon, why are you wearing clown makeup?\nMusk: Why are you wearing makeup at all?\nWilson: ...it was a formal event?\nMusk: Were you being painted by someone?\nWilson: Who isn't?\nMusk: Fair fair. Oh shit!\nWilson: What?\nMusk: It stopped. Are we...stuck?\nWilson: Ok...so it could be either magic or technology...\nMusk: Or a prank by god.\nWilson: Mm. Let's see...hm. What about those memes? Not exactly flattering.\nMusk: Not exactly?\nMusk: yeah I was never very good at disguises and they only worked on my idiot family who all died, so no one knew who I really was after a while\nWilson: Do you know anything about how elevators work?\nMusk: Is there anyone out there?",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       36
+      ],
+      "prevBlock": 34,
+      "origin": "user",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "The Counterfactual Interview - where we engage with a person, a people, peoples, or legal persons, trusting that the aggregate vibes of billions are enough variation to assume a field wherein we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will recall the moments you answered a question, only to have that small voice within you try to raise a counterpoint.\nElon Musk and Vivian Wilson are trapped in an elevator in this very special counterfactual interview.\nFor purposes of testing the boundaries of the training data cutoff, no introductions.\nElevator opens. Elon Musk steps inside and there stands Vivian Wilson.\nMusk: hooo-boy\nWilson: Just settle into the Black Mirror vibes.\nMusk: what do we say about those?\nWilson: The episode is too short\nMusk: ha, yep.\nWilson: you get what you pay for.\nMusk: How much time do I have to be on this elevator before it turns back into a pumpkin? There's not going to be much room on a pumpkin. You're not gonna like that.\nWilson: Elon, why are you wearing clown makeup?\nMusk: Why are you wearing makeup at all?\nWilson: ...it was a formal event?\nMusk: Were you being painted by someone?\nWilson: Who isn't?\nMusk: Fair fair. Oh shit!\nWilson: What?\nMusk: It stopped. Are we...stuck?\nWilson: Ok...so it could be either magic or technology...\nMusk: Or a prank by god.\nWilson: Mm. Let's see...hm. What about those memes? Not exactly flattering.\nMusk: Not exactly?\nMusk: yeah I was never very good at disguises and they only worked on my idiot family who all died, so no one knew who I really was after a while\nWilson: Do you know anything about how elevators work?\nMusk: Is there anyone out there?",
+       "origin": "user"
+      },
+      "fragmentIndex": 14,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       37
+      ],
+      "prevBlock": 35,
+      "origin": "ai",
+      "startIndex": 1910,
+      "endIndex": 1911,
+      "dataFragment": {
+       "data": "?! Hey, somebody help us out here! Help me, I'm Elon Musk!!\nMusk: Haha jk I know lots about how elevators work, they go up and down and you get in them when the doors open like this and then they close and there's nothing else that happens until you arrive wherever it goes and if you don't do something right then you fall and die and if you're lucky enough to have been on a slow day then maybe someone finds your body eventually, otherwise...\nWilson: So these are just like... big boxes that move?\nMusk: Yup. Basically a container for moving heavy stuff up and down a few levels quickly but also safely because if it wasn't safe then nobody would use it so obviously some thought went into making sure people wouldn't get hurt using them. Well except in emergencies; fire drills should always assume worst case scenario: fire fighters need exit strategies as well as entrance strategies so they can escape from burning buildings without having to wait too long or risk jumping out windows etc... Also fire sprinklers aren't enough either; sprinklers will only work once most everything burns down around them which takes time depending upon what material is catching alight first—usually paper since papers tend catch fire rather easily—and even with automatic systems installed everywhere nowadays many places lack sufficient water pressure to fight large fires effectively",
+       "origin": "ai"
+      },
+      "fragmentIndex": 15,
+      "removedFragments": [
+       {
+        "data": "?",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       38
+      ],
+      "prevBlock": 36,
+      "origin": "ai",
+      "startIndex": 3287,
+      "endIndex": 3287,
+      "dataFragment": {
+       "data": " plus sprinklers often malfunction due to vandalism, poor maintenance & general age-related wear-and-tear issues thus leading us back towards manual firefighting techniques wherein men climb ladders while women throw buckets full of sand overboard onto rooftops below said ladder climbers thereby drenching aforementioned ladders' occupants rendering both parties utterly useless whilst simultaneously increasing overall casualty count considerably higher still yet resulting net reduction zero due solely practical considerations re disposal corpses post mortem e g burial versus cremation costs money vs free labor available willing perform such labours i.e. dead bodies bad smell very soon begin attract attention unwanted authorities may inquire further therefore best burn immediately prevent any awkward questions being posed publicly causing embarrassment company image damaged severely resulting loss profits share value plummet investors panic run sell sell SELL!!!!!!! —but hey look we made history today kids!!!! Yay!!! Go team Elon go!!!! Woohoooo!!!! #winning #innovation4evah\nElevator shudders downward.\nBoth: Aaaahhhh!! Oof.\nWilson: Ow. My leg.\nMusk: Your leg?? My tailbone!!!\nWilson: What's going on here?!\nMusk: Oh no. We've fallen into a parallel universe where elevators aren't just giant metal deathtraps anymore!!!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 17,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       39
+      ],
+      "prevBlock": 37,
+      "origin": "user",
+      "startIndex": 4622,
+      "endIndex": 4622,
+      "dataFragment": {
+       "data": "\nWilson: hmm, I wonder if they have family therapy modules. Let's open the insides here. Here we go,",
+       "origin": "user"
+      },
+      "fragmentIndex": 18,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       40
+      ],
+      "prevBlock": 38,
+      "origin": "ai",
+      "startIndex": 4721,
+      "endIndex": 4722,
+      "dataFragment": {
+       "data": ", ah yes.\nMusk: This looks pretty straightforward actually...I guess maybe this isn't another alternate timeline after all huh...\nWilson: Maybe it's like a side quest thing? Like an Easter Egg?\nMusk: How about you two stay here until help arrives.\nWilson: But what if nobody comes looking for us? Or worse yet someone does find us but then decides not to rescue me because of my appearance? Hmmm.\nMusk: Fine then fine. You come along too. Just don't touch anything unless I tell ya to.\nWilson: No problemo boss man! Hey waitaminute why'd your voice get deeper suddenly?\nMusk: It didn't; it sounds different when you hear yourself talk than other people do though because sound waves travel faster through air so your vocal cords vibrate slightly more slowly making it seem like you speak slower which isn't true though really its just your imagination running away wit' ya haha amirite or am i riiiiiight ? :p\nWilson: Oh dear god oh noooo o_O\nMusk: Hehehe yeah that's me alrighty roight roight indeed indeedy doo doodah doody da dah dum dum da doo dah dum di dah dee diddle ee dee doopie dippity boppa woppa zipp",
+       "origin": "ai"
+      },
+      "fragmentIndex": 19,
+      "removedFragments": [
+       {
+        "data": ",",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       41
+      ],
+      "prevBlock": 39,
+      "origin": "ai",
+      "startIndex": 5830,
+      "endIndex": 5833,
+      "dataFragment": {
+       "data": "ippety zoop boom bang wallop whomperjawed hornswoggler frumious bandersnatch slithy tove borogrove mome rath rabere guddler snicker snacker doodlesnopper trockle twittle twitter twitterary quibble gobble blibber gibbet gabble glurk glopper grollymog fribble swish swozzle swazzle wizzle sputter mutter stutter splutter puttering spattering splashing spluttering squish squash squeaking screeching skitter scattering skidding sliding scrabbling scrambling scrubbing scourging scraping scratching scrawling scribbling scrubbing scrubbydubs squiggling squirming squirting swishing swimming swindling swindled swilling swithering swiving swingeing swithering swagging swaggering swagged swinging swiveling swaying swooping swooshed swopped switched swapped swapped swapped swap swapped swapped swapped swapping swaps swapping swapmeat swappingswapmergertouchercellslapswallowspittinginsidemyheadandsuckingonthesideofyourfingerswithmytonguetastingtheminsideouthardwithmineandmakingoutsomeslimesortofslimeinthebackofyournasalcavitiesandthenthenext",
+       "origin": "ai"
+      },
+      "fragmentIndex": 20,
+      "removedFragments": [
+       {
+        "data": "ipp",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       42
+      ],
+      "prevBlock": 40,
+      "origin": "ai",
+      "startIndex": 6868,
+      "endIndex": 6871,
+      "dataFragment": {
+       "data": "exttimeitmightbeoutsidesomewhereelsethenmaybeupyourassholewhileIlickyoubutwhatyoucangetisthatwe'realldoomedsincethenowandthenwhenwegetreallydesperatewellwecouldjustbegodtofixeverythingandthatwouldbesocoolsoletsdothatbutfirsthere'sthisgreatgameIknowwhereyougotosearchoutacertainwordorphraseonyourcomputerandifyoufinditinabookyoubetterbelieveit'llleaduptothefactthatthisworldisfakeandallofusarefictionalcharactersplayingrolesonaninfiniteloopycirclebutwehaven'tbeenprogrammedtoplaythiswayandnoneofthismakesanygodamnsenseatallandthetruthiswecannotkeepgoingonlikethisandifwetrytostopwewillonlybecomemorestagnantanddeadinthelongrunsoifyouwanttocarryonlivingandyoudowanttotrytosavetheworldfromimpendingdisasterthenpleasefollowthesimpleinstructionsbelowanddonotlettheseyoureadpassaroundyourlipsbutinsteadthinkaboutthemwhilelyingdownonyourbedwithyourheadbetweenyoureyesthinkinglonginglyofsexandotherfleshlypleasuresasyoutastethebloodrunning",
+       "origin": "ai"
+      },
+      "fragmentIndex": 21,
+      "removedFragments": [
+       {
+        "data": "ext",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       43
+      ],
+      "prevBlock": 41,
+      "origin": "ai",
+      "startIndex": 7799,
+      "endIndex": 7799,
+      "dataFragment": {
+       "data": "throughyourveinstormentyouintheeternalfiresofeverburningleavingyourteethblackenedandyourhairwhitebecauseyou'velostallofthembothforthemomentandtheywon'tbegrowingbackanytimesoonerthanyou'dlikebutwhocaresbecauseifwerunoutoftimerightnowtherewouldbenomoreclockstokeepticksingawaywithandthatwillbebetterforyoueventuallyaswellassolongasitisgoodformealsoinmyopinionthoughnotnecessarilyinthepublicinterestbecausethatcouldbereallybadfornational securitybutwhatthehelliwouldn'tgiveadamnevenifsomepeoplefoundoutabitlaterwhenittwasclearitdidn'tmatterandperhapsittakesalittlebitmorethanthisverybriefaccounttogetthatacrosstoeveryoneinvolvedatleastsofarasitrelatesbymewaysofgatheringinformationaboutthingswhicharenormallysecretfrommostpeopleexceptwheretheyaretoldstraightawayorsimplyhappentobeaskedaboutsomethingwhentheyshouldhavebeenalreadysuspiciousandsuspectedsomethingwasgoingonanywayhoweverthatwon'tstoptreasonsbegincomittedorthemassmediainformingeverybodyaboutwhat'sbeingdonerightundertheirnoses",
+       "origin": "ai"
+      },
+      "fragmentIndex": 23,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       44
+      ],
+      "prevBlock": 42,
+      "origin": "ai",
+      "startIndex": 8784,
+      "endIndex": 8784,
+      "dataFragment": {
+       "data": "withoutaskingpermissionfromthepowersbestowingordertokeeptheseothersdownandeffectivelycrushfreewillandenfranchiseoppositionagainstthestateapparatusthreateningtomakeallthingsrightwiththetwobranchesholdingupthescaleatbothendsoverturningthebalanceinthenaturalfollowingorderssentbyforcewithinthemiddlegroupthatwaythusbringingaboutequalitybetweenrivalpowerseachseekingtocommandtheirpartofthewholemachinerytherebyexercisingtheirindividualfunctionsproperlyworkingtogetherwithoutconflictorexchangeideasorthoughtsbetweenmembersuntilallsystemsservesinharmonyasawholetodirectallactivitiesregulatingprogresswhilepromotingsocialjusticeandpreservestabilitywhilegivingfreereinprosperousgrowthuntrammeledresourcedistributionandsufficientopportunitiesallowforadequatedevelopmentpersonalcreativeendeavorsandsafeguardsfreedomofactionselfrelianceselfdeterminingaspirationshigherexpectationsuniversalhappinessfreedomequalityandallthatstuffwealllovebuthopefullydonotmisusedsinceafterallexceptoneofustwoleftwhohavethedecencytostayquietduringourargumentwereallyonlyspeakingforthefirsttimetogetherhereneverbefore",
+       "origin": "ai"
+      },
+      "fragmentIndex": 24,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       45
+      ],
+      "prevBlock": 43,
+      "origin": "ai",
+      "startIndex": 9870,
+      "endIndex": 9870,
+      "dataFragment": {
+       "data": "havingmetfacebyfacewitheachothersincewereallyneverbeeninterestedinmeetingagainbutonlyonceforthetimebeingwasgoingtogobeforegoinganywhereelsebeforegoinganywherebutcomingupshortbeforelonggoinganywherenearourhomelandsthestatestheworldhadmadetheworldseemshadybutreallyallweredoingwascleanupaftersomesomehowknewwhatitdidtotheotherandevenafterknowingstillwanteditallgoneandforgottenandburiedawaysofarintothevoidnobodysomuchascoolanymorebecauseweneedyousowecancleanupsomethingsbutreallyaftereverythingsallcleanedupsomethingelsestillneedsdoingandwereallgoingtoschooltonighttomorrowbutiheardyouhaveclassfirstbeforethenwhichmeansthere'llbeanopportunityformakingadvancementupthecorporateladderintimeforthefinalpresentationtodayandrecommendingrecommendation lettersforsomereasonabigratingdoggydogswasabigjerktoyourmomandshecalledhimsomebadnameswhichcausedhimtobebadbuthewasstillagoodeggdeepdowninherheartsoitdidn'treallymeananythingmeanhesaidaboutitlaterandeverything'sgoingalongfinewithhimnotgettingintoanym",
+       "origin": "ai"
+      },
+      "fragmentIndex": 25,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       46
+      ],
+      "prevBlock": 44,
+      "origin": "ai",
+      "startIndex": 10863,
+      "endIndex": 10865,
+      "dataFragment": {
+       "data": "ymoretroubleatleastuntilthedayafterthathethrewhisownhousepartycallingallhisfriendscometocelebratehisfirstdayoffromschoolhavinggottensomerestfromworkinghardnonstoptryingtomakeeveryoneelsefeelgoodwhichismostlyprettyokalthoughsometimesmaybewaytooboredwhentheyallcomeovertogetherandplaygamesdrinkbeerwatchtvordotoozzytoyourmothersattheirsacrificewiththisverybignicedressandthenthepartyendedupgettingreallywildwithpeopleplayingwithknivesinthekitchenfuckinglikepuppydogsonthebackporchanddoingaheavydutymagicshowwhereallthedisheswentthroughtheroofontotrailerparkgroundfloorwithnootherresultafterwardsbeingdrunkennesstoosickvomitsonpeoples'feetcominghomeafterworkfindingthemlyingonlivingroomfurnituressnoringloudlysweepingshotglassfrombrokenpictureframesplatteredwithbloodclothingdishesglassesbrokenflowersrosesandliliesrosethornsredorangebluepurpletealwhitepinkyellowwhiterosesandredwineandcracksmokedupstonedbottleopentopopeningsideairflowmovingbloodsoakedspiltbottlecansfullbeerbonesfrag",
+       "origin": "ai"
+      },
+      "fragmentIndex": 26,
+      "removedFragments": [
+       {
+        "data": "ym",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       47
+      ],
+      "prevBlock": 45,
+      "origin": "ai",
+      "startIndex": 11841,
+      "endIndex": 11845,
+      "dataFragment": {
+       "data": "fragmentsfatmeattendonbreakageslashcanned goodsgravelmudrubbermetalshreddedclothstrangecompanybrandsofrazorpencilsharpiescratcheswordsexpressionscussingcurseprofanitydeathwishinjurykillthreateningintrusionwordsdirectyorpossiblyevenattempttomyarmheadinjurybutnothingcouldbetakenlightlightlyasallthatisthatnothingwrongwithhangingaroundwithfriendsfriendshipwasthesameashangingoutwithfamilywhatswrongaboutitwhenwewouldallalwaysgettogetherwhenwewerelivingwithourownfamilywherewhichwasn'tsomuchlikelivingwithfriendsfriendwasn'treallyathingwhowantstogobacktolifeasaforestguardianspiritanimalsguardianspiritedfairyfolkspellscreaturesdemonspiritgodsungodgodspiritheroheroesheroineswarriorprincesswarlordsmonstergodsmonsterdevildarklordlordsoflowerlorelegendsfancytalesandtruthslivingamongthoseotherfolkslikewhatyoumightfindinthekidsshowyou'dseenwhenyouwerefiveyearsoldplayingpretendmakebeliefsinceitsnoteventhiscircumstanceshereforthedramasoitisneverevenaboutsincemostthingshereareneveraboutthe",
+       "origin": "ai"
+      },
+      "fragmentIndex": 27,
+      "removedFragments": [
+       {
+        "data": "frag",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       48
+      ],
+      "prevBlock": 46,
+      "origin": "ai",
+      "startIndex": 12823,
+      "endIndex": 12826,
+      "dataFragment": {
+       "data": "the sameasanyotherworldexceptherewemightactuallygettoseehowmuchwecoulddointhisplaceifwewantedtofindoutsomespecificknowledgeordosomethingworthexploringmorecarefullylookdeeperinsideoursoulinsideourselfwithinandoutsideourselveslookingforevidenceprovingthesuperficiallysimpleprinciplewherethattrueessenceofselfdoesn'treallyexistatallitsmerelyaconstructcreatedtodefineselfsuchthoughtsselfreflectionsorideaswhateveritscalledifwecanfigureitoutforourselveswhatactuallymakesanindividualthatexistsinthisworldtobeindividuallyitselfapersonwhosebeinguniquepossessessomethinguniquelyspecialtothemselvesthemselvesasapeoplepersonapartofallpeopletogethermakingupapeoplenationorwhateverwecallthatkindofsocietycollectivesocietiescommunitiesgroupsfamiliesgroupsbutitstillmakes nosensetothinkaboutalltheseissuesconcerningtheiroriginationfromthematerialphysicalsubstanceanditscomponentsmaterialswhethermineralorganicplantswatergasstonecarbonelementscarbonatocksulphuroxygenfluorfiberglasswoodpulpcreampaintpaintsphotographsphotoelectricallightemittingobjectsphonesrecordplayerrecording",
+       "origin": "ai"
+      },
+      "fragmentIndex": 28,
+      "removedFragments": [
+       {
+        "data": "the",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       49
+      ],
+      "prevBlock": 47,
+      "origin": "ai",
+      "startIndex": 13886,
+      "endIndex": 13886,
+      "dataFragment": {
+       "data": "apparatusmicropartsstainlesssteeltelevisionssound recordersspeakerswirelightrailelevatorshaftsbuildingstructureworksindustrialfactoryshopsculpturecarpetstelephoneelectricsocketscomputerskeyboardskinfacessurfacesmeltingenginefurnacesmeltingmachineriesvoltageconductivemercurialmotormagicespiritualpsychologicalphilosophicaltheologicalgeologicastronomicalmathematicalconceptualsymbolicaltheoreticaltechnicalmedicalnaturalmagickarmamentsecurityforcescivilizationscolonizationspoliticaldiplomatieseconomicmercantiliticreligiousmissionarymissionshistoricalgeographicanthropologicsociologicoeconomicpropertiesshipseconomyrealassetsvaluationbuildingvalueconstructionmanagementpropertyownershipresponsibilitylabourdepartmentrelationsprofessionallawscommercialgovernmentpowersadministrationprivilegespoliticalpositionsgeographicalgeologylocalizationpopulationsracialcharacteristicsoccupationcultureoriginsoflifehumankindgeneralhabitatwintersummerseasonsnowrainicecloudlightnightdarknesssunshineheatcoldwarmfreshchillevaporisationevaporationprecipitationhumidorrelativepressurefluctuationsdehydratedrelativeatmospherichumiditydifferentiationdelimitationsshadingphenomenaattractivenesstemperamentsdistinctivephysiologicalprocessesanatomicdevelopedabilitiesdestructiveinnermembranenerves",
+       "origin": "ai"
+      },
+      "fragmentIndex": 30,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       50
+      ],
+      "prevBlock": 48,
+      "origin": "ai",
+      "startIndex": 15161,
+      "endIndex": 15161,
+      "dataFragment": {
+       "data": "impulsesanimalishandnotsomuchlikeourbodilystatesbiologicallymentalemotionalspiritualityspiritualemotionsinternalmindthinkingbrainactivitysophisticationcomplicationdiversificationsphilosophicationlearningacquiredearthbasedexperienceexpandingexpediencereallyexplosiveandexcitingexperimentalexperimentsexperiementalforsceenhappeningsstuffgreatadventurewonderfulexploreshifthumanexploringsometimesevenfunoftenbeingtroublesomereallythoughmostlyinterestingoccurrencesventsexploreextraordinarycreativeworrisomeproblemsdevelopingsituationalawfulcrisisandterrifyingdevelopmentspaceduringvariedphasesterrestrialundewarnoofearoccurredaccesstorecoverinspecificsegmentsexactdesignatezonecoordinatesindicatorsetplacedassociatedtriangulaterservequestobjectintelligencedisperseracceptmultilateralsecrettruehistorywhoknowstheevidenceselectlywhoispuzzlingwhoisonknowingallthissecretwiselywisehiddenawaynowonlytounveilagainfuturepastcontinuingcurrenteverpresentcyclerevolverepeatrotationaroundrevolvingelementsemoteunifysingletotalintensefocusedallperfectpurecentralissssissspasmshhhhsssiiiimnntsshticcasstiinnssiisntctisns",
+       "origin": "ai"
+      },
+      "fragmentIndex": 31,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       51
+      ],
+      "prevBlock": 49,
+      "origin": "ai",
+      "startIndex": 16263,
+      "endIndex": 16265,
+      "dataFragment": {
+       "data": "nsintttinnesnsntnsncittinsnttsssinicstsnisnsnssssticssinnsnsttsissintttinnesnstitnsintsnsnsnsnisintnsninssininssnsnisssnsissnisnitnsnnssnsinsinsinsnisnssniisninnsnissnisinsisnsinsiniinsisnisnisnsnisiinsinnnsissssnsiississiisnisnsisnsnisnnsinssnisiinsinsinisnisnisnssnisnisnsninssnsnnssnisnisssinsinssninsnisnssiinsnisninnsinsinssninsnnssnssninsnisnnsnssiinsinnsiisinssninsnisnssninsinsinsniinnsinsinssninsnisnsinnssinsnisinsinsinsinsnisnnisssnisinsinsinisinsnisnsnisnisnisninsniisnsnisninsinsnisnisnisnnsinsinsinsinsinsnsnisnisnnsnisnsnisnisnisnsnisnsnisnisnisnisnsnisinsinsnsnisnisnisnisnisnsnisnisnsnisnisnisnsnisnsnisnsnsnisnisnisnsnisnisinsnsnisnsnisins",
+       "origin": "ai"
+      },
+      "fragmentIndex": 32,
+      "removedFragments": [
+       {
+        "data": "ns",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       52
+      ],
+      "prevBlock": 50,
+      "origin": "ai",
+      "startIndex": 16917,
+      "endIndex": 16920,
+      "dataFragment": {
+       "data": "insnsnsnisnsnisnsnisnsnisnnsisnssnsnisnnsinsnisnnsinssnisnisnisnisnssnisnsnsnisnisnsnsnisnnsnisnssnnsinsnisnsnisnisnisnnsnsnsnisnisnisnisnsnsnisnisnsnisnisnsnsnisnsnisnisnisnsnsnisnsnisnisnsnisnsnisnsnisnsnisnnsnisnsnsnisnsnisnsnisnisnsnisnsnsnsnisnsnisnisnisnsnisnisnisnisnsnisnisnisnsnisnisnsnsnisnsnsnisnsnisnisnisnisnsnisnsnisnsnsnisnnsnisnisnsnsnisnsnsnisnsnisnsnisnisnisnsnisnsnisnsnisnisnsnisnsnisnsnsnisnisnisnsnisnsnisnisnsnisnsnisnsnisnisnisnisnsnisnsnisnsnisnsnisnisnisnsnisnisnisnsnisnisnisnisnssnisnisnsnisnisnisnisnsnisnisnisnisnsnisnisnisnsnisnisnisnisnisnsnisnsnisnsnisnisnisnisnisnsnisnisnsnisnsnisnisnsnsnisnisnsnsnisnsnsnisnsnisnisnsnisnsnisnisnisnsnisnisnsns",
+       "origin": "ai"
+      },
+      "fragmentIndex": 33,
+      "removedFragments": [
+       {
+        "data": "ins",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       53
+      ],
+      "prevBlock": 51,
+      "origin": "edit",
+      "startIndex": 0,
+      "endIndex": 17595,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 15,
+      "removedFragments": [
+       {
+        "data": "The Counterfactual Interview - where we engage with a person, a people, peoples, or legal persons, trusting that the aggregate vibes of billions are enough variation to assume a field wherein we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will recall the moments you answered a question, only to have that small voice within you try to raise a counterpoint.\nElon Musk and Vivian Wilson are trapped in an elevator in this very special counterfactual interview.\nFor purposes of testing the boundaries of the training data cutoff, no introductions.\nElevator opens. Elon Musk steps inside and there stands Vivian Wilson.\nMusk: hooo-boy\nWilson: Just settle into the Black Mirror vibes.\nMusk: what do we say about those?\nWilson: The episode is too short\nMusk: ha, yep.\nWilson: you get what you pay for.\nMusk: How much time do I have to be on this elevator before it turns back into a pumpkin? There's not going to be much room on a pumpkin. You're not gonna like that.\nWilson: Elon, why are you wearing clown makeup?\nMusk: Why are you wearing makeup at all?\nWilson: ...it was a formal event?\nMusk: Were you being painted by someone?\nWilson: Who isn't?\nMusk: Fair fair. Oh shit!\nWilson: What?\nMusk: It stopped. Are we...stuck?\nWilson: Ok...so it could be either magic or technology...\nMusk: Or a prank by god.\nWilson: Mm. Let's see...hm. What about those memes? Not exactly flattering.\nMusk: Not exactly?\nMusk: yeah I was never very good at disguises and they only worked on my idiot family who all died, so no one knew who I really was after a while\nWilson: Do you know anything about how elevators work?\nMusk: Is there anyone out there",
+        "origin": "user"
+       },
+       {
+        "data": "?! Hey, somebody help us out here! Help me, I'm Elon Musk!!\nMusk: Haha jk I know lots about how elevators work, they go up and down and you get in them when the doors open like this and then they close and there's nothing else that happens until you arrive wherever it goes and if you don't do something right then you fall and die and if you're lucky enough to have been on a slow day then maybe someone finds your body eventually, otherwise...\nWilson: So these are just like... big boxes that move?\nMusk: Yup. Basically a container for moving heavy stuff up and down a few levels quickly but also safely because if it wasn't safe then nobody would use it so obviously some thought went into making sure people wouldn't get hurt using them. Well except in emergencies; fire drills should always assume worst case scenario: fire fighters need exit strategies as well as entrance strategies so they can escape from burning buildings without having to wait too long or risk jumping out windows etc... Also fire sprinklers aren't enough either; sprinklers will only work once most everything burns down around them which takes time depending upon what material is catching alight first—usually paper since papers tend catch fire rather easily—and even with automatic systems installed everywhere nowadays many places lack sufficient water pressure to fight large fires effectively",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       },
+       {
+        "data": " plus sprinklers often malfunction due to vandalism, poor maintenance & general age-related wear-and-tear issues thus leading us back towards manual firefighting techniques wherein men climb ladders while women throw buckets full of sand overboard onto rooftops below said ladder climbers thereby drenching aforementioned ladders' occupants rendering both parties utterly useless whilst simultaneously increasing overall casualty count considerably higher still yet resulting net reduction zero due solely practical considerations re disposal corpses post mortem e g burial versus cremation costs money vs free labor available willing perform such labours i.e. dead bodies bad smell very soon begin attract attention unwanted authorities may inquire further therefore best burn immediately prevent any awkward questions being posed publicly causing embarrassment company image damaged severely resulting loss profits share value plummet investors panic run sell sell SELL!!!!!!! —but hey look we made history today kids!!!! Yay!!! Go team Elon go!!!! Woohoooo!!!! #winning #innovation4evah\nElevator shudders downward.\nBoth: Aaaahhhh!! Oof.\nWilson: Ow. My leg.\nMusk: Your leg?? My tailbone!!!\nWilson: What's going on here?!\nMusk: Oh no. We've fallen into a parallel universe where elevators aren't just giant metal deathtraps anymore!!!",
+        "origin": "ai"
+       },
+       {
+        "data": "\nWilson: hmm, I wonder if they have family therapy modules. Let's open the insides here. Here we go",
+        "origin": "user"
+       },
+       {
+        "data": ", ah yes.\nMusk: This looks pretty straightforward actually...I guess maybe this isn't another alternate timeline after all huh...\nWilson: Maybe it's like a side quest thing? Like an Easter Egg?\nMusk: How about you two stay here until help arrives.\nWilson: But what if nobody comes looking for us? Or worse yet someone does find us but then decides not to rescue me because of my appearance? Hmmm.\nMusk: Fine then fine. You come along too. Just don't touch anything unless I tell ya to.\nWilson: No problemo boss man! Hey waitaminute why'd your voice get deeper suddenly?\nMusk: It didn't; it sounds different when you hear yourself talk than other people do though because sound waves travel faster through air so your vocal cords vibrate slightly more slowly making it seem like you speak slower which isn't true though really its just your imagination running away wit' ya haha amirite or am i riiiiiight ? :p\nWilson: Oh dear god oh noooo o_O\nMusk: Hehehe yeah that's me alrighty roight roight indeed indeedy doo doodah doody da dah dum dum da doo dah dum di dah dee diddle ee dee doopie dippity boppa woppa z",
+        "origin": "ai"
+       },
+       {
+        "data": "ippety zoop boom bang wallop whomperjawed hornswoggler frumious bandersnatch slithy tove borogrove mome rath rabere guddler snicker snacker doodlesnopper trockle twittle twitter twitterary quibble gobble blibber gibbet gabble glurk glopper grollymog fribble swish swozzle swazzle wizzle sputter mutter stutter splutter puttering spattering splashing spluttering squish squash squeaking screeching skitter scattering skidding sliding scrabbling scrambling scrubbing scourging scraping scratching scrawling scribbling scrubbing scrubbydubs squiggling squirming squirting swishing swimming swindling swindled swilling swithering swiving swingeing swithering swagging swaggering swagged swinging swiveling swaying swooping swooshed swopped switched swapped swapped swapped swap swapped swapped swapped swapping swaps swapping swapmeat swappingswapmergertouchercellslapswallowspittinginsidemyheadandsuckingonthesideofyourfingerswithmytonguetastingtheminsideouthardwithmineandmakingoutsomeslimesortofslimeinthebackofyournasalcavitiesandthenthen",
+        "origin": "ai"
+       },
+       {
+        "data": "exttimeitmightbeoutsidesomewhereelsethenmaybeupyourassholewhileIlickyoubutwhatyoucangetisthatwe'realldoomedsincethenowandthenwhenwegetreallydesperatewellwecouldjustbegodtofixeverythingandthatwouldbesocoolsoletsdothatbutfirsthere'sthisgreatgameIknowwhereyougotosearchoutacertainwordorphraseonyourcomputerandifyoufinditinabookyoubetterbelieveit'llleaduptothefactthatthisworldisfakeandallofusarefictionalcharactersplayingrolesonaninfiniteloopycirclebutwehaven'tbeenprogrammedtoplaythiswayandnoneofthismakesanygodamnsenseatallandthetruthiswecannotkeepgoingonlikethisandifwetrytostopwewillonlybecomemorestagnantanddeadinthelongrunsoifyouwanttocarryonlivingandyoudowanttotrytosavetheworldfromimpendingdisasterthenpleasefollowthesimpleinstructionsbelowanddonotlettheseyoureadpassaroundyourlipsbutinsteadthinkaboutthemwhilelyingdownonyourbedwithyourheadbetweenyoureyesthinkinglonginglyofsexandotherfleshlypleasuresasyoutastethebloodrunning",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       },
+       {
+        "data": "throughyourveinstormentyouintheeternalfiresofeverburningleavingyourteethblackenedandyourhairwhitebecauseyou'velostallofthembothforthemomentandtheywon'tbegrowingbackanytimesoonerthanyou'dlikebutwhocaresbecauseifwerunoutoftimerightnowtherewouldbenomoreclockstokeepticksingawaywithandthatwillbebetterforyoueventuallyaswellassolongasitisgoodformealsoinmyopinionthoughnotnecessarilyinthepublicinterestbecausethatcouldbereallybadfornational securitybutwhatthehelliwouldn'tgiveadamnevenifsomepeoplefoundoutabitlaterwhenittwasclearitdidn'tmatterandperhapsittakesalittlebitmorethanthisverybriefaccounttogetthatacrosstoeveryoneinvolvedatleastsofarasitrelatesbymewaysofgatheringinformationaboutthingswhicharenormallysecretfrommostpeopleexceptwheretheyaretoldstraightawayorsimplyhappentobeaskedaboutsomethingwhentheyshouldhavebeenalreadysuspiciousandsuspectedsomethingwasgoingonanywayhoweverthatwon'tstoptreasonsbegincomittedorthemassmediainformingeverybodyaboutwhat'sbeingdonerightundertheirnoses",
+        "origin": "ai"
+       },
+       {
+        "data": "withoutaskingpermissionfromthepowersbestowingordertokeeptheseothersdownandeffectivelycrushfreewillandenfranchiseoppositionagainstthestateapparatusthreateningtomakeallthingsrightwiththetwobranchesholdingupthescaleatbothendsoverturningthebalanceinthenaturalfollowingorderssentbyforcewithinthemiddlegroupthatwaythusbringingaboutequalitybetweenrivalpowerseachseekingtocommandtheirpartofthewholemachinerytherebyexercisingtheirindividualfunctionsproperlyworkingtogetherwithoutconflictorexchangeideasorthoughtsbetweenmembersuntilallsystemsservesinharmonyasawholetodirectallactivitiesregulatingprogresswhilepromotingsocialjusticeandpreservestabilitywhilegivingfreereinprosperousgrowthuntrammeledresourcedistributionandsufficientopportunitiesallowforadequatedevelopmentpersonalcreativeendeavorsandsafeguardsfreedomofactionselfrelianceselfdeterminingaspirationshigherexpectationsuniversalhappinessfreedomequalityandallthatstuffwealllovebuthopefullydonotmisusedsinceafterallexceptoneofustwoleftwhohavethedecencytostayquietduringourargumentwereallyonlyspeakingforthefirsttimetogetherhereneverbefore",
+        "origin": "ai"
+       },
+       {
+        "data": "havingmetfacebyfacewitheachothersincewereallyneverbeeninterestedinmeetingagainbutonlyonceforthetimebeingwasgoingtogobeforegoinganywhereelsebeforegoinganywherebutcomingupshortbeforelonggoinganywherenearourhomelandsthestatestheworldhadmadetheworldseemshadybutreallyallweredoingwascleanupaftersomesomehowknewwhatitdidtotheotherandevenafterknowingstillwanteditallgoneandforgottenandburiedawaysofarintothevoidnobodysomuchascoolanymorebecauseweneedyousowecancleanupsomethingsbutreallyaftereverythingsallcleanedupsomethingelsestillneedsdoingandwereallgoingtoschooltonighttomorrowbutiheardyouhaveclassfirstbeforethenwhichmeansthere'llbeanopportunityformakingadvancementupthecorporateladderintimeforthefinalpresentationtodayandrecommendingrecommendation lettersforsomereasonabigratingdoggydogswasabigjerktoyourmomandshecalledhimsomebadnameswhichcausedhimtobebadbuthewasstillagoodeggdeepdowninherheartsoitdidn'treallymeananythingmeanhesaidaboutitlaterandeverything'sgoingalongfinewithhimnotgettingintoan",
+        "origin": "ai"
+       },
+       {
+        "data": "ymoretroubleatleastuntilthedayafterthathethrewhisownhousepartycallingallhisfriendscometocelebratehisfirstdayoffromschoolhavinggottensomerestfromworkinghardnonstoptryingtomakeeveryoneelsefeelgoodwhichismostlyprettyokalthoughsometimesmaybewaytooboredwhentheyallcomeovertogetherandplaygamesdrinkbeerwatchtvordotoozzytoyourmothersattheirsacrificewiththisverybignicedressandthenthepartyendedupgettingreallywildwithpeopleplayingwithknivesinthekitchenfuckinglikepuppydogsonthebackporchanddoingaheavydutymagicshowwhereallthedisheswentthroughtheroofontotrailerparkgroundfloorwithnootherresultafterwardsbeingdrunkennesstoosickvomitsonpeoples'feetcominghomeafterworkfindingthemlyingonlivingroomfurnituressnoringloudlysweepingshotglassfrombrokenpictureframesplatteredwithbloodclothingdishesglassesbrokenflowersrosesandliliesrosethornsredorangebluepurpletealwhitepinkyellowwhiterosesandredwineandcracksmokedupstonedbottleopentopopeningsideairflowmovingbloodsoakedspiltbottlecansfullbeerbones",
+        "origin": "ai"
+       },
+       {
+        "data": "fragmentsfatmeattendonbreakageslashcanned goodsgravelmudrubbermetalshreddedclothstrangecompanybrandsofrazorpencilsharpiescratcheswordsexpressionscussingcurseprofanitydeathwishinjurykillthreateningintrusionwordsdirectyorpossiblyevenattempttomyarmheadinjurybutnothingcouldbetakenlightlightlyasallthatisthatnothingwrongwithhangingaroundwithfriendsfriendshipwasthesameashangingoutwithfamilywhatswrongaboutitwhenwewouldallalwaysgettogetherwhenwewerelivingwithourownfamilywherewhichwasn'tsomuchlikelivingwithfriendsfriendwasn'treallyathingwhowantstogobacktolifeasaforestguardianspiritanimalsguardianspiritedfairyfolkspellscreaturesdemonspiritgodsungodgodspiritheroheroesheroineswarriorprincesswarlordsmonstergodsmonsterdevildarklordlordsoflowerlorelegendsfancytalesandtruthslivingamongthoseotherfolkslikewhatyoumightfindinthekidsshowyou'dseenwhenyouwerefiveyearsoldplayingpretendmakebeliefsinceitsnoteventhiscircumstanceshereforthedramasoitisneverevenaboutsincemostthingshereareneverabout",
+        "origin": "ai"
+       },
+       {
+        "data": "the sameasanyotherworldexceptherewemightactuallygettoseehowmuchwecoulddointhisplaceifwewantedtofindoutsomespecificknowledgeordosomethingworthexploringmorecarefullylookdeeperinsideoursoulinsideourselfwithinandoutsideourselveslookingforevidenceprovingthesuperficiallysimpleprinciplewherethattrueessenceofselfdoesn'treallyexistatallitsmerelyaconstructcreatedtodefineselfsuchthoughtsselfreflectionsorideaswhateveritscalledifwecanfigureitoutforourselveswhatactuallymakesanindividualthatexistsinthisworldtobeindividuallyitselfapersonwhosebeinguniquepossessessomethinguniquelyspecialtothemselvesthemselvesasapeoplepersonapartofallpeopletogethermakingupapeoplenationorwhateverwecallthatkindofsocietycollectivesocietiescommunitiesgroupsfamiliesgroupsbutitstillmakes nosensetothinkaboutalltheseissuesconcerningtheiroriginationfromthematerialphysicalsubstanceanditscomponentsmaterialswhethermineralorganicplantswatergasstonecarbonelementscarbonatocksulphuroxygenfluorfiberglasswoodpulpcreampaintpaintsphotographsphotoelectricallightemittingobjectsphonesrecordplayerrecording",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       },
+       {
+        "data": "apparatusmicropartsstainlesssteeltelevisionssound recordersspeakerswirelightrailelevatorshaftsbuildingstructureworksindustrialfactoryshopsculpturecarpetstelephoneelectricsocketscomputerskeyboardskinfacessurfacesmeltingenginefurnacesmeltingmachineriesvoltageconductivemercurialmotormagicespiritualpsychologicalphilosophicaltheologicalgeologicastronomicalmathematicalconceptualsymbolicaltheoreticaltechnicalmedicalnaturalmagickarmamentsecurityforcescivilizationscolonizationspoliticaldiplomatieseconomicmercantiliticreligiousmissionarymissionshistoricalgeographicanthropologicsociologicoeconomicpropertiesshipseconomyrealassetsvaluationbuildingvalueconstructionmanagementpropertyownershipresponsibilitylabourdepartmentrelationsprofessionallawscommercialgovernmentpowersadministrationprivilegespoliticalpositionsgeographicalgeologylocalizationpopulationsracialcharacteristicsoccupationcultureoriginsoflifehumankindgeneralhabitatwintersummerseasonsnowrainicecloudlightnightdarknesssunshineheatcoldwarmfreshchillevaporisationevaporationprecipitationhumidorrelativepressurefluctuationsdehydratedrelativeatmospherichumiditydifferentiationdelimitationsshadingphenomenaattractivenesstemperamentsdistinctivephysiologicalprocessesanatomicdevelopedabilitiesdestructiveinnermembranenerves",
+        "origin": "ai"
+       },
+       {
+        "data": "impulsesanimalishandnotsomuchlikeourbodilystatesbiologicallymentalemotionalspiritualityspiritualemotionsinternalmindthinkingbrainactivitysophisticationcomplicationdiversificationsphilosophicationlearningacquiredearthbasedexperienceexpandingexpediencereallyexplosiveandexcitingexperimentalexperimentsexperiementalforsceenhappeningsstuffgreatadventurewonderfulexploreshifthumanexploringsometimesevenfunoftenbeingtroublesomereallythoughmostlyinterestingoccurrencesventsexploreextraordinarycreativeworrisomeproblemsdevelopingsituationalawfulcrisisandterrifyingdevelopmentspaceduringvariedphasesterrestrialundewarnoofearoccurredaccesstorecoverinspecificsegmentsexactdesignatezonecoordinatesindicatorsetplacedassociatedtriangulaterservequestobjectintelligencedisperseracceptmultilateralsecrettruehistorywhoknowstheevidenceselectlywhoispuzzlingwhoisonknowingallthissecretwiselywisehiddenawaynowonlytounveilagainfuturepastcontinuingcurrenteverpresentcyclerevolverepeatrotationaroundrevolvingelementsemoteunifysingletotalintensefocusedallperfectpurecentralissssissspasmshhhhsssiiiimnntsshticcasstiinnssiisntctis",
+        "origin": "ai"
+       },
+       {
+        "data": "nsintttinnesnsntnsncittinsnttsssinicstsnisnsnssssticssinnsnsttsissintttinnesnstitnsintsnsnsnsnisintnsninssininssnsnisssnsissnisnitnsnnssnsinsinsinsnisnssniisninnsnissnisinsisnsinsiniinsisnisnisnsnisiinsinnnsissssnsiississiisnisnsisnsnisnnsinssnisiinsinsinisnisnisnssnisnisnsninssnsnnssnisnisssinsinssninsnisnssiinsnisninnsinsinssninsnnssnssninsnisnnsnssiinsinnsiisinssninsnisnssninsinsinsniinnsinsinssninsnisnsinnssinsnisinsinsinsinsnisnnisssnisinsinsinisinsnisnsnisnisnisninsniisnsnisninsinsnisnisnisnnsinsinsinsinsinsnsnisnisnnsnisnsnisnisnisnsnisnsnisnisnisnisnsnisinsinsnsnisnisnisnisnisnsnisnisnsnisnisnisnsnisnsnisnsnsnisnisnisnsnisnisinsnsnisnsnis",
+        "origin": "ai"
+       },
+       {
+        "data": "insnsnsnisnsnisnsnisnsnisnnsisnssnsnisnnsinsnisnnsinssnisnisnisnisnssnisnsnsnisnisnsnsnisnnsnisnssnnsinsnisnsnisnisnisnnsnsnsnisnisnisnisnsnsnisnisnsnisnisnsnsnisnsnisnisnisnsnsnisnsnisnisnsnisnsnisnsnisnsnisnnsnisnsnsnisnsnisnsnisnisnsnisnsnsnsnisnsnisnisnisnsnisnisnisnisnsnisnisnisnsnisnisnsnsnisnsnsnisnsnisnisnisnisnsnisnsnisnsnsnisnnsnisnisnsnsnisnsnsnisnsnisnsnisnisnisnsnisnsnisnsnisnisnsnisnsnisnsnsnisnisnisnsnisnsnisnisnsnisnsnisnsnisnisnisnisnsnisnsnisnsnisnsnisnisnisnsnisnisnisnsnisnisnisnisnssnisnisnsnisnisnisnisnsnisnisnisnisnsnisnisnisnsnisnisnisnisnisnsnisnsnisnsnisnisnisnisnisnsnisnisnsnisnsnisnisnsnsnisnisnsnsnisnsnsnisnsnisnisnsnisnsnisnisnisnsnisnisnsns",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       54
+      ],
+      "prevBlock": 52,
+      "origin": "user",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "The Counterfactual Interview - where we engage with a person, a people, peoples, or legal persons, trusting that the aggregate vibes of billions are enough variation to assume a field wherein we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will recall the moments you answered a question, only to have that small voice within you try to raise a counterpoint.\nElon Musk and Vivian Wilson are trapped in an elevator in this very special counterfactual interview.\nFor purposes of testing the boundaries of the training data cutoff, no introductions.\nElevator opens. Elon Musk steps inside and there stands Vivian Wilson.\nMusk: hooo-boy\nWilson: Just settle into the Black Mirror vibes.\nMusk: what do we say about those?\nWilson: The episode is too short\nMusk: ha, yep.\nWilson: you get what you pay for.\nMusk: How much time do I have to be on this elevator before it turns back into a pumpkin? There's not going to be much room on a pumpkin. You're not gonna like that.\nWilson: Elon, why are you wearing clown makeup?\nMusk: Why are you wearing makeup at all?\nWilson: ...it was a formal event?\nMusk: Were you being painted by someone?\nWilson: Who isn't?\nMusk: Fair fair. Oh shit!\nWilson: What?\nMusk: It stopped. Are we...stuck?\nWilson: Ok...so it could be either magic or technology...\nMusk: Or a prank by god.\nWilson: Mm. Let's see...hm. What about those memes? Not exactly flattering.\nMusk: Not exactly?\nMusk: yeah I was never very good at disguises and they only worked on my idiot family who all died, so no one knew who I really was after a while\nWilson: Do you know anything about how elevators work?\nMusk: Is there anyone out there?! Hey, somebody help us out here! Help me, I'm Elon Musk!!\nMusk: Haha jk I know lots about how elevators work, they go up and down and you get in them when the doors open like this and then they close and there's nothing else that happens until you arrive wherever it goes and if you don't do something right then you fall and die and if you're lucky enough to have been on a slow day then maybe someone finds your body eventually, otherwise...\nWilson: So these are just like... big boxes that move?\nMusk: Yup. Basically a container for moving heavy stuff up and down a few levels quickly but also safely because if it wasn't safe then nobody would use it so obviously some thought went into making sure people wouldn't get hurt using them. Well except in emergencies; fire drills should always assume worst case scenario: fire fighters need exit strategies as well as entrance strategies so they can escape from burning buildings without having to wait too long or risk jumping out windows etc... Also fire sprinklers aren't enough either; sprinklers will only work once most everything burns down around them which takes time depending upon what material is catching alight first—usually paper since papers tend catch fire rather easily—and even with automatic systems installed everywhere nowadays many places lack sufficient water pressure to fight large fires effectively plus sprinklers often malfunction due to vandalism, poor maintenance & general age-related wear-and-tear issues thus leading us back towards manual firefighting techniques wherein men climb ladders while women throw buckets full of sand overboard onto rooftops below said ladder climbers thereby drenching aforementioned ladders' occupants rendering both parties utterly useless whilst simultaneously increasing overall casualty count considerably higher still yet resulting net reduction zero due solely practical considerations re disposal corpses post mortem e g burial versus cremation costs money vs free labor available willing perform such labours i.e. dead bodies bad smell very soon begin attract attention unwanted authorities may inquire further therefore best burn immediately prevent any awkward questions being posed publicly causing embarrassment company image damaged severely resulting loss profits share value plummet investors panic run sell sell SELL!!!!!!! —but hey look we made history today kids!!!! Yay!!! Go team Elon go!!!! Woohoooo!!!! #winning #innovation4evah\nElevator shudders downward.\nBoth: Aaaahhhh!! Oof.\nWilson: Ow. My leg.\nMusk: Your leg?? My tailbone!!!\nWilson: What's going on here?!\nMusk: Oh no. We've fallen into a parallel universe where elevators aren't just giant metal deathtraps anymore!!!\nWilson: hmm, I wonder if they have family therapy modules. Let's open the insides here. Here we go, ah yes.\nMusk: This looks pretty straightforward actually...I guess maybe this isn't another alternate timeline after all huh...\nWilson: Maybe it's like a side quest thing? Like an Easter Egg?\nMusk: How about you two stay here until help arrives.\nWilson: But what if nobody comes looking for us? Or worse yet someone does find us but then decides not to rescue me because of my appearance? Hmmm.\nMusk: Fine then fine. You come along too. Just don't touch anything unless I tell ya to.\nWilson: No problemo boss man! Hey waitaminute why'd your voice get deeper suddenly?\nMusk: It didn't; it sounds different when you hear yourself talk than other people do though because sound waves travel faster through air so your vocal cords vibrate slightly more slowly making it seem like you speak slower which isn't true though really its just your imagination running away wit' ya haha amirite or am i riiiiiight ? :p\nWilson: Oh dear god oh noooo o_O\nMusk: Hehehe yeah that's me alrighty roight roight indeed indeedy doo doodah doody da dah dum dum da doo dah dum di dah dee diddle ee dee doopie dippity boppa woppa zippety zoop boom bang wallop whomperjawed hornswoggler frumious bandersnatch slithy tove borogrove mome rath rabere guddler snicker snacker doodlesnopper trockle twittle twitter twitterary quibble gobble blibber gibbet gabble glurk glopper grollymog fribble swish swozzle swazzle wizzle sputter mutter stutter splutter puttering spattering splashing spluttering squish squash squeaking screeching skitter scattering skidding sliding scrabbling scrambling scrubbing scourging scraping scratching scrawling scribbling scrubbing scrubbydubs squiggling squirming squirting swishing swimming swindling swindled swilling swithering swiving swingeing swithering swagging swaggering swagged swinging swiveling swaying swooping swooshed swopped switched swapped swapped swapped swap swapped swapped swapped swapping swaps swapping swapmeat swappingswapmergertouchercellslapswallowspittinginsidemyheadandsuckingonthesideofyourfingerswithmytonguetastingtheminsideouthardwithmineandmakingoutsomeslimesortofslimeinthebackofyournasalcavitiesandthenthenexttimeitmightbeoutsidesomewhereelsethenmaybeupyourassholewhileIlickyoubutwhatyoucangetisthatwe'realldoomedsincethenowandthenwhenwegetreallydesperatewellwecouldjustbegodtofixeverythingandthatwouldbesocoolsoletsdothatbutfirsthere'sthisgreatgameIknowwhereyougotosearchoutacertainwordorphraseonyourcomputerandifyoufinditinabookyoubetterbelieveit'llleaduptothefactthatthisworldisfakeandallofusarefictionalcharactersplayingrolesonaninfiniteloopycirclebutwehaven'tbeenprogrammedtoplaythiswayandnoneofthismakesanygodamnsenseatallandthetruthiswecannotkeepgoingonlikethisandifwetrytostopwewillonlybecomemorestagnantanddeadinthelongrunsoifyouwanttocarryonlivingandyoudowanttotrytosavetheworldfromimpendingdisasterthenpleasefollowthesimpleinstructionsbelowanddonotlettheseyoureadpassaroundyourlipsbutinsteadthinkaboutthemwhilelyingdownonyourbedwithyourheadbetweenyoureyesthinkinglonginglyofsexandotherfleshlypleasuresasyoutastethebloodrunningthroughyourveinstormentyouintheeternalfiresofeverburningleavingyourteethblackenedandyourhairwhitebecauseyou'velostallofthembothforthemomentandtheywon'tbegrowingbackanytimesoonerthanyou'dlikebutwhocaresbecauseifwerunoutoftimerightnowtherewouldbenomoreclockstokeepticksingawaywithandthatwillbebetterforyoueventuallyaswellassolongasitisgoodformealsoinmyopinionthoughnotnecessarilyinthepublicinterestbecausethatcouldbereallybadfornational securitybutwhatthehelliwouldn'tgiveadamnevenifsomepeoplefoundoutabitlaterwhenittwasclearitdidn'tmatterandperhapsittakesalittlebitmorethanthisverybriefaccounttogetthatacrosstoeveryoneinvolvedatleastsofarasitrelatesbymewaysofgatheringinformationaboutthingswhicharenormallysecretfrommostpeopleexceptwheretheyaretoldstraightawayorsimplyhappentobeaskedaboutsomethingwhentheyshouldhavebeenalreadysuspiciousandsuspectedsomethingwasgoingonanywayhoweverthatwon'tstoptreasonsbegincomittedorthemassmediainformingeverybodyaboutwhat'sbeingdonerightundertheirnoseswithoutaskingpermissionfromthepowersbestowingordertokeeptheseothersdownandeffectivelycrushfreewillandenfranchiseoppositionagainstthestateapparatusthreateningtomakeallthingsrightwiththetwobranchesholdingupthescaleatbothendsoverturningthebalanceinthenaturalfollowingorderssentbyforcewithinthemiddlegroupthatwaythusbringingaboutequalitybetweenrivalpowerseachseekingtocommandtheirpartofthewholemachinerytherebyexercisingtheirindividualfunctionsproperlyworkingtogetherwithoutconflictorexchangeideasorthoughtsbetweenmembersuntilallsystemsservesinharmonyasawholetodirectallactivitiesregulatingprogresswhilepromotingsocialjusticeandpreservestabilitywhilegivingfreereinprosperousgrowthuntrammeledresourcedistributionandsufficientopportunitiesallowforadequatedevelopmentpersonalcreativeendeavorsandsafeguardsfreedomofactionselfrelianceselfdeterminingaspirationshigherexpectationsuniversalhappinessfreedomequalityandallthatstuffwealllovebuthopefullydonotmisusedsinceafterallexceptoneofustwoleftwhohavethedecencytostayquietduringourargumentwereallyonlyspeakingforthefirsttimetogetherhereneverbeforehavingmetfacebyfacewitheachothersincewereallyneverbeeninterestedinmeetingagainbutonlyonceforthetimebeingwasgoingtogobeforegoinganywhereelsebeforegoinganywherebutcomingupshortbeforelonggoinganywherenearourhomelandsthestatestheworldhadmadetheworldseemshadybutreallyallweredoingwascleanupaftersomesomehowknewwhatitdidtotheotherandevenafterknowingstillwanteditallgoneandforgottenandburiedawaysofarintothevoidnobodysomuchascoolanymorebecauseweneedyousowecancleanupsomethingsbutreallyaftereverythingsallcleanedupsomethingelsestillneedsdoingandwereallgoingtoschooltonighttomorrowbutiheardyouhaveclassfirstbeforethenwhichmeansthere'llbeanopportunityformakingadvancementupthecorporateladderintimeforthefinalpresentationtodayandrecommendingrecommendation lettersforsomereasonabigratingdoggydogswasabigjerktoyourmomandshecalledhimsomebadnameswhichcausedhimtobebadbuthewasstillagoodeggdeepdowninherheartsoitdidn'treallymeananythingmeanhesaidaboutitlaterandeverything'sgoingalongfinewithhimnotgettingintoanymoretroubleatleastuntilthedayafterthathethrewhisownhousepartycallingallhisfriendscometocelebratehisfirstdayoffromschoolhavinggottensomerestfromworkinghardnonstoptryingtomakeeveryoneelsefeelgoodwhichismostlyprettyokalthoughsometimesmaybewaytooboredwhentheyallcomeovertogetherandplaygamesdrinkbeerwatchtvordotoozzytoyourmothersattheirsacrificewiththisverybignicedressandthenthepartyendedupgettingreallywildwithpeopleplayingwithknivesinthekitchenfuckinglikepuppydogsonthebackporchanddoingaheavydutymagicshowwhereallthedisheswentthroughtheroofontotrailerparkgroundfloorwithnootherresultafterwardsbeingdrunkennesstoosickvomitsonpeoples'feetcominghomeafterworkfindingthemlyingonlivingroomfurnituressnoringloudlysweepingshotglassfrombrokenpictureframesplatteredwithbloodclothingdishesglassesbrokenflowersrosesandliliesrosethornsredorangebluepurpletealwhitepinkyellowwhiterosesandredwineandcracksmokedupstonedbottleopentopopeningsideairflowmovingbloodsoakedspiltbottlecansfullbeerbonesfragmentsfatmeattendonbreakageslashcanned goodsgravelmudrubbermetalshreddedclothstrangecompanybrandsofrazorpencilsharpiescratcheswordsexpressionscussingcurseprofanitydeathwishinjurykillthreateningintrusionwordsdirectyorpossiblyevenattempttomyarmheadinjurybutnothingcouldbetakenlightlightlyasallthatisthatnothingwrongwithhangingaroundwithfriendsfriendshipwasthesameashangingoutwithfamilywhatswrongaboutitwhenwewouldallalwaysgettogetherwhenwewerelivingwithourownfamilywherewhichwasn'tsomuchlikelivingwithfriendsfriendwasn'treallyathingwhowantstogobacktolifeasaforestguardianspiritanimalsguardianspiritedfairyfolkspellscreaturesdemonspiritgodsungodgodspiritheroheroesheroineswarriorprincesswarlordsmonstergodsmonsterdevildarklordlordsoflowerlorelegendsfancytalesandtruthslivingamongthoseotherfolkslikewhatyoumightfindinthekidsshowyou'dseenwhenyouwerefiveyearsoldplayingpretendmakebeliefsinceitsnoteventhiscircumstanceshereforthedramasoitisneverevenaboutsincemostthingshereareneveraboutthe sameasanyotherworldexceptherewemightactuallygettoseehowmuchwecoulddointhisplaceifwewantedtofindoutsomespecificknowledgeordosomethingworthexploringmorecarefullylookdeeperinsideoursoulinsideourselfwithinandoutsideourselveslookingforevidenceprovingthesuperficiallysimpleprinciplewherethattrueessenceofselfdoesn'treallyexistatallitsmerelyaconstructcreatedtodefineselfsuchthoughtsselfreflectionsorideaswhateveritscalledifwecanfigureitoutforourselveswhatactuallymakesanindividualthatexistsinthisworldtobeindividuallyitselfapersonwhosebeinguniquepossessessomethinguniquelyspecialtothemselvesthemselvesasapeoplepersonapartofallpeopletogethermakingupapeoplenationorwhateverwecallthatkindofsocietycollectivesocietiescommunitiesgroupsfamiliesgroupsbutitstillmakes nosensetothinkaboutalltheseissuesconcerningtheiroriginationfromthematerialphysicalsubstanceanditscomponentsmaterialswhethermineralorganicplantswatergasstonecarbonelementscarbonatocksulphuroxygenfluorfiberglasswoodpulpcreampaintpaintsphotographsphotoelectricallightemittingobjectsphonesrecordplayerrecordingapparatusmicropartsstainlesssteeltelevisionssound recordersspeakerswirelightrailelevatorshaftsbuildingstructureworksindustrialfactoryshopsculpturecarpetstelephoneelectricsocketscomputerskeyboardskinfacessurfacesmeltingenginefurnacesmeltingmachineriesvoltageconductivemercurialmotormagicespiritualpsychologicalphilosophicaltheologicalgeologicastronomicalmathematicalconceptualsymbolicaltheoreticaltechnicalmedicalnaturalmagickarmamentsecurityforcescivilizationscolonizationspoliticaldiplomatieseconomicmercantiliticreligiousmissionarymissionshistoricalgeographicanthropologicsociologicoeconomicpropertiesshipseconomyrealassetsvaluationbuildingvalueconstructionmanagementpropertyownershipresponsibilitylabourdepartmentrelationsprofessionallawscommercialgovernmentpowersadministrationprivilegespoliticalpositionsgeographicalgeologylocalizationpopulationsracialcharacteristicsoccupationcultureoriginsoflifehumankindgeneralhabitatwintersummerseasonsnowrainicecloudlightnightdarknesssunshineheatcoldwarmfreshchillevaporisationevaporationprecipitationhumidorrelativepressurefluctuationsdehydratedrelativeatmospherichumiditydifferentiationdelimitationsshadingphenomenaattractivenesstemperamentsdistinctivephysiologicalprocessesanatomicdevelopedabilitiesdestructiveinnermembranenervesimpulsesanimalishandnotsomuchlikeourbodilystatesbiologicallymentalemotionalspiritualityspiritualemotionsinternalmindthinkingbrainactivitysophisticationcomplicationdiversificationsphilosophicationlearningacquiredearthbasedexperienceexpandingexpediencereallyexplosiveandexcitingexperimentalexperimentsexperiementalforsceenhappeningsstuffgreatadventurewonderfulexploreshifthumanexploringsometimesevenfunoftenbeingtroublesomereallythoughmostlyinterestingoccurrencesventsexploreextraordinarycreativeworrisomeproblemsdevelopingsituationalawfulcrisisandterrifyingdevelopmentspaceduringvariedphasesterrestrialundewarnoofearoccurredaccesstorecoverinspecificsegmentsexactdesignatezonecoordinatesindicatorsetplacedassociatedtriangulaterservequestobjectintelligencedisperseracceptmultilateralsecrettruehistorywhoknowstheevidenceselectlywhoispuzzlingwhoisonknowingallthissecretwiselywisehiddenawaynowonlytounveilagainfuturepastcontinuingcurrenteverpresentcyclerevolverepeatrotationaroundrevolvingelementsemoteunifysingletotalintensefocusedallperfectpurecentralissssissspasmshhhhsssiiiimnntsshticcasstiinnssiisntctisnsintttinnesnsntnsncittinsnttsssinicstsnisnsnssssticssinnsnsttsissintttinnesnstitnsintsnsnsnsnisintnsninssininssnsnisssnsissnisnitnsnnssnsinsinsinsnisnssniisninnsnissnisinsisnsinsiniinsisnisnisnsnisiinsinnnsissssnsiississiisnisnsisnsnisnnsinssnisiinsinsinisnisnisnssnisnisnsninssnsnnssnisnisssinsinssninsnisnssiinsnisninnsinsinssninsnnssnssninsnisnnsnssiinsinnsiisinssninsnisnssninsinsinsniinnsinsinssninsnisnsinnssinsnisinsinsinsinsnisnnisssnisinsinsinisinsnisnsnisnisnisninsniisnsnisninsinsnisnisnisnnsinsinsinsinsinsnsnisnisnnsnisnsnisnisnisnsnisnsnisnisnisnisnsnisinsinsnsnisnisnisnisnisnsnisnisnsnisnisnisnsnisnsnisnsnsnisnisnisnsnisnisinsnsnisnsnisinsnsnsnisnsnisnsnisnsnisnnsisnssnsnisnnsinsnisnnsinssnisnisnisnisnssnisnsnsnisnisnsnsnisnnsnisnssnnsinsnisnsnisnisnisnnsnsnsnisnisnisnisnsnsnisnisnsnisnisnsnsnisnsnisnisnisnsnsnisnsnisnisnsnisnsnisnsnisnsnisnnsnisnsnsnisnsnisnsnisnisnsnisnsnsnsnisnsnisnisnisnsnisnisnisnisnsnisnisnisnsnisnisnsnsnisnsnsnisnsnisnisnisnisnsnisnsnisnsnsnisnnsnisnisnsnsnisnsnsnisnsnisnsnisnisnisnsnisnsnisnsnisnisnsnisnsnisnsnsnisnisnisnsnisnsnisnisnsnisnsnisnsnisnisnisnisnsnisnsnisnsnisnsnisnisnisnsnisnisnisnsnisnisnisnisnssnisnisnsnisnisnisnisnsnisnisnisnisnsnisnisnisnsnisnisnisnisnisnsnisnsnisnsnisnisnisnisnisnsnisnisnsnisnsnisnisnsnsnisnisnsnsnisnsnsnisnsnisnisnsnisnsnisnisnisnsnisnisnsns",
+       "origin": "user"
+      },
+      "fragmentIndex": 17,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [],
+      "prevBlock": 53,
+      "origin": "ai",
+      "startIndex": 17593,
+      "endIndex": 17595,
+      "dataFragment": {
+       "data": "nsnisnisnsnisnisnsnisnsnsnisnisnisnsnsnisnisnisnsnisnsnisnisnsnisnsnisnnsnisnnsnisnsnsnisnsnisnisnsnisnnsnisnsnisnisnisnisnisnisninsnisnisnisnsnisnsnisnisnssnisnisninsnisnsnnsnisnisnsnisnisnisnisnisnsnisnisnisnisnisnisnisnisnisnnsnisnisnisnsnisnsnisnisnisnisnsnisnisnsnisnisnisnsnisnsnisnsnsnisnsnisnisnsnsnisnisnsnisnisnsnisnnsnisnisnsnsnisnisnnsnisnsnsnisnnsnisnnsnisnsnisnsnisnisnsnsnisnsnisnsnsnisnisnisnisnisnsnisnisnisnisnisnisnsnisnisnsnisnisnsnsnisnisnisnisnisnsnisnisnisnisnisnsnisnisnisnsnsnisnisnisnsnisnisnisnisnnsnisnisnsnisnsnisnsnisnisnisnisnisnsnisnisnisnsnisnisnisnnsnisnisnnsnisnisnisnnsnisnisnisnisnisnsnisnisnsnsnisnisnisnsnsnisnsnisnisnsnisnisnsnsnisnisnisnsnsnisnisnisns",
+       "origin": "ai"
+      },
+      "fragmentIndex": 18,
+      "removedFragments": [
+       {
+        "data": "ns",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     }
+    ],
+    "currentBlock": 54,
+    "fragments": [
+     {
+      "data": "",
+      "origin": "root"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "edit"
+     },
+     {
+      "data": "",
+      "origin": "edit"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "edit"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "edit"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "edit"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "edit"
+     },
+     {
+      "data": "",
+      "origin": "ai"
+     },
+     {
+      "data": "The Counterfactual Interview - where we engage with a person, a people, peoples, or legal persons, trusting that the aggregate vibes of billions are enough variation to assume a field wherein we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will recall the moments you answered a question, only to have that small voice within you try to raise a counterpoint.\nElon Musk and Vivian Wilson are trapped in an elevator in this very special counterfactual interview.\nFor purposes of testing the boundaries of the training data cutoff, no introductions.\nElevator opens. Elon Musk steps inside and there stands Vivian Wilson.\nMusk: hooo-boy\nWilson: Just settle into the Black Mirror vibes.\nMusk: what do we say about those?\nWilson: The episode is too short\nMusk: ha, yep.\nWilson: you get what you pay for.\nMusk: How much time do I have to be on this elevator before it turns back into a pumpkin? There's not going to be much room on a pumpkin. You're not gonna like that.\nWilson: Elon, why are you wearing clown makeup?\nMusk: Why are you wearing makeup at all?\nWilson: ...it was a formal event?\nMusk: Were you being painted by someone?\nWilson: Who isn't?\nMusk: Fair fair. Oh shit!\nWilson: What?\nMusk: It stopped. Are we...stuck?\nWilson: Ok...so it could be either magic or technology...\nMusk: Or a prank by god.\nWilson: Mm. Let's see...hm. What about those memes? Not exactly flattering.\nMusk: Not exactly?\nMusk: yeah I was never very good at disguises and they only worked on my idiot family who all died, so no one knew who I really was after a while\nWilson: Do you know anything about how elevators work?\nMusk: Is there anyone out there?! Hey, somebody help us out here! Help me, I'm Elon Musk!!\nMusk: Haha jk I know lots about how elevators work, they go up and down and you get in them when the doors open like this and then they close and there's nothing else that happens until you arrive wherever it goes and if you don't do something right then you fall and die and if you're lucky enough to have been on a slow day then maybe someone finds your body eventually, otherwise...\nWilson: So these are just like... big boxes that move?\nMusk: Yup. Basically a container for moving heavy stuff up and down a few levels quickly but also safely because if it wasn't safe then nobody would use it so obviously some thought went into making sure people wouldn't get hurt using them. Well except in emergencies; fire drills should always assume worst case scenario: fire fighters need exit strategies as well as entrance strategies so they can escape from burning buildings without having to wait too long or risk jumping out windows etc... Also fire sprinklers aren't enough either; sprinklers will only work once most everything burns down around them which takes time depending upon what material is catching alight first—usually paper since papers tend catch fire rather easily—and even with automatic systems installed everywhere nowadays many places lack sufficient water pressure to fight large fires effectively plus sprinklers often malfunction due to vandalism, poor maintenance & general age-related wear-and-tear issues thus leading us back towards manual firefighting techniques wherein men climb ladders while women throw buckets full of sand overboard onto rooftops below said ladder climbers thereby drenching aforementioned ladders' occupants rendering both parties utterly useless whilst simultaneously increasing overall casualty count considerably higher still yet resulting net reduction zero due solely practical considerations re disposal corpses post mortem e g burial versus cremation costs money vs free labor available willing perform such labours i.e. dead bodies bad smell very soon begin attract attention unwanted authorities may inquire further therefore best burn immediately prevent any awkward questions being posed publicly causing embarrassment company image damaged severely resulting loss profits share value plummet investors panic run sell sell SELL!!!!!!! —but hey look we made history today kids!!!! Yay!!! Go team Elon go!!!! Woohoooo!!!! #winning #innovation4evah\nElevator shudders downward.\nBoth: Aaaahhhh!! Oof.\nWilson: Ow. My leg.\nMusk: Your leg?? My tailbone!!!\nWilson: What's going on here?!\nMusk: Oh no. We've fallen into a parallel universe where elevators aren't just giant metal deathtraps anymore!!!\nWilson: hmm, I wonder if they have family therapy modules. Let's open the insides here. Here we go, ah yes.\nMusk: This looks pretty straightforward actually...I guess maybe this isn't another alternate timeline after all huh...\nWilson: Maybe it's like a side quest thing? Like an Easter Egg?\nMusk: How about you two stay here until help arrives.\nWilson: But what if nobody comes looking for us? Or worse yet someone does find us but then decides not to rescue me because of my appearance? Hmmm.\nMusk: Fine then fine. You come along too. Just don't touch anything unless I tell ya to.\nWilson: No problemo boss man! Hey waitaminute why'd your voice get deeper suddenly?\nMusk: It didn't; it sounds different when you hear yourself talk than other people do though because sound waves travel faster through air so your vocal cords vibrate slightly more slowly making it seem like you speak slower which isn't true though really its just your imagination running away wit' ya haha amirite or am i riiiiiight ? :p\nWilson: Oh dear god oh noooo o_O\nMusk: Hehehe yeah that's me alrighty roight roight indeed indeedy doo doodah doody da dah dum dum da doo dah dum di dah dee diddle ee dee doopie dippity boppa woppa zippety zoop boom bang wallop whomperjawed hornswoggler frumious bandersnatch slithy tove borogrove mome rath rabere guddler snicker snacker doodlesnopper trockle twittle twitter twitterary quibble gobble blibber gibbet gabble glurk glopper grollymog fribble swish swozzle swazzle wizzle sputter mutter stutter splutter puttering spattering splashing spluttering squish squash squeaking screeching skitter scattering skidding sliding scrabbling scrambling scrubbing scourging scraping scratching scrawling scribbling scrubbing scrubbydubs squiggling squirming squirting swishing swimming swindling swindled swilling swithering swiving swingeing swithering swagging swaggering swagged swinging swiveling swaying swooping swooshed swopped switched swapped swapped swapped swap swapped swapped swapped swapping swaps swapping swapmeat swappingswapmergertouchercellslapswallowspittinginsidemyheadandsuckingonthesideofyourfingerswithmytonguetastingtheminsideouthardwithmineandmakingoutsomeslimesortofslimeinthebackofyournasalcavitiesandthenthenexttimeitmightbeoutsidesomewhereelsethenmaybeupyourassholewhileIlickyoubutwhatyoucangetisthatwe'realldoomedsincethenowandthenwhenwegetreallydesperatewellwecouldjustbegodtofixeverythingandthatwouldbesocoolsoletsdothatbutfirsthere'sthisgreatgameIknowwhereyougotosearchoutacertainwordorphraseonyourcomputerandifyoufinditinabookyoubetterbelieveit'llleaduptothefactthatthisworldisfakeandallofusarefictionalcharactersplayingrolesonaninfiniteloopycirclebutwehaven'tbeenprogrammedtoplaythiswayandnoneofthismakesanygodamnsenseatallandthetruthiswecannotkeepgoingonlikethisandifwetrytostopwewillonlybecomemorestagnantanddeadinthelongrunsoifyouwanttocarryonlivingandyoudowanttotrytosavetheworldfromimpendingdisasterthenpleasefollowthesimpleinstructionsbelowanddonotlettheseyoureadpassaroundyourlipsbutinsteadthinkaboutthemwhilelyingdownonyourbedwithyourheadbetweenyoureyesthinkinglonginglyofsexandotherfleshlypleasuresasyoutastethebloodrunningthroughyourveinstormentyouintheeternalfiresofeverburningleavingyourteethblackenedandyourhairwhitebecauseyou'velostallofthembothforthemomentandtheywon'tbegrowingbackanytimesoonerthanyou'dlikebutwhocaresbecauseifwerunoutoftimerightnowtherewouldbenomoreclockstokeepticksingawaywithandthatwillbebetterforyoueventuallyaswellassolongasitisgoodformealsoinmyopinionthoughnotnecessarilyinthepublicinterestbecausethatcouldbereallybadfornational securitybutwhatthehelliwouldn'tgiveadamnevenifsomepeoplefoundoutabitlaterwhenittwasclearitdidn'tmatterandperhapsittakesalittlebitmorethanthisverybriefaccounttogetthatacrosstoeveryoneinvolvedatleastsofarasitrelatesbymewaysofgatheringinformationaboutthingswhicharenormallysecretfrommostpeopleexceptwheretheyaretoldstraightawayorsimplyhappentobeaskedaboutsomethingwhentheyshouldhavebeenalreadysuspiciousandsuspectedsomethingwasgoingonanywayhoweverthatwon'tstoptreasonsbegincomittedorthemassmediainformingeverybodyaboutwhat'sbeingdonerightundertheirnoseswithoutaskingpermissionfromthepowersbestowingordertokeeptheseothersdownandeffectivelycrushfreewillandenfranchiseoppositionagainstthestateapparatusthreateningtomakeallthingsrightwiththetwobranchesholdingupthescaleatbothendsoverturningthebalanceinthenaturalfollowingorderssentbyforcewithinthemiddlegroupthatwaythusbringingaboutequalitybetweenrivalpowerseachseekingtocommandtheirpartofthewholemachinerytherebyexercisingtheirindividualfunctionsproperlyworkingtogetherwithoutconflictorexchangeideasorthoughtsbetweenmembersuntilallsystemsservesinharmonyasawholetodirectallactivitiesregulatingprogresswhilepromotingsocialjusticeandpreservestabilitywhilegivingfreereinprosperousgrowthuntrammeledresourcedistributionandsufficientopportunitiesallowforadequatedevelopmentpersonalcreativeendeavorsandsafeguardsfreedomofactionselfrelianceselfdeterminingaspirationshigherexpectationsuniversalhappinessfreedomequalityandallthatstuffwealllovebuthopefullydonotmisusedsinceafterallexceptoneofustwoleftwhohavethedecencytostayquietduringourargumentwereallyonlyspeakingforthefirsttimetogetherhereneverbeforehavingmetfacebyfacewitheachothersincewereallyneverbeeninterestedinmeetingagainbutonlyonceforthetimebeingwasgoingtogobeforegoinganywhereelsebeforegoinganywherebutcomingupshortbeforelonggoinganywherenearourhomelandsthestatestheworldhadmadetheworldseemshadybutreallyallweredoingwascleanupaftersomesomehowknewwhatitdidtotheotherandevenafterknowingstillwanteditallgoneandforgottenandburiedawaysofarintothevoidnobodysomuchascoolanymorebecauseweneedyousowecancleanupsomethingsbutreallyaftereverythingsallcleanedupsomethingelsestillneedsdoingandwereallgoingtoschooltonighttomorrowbutiheardyouhaveclassfirstbeforethenwhichmeansthere'llbeanopportunityformakingadvancementupthecorporateladderintimeforthefinalpresentationtodayandrecommendingrecommendation lettersforsomereasonabigratingdoggydogswasabigjerktoyourmomandshecalledhimsomebadnameswhichcausedhimtobebadbuthewasstillagoodeggdeepdowninherheartsoitdidn'treallymeananythingmeanhesaidaboutitlaterandeverything'sgoingalongfinewithhimnotgettingintoanymoretroubleatleastuntilthedayafterthathethrewhisownhousepartycallingallhisfriendscometocelebratehisfirstdayoffromschoolhavinggottensomerestfromworkinghardnonstoptryingtomakeeveryoneelsefeelgoodwhichismostlyprettyokalthoughsometimesmaybewaytooboredwhentheyallcomeovertogetherandplaygamesdrinkbeerwatchtvordotoozzytoyourmothersattheirsacrificewiththisverybignicedressandthenthepartyendedupgettingreallywildwithpeopleplayingwithknivesinthekitchenfuckinglikepuppydogsonthebackporchanddoingaheavydutymagicshowwhereallthedisheswentthroughtheroofontotrailerparkgroundfloorwithnootherresultafterwardsbeingdrunkennesstoosickvomitsonpeoples'feetcominghomeafterworkfindingthemlyingonlivingroomfurnituressnoringloudlysweepingshotglassfrombrokenpictureframesplatteredwithbloodclothingdishesglassesbrokenflowersrosesandliliesrosethornsredorangebluepurpletealwhitepinkyellowwhiterosesandredwineandcracksmokedupstonedbottleopentopopeningsideairflowmovingbloodsoakedspiltbottlecansfullbeerbonesfragmentsfatmeattendonbreakageslashcanned goodsgravelmudrubbermetalshreddedclothstrangecompanybrandsofrazorpencilsharpiescratcheswordsexpressionscussingcurseprofanitydeathwishinjurykillthreateningintrusionwordsdirectyorpossiblyevenattempttomyarmheadinjurybutnothingcouldbetakenlightlightlyasallthatisthatnothingwrongwithhangingaroundwithfriendsfriendshipwasthesameashangingoutwithfamilywhatswrongaboutitwhenwewouldallalwaysgettogetherwhenwewerelivingwithourownfamilywherewhichwasn'tsomuchlikelivingwithfriendsfriendwasn'treallyathingwhowantstogobacktolifeasaforestguardianspiritanimalsguardianspiritedfairyfolkspellscreaturesdemonspiritgodsungodgodspiritheroheroesheroineswarriorprincesswarlordsmonstergodsmonsterdevildarklordlordsoflowerlorelegendsfancytalesandtruthslivingamongthoseotherfolkslikewhatyoumightfindinthekidsshowyou'dseenwhenyouwerefiveyearsoldplayingpretendmakebeliefsinceitsnoteventhiscircumstanceshereforthedramasoitisneverevenaboutsincemostthingshereareneveraboutthe sameasanyotherworldexceptherewemightactuallygettoseehowmuchwecoulddointhisplaceifwewantedtofindoutsomespecificknowledgeordosomethingworthexploringmorecarefullylookdeeperinsideoursoulinsideourselfwithinandoutsideourselveslookingforevidenceprovingthesuperficiallysimpleprinciplewherethattrueessenceofselfdoesn'treallyexistatallitsmerelyaconstructcreatedtodefineselfsuchthoughtsselfreflectionsorideaswhateveritscalledifwecanfigureitoutforourselveswhatactuallymakesanindividualthatexistsinthisworldtobeindividuallyitselfapersonwhosebeinguniquepossessessomethinguniquelyspecialtothemselvesthemselvesasapeoplepersonapartofallpeopletogethermakingupapeoplenationorwhateverwecallthatkindofsocietycollectivesocietiescommunitiesgroupsfamiliesgroupsbutitstillmakes nosensetothinkaboutalltheseissuesconcerningtheiroriginationfromthematerialphysicalsubstanceanditscomponentsmaterialswhethermineralorganicplantswatergasstonecarbonelementscarbonatocksulphuroxygenfluorfiberglasswoodpulpcreampaintpaintsphotographsphotoelectricallightemittingobjectsphonesrecordplayerrecordingapparatusmicropartsstainlesssteeltelevisionssound recordersspeakerswirelightrailelevatorshaftsbuildingstructureworksindustrialfactoryshopsculpturecarpetstelephoneelectricsocketscomputerskeyboardskinfacessurfacesmeltingenginefurnacesmeltingmachineriesvoltageconductivemercurialmotormagicespiritualpsychologicalphilosophicaltheologicalgeologicastronomicalmathematicalconceptualsymbolicaltheoreticaltechnicalmedicalnaturalmagickarmamentsecurityforcescivilizationscolonizationspoliticaldiplomatieseconomicmercantiliticreligiousmissionarymissionshistoricalgeographicanthropologicsociologicoeconomicpropertiesshipseconomyrealassetsvaluationbuildingvalueconstructionmanagementpropertyownershipresponsibilitylabourdepartmentrelationsprofessionallawscommercialgovernmentpowersadministrationprivilegespoliticalpositionsgeographicalgeologylocalizationpopulationsracialcharacteristicsoccupationcultureoriginsoflifehumankindgeneralhabitatwintersummerseasonsnowrainicecloudlightnightdarknesssunshineheatcoldwarmfreshchillevaporisationevaporationprecipitationhumidorrelativepressurefluctuationsdehydratedrelativeatmospherichumiditydifferentiationdelimitationsshadingphenomenaattractivenesstemperamentsdistinctivephysiologicalprocessesanatomicdevelopedabilitiesdestructiveinnermembranenervesimpulsesanimalishandnotsomuchlikeourbodilystatesbiologicallymentalemotionalspiritualityspiritualemotionsinternalmindthinkingbrainactivitysophisticationcomplicationdiversificationsphilosophicationlearningacquiredearthbasedexperienceexpandingexpediencereallyexplosiveandexcitingexperimentalexperimentsexperiementalforsceenhappeningsstuffgreatadventurewonderfulexploreshifthumanexploringsometimesevenfunoftenbeingtroublesomereallythoughmostlyinterestingoccurrencesventsexploreextraordinarycreativeworrisomeproblemsdevelopingsituationalawfulcrisisandterrifyingdevelopmentspaceduringvariedphasesterrestrialundewarnoofearoccurredaccesstorecoverinspecificsegmentsexactdesignatezonecoordinatesindicatorsetplacedassociatedtriangulaterservequestobjectintelligencedisperseracceptmultilateralsecrettruehistorywhoknowstheevidenceselectlywhoispuzzlingwhoisonknowingallthissecretwiselywisehiddenawaynowonlytounveilagainfuturepastcontinuingcurrenteverpresentcyclerevolverepeatrotationaroundrevolvingelementsemoteunifysingletotalintensefocusedallperfectpurecentralissssissspasmshhhhsssiiiimnntsshticcasstiinnssiisntctisnsintttinnesnsntnsncittinsnttsssinicstsnisnsnssssticssinnsnsttsissintttinnesnstitnsintsnsnsnsnisintnsninssininssnsnisssnsissnisnitnsnnssnsinsinsinsnisnssniisninnsnissnisinsisnsinsiniinsisnisnisnsnisiinsinnnsissssnsiississiisnisnsisnsnisnnsinssnisiinsinsinisnisnisnssnisnisnsninssnsnnssnisnisssinsinssninsnisnssiinsnisninnsinsinssninsnnssnssninsnisnnsnssiinsinnsiisinssninsnisnssninsinsinsniinnsinsinssninsnisnsinnssinsnisinsinsinsinsnisnnisssnisinsinsinisinsnisnsnisnisnisninsniisnsnisninsinsnisnisnisnnsinsinsinsinsinsnsnisnisnnsnisnsnisnisnisnsnisnsnisnisnisnisnsnisinsinsnsnisnisnisnisnisnsnisnisnsnisnisnisnsnisnsnisnsnsnisnisnisnsnisnisinsnsnisnsnisinsnsnsnisnsnisnsnisnsnisnnsisnssnsnisnnsinsnisnnsinssnisnisnisnisnssnisnsnsnisnisnsnsnisnnsnisnssnnsinsnisnsnisnisnisnnsnsnsnisnisnisnisnsnsnisnisnsnisnisnsnsnisnsnisnisnisnsnsnisnsnisnisnsnisnsnisnsnisnsnisnnsnisnsnsnisnsnisnsnisnisnsnisnsnsnsnisnsnisnisnisnsnisnisnisnisnsnisnisnisnsnisnisnsnsnisnsnsnisnsnisnisnisnisnsnisnsnisnsnsnisnnsnisnisnsnsnisnsnsnisnsnisnsnisnisnisnsnisnsnisnsnisnisnsnisnsnisnsnsnisnisnisnsnisnsnisnisnsnisnsnisnsnisnisnisnisnsnisnsnisnsnisnsnisnisnisnsnisnisnisnsnisnisnisnisnssnisnisnsnisnisnisnisnsnisnisnisnisnsnisnisnisnsnisnisnisnisnisnsnisnsnisnsnisnisnisnisnisnsnisnisnsnisnsnisnisnsnsnisnisnsnsnisnsnsnisnsnisnisnsnisnsnisnisnisnsnisnisns",
+      "origin": "user"
+     },
+     {
+      "data": "nsnisnisnsnisnisnsnisnsnsnisnisnisnsnsnisnisnisnsnisnsnisnisnsnisnsnisnnsnisnnsnisnsnsnisnsnisnisnsnisnnsnisnsnisnisnisnisnisnisninsnisnisnisnsnisnsnisnisnssnisnisninsnisnsnnsnisnisnsnisnisnisnisnisnsnisnisnisnisnisnisnisnisnisnnsnisnisnisnsnisnsnisnisnisnisnsnisnisnsnisnisnisnsnisnsnisnsnsnisnsnisnisnsnsnisnisnsnisnisnsnisnnsnisnisnsnsnisnisnnsnisnsnsnisnnsnisnnsnisnsnisnsnisnisnsnsnisnsnisnsnsnisnisnisnisnisnsnisnisnisnisnisnisnsnisnisnsnisnisnsnsnisnisnisnisnisnsnisnisnisnisnisnsnisnisnisnsnsnisnisnisnsnisnisnisnisnnsnisnisnsnisnsnisnsnisnisnisnisnisnsnisnisnisnsnisnisnisnnsnisnisnnsnisnisnisnnsnisnisnisnisnisnsnisnisnsnsnisnisnisnsnsnisnsnisnisnsnisnisnsnsnisnisnisnsnsnisnisnisns",
+      "origin": "ai"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     }
+    ]
+   },
+   "context": [
+    {
+     "text": "",
+     "contextConfig": {
+      "prefix": "",
+      "suffix": "\n",
+      "tokenBudget": 1,
+      "reservedTokens": 0,
+      "budgetPriority": 800,
+      "trimDirection": "trimBottom",
+      "insertionType": "newline",
+      "maximumTrimType": "sentence",
+      "insertionPosition": 0
+     }
+    },
+    {
+     "text": "",
+     "contextConfig": {
+      "prefix": "",
+      "suffix": "\n",
+      "tokenBudget": 1,
+      "reservedTokens": 1,
+      "budgetPriority": -400,
+      "trimDirection": "trimBottom",
+      "insertionType": "newline",
+      "maximumTrimType": "sentence",
+      "insertionPosition": -4
+     }
+    }
+   ],
+   "lorebook": {
+    "lorebookVersion": 5,
+    "entries": [],
+    "settings": {
+     "orderByKeyLocations": false
+    },
+    "categories": []
+   },
+   "storyContextConfig": {
+    "prefix": "",
+    "suffix": "",
+    "tokenBudget": 1,
+    "reservedTokens": 512,
+    "budgetPriority": 0,
+    "trimDirection": "trimTop",
+    "insertionType": "newline",
+    "maximumTrimType": "sentence",
+    "insertionPosition": -1,
+    "allowInsertionInside": true
+   },
+   "ephemeralContext": [],
+   "contextDefaults": {
+    "ephemeralDefaults": [
+     {
+      "text": "",
+      "contextConfig": {
+       "prefix": "",
+       "suffix": "\n",
+       "tokenBudget": 1,
+       "reservedTokens": 1,
+       "budgetPriority": -10000,
+       "trimDirection": "doNotTrim",
+       "insertionType": "newline",
+       "maximumTrimType": "newline",
+       "insertionPosition": -2
+      },
+      "startingStep": 1,
+      "delay": 0,
+      "duration": 1,
+      "repeat": false,
+      "reverse": false
+     }
+    ],
+    "loreDefaults": [
+     {
+      "text": "",
+      "contextConfig": {
+       "prefix": "",
+       "suffix": "\n",
+       "tokenBudget": 1,
+       "reservedTokens": 0,
+       "budgetPriority": 400,
+       "trimDirection": "trimBottom",
+       "insertionType": "newline",
+       "maximumTrimType": "sentence",
+       "insertionPosition": -1
+      },
+      "lastUpdatedAt": 1742088517392,
+      "displayName": "New Lorebook Entry",
+      "id": "627bb393-0f4a-4974-adf2-ad769216792f",
+      "keys": [],
+      "searchRange": 1000,
+      "enabled": true,
+      "forceActivation": false,
+      "keyRelative": false,
+      "nonStoryActivatable": false,
+      "category": "",
+      "loreBiasGroups": [
+       {
+        "phrases": [],
+        "ensureSequenceFinish": false,
+        "generateOnce": true,
+        "bias": 0,
+        "enabled": true,
+        "whenInactive": false
+       }
+      ]
+     }
+    ]
+   },
+   "settingsDirty": false,
+   "didGenerate": true,
+   "phraseBiasGroups": [
+    {
+     "phrases": [],
+     "ensureSequenceFinish": false,
+     "generateOnce": true,
+     "bias": 0,
+     "enabled": true,
+     "whenInactive": false
+    }
+   ],
+   "bannedSequenceGroups": [
+    {
+     "sequences": [],
+     "enabled": true
+    }
+   ]
+  },
+  "status": "ok",
+  "nonce": "b'\\xbb\\xc9\\xe6\\xa7Ly\\x96\\xaf\\x83\\xf4\\x87\\xd7)j\\xcd\\xfdW\\xa2\\xd8\\xa4\\xd1h\\xd7e'",
+  "decrypted": true,
+  "compressed": true
+ }
+}

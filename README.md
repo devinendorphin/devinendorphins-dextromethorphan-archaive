@@ -49,6 +49,7 @@ analysis/
   REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md
   DIRECTION.md HANDOVER.md HANDOFF.md EPISODES.md SWEEPS.md
   PASTED.md                                                 generated
+corpus/cited/             the 19 documents the readings quote — see its README
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)
   INDEX.tsv              the export's own manifest, 2,500 stories
@@ -59,8 +60,15 @@ data/
 
 ## Reproducing
 
-The source of truth is the `nai_export` Drive folder, ~1 GB of JSON. It is not
-in this repo and should not be.
+The source of truth is the `nai_export` Drive folder — **1,004 MB across 2,016
+files**, plus a 524 MB `blocks.jsonl` once extracted. That does not belong in
+git: GitHub blocks single files over 100 MB, and git keeps every version forever.
+It is all regenerable from Drive, which is the durable copy.
+
+The exception is [`corpus/cited/`](corpus/cited/) — the nineteen documents
+`READINGS.md` and `CASE_STUDY.md` actually quote, 36 MB, committed so the
+arguments can be checked without a full re-mirror. **That is not a release**; see
+the note there.
 
 ```sh
 python3 analysis/fetch_export.py <json-folder-id> --out corpus/json --check

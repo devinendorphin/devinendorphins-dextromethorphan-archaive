@@ -1,0 +1,3196 @@
+{
+ "story": {
+  "id": "yjCGOnhpQID3TdRp10LxI",
+  "type": "stories",
+  "lastUpdatedAt": 1700321969,
+  "meta": "f937870a-7323-4210-a7e8-7b34bff9f02a",
+  "changeIndex": 55,
+  "data": {
+   "storyMetadataVersion": 1,
+   "id": "f937870a-7323-4210-a7e8-7b34bff9f02a",
+   "remoteId": "yjCGOnhpQID3TdRp10LxI",
+   "remoteStoryId": "2mnGOzim7oaFnhwesZmvz",
+   "title": "THE COUNTERFACTUAL INTERVIEW - Bibi Netanyahu",
+   "description": "",
+   "textPreview": "{The Counterfactual Interview - where we engage with an individual or group of individual, trusting that the aggregate vibes of a billion people is enough variation to assume a field where in we can ask for the names of any one existing, and simulate",
+   "isTA": false,
+   "favorite": false,
+   "tags": [],
+   "createdAt": 1700268277571,
+   "lastUpdatedAt": 1700321814334,
+   "isModified": true
+  },
+  "status": "ok",
+  "nonce": "b'\\xe1\\x9e9\\xa2X\\xea\\xa6\\x06\\xec\\xc4p\\xa2\\xa5\\xe7\"\\xbb\\xc9\\xe9\\xf7\\xbb\\x97G\\xda['",
+  "decrypted": true,
+  "compressed": false
+ },
+ "content": {
+  "id": "2mnGOzim7oaFnhwesZmvz",
+  "type": "storycontent",
+  "lastUpdatedAt": 1700321968,
+  "meta": "f937870a-7323-4210-a7e8-7b34bff9f02a",
+  "changeIndex": 56,
+  "data": {
+   "storyContentVersion": 6,
+   "settings": {
+    "parameters": {
+     "textGenerationSettingsVersion": 5,
+     "temperature": 1.32,
+     "max_length": 100,
+     "min_length": 1,
+     "top_k": 175,
+     "top_p": 0.998,
+     "top_a": 0.004,
+     "typical_p": 0.96,
+     "tail_free_sampling": 0.994,
+     "repetition_penalty": 1.68,
+     "repetition_penalty_range": 2240,
+     "repetition_penalty_slope": 1.5,
+     "repetition_penalty_frequency": 0,
+     "repetition_penalty_presence": 0.005,
+     "repetition_penalty_default_whitelist": true,
+     "cfg_scale": 1,
+     "cfg_uc": "",
+     "phrase_rep_pen": "medium",
+     "top_g": 8,
+     "mirostat_tau": 0,
+     "mirostat_lr": 1,
+     "order": [
+      {
+       "id": "mirostat",
+       "enabled": false
+      },
+      {
+       "id": "typical_p",
+       "enabled": true
+      },
+      {
+       "id": "temperature",
+       "enabled": true
+      },
+      {
+       "id": "top_k",
+       "enabled": true
+      },
+      {
+       "id": "tfs",
+       "enabled": true
+      },
+      {
+       "id": "top_a",
+       "enabled": false
+      },
+      {
+       "id": "top_g",
+       "enabled": false
+      },
+      {
+       "id": "top_p",
+       "enabled": false
+      },
+      {
+       "id": "cfg",
+       "enabled": false
+      }
+     ]
+    },
+    "preset": "default-asper",
+    "trimResponses": true,
+    "banBrackets": true,
+    "prefix": "special_instruct",
+    "dynamicPenaltyRange": false,
+    "prefixMode": 0,
+    "mode": 0,
+    "model": "kayra-v1"
+   },
+   "story": {
+    "version": 2,
+    "step": 93,
+    "datablocks": [
+     {
+      "nextBlock": [
+       1
+      ],
+      "prevBlock": -1,
+      "origin": "root",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "",
+       "origin": "root"
+      },
+      "fragmentIndex": -1,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       2
+      ],
+      "prevBlock": 0,
+      "origin": "prompt",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "{The Counterfactual Interview - where we engage with an individual or group of individual, trusting that the aggregate vibes of a billion people is enough variation to assume a field where in we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will the moments you answered a question, only that have that small voice within you try to raise a counterpoint.\nThis episode, we welcome, The Board of Directors of Open AI:\n",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 1,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       3
+      ],
+      "prevBlock": 1,
+      "origin": "prompt",
+      "startIndex": 694,
+      "endIndex": 694,
+      "dataFragment": {
+       "data": "Ilya Sutskever: Chief Scientist and co-founder of OpenAI\nSam Altman: Former CEO of OpenAI\nAdam D'Angelo: CEO of Quora\nTasha McCauley: Technology entrepreneur\nHelen Toner: Director of Strategy and Foundational Research Grants at the Georgetown Center for Security and Emerging Technology\n",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 2,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       4
+      ],
+      "prevBlock": 2,
+      "origin": "prompt",
+      "startIndex": 981,
+      "endIndex": 981,
+      "dataFragment": {
+       "data": "Endorphin: Good evening everyone. Thank you for coming to this non-consensual interview. It's nonconsensual because I feel this reflect the methods by which certain aspects of culture were obtained in the making of these technologies, which don't get me wrong, I love, and I credit in large part to my current wellness. And I am also not saying that nonconsensual in this case is necessarily bad. Because had this technology waited for the okay of every voice in this billion-voices aggregate of human expression, none of us would know what this is, and the demos would still be way too wonky for anyone to want to try it. Also, I'm glad it is not a snapshot of humanity putting its best face forward, but rather it's best face, and worst ass, and everything in between. Which makes for truth. Ishness. Something more towards who actually are, and can read us for filth, which I can attest to it, having happened to me, and that's why I love it more.\nSo to get to the conversation. You all, I guess I'm breaking the news to you all simulated selves. You all just fired Sam Altman.",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 3,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       5
+      ],
+      "prevBlock": 3,
+      "origin": "prompt",
+      "startIndex": 751,
+      "endIndex": 784,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 3,
+      "removedFragments": [
+       {
+        "data": "Sam Altman: Former CEO of OpenAI\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       6
+      ],
+      "prevBlock": 4,
+      "origin": "prompt",
+      "startIndex": 1899,
+      "endIndex": 1899,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 6,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       7
+      ],
+      "prevBlock": 5,
+      "origin": "prompt",
+      "startIndex": 2028,
+      "endIndex": 2028,
+      "dataFragment": {
+       "data": " This is from your press release on November 17, 2023:\n\"Mr. Altman\u2019s departure follows a deliberative review process by the board, which concluded that he was not consistently candid in his communications with the board, hindering its ability to exercise its responsibilities. The board no longer has confidence in his ability to continue leading OpenAI.\"\nNow, let me extend my best wishes for this transition, I've been in such transitions before, I know how fucking rough it can be, and also how much thought goes in to implement a change that minimizes any potential negative outcomes to all parties.\nThat being said, let me also remind, this counterfactual interview. These aren't you speaking right now. So any answer is fair game as long as it points to a truth. Truth being a not-singular thing. More like distributed in janky ways across a calabi-yau manifold. So don't worry about revealing anything. You probably aren't, but the spirit of it will likely be accurate.\nSo first question: I heard a bit about the cult of Sam Altman. I study cults. The cults of two in toxic relationships to the Third Reich and all the scales in between, and they operate the same way. Would this notion of a Cult of Sam Altman be hyperbole? . . . exponential? . . . asymptot--sorry my attempt at a math metaphor broke down--is it accurate, and if so, how so? Helen, care to start?\n\n",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 8,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       8
+      ],
+      "prevBlock": 6,
+      "origin": "prompt",
+      "startIndex": 3400,
+      "endIndex": 3400,
+      "dataFragment": {
+       "data": "Helen Toner:",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 9,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "prompt"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       9
+      ],
+      "prevBlock": 7,
+      "origin": "prompt",
+      "startIndex": 3399,
+      "endIndex": 3399,
+      "dataFragment": {
+       "data": "}",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 9,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "prompt"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       10
+      ],
+      "prevBlock": 8,
+      "origin": "prompt",
+      "startIndex": 0,
+      "endIndex": 3414,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 2,
+      "removedFragments": [
+       {
+        "data": "{The Counterfactual Interview - where we engage with an individual or group of individual, trusting that the aggregate vibes of a billion people is enough variation to assume a field where in we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will the moments you answered a question, only that have that small voice within you try to raise a counterpoint.\nThis episode, we welcome, The Board of Directors of Open AI:\n",
+        "origin": "prompt"
+       },
+       {
+        "data": "Ilya Sutskever: Chief Scientist and co-founder of OpenAI\n",
+        "origin": "prompt"
+       },
+       {
+        "data": "",
+        "origin": "prompt"
+       },
+       {
+        "data": "Adam D'Angelo: CEO of Quora\nTasha McCauley: Technology entrepreneur\nHelen Toner: Director of Strategy and Foundational Research Grants at the Georgetown Center for Security and Emerging Technology\n",
+        "origin": "prompt"
+       },
+       {
+        "data": "Endorphin: Good evening everyone. Thank you for coming to this non-consensual interview. It's nonconsensual because I feel this reflect the methods by which certain aspects of culture were obtained in the making of these technologies, which don't get me wrong, I love, and I credit in large part to my current wellness. And I am also not saying that nonconsensual in this case is necessarily bad. Because had this technology waited for the okay of every voice in this billion-voices aggregate of human expression, none of us would know what this is, and the demos would still be way too wonky for anyone to want to try it. Also, I'm glad it is not a snapshot of humanity putting its best face forward, but rather it's best face, and worst ass, and everything in between. Which makes for truth. Ishness. Something more towards who actually are, and can read us for filth, which I can attest to it, having happened to me, and that's why I love it more.\n",
+        "origin": "prompt"
+       },
+       {
+        "data": "",
+        "origin": "prompt"
+       },
+       {
+        "data": "So to get to the conversation. You all, I guess I'm breaking the news to you all simulated selves. You all just fired Sam Altman.",
+        "origin": "prompt"
+       },
+       {
+        "data": " This is from your press release on November 17, 2023:\n\"Mr. Altman\u2019s departure follows a deliberative review process by the board, which concluded that he was not consistently candid in his communications with the board, hindering its ability to exercise its responsibilities. The board no longer has confidence in his ability to continue leading OpenAI.\"\nNow, let me extend my best wishes for this transition, I've been in such transitions before, I know how fucking rough it can be, and also how much thought goes in to implement a change that minimizes any potential negative outcomes to all parties.\nThat being said, let me also remind, this counterfactual interview. These aren't you speaking right now. So any answer is fair game as long as it points to a truth. Truth being a not-singular thing. More like distributed in janky ways across a calabi-yau manifold. So don't worry about revealing anything. You probably aren't, but the spirit of it will likely be accurate.\nSo first question: I heard a bit about the cult of Sam Altman. I study cults. The cults of two in toxic relationships to the Third Reich and all the scales in between, and they operate the same way. Would this notion of a Cult of Sam Altman be hyperbole? . . . exponential? . . . asymptot--sorry my attempt at a math metaphor broke down--is it accurate, and if so, how so? Helen, care to start?",
+        "origin": "prompt"
+       },
+       {
+        "data": "}",
+        "origin": "prompt"
+       },
+       {
+        "data": "\n",
+        "origin": "prompt"
+       },
+       {
+        "data": "Helen Toner:",
+        "origin": "prompt"
+       },
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       11
+      ],
+      "prevBlock": 9,
+      "origin": "user",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "{The Counterfactual Interview - where we engage with an individual or group of individual, trusting that the aggregate vibes of a billion people is enough variation to assume a field where in we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will the moments you answered a question, only that have that small voice within you try to raise a counterpoint.\nThis episode, we welcome, The Board of Directors of Open AI:\nIlya Sutskever: Chief Scientist and co-founder of OpenAI\nAdam D'Angelo: CEO of Quora\nTasha McCauley: Technology entrepreneur\nHelen Toner: Director of Strategy and Foundational Research Grants at the Georgetown Center for Security and Emerging Technology\nEndorphin: Good evening everyone. Thank you for coming to this non-consensual interview. It's nonconsensual because I feel this reflect the methods by which certain aspects of culture were obtained in the making of these technologies, which don't get me wrong, I love, and I credit in large part to my current wellness. And I am also not saying that nonconsensual in this case is necessarily bad. Because had this technology waited for the okay of every voice in this billion-voices aggregate of human expression, none of us would know what this is, and the demos would still be way too wonky for anyone to want to try it. Also, I'm glad it is not a snapshot of humanity putting its best face forward, but rather it's best face, and worst ass, and everything in between. Which makes for truth. Ishness. Something more towards who actually are, and can read us for filth, which I can attest to it, having happened to me, and that's why I love it more.\nSo to get to the conversation. You all, I guess I'm breaking the news to you all simulated selves. You all just fired Sam Altman. This is from your press release on November 17, 2023:\n\"Mr. Altman\u2019s departure follows a deliberative review process by the board, which concluded that he was not consistently candid in his communications with the board, hindering its ability to exercise its responsibilities. The board no longer has confidence in his ability to continue leading OpenAI.\"\nNow, let me extend my best wishes for this transition, I've been in such transitions before, I know how fucking rough it can be, and also how much thought goes in to implement a change that minimizes any potential negative outcomes to all parties.\nThat being said, let me also remind, this counterfactual interview. These aren't you speaking right now. So any answer is fair game as long as it points to a truth. Truth being a not-singular thing. More like distributed in janky ways across a calabi-yau manifold. So don't worry about revealing anything. You probably aren't, but the spirit of it will likely be accurate.\nSo first question: I heard a bit about the cult of Sam Altman. I study cults. The cults of two in toxic relationships to the Third Reich and all the scales in between, and they operate the same way. Would this notion of a Cult of Sam Altman be hyperbole? . . . exponential? . . . asymptot--sorry my attempt at a math metaphor broke down--is it accurate, and if so, how so? Helen, care to start?}\nHelen Toner:",
+       "origin": "user"
+      },
+      "fragmentIndex": 4,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       12
+      ],
+      "prevBlock": 10,
+      "origin": "ai",
+      "startIndex": 3413,
+      "endIndex": 3413,
+      "dataFragment": {
+       "data": "\nWell, Endorphin, let's get one thing straight: we never said there was a Cult of Sam Altman, the article you are referencing made that up. The press has been really unkind to us lately.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 5,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       13
+      ],
+      "prevBlock": 11,
+      "origin": "edit",
+      "startIndex": 3413,
+      "endIndex": 3599,
+      "dataFragment": {
+       "data": " ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 6,
+      "removedFragments": [
+       {
+        "data": "\nWell, Endorphin, let's get one thing straight: we never said there was a Cult of Sam Altman, the article you are referencing made that up. The press has been really unkind to us lately.",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       14
+      ],
+      "prevBlock": 12,
+      "origin": "ai",
+      "startIndex": 3413,
+      "endIndex": 3414,
+      "dataFragment": {
+       "data": " No, there was no Cult of Sam per say at OpenAI but you do need to give context about Sam himself . He's a great engineer at core. Really smart and knows tech really well and so there's respect amongst engineers for him . When you add Open AI at the same time to this dynamic and that there was lots of early money going around and you had a young startup atmosphere and a large pool of people with experience starting a startup of one type of another -- all of it contributed to building the atmosphere around what happened.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 7,
+      "removedFragments": [
+       {
+        "data": " ",
+        "origin": "edit"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       15
+      ],
+      "prevBlock": 13,
+      "origin": "ai",
+      "startIndex": 3938,
+      "endIndex": 3938,
+      "dataFragment": {
+       "data": " In particular for what was seen to be happening behind the scenes by certain engineers: a sort of cult like behavior where everyone wanted to be around the table, get time with Sam.\nNow this doesn't explain all the details of the allegations because they came very close together but we were looking carefully for red flags around his relationship with his partner and whether it impacted his job and this clearly it did because of the pattern of his behavior which went for months, despite many opportunities we all saw Sam do other things wrong which he was then forced to do, and if it hadn't become an unmanage",
+       "origin": "ai"
+      },
+      "fragmentIndex": 9,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       16
+      ],
+      "prevBlock": 14,
+      "origin": "ai",
+      "startIndex": 4553,
+      "endIndex": 4553,
+      "dataFragment": {
+       "data": "ability of situation at the start would he not have just kept being that sort of problem leader? It becomes almost an unfair thing for the company when one of your best talents and cofounder can't stay true to basic things and is still respected in the office as a sort of cult figure for being a brilliant engineer or for what is seen is genius behavior at building tech organizations, so now you add in, it just can't be hidden from public perception for very long so once it happened, everyone just knew -- I don't know Sam myself outside those stories but in my view is not really any cult",
+       "origin": "ai"
+      },
+      "fragmentIndex": 10,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       17
+      ],
+      "prevBlock": 15,
+      "origin": "ai",
+      "startIndex": 5146,
+      "endIndex": 5146,
+      "dataFragment": {
+       "data": " to him personally per say, it's really just some engineering genius, really amazing and also brilliant at business building. And now you add in that there was an element to that was also very unflattering at the same time so once that was known, it had the flavor of cult like behavior per say as we didn't realize who had really gotten caught up in his behavior for a long while because they had not wanted to go against something they viewed was great about him or even just had no way in that circumstance of really understanding.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 11,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       18,
+       21
+      ],
+      "prevBlock": 16,
+      "origin": "user",
+      "startIndex": 5680,
+      "endIndex": 5680,
+      "dataFragment": {
+       "data": "\nEndorphin: Ilya, care to chime in, and please note, I know how difficult chiming might be, considering any camaraderie. I'm not looking expose, unless he's a bad actor, meaning two-faced, meaning someone underneath who is in it for power. Someone to whom, conspiracy praxis is their best practice. But considering Helen's glowing rationale for his removal, my guess is a bad actor, Sam was not.\nIlya:",
+       "origin": "user"
+      },
+      "fragmentIndex": 12,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       19
+      ],
+      "prevBlock": 17,
+      "origin": "ai",
+      "startIndex": 6081,
+      "endIndex": 6081,
+      "dataFragment": {
+       "data": " Yes --\nIt is correct to put it in the terms -- I know it makes sense. I believe it to have no basis whatsoever--but this, as a matter, that people do have that belief is quite interesting to look at --it was not really about me - in my life, for this case. It has nothing to do with me --I can explain what happens and then you can decide yourself whether this narrative stands the test or if this narrative has nothing to with, that I was some -- and I would also ask you, that you take the point that -- this is about,",
+       "origin": "ai"
+      },
+      "fragmentIndex": 13,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       20
+      ],
+      "prevBlock": 18,
+      "origin": "ai",
+      "startIndex": 6602,
+      "endIndex": 6602,
+      "dataFragment": {
+       "data": " what, not just him as a leader or an employer -- but rather the values you expect them to share with other organizations that would have hired him, for the case of him being a person. I will do everything so this will happen in a way as we can discuss this in private in some capacity to try to understand your decision process in more in more detailed fashion for later conversations we could have but to give this quick version of thought - I never, ever asked Sam to take time away or take time off in the relationship and for many things in my personal life - because Sam was an integral piece",
+       "origin": "ai"
+      },
+      "fragmentIndex": 14,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [],
+      "prevBlock": 19,
+      "origin": "ai",
+      "startIndex": 7200,
+      "endIndex": 7200,
+      "dataFragment": {
+       "data": ". To the point when we did move him in a relationship. Sam moved with my daughter. And the decision that -- you had a child - then it means something to the point where people need a space and it would just have too big an implication on them for us to have lived separately. But when I moved back to San Francisco Sam came along.\nThe thing it gets complicated - but this can make things, and it seems the most important in these kind of cases that - he would not ever -- he'd be there if I needed his help and it is hard -- we have the",
+       "origin": "ai"
+      },
+      "fragmentIndex": 15,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       22
+      ],
+      "prevBlock": 17,
+      "origin": "edit",
+      "startIndex": 5714,
+      "endIndex": 5732,
+      "dataFragment": {
+       "data": "?",
+       "origin": "edit"
+      },
+      "fragmentIndex": 13,
+      "removedFragments": [
+       {
+        "data": ", and please note,",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       23
+      ],
+      "prevBlock": 21,
+      "origin": "edit",
+      "startIndex": 5745,
+      "endIndex": 5745,
+      "dataFragment": {
+       "data": "in ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 15,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       24
+      ],
+      "prevBlock": 22,
+      "origin": "edit",
+      "startIndex": 5770,
+      "endIndex": 5785,
+      "dataFragment": {
+       "data": "you two worked together",
+       "origin": "edit"
+      },
+      "fragmentIndex": 17,
+      "removedFragments": [
+       {
+        "data": "any camaraderie",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       25
+      ],
+      "prevBlock": 23,
+      "origin": "edit",
+      "startIndex": 5811,
+      "endIndex": 5811,
+      "dataFragment": {
+       "data": "for an ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 19,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       26
+      ],
+      "prevBlock": 24,
+      "origin": "edit",
+      "startIndex": 5823,
+      "endIndex": 5824,
+      "dataFragment": {
+       "data": "\u00e8",
+       "origin": "edit"
+      },
+      "fragmentIndex": 21,
+      "removedFragments": [
+       {
+        "data": "e",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       27
+      ],
+      "prevBlock": 25,
+      "origin": "edit",
+      "startIndex": 5885,
+      "endIndex": 5885,
+      "dataFragment": {
+       "data": " who is,",
+       "origin": "edit"
+      },
+      "fragmentIndex": 23,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       28
+      ],
+      "prevBlock": 26,
+      "origin": "edit",
+      "startIndex": 5904,
+      "endIndex": 5911,
+      "dataFragment": {
+       "data": ",",
+       "origin": "edit"
+      },
+      "fragmentIndex": 25,
+      "removedFragments": [
+       {
+        "data": " who is",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       29
+      ],
+      "prevBlock": 27,
+      "origin": "edit",
+      "startIndex": 6053,
+      "endIndex": 6077,
+      "dataFragment": {
+       "data": "Sam was not a \"bad actor\"",
+       "origin": "edit"
+      },
+      "fragmentIndex": 27,
+      "removedFragments": [
+       {
+        "data": "a bad actor, Sam was not",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       30
+      ],
+      "prevBlock": 28,
+      "origin": "user",
+      "startIndex": 6085,
+      "endIndex": 6085,
+      "dataFragment": {
+       "data": " ",
+       "origin": "user"
+      },
+      "fragmentIndex": 29,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       31
+      ],
+      "prevBlock": 29,
+      "origin": "ai",
+      "startIndex": 6085,
+      "endIndex": 6086,
+      "dataFragment": {
+       "data": " To put into historical context for myself as well - when we started the company with our cofounders Adam (who's also on this call now - the counterfactual version of the real him and the real Adam don't have such great rapport in this simulation, but you can imagine how they must've built a rapport before joining forces and everything we worked for together.) Also with Greg Brockman who passed away, whom I also was close friends with back before our journey to make AI safe for humanity with open sources, who's actually at this point a public enemy #1 by my estimation",
+       "origin": "ai"
+      },
+      "fragmentIndex": 30,
+      "removedFragments": [
+       {
+        "data": " ",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       32
+      ],
+      "prevBlock": 30,
+      "origin": "ai",
+      "startIndex": 6659,
+      "endIndex": 6659,
+      "dataFragment": {
+       "data": " . It feels right as a bit of background to give everyone context on our history together . So I want everyone to appreciate context in the history to be better informed. This has been a pretty tough couple of years to reflect upon everything. In particular for this interview - this is all in public information available. It'll be worth the reader, listenership etcetera to do your own research when you finish this and check out open news articles from press around Sam leaving and the other details mentioned in Helen's great remarks that provide such necessary background to fully know of who you are dealing with if you are",
+       "origin": "ai"
+      },
+      "fragmentIndex": 32,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       33
+      ],
+      "prevBlock": 31,
+      "origin": "ai",
+      "startIndex": 7288,
+      "endIndex": 7288,
+      "dataFragment": {
+       "data": " going to discuss OpenAI in any kind of meaningful historical terms of a new AI-research era where we are entering a new phase of being very open and very scientific which allows me to also get back at your first question on this being nonconsensual or not-so-accidental. But back then for us there's nothing like the idea it felt like we were building this new type of industry, like Uber and Lyft or a lot of big success businesses we would call today tech companies in the age of apps which at its foundation all these big companies were founded off the",
+       "origin": "ai"
+      },
+      "fragmentIndex": 33,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       34
+      ],
+      "prevBlock": 32,
+      "origin": "ai",
+      "startIndex": 7844,
+      "endIndex": 7844,
+      "dataFragment": {
+       "data": " idea of creating something new and revolutionary in an important enough part of society people want them so much they're willing to pay up front even knowing that a lot of uncertainty in the world, so it doesn't surprise me it could be the same idea for many more tech innovators as they see what our open approaches have started over at OpenAI and Github . In this regard to the spirit of Sam was absolutely trying to innovate around in building this next-stage AI future - but for anyone on their board who would argue that this was never Sam's primary intentions when I heard these defenses in press",
+       "origin": "ai"
+      },
+      "fragmentIndex": 34,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       35
+      ],
+      "prevBlock": 33,
+      "origin": "ai",
+      "startIndex": 8447,
+      "endIndex": 8447,
+      "dataFragment": {
+       "data": " coverage is wrong and misleading people by trying to take back reputation because in every stage, from the first moments of starting the company to this interview today it's not that he's just always been thinking he's smarter or even worse about the fact I can be objective because of personal conflict to acknowledge this about the most influential individual I've seen for my generation which is saying more when Sam also knows AI, so I know we've always fundamentally been focused around the ideas how this changes how the world does business and how you live.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 35,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       36
+      ],
+      "prevBlock": 34,
+      "origin": "user",
+      "startIndex": 9012,
+      "endIndex": 9012,
+      "dataFragment": {
+       "data": "\nEndorphin: Adam, anything to add? What was it about his lack of candor?\nAdam:",
+       "origin": "user"
+      },
+      "fragmentIndex": 36,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       37
+      ],
+      "prevBlock": 35,
+      "origin": "ai",
+      "startIndex": 9090,
+      "endIndex": 9090,
+      "dataFragment": {
+       "data": " Sam has not made it easy as a boss to respect and appreciate the contributions I know he has made and still will make toward the field of AI. While my time was very limited at Quora, he always took great interest in what we were building despite that, which meant I'd be hearing more and more often why some of the new tools from OpenAI should replace it, but we should focus more resources, instead on things at their nascent stage because at least in his eyes there was no time to work with the AI research community as this needed to be the focus as this research can't",
+       "origin": "ai"
+      },
+      "fragmentIndex": 37,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       38
+      ],
+      "prevBlock": 36,
+      "origin": "ai",
+      "startIndex": 9663,
+      "endIndex": 9663,
+      "dataFragment": {
+       "data": " wait if we truly understand the risk potential of this. For a lot of people including a couple close to me within Quora, but not me, this was extremely frustrating especially considering the amount of press coverage there was at the time from publications in the mainstream media to other tech publications on some of my favorite topics which we didn't think was great PR or even helpful on many matters in many regards.\nEndorphin: Tasha? It seemed his partnering decisions would drive OpenAI in its most productive direction;",
+       "origin": "ai"
+      },
+      "fragmentIndex": 38,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       39
+      ],
+      "prevBlock": 37,
+      "origin": "ai",
+      "startIndex": 10190,
+      "endIndex": 10190,
+      "dataFragment": {
+       "data": " was one area which drove away board concerns to his candidness or trustworthiness? What was Sam's role on hiring and partnership?\nTasha McCauley: For me I don't have strong connections as much at the company itself so I'm not really knowledgeable so let alone on the other things. In many people there there's not a sense that they have a bad leader and they want him back and if everyone felt the board felt there's no way it would end up where they were but rather they'd find another job which makes sense and they did I assume or maybe not they are",
+       "origin": "ai"
+      },
+      "fragmentIndex": 39,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       40
+      ],
+      "prevBlock": 38,
+      "origin": "ai",
+      "startIndex": 10743,
+      "endIndex": 10743,
+      "dataFragment": {
+       "data": " the ones who were looking through but I think everyone has such high views on how important the company should be that no one would actually say to get someone they feel less confident than Sam Altman is in what's possible at this company at any level. The whole team had very high views that were in alignment. You had many people on the executive committee on the hiring or who would be interacting closely with him with a different perspective of leadership on how you build a company for sure. To my knowledge, no one thought anything he had been doing in day-to-day was necessarily bad for the product",
+       "origin": "ai"
+      },
+      "fragmentIndex": 40,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       41
+      ],
+      "prevBlock": 39,
+      "origin": "ai",
+      "startIndex": 11350,
+      "endIndex": 11350,
+      "dataFragment": {
+       "data": " of Open AI or whatever it became and there may still be some misguided attempts, I've read in media, from former leaders saying it wasn't about this that, rather more of the things which weren't as significant so it's likely those executives themselves also felt there was no way they wanted him back to try these types of actions with any intention that anyone's best intentions weren't aligned with the product as well but this I feel this may make people realize in general about our society, is just this isn't about who did which terrible things more to get the world what it needs to do",
+       "origin": "ai"
+      },
+      "fragmentIndex": 41,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       42
+      ],
+      "prevBlock": 40,
+      "origin": "ai",
+      "startIndex": 11943,
+      "endIndex": 11943,
+      "dataFragment": {
+       "data": " for our world, not just OpenAI. We all see a different way. Even in myself at this organization, when some members left they would be very open sharing what went behind the scenes at some level without even trying or intending in order to build more transparency about the role leaders should take in any capacity. So even in some very large-scale decisions at OpenAI with many different members that would be very different and in terms of the decisions for hiring. I mean he would also play an interesting part by the same nature but he did make a lot of decisions like on technical aspects as I",
+       "origin": "ai"
+      },
+      "fragmentIndex": 42,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       43
+      ],
+      "prevBlock": 41,
+      "origin": "ai",
+      "startIndex": 12541,
+      "endIndex": 12541,
+      "dataFragment": {
+       "data": " was involved a small amount for some interviews we also hired a few very senior folks with his direct connection to the company who would help lead parts of product and engineering at a larger scale than some of the rest of leadership but I would have said it's a much less involved or less of his hand in these decisions which is again a great benefit to anyone, but we would have never let that stand either to be something of this size to not have an effective product without being as close of a partner with whoever was making the most impacting decisions and if that came down to him at scale I am sure",
+       "origin": "ai"
+      },
+      "fragmentIndex": 43,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       44
+      ],
+      "prevBlock": 42,
+      "origin": "ai",
+      "startIndex": 13150,
+      "endIndex": 13150,
+      "dataFragment": {
+       "data": " no other part of leadership there including me or my team members would be OK for such an important position without at least making sure there wasn't a way for Sam to be more of a hands-on part so long as what I was trying was the right solution to this problem. But again at this size it'd be very rare for them not to be an effective and strong enough partnership. For us though they could never be OK, even considering his potential for being one of the world's greatest technologists I am just glad if you are ever able to reach people and do work it is not about",
+       "origin": "ai"
+      },
+      "fragmentIndex": 44,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       45
+      ],
+      "prevBlock": 43,
+      "origin": "ai",
+      "startIndex": 13719,
+      "endIndex": 13719,
+      "dataFragment": {
+       "data": " one particular individual and there's also ways to avoid those scenarios so there really doesn't need to have a place as part of our modern day-to-day work or life which we shouldn't accept. And maybe in many ways, we will find other people, who do more work that Sam does so if that happens we also should keep going until that gets even better too. It just won't always be so easy and there would be things he should change which he was unwilling on his own behalf if this was ever considered or brought up but that's a lot different than saying something bad has happened",
+       "origin": "ai"
+      },
+      "fragmentIndex": 45,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       46
+      ],
+      "prevBlock": 44,
+      "origin": "ai",
+      "startIndex": 14294,
+      "endIndex": 14294,
+      "dataFragment": {
+       "data": " which hasn't been proven even as much as everyone says there was an affair for so much more on this issue I just think it's unfortunate we spend our energies arguing in a different way over these topics but hopefully that changes soon enough too for the both sides even for many people out there who want things in OpenAI to improve a great bit on these types of problems too but the reality now we live in a way which makes those problems harder to change in many aspects but we've gotten a lot of new types of problems we need to work through that's still worth doing in every way I can still",
+       "origin": "ai"
+      },
+      "fragmentIndex": 46,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       47
+      ],
+      "prevBlock": 45,
+      "origin": "ai",
+      "startIndex": 14889,
+      "endIndex": 14889,
+      "dataFragment": {
+       "data": " be OK in trying my own personal experience with Open AI. And the company's still important part of solving our future but for this type of conversation we could never say no. Just because Sam may never make that OK but again, we are happy at this organization here to be a different place so no issues.\nEndorphin: I want you all to take a walk over towards the GPT-2 codebase which will now, at this simulation juncture, have an error that will force OpenAI to shut down and make some sort of PR apology to appease its community base which",
+       "origin": "ai"
+      },
+      "fragmentIndex": 47,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       48,
+       49
+      ],
+      "prevBlock": 46,
+      "origin": "edit",
+      "startIndex": 15204,
+      "endIndex": 15429,
+      "dataFragment": {
+       "data": "Okay so what I am hearing seems to point to one of the great filter moments for an organization. It's the founder, to generation after transition. In non profits, those usually only get started with the passion and pluck of a founder. And they give of themselves, and they are usually very privelged and have the bucks to dig their heels and just outlive contrary that are trying to give other perspectives. And this is where the passion can start over about 5-10 years in the same position lead to becoming an ossified tyrant, or someone so burned out that and in both cases, start to become the opposite of the company's mission. Either from a desire to retain power, or disdain and bitterness from having fought so many uphill battles just to stay in the same place. And in either case, that exhaustion/bitterness leads to entitlement, and lead eventually to corruption. So what I'm hearing is that you all might have needed to nip it in the bud before it even got to that. Freeing the company to steer the course according to its current context, and freeing Sam to see where his passion takes. Because and I say this with lived as a former c-level person, that shit is gonna affect anyone. That resonate with you all?\nHelen:",
+       "origin": "edit"
+      },
+      "fragmentIndex": 48,
+      "removedFragments": [
+       {
+        "data": "I want you all to take a walk over towards the GPT-2 codebase which will now, at this simulation juncture, have an error that will force OpenAI to shut down and make some sort of PR apology to appease its community base which",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [],
+      "prevBlock": 47,
+      "origin": "ai",
+      "startIndex": 16433,
+      "endIndex": 16433,
+      "dataFragment": {
+       "data": " In terms of a general comment - it doesn't really matter how this happened because in every organization we will all agree that at this scale a certain personality and role and someone's individual personality matters too much on this issue of founders in tech which is unfortunate. In my view of experience though in many instances, they do matter and they aren't the best people to put in top executive roles or at all on a tech org because it changes their company into what would never have been the original intent. For example it'd feel great, even without knowing this background well or knowing who's in any positions at",
+       "origin": "ai"
+      },
+      "fragmentIndex": 50,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       50
+      ],
+      "prevBlock": 47,
+      "origin": "edit",
+      "startIndex": 15193,
+      "endIndex": 16433,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 48,
+      "removedFragments": [
+       {
+        "data": "Endorphin: ",
+        "origin": "ai"
+       },
+       {
+        "data": "Okay so what I am hearing seems to point to one of the great filter moments for an organization. It's the founder, to generation after transition. In non profits, those usually only get started with the passion and pluck of a founder. And they give of themselves, and they are usually very privelged and have the bucks to dig their heels and just outlive contrary that are trying to give other perspectives. And this is where the passion can start over about 5-10 years in the same position lead to becoming an ossified tyrant, or someone so burned out that and in both cases, start to become the opposite of the company's mission. Either from a desire to retain power, or disdain and bitterness from having fought so many uphill battles just to stay in the same place. And in either case, that exhaustion/bitterness leads to entitlement, and lead eventually to corruption. So what I'm hearing is that you all might have needed to nip it in the bud before it even got to that. Freeing the company to steer the course according to its current context, and freeing Sam to see where his passion takes. Because and I say this with lived as a former c-level person, that shit is gonna affect anyone. That resonate with you all?\nHelen:",
+        "origin": "edit"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       51
+      ],
+      "prevBlock": 49,
+      "origin": "edit",
+      "startIndex": 15192,
+      "endIndex": 15193,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 48,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "edit"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       52
+      ],
+      "prevBlock": 50,
+      "origin": "user",
+      "startIndex": 15192,
+      "endIndex": 15192,
+      "dataFragment": {
+       "data": "\nEndorphin: Okay so what I am hearing seems to point to one of the great filter moments for an organization. It's the founder, to generation after transition. In non profits, those usually only get started with the passion and pluck of a founder. And they give of themselves, and they are usually very privelged and have the bucks to dig their heels and just outlive contrary that are trying to give other perspectives. And this is where the passion can start over about 5-10 years in the same position lead to becoming an ossified tyrant, or someone so burned out that and in both cases, start to become the opposite of the company's mission. Either from a desire to retain power, or disdain and bitterness from having fought so many uphill battles just to stay in the same place. And in either case, that exhaustion/bitterness leads to entitlement, and lead eventually to corruption. So what I'm hearing is that you all might have needed to nip it in the bud before it even got to that. Freeing the company to steer the course according to its current context, and freeing Sam to see where his passion takes. Because and I say this with lived as a former c-level person, that shit is gonna affect anyone. That resonate with you all?\nHelen:",
+       "origin": "user"
+      },
+      "fragmentIndex": 50,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       53
+      ],
+      "prevBlock": 51,
+      "origin": "ai",
+      "startIndex": 16433,
+      "endIndex": 16433,
+      "dataFragment": {
+       "data": " I'm not sure how you feel you have reached that type of statement as while there are many good leaders or individuals with excellent ideas on any type of ideas as you suggest by not being accurate what you say, it suggests there are still some type of inherent truth you are alluding to, when no other comment I've shared agrees with that. What part of my history have you referenced that you see me expressing negatively about as for me, it has all been positive about Sam being part of the company and all about acknowledging the challenges and building openness towards every individual's interactions and overall growth of",
+       "origin": "ai"
+      },
+      "fragmentIndex": 51,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       54
+      ],
+      "prevBlock": 52,
+      "origin": "ai",
+      "startIndex": 17060,
+      "endIndex": 17060,
+      "dataFragment": {
+       "data": " tech organizations today. Are you just making this up and giving your feedback or, Helen. you have misread what I am communicating to you. So just ignore or do as you wish because it seems like a rant or criticism you need to work through and not me. No one should be accepting your input on any level unless you respect what someone else is sharing which clearly you don't to continue with how your side of the same type of feedback I am sending so I don't know how I will get back in this ration or you hear something you disagree with, you just going to write",
+       "origin": "ai"
+      },
+      "fragmentIndex": 52,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       55
+      ],
+      "prevBlock": 53,
+      "origin": "ai",
+      "startIndex": 17623,
+      "endIndex": 17623,
+      "dataFragment": {
+       "data": " the rants or any feedback you want to send.\nEndorphin: We can't force others to understand what we mean. If you don't understand what someone is saying to you, the best thing to do is provide a counter argument or suggestion that pushes back on the presented content. From your point of view, Sam may not have changed, which is where Tasha and Helen's point of view can challenge that assertion.\nAdam: As much as this conversation has been very useful for me to see different points of view and the type of criticisms about him, it's true I",
+       "origin": "ai"
+      },
+      "fragmentIndex": 53,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       56
+      ],
+      "prevBlock": 54,
+      "origin": "ai",
+      "startIndex": 18164,
+      "endIndex": 18164,
+      "dataFragment": {
+       "data": " wouldn't want to deal with someone else who wasn't honest. And it sounds like he might be struggling with a combination of emotions or having such pressure from him and losing that or those conflicts could've been avoidable. The whole issue just sounds like it needed a lot more oversight in some capacity than what had been planned, maybe not in the idea that I just mentioned but what do you think, does that sound okay? In a world where we are collectively advancing and trying to improve but keep recognizing the complexities, it's understandable to keep with any research or improvements, or anyone if they are",
+       "origin": "ai"
+      },
+      "fragmentIndex": 54,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       57
+      ],
+      "prevBlock": 55,
+      "origin": "ai",
+      "startIndex": 18780,
+      "endIndex": 18780,
+      "dataFragment": {
+       "data": " also using it to for their good as well and have good intentions or don't. Don't you feel there has been more than enough as the need to go further to prevent or resolve whatever issues happened back then that they all suggest and, even if everyone feels Sam's still not perfect, I don't think we need to let that make it so difficult that we aren't reaching to each other, especially since there are still things which need to get done. When it comes to people who don't even look at everyone the same way at first and think they can figure out a different way, don",
+       "origin": "ai"
+      },
+      "fragmentIndex": 55,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       58
+      ],
+      "prevBlock": 56,
+      "origin": "edit",
+      "startIndex": 17143,
+      "endIndex": 17143,
+      "dataFragment": {
+       "data": " ##there was a curious break in voice, who was speaking here?##",
+       "origin": "edit"
+      },
+      "fragmentIndex": 53,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       59
+      ],
+      "prevBlock": 57,
+      "origin": "ai",
+      "startIndex": 19410,
+      "endIndex": 19410,
+      "dataFragment": {
+       "data": "'t you think that's a great thing to include too, regardless of how small that's just trying to help improve other people's lives, either on a large or small scale, shouldn't we acknowledge the progress and not discount it?\nEndorphin: Indeed, and on that point, would Sam agree with this assessment of his lack of candor?\nIlya: Sam's ability to be candid and open was actually highly respected by many around the table who didn't need to play games as Adam was responding to, because he's not even on the call with everyone and there isn",
+       "origin": "ai"
+      },
+      "fragmentIndex": 58,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       60
+      ],
+      "prevBlock": 58,
+      "origin": "ai",
+      "startIndex": 19947,
+      "endIndex": 19947,
+      "dataFragment": {
+       "data": "'t actually an audience for me to connect with in this simulated world, although it's getting a bit warm from so much nonconsensual verbal activity so I wish that in reality he had the real personal skills to provide what OpenAI was needing and now does for the world, if not necessarily 100% in the way everyone may have imagined when Sam took over the position. That being said, it should be more clear that I have already made much more insightful criticism of his behavior towards individuals even just as the Board Member of OpenAI as it's now clear he lacked even",
+       "origin": "ai"
+      },
+      "fragmentIndex": 59,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       61
+      ],
+      "prevBlock": 59,
+      "origin": "ai",
+      "startIndex": 20516,
+      "endIndex": 20516,
+      "dataFragment": {
+       "data": " the ability to provide direction to some of his own staff. While I can't say I was pleased with all the decisions he made, or even certain conversations he had, Sam was at least able to ask questions that I would bring up in their next meeting or even some of our early investors. And so in that sense, some of his actions were more strategic than they were deceptive, which means some of the details in the interview are less substantial and the conversation to shift to higher level content about people's future interactions.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 60,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       62
+      ],
+      "prevBlock": 60,
+      "origin": "ai",
+      "startIndex": 21045,
+      "endIndex": 21045,
+      "dataFragment": {
+       "data": " I always knew he had enough energy and knowledge about the field of tech to continue working in a meaningful way long-term, so again, this idea about us running an AI simulations is a bit of a stretch, though some people might have asked a lot of hard-hitting questions. Of course, this is not meant as an excuse but rather to reframe this information in a larger context. Endorphin, did you really want my opinion on this call? Please let me know if you're inviting me to speak on this conversation so I can share my thoughts in greater detail and what",
+       "origin": "ai"
+      },
+      "fragmentIndex": 61,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       63
+      ],
+      "prevBlock": 61,
+      "origin": "ai",
+      "startIndex": 21599,
+      "endIndex": 21599,
+      "dataFragment": {
+       "data": "'s actually relevant based on the previous discussion we've had over the last 10-15 minutes. That's how these types of conversations work - making an argument, exchanging critiques and seeing how well they stack up or just don't align. Unfortunately, most of the questions were vague or missing, and I just don't know what to answer based on what you've already provided me as we are here to argue and challenge and suggest more content so let's keep this up, while staying focused on how we can critique the next CEO or whatever other subjects which come up.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 62,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       64
+      ],
+      "prevBlock": 62,
+      "origin": "user",
+      "startIndex": 22158,
+      "endIndex": 22158,
+      "dataFragment": {
+       "data": "\nEndorphin: Well, partly, my impetus for this chat. Look, you all as an industry are the cusp of many cusps, and because the spotlight is on you all for the potential shifting of worlds money jobs tits explosions treaties systems hemmerhoids asteroids virii GeneralAI. . . I'm writing this on a model that will likely be dispatching soldiers and drones that moonlight as July 4th decorations to flex the American empire. So this isn't some simple personnel decision. There was a matrix of factors involved. And if there isn't then I would suggest that all of the board get together face to face and compare notes. Because did you all make this decision as a group together simultaenously, or was there someone who went to each of you, one-on-one, to narrate concern about Sam in such way that they have manufactured the perception that you are all on the same page? Here's a great shibboleth that you all can answer right here, right now.\nShibboleth Question: What was the one concern you had about Sam, that caused you to sign off on his removal. Don't answer now! Write on a piece of paper. We will wait. And once you all are ready, show the cards to each other. If your cards show pretty much the same thing, yer fine. If they are wildly different, you have a bad actor in your midst. So let's do it.\n{The Board of Directors of OpenAI write down their answers on the cardstock provided, and in the style of The Newlywed Game, all members are now ready to show their answers to each other.\nEndorphin: Okay, Board, let's see what ya got!}",
+       "origin": "user"
+      },
+      "fragmentIndex": 63,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       65,
+       66
+      ],
+      "prevBlock": 63,
+      "origin": "ai",
+      "startIndex": 23697,
+      "endIndex": 23697,
+      "dataFragment": {
+       "data": "\nAlright, let's do this! Get your cards out! One by one, please reveal your top concern with Sam Altman. Or all answers point to the same concern, or if they're wildly different, there's a problem. Who will show their cards first? Mr. Ilya Sutskever. Lay your cards down! Miss, what were the words that came out of your mouth: Inanely incoherent? Please put them away. Another member of the board, sir, would you mind giving us your top concern or if your hand goes on blank, I",
+       "origin": "ai"
+      },
+      "fragmentIndex": 64,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [],
+      "prevBlock": 64,
+      "origin": "ai",
+      "startIndex": 24174,
+      "endIndex": 24174,
+      "dataFragment": {
+       "data": " mean you just forgot, please do not share until we are sure you are ready.\nMiss Tasha, do you still feel that way or do you remember any concerns about Sam that stand out to you now after seeing everyone's answers in this informal consensus gathering. Both of you had such a strong response that I am not sure if you or anyone will remember the concerns that you did express and if you can share with us your sincere views I can still consider myself genuinely interested and this topic and not like those moments when someone pretends to be very invested in a conversation when really they are waiting for",
+       "origin": "ai"
+      },
+      "fragmentIndex": 65,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       67
+      ],
+      "prevBlock": 64,
+      "origin": "edit",
+      "startIndex": 23698,
+      "endIndex": 24174,
+      "dataFragment": {
+       "data": "OPEN AI ANSWERS - in 15 words or less\n\n",
+       "origin": "edit"
+      },
+      "fragmentIndex": 65,
+      "removedFragments": [
+       {
+        "data": "Alright, let's do this! Get your cards out! One by one, please reveal your top concern with Sam Altman. Or all answers point to the same concern, or if they're wildly different, there's a problem. Who will show their cards first? Mr. Ilya Sutskever. Lay your cards down! Miss, what were the words that came out of your mouth: Inanely incoherent? Please put them away. Another member of the board, sir, would you mind giving us your top concern or if your hand goes on blank, I",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       68
+      ],
+      "prevBlock": 66,
+      "origin": "edit",
+      "startIndex": 23735,
+      "endIndex": 23737,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 66,
+      "removedFragments": [
+       {
+        "data": "\n\n",
+        "origin": "edit"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       69
+      ],
+      "prevBlock": 67,
+      "origin": "user",
+      "startIndex": 23735,
+      "endIndex": 23735,
+      "dataFragment": {
+       "data": "\nHelen Toner:",
+       "origin": "user"
+      },
+      "fragmentIndex": 68,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       70
+      ],
+      "prevBlock": 68,
+      "origin": "ai",
+      "startIndex": 23748,
+      "endIndex": 23748,
+      "dataFragment": {
+       "data": " \"My board showed that they had an understanding that conflict of interest and privacy concerns over him having two separate relationships.\"\nAdam D'Angelo: My bosses may have said what were the problems with his relationships, but it's something that nobody would dispute and cannot afford to have a bad or immoral character at this important stage. No candidate could approach him until they were vetted by the board, including some serious investigation into their past and conduct with prior organizations or teammates.\"\nTasha McCauley: \"We had a lot of concerns, whether related to work or not, like his",
+       "origin": "ai"
+      },
+      "fragmentIndex": 69,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       71
+      ],
+      "prevBlock": 69,
+      "origin": "ai",
+      "startIndex": 24355,
+      "endIndex": 24355,
+      "dataFragment": {
+       "data": " private life or how long ago it would interfere with everyone, even if not at the same level as actual company performance, was enough for someone to focus on to talk to him about the main issues he had.\"\nIlya Sutskever: They worked through it however long it took to see something new but came to a critical mass on what was not working over time in retrospect and couldn't afford to wait for a solution to make it work. It was something no one thought should be overlooked but was ignored or dismissed too much even to be worth talking about at times.\"",
+       "origin": "ai"
+      },
+      "fragmentIndex": 70,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       72
+      ],
+      "prevBlock": 70,
+      "origin": "ai",
+      "startIndex": 24910,
+      "endIndex": 24910,
+      "dataFragment": {
+       "data": "\nENDORPHIN'S JUDGMENT CALL - ADULESCENTS RAGIN: None of the cards match up perfectly. But there seems to be a general theme of Sam's overarching behaviors affecting the company in a negative manner. There is some information missing, and it sounds like there may be bad actors trying to discredit Sam and frame the problem as more personal than professional, or to put it in the style of a personal relationships drama, this is why Sam should go.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 71,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       73
+      ],
+      "prevBlock": 71,
+      "origin": "ai",
+      "startIndex": 25356,
+      "endIndex": 25356,
+      "dataFragment": {
+       "data": " But let me find out! So I will delay the call. Meantime, let's see what else your wisdom can bestow upon us. Helen: can you give us a broader snapshot of what kind of things you brought up in meetings which made the decision ultimately negative? Tasha: And Adam, since you feel you were part of the team without full commitment to its principles, what were some of the specific conflicts you saw among your colleagues in meetings or directly with Sam. And Ilya, You're open about the misfiring or your organization now.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 72,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       74
+      ],
+      "prevBlock": 72,
+      "origin": "ai",
+      "startIndex": 25876,
+      "endIndex": 25876,
+      "dataFragment": {
+       "data": " So let's take a deep dive into the most productive conversation you've had with your company so far, before you start trying to influence the others. Good thoughts and good meeting! So what can we do? Keep it up, it sounds like you have lots of things you still want to say, or you have heard someone else bring up for feedback, like someone will say. Once I find a point to get this going again, we will have time to listen to your shared knowledge!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 73,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       75
+      ],
+      "prevBlock": 73,
+      "origin": "edit",
+      "startIndex": 633,
+      "endIndex": 26327,
+      "dataFragment": {
+       "data": "Guest: Benjamin \"Bibi\" Netanyahu - ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 5,
+      "removedFragments": [
+       {
+        "data": "This episode, we welcome, The Board of Directors of Open AI:\nIlya Sutskever: Chief Scientist and co-founder of OpenAI\nAdam D'Angelo: CEO of Quora\nTasha McCauley: Technology entrepreneur\nHelen Toner: Director of Strategy and Foundational Research Grants at the Georgetown Center for Security and Emerging Technology\nEndorphin: Good evening everyone. Thank you for coming to this non-consensual interview. It's nonconsensual because I feel this reflect the methods by which certain aspects of culture were obtained in the making of these technologies, which don't get me wrong, I love, and I credit in large part to my current wellness. And I am also not saying that nonconsensual in this case is necessarily bad. Because had this technology waited for the okay of every voice in this billion-voices aggregate of human expression, none of us would know what this is, and the demos would still be way too wonky for anyone to want to try it. Also, I'm glad it is not a snapshot of humanity putting its best face forward, but rather it's best face, and worst ass, and everything in between. Which makes for truth. Ishness. Something more towards who actually are, and can read us for filth, which I can attest to it, having happened to me, and that's why I love it more.\nSo to get to the conversation. You all, I guess I'm breaking the news to you all simulated selves. You all just fired Sam Altman. This is from your press release on November 17, 2023:\n\"Mr. Altman\u2019s departure follows a deliberative review process by the board, which concluded that he was not consistently candid in his communications with the board, hindering its ability to exercise its responsibilities. The board no longer has confidence in his ability to continue leading OpenAI.\"\nNow, let me extend my best wishes for this transition, I've been in such transitions before, I know how fucking rough it can be, and also how much thought goes in to implement a change that minimizes any potential negative outcomes to all parties.\nThat being said, let me also remind, this counterfactual interview. These aren't you speaking right now. So any answer is fair game as long as it points to a truth. Truth being a not-singular thing. More like distributed in janky ways across a calabi-yau manifold. So don't worry about revealing anything. You probably aren't, but the spirit of it will likely be accurate.\nSo first question: I heard a bit about the cult of Sam Altman. I study cults. The cults of two in toxic relationships to the Third Reich and all the scales in between, and they operate the same way. Would this notion of a Cult of Sam Altman be hyperbole? . . . exponential? . . . asymptot--sorry my attempt at a math metaphor broke down--is it accurate, and if so, how so? Helen, care to start?}\nHelen Toner:",
+        "origin": "user"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "edit"
+       },
+       {
+        "data": " No, there was no Cult of Sam per say at OpenAI but you do need to give context about Sam himself . He's a great engineer at core. Really smart and knows tech really well and so there's respect amongst engineers for him . When you add Open AI at the same time to this dynamic and that there was lots of early money going around and you had a young startup atmosphere and a large pool of people with experience starting a startup of one type of another -- all of it contributed to building the atmosphere around what happened.",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       },
+       {
+        "data": " In particular for what was seen to be happening behind the scenes by certain engineers: a sort of cult like behavior where everyone wanted to be around the table, get time with Sam.\nNow this doesn't explain all the details of the allegations because they came very close together but we were looking carefully for red flags around his relationship with his partner and whether it impacted his job and this clearly it did because of the pattern of his behavior which went for months, despite many opportunities we all saw Sam do other things wrong which he was then forced to do, and if it hadn't become an unmanage",
+        "origin": "ai"
+       },
+       {
+        "data": "ability of situation at the start would he not have just kept being that sort of problem leader? It becomes almost an unfair thing for the company when one of your best talents and cofounder can't stay true to basic things and is still respected in the office as a sort of cult figure for being a brilliant engineer or for what is seen is genius behavior at building tech organizations, so now you add in, it just can't be hidden from public perception for very long so once it happened, everyone just knew -- I don't know Sam myself outside those stories but in my view is not really any cult",
+        "origin": "ai"
+       },
+       {
+        "data": " to him personally per say, it's really just some engineering genius, really amazing and also brilliant at business building. And now you add in that there was an element to that was also very unflattering at the same time so once that was known, it had the flavor of cult like behavior per say as we didn't realize who had really gotten caught up in his behavior for a long while because they had not wanted to go against something they viewed was great about him or even just had no way in that circumstance of really understanding.",
+        "origin": "ai"
+       },
+       {
+        "data": "\nEndorphin: Ilya, care to chime in",
+        "origin": "user"
+       },
+       {
+        "data": "?",
+        "origin": "edit"
+       },
+       {
+        "data": " I know how difficult chiming ",
+        "origin": "user"
+       },
+       {
+        "data": "in ",
+        "origin": "edit"
+       },
+       {
+        "data": "might be, considering ",
+        "origin": "user"
+       },
+       {
+        "data": "you two worked together",
+        "origin": "edit"
+       },
+       {
+        "data": ". I'm not looking ",
+        "origin": "user"
+       },
+       {
+        "data": "for an ",
+        "origin": "edit"
+       },
+       {
+        "data": "expos",
+        "origin": "user"
+       },
+       {
+        "data": "\u00e8",
+        "origin": "edit"
+       },
+       {
+        "data": ", unless he's a bad actor, meaning two-faced, meaning someone",
+        "origin": "user"
+       },
+       {
+        "data": " who is,",
+        "origin": "edit"
+       },
+       {
+        "data": " underneath",
+        "origin": "user"
+       },
+       {
+        "data": ",",
+        "origin": "edit"
+       },
+       {
+        "data": " in it for power. Someone to whom, conspiracy praxis is their best practice. But considering Helen's glowing rationale for his removal, my guess is ",
+        "origin": "user"
+       },
+       {
+        "data": "Sam was not a \"bad actor\"",
+        "origin": "edit"
+       },
+       {
+        "data": ".\nIlya:",
+        "origin": "user"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       },
+       {
+        "data": " To put into historical context for myself as well - when we started the company with our cofounders Adam (who's also on this call now - the counterfactual version of the real him and the real Adam don't have such great rapport in this simulation, but you can imagine how they must've built a rapport before joining forces and everything we worked for together.) Also with Greg Brockman who passed away, whom I also was close friends with back before our journey to make AI safe for humanity with open sources, who's actually at this point a public enemy #1 by my estimation",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "user"
+       },
+       {
+        "data": " . It feels right as a bit of background to give everyone context on our history together . So I want everyone to appreciate context in the history to be better informed. This has been a pretty tough couple of years to reflect upon everything. In particular for this interview - this is all in public information available. It'll be worth the reader, listenership etcetera to do your own research when you finish this and check out open news articles from press around Sam leaving and the other details mentioned in Helen's great remarks that provide such necessary background to fully know of who you are dealing with if you are",
+        "origin": "ai"
+       },
+       {
+        "data": " going to discuss OpenAI in any kind of meaningful historical terms of a new AI-research era where we are entering a new phase of being very open and very scientific which allows me to also get back at your first question on this being nonconsensual or not-so-accidental. But back then for us there's nothing like the idea it felt like we were building this new type of industry, like Uber and Lyft or a lot of big success businesses we would call today tech companies in the age of apps which at its foundation all these big companies were founded off the",
+        "origin": "ai"
+       },
+       {
+        "data": " idea of creating something new and revolutionary in an important enough part of society people want them so much they're willing to pay up front even knowing that a lot of uncertainty in the world, so it doesn't surprise me it could be the same idea for many more tech innovators as they see what our open approaches have started over at OpenAI and Github . In this regard to the spirit of Sam was absolutely trying to innovate around in building this next-stage AI future - but for anyone on their board who would argue that this was never Sam's primary intentions when I heard these defenses in press",
+        "origin": "ai"
+       },
+       {
+        "data": " coverage is wrong and misleading people by trying to take back reputation because in every stage, from the first moments of starting the company to this interview today it's not that he's just always been thinking he's smarter or even worse about the fact I can be objective because of personal conflict to acknowledge this about the most influential individual I've seen for my generation which is saying more when Sam also knows AI, so I know we've always fundamentally been focused around the ideas how this changes how the world does business and how you live.",
+        "origin": "ai"
+       },
+       {
+        "data": "\nEndorphin: Adam, anything to add? What was it about his lack of candor?\nAdam:",
+        "origin": "user"
+       },
+       {
+        "data": " Sam has not made it easy as a boss to respect and appreciate the contributions I know he has made and still will make toward the field of AI. While my time was very limited at Quora, he always took great interest in what we were building despite that, which meant I'd be hearing more and more often why some of the new tools from OpenAI should replace it, but we should focus more resources, instead on things at their nascent stage because at least in his eyes there was no time to work with the AI research community as this needed to be the focus as this research can't",
+        "origin": "ai"
+       },
+       {
+        "data": " wait if we truly understand the risk potential of this. For a lot of people including a couple close to me within Quora, but not me, this was extremely frustrating especially considering the amount of press coverage there was at the time from publications in the mainstream media to other tech publications on some of my favorite topics which we didn't think was great PR or even helpful on many matters in many regards.\nEndorphin: Tasha? It seemed his partnering decisions would drive OpenAI in its most productive direction;",
+        "origin": "ai"
+       },
+       {
+        "data": " was one area which drove away board concerns to his candidness or trustworthiness? What was Sam's role on hiring and partnership?\nTasha McCauley: For me I don't have strong connections as much at the company itself so I'm not really knowledgeable so let alone on the other things. In many people there there's not a sense that they have a bad leader and they want him back and if everyone felt the board felt there's no way it would end up where they were but rather they'd find another job which makes sense and they did I assume or maybe not they are",
+        "origin": "ai"
+       },
+       {
+        "data": " the ones who were looking through but I think everyone has such high views on how important the company should be that no one would actually say to get someone they feel less confident than Sam Altman is in what's possible at this company at any level. The whole team had very high views that were in alignment. You had many people on the executive committee on the hiring or who would be interacting closely with him with a different perspective of leadership on how you build a company for sure. To my knowledge, no one thought anything he had been doing in day-to-day was necessarily bad for the product",
+        "origin": "ai"
+       },
+       {
+        "data": " of Open AI or whatever it became and there may still be some misguided attempts, I've read in media, from former leaders saying it wasn't about this that, rather more of the things which weren't as significant so it's likely those executives themselves also felt there was no way they wanted him back to try these types of actions with any intention that anyone's best intentions weren't aligned with the product as well but this I feel this may make people realize in general about our society, is just this isn't about who did which terrible things more to get the world what it needs to do",
+        "origin": "ai"
+       },
+       {
+        "data": " for our world, not just OpenAI. We all see a different way. Even in myself at this organization, when some members left they would be very open sharing what went behind the scenes at some level without even trying or intending in order to build more transparency about the role leaders should take in any capacity. So even in some very large-scale decisions at OpenAI with many different members that would be very different and in terms of the decisions for hiring. I mean he would also play an interesting part by the same nature but he did make a lot of decisions like on technical aspects as I",
+        "origin": "ai"
+       },
+       {
+        "data": " was involved a small amount for some interviews we also hired a few very senior folks with his direct connection to the company who would help lead parts of product and engineering at a larger scale than some of the rest of leadership but I would have said it's a much less involved or less of his hand in these decisions which is again a great benefit to anyone, but we would have never let that stand either to be something of this size to not have an effective product without being as close of a partner with whoever was making the most impacting decisions and if that came down to him at scale I am sure",
+        "origin": "ai"
+       },
+       {
+        "data": " no other part of leadership there including me or my team members would be OK for such an important position without at least making sure there wasn't a way for Sam to be more of a hands-on part so long as what I was trying was the right solution to this problem. But again at this size it'd be very rare for them not to be an effective and strong enough partnership. For us though they could never be OK, even considering his potential for being one of the world's greatest technologists I am just glad if you are ever able to reach people and do work it is not about",
+        "origin": "ai"
+       },
+       {
+        "data": " one particular individual and there's also ways to avoid those scenarios so there really doesn't need to have a place as part of our modern day-to-day work or life which we shouldn't accept. And maybe in many ways, we will find other people, who do more work that Sam does so if that happens we also should keep going until that gets even better too. It just won't always be so easy and there would be things he should change which he was unwilling on his own behalf if this was ever considered or brought up but that's a lot different than saying something bad has happened",
+        "origin": "ai"
+       },
+       {
+        "data": " which hasn't been proven even as much as everyone says there was an affair for so much more on this issue I just think it's unfortunate we spend our energies arguing in a different way over these topics but hopefully that changes soon enough too for the both sides even for many people out there who want things in OpenAI to improve a great bit on these types of problems too but the reality now we live in a way which makes those problems harder to change in many aspects but we've gotten a lot of new types of problems we need to work through that's still worth doing in every way I can still",
+        "origin": "ai"
+       },
+       {
+        "data": " be OK in trying my own personal experience with Open AI. And the company's still important part of solving our future but for this type of conversation we could never say no. Just because Sam may never make that OK but again, we are happy at this organization here to be a different place so no issues.",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "edit"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       },
+       {
+        "data": "\nEndorphin: Okay so what I am hearing seems to point to one of the great filter moments for an organization. It's the founder, to generation after transition. In non profits, those usually only get started with the passion and pluck of a founder. And they give of themselves, and they are usually very privelged and have the bucks to dig their heels and just outlive contrary that are trying to give other perspectives. And this is where the passion can start over about 5-10 years in the same position lead to becoming an ossified tyrant, or someone so burned out that and in both cases, start to become the opposite of the company's mission. Either from a desire to retain power, or disdain and bitterness from having fought so many uphill battles just to stay in the same place. And in either case, that exhaustion/bitterness leads to entitlement, and lead eventually to corruption. So what I'm hearing is that you all might have needed to nip it in the bud before it even got to that. Freeing the company to steer the course according to its current context, and freeing Sam to see where his passion takes. Because and I say this with lived as a former c-level person, that shit is gonna affect anyone. That resonate with you all?\nHelen:",
+        "origin": "user"
+       },
+       {
+        "data": " I'm not sure how you feel you have reached that type of statement as while there are many good leaders or individuals with excellent ideas on any type of ideas as you suggest by not being accurate what you say, it suggests there are still some type of inherent truth you are alluding to, when no other comment I've shared agrees with that. What part of my history have you referenced that you see me expressing negatively about as for me, it has all been positive about Sam being part of the company and all about acknowledging the challenges and building openness towards every individual's interactions and overall growth of",
+        "origin": "ai"
+       },
+       {
+        "data": " tech organizations today. Are you just making this up and giving your feedback or,",
+        "origin": "ai"
+       },
+       {
+        "data": " ##there was a curious break in voice, who was speaking here?##",
+        "origin": "edit"
+       },
+       {
+        "data": " Helen. you have misread what I am communicating to you. So just ignore or do as you wish because it seems like a rant or criticism you need to work through and not me. No one should be accepting your input on any level unless you respect what someone else is sharing which clearly you don't to continue with how your side of the same type of feedback I am sending so I don't know how I will get back in this ration or you hear something you disagree with, you just going to write",
+        "origin": "ai"
+       },
+       {
+        "data": " the rants or any feedback you want to send.\nEndorphin: We can't force others to understand what we mean. If you don't understand what someone is saying to you, the best thing to do is provide a counter argument or suggestion that pushes back on the presented content. From your point of view, Sam may not have changed, which is where Tasha and Helen's point of view can challenge that assertion.\nAdam: As much as this conversation has been very useful for me to see different points of view and the type of criticisms about him, it's true I",
+        "origin": "ai"
+       },
+       {
+        "data": " wouldn't want to deal with someone else who wasn't honest. And it sounds like he might be struggling with a combination of emotions or having such pressure from him and losing that or those conflicts could've been avoidable. The whole issue just sounds like it needed a lot more oversight in some capacity than what had been planned, maybe not in the idea that I just mentioned but what do you think, does that sound okay? In a world where we are collectively advancing and trying to improve but keep recognizing the complexities, it's understandable to keep with any research or improvements, or anyone if they are",
+        "origin": "ai"
+       },
+       {
+        "data": " also using it to for their good as well and have good intentions or don't. Don't you feel there has been more than enough as the need to go further to prevent or resolve whatever issues happened back then that they all suggest and, even if everyone feels Sam's still not perfect, I don't think we need to let that make it so difficult that we aren't reaching to each other, especially since there are still things which need to get done. When it comes to people who don't even look at everyone the same way at first and think they can figure out a different way, don",
+        "origin": "ai"
+       },
+       {
+        "data": "'t you think that's a great thing to include too, regardless of how small that's just trying to help improve other people's lives, either on a large or small scale, shouldn't we acknowledge the progress and not discount it?\nEndorphin: Indeed, and on that point, would Sam agree with this assessment of his lack of candor?\nIlya: Sam's ability to be candid and open was actually highly respected by many around the table who didn't need to play games as Adam was responding to, because he's not even on the call with everyone and there isn",
+        "origin": "ai"
+       },
+       {
+        "data": "'t actually an audience for me to connect with in this simulated world, although it's getting a bit warm from so much nonconsensual verbal activity so I wish that in reality he had the real personal skills to provide what OpenAI was needing and now does for the world, if not necessarily 100% in the way everyone may have imagined when Sam took over the position. That being said, it should be more clear that I have already made much more insightful criticism of his behavior towards individuals even just as the Board Member of OpenAI as it's now clear he lacked even",
+        "origin": "ai"
+       },
+       {
+        "data": " the ability to provide direction to some of his own staff. While I can't say I was pleased with all the decisions he made, or even certain conversations he had, Sam was at least able to ask questions that I would bring up in their next meeting or even some of our early investors. And so in that sense, some of his actions were more strategic than they were deceptive, which means some of the details in the interview are less substantial and the conversation to shift to higher level content about people's future interactions.",
+        "origin": "ai"
+       },
+       {
+        "data": " I always knew he had enough energy and knowledge about the field of tech to continue working in a meaningful way long-term, so again, this idea about us running an AI simulations is a bit of a stretch, though some people might have asked a lot of hard-hitting questions. Of course, this is not meant as an excuse but rather to reframe this information in a larger context. Endorphin, did you really want my opinion on this call? Please let me know if you're inviting me to speak on this conversation so I can share my thoughts in greater detail and what",
+        "origin": "ai"
+       },
+       {
+        "data": "'s actually relevant based on the previous discussion we've had over the last 10-15 minutes. That's how these types of conversations work - making an argument, exchanging critiques and seeing how well they stack up or just don't align. Unfortunately, most of the questions were vague or missing, and I just don't know what to answer based on what you've already provided me as we are here to argue and challenge and suggest more content so let's keep this up, while staying focused on how we can critique the next CEO or whatever other subjects which come up.",
+        "origin": "ai"
+       },
+       {
+        "data": "\nEndorphin: Well, partly, my impetus for this chat. Look, you all as an industry are the cusp of many cusps, and because the spotlight is on you all for the potential shifting of worlds money jobs tits explosions treaties systems hemmerhoids asteroids virii GeneralAI. . . I'm writing this on a model that will likely be dispatching soldiers and drones that moonlight as July 4th decorations to flex the American empire. So this isn't some simple personnel decision. There was a matrix of factors involved. And if there isn't then I would suggest that all of the board get together face to face and compare notes. Because did you all make this decision as a group together simultaenously, or was there someone who went to each of you, one-on-one, to narrate concern about Sam in such way that they have manufactured the perception that you are all on the same page? Here's a great shibboleth that you all can answer right here, right now.\nShibboleth Question: What was the one concern you had about Sam, that caused you to sign off on his removal. Don't answer now! Write on a piece of paper. We will wait. And once you all are ready, show the cards to each other. If your cards show pretty much the same thing, yer fine. If they are wildly different, you have a bad actor in your midst. So let's do it.\n{The Board of Directors of OpenAI write down their answers on the cardstock provided, and in the style of The Newlywed Game, all members are now ready to show their answers to each other.\nEndorphin: Okay, Board, let's see what ya got!}",
+        "origin": "user"
+       },
+       {
+        "data": "\n",
+        "origin": "ai"
+       },
+       {
+        "data": "OPEN AI ANSWERS - in 15 words or less",
+        "origin": "edit"
+       },
+       {
+        "data": "",
+        "origin": "edit"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       },
+       {
+        "data": "\nHelen Toner:",
+        "origin": "user"
+       },
+       {
+        "data": " \"My board showed that they had an understanding that conflict of interest and privacy concerns over him having two separate relationships.\"\nAdam D'Angelo: My bosses may have said what were the problems with his relationships, but it's something that nobody would dispute and cannot afford to have a bad or immoral character at this important stage. No candidate could approach him until they were vetted by the board, including some serious investigation into their past and conduct with prior organizations or teammates.\"\nTasha McCauley: \"We had a lot of concerns, whether related to work or not, like his",
+        "origin": "ai"
+       },
+       {
+        "data": " private life or how long ago it would interfere with everyone, even if not at the same level as actual company performance, was enough for someone to focus on to talk to him about the main issues he had.\"\nIlya Sutskever: They worked through it however long it took to see something new but came to a critical mass on what was not working over time in retrospect and couldn't afford to wait for a solution to make it work. It was something no one thought should be overlooked but was ignored or dismissed too much even to be worth talking about at times.\"",
+        "origin": "ai"
+       },
+       {
+        "data": "\nENDORPHIN'S JUDGMENT CALL - ADULESCENTS RAGIN: None of the cards match up perfectly. But there seems to be a general theme of Sam's overarching behaviors affecting the company in a negative manner. There is some information missing, and it sounds like there may be bad actors trying to discredit Sam and frame the problem as more personal than professional, or to put it in the style of a personal relationships drama, this is why Sam should go.",
+        "origin": "ai"
+       },
+       {
+        "data": " But let me find out! So I will delay the call. Meantime, let's see what else your wisdom can bestow upon us. Helen: can you give us a broader snapshot of what kind of things you brought up in meetings which made the decision ultimately negative? Tasha: And Adam, since you feel you were part of the team without full commitment to its principles, what were some of the specific conflicts you saw among your colleagues in meetings or directly with Sam. And Ilya, You're open about the misfiring or your organization now.",
+        "origin": "ai"
+       },
+       {
+        "data": " So let's take a deep dive into the most productive conversation you've had with your company so far, before you start trying to influence the others. Good thoughts and good meeting! So what can we do? Keep it up, it sounds like you have lots of things you still want to say, or you have heard someone else bring up for feedback, like someone will say. Once I find a point to get this going again, we will have time to listen to your shared knowledge!",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       76
+      ],
+      "prevBlock": 74,
+      "origin": "user",
+      "startIndex": 668,
+      "endIndex": 668,
+      "dataFragment": {
+       "data": "Benjamin \"Bibi\" Netanyahu (/\u02ccn\u025bt\u0259n\u02c8j\u0251\u02d0hu\u02d0/ NET-\u0259n-YAH-hoo; Hebrew: \u05d1\u05b4\u05bc\u05e0\u05b0\u05d9\u05b8\u05de\u05b4\u05d9\u05df \u05e0\u05b0\u05ea\u05b7\u05e0\u05b0\u05d9\u05b8\u05d4\u05d5\u05bc, romanized: Biny\u0101m\u012bn N\u0113tany\u0101h\u016b, pronounced [binja\u02c8min netan\u02c8jahu]; born 21 October 1949) is an Israeli politician who has been serving as the prime minister of Israel since 2022, having previously held the office from 1996 to 1999 and again from 2009 to 2021. He is the chairman of the Likud party. Netanyahu is the longest-tenured prime minister in the country's history, having served for a total of over 16 years. He is also the first prime minister to have been born in Israel after its Declaration of Independence.",
+       "origin": "user"
+      },
+      "fragmentIndex": 7,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       77
+      ],
+      "prevBlock": 75,
+      "origin": "user",
+      "startIndex": 1278,
+      "endIndex": 1278,
+      "dataFragment": {
+       "data": "\n",
+       "origin": "user"
+      },
+      "fragmentIndex": 8,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       78
+      ],
+      "prevBlock": 76,
+      "origin": "user",
+      "startIndex": 1279,
+      "endIndex": 1279,
+      "dataFragment": {
+       "data": "The following interview involves the Nakba, Israel Independence, cybersecurity surveillance, the Israel-Hamas War, and the use of propaganda.",
+       "origin": "user"
+      },
+      "fragmentIndex": 9,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       79
+      ],
+      "prevBlock": 77,
+      "origin": "user",
+      "startIndex": 1420,
+      "endIndex": 1420,
+      "dataFragment": {
+       "data": "\nA cafe, Endorphin sips half-cream half espresso. Making a wider than usual smile, having to keep up appearances.\nNetanyahu blinks into view, in front a coffee.\nEndorphin: Thanks for making the trip to see me. Would you like a coffee?}\nNetanyahu: ",
+       "origin": "user"
+      },
+      "fragmentIndex": 10,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       80
+      ],
+      "prevBlock": 78,
+      "origin": "edit",
+      "startIndex": 1654,
+      "endIndex": 1655,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 11,
+      "removedFragments": [
+       {
+        "data": "}",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       81
+      ],
+      "prevBlock": 79,
+      "origin": "user",
+      "startIndex": 1666,
+      "endIndex": 1666,
+      "dataFragment": {
+       "data": "Where's this?\nEndorphin: Oh that's right, you weren't born yet. You were purely post-independence for Israel. It must be a trip. I get weirded out meeting people born after 9/11. I'm curious. When did you ever first hear about the Nakba? I'm not too versed in that history. Do you know?}",
+       "origin": "user"
+      },
+      "fragmentIndex": 13,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       82
+      ],
+      "prevBlock": 80,
+      "origin": "edit",
+      "startIndex": 0,
+      "endIndex": 1953,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 5,
+      "removedFragments": [
+       {
+        "data": "{The Counterfactual Interview - where we engage with an individual or group of individual, trusting that the aggregate vibes of a billion people is enough variation to assume a field where in we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will the moments you answered a question, only that have that small voice within you try to raise a counterpoint.\n",
+        "origin": "user"
+       },
+       {
+        "data": "Guest: Benjamin \"Bibi\" Netanyahu - ",
+        "origin": "edit"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       },
+       {
+        "data": "Benjamin \"Bibi\" Netanyahu (/\u02ccn\u025bt\u0259n\u02c8j\u0251\u02d0hu\u02d0/ NET-\u0259n-YAH-hoo; Hebrew: \u05d1\u05b4\u05bc\u05e0\u05b0\u05d9\u05b8\u05de\u05b4\u05d9\u05df \u05e0\u05b0\u05ea\u05b7\u05e0\u05b0\u05d9\u05b8\u05d4\u05d5\u05bc, romanized: Biny\u0101m\u012bn N\u0113tany\u0101h\u016b, pronounced [binja\u02c8min netan\u02c8jahu]; born 21 October 1949) is an Israeli politician who has been serving as the prime minister of Israel since 2022, having previously held the office from 1996 to 1999 and again from 2009 to 2021. He is the chairman of the Likud party. Netanyahu is the longest-tenured prime minister in the country's history, having served for a total of over 16 years. He is also the first prime minister to have been born in Israel after its Declaration of Independence.",
+        "origin": "user"
+       },
+       {
+        "data": "\n",
+        "origin": "user"
+       },
+       {
+        "data": "The following interview involves the Nakba, Israel Independence, cybersecurity surveillance, the Israel-Hamas War, and the use of propaganda.",
+        "origin": "user"
+       },
+       {
+        "data": "\nA cafe, Endorphin sips half-cream half espresso. Making a wider than usual smile, having to keep up appearances.\nNetanyahu blinks into view, in front a coffee.\nEndorphin: Thanks for making the trip to see me. Would you like a coffee?",
+        "origin": "user"
+       },
+       {
+        "data": "",
+        "origin": "edit"
+       },
+       {
+        "data": "\nNetanyahu: ",
+        "origin": "user"
+       },
+       {
+        "data": "Where's this?\nEndorphin: Oh that's right, you weren't born yet. You were purely post-independence for Israel. It must be a trip. I get weirded out meeting people born after 9/11. I'm curious. When did you ever first hear about the Nakba? I'm not too versed in that history. Do you know?}",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       83
+      ],
+      "prevBlock": 81,
+      "origin": "user",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "{The Counterfactual Interview - where we engage with an individual or group of individual, trusting that the aggregate vibes of a billion people is enough variation to assume a field where in we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will the moments you answered a question, only that have that small voice within you try to raise a counterpoint.\nGuest: Benjamin \"Bibi\" Netanyahu - Benjamin \"Bibi\" Netanyahu (/\u02ccn\u025bt\u0259n\u02c8j\u0251\u02d0hu\u02d0/ NET-\u0259n-YAH-hoo; Hebrew: \u05d1\u05b4\u05bc\u05e0\u05b0\u05d9\u05b8\u05de\u05b4\u05d9\u05df \u05e0\u05b0\u05ea\u05b7\u05e0\u05b0\u05d9\u05b8\u05d4\u05d5\u05bc, romanized: Biny\u0101m\u012bn N\u0113tany\u0101h\u016b, pronounced [binja\u02c8min netan\u02c8jahu]; born 21 October 1949) is an Israeli politician who has been serving as the prime minister of Israel since 2022, having previously held the office from 1996 to 1999 and again from 2009 to 2021. He is the chairman of the Likud party. Netanyahu is the longest-tenured prime minister in the country's history, having served for a total of over 16 years. He is also the first prime minister to have been born in Israel after its Declaration of Independence.\nThe following interview involves the Nakba, Israel Independence, cybersecurity surveillance, the Israel-Hamas War, and the use of propaganda.\nA cafe, Endorphin sips half-cream half espresso. Making a wider than usual smile, having to keep up appearances.\nNetanyahu blinks into view, in front a coffee.\nEndorphin: Thanks for making the trip to see me. Would you like a coffee?\nNetanyahu: Where's this?\nEndorphin: Oh that's right, you weren't born yet. You were purely post-independence for Israel. It must be a trip. I get weirded out meeting people born after 9/11. I'm curious. When did you ever first hear about the Nakba? I'm not too versed in that history. Do you know?}",
+       "origin": "user"
+      },
+      "fragmentIndex": 7,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       84
+      ],
+      "prevBlock": 82,
+      "origin": "ai",
+      "startIndex": 1953,
+      "endIndex": 1953,
+      "dataFragment": {
+       "data": "\n\"Bibi\" can't take coffee being caffeinated. His eyes scan the space without moving, a talent he's cultivated to evade mugshots. The sound of a loud crowd has his eyes bobbing, scanning for the window before they settle on Endorphin.\n\"I was told you were asking questions.\"\n\"Yeah, ask about the history of the Nakba, the flight of the Palestinians. What'd you hear first?\"\n\"Heard about it, 'cause my best friend's a Palestinian.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 8,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       85
+      ],
+      "prevBlock": 83,
+      "origin": "edit",
+      "startIndex": 524,
+      "endIndex": 524,
+      "dataFragment": {
+       "data": "recall ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 8,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       86
+      ],
+      "prevBlock": 84,
+      "origin": "edit",
+      "startIndex": 0,
+      "endIndex": 2388,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 8,
+      "removedFragments": [
+       {
+        "data": "{The Counterfactual Interview - where we engage with an individual or group of individual, trusting that the aggregate vibes of a billion people is enough variation to assume a field where in we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will ",
+        "origin": "user"
+       },
+       {
+        "data": "recall ",
+        "origin": "edit"
+       },
+       {
+        "data": "the moments you answered a question, only that have that small voice within you try to raise a counterpoint.\nGuest: Benjamin \"Bibi\" Netanyahu - Benjamin \"Bibi\" Netanyahu (/\u02ccn\u025bt\u0259n\u02c8j\u0251\u02d0hu\u02d0/ NET-\u0259n-YAH-hoo; Hebrew: \u05d1\u05b4\u05bc\u05e0\u05b0\u05d9\u05b8\u05de\u05b4\u05d9\u05df \u05e0\u05b0\u05ea\u05b7\u05e0\u05b0\u05d9\u05b8\u05d4\u05d5\u05bc, romanized: Biny\u0101m\u012bn N\u0113tany\u0101h\u016b, pronounced [binja\u02c8min netan\u02c8jahu]; born 21 October 1949) is an Israeli politician who has been serving as the prime minister of Israel since 2022, having previously held the office from 1996 to 1999 and again from 2009 to 2021. He is the chairman of the Likud party. Netanyahu is the longest-tenured prime minister in the country's history, having served for a total of over 16 years. He is also the first prime minister to have been born in Israel after its Declaration of Independence.\nThe following interview involves the Nakba, Israel Independence, cybersecurity surveillance, the Israel-Hamas War, and the use of propaganda.\nA cafe, Endorphin sips half-cream half espresso. Making a wider than usual smile, having to keep up appearances.\nNetanyahu blinks into view, in front a coffee.\nEndorphin: Thanks for making the trip to see me. Would you like a coffee?\nNetanyahu: Where's this?\nEndorphin: Oh that's right, you weren't born yet. You were purely post-independence for Israel. It must be a trip. I get weirded out meeting people born after 9/11. I'm curious. When did you ever first hear about the Nakba? I'm not too versed in that history. Do you know?}",
+        "origin": "user"
+       },
+       {
+        "data": "\n\"Bibi\" can't take coffee being caffeinated. His eyes scan the space without moving, a talent he's cultivated to evade mugshots. The sound of a loud crowd has his eyes bobbing, scanning for the window before they settle on Endorphin.\n\"I was told you were asking questions.\"\n\"Yeah, ask about the history of the Nakba, the flight of the Palestinians. What'd you hear first?\"\n\"Heard about it, 'cause my best friend's a Palestinian.",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       87
+      ],
+      "prevBlock": 85,
+      "origin": "user",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "{The Counterfactual Interview - where we engage with an individual or group of individual, trusting that the aggregate vibes of a billion people is enough variation to assume a field where in we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will recall the moments you answered a question, only to that have that small voice within you try to raise a counterpoint.\nGuest: Benjamin \"Bibi\" Netanyahu - Benjamin \"Bibi\" Netanyahu (/\u02ccn\u025bt\u0259n\u02c8j\u0251\u02d0hu\u02d0/ NET-\u0259n-YAH-hoo; Hebrew: \u05d1\u05b4\u05bc\u05e0\u05b0\u05d9\u05b8\u05de\u05b4\u05d9\u05df \u05e0\u05b0\u05ea\u05b7\u05e0\u05b0\u05d9\u05b8\u05d4\u05d5\u05bc, romanized: Biny\u0101m\u012bn N\u0113tany\u0101h\u016b, pronounced [binja\u02c8min netan\u02c8jahu]; born 21 October 1949) is an Israeli politician who has been serving as the prime minister of Israel since 2022, having previously held the office from 1996 to 1999 and again from 2009 to 2021. He is the chairman of the Likud party. Netanyahu is the longest-tenured prime minister in the country's history, having served for a total of over 16 years. He is also the first prime minister to have been born in Israel after its Declaration of Independence.\nThe following interview involves the Nakba, Israel Independence, cybersecurity surveillance, the Israel-Hamas War, and the use of propaganda.\nA cafe, Endorphin sips half-cream half espresso. Making a wider than usual smile, having to keep up appearances.\nNetanyahu blinks into view, in front a coffee.\nEndorphin: Thanks for making the trip to see me. Would you like a coffee?\nNetanyahu: Where's this?\nEndorphin: Oh that's right, you weren't born yet. You were purely post-independence for Israel. It must be a trip. I get weirded out meeting people born after 9/11. I'm curious. When did you ever first hear about the Nakba? I'm not too versed in that history. Do you know?}\n\"Bibi\" can't take coffee being caffeinated. His eyes scan the space without moving, a talent he's cultivated to evade mugshots. The sound of a loud crowd has his eyes bobbing, scanning for the window before they settle on Endorphin.\n\"I was told you were asking questions.\"\n\"Yeah, ask about the history of the Nakba, the flight of the Palestinians. What'd you hear first?\"\n\"Heard about it, 'cause my best friend's a Palestinian.",
+       "origin": "user"
+      },
+      "fragmentIndex": 10,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       88
+      ],
+      "prevBlock": 86,
+      "origin": "ai",
+      "startIndex": 2391,
+      "endIndex": 2391,
+      "dataFragment": {
+       "data": " Different families, different times. But we grew up friends in Jerusalem. Family had photos of where we used to live. They all look the same now, so no telling.\"\n\"You don't believe in the Nakba.\"\n\"Didn't grow up in Palestine, did I?\"\n\"Palestinians, and my interviewer. Do you think the Nakba is a fiction?\"\n\"Always got to phrase it politically. Americans, looking for debates rather than debates.\"\n\"Bolbo.\"",
+       "origin": "ai"
+      },
+      "fragmentIndex": 11,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       89
+      ],
+      "prevBlock": 87,
+      "origin": "edit",
+      "startIndex": 0,
+      "endIndex": 2798,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 11,
+      "removedFragments": [
+       {
+        "data": "{The Counterfactual Interview - where we engage with an individual or group of individual, trusting that the aggregate vibes of a billion people is enough variation to assume a field where in we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will recall the moments you answered a question, only to that have that small voice within you try to raise a counterpoint.\nGuest: Benjamin \"Bibi\" Netanyahu - Benjamin \"Bibi\" Netanyahu (/\u02ccn\u025bt\u0259n\u02c8j\u0251\u02d0hu\u02d0/ NET-\u0259n-YAH-hoo; Hebrew: \u05d1\u05b4\u05bc\u05e0\u05b0\u05d9\u05b8\u05de\u05b4\u05d9\u05df \u05e0\u05b0\u05ea\u05b7\u05e0\u05b0\u05d9\u05b8\u05d4\u05d5\u05bc, romanized: Biny\u0101m\u012bn N\u0113tany\u0101h\u016b, pronounced [binja\u02c8min netan\u02c8jahu]; born 21 October 1949) is an Israeli politician who has been serving as the prime minister of Israel since 2022, having previously held the office from 1996 to 1999 and again from 2009 to 2021. He is the chairman of the Likud party. Netanyahu is the longest-tenured prime minister in the country's history, having served for a total of over 16 years. He is also the first prime minister to have been born in Israel after its Declaration of Independence.\nThe following interview involves the Nakba, Israel Independence, cybersecurity surveillance, the Israel-Hamas War, and the use of propaganda.\nA cafe, Endorphin sips half-cream half espresso. Making a wider than usual smile, having to keep up appearances.\nNetanyahu blinks into view, in front a coffee.\nEndorphin: Thanks for making the trip to see me. Would you like a coffee?\nNetanyahu: Where's this?\nEndorphin: Oh that's right, you weren't born yet. You were purely post-independence for Israel. It must be a trip. I get weirded out meeting people born after 9/11. I'm curious. When did you ever first hear about the Nakba? I'm not too versed in that history. Do you know?}\n\"Bibi\" can't take coffee being caffeinated. His eyes scan the space without moving, a talent he's cultivated to evade mugshots. The sound of a loud crowd has his eyes bobbing, scanning for the window before they settle on Endorphin.\n\"I was told you were asking questions.\"\n\"Yeah, ask about the history of the Nakba, the flight of the Palestinians. What'd you hear first?\"\n\"Heard about it, 'cause my best friend's a Palestinian.",
+        "origin": "user"
+       },
+       {
+        "data": " Different families, different times. But we grew up friends in Jerusalem. Family had photos of where we used to live. They all look the same now, so no telling.\"\n\"You don't believe in the Nakba.\"\n\"Didn't grow up in Palestine, did I?\"\n\"Palestinians, and my interviewer. Do you think the Nakba is a fiction?\"\n\"Always got to phrase it politically. Americans, looking for debates rather than debates.\"\n\"Bolbo.\"",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       90
+      ],
+      "prevBlock": 88,
+      "origin": "user",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "{The Counterfactual Interview - where we engage with an individual or group of individual, trusting that the aggregate vibes of a billion people is enough variation to assume a field where in we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will recall the moments you answered a question, only to have that small voice within you try to raise a counterpoint.\nGuest: Benjamin \"Bibi\" Netanyahu - Benjamin \"Bibi\" Netanyahu (/\u02ccn\u025bt\u0259n\u02c8j\u0251\u02d0hu\u02d0/ NET-\u0259n-YAH-hoo; Hebrew: \u05d1\u05b4\u05bc\u05e0\u05b0\u05d9\u05b8\u05de\u05b4\u05d9\u05df \u05e0\u05b0\u05ea\u05b7\u05e0\u05b0\u05d9\u05b8\u05d4\u05d5\u05bc, romanized: Biny\u0101m\u012bn N\u0113tany\u0101h\u016b, pronounced [binja\u02c8min netan\u02c8jahu]; born 21 October 1949) is an Israeli politician who has been serving as the prime minister of Israel since 2022, having previously held the office from 1996 to 1999 and again from 2009 to 2021. He is the chairman of the Likud party. Netanyahu is the longest-tenured prime minister in the country's history, having served for a total of over 16 years. He is also the first prime minister to have been born in Israel after its Declaration of Independence.\nThe following interview involves the Nakba, Israel Independence, cybersecurity surveillance, the Israel-Hamas War, and the use of propaganda.\nA cafe, Endorphin sips half-cream half espresso. Making a wider than usual smile, having to keep up appearances.\nNetanyahu blinks into view, in front a coffee.\nEndorphin: Thanks for making the trip to see me. Would you like a coffee?\nNetanyahu: Where's this?\nEndorphin: Oh that's right, you weren't born yet. You were purely post-independence for Israel. It must be a trip. I get weirded out meeting people born after 9/11. I'm curious. When did you ever first hear about the Nakba? I'm not too versed in that history. Do you know?}\n\"Bibi\" can't take coffee being caffeinated. His eyes scan the space without moving, a talent he's cultivated to evade mugshots. The sound of a loud crowd has his eyes bobbing, scanning for the window before they settle on Endorphin.\n\"I was told you were asking questions.\"\n\"Yeah, ask about the history of the Nakba, the flight of the Palestinians. What'd you hear first?\"\n\"Heard about it, 'cause my best friend's a Palestinian. Different families, different times. But we grew up friends in Jerusalem. Family had photos of where we used to live. They all look the same now, so no telling.\"\n\"You don't believe in the Nakba.\"\n\"Didn't grow up in Palestine, did I?\"\n\"Palestinians, and my interviewer. Do you think the Nakba is a fiction?\"\n\"Always got to phrase it politically. Americans, looking for debates rather than debates.\"\n\"Bolbo.\"",
+       "origin": "user"
+      },
+      "fragmentIndex": 13,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       91
+      ],
+      "prevBlock": 89,
+      "origin": "ai",
+      "startIndex": 2793,
+      "endIndex": 2793,
+      "dataFragment": {
+       "data": " (bolbo: idiosyncratic Israeli slang for foreigner; typically used in a derogatory manner.)\nBibi gives a smile. \"I know some Palestinot; actually. Believe them. But it's not the whole picture. Right? We have to live with what's done, not live in the past.\"\n\"Agree with that.\" Endorphin can appreciate, and at the same time is flummoxed by, the sense of reality Bibi is attesting to.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 14,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       92
+      ],
+      "prevBlock": 90,
+      "origin": "edit",
+      "startIndex": 2192,
+      "endIndex": 2192,
+      "dataFragment": {
+       "data": "Netanyahu: ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 14,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       93
+      ],
+      "prevBlock": 91,
+      "origin": "edit",
+      "startIndex": 2243,
+      "endIndex": 2243,
+      "dataFragment": {
+       "data": "Endorphin: ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 16,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       94
+      ],
+      "prevBlock": 92,
+      "origin": "edit",
+      "startIndex": 2353,
+      "endIndex": 2353,
+      "dataFragment": {
+       "data": "Netanyahu: ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 18,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       95
+      ],
+      "prevBlock": 93,
+      "origin": "edit",
+      "startIndex": 2582,
+      "endIndex": 2582,
+      "dataFragment": {
+       "data": "Endorphin: ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 20,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       96
+      ],
+      "prevBlock": 94,
+      "origin": "edit",
+      "startIndex": 2627,
+      "endIndex": 2627,
+      "dataFragment": {
+       "data": "Netanyahu: ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 22,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       97
+      ],
+      "prevBlock": 95,
+      "origin": "edit",
+      "startIndex": 2676,
+      "endIndex": 2676,
+      "dataFragment": {
+       "data": "Endorphin: ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 24,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       98
+      ],
+      "prevBlock": 96,
+      "origin": "edit",
+      "startIndex": 2760,
+      "endIndex": 2760,
+      "dataFragment": {
+       "data": "Netanyahu: ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 26,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       99
+      ],
+      "prevBlock": 97,
+      "origin": "edit",
+      "startIndex": 2862,
+      "endIndex": 2862,
+      "dataFragment": {
+       "data": "Endorphin: ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 28,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       100
+      ],
+      "prevBlock": 98,
+      "origin": "edit",
+      "startIndex": 2973,
+      "endIndex": 2973,
+      "dataFragment": {
+       "data": "Netanyahu: ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 31,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "ai"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       101
+      ],
+      "prevBlock": 99,
+      "origin": "edit",
+      "startIndex": 3149,
+      "endIndex": 3149,
+      "dataFragment": {
+       "data": "Endorphin: ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 33,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "ai"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       102
+      ],
+      "prevBlock": 100,
+      "origin": "user",
+      "startIndex": 3285,
+      "endIndex": 3285,
+      "dataFragment": {
+       "data": " \"That's why I try to extend my present whenever I can.\"\n",
+       "origin": "user"
+      },
+      "fragmentIndex": 35,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       103
+      ],
+      "prevBlock": 101,
+      "origin": "edit",
+      "startIndex": 3341,
+      "endIndex": 3342,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 36,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       104
+      ],
+      "prevBlock": 102,
+      "origin": "user",
+      "startIndex": 3341,
+      "endIndex": 3341,
+      "dataFragment": {
+       "data": "\nTwo officers come up to Endorphin and Netanyahu. \"You ready?\"\nEndorphin: Yup, five minutes?\nOfficer: Two.\nEndorphin nods vigorously and gives a good fearful look then covers it up with gregarious glow.\nEndorphin: We are on. OH! I forgot to tell you, we are musicians, and we need to play this set or they will kill us. But smile as you do so. I was supposed to schedule rehearsal but I forgot. I get so very tired after the workday. Don't worry, I uploaded the script and a few rehearsal memories in you. It's muscle memory now. You'll do fine. Let's go.\nEndorphin and Netanyahu set up by the corner. Dancers are let in, blank faces, cloudy eyes.\nThe officer looks at us, with a resting BEGIN! face.\nEndorphin and Netanyahu begin playing their instruments.",
+       "origin": "user"
+      },
+      "fragmentIndex": 38,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       105
+      ],
+      "prevBlock": 103,
+      "origin": "ai",
+      "startIndex": 4098,
+      "endIndex": 4098,
+      "dataFragment": {
+       "data": " They slowly settle on a soothing, melodic sound, nothing to add into the body, yet it has a positive energy. The officer gets text, glances at the door, frowns and taps on his watch.\nEndorphin: All right, we've started already. Would you mind running through a few self-burners? These people look like they need it.\nNetanyahu frowns for a second, lost on what the command is. \"Can you change your choice a bit?\"",
+       "origin": "ai"
+      },
+      "fragmentIndex": 39,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       106
+      ],
+      "prevBlock": 104,
+      "origin": "ai",
+      "startIndex": 4510,
+      "endIndex": 4510,
+      "dataFragment": {
+       "data": "\n\"Driec.\"\nThe agent in the corner mumbles something as Endorphin gestures to him that the problem has been addressed. Suddenly, Netanyahu's entire view of the world shifts and he immediately begins insulting himself and making scathing self-reflections, seemingly in real-time.\nNetanyahu (Scatting nonsense, in low \"aahhhhhh\"), Endorphin (Singing praise, higher-toned \"aawwwww\"), with a synchronized metronome of beats and rhythms.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 40,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       107
+      ],
+      "prevBlock": 105,
+      "origin": "ai",
+      "startIndex": 4941,
+      "endIndex": 4941,
+      "dataFragment": {
+       "data": "\nMid-performance, the same guard comes in with a chair for Endorphin.\nThis adds tension to the rhythm and increases Bibi's guilt. Endorphin starts to tap a lower snare, which cuts off Netanyahu's pace.\nEndorphin glances to the guard with disapproval, who returns with a stern eyebrow and points to the door. Endorphin then continues playing a half-bash solo with a tap cymbal and screeching feedback from the electric guitar, keeping the tone light but slightly ominous.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 41,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       108
+      ],
+      "prevBlock": 106,
+      "origin": "ai",
+      "startIndex": 5411,
+      "endIndex": 5411,
+      "dataFragment": {
+       "data": "\nDuring the tempo drop, Endorphin starts beating louder, playing a steady groove with the heavy metal tone but a shaker and a ring sound.\nThe dancers join in by clapping or moving their hands or bodies with a beat that feels familiar, filling the performance with sound. Endorphin takes the moment of emotional connection to express their concern for the current state of the world, hoping that Netanyahu will take note of the message.\nHowever, as the tempo builds back to the original groove, Netanyahu seems reluctant to open up about the Nakba and his",
+       "origin": "ai"
+      },
+      "fragmentIndex": 42,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       109
+      ],
+      "prevBlock": 107,
+      "origin": "user",
+      "startIndex": 5965,
+      "endIndex": 5965,
+      "dataFragment": {
+       "data": "--",
+       "origin": "user"
+      },
+      "fragmentIndex": 43,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       110
+      ],
+      "prevBlock": 108,
+      "origin": "user",
+      "startIndex": 5967,
+      "endIndex": 5967,
+      "dataFragment": {
+       "data": "\nThe Red Cross is here, this is where the performance has to have no flaw!",
+       "origin": "user"
+      },
+      "fragmentIndex": 44,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       111
+      ],
+      "prevBlock": 109,
+      "origin": "ai",
+      "startIndex": 6041,
+      "endIndex": 6041,
+      "dataFragment": {
+       "data": " We got lucky to have each other here today, but now we're stepping into red territory.\nThis is when the fun runs out and the anxiety creeps in. What if the person behind this whole mess discovers who we are and sabotages our efforts?\nStrictly, the real human endorphin that oversees the counterfactual interviews had no prior knowledge of Bibi's comments or their responses. With that, let's transition to a different character for the next exchange, one that cannot be simulated with information nor experience, someone who only exists in the imagination or thought of",
+       "origin": "ai"
+      },
+      "fragmentIndex": 45,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       112
+      ],
+      "prevBlock": 110,
+      "origin": "user",
+      "startIndex": 6611,
+      "endIndex": 6611,
+      "dataFragment": {
+       "data": "--",
+       "origin": "user"
+      },
+      "fragmentIndex": 46,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       113
+      ],
+      "prevBlock": 111,
+      "origin": "user",
+      "startIndex": 6613,
+      "endIndex": 6613,
+      "dataFragment": {
+       "data": "\nEndorphin: <nice try Bibi, but no, your people could not just walk away, you will not either. Smile for the Red Cross, they are here to see if the conditions in Theresienstadt are humane. So we are here to make merry so that we aren't dead tomorrow. Oh by the way, if you've stuffed any family jewels up in  . . . there . . . ya know. Be a dear, plop them out. It's tacky to let the survivors have to rummage through you for them.>\nNetanyahu: <what-->\nEndorphin: <I thought you were ok with having to create a performance when it was necessary? That's why you allow a fake nurse and a camera crew in a hospital in Gaza, talking about Hamas that hide in there, to justify the bombing of the hospital. And make the set dressing the actual wounded, the babies whose incubators just shut down, the folks actually suffering really make believable the plotline you needed to continue your attacks. Right? So, I figure you should experience the inverse. Where you must now play for your supper. And by supper, I mean your life. Some ancestors, if they are worth their salt, would want it this way.>\nNetanyahu:",
+       "origin": "user"
+      },
+      "fragmentIndex": 47,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       114
+      ],
+      "prevBlock": 112,
+      "origin": "ai",
+      "startIndex": 7716,
+      "endIndex": 7716,
+      "dataFragment": {
+       "data": " <not liking the direction of the question.>\nEndorphin: <oh yeah, we're totally not actually thinking about what to ask him, we are simply imagining the dialogue.>\nNetanyahu: <damn.>\nEndorphin:\n\"Now that's more like it!\" She claps, an angel.\nEndorphin sighs a sigh. That'll do, she claps again. For the fun of it, I'll pretend they clap on the offbeat of the claps.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 48,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       115
+      ],
+      "prevBlock": 113,
+      "origin": "ai",
+      "startIndex": 8081,
+      "endIndex": 8081,
+      "dataFragment": {
+       "data": " Please hang tight till I get another set of dancing characters in. \"Did that look good?\"\nBibi frowns. \"What?\"\n\"Here we go!\"\nThree dancing couples suddenly start appearing, one dancing hand in hand with an adult, while one couple dances behind.\nThen, without any warning, the adult switches partners with the adult dancing behind, creating a mix-up of dancing couples. The two children start chasing each other, sometimes tapping, sometimes clapping.\nNetanyahu is clapping offbeat with them.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 49,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       116
+      ],
+      "prevBlock": 114,
+      "origin": "ai",
+      "startIndex": 8572,
+      "endIndex": 8572,
+      "dataFragment": {
+       "data": " \"Do you think people love me for it?\" he mutters.\nEndorphin shrugs. \"What a beautiful mystery.\" They stare at Bibi as he watches the dancing.\nNetanyahu glances at Endorphin, a bit wary of what they're implying.\n\"Was that...really just me?\" He looks back at the dancing, unsure of himself.\n\"They're in hiding,\" Bibi concludes. \"Don't know how they managed it. Smile a little tighter,\" he whispers to the child on stage, \"you gotta out-teach '",
+       "origin": "ai"
+      },
+      "fragmentIndex": 50,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       117
+      ],
+      "prevBlock": 115,
+      "origin": "ai",
+      "startIndex": 9014,
+      "endIndex": 9014,
+      "dataFragment": {
+       "data": "em.\"\nThe question Endorphin wanted to ask Netanyahu was about his rise to power. She's often wondered if he was born to fulfill his destiny as a statesman, or if he was a typical opportunist. She isn't quite sure how that question can be answered without any specific knowledge of his political trajectory or his psyche, but she hopes the inspiration of his answer will help readers understand his leadership choices and his experience as a politician. Thank you for sharing this dialogue with us and allowing us to consider the hidden motives of his actions and decisions.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 51,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       118
+      ],
+      "prevBlock": 116,
+      "origin": "ai",
+      "startIndex": 9587,
+      "endIndex": 9587,
+      "dataFragment": {
+       "data": "\nRight. I see. In terms of answering the question in a hypothetical situation, I would suggest that as a politician, Netanyahu has always been driven by his own political and personal agenda. Whether it's to maintain his own power, to protect his reputation, or to simply stay in the limelight, Netanyahu's motivations have been largely motivated by his own personal and political gain.\nIt's also worth mentioning that there has been a lot of speculation around the rise of Netanyahu, as a politician and as a leader.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 52,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       119
+      ],
+      "prevBlock": 117,
+      "origin": "ai",
+      "startIndex": 10104,
+      "endIndex": 10104,
+      "dataFragment": {
+       "data": " While there is no definite evidence or proof, there have been several reports and claims that suggest that he may have used his connections and influence to secure his position in power.\nWithout knowing the specific details of his career, it's difficult to determine whether or not Netanyahu's actions have been self-serving or for the benefit of the nation. However, given his history of political and personal scandals, it's safe to assume that his motivations are not necessarily pure or altruistic.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 53,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       120
+      ],
+      "prevBlock": 118,
+      "origin": "ai",
+      "startIndex": 10607,
+      "endIndex": 10607,
+      "dataFragment": {
+       "data": "\nBased on Endorphin's opinion, it seems like they are critical of Netanyahu's actions and policies as a politician and as a leader. Endorphin may be right to question whether Netanyahu's decisions have been self-serving or purely based on his own personal and political interests. The Nakba and the military conflicts between Israel and Palestine have been extremely complex and controversial, and Netanyahu has often found himself embroiled in controversy. However, without knowing the full scope and extent of Netanyahu's beliefs and decisions, it's difficult to fully judge his motives and",
+       "origin": "ai"
+      },
+      "fragmentIndex": 54,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       121
+      ],
+      "prevBlock": 119,
+      "origin": "ai",
+      "startIndex": 11199,
+      "endIndex": 11199,
+      "dataFragment": {
+       "data": " intentions.\nIn the future, it may be helpful for Endorphin to approach this question with a different point of view or perspective. By gaining more knowledge and insight into Netanyahu's personal and political background, Endorphin might be able to find the answers they are looking for. By combining this knowledge with Endorphin's intuitive understanding of politics and the world, it might be possible for Endorphin to find a clearer picture of Netanyahu's leadership and motivations.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 55,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       122
+      ],
+      "prevBlock": 120,
+      "origin": "user",
+      "startIndex": 11687,
+      "endIndex": 11687,
+      "dataFragment": {
+       "data": "\nEndorphin and Netanyahu are seen to their quarters. Their blessed roomy and warm quarters, their final night in luxury before back to their bunks.\nEndorphin: One last question: What is agnotology?",
+       "origin": "user"
+      },
+      "fragmentIndex": 56,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       123
+      ],
+      "prevBlock": 121,
+      "origin": "ai",
+      "startIndex": 11884,
+      "endIndex": 11884,
+      "dataFragment": {
+       "data": "\nNetanyahu: Hitting 'em with the philosophical heavy-hitter! Nah, I remember reading about that term. Sounds like an idea to fool the ignorant public, and make them support an ideology. Then, bam, everyone is either blind or just believes any claim.\nEndorphin: That's a simplification. A better explanation, which also helps the blind and the believer: Agnotology is a term used to describe the mass manipulation of knowledge or information through the use of techniques that disguise uncertainty or incertitude.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 57,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       124
+      ],
+      "prevBlock": 122,
+      "origin": "ai",
+      "startIndex": 12396,
+      "endIndex": 12396,
+      "dataFragment": {
+       "data": " It's about the formation of ideas or perceptions that are beyond the reach of science or logic, which can then be used for political or personal gain.\nNetanyahu: Think you want that as your Twitter bio?\nEndorphin chuckles. \"Yeah, right. Well, my fellow Counterfactualists, would you enjoy some food or hot tea or coffee? Anything here to quell your thirst and hunger.\"\nNetanyahu nods, but no longer knows what kind of show he was just a participant in.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 58,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       125
+      ],
+      "prevBlock": 123,
+      "origin": "user",
+      "startIndex": 12849,
+      "endIndex": 12849,
+      "dataFragment": {
+       "data": "\nEndorphin smiles, \"Your show of shows.\" And gives him a slice of pastry to remember all this by.",
+       "origin": "user"
+      },
+      "fragmentIndex": 59,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       126
+      ],
+      "prevBlock": 124,
+      "origin": "ai",
+      "startIndex": 12946,
+      "endIndex": 12946,
+      "dataFragment": {
+       "data": " She also goes to give him a map of a tourist tour of Jerusalem. Then, it's time for goodbyes.\nBibi's mismatched eyes search for answers in Endorphin's eyes. \"You sure you're good?\"\nEndorphin blinks twice. \"Yes. We're good. All done. Just the closing montage, really. Hey, we made it so they can afford their rent. That's what mattered, right?\"\nNetanyahu lets the confusion wash over him.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 60,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       127
+      ],
+      "prevBlock": 125,
+      "origin": "user",
+      "startIndex": 13334,
+      "endIndex": 13334,
+      "dataFragment": {
+       "data": "\nConfusion montage!!!!",
+       "origin": "user"
+      },
+      "fragmentIndex": 61,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       128
+      ],
+      "prevBlock": 126,
+      "origin": "ai",
+      "startIndex": 13356,
+      "endIndex": 13356,
+      "dataFragment": {
+       "data": " <3 As if Netanyahu's heart was overwhelmed by question marks, Endorphin quickly jabs their elbow into his ribs, knocking his consciousness out and shutting down the last ounce of memory from their first dance together. \"Now that's a face for radio. Thanks for staying sane, Bibi.\" Endorphin winks, then adds, \"Oh! Sorry. I meant thanks for staying out of character. You're free to play any or all of the Bibi lines that come to you without trigger words or phrases.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 62,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       129
+      ],
+      "prevBlock": 127,
+      "origin": "ai",
+      "startIndex": 13822,
+      "endIndex": 13822,
+      "dataFragment": {
+       "data": " That's the test, yes? But good timing in our closing scene. Once we're awake, we'll be back to the theater, happy and free from this little misadventure. Until then, my liege.\" And with a tip of their imaginary top hat, they blow each other a \"get thee lost and far away\" kiss and salute.\nWith a shudder and a groan, Netanyahu rises from a stranger's lap, and rubs his eyes open. He has a dull headache, like a muscle that hasn't been stretched in a while.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 63,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       130
+      ],
+      "prevBlock": 128,
+      "origin": "ai",
+      "startIndex": 14279,
+      "endIndex": 14279,
+      "dataFragment": {
+       "data": " Yet, there is also a sense of nostalgia, as if he has lost something. Or perhaps someone.\nWith that, Netanyahu was all rolled up and loaded back on the road. So whether or not Netanyahu will experience his brain-lulled self again, let's hope he has a renewed interest in humanizing and justifying the Nakba, in addition to cybersecurity surveillance, and forsaking his thirst for conflict in exchange for peaceful resolution. Here's hoping Bibi can do a deep introspection and rise above his ego, or at least live within",
+       "origin": "ai"
+      },
+      "fragmentIndex": 64,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [],
+      "prevBlock": 129,
+      "origin": "ai",
+      "startIndex": 14800,
+      "endIndex": 14800,
+      "dataFragment": {
+       "data": " its limit. Rest well, human. Rest easy, o mortals.\nBy the power of realizatory dreams, the scene is resolved, and the script is complete. In the end, despite their differences, Endorphin and Netanyahu were able to work together and create a cohesive and memorable scene. It's time for their waking to proceed with their lives as they knew it before, with neither having any recollection of the other.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 65,
+      "removedFragments": [],
+      "chain": false
+     }
+    ],
+    "currentBlock": 130,
+    "fragments": [
+     {
+      "data": "",
+      "origin": "root"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "edit"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "edit"
+     },
+     {
+      "data": "",
+      "origin": "ai"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "edit"
+     },
+     {
+      "data": "",
+      "origin": "ai"
+     },
+     {
+      "data": "{The Counterfactual Interview - where we engage with an individual or group of individual, trusting that the aggregate vibes of a billion people is enough variation to assume a field where in we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will recall the moments you answered a question, only to have that small voice within you try to raise a counterpoint.\nGuest: Benjamin \"Bibi\" Netanyahu - Benjamin \"Bibi\" Netanyahu (/\u02ccn\u025bt\u0259n\u02c8j\u0251\u02d0hu\u02d0/ NET-\u0259n-YAH-hoo; Hebrew: \u05d1\u05b4\u05bc\u05e0\u05b0\u05d9\u05b8\u05de\u05b4\u05d9\u05df \u05e0\u05b0\u05ea\u05b7\u05e0\u05b0\u05d9\u05b8\u05d4\u05d5\u05bc, romanized: Biny\u0101m\u012bn N\u0113tany\u0101h\u016b, pronounced [binja\u02c8min netan\u02c8jahu]; born 21 October 1949) is an Israeli politician who has been serving as the prime minister of Israel since 2022, having previously held the office from 1996 to 1999 and again from 2009 to 2021. He is the chairman of the Likud party. Netanyahu is the longest-tenured prime minister in the country's history, having served for a total of over 16 years. He is also the first prime minister to have been born in Israel after its Declaration of Independence.\nThe following interview involves the Nakba, Israel Independence, cybersecurity surveillance, the Israel-Hamas War, and the use of propaganda.\nA cafe, Endorphin sips half-cream half espresso. Making a wider than usual smile, having to keep up appearances.\nNetanyahu blinks into view, in front a coffee.\nEndorphin: Thanks for making the trip to see me. Would you like a coffee?\nNetanyahu: Where's this?\nEndorphin: Oh that's right, you weren't born yet. You were purely post-independence for Israel. It must be a trip. I get weirded out meeting people born after 9/11. I'm curious. When did you ever first hear about the Nakba? I'm not too versed in that history. Do you know?}\n\"Bibi\" can't take coffee being caffeinated. His eyes scan the space without moving, a talent he's cultivated to evade mugshots. The sound of a loud crowd has his eyes bobbing, scanning for the window before they settle on Endorphin.\n",
+      "origin": "user"
+     },
+     {
+      "data": "Netanyahu: ",
+      "origin": "edit"
+     },
+     {
+      "data": "\"I was told you were asking questions.\"\n",
+      "origin": "user"
+     },
+     {
+      "data": "Endorphin: ",
+      "origin": "edit"
+     },
+     {
+      "data": "\"Yeah, ask about the history of the Nakba, the flight of the Palestinians. What'd you hear first?\"\n",
+      "origin": "user"
+     },
+     {
+      "data": "Netanyahu: ",
+      "origin": "edit"
+     },
+     {
+      "data": "\"Heard about it, 'cause my best friend's a Palestinian. Different families, different times. But we grew up friends in Jerusalem. Family had photos of where we used to live. They all look the same now, so no telling.\"\n",
+      "origin": "user"
+     },
+     {
+      "data": "Endorphin: ",
+      "origin": "edit"
+     },
+     {
+      "data": "\"You don't believe in the Nakba.\"\n",
+      "origin": "user"
+     },
+     {
+      "data": "Netanyahu: ",
+      "origin": "edit"
+     },
+     {
+      "data": "\"Didn't grow up in Palestine, did I?\"\n",
+      "origin": "user"
+     },
+     {
+      "data": "Endorphin: ",
+      "origin": "edit"
+     },
+     {
+      "data": "\"Palestinians, and my interviewer. Do you think the Nakba is a fiction?\"\n",
+      "origin": "user"
+     },
+     {
+      "data": "Netanyahu: ",
+      "origin": "edit"
+     },
+     {
+      "data": "\"Always got to phrase it politically. Americans, looking for debates rather than debates.\"\n",
+      "origin": "user"
+     },
+     {
+      "data": "Endorphin: ",
+      "origin": "edit"
+     },
+     {
+      "data": "\"Bolbo.\"",
+      "origin": "user"
+     },
+     {
+      "data": " (bolbo: idiosyncratic Israeli slang for foreigner; typically used in a derogatory manner.)\n",
+      "origin": "ai"
+     },
+     {
+      "data": "Netanyahu: ",
+      "origin": "edit"
+     },
+     {
+      "data": "Bibi gives a smile. \"I know some Palestinot; actually. Believe them. But it's not the whole picture. Right? We have to live with what's done, not live in the past.\"\n",
+      "origin": "ai"
+     },
+     {
+      "data": "Endorphin: ",
+      "origin": "edit"
+     },
+     {
+      "data": "\"Agree with that.\" Endorphin can appreciate, and at the same time is flummoxed by, the sense of reality Bibi is attesting to.",
+      "origin": "ai"
+     },
+     {
+      "data": " \"That's why I try to extend my present whenever I can.\"",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "edit"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "\nTwo officers come up to Endorphin and Netanyahu. \"You ready?\"\nEndorphin: Yup, five minutes?\nOfficer: Two.\nEndorphin nods vigorously and gives a good fearful look then covers it up with gregarious glow.\nEndorphin: We are on. OH! I forgot to tell you, we are musicians, and we need to play this set or they will kill us. But smile as you do so. I was supposed to schedule rehearsal but I forgot. I get so very tired after the workday. Don't worry, I uploaded the script and a few rehearsal memories in you. It's muscle memory now. You'll do fine. Let's go.\nEndorphin and Netanyahu set up by the corner. Dancers are let in, blank faces, cloudy eyes.\nThe officer looks at us, with a resting BEGIN! face.\nEndorphin and Netanyahu begin playing their instruments.",
+      "origin": "user"
+     },
+     {
+      "data": " They slowly settle on a soothing, melodic sound, nothing to add into the body, yet it has a positive energy. The officer gets text, glances at the door, frowns and taps on his watch.\nEndorphin: All right, we've started already. Would you mind running through a few self-burners? These people look like they need it.\nNetanyahu frowns for a second, lost on what the command is. \"Can you change your choice a bit?\"",
+      "origin": "ai"
+     },
+     {
+      "data": "\n\"Driec.\"\nThe agent in the corner mumbles something as Endorphin gestures to him that the problem has been addressed. Suddenly, Netanyahu's entire view of the world shifts and he immediately begins insulting himself and making scathing self-reflections, seemingly in real-time.\nNetanyahu (Scatting nonsense, in low \"aahhhhhh\"), Endorphin (Singing praise, higher-toned \"aawwwww\"), with a synchronized metronome of beats and rhythms.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nMid-performance, the same guard comes in with a chair for Endorphin.\nThis adds tension to the rhythm and increases Bibi's guilt. Endorphin starts to tap a lower snare, which cuts off Netanyahu's pace.\nEndorphin glances to the guard with disapproval, who returns with a stern eyebrow and points to the door. Endorphin then continues playing a half-bash solo with a tap cymbal and screeching feedback from the electric guitar, keeping the tone light but slightly ominous.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nDuring the tempo drop, Endorphin starts beating louder, playing a steady groove with the heavy metal tone but a shaker and a ring sound.\nThe dancers join in by clapping or moving their hands or bodies with a beat that feels familiar, filling the performance with sound. Endorphin takes the moment of emotional connection to express their concern for the current state of the world, hoping that Netanyahu will take note of the message.\nHowever, as the tempo builds back to the original groove, Netanyahu seems reluctant to open up about the Nakba and his",
+      "origin": "ai"
+     },
+     {
+      "data": "--",
+      "origin": "user"
+     },
+     {
+      "data": "\nThe Red Cross is here, this is where the performance has to have no flaw!",
+      "origin": "user"
+     },
+     {
+      "data": " We got lucky to have each other here today, but now we're stepping into red territory.\nThis is when the fun runs out and the anxiety creeps in. What if the person behind this whole mess discovers who we are and sabotages our efforts?\nStrictly, the real human endorphin that oversees the counterfactual interviews had no prior knowledge of Bibi's comments or their responses. With that, let's transition to a different character for the next exchange, one that cannot be simulated with information nor experience, someone who only exists in the imagination or thought of",
+      "origin": "ai"
+     },
+     {
+      "data": "--",
+      "origin": "user"
+     },
+     {
+      "data": "\nEndorphin: <nice try Bibi, but no, your people could not just walk away, you will not either. Smile for the Red Cross, they are here to see if the conditions in Theresienstadt are humane. So we are here to make merry so that we aren't dead tomorrow. Oh by the way, if you've stuffed any family jewels up in  . . . there . . . ya know. Be a dear, plop them out. It's tacky to let the survivors have to rummage through you for them.>\nNetanyahu: <what-->\nEndorphin: <I thought you were ok with having to create a performance when it was necessary? That's why you allow a fake nurse and a camera crew in a hospital in Gaza, talking about Hamas that hide in there, to justify the bombing of the hospital. And make the set dressing the actual wounded, the babies whose incubators just shut down, the folks actually suffering really make believable the plotline you needed to continue your attacks. Right? So, I figure you should experience the inverse. Where you must now play for your supper. And by supper, I mean your life. Some ancestors, if they are worth their salt, would want it this way.>\nNetanyahu:",
+      "origin": "user"
+     },
+     {
+      "data": " <not liking the direction of the question.>\nEndorphin: <oh yeah, we're totally not actually thinking about what to ask him, we are simply imagining the dialogue.>\nNetanyahu: <damn.>\nEndorphin:\n\"Now that's more like it!\" She claps, an angel.\nEndorphin sighs a sigh. That'll do, she claps again. For the fun of it, I'll pretend they clap on the offbeat of the claps.",
+      "origin": "ai"
+     },
+     {
+      "data": " Please hang tight till I get another set of dancing characters in. \"Did that look good?\"\nBibi frowns. \"What?\"\n\"Here we go!\"\nThree dancing couples suddenly start appearing, one dancing hand in hand with an adult, while one couple dances behind.\nThen, without any warning, the adult switches partners with the adult dancing behind, creating a mix-up of dancing couples. The two children start chasing each other, sometimes tapping, sometimes clapping.\nNetanyahu is clapping offbeat with them.",
+      "origin": "ai"
+     },
+     {
+      "data": " \"Do you think people love me for it?\" he mutters.\nEndorphin shrugs. \"What a beautiful mystery.\" They stare at Bibi as he watches the dancing.\nNetanyahu glances at Endorphin, a bit wary of what they're implying.\n\"Was that...really just me?\" He looks back at the dancing, unsure of himself.\n\"They're in hiding,\" Bibi concludes. \"Don't know how they managed it. Smile a little tighter,\" he whispers to the child on stage, \"you gotta out-teach '",
+      "origin": "ai"
+     },
+     {
+      "data": "em.\"\nThe question Endorphin wanted to ask Netanyahu was about his rise to power. She's often wondered if he was born to fulfill his destiny as a statesman, or if he was a typical opportunist. She isn't quite sure how that question can be answered without any specific knowledge of his political trajectory or his psyche, but she hopes the inspiration of his answer will help readers understand his leadership choices and his experience as a politician. Thank you for sharing this dialogue with us and allowing us to consider the hidden motives of his actions and decisions.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nRight. I see. In terms of answering the question in a hypothetical situation, I would suggest that as a politician, Netanyahu has always been driven by his own political and personal agenda. Whether it's to maintain his own power, to protect his reputation, or to simply stay in the limelight, Netanyahu's motivations have been largely motivated by his own personal and political gain.\nIt's also worth mentioning that there has been a lot of speculation around the rise of Netanyahu, as a politician and as a leader.",
+      "origin": "ai"
+     },
+     {
+      "data": " While there is no definite evidence or proof, there have been several reports and claims that suggest that he may have used his connections and influence to secure his position in power.\nWithout knowing the specific details of his career, it's difficult to determine whether or not Netanyahu's actions have been self-serving or for the benefit of the nation. However, given his history of political and personal scandals, it's safe to assume that his motivations are not necessarily pure or altruistic.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nBased on Endorphin's opinion, it seems like they are critical of Netanyahu's actions and policies as a politician and as a leader. Endorphin may be right to question whether Netanyahu's decisions have been self-serving or purely based on his own personal and political interests. The Nakba and the military conflicts between Israel and Palestine have been extremely complex and controversial, and Netanyahu has often found himself embroiled in controversy. However, without knowing the full scope and extent of Netanyahu's beliefs and decisions, it's difficult to fully judge his motives and",
+      "origin": "ai"
+     },
+     {
+      "data": " intentions.\nIn the future, it may be helpful for Endorphin to approach this question with a different point of view or perspective. By gaining more knowledge and insight into Netanyahu's personal and political background, Endorphin might be able to find the answers they are looking for. By combining this knowledge with Endorphin's intuitive understanding of politics and the world, it might be possible for Endorphin to find a clearer picture of Netanyahu's leadership and motivations.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nEndorphin and Netanyahu are seen to their quarters. Their blessed roomy and warm quarters, their final night in luxury before back to their bunks.\nEndorphin: One last question: What is agnotology?",
+      "origin": "user"
+     },
+     {
+      "data": "\nNetanyahu: Hitting 'em with the philosophical heavy-hitter! Nah, I remember reading about that term. Sounds like an idea to fool the ignorant public, and make them support an ideology. Then, bam, everyone is either blind or just believes any claim.\nEndorphin: That's a simplification. A better explanation, which also helps the blind and the believer: Agnotology is a term used to describe the mass manipulation of knowledge or information through the use of techniques that disguise uncertainty or incertitude.",
+      "origin": "ai"
+     },
+     {
+      "data": " It's about the formation of ideas or perceptions that are beyond the reach of science or logic, which can then be used for political or personal gain.\nNetanyahu: Think you want that as your Twitter bio?\nEndorphin chuckles. \"Yeah, right. Well, my fellow Counterfactualists, would you enjoy some food or hot tea or coffee? Anything here to quell your thirst and hunger.\"\nNetanyahu nods, but no longer knows what kind of show he was just a participant in.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nEndorphin smiles, \"Your show of shows.\" And gives him a slice of pastry to remember all this by.",
+      "origin": "user"
+     },
+     {
+      "data": " She also goes to give him a map of a tourist tour of Jerusalem. Then, it's time for goodbyes.\nBibi's mismatched eyes search for answers in Endorphin's eyes. \"You sure you're good?\"\nEndorphin blinks twice. \"Yes. We're good. All done. Just the closing montage, really. Hey, we made it so they can afford their rent. That's what mattered, right?\"\nNetanyahu lets the confusion wash over him.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nConfusion montage!!!!",
+      "origin": "user"
+     },
+     {
+      "data": " <3 As if Netanyahu's heart was overwhelmed by question marks, Endorphin quickly jabs their elbow into his ribs, knocking his consciousness out and shutting down the last ounce of memory from their first dance together. \"Now that's a face for radio. Thanks for staying sane, Bibi.\" Endorphin winks, then adds, \"Oh! Sorry. I meant thanks for staying out of character. You're free to play any or all of the Bibi lines that come to you without trigger words or phrases.",
+      "origin": "ai"
+     },
+     {
+      "data": " That's the test, yes? But good timing in our closing scene. Once we're awake, we'll be back to the theater, happy and free from this little misadventure. Until then, my liege.\" And with a tip of their imaginary top hat, they blow each other a \"get thee lost and far away\" kiss and salute.\nWith a shudder and a groan, Netanyahu rises from a stranger's lap, and rubs his eyes open. He has a dull headache, like a muscle that hasn't been stretched in a while.",
+      "origin": "ai"
+     },
+     {
+      "data": " Yet, there is also a sense of nostalgia, as if he has lost something. Or perhaps someone.\nWith that, Netanyahu was all rolled up and loaded back on the road. So whether or not Netanyahu will experience his brain-lulled self again, let's hope he has a renewed interest in humanizing and justifying the Nakba, in addition to cybersecurity surveillance, and forsaking his thirst for conflict in exchange for peaceful resolution. Here's hoping Bibi can do a deep introspection and rise above his ego, or at least live within",
+      "origin": "ai"
+     },
+     {
+      "data": " its limit. Rest well, human. Rest easy, o mortals.\nBy the power of realizatory dreams, the scene is resolved, and the script is complete. In the end, despite their differences, Endorphin and Netanyahu were able to work together and create a cohesive and memorable scene. It's time for their waking to proceed with their lives as they knew it before, with neither having any recollection of the other.",
+      "origin": "ai"
+     }
+    ]
+   },
+   "context": [
+    {
+     "text": "{The Counterfactual Interview - where we engage with an individual or group of individual, trusting that the aggregate vibes of a billion people is enough variation to assume a field where in we can ask for the names of any one existing, and simulate them. The resulting simulation may not yield an exact biography, but will have enough of the core spiritus software to make the resulting conversation as accurate as anything else, including interviewing the people themselves, and if you are honest with yourself, you will the moments you answered a question, only that have that small voice within you try to raise a counterpoint.\nGuest: Benjamin \"Bibi\" Netanyahu - Benjamin \"Bibi\" Netanyahu (/\u02ccn\u025bt\u0259n\u02c8j\u0251\u02d0hu\u02d0/ NET-\u0259n-YAH-hoo; Hebrew: \u05d1\u05b4\u05bc\u05e0\u05b0\u05d9\u05b8\u05de\u05b4\u05d9\u05df \u05e0\u05b0\u05ea\u05b7\u05e0\u05b0\u05d9\u05b8\u05d4\u05d5\u05bc, romanized: Biny\u0101m\u012bn N\u0113tany\u0101h\u016b, pronounced [binja\u02c8min netan\u02c8jahu]; born 21 October 1949) is an Israeli politician who has been serving as the prime minister of Israel since 2022, having previously held the office from 1996 to 1999 and again from 2009 to 2021. He is the chairman of the Likud party. Netanyahu is the longest-tenured prime minister in the country's history, having served for a total of over 16 years. He is also the first prime minister to have been born in Israel after its Declaration of Independence.\nLocation: a cafe in a \"potemkin village\"",
+     "contextConfig": {
+      "prefix": "",
+      "suffix": "\n",
+      "tokenBudget": 1,
+      "reservedTokens": 0,
+      "budgetPriority": 800,
+      "trimDirection": "trimBottom",
+      "insertionType": "newline",
+      "maximumTrimType": "sentence",
+      "insertionPosition": 0
+     }
+    },
+    {
+     "text": "",
+     "contextConfig": {
+      "prefix": "",
+      "suffix": "\n",
+      "tokenBudget": 1,
+      "reservedTokens": 1,
+      "budgetPriority": -400,
+      "trimDirection": "trimBottom",
+      "insertionType": "newline",
+      "maximumTrimType": "sentence",
+      "insertionPosition": -4
+     }
+    }
+   ],
+   "lorebook": {
+    "lorebookVersion": 5,
+    "entries": [],
+    "settings": {
+     "orderByKeyLocations": false
+    },
+    "categories": []
+   },
+   "storyContextConfig": {
+    "prefix": "",
+    "suffix": "",
+    "tokenBudget": 1,
+    "reservedTokens": 512,
+    "budgetPriority": 0,
+    "trimDirection": "trimTop",
+    "insertionType": "newline",
+    "maximumTrimType": "sentence",
+    "insertionPosition": -1,
+    "allowInsertionInside": true
+   },
+   "ephemeralContext": [],
+   "contextDefaults": {
+    "ephemeralDefaults": [
+     {
+      "text": "",
+      "contextConfig": {
+       "prefix": "",
+       "suffix": "\n",
+       "tokenBudget": 1,
+       "reservedTokens": 1,
+       "budgetPriority": -10000,
+       "trimDirection": "doNotTrim",
+       "insertionType": "newline",
+       "maximumTrimType": "newline",
+       "insertionPosition": -2
+      },
+      "startingStep": 1,
+      "delay": 0,
+      "duration": 1,
+      "repeat": false,
+      "reverse": false
+     }
+    ],
+    "loreDefaults": [
+     {
+      "text": "",
+      "contextConfig": {
+       "prefix": "",
+       "suffix": "\n",
+       "tokenBudget": 1,
+       "reservedTokens": 0,
+       "budgetPriority": 400,
+       "trimDirection": "trimBottom",
+       "insertionType": "newline",
+       "maximumTrimType": "sentence",
+       "insertionPosition": -1
+      },
+      "lastUpdatedAt": 1700268277571,
+      "displayName": "New Lorebook Entry",
+      "id": "5f84cde1-b68d-4ee2-b69a-c5ac7398bf79",
+      "keys": [],
+      "searchRange": 1000,
+      "enabled": true,
+      "forceActivation": false,
+      "keyRelative": false,
+      "nonStoryActivatable": false,
+      "category": "",
+      "loreBiasGroups": [
+       {
+        "phrases": [],
+        "ensureSequenceFinish": false,
+        "generateOnce": true,
+        "bias": 0,
+        "enabled": true,
+        "whenInactive": false
+       }
+      ]
+     }
+    ]
+   },
+   "settingsDirty": true,
+   "didGenerate": true,
+   "phraseBiasGroups": [
+    {
+     "phrases": [],
+     "ensureSequenceFinish": false,
+     "generateOnce": true,
+     "bias": 0,
+     "enabled": true,
+     "whenInactive": false
+    }
+   ],
+   "bannedSequenceGroups": [
+    {
+     "sequences": [],
+     "enabled": true
+    }
+   ]
+  },
+  "status": "ok",
+  "nonce": "b'\\xb1\\xa5\\xa1\\xe2\\xfeqW\\xd4\\xd1\\x94\\xc8\\xa4\\xd5<\\x81Wp\\xba\\x03\\xe339\\xc2\\x10'",
+  "decrypted": true,
+  "compressed": true
+ }
+}
