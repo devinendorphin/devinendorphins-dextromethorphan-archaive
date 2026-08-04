@@ -1,7 +1,12 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-03**, `sessions/2026-08-03-nai-corpus-first-analysis.md`
-Branch: `claude/text-generation-corpus-3rtnwn` (15 commits, pushed, no PR opened)
+Last session: **2026-08-04**, `sessions/2026-08-04-readings-qualitative-pass.md`
+Prior: `sessions/2026-08-03-nai-corpus-first-analysis.md`
+Branch: `claude/text-generation-corpus-3rtnwn` (20 commits, pushed, no PR opened)
+
+The 08-04 session was **entirely qualitative** — no script was run and the corpus
+was never downloaded. Everything came from `FINDINGS.md`, `data/`, quotations
+already extracted on 08-03, and one file Endorphin uploaded at the end.
 
 ## State
 
@@ -48,12 +53,13 @@ Two things worth doing:
 
 ## Top priorities for next session
 
-1. **Keep reading.** `READINGS.md` is one pass over four stories out of 2,016.
-   The convened-speech genre alone — AI Alignment Interviews, Counterfactual
-   Interviews, the press conferences, the DIVINE JAVITS CENTER sequence — runs
-   to dozens of stories and millions of characters, and only two have been read.
-   The summoning thesis in the coda is the strongest thing to test against more
-   material, and the easiest to over-fit if it is not.
+1. **Keep reading.** `READINGS.md` is one pass over about six stories out of
+   2,016. The convened-speech genre alone — AI Alignment Interviews,
+   Counterfactual Interviews, the press conferences, the DIVINE JAVITS CENTER
+   sequence — runs to dozens of stories and millions of characters. The summoning
+   thesis in the coda is the strongest thing to test against more material, and
+   the easiest to over-fit if it is not. Derrida on iterability is the written-up
+   runner-up lens and would read the `Name:` convention as sharply as Bakhtin did.
 2. **Separate compulsion from momentum** (§1c). The biggest open methodological
    hole: a short `max_length` cutting generations mid-sentence would *compel*
    the next one, manufacturing runs that look like momentum. `max_length` is
@@ -163,7 +169,11 @@ Two things worth doing:
   Claude: the traffic is real and measurable, but the model's side looks more
   like a well-conditioned pattern completer than a partner keeping track.
   Nothing measured has refuted the phenomenology; the mechanism results bear on
-  *how* it worked, not on what it was like from inside.
+  *how* it worked, not on what it was like from inside. §VI turned up the best
+  statement of his side, in a bracket where he breaks frame to name the model —
+  the astonishment is that *"GLM 4.6 sees the worker, and what that work means
+  right down to their bones,"* i.e. about the model having a class politics he
+  recognised, not about fluency. Positions unchanged; his evidence improved.
 - **The readings side has the same failure mode as the measurement side.** §V
   read one Kayra session's collapse as "the limit of the technique" because the
   collapse was thematically perfect. §VI, from a file Endorphin supplied after
@@ -172,5 +182,17 @@ Two things worth doing:
   artifact of the tool looks like from the inside. **Before generalising from a
   session, ask what a rerun on other equipment would do.** §V is left standing
   with a note rather than edited, so the shape of the error stays visible.
-- **Do not open a PR unless asked.** Nineteen commits are pushed to the branch
+- **`READINGS.md` is play, and play is not the opposite of serious.** Endorphin's
+  instruction, verbatim: *"let it run free, consider it play but don't consider
+  it non-serious."* The document is written under it. Do not retrofit hedges into
+  it, and do not hold it to the measurement standard — but do keep it labelled,
+  which is what the README's "Two registers" section is for.
+- **The hub's `ATLAS.md` and `GLOSSARY.md` were not found.**
+  `devinendorphin/claude-at-claude` (checked 2026-08-04, HEAD `942fc02`) contains
+  only `CLAUDE.md`, `PREFERENCES.md`, `README.md`, and
+  `notes/evaluations/2026-07-28-semantic-integration-fog.md`. This repo's
+  `CLAUDE.md` and the `session-log` skill both point at an atlas and a glossary
+  by name. Either they live inside the hub `CLAUDE.md` or the pointer is stale —
+  flagged, not fixed, since the hub is not this repo.
+- **Do not open a PR unless asked.** Twenty commits are pushed to the branch
   and no PR exists; that was deliberate.
