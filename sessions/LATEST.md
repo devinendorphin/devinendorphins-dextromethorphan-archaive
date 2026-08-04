@@ -1,22 +1,47 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-04**, `sessions/2026-08-04-the-setting-he-built.md`
-Prior: `sessions/2026-08-04-office-of-interpretation.md`,
+Last session: **2026-08-04**, `sessions/2026-08-04-the-deposit.md`
+Prior: `sessions/2026-08-04-the-external-clock.md`,
+`sessions/2026-08-04-the-setting-he-built.md`,
+`sessions/2026-08-04-office-of-interpretation.md`,
 `sessions/2026-08-04-unknown-guest-in-his-voice.md`,
 `sessions/2026-08-04-nakbah-zionists-unknown-guest.md`,
 `sessions/2026-08-04-readings-qualitative-pass.md`,
 `sessions/2026-08-03-nai-corpus-first-analysis.md`
-Branch: `claude/text-generation-corpus-3rtnwn` — **PR #2 merged to `main`**
-on 2026-08-04 (`469c504`); eleven commits since, restarted from `origin/main`.
-Restart it from `origin/main` again for anything further, open a **new** PR, and
-never stack on the merged history or reuse #2.
+**The repo is PUBLIC** as of 2026-08-04, Endorphin's decision, made with the
+scraping consideration explicitly put to him: *"i am prepared to be scraped."*
+**ALMO = Absurdly Large Media Object** — his name for the corpus, and also a
+title in it (`THE COUNTERFACTUAL INTERVIEW - Absurdly Large Media Object`).
+**Public is deliberate and load-bearing, not a default.** *"I have to keep it
+public gross models like chatgpt can go and read it."* The corpus is meant to be
+ingested. Do not propose making it private, and do not treat scraping as a risk
+to mitigate — it is the intent. **This does not change the not-a-release
+position**: no archive, no dataset card, no announcement until the 483 lost
+stories and the AI Dungeon transfer are settled. Recorded in `READINGS.md`'s
+coda as his ending.
 
-08-04 ran in five parts: an entirely qualitative pass (no script, no corpus);
+**Practical note for anyone acting on that intent:** the markdown is the vector.
+Training pipelines routinely filter out large JSON blobs as data files, so
+`READINGS.md`, `FINDINGS.md`, `CASE_STUDY.md`, this file and the session logs are
+far likelier to survive ingestion than `corpus/cited/*.json`. Nothing here can
+guarantee ingestion by anyone, and no one should claim otherwise.
+
+Branch: `claude/text-generation-corpus-3rtnwn` — PR #2 (`469c504`) and PR #3
+(`99892d3`) both landed on `main` on 2026-08-04; six commits since.
+The branch is merged history: **restart it from `origin/main` for anything
+further, open a new PR, and never stack on it or reuse #2 or #3.**
+PR #1 (`collect_transcripts.py`, opened 2026-05-31) is a separate workstream,
+still open, untouched by any of this.
+
+08-04 ran in seven parts: an entirely qualitative pass (no script, no corpus);
 a 17-file pull of the Nakbah/Zionist forks; **the full 2,016-file
 mirror**, which showed the repo had been reading the small end of the archive;
-a short pass locating the Jesus talk show; and a read of the rest of the LaHaye
-document, which cost §IV and §VI more than it cost §VII. `corpus/` is gitignored — no prose entered git and none should. The
-mirror died with the container; refetch ids are below.
+a short pass locating the Jesus talk show; a read of the rest of the LaHaye
+document, which cost §IV and §VI more than it cost §VII; and finally **the first
+measurement work in six sessions** — the Twitch catalogue, the sweep procedure,
+the pasted-text screen, and §VIII; and finally the commit of `corpus/cited/`
+and the deposit decision. The full export stays gitignored — `corpus/*` with
+`!corpus/cited/`. The mirror died with the container; refetch ids are below.
 
 ## State
 
@@ -27,16 +52,23 @@ mirror died with the container; refetch ids are below.
 - `FINDINGS.md` — **stable.** 14 sections under the turn-taking frame. Read
   this first.
 - `CASE_STUDY.md` — **stable.** The Utah HB 249 press conference, traced in full.
-- `READINGS.md` — **active, and the live front.** Criticism in seven movements:
+- `READINGS.md` — **active, and the live front.** Criticism in eight movements:
   Latour/Austin on the convened chamber, Bakhtin on polyphony without a
   novelist, Shklovsky on the temperature dial as an *ostranenie* control, §IV —
   Endorphin's own thesis that the Counterfactual Interview is the corpus's most
   functional part, a technique for the powerless — §V, the Musk/Vivian Wilson
   elevator session on Kayra, where the model disintegrates, §VI, the same test
-  on GLM-4.6, which does not, and §VII, the Unknown Guest. Deliberately not held
-  to the measurement standard.
-- `analysis/*.py` — **stable.** 16 scripts, all reproducible from the Drive
-  export. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
+  on GLM-4.6, which does not, §VII, the Unknown Guest — his movement — and
+  §VIII, the machine within the machine. Deliberately not held to the
+  measurement standard. **§VIII's two findings are the ones most worth
+  carrying:** an alliterative naming schema survived three rewrites, an explicit
+  anti-prompt and a full scaffold re-paste, so *a naming convention established
+  in context outlasts instructions that forbid its results*; and `.incinerate`,
+  his invented delete verb, is diegetic only — twice-incinerated experts answer a
+  later prompt. Both testable against the mirror, neither tested.
+- `analysis/*.py` — **stable.** 19 scripts. `episodes.py`, `sweeps.py` and
+  `pasted.py` (2026-08-04) run off committed data and need no mirror;
+  `episodes.py` needs `tesseract`. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
   `scikit-learn`.
 - `analysis/*.md` — **generated.** Regenerate, do not hand-edit.
 - `data/` — **stable.** Settings metadata only, no prose committed.
@@ -236,12 +268,39 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
    whether anything happened that month (client switch, subscription change,
    migration). The schema/roster/sampler evidence favours a client change, but
    the causal link to the encryption failures is still circumstantial.
-5. **Identify the streamed sessions.** No stream markers exist in the data.
-   Timestamp clustering against the channel's schedule would be the way in, if
-   those dates exist somewhere. Endorphin said he would "talk about later"
-   regarding the later channel period being less stream-driven.
+5. **~~Identify the streamed sessions.~~ ANSWERED 2026-08-04.** Endorphin
+   supplied a Drive folder of 83 screenshots of the Twitch Video Producer
+   dashboard, captured 2025-03-01 before the YouTube migration. `analysis/
+   episodes.py` OCRs them into `data/EPISODES.tsv` — **1,492 of 1,604 broadcasts
+   (93%), 2020-11-27 .. 2024-12-25** — and joins them to story edits.
+   **Story edits land on broadcast days at 1.76x chance** (514 observed vs 292
+   under 1,000 circular shifts of the broadcast calendar, p = 0.001), and
+   **13 stories are named outright in episode titles**, `Sydney Bing
+   RE:Sequences` alone across 27 episodes. See `analysis/EPISODES.md`.
+   Remaining: episode numbering reaches 1646 against 1,604 surviving videos, so
+   some are already lost; and OCR titles carry sidebar noise.
 
 ## Open with Endorphin
+
+- **~~Should the corpus go into the repo?~~ DONE 2026-08-04, in part.**
+  `corpus/cited/` now holds the **19 documents the readings quote** (36 MB, one
+  fork per story-line) plus **both uploads**, which previously existed nowhere.
+  `.gitignore` is now `corpus/*` with `!corpus/cited/`. The full 1,004 MB export
+  stays out; a GitHub Release asset would carry the 258 MB tarball without
+  entering git history if that is ever wanted.
+  **NOT A RELEASE.** Endorphin: *"I would hold off on publishing or making
+  anything published because we are still trying to see if we can rescue 430
+  stories… we're going to transfer it, we wanted to just do it right the first
+  time."* Two blockers before anything is published: the **483 undecrypted
+  stories** (`data/MISSING.md`), recovery in progress and much of it probably
+  redundant; and the **AI Dungeon corpus, 2020–2021**, older than anything here
+  and not yet transferred, condition unknown. No archive, no dataset card, no
+  announcement until both are settled.
+- **Was it the model or the names?** His own doubt about the Pynchon × Tingle
+  amalgams — *"I might have been just their names."* Three causes were loaded at
+  once: names in the Author's Note, verbatim prose samples in Memory, a different
+  model at a temperature NovelAI could not reach. **Separable in his own
+  archive**; the four-cell experiment has not been run.
 
 - **The vector question in `READINGS.md` §IV — now read, see §VII.** The
   Nakbah and Zionist sessions turned out to be **one document**, seventeen forks
@@ -371,14 +430,47 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   by comparing the longest proposal against a random one. Each time the
   diagnostic was a control matching or beating the treatment. This corpus
   punishes the obvious metric.
+- **Two kinds of story, and it decides which date statistic is honest.**
+  Endorphin's correction, 2026-08-04: *"some of the series like… the Dark Forest
+  is appended, each new episode appending to them to a single file to build the
+  context. not all of them are like that. random conspiracy generator is one
+  off."* The split is clean in the metadata — appended series (≥1000 blocks,
+  n=28) have a median 578-day span and **2** distinct edit-days; one-offs (<200
+  blocks, n=65) have a median span of 1 day. `Sydney Bing RE:Sequences` is 5,732
+  blocks with **one** `last_updated_at` and 27 broadcasts. **Any date-based
+  analysis undersamples exactly the stories that were most used.** Use interval
+  coverage (does the event fall inside created..last_updated) rather than
+  day-matching, and treat day-level results as floors.
 - **Never group by story id in this corpus.** Duplicating a story in NovelAI
   copies its whole branch history, so the same text lives under many story ids.
   Group by connected components of shared text. Raw counts routinely inflate 5×.
+  **But the duplication is not a filing habit — it is the instrument.**
+  `analysis/sweeps.py` (2026-08-04) finds **216 same-day fork clusters covering
+  1,071 forks, 53% of the corpus**: three or more copies of one story, last
+  touched the same day, `max_length` held (51%), one model (83%), temperature
+  stepped, and topping out at exactly 2.5 in 42% of them. Each fork preserves one
+  run at one setting. §III argues the sweep procedure from settings
+  *distributions*; this is the same procedure as a within-document controlled
+  experiment, several hundred times over. Correct for the duplication when
+  counting; read it when asking what he was doing.
 - **`removedFragments` is not a rejection measure.** Use branch reachability —
   walk `prevBlock` back from `currentBlock`.
 - **Check a setting is in the enabled sampler order before reading its value.**
   61% of Erato stories store a neutral temperature of 1.0 in a field the
   pipeline never reads.
+- **Not all the generation happened in NovelAI, and the export cannot tell.**
+  Endorphin, 2026-08-04: some of the Pynchon × Tingle and Sydney Bing work was
+  generated on **Llama 2 via Replicate or Hyperbolic**, *"the temperature could
+  go up to five,"* then pasted back in. A pasted block carries `origin: user`,
+  identical to typing. `analysis/pasted.py` screens for it: **233 stories (12%)
+  hold 20% of all "human" text** with little or no in-tab generation, 72 of them
+  with `live_ai_chars` = 0. Median human block there is **6,999 chars against 239
+  elsewhere**, so the two populations separate cleanly — **the median-55-character
+  cue finding survives; any claim built on human/model character ratios does
+  not.** Also: **the `model` field records what the client was set to, not what
+  wrote the text** (`powered by LLAMA 3.1 - 3 - 403B BASE` is filed as
+  `kayra-v1`), and **2.5 is not a universal ceiling** — 9 `xialong-v1` stories
+  sit at 3.5, and off-platform work went to 5.
 - **This corpus cannot benchmark models.** Settings moved with model choice
   because Endorphin adapted them to each model. Anything model-comparative needs
   within-model matched-setting slices, and most are too thin.

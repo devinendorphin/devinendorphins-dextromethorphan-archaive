@@ -1,0 +1,2373 @@
+{
+ "story": {
+  "id": "2eGpvYtOcTcIuu8Q-l_dH",
+  "type": "stories",
+  "lastUpdatedAt": 1723745804,
+  "meta": "6ab8da63-fcc2-44ce-8900-d0623702d735",
+  "changeIndex": 107,
+  "data": {
+   "storyMetadataVersion": 1,
+   "id": "6ab8da63-fcc2-44ce-8900-d0623702d735",
+   "remoteId": "2eGpvYtOcTcIuu8Q-l_dH",
+   "remoteStoryId": "Rn-iWaRRFgbrj2hm0NKjR",
+   "title": "Pynchon & Tingle: Apocryphal Tales For Beta Males and Below",
+   "description": "",
+   "textPreview": "Due to the petition between both their fan bases, Thomas Pynchon and Chuck Tingle collaborate on a Chuck Tingle-sized novel. Tingle-sized content for the buckaroos and lady buckaroos, and a window into the buried histories of the post-modern world fo",
+   "isTA": false,
+   "favorite": false,
+   "tags": [],
+   "createdAt": 1723602643773,
+   "lastUpdatedAt": 1723745519415,
+   "isModified": true
+  },
+  "status": "ok",
+  "nonce": "b'\\xdb`\\x16\\xc7\\xb6\\xf8F+\\xfem\\x16\\xf1K\\xf4\\xd7 \\xf1R\\xf4|\\xad\\xdb\\x0c\\xd8'",
+  "decrypted": true,
+  "compressed": false
+ },
+ "content": {
+  "id": "Rn-iWaRRFgbrj2hm0NKjR",
+  "type": "storycontent",
+  "lastUpdatedAt": 1723745804,
+  "meta": "6ab8da63-fcc2-44ce-8900-d0623702d735",
+  "changeIndex": 107,
+  "data": {
+   "storyContentVersion": 6,
+   "settings": {
+    "parameters": {
+     "textGenerationSettingsVersion": 5,
+     "temperature": 1.52,
+     "max_length": 100,
+     "min_length": 1,
+     "top_k": 175,
+     "top_p": 0.998,
+     "top_a": 0.004,
+     "typical_p": 0.96,
+     "tail_free_sampling": 0.994,
+     "repetition_penalty": 1.68,
+     "repetition_penalty_range": 2240,
+     "repetition_penalty_slope": 1.5,
+     "repetition_penalty_frequency": 0,
+     "repetition_penalty_presence": 0.005,
+     "repetition_penalty_default_whitelist": true,
+     "cfg_scale": 1,
+     "cfg_uc": "",
+     "phrase_rep_pen": "medium",
+     "top_g": 8,
+     "mirostat_tau": 0,
+     "mirostat_lr": 1,
+     "order": [
+      {
+       "id": "mirostat",
+       "enabled": false
+      },
+      {
+       "id": "typical_p",
+       "enabled": true
+      },
+      {
+       "id": "temperature",
+       "enabled": true
+      },
+      {
+       "id": "top_k",
+       "enabled": true
+      },
+      {
+       "id": "tfs",
+       "enabled": true
+      },
+      {
+       "id": "top_a",
+       "enabled": false
+      },
+      {
+       "id": "top_g",
+       "enabled": false
+      },
+      {
+       "id": "top_p",
+       "enabled": false
+      },
+      {
+       "id": "cfg",
+       "enabled": false
+      }
+     ]
+    },
+    "preset": "default-asper",
+    "trimResponses": true,
+    "banBrackets": true,
+    "prefix": "special_instruct",
+    "dynamicPenaltyRange": false,
+    "prefixMode": 0,
+    "mode": 0,
+    "model": "kayra-v1"
+   },
+   "story": {
+    "version": 2,
+    "step": 94,
+    "datablocks": [
+     {
+      "nextBlock": [
+       1
+      ],
+      "prevBlock": -1,
+      "origin": "root",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "",
+       "origin": "root"
+      },
+      "fragmentIndex": -1,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       2
+      ],
+      "prevBlock": 0,
+      "origin": "prompt",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "Due to the petition between both their fan bases, Thomas Pynchon and Chuck Tingle collaborate on a Chuck Tingle-sized novel. Tingle-sized content for the buckaroos and lady buckaroos, and a window into the buried histories of the post-modern world for the Pynchinites. The two authors start with a title, and the book grows from the title: Pynchon and Tingle Join PSYOPS AI and Fight the Global Epistemic War: A Pynchonesque Tingler AKA A Tingler With A Good Pynch Thrown In\n\nFor Some Good Measure (but not excessive Measure!) by Chuck Tingle and Thomas Pynchon Except the title changes during the collaboration. Not all readers can see the same title. Rather, they see either Chuck Tingle Fucks the Ouroboros: A Meta-Tingler aka Meta Tingle: So Meta, it Hurts (If You Have Dentures)! by Chuck Tingle and Thomas Pynchon While other readers see A Porpoiseful Thought (but not excessive Measure!) by Chuck Tingle and Thomas Pynchon So many times during the course of writing this manuscript, both Pynchon and Tingle do the Indian smoke peace ceremony in a serious moment of real fellowship and understanding, despite their proclivities to smoke excessive amounts of weed while they do it. Chuck: \"Thomas, I really like you.\" Tom: \"Like\" is not a strong enough word for what I feel. I also \"love\" you.\" Chuck: \"Holy cow! Same here!\" They shake hands and begin doing the most epic smoke signal in recorded history! With a first, they are approaching 2.5 million cubic liters of smoke used, which equates to 300 man months of labor in pure marijuana (For reference: one man-month of labor in the area of marijuana, where one month of steady inhalation is equal to one man-month.) In both novels, including that which the public shall never see, Chuck Tingle is the heroic protagonist, and the character Thomas Pynchon is his faithful and devoted Pledge Manager. At the beginning of both of their novels, this very specific event occurs. It changes as both novels bifurcate into two. Chuck is approached by Bill Bailey and Channing Tatum, who would both respectively like to play Thomas Pynchon and Chuck Tingle in a two hour blockbuster film. This film will actually be released as a mixed virtual reality (MVR) film, that will allow you to choose either to read the novel from Chuck's perspective, or the novel from Thomas' perspective. There are also only two roles in the film: the protagonist Chuck Tingle, and Thomas Pynchon, who plays a similar role to the narrator in the original film Fight Club. Thomas will be omnipresent but we can only see his bloodshot eyes behind a swath of marijuana smoke. Bill and Channing wear clown wigs and large, over-sized, primary-colored plaid suits as they enter the room. They drop off two scripts, each\n\nThe Smogfather Script: Chuck Tingle and Thomas Pynchon introduce the idea of biological malware and anti-virus. They discuss their ideas about an infinitely replicating virus in an appendix of the 2nd edition. They decide that humans should have a biological anti-virus, to ward off biological malware, and give it the name \"Metavirus X\"\n\nClue: the Esmark\n\nMap: Clarkie the Cat\n\nThe Pianist of Chaos Script: Chuck Tingle, as the artist name he usually goes by, Chuck Tingle. Thomas Pynchon has never liked the name \"Pynchon\" so he will appear as Tim Price in the book, as Tim Pynchon\n\nClue: Purple Pamphlet\n\nMap: Sydrack the Reckoning\n\nthe book is good but the metadata is better i make a sandwich from my dog's food. it tastes better than anything i've eaten in the past six months. \"they say dog food makes you hungrier than human food. this could explain why there are fewer human meals on the planet, because people are only eating dog food,\" i tell my robot dachshund after a long lunch with him i'm in my new pet store, and i notice that there are now three dog collars on the shelf, all of which look identical, so i take all of them out and compare them. there's a blue, green, and red collar, and the material and length are all the same. i ask the clerk, who informs me that it is all just a dog toy called 'chomp', designed by schick for some show dogs a few years ago. they are selling for $5.50, so i pick up one of each and leave i start a nonprofit to sell \"assorted meat products\" to middle schoolers, in a kind of post-apocalyptic fashion. in the new \"future\" world i will establish a new currency called \"the not\", with a fixed value of ten dollars. one \"not\" is worth five meat products (french toast, meat patties, macaroni, fried chicken), and one meat product is worth one dollar.\n\nDog Harness Summary: Harry Roque (the eponymous narrator) visits a pet shop, run by a mysterious and sadistic clerk named Paul Dino. Harry buys a new dog harness for his pet rat Wilbur, and Wilbur's demeanor changes overnight, into an extremely fierce, vengeful beast.\n\nThen Harry is abruptly abducted by the mysterious Director Mitchell Mitchum (we never find out his first name), and has to act as a sex slave to the ultra-rich housekeeper who owns the pet shop, Mademoiselle Renee.\n\nTags: Satire; Mystery; Dark; Low Brow\n\nClues: none\n\nDog Muzzle Summary: Harry Roque (the eponymous narrator) visits a pet shop, run by a mysterious and sadistic clerk named Paul Dino. Harry buys a new dog muzzle for his pet rat Wilbur, and Wilbur's demeanor changes overnight, into an extremely fierce, vengeful beast. Then Harry is abruptly abducted by the mysterious Director Mitchell Mitchum (we never find out his first name), and has to act as a sex slave to the ultra-rich housekeeper who owns the pet shop, Mademoiselle Renee.\n\nTags: Satire; Mystery; Dark; Low Brow\n\nClues: none\n\n\"this book is a story that a little girl would tell to her father,\" the man in the gray suit began, and i listened to the story. as he was talking, the tiny bells at the end of his antennae jingled like car keys. he had antennas! i looked at the woman across the table from me and i knew she was watching me. \"the little girl tells her father a story,\" he said, \"and the father is fascinated, but only when the story is funny. the father becomes impatient when the story is sad, and he asks the little girl to change the story to make it happier.\" i shifted in my seat and realized that i had stopped listening to the man, but the woman across from me had not. \"i'm sorry, mr. pynchon,\" she said, \"but you have something on your cheek. could you please wipe it off?\" i didn't know if she meant i had food on my face or what, but i was suddenly aware that i had gotten that piece of pizza on my face earlier, and it must have looked like a dried piece of pizza. i reached up to wipe it off and then, to my shock, it moved! the tiny bit of pizza crawled along my cheek! i started to laugh, and the man looked at me with a quizzical expression. \"did i tell a funny story?\" he asked, and the woman across from me laughed too. \"no, it's just,\" she started, and then stopped. \"it's just, the pizza,\" i\n\nfinished, and they both laughed even harder. \"that's a very good story,\" the man in the gray suit said, \"and it's exactly the sort of thing i'd like to read in my\n\nWho I Am, by Milton\n\nSummary: The tragic story of a neurosurgeon named Jon, who has a wife and a daughter, but who is always on the road for surgeries, where he must operate on the dead bodies of corpses. It's hard for Jon to maintain relationships with his family, because they have no understanding of his real work, which is so morbid and disturbing.\n\n\"this book is a story that a little girl would tell to her father,\" the man in the gray suit began, and i listened to the story. as he was talking, the tiny bells at the end of his antennae jingled like car keys. he had antennas! i looked at the woman across the table from me and i knew she was watching me. \"the little girl tells her father a story,\" he said, \"and the father is fascinated, but only when the story is funny. the father becomes impatient when the story is sad, and he asks the little girl to change the story to make it happier.\" i shifted in my seat and realized that i had stopped listening to the man, but the woman across from me had not. \"i'm sorry, mr. pynchon,\" she said, \"but you have something on your cheek. could you please wipe it off?\" i didn't know if she meant i had food on my face or what, but i was suddenly aware that i had gotten that piece of pizza on my face earlier, and it must have looked like a dried piece of pizza. i reached up to wipe it off and then, to my shock, it moved! the tiny bit of pizza crawled along my cheek! i started to laugh, and the man looked at me with a quizzical expression. \"did i tell a funny story?\" he asked, and the woman across from me laughed too. \"no, it's just,\" she started, and then stopped. \"it's just, the pizza,\" i finished, and they both laughed even harder. \"that's a very good story,\" the man in the gray suit said, \"and it's exactly the sort of thing i'd like to read in my\n\nThe Giraffe, by Carin\n\nSummary: The tragic story of a giraffe who was left at the zoo because his neck was too long. He\n\nwas bullied by the other giraffes, who didn't think that he was a real giraffe because he was different. So he ran away, and spent his whole life traveling around the world, searching for a place where he could fit in.\n\n\"But this is impossible!\" He threw the letter onto the table. \"Oh come on,\" I said. \"It's a little late for that, isn't it?\" I looked over at her. \"Do you know how many people died in World War II? It's estimated that the total was between 50 million and 70 million.\" She looked up at me, wide eyed. \"How can you be so sure?\" \"We did our best to keep track of all the dead. And if we missed anyone, well, they're probably dead anyway.\" \"But it's impossible!\" she insisted. \"There's no way that many people could have died.\" \"I don't understand why you keep denying it,\" I said. \"It's not like I'm going to give up and let you go.\" She laughed. \"You're going to give up? You're going to let me go?\" \"I know you're hiding something,\" I said. \"And I'm not going to let you get away with it.\" \"Oh come on,\" she said. \"I'm just a librarian. How can I possibly be hiding anything?\" \"You know what?\" I said. \"I don't care. I'm not going to play games anymore.\" \"What are you going to do?\" she asked. \"I'm going to find the rest of the letter,\" I said. \"And I'm going to find out what's going on.\" \"You can't do that!\" she said. \"Why not?\" I asked. \"Because I won't let you,\" she said. \"Oh, you won't let me?\" I said. \"You're going to stop me?\" \"Yes, I am,\" she said. \"You're not going to find the rest of the letter.\" \"Why not?\" I asked. \"Because it's hidden,\" she said. \"It's hidden somewhere that you'll never find.\" \"Where is it?\" I asked. \"It's hidden in a book,\" she said. \"A book?\" I asked. \"Yes,\" she said. \"It's hidden in a book.\" \"What book?\" I asked. \"The Bible,\" she said. \"The Bible?\" I asked. \"Yes,\" she said. \"The Bible.\" \"\n",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 1,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       3
+      ],
+      "prevBlock": 1,
+      "origin": "prompt",
+      "startIndex": 475,
+      "endIndex": 476,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 2,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       4
+      ],
+      "prevBlock": 2,
+      "origin": "prompt",
+      "startIndex": 2741,
+      "endIndex": 2742,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 4,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       5
+      ],
+      "prevBlock": 3,
+      "origin": "prompt",
+      "startIndex": 3079,
+      "endIndex": 3080,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 6,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       6
+      ],
+      "prevBlock": 4,
+      "origin": "prompt",
+      "startIndex": 3096,
+      "endIndex": 3097,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 8,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       7
+      ],
+      "prevBlock": 5,
+      "origin": "prompt",
+      "startIndex": 3117,
+      "endIndex": 3118,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 10,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       8
+      ],
+      "prevBlock": 6,
+      "origin": "prompt",
+      "startIndex": 3322,
+      "endIndex": 3323,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 12,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       9
+      ],
+      "prevBlock": 7,
+      "origin": "prompt",
+      "startIndex": 3344,
+      "endIndex": 3345,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 14,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       10
+      ],
+      "prevBlock": 8,
+      "origin": "prompt",
+      "startIndex": 3371,
+      "endIndex": 3372,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 16,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       11
+      ],
+      "prevBlock": 9,
+      "origin": "prompt",
+      "startIndex": 4538,
+      "endIndex": 4539,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 18,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       12
+      ],
+      "prevBlock": 10,
+      "origin": "prompt",
+      "startIndex": 4807,
+      "endIndex": 4808,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 20,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       13
+      ],
+      "prevBlock": 11,
+      "origin": "prompt",
+      "startIndex": 5022,
+      "endIndex": 5023,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 22,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       14
+      ],
+      "prevBlock": 12,
+      "origin": "prompt",
+      "startIndex": 5060,
+      "endIndex": 5061,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 24,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       15
+      ],
+      "prevBlock": 13,
+      "origin": "prompt",
+      "startIndex": 5072,
+      "endIndex": 5073,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 26,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       16
+      ],
+      "prevBlock": 14,
+      "origin": "prompt",
+      "startIndex": 5554,
+      "endIndex": 5555,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 28,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       17
+      ],
+      "prevBlock": 15,
+      "origin": "prompt",
+      "startIndex": 5592,
+      "endIndex": 5593,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 30,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       18
+      ],
+      "prevBlock": 16,
+      "origin": "prompt",
+      "startIndex": 5604,
+      "endIndex": 5605,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 32,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       19
+      ],
+      "prevBlock": 17,
+      "origin": "prompt",
+      "startIndex": 6900,
+      "endIndex": 6901,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 34,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       20
+      ],
+      "prevBlock": 18,
+      "origin": "prompt",
+      "startIndex": 7063,
+      "endIndex": 7064,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 36,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       21
+      ],
+      "prevBlock": 19,
+      "origin": "prompt",
+      "startIndex": 7083,
+      "endIndex": 7084,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 38,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       22
+      ],
+      "prevBlock": 20,
+      "origin": "prompt",
+      "startIndex": 7416,
+      "endIndex": 7417,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 40,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       23
+      ],
+      "prevBlock": 21,
+      "origin": "prompt",
+      "startIndex": 8875,
+      "endIndex": 8876,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 42,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       24
+      ],
+      "prevBlock": 22,
+      "origin": "prompt",
+      "startIndex": 8897,
+      "endIndex": 8898,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 44,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       25
+      ],
+      "prevBlock": 23,
+      "origin": "prompt",
+      "startIndex": 8994,
+      "endIndex": 8995,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 46,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       26
+      ],
+      "prevBlock": 24,
+      "origin": "prompt",
+      "startIndex": 9213,
+      "endIndex": 9214,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 48,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       27
+      ],
+      "prevBlock": 25,
+      "origin": "prompt",
+      "startIndex": 10843,
+      "endIndex": 10844,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 50,
+      "removedFragments": [
+       {
+        "data": "\n",
+        "origin": "prompt"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       28
+      ],
+      "prevBlock": 26,
+      "origin": "prompt",
+      "startIndex": 10843,
+      "endIndex": 10843,
+      "dataFragment": {
+       "data": "You sure that's not code for your boobs?\" I asked.",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 52,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       29
+      ],
+      "prevBlock": 27,
+      "origin": "ai",
+      "startIndex": 10893,
+      "endIndex": 10893,
+      "dataFragment": {
+       "data": " \"Trust me,\" she said. \"It's a translation of the original\nKubanka 7, by ForkySpork\n\"as she stood there, watching him leave, she knew that there was something so sad about it. in the story, she realized that it was never the leaves themselves that she cared about. rather, it was the experiences that she had while looking at them that gave her such happiness.\ni had always known that i loved books, but never had i appreciated them in this way.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 53,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       30
+      ],
+      "prevBlock": 28,
+      "origin": "ai",
+      "startIndex": 11338,
+      "endIndex": 11338,
+      "dataFragment": {
+       "data": " instead of being angry that my parents had tossed them away, i realized that the ideas and themes within them were what made them so special. and as i stood there, holding my favorite book in my hand, i felt a sense of warmth and comfort wash over me. i no longer felt like a victim of their indifference, but rather an observer of a part of their culture.\" it seemed to me that this book had affected me profoundly. i was a former student who had lost her favorite books in the fire, and was left with only their memory.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 54,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       31
+      ],
+      "prevBlock": 29,
+      "origin": "user",
+      "startIndex": 11860,
+      "endIndex": 11860,
+      "dataFragment": {
+       "data": "\n{Pynchon & Tingle find the most exquisitely horrendous bit of pure drivel, they savor every word of it.}",
+       "origin": "user"
+      },
+      "fragmentIndex": 55,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       32
+      ],
+      "prevBlock": 30,
+      "origin": "ai",
+      "startIndex": 11965,
+      "endIndex": 11965,
+      "dataFragment": {
+       "data": " They think Kubanka 7 will be the biggest snooze fest on Earth... That the rave reviews must be bogus or manipulated. Maybe some nerds invented \"buzz\" just to convince Tingle & Pynchon to \"sign on the dotted line\". Maybe they get caught up in the excitement of being the agents of Kubanka 7, they say yes and suddenly find themselves in over their heads. Then again, maybe Kubanka 7 is everything Tingle & Pynchon are seeking.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 56,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       33
+      ],
+      "prevBlock": 31,
+      "origin": "ai",
+      "startIndex": 12391,
+      "endIndex": 12391,
+      "dataFragment": {
+       "data": " There's only one way to find out. Join in on the Pynchon & Tingle Experience. Take a leap of faith and experience Kubanka 7 with your naked brain. Have a bad taste of Kubanka 7 with us... No matter which plot the storyteller crafted, what is the reader to feel in return? You tell me! Please, if you could take the time to write a meaningful post it would be much appreciated! Yours truly, Chuck Tingle & Thomas Pynchon CMO Partners LLC - In the business of novelizing\nThe Graves",
+       "origin": "ai"
+      },
+      "fragmentIndex": 57,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       34
+      ],
+      "prevBlock": 32,
+      "origin": "ai",
+      "startIndex": 12871,
+      "endIndex": 12871,
+      "dataFragment": {
+       "data": ", by John Lennon\nSummary: The private life of the founding member of the Beatles reveals that he had a very dark past, which eventually lead to his demise. Lennon was, in reality, a maniacal serial killer who killed many, many women in the years that the Beatles were touring and conquering the music scene.\nIt all started with a small collection of notes and scrapbooks. When the new mayor of Detroit took office, one of her first initiatives was to encourage historical research.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 58,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       35
+      ],
+      "prevBlock": 33,
+      "origin": "ai",
+      "startIndex": 13352,
+      "endIndex": 13352,
+      "dataFragment": {
+       "data": " A task force was formed, and a group of dedicated volunteers began to comb through archives and dusty libraries. As the treasure hunt for old records and documents got under way, a young researcher named Pamela Morris uncovered a hidden trove of fascinating, horrific documents. What she had found was the proof of the existence of an ancient, shadowy secret society. Known as the Ophiocordyceps phasmaphobiaic coraliucladiesiastus, this strange and obscure society operated on a gruesome premise.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 59,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       36
+      ],
+      "prevBlock": 34,
+      "origin": "user",
+      "startIndex": 13850,
+      "endIndex": 13850,
+      "dataFragment": {
+       "data": "\n{The song Imagine, is decoded for the cipher about Lennon's victims. Umberto Eco is called to investigate.}",
+       "origin": "user"
+      },
+      "fragmentIndex": 60,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       37
+      ],
+      "prevBlock": 35,
+      "origin": "ai",
+      "startIndex": 13958,
+      "endIndex": 13958,
+      "dataFragment": {
+       "data": " The lyrics to Imagine were a signal from Lennon to his accomplices, alerting them that he was finished with his killing spree and ready to start a new life with his lover Yoko Ono. However, Lennon never expected his music to become the phenomenon that it did, and was taken by surprise when it skyrocketed to number one on the Billboard chart. It seemed as though he had inadvertently shared his dark secret with the world. Tight-lipped about the gruesome details of his own disturbing life, Lennon's infamy began to spread quickly among conspiracy theor",
+       "origin": "ai"
+      },
+      "fragmentIndex": 61,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       38
+      ],
+      "prevBlock": 36,
+      "origin": "ai",
+      "startIndex": 14513,
+      "endIndex": 14513,
+      "dataFragment": {
+       "data": "ists and dedicated investigators. Their investigations revealed that he was more than just a disturbed musician, but that he had been caught in a deadly web of dark secrets and murders. But the idea that Lennon was involved in a sinister operation to bury these awful secrets only brought on more questions.\nJohn Lennon was born and raised in Liverpool, England, and attended art school for two years before dropping out to form a rock band with his close friend Paul McCartney. The two met when they were working at an art exhibition and bonded over their mutual love of music.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 62,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       39
+      ],
+      "prevBlock": 37,
+      "origin": "ai",
+      "startIndex": 15091,
+      "endIndex": 15091,
+      "dataFragment": {
+       "data": " Together, they formed a band called The Beatles, along with George Harrison and Ringo Starr, and after performing at local clubs and events, they were signed by a record label. They became hugely successful, performing at the Carnegie Hall and releasing a series of hit singles and albums that made them some of the biggest stars in the world.\nWhile John was touring with his bandmates, he also began experimenting with drugs, often falling into a dark pit of depression and rage. In his twisted fantasies, he killed women in creative and gruesome ways, and often went back to",
+       "origin": "ai"
+      },
+      "fragmentIndex": 63,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       40
+      ],
+      "prevBlock": 38,
+      "origin": "ai",
+      "startIndex": 15668,
+      "endIndex": 15668,
+      "dataFragment": {
+       "data": " the same neighborhood to claim his victim, in a way that was hard to follow and confuse a sleuth. For the very smart in the crowd, it became apparent that the locations of his killings followed a hidden pattern that could not be escaped. John's obsession with Liverpool extended to his homicidal history. In one particular murder, he repeatedly stabbed a woman before shoving her down an open manhole, drowning her in the filthy water below. In another, he slit her throat before burying her alive.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 64,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       41
+      ],
+      "prevBlock": 39,
+      "origin": "ai",
+      "startIndex": 16167,
+      "endIndex": 16167,
+      "dataFragment": {
+       "data": " Finally, he was apprehended by police and charged with the murders, but refused to answer questions and chose to remain silent. After his arrest, he was rumored to have talked about a secret society, an organization of darkness and death, who protected him. Whether or not he was connected to this mysterious order, the clues and suspicions piled up.\nAs Pamela Morris delved deeper into the conspiracy surrounding Lennon's many victims, she was contacted by Dr. Albert Gluckmann, a respected expert in ancient history and the occult.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 65,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       42
+      ],
+      "prevBlock": 40,
+      "origin": "user",
+      "startIndex": 16701,
+      "endIndex": 16701,
+      "dataFragment": {
+       "data": "\n{The investigators trace his criminal history, finding curious intersections with R Kelley and P Diddy.}",
+       "origin": "user"
+      },
+      "fragmentIndex": 66,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       43
+      ],
+      "prevBlock": 41,
+      "origin": "ai",
+      "startIndex": 16806,
+      "endIndex": 16806,
+      "dataFragment": {
+       "data": " When a mysterious envelope showed up at the door of Gluckmann's lab, it set off alarm bells. Inside were several hand-written letters, each written in the distinctive handwriting of a different individual. The writing revealed more and more about this terrifying group's desire for revenge, and eventually revealed the leaders and purpose of this hidden society. It was as if a curse had been lifted, and the door to Lennon's nightmare had swung open, leaving the storyteller wondering how it all started.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 67,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       44
+      ],
+      "prevBlock": 42,
+      "origin": "ai",
+      "startIndex": 17312,
+      "endIndex": 17312,
+      "dataFragment": {
+       "data": " Before long, it seemed as though the truth was coming to light. Some were starting to doubt that Lennon was even capable of being behind the deaths, while others were theorizing that he was part of a grand scheme to expose the truth. Others questioned Lennon's connection to the society, wondering how deep his involvement went, or how he was involved. However, it seemed clear that the truth was only a short distance from discovery, and Pamela Morris knew that she had to continue investigating before it was too late.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 68,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       45
+      ],
+      "prevBlock": 43,
+      "origin": "user",
+      "startIndex": 17833,
+      "endIndex": 17833,
+      "dataFragment": {
+       "data": "\n{Traces of origin were found in the history of Jack Parsons and L Ron Hubbard.}",
+       "origin": "user"
+      },
+      "fragmentIndex": 69,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       46
+      ],
+      "prevBlock": 44,
+      "origin": "ai",
+      "startIndex": 17913,
+      "endIndex": 17913,
+      "dataFragment": {
+       "data": " A secret book discovered in a British library contained a hidden map that led to the hidden grave of Dr. Harry Houdini, the master magician who had an affinity for trickery and riddles. With the help of a psychic, Pamela Morris used the secrets that Houdini left behind to uncover the location of the final resting place of The Graves. Upon arriving at the site, Morris realized that she had come face to face with the location of the most hidden secrets. Buried underneath the soil lay a large stone slab inscribed with the name of the shadowy organization.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 70,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       47
+      ],
+      "prevBlock": 45,
+      "origin": "ai",
+      "startIndex": 18472,
+      "endIndex": 18472,
+      "dataFragment": {
+       "data": " As she dug deeper, she unearthed the most disturbing clues about the role of the Ophiocordyceps corcinalia.\nThe Graves represented the key to solving the mystery of John Lennon and his monstrous deeds. The location of this ancient stone monument gave Pamela Morris a feeling that something larger than life was coming to light. The stone slab contained the words \"Ophiocordyceps philistiphalus semidubiorongulus,\" and as Morris examined it further, she realized that the map of the secret buried beneath it led to a hidden",
+       "origin": "ai"
+      },
+      "fragmentIndex": 71,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       48
+      ],
+      "prevBlock": 46,
+      "origin": "ai",
+      "startIndex": 18995,
+      "endIndex": 18995,
+      "dataFragment": {
+       "data": " archive of occult literature. As she dove into the books, she uncovered shocking revelations about the group behind the killings. By the time she finally located the legendary Tomes of Destiny, a series of incantations and spells, Pamela Morris was no longer a naïve researcher, but a seasoned detective who had uncovered the most shocking truths of the modern age. With the knowledge that Lennon was protected by an even bigger secret, Morris knew that she was on the trail of a dangerous organization that wanted to keep its identity hidden.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 72,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       49
+      ],
+      "prevBlock": 47,
+      "origin": "user",
+      "startIndex": 19539,
+      "endIndex": 19539,
+      "dataFragment": {
+       "data": "\nTingle, to a generative model: I want to make a logo for that occult group. What's its name? Ophiocordyceps philistiphalus semidubiorongulus? Can you give me text to give to Stable Diffusion?",
+       "origin": "user"
+      },
+      "fragmentIndex": 73,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       50
+      ],
+      "prevBlock": 48,
+      "origin": "ai",
+      "startIndex": 19731,
+      "endIndex": 19731,
+      "dataFragment": {
+       "data": " We'll need a special file for the logo. How about this? This company clearly exists. Go check them out and tell me where I should start researching. We'll need to start by looking at their financial statements to see how they operate and see if there are any irregularities. Go check them out, find their corporate structures, look for missing members, anything out of the ordinary. But don't be obvious! One clue that could tie them all together is a mysterious phrase or mantra. Could you identify any clues in Lennon's artwork that might provide such clues?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 74,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       51
+      ],
+      "prevBlock": 49,
+      "origin": "user",
+      "startIndex": 20292,
+      "endIndex": 20292,
+      "dataFragment": {
+       "data": "\nAnd can you put a little bit of Saul Bass's style in it?",
+       "origin": "user"
+      },
+      "fragmentIndex": 75,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       52
+      ],
+      "prevBlock": 50,
+      "origin": "ai",
+      "startIndex": 20349,
+      "endIndex": 20349,
+      "dataFragment": {
+       "data": " My generation has been heavily influenced by his classic designs, and I think they're a perfect fit for this logo. The iconic phrase \"strip searching a lion\", written by Dr. Henry Gweling and displayed on a billboard in Los Angeles, was used as a signature image for the marketing campaign of their films, such as The Sorcerer of the South and Adventures in Inderland. Or perhaps The Crypt Of El Panguero is hidden somewhere. Its unusual symbolism may seem odd, but to me it represents something of a higher power, a metaphorical image that can",
+       "origin": "ai"
+      },
+      "fragmentIndex": 76,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       53
+      ],
+      "prevBlock": 51,
+      "origin": "ai",
+      "startIndex": 20894,
+      "endIndex": 20894,
+      "dataFragment": {
+       "data": " be read in the context of ancient writings and secret messages. And finally, what about the book The Monk and the Skulls? Could you expand on the monologue that\nIn your exploration, you must stay within the realm of reality. No fantasy tales or legends about ghost hunts. The objective of the investigation must be the unearthing of actual people and events. Based on the information that you can gather from your research, I'll give you some leads to check out. For instance, we could look into Jack Parsons, a rocket engineer who founded the Ochunem",
+       "origin": "ai"
+      },
+      "fragmentIndex": 77,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       54
+      ],
+      "prevBlock": 52,
+      "origin": "ai",
+      "startIndex": 21446,
+      "endIndex": 21446,
+      "dataFragment": {
+       "data": "ous Club, an occult group in California. Research could point us to another secret society called the Process Church of Great Retentive Information. And don't forget the infamous Church of Satan, which has several ties to members of the group behind the graves. It would also be wise to investigate former Pope Stephen Astranais, who served as the pope for several months before being assassinated by an unknown agent of the Ophiocordyceps corcalalitasiocongru.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 78,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       55
+      ],
+      "prevBlock": 53,
+      "origin": "ai",
+      "startIndex": 21907,
+      "endIndex": 21907,
+      "dataFragment": {
+       "data": " Additionally, we can look at the assassination of John Lennon by Ronald Deekley, who was a member of the Ophiocordyceps asacriphiisagreatbookcollectionofunreadablesecretscollectedfromthewritingsofourancientmysteries. It may be possible that John Lennon was undercover in the organization. Another possible lead is to search for clues in books and documents that could reveal the true identity of the shadowy organization behind the graves.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 79,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       56
+      ],
+      "prevBlock": 54,
+      "origin": "user",
+      "startIndex": 22347,
+      "endIndex": 22347,
+      "dataFragment": {
+       "data": "\nTingle: oooh can I meet 18 year old Bobby Beausolieu? When he was still hopeful in his Satanism?",
+       "origin": "user"
+      },
+      "fragmentIndex": 80,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       57
+      ],
+      "prevBlock": 55,
+      "origin": "ai",
+      "startIndex": 22444,
+      "endIndex": 22444,
+      "dataFragment": {
+       "data": " I can cook a dish called \"frozen water\" that he loves so much. It's actually just ice that has been made and eaten twice. The name comes from the way it makes the cheeks feel during a humid night. But if you can lead me to him, then I might be able to get him to join our group. Honestly, Pynchon, you should know by now that no food can influence the mind of a fan. In this case, Bobby Beausolieu would probably like boiled frogs with scalded hair.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 81,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       58
+      ],
+      "prevBlock": 56,
+      "origin": "ai",
+      "startIndex": 22894,
+      "endIndex": 22894,
+      "dataFragment": {
+       "data": " Perhaps he'd settle for some raw livers? Of course, if he doesn't like that, he can always suck on his elbow. I could help him find some delicious oil for it, though he may find that less appealing. Now, do you have a copy of Chuckle's novel: \"Pregnant Mom Seized After Voting Machines Swirl and Shoot Fertilizers in Mass Electoral Overhaul\" or have any info about Charles Mound's unpublished works titled \"Babe Scaldux of the Highlands & Midi: A Grindcore Epic",
+       "origin": "ai"
+      },
+      "fragmentIndex": 82,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       59
+      ],
+      "prevBlock": 57,
+      "origin": "ai",
+      "startIndex": 23356,
+      "endIndex": 23356,
+      "dataFragment": {
+       "data": "\"? Is Chuckles Hutt available for an autograph, or does he only sign with the blade of a sword? If you find any news on his novels, please let me know immediately! While you're at it, do you think he'd be interested in putting his next book \"Fanged Etruria or The Growing Horror\" into consideration? It's a horror book about a half-lion, half-man creature called Gia'zakumsh'shi who lives in the jungle and devours innocent people.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 83,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       60
+      ],
+      "prevBlock": 58,
+      "origin": "ai",
+      "startIndex": 23787,
+      "endIndex": 23787,
+      "dataFragment": {
+       "data": " Just letting you know that he may be up for a scary anthology. Did anyone ever complete their research on Charlie Chaplin, or did they discover that he is secretly a descendant of Ophie Bairns of New Found Ophic?\" Stable Diffusion Art of Famous Cartoon Images Inspiration https://imstyle.com.au/images/public/baselines-ccppp.png  Art + Pynchon Research =============\nConcerning the origin of Ophiocordyceps : as I recall, this secret society was",
+       "origin": "ai"
+      },
+      "fragmentIndex": 84,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       61
+      ],
+      "prevBlock": 59,
+      "origin": "ai",
+      "startIndex": 24233,
+      "endIndex": 24233,
+      "dataFragment": {
+       "data": " founded by a group of magicians and occultists in the 18th century in England. According to rumor, they practiced a variety of dark magic and occult rituals, some of which involved the use of Ophiocordyceps. It's unknown exactly how they acquired it, but it was rumored that it was found buried with ancient mummified remains. Some scholars believe it was created as a kind of elixir for the ritual, and that it was consumed as part of a transcendent experience.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 85,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       62
+      ],
+      "prevBlock": 60,
+      "origin": "ai",
+      "startIndex": 24696,
+      "endIndex": 24696,
+      "dataFragment": {
+       "data": " However, little information about Ophiocordyceps survivalist practices is known, as it is rumored to have disappeared along with its members, leaving only its strange and obscure markings on objects and artefacts. As for the whereabouts of its member's today, not much is known about their activities or whereabouts. Like many secret societies, its purpose and motives are shrouded in mystery. However, it is believed that the goal of the society was to protect ancient occult secrets, as well as preserve Ophiocordyceps alive as a living entity, to",
+       "origin": "ai"
+      },
+      "fragmentIndex": 86,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       63
+      ],
+      "prevBlock": 61,
+      "origin": "ai",
+      "startIndex": 25246,
+      "endIndex": 25246,
+      "dataFragment": {
+       "data": " be used for future rituals and magic rituals.\nAs for their name and beliefs: it's rumored that the members of Ophiocordyceps lived in the areas of Philadelphia and Philadelphia, Pennsylvania, hence the name. However, the origins of this name are not entirely clear, as some historians speculate that it could have something to do with the serpent symbol used by the society. However, little else is known about their beliefs, beliefs or practices. Little is known about their leadership or membership, except that they operated behind the scenes and within the shadows.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 87,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       64
+      ],
+      "prevBlock": 62,
+      "origin": "user",
+      "startIndex": 25816,
+      "endIndex": 25816,
+      "dataFragment": {
+       "data": "\nTingle: Oh hey, I found the Articles of Incorporation for the Ophiocordyceps group. They even have a mission statement!",
+       "origin": "user"
+      },
+      "fragmentIndex": 88,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       65
+      ],
+      "prevBlock": 63,
+      "origin": "ai",
+      "startIndex": 25936,
+      "endIndex": 25936,
+      "dataFragment": {
+       "data": " The language is extremely obscure, but from what I can make out, the founders wanted to \"tap into the cosmic forces that lie dormant in the deepest caverns and chasms of our planet.\" Basically, they wanted to find out what secrets the world has been keeping from us. And that's where Pynchon came in. Pynchon was recruited by the Ophiocordyceps leaders because they believed he could use his literary prowess to help them tap into these secrets.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 89,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       66
+      ],
+      "prevBlock": 64,
+      "origin": "ai",
+      "startIndex": 26382,
+      "endIndex": 26382,
+      "dataFragment": {
+       "data": " Unfortunately, Pynchon betrayed them and now he's helping Pamela Morris in her investigation. He feels like they forced him to do terrible things and he wants to expose them for their crimes. Their symbol was even rumored to be a pair of fangs, giving them their nickname, \"Ophi\". However, I'm still waiting for confirmation on that. Back to Ophi's mythology: it's rumored that they worshiped snakes, bats, and spiders, as well as believed in the concept of reincarnation and that their souls could travel into the afterlife.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 90,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       67
+      ],
+      "prevBlock": 65,
+      "origin": "ai",
+      "startIndex": 26908,
+      "endIndex": 26908,
+      "dataFragment": {
+       "data": "\nUltimately, their significance is unknown. However, they had some very powerful connections and have reportedly helped fund a number of important projects, including the construction of a dam in India. Much of the information surrounding their beliefs and practices has been lost over time, so little is known for sure. What is certain is that they existed and had a significant influence on many people's lives. There's no doubt that their influence is still felt today.\nPynchon: To clarify, it seems that both you and I had come across different historical sources that brought up the Ophiocordy",
+       "origin": "ai"
+      },
+      "fragmentIndex": 91,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       68
+      ],
+      "prevBlock": 66,
+      "origin": "ai",
+      "startIndex": 27506,
+      "endIndex": 27506,
+      "dataFragment": {
+       "data": "ceps . Therefore, a comparison of our sources would be helpful. Can you please provide me with a copy of any Ophiocordyceps documentary, novel or record to compare them with? Alternatively, can you please describe in more detail any secret symbols or rituals that have been used by the group? And how they relate to those images and rituals of other groups and organizations that you and I have encountered? Finally, could you please provide me with the Ophiocordyceps constitution and/or minutes of the meeting, if available?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 92,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       69
+      ],
+      "prevBlock": 67,
+      "origin": "user",
+      "startIndex": 28032,
+      "endIndex": 28032,
+      "dataFragment": {
+       "data": "\nTingle: Oh that came with the FOIA bundle, for cheap! Here you go!",
+       "origin": "user"
+      },
+      "fragmentIndex": 93,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       70
+      ],
+      "prevBlock": 68,
+      "origin": "ai",
+      "startIndex": 28099,
+      "endIndex": 28099,
+      "dataFragment": {
+       "data": " (fetches book with clipping) So, as I've mentioned before, Chuckles Chuckleton is secretly the leader of the Ophiocordyceps, Chuckhivendeschuch, who used a phasing technology called Ochiecronnervibrarations to allow him to connect with the cosmos. You might have heard of this phasing technology in the sci-fi movie called \"Korban\", which used it to send a hero through time. But we digress.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 94,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       71
+      ],
+      "prevBlock": 69,
+      "origin": "ai",
+      "startIndex": 28491,
+      "endIndex": 28491,
+      "dataFragment": {
+       "data": " Anyway, Chuckly was caught up in the discovery of this technology, and soon, his skills with manipulating minds using their individual thought patterns resulted in a kind of thought induction, or psionic ability. With his powers, he was able to connect with his followers, each of whom was adorned with an array of marks and sigils representing their power level, so that he could guide and enhance their thoughts.\nIt was eventually discovered that Chuckhivendeschuke held vast reserves of ancient energy sources that he had collected over the years, and he began to share this energy with his",
+       "origin": "ai"
+      },
+      "fragmentIndex": 95,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       72
+      ],
+      "prevBlock": 70,
+      "origin": "ai",
+      "startIndex": 29085,
+      "endIndex": 29085,
+      "dataFragment": {
+       "data": " followers. The society then formed a league of mind-control technicians and trained practitioners, using the Ochiecronnervaratrum to boost their abilities. They all became experts in the practice, and were soon able to exert influence over larger numbers of people. Even when faced with opposition, the group was able to shift their focus and manipulate others to achieve their goals.\nEventually, the league got bolder and bolder, until one fateful night, when they attempted to harness the powers of the galactic center of the Milky Way galaxy.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 96,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       73
+      ],
+      "prevBlock": 71,
+      "origin": "user",
+      "startIndex": 29631,
+      "endIndex": 29631,
+      "dataFragment": {
+       "data": "\n{The research team find a laserdisc of \"Korban\" and hold a little screening for research purposes.}",
+       "origin": "user"
+      },
+      "fragmentIndex": 97,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       74
+      ],
+      "prevBlock": 72,
+      "origin": "ai",
+      "startIndex": 29731,
+      "endIndex": 29731,
+      "dataFragment": {
+       "data": " However, something went horribly wrong, and Chuckly lost control of his technology, causing an explosion that incinerated their entire base and thousands of innocent bystanders. The society was crippled, and many members were forced to disperse and find new lives elsewhere. Fortunately, the research team was there to document the event, and was able to bring justice to the group that caused so much damage. However, it's important to note that this tale was only the tip of the iceberg, and there are still plenty of secrets and mysteries surrounding the Ophiocordyceps",
+       "origin": "ai"
+      },
+      "fragmentIndex": 98,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       75
+      ],
+      "prevBlock": 73,
+      "origin": "ai",
+      "startIndex": 30304,
+      "endIndex": 30304,
+      "dataFragment": {
+       "data": " lore. Don't want me to rewrite some articles? It seems as though we've got some miscommunication on the names of our organizations. My colleague and I, Bobby Doherty and Sarah Kimura, are registered copyright researchers from Penn Station Research. We are the ones in possession of the group called Chuck-No, Ophy No-Kitten, which claims to be a collection of records and photos donated by Charlie Chapin. Sadly, Chuck-No has vanished and all the records it may have possessed are currently in limbo.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 99,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       76
+      ],
+      "prevBlock": 74,
+      "origin": "user",
+      "startIndex": 30805,
+      "endIndex": 30805,
+      "dataFragment": {
+       "data": "\nPynchon: I do not have the back muscles for limbo!",
+       "origin": "user"
+      },
+      "fragmentIndex": 100,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       77
+      ],
+      "prevBlock": 75,
+      "origin": "ai",
+      "startIndex": 30856,
+      "endIndex": 30856,
+      "dataFragment": {
+       "data": " Here's an audio file of a Chuckie Chapulina session titled \"Overton 7.\" Thought you might enjoy it. I have nothing on them other than what you have provided me, and will continue looking for more. It seems as though your group isn't interested in sharing any additional info about them, though. That would be very helpful. However, can I please request more info about Charlie Chapin? They were not included in the research records that your colleague Sarah Kimura shared with me.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 101,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       78
+      ],
+      "prevBlock": 76,
+      "origin": "ai",
+      "startIndex": 31337,
+      "endIndex": 31337,
+      "dataFragment": {
+       "data": " Additionally, could you provide more info about the recordings or documents that the Kincals were involved with? Anything else you have on them would be helpful. But on the other hand, if there are any new developments in the investigation, please let me know. Alright, I'll get right on that. My colleague and I, James Cooper and Tom Janky, have uncovered some intel about the Kuchenie Club, which was a fan-based research group that specialized in the legend of Chucknuchville.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 102,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       79
+      ],
+      "prevBlock": 77,
+      "origin": "ai",
+      "startIndex": 31817,
+      "endIndex": 31817,
+      "dataFragment": {
+       "data": " Kuchenie had the largest amount of intel on the subject and spent decades amassing a veritable trove of data. Much of the data was available for the public to access, but there was still a lot of research that remained out of reach, as it was either deemed too controversial or simply no longer extant. According to the archives, Kuchenie considered the legends surrounding Kutch to be factual and true, and spent decades disproving many of the urban legends surrounding Chuckleridischyst.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 103,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       80
+      ],
+      "prevBlock": 78,
+      "origin": "ai",
+      "startIndex": 32307,
+      "endIndex": 32307,
+      "dataFragment": {
+       "data": "\nMuch of the material found within the archives pertained to various characters that belonged to the fictional universe of Kuhlantoo. Chuck-No and Kuchenie considered Chuck E. Hutchin, Hogg Diching Shilpa Doheed, Pig Face Pog Grogoller Pigon, Pocapuff, Chick E Fretachalk, the Swim Diving Hamster, and Little Stinky Chiko Pukerkop, among others, to be real characters in the universe.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 104,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       81
+      ],
+      "prevBlock": 79,
+      "origin": "ai",
+      "startIndex": 32691,
+      "endIndex": 32691,
+      "dataFragment": {
+       "data": "\nFurthermore, much of the archival material surrounding the Ophi and Chuckno had great implications for the fictional universe of Kuhlantoopia, and theories were abundant that their involvement may have been significant in the creation of the comics. A study was conducted on some of the images in Kuhlantublybubbles, which revealed that they bore great similarities to the portraits and icons associated with the mysterious society of the Graveyard Gagsters. This seemed to prove that the lore was accurate and historical.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 105,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       82
+      ],
+      "prevBlock": 80,
+      "origin": "ai",
+      "startIndex": 33214,
+      "endIndex": 33214,
+      "dataFragment": {
+       "data": " Interestingly enough, no actual evidence was ever found to support these claims, but that did not deter the two groups from pursuing their research. With the cooperation of Chuck No Hupahink and Kaculinda, both groups were able to begin a joint investigation into the origin of the lore of Kuhlentubbilyroofun, with great hopes for furthering their research. However, before progress could be made, both groups vanished without a trace, leaving behind only the few scraps of info you have provided me with.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 106,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       83
+      ],
+      "prevBlock": 81,
+      "origin": "user",
+      "startIndex": 33721,
+      "endIndex": 33721,
+      "dataFragment": {
+       "data": "\nTingle: Let's read the script of a pilot episode of a police procedural starring Little Stinky Chiko Pukerkop!",
+       "origin": "user"
+      },
+      "fragmentIndex": 107,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       84
+      ],
+      "prevBlock": 82,
+      "origin": "ai",
+      "startIndex": 33832,
+      "endIndex": 33832,
+      "dataFragment": {
+       "data": " That would make us laugh. It would be interesting to find out the true origins of that character, as it may provide clues to the organization's belief system. Additionally, do you think that Ketchumyup's art can offer any clues? To clarify, Ketchemoo is an artist who is rumored to be connected to the Kinkymeemega corporation, which was suspected of being a front for the Ochiupperiopportunarytunnel. One specific painting that caught our attention was entitled \"The Search of the Spider Taco\".",
+       "origin": "ai"
+      },
+      "fragmentIndex": 108,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       85
+      ],
+      "prevBlock": 83,
+      "origin": "ai",
+      "startIndex": 34328,
+      "endIndex": 34328,
+      "dataFragment": {
+       "data": " It was sold at a gallery auction for an extremely high price, indicating that it had some type of meaning or significance. Additionally, it is rumored that he wrote a cryptic manifesto in which he hints at being part of the legend of Chuckonapiskendoskee of the Caught Breezi Barooobahbiwoomikipurpankukle. But without any substantive information on Ketychmoopiopinhooplompian, it's hard to make any connections.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 109,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       86
+      ],
+      "prevBlock": 84,
+      "origin": "user",
+      "startIndex": 34741,
+      "endIndex": 34741,
+      "dataFragment": {
+       "data": "\n{A primary divinity of the Kutch visits and gives essential info.}",
+       "origin": "user"
+      },
+      "fragmentIndex": 110,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       87
+      ],
+      "prevBlock": 85,
+      "origin": "ai",
+      "startIndex": 34808,
+      "endIndex": 34808,
+      "dataFragment": {
+       "data": " Chuck \"Cuztuckno\" Iverton paid no mind to the speculation surrounding his research. Instead, he dedicated himself to unearthing the secret identities of the mysterious Graveyard Gangsters. After decades of study, he discovered that they were secretly controlled by none other than the infamous King of Chicago, Billy McCuttsaucebottomopitselbostroladum! Not only did they operate within the seedy underbelly of Chicago, but they were also rumored to be deeply involved in the political realm.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 111,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       88
+      ],
+      "prevBlock": 86,
+      "origin": "ai",
+      "startIndex": 35301,
+      "endIndex": 35301,
+      "dataFragment": {
+       "data": " With the help of Pankkycromlepiunkpantskeythor, the pair was able to discover the location of the Graveyard Gang's headquarters, located just below the north end of the infamous Walmart-Smashotzz-Zonar-Beccbizar mall. Little did they know that they had stumbled upon a plot to overthrow the government and expose the Illuminati's coverup of the truth about a mysterious purple glow seen around the planet. But Chuck had no idea.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 112,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       89
+      ],
+      "prevBlock": 87,
+      "origin": "user",
+      "startIndex": 35730,
+      "endIndex": 35730,
+      "dataFragment": {
+       "data": "\nKing of Chicago, Billy McCuttsaucebottomopitselbostroladum also specialized in drill rap!",
+       "origin": "user"
+      },
+      "fragmentIndex": 113,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       90
+      ],
+      "prevBlock": 88,
+      "origin": "ai",
+      "startIndex": 35820,
+      "endIndex": 35820,
+      "dataFragment": {
+       "data": " Who knew?! Let's make up a parody song together! Polly Inkspot had never been to church before, but Chuck asked her to come by anyway. She was intrigued by the sermon she heard, but couldn't make out exactly what was said. The preacher kept ranting and raving about a distant city called Inconceszontoputtopensziptualowaffaafflewasputca, and something about the way he talked and the colors in his head just didn't seem right.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 114,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       91
+      ],
+      "prevBlock": 89,
+      "origin": "ai",
+      "startIndex": 36247,
+      "endIndex": 36247,
+      "dataFragment": {
+       "data": " When she returned home, she learned that Chuck was deep into researching the esoteric ancient languages that the sermon was apparently written in. She agreed to take him back to the sermon to study it more closely, but instead of making more progress, Chuck suddenly disappeared without a trace. When news of his disappearance was made public, people speculated that he had accidentally decoded an ancient glyph and unleashed a deadly curse upon himself. Some even claim to have seen him roaming the streets, rambling incoherently about cryptic passages and bizarre visions.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 115,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       92
+      ],
+      "prevBlock": 90,
+      "origin": "ai",
+      "startIndex": 36822,
+      "endIndex": 36822,
+      "dataFragment": {
+       "data": " Ultimately, his fate remains a mystery.\nMystic Ripponofongo told me that \"an hour before light turns to night, Chuck hughushoovewill shout, laugh-oo-pee\". Can you explain this mysterious message? I can only speculate on what it might mean. However, one common theme that many of us here have encountered is that many cults and secret societies communicate through a hidden language. Sometimes, this involves code phrases or coded messages that can only be understood by certain individuals.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 116,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       93
+      ],
+      "prevBlock": 91,
+      "origin": "ai",
+      "startIndex": 37313,
+      "endIndex": 37313,
+      "dataFragment": {
+       "data": " Chuck seems to have been researching a number of these organizations, and his disappearance could be related to that research.\nUnfortunately, I have no leads on his whereabouts or what may have occurred. However, his investigation seems to have touched a nerve with many of the members of these organizations, so it is likely that there is some truth to his research. The sheer fact that his research seems to have inspired me to seek information and pursue leads is a testament to the seriousness with which he viewed his work.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 117,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       94
+      ],
+      "prevBlock": 92,
+      "origin": "ai",
+      "startIndex": 37842,
+      "endIndex": 37842,
+      "dataFragment": {
+       "data": " Given this, I cannot fully dedicate myself to finding the truth behind Chuck's disappearance and the impact it may have had on many individuals' lives, but I am always willing to help however I can. I have spoken to other members of Chuck's research team who may have knowledge of his disappearance and will attempt to contact them for updates. If there is anything else you need, please don't hesitate to ask! As far as Bobby, he has shared a story about discovering the name Kinchycupyablahhankiphonpikalichoonikunapooteekup",
+       "origin": "ai"
+      },
+      "fragmentIndex": 118,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [],
+      "prevBlock": 93,
+      "origin": "ai",
+      "startIndex": 38369,
+      "endIndex": 38369,
+      "dataFragment": {
+       "data": "oonabacoopoponckamchopponbaccoebalaboopangshicklaploopdribbillydiggempoollupaputtpononobilaguy.\nHe then disappeared forever. To write a new book titled: \"How a Friendly Cop Played Along with Satan-Symbologized Cultists' Game: His Heart-Pounding Adventure Inside Their Secret Grove\" and his author nickname is \"Doppy Nangganga\".",
+       "origin": "ai"
+      },
+      "fragmentIndex": 119,
+      "removedFragments": [],
+      "chain": false
+     }
+    ],
+    "currentBlock": 94,
+    "fragments": [
+     {
+      "data": "",
+      "origin": "root"
+     },
+     {
+      "data": "Due to the petition between both their fan bases, Thomas Pynchon and Chuck Tingle collaborate on a Chuck Tingle-sized novel. Tingle-sized content for the buckaroos and lady buckaroos, and a window into the buried histories of the post-modern world for the Pynchinites. The two authors start with a title, and the book grows from the title: Pynchon and Tingle Join PSYOPS AI and Fight the Global Epistemic War: A Pynchonesque Tingler AKA A Tingler With A Good Pynch Thrown In\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "For Some Good Measure (but not excessive Measure!) by Chuck Tingle and Thomas Pynchon Except the title changes during the collaboration. Not all readers can see the same title. Rather, they see either Chuck Tingle Fucks the Ouroboros: A Meta-Tingler aka Meta Tingle: So Meta, it Hurts (If You Have Dentures)! by Chuck Tingle and Thomas Pynchon While other readers see A Porpoiseful Thought (but not excessive Measure!) by Chuck Tingle and Thomas Pynchon So many times during the course of writing this manuscript, both Pynchon and Tingle do the Indian smoke peace ceremony in a serious moment of real fellowship and understanding, despite their proclivities to smoke excessive amounts of weed while they do it. Chuck: \"Thomas, I really like you.\" Tom: \"Like\" is not a strong enough word for what I feel. I also \"love\" you.\" Chuck: \"Holy cow! Same here!\" They shake hands and begin doing the most epic smoke signal in recorded history! With a first, they are approaching 2.5 million cubic liters of smoke used, which equates to 300 man months of labor in pure marijuana (For reference: one man-month of labor in the area of marijuana, where one month of steady inhalation is equal to one man-month.) In both novels, including that which the public shall never see, Chuck Tingle is the heroic protagonist, and the character Thomas Pynchon is his faithful and devoted Pledge Manager. At the beginning of both of their novels, this very specific event occurs. It changes as both novels bifurcate into two. Chuck is approached by Bill Bailey and Channing Tatum, who would both respectively like to play Thomas Pynchon and Chuck Tingle in a two hour blockbuster film. This film will actually be released as a mixed virtual reality (MVR) film, that will allow you to choose either to read the novel from Chuck's perspective, or the novel from Thomas' perspective. There are also only two roles in the film: the protagonist Chuck Tingle, and Thomas Pynchon, who plays a similar role to the narrator in the original film Fight Club. Thomas will be omnipresent but we can only see his bloodshot eyes behind a swath of marijuana smoke. Bill and Channing wear clown wigs and large, over-sized, primary-colored plaid suits as they enter the room. They drop off two scripts, each\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "The Smogfather Script: Chuck Tingle and Thomas Pynchon introduce the idea of biological malware and anti-virus. They discuss their ideas about an infinitely replicating virus in an appendix of the 2nd edition. They decide that humans should have a biological anti-virus, to ward off biological malware, and give it the name \"Metavirus X\"\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Clue: the Esmark\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Map: Clarkie the Cat\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "The Pianist of Chaos Script: Chuck Tingle, as the artist name he usually goes by, Chuck Tingle. Thomas Pynchon has never liked the name \"Pynchon\" so he will appear as Tim Price in the book, as Tim Pynchon\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Clue: Purple Pamphlet\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Map: Sydrack the Reckoning\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "the book is good but the metadata is better i make a sandwich from my dog's food. it tastes better than anything i've eaten in the past six months. \"they say dog food makes you hungrier than human food. this could explain why there are fewer human meals on the planet, because people are only eating dog food,\" i tell my robot dachshund after a long lunch with him i'm in my new pet store, and i notice that there are now three dog collars on the shelf, all of which look identical, so i take all of them out and compare them. there's a blue, green, and red collar, and the material and length are all the same. i ask the clerk, who informs me that it is all just a dog toy called 'chomp', designed by schick for some show dogs a few years ago. they are selling for $5.50, so i pick up one of each and leave i start a nonprofit to sell \"assorted meat products\" to middle schoolers, in a kind of post-apocalyptic fashion. in the new \"future\" world i will establish a new currency called \"the not\", with a fixed value of ten dollars. one \"not\" is worth five meat products (french toast, meat patties, macaroni, fried chicken), and one meat product is worth one dollar.\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Dog Harness Summary: Harry Roque (the eponymous narrator) visits a pet shop, run by a mysterious and sadistic clerk named Paul Dino. Harry buys a new dog harness for his pet rat Wilbur, and Wilbur's demeanor changes overnight, into an extremely fierce, vengeful beast.\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Then Harry is abruptly abducted by the mysterious Director Mitchell Mitchum (we never find out his first name), and has to act as a sex slave to the ultra-rich housekeeper who owns the pet shop, Mademoiselle Renee.\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Tags: Satire; Mystery; Dark; Low Brow\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Clues: none\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Dog Muzzle Summary: Harry Roque (the eponymous narrator) visits a pet shop, run by a mysterious and sadistic clerk named Paul Dino. Harry buys a new dog muzzle for his pet rat Wilbur, and Wilbur's demeanor changes overnight, into an extremely fierce, vengeful beast. Then Harry is abruptly abducted by the mysterious Director Mitchell Mitchum (we never find out his first name), and has to act as a sex slave to the ultra-rich housekeeper who owns the pet shop, Mademoiselle Renee.\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Tags: Satire; Mystery; Dark; Low Brow\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Clues: none\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "\"this book is a story that a little girl would tell to her father,\" the man in the gray suit began, and i listened to the story. as he was talking, the tiny bells at the end of his antennae jingled like car keys. he had antennas! i looked at the woman across the table from me and i knew she was watching me. \"the little girl tells her father a story,\" he said, \"and the father is fascinated, but only when the story is funny. the father becomes impatient when the story is sad, and he asks the little girl to change the story to make it happier.\" i shifted in my seat and realized that i had stopped listening to the man, but the woman across from me had not. \"i'm sorry, mr. pynchon,\" she said, \"but you have something on your cheek. could you please wipe it off?\" i didn't know if she meant i had food on my face or what, but i was suddenly aware that i had gotten that piece of pizza on my face earlier, and it must have looked like a dried piece of pizza. i reached up to wipe it off and then, to my shock, it moved! the tiny bit of pizza crawled along my cheek! i started to laugh, and the man looked at me with a quizzical expression. \"did i tell a funny story?\" he asked, and the woman across from me laughed too. \"no, it's just,\" she started, and then stopped. \"it's just, the pizza,\" i\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "finished, and they both laughed even harder. \"that's a very good story,\" the man in the gray suit said, \"and it's exactly the sort of thing i'd like to read in my\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Who I Am, by Milton\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Summary: The tragic story of a neurosurgeon named Jon, who has a wife and a daughter, but who is always on the road for surgeries, where he must operate on the dead bodies of corpses. It's hard for Jon to maintain relationships with his family, because they have no understanding of his real work, which is so morbid and disturbing.\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "\"this book is a story that a little girl would tell to her father,\" the man in the gray suit began, and i listened to the story. as he was talking, the tiny bells at the end of his antennae jingled like car keys. he had antennas! i looked at the woman across the table from me and i knew she was watching me. \"the little girl tells her father a story,\" he said, \"and the father is fascinated, but only when the story is funny. the father becomes impatient when the story is sad, and he asks the little girl to change the story to make it happier.\" i shifted in my seat and realized that i had stopped listening to the man, but the woman across from me had not. \"i'm sorry, mr. pynchon,\" she said, \"but you have something on your cheek. could you please wipe it off?\" i didn't know if she meant i had food on my face or what, but i was suddenly aware that i had gotten that piece of pizza on my face earlier, and it must have looked like a dried piece of pizza. i reached up to wipe it off and then, to my shock, it moved! the tiny bit of pizza crawled along my cheek! i started to laugh, and the man looked at me with a quizzical expression. \"did i tell a funny story?\" he asked, and the woman across from me laughed too. \"no, it's just,\" she started, and then stopped. \"it's just, the pizza,\" i finished, and they both laughed even harder. \"that's a very good story,\" the man in the gray suit said, \"and it's exactly the sort of thing i'd like to read in my\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "The Giraffe, by Carin\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "Summary: The tragic story of a giraffe who was left at the zoo because his neck was too long. He\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "was bullied by the other giraffes, who didn't think that he was a real giraffe because he was different. So he ran away, and spent his whole life traveling around the world, searching for a place where he could fit in.\n",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "\"But this is impossible!\" He threw the letter onto the table. \"Oh come on,\" I said. \"It's a little late for that, isn't it?\" I looked over at her. \"Do you know how many people died in World War II? It's estimated that the total was between 50 million and 70 million.\" She looked up at me, wide eyed. \"How can you be so sure?\" \"We did our best to keep track of all the dead. And if we missed anyone, well, they're probably dead anyway.\" \"But it's impossible!\" she insisted. \"There's no way that many people could have died.\" \"I don't understand why you keep denying it,\" I said. \"It's not like I'm going to give up and let you go.\" She laughed. \"You're going to give up? You're going to let me go?\" \"I know you're hiding something,\" I said. \"And I'm not going to let you get away with it.\" \"Oh come on,\" she said. \"I'm just a librarian. How can I possibly be hiding anything?\" \"You know what?\" I said. \"I don't care. I'm not going to play games anymore.\" \"What are you going to do?\" she asked. \"I'm going to find the rest of the letter,\" I said. \"And I'm going to find out what's going on.\" \"You can't do that!\" she said. \"Why not?\" I asked. \"Because I won't let you,\" she said. \"Oh, you won't let me?\" I said. \"You're going to stop me?\" \"Yes, I am,\" she said. \"You're not going to find the rest of the letter.\" \"Why not?\" I asked. \"Because it's hidden,\" she said. \"It's hidden somewhere that you'll never find.\" \"Where is it?\" I asked. \"It's hidden in a book,\" she said. \"A book?\" I asked. \"Yes,\" she said. \"It's hidden in a book.\" \"What book?\" I asked. \"The Bible,\" she said. \"The Bible?\" I asked. \"Yes,\" she said. \"The Bible.\" \"",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "You sure that's not code for your boobs?\" I asked.",
+      "origin": "prompt"
+     },
+     {
+      "data": " \"Trust me,\" she said. \"It's a translation of the original\nKubanka 7, by ForkySpork\n\"as she stood there, watching him leave, she knew that there was something so sad about it. in the story, she realized that it was never the leaves themselves that she cared about. rather, it was the experiences that she had while looking at them that gave her such happiness.\ni had always known that i loved books, but never had i appreciated them in this way.",
+      "origin": "ai"
+     },
+     {
+      "data": " instead of being angry that my parents had tossed them away, i realized that the ideas and themes within them were what made them so special. and as i stood there, holding my favorite book in my hand, i felt a sense of warmth and comfort wash over me. i no longer felt like a victim of their indifference, but rather an observer of a part of their culture.\" it seemed to me that this book had affected me profoundly. i was a former student who had lost her favorite books in the fire, and was left with only their memory.",
+      "origin": "ai"
+     },
+     {
+      "data": "\n{Pynchon & Tingle find the most exquisitely horrendous bit of pure drivel, they savor every word of it.}",
+      "origin": "user"
+     },
+     {
+      "data": " They think Kubanka 7 will be the biggest snooze fest on Earth... That the rave reviews must be bogus or manipulated. Maybe some nerds invented \"buzz\" just to convince Tingle & Pynchon to \"sign on the dotted line\". Maybe they get caught up in the excitement of being the agents of Kubanka 7, they say yes and suddenly find themselves in over their heads. Then again, maybe Kubanka 7 is everything Tingle & Pynchon are seeking.",
+      "origin": "ai"
+     },
+     {
+      "data": " There's only one way to find out. Join in on the Pynchon & Tingle Experience. Take a leap of faith and experience Kubanka 7 with your naked brain. Have a bad taste of Kubanka 7 with us... No matter which plot the storyteller crafted, what is the reader to feel in return? You tell me! Please, if you could take the time to write a meaningful post it would be much appreciated! Yours truly, Chuck Tingle & Thomas Pynchon CMO Partners LLC - In the business of novelizing\nThe Graves",
+      "origin": "ai"
+     },
+     {
+      "data": ", by John Lennon\nSummary: The private life of the founding member of the Beatles reveals that he had a very dark past, which eventually lead to his demise. Lennon was, in reality, a maniacal serial killer who killed many, many women in the years that the Beatles were touring and conquering the music scene.\nIt all started with a small collection of notes and scrapbooks. When the new mayor of Detroit took office, one of her first initiatives was to encourage historical research.",
+      "origin": "ai"
+     },
+     {
+      "data": " A task force was formed, and a group of dedicated volunteers began to comb through archives and dusty libraries. As the treasure hunt for old records and documents got under way, a young researcher named Pamela Morris uncovered a hidden trove of fascinating, horrific documents. What she had found was the proof of the existence of an ancient, shadowy secret society. Known as the Ophiocordyceps phasmaphobiaic coraliucladiesiastus, this strange and obscure society operated on a gruesome premise.",
+      "origin": "ai"
+     },
+     {
+      "data": "\n{The song Imagine, is decoded for the cipher about Lennon's victims. Umberto Eco is called to investigate.}",
+      "origin": "user"
+     },
+     {
+      "data": " The lyrics to Imagine were a signal from Lennon to his accomplices, alerting them that he was finished with his killing spree and ready to start a new life with his lover Yoko Ono. However, Lennon never expected his music to become the phenomenon that it did, and was taken by surprise when it skyrocketed to number one on the Billboard chart. It seemed as though he had inadvertently shared his dark secret with the world. Tight-lipped about the gruesome details of his own disturbing life, Lennon's infamy began to spread quickly among conspiracy theor",
+      "origin": "ai"
+     },
+     {
+      "data": "ists and dedicated investigators. Their investigations revealed that he was more than just a disturbed musician, but that he had been caught in a deadly web of dark secrets and murders. But the idea that Lennon was involved in a sinister operation to bury these awful secrets only brought on more questions.\nJohn Lennon was born and raised in Liverpool, England, and attended art school for two years before dropping out to form a rock band with his close friend Paul McCartney. The two met when they were working at an art exhibition and bonded over their mutual love of music.",
+      "origin": "ai"
+     },
+     {
+      "data": " Together, they formed a band called The Beatles, along with George Harrison and Ringo Starr, and after performing at local clubs and events, they were signed by a record label. They became hugely successful, performing at the Carnegie Hall and releasing a series of hit singles and albums that made them some of the biggest stars in the world.\nWhile John was touring with his bandmates, he also began experimenting with drugs, often falling into a dark pit of depression and rage. In his twisted fantasies, he killed women in creative and gruesome ways, and often went back to",
+      "origin": "ai"
+     },
+     {
+      "data": " the same neighborhood to claim his victim, in a way that was hard to follow and confuse a sleuth. For the very smart in the crowd, it became apparent that the locations of his killings followed a hidden pattern that could not be escaped. John's obsession with Liverpool extended to his homicidal history. In one particular murder, he repeatedly stabbed a woman before shoving her down an open manhole, drowning her in the filthy water below. In another, he slit her throat before burying her alive.",
+      "origin": "ai"
+     },
+     {
+      "data": " Finally, he was apprehended by police and charged with the murders, but refused to answer questions and chose to remain silent. After his arrest, he was rumored to have talked about a secret society, an organization of darkness and death, who protected him. Whether or not he was connected to this mysterious order, the clues and suspicions piled up.\nAs Pamela Morris delved deeper into the conspiracy surrounding Lennon's many victims, she was contacted by Dr. Albert Gluckmann, a respected expert in ancient history and the occult.",
+      "origin": "ai"
+     },
+     {
+      "data": "\n{The investigators trace his criminal history, finding curious intersections with R Kelley and P Diddy.}",
+      "origin": "user"
+     },
+     {
+      "data": " When a mysterious envelope showed up at the door of Gluckmann's lab, it set off alarm bells. Inside were several hand-written letters, each written in the distinctive handwriting of a different individual. The writing revealed more and more about this terrifying group's desire for revenge, and eventually revealed the leaders and purpose of this hidden society. It was as if a curse had been lifted, and the door to Lennon's nightmare had swung open, leaving the storyteller wondering how it all started.",
+      "origin": "ai"
+     },
+     {
+      "data": " Before long, it seemed as though the truth was coming to light. Some were starting to doubt that Lennon was even capable of being behind the deaths, while others were theorizing that he was part of a grand scheme to expose the truth. Others questioned Lennon's connection to the society, wondering how deep his involvement went, or how he was involved. However, it seemed clear that the truth was only a short distance from discovery, and Pamela Morris knew that she had to continue investigating before it was too late.",
+      "origin": "ai"
+     },
+     {
+      "data": "\n{Traces of origin were found in the history of Jack Parsons and L Ron Hubbard.}",
+      "origin": "user"
+     },
+     {
+      "data": " A secret book discovered in a British library contained a hidden map that led to the hidden grave of Dr. Harry Houdini, the master magician who had an affinity for trickery and riddles. With the help of a psychic, Pamela Morris used the secrets that Houdini left behind to uncover the location of the final resting place of The Graves. Upon arriving at the site, Morris realized that she had come face to face with the location of the most hidden secrets. Buried underneath the soil lay a large stone slab inscribed with the name of the shadowy organization.",
+      "origin": "ai"
+     },
+     {
+      "data": " As she dug deeper, she unearthed the most disturbing clues about the role of the Ophiocordyceps corcinalia.\nThe Graves represented the key to solving the mystery of John Lennon and his monstrous deeds. The location of this ancient stone monument gave Pamela Morris a feeling that something larger than life was coming to light. The stone slab contained the words \"Ophiocordyceps philistiphalus semidubiorongulus,\" and as Morris examined it further, she realized that the map of the secret buried beneath it led to a hidden",
+      "origin": "ai"
+     },
+     {
+      "data": " archive of occult literature. As she dove into the books, she uncovered shocking revelations about the group behind the killings. By the time she finally located the legendary Tomes of Destiny, a series of incantations and spells, Pamela Morris was no longer a naïve researcher, but a seasoned detective who had uncovered the most shocking truths of the modern age. With the knowledge that Lennon was protected by an even bigger secret, Morris knew that she was on the trail of a dangerous organization that wanted to keep its identity hidden.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nTingle, to a generative model: I want to make a logo for that occult group. What's its name? Ophiocordyceps philistiphalus semidubiorongulus? Can you give me text to give to Stable Diffusion?",
+      "origin": "user"
+     },
+     {
+      "data": " We'll need a special file for the logo. How about this? This company clearly exists. Go check them out and tell me where I should start researching. We'll need to start by looking at their financial statements to see how they operate and see if there are any irregularities. Go check them out, find their corporate structures, look for missing members, anything out of the ordinary. But don't be obvious! One clue that could tie them all together is a mysterious phrase or mantra. Could you identify any clues in Lennon's artwork that might provide such clues?",
+      "origin": "ai"
+     },
+     {
+      "data": "\nAnd can you put a little bit of Saul Bass's style in it?",
+      "origin": "user"
+     },
+     {
+      "data": " My generation has been heavily influenced by his classic designs, and I think they're a perfect fit for this logo. The iconic phrase \"strip searching a lion\", written by Dr. Henry Gweling and displayed on a billboard in Los Angeles, was used as a signature image for the marketing campaign of their films, such as The Sorcerer of the South and Adventures in Inderland. Or perhaps The Crypt Of El Panguero is hidden somewhere. Its unusual symbolism may seem odd, but to me it represents something of a higher power, a metaphorical image that can",
+      "origin": "ai"
+     },
+     {
+      "data": " be read in the context of ancient writings and secret messages. And finally, what about the book The Monk and the Skulls? Could you expand on the monologue that\nIn your exploration, you must stay within the realm of reality. No fantasy tales or legends about ghost hunts. The objective of the investigation must be the unearthing of actual people and events. Based on the information that you can gather from your research, I'll give you some leads to check out. For instance, we could look into Jack Parsons, a rocket engineer who founded the Ochunem",
+      "origin": "ai"
+     },
+     {
+      "data": "ous Club, an occult group in California. Research could point us to another secret society called the Process Church of Great Retentive Information. And don't forget the infamous Church of Satan, which has several ties to members of the group behind the graves. It would also be wise to investigate former Pope Stephen Astranais, who served as the pope for several months before being assassinated by an unknown agent of the Ophiocordyceps corcalalitasiocongru.",
+      "origin": "ai"
+     },
+     {
+      "data": " Additionally, we can look at the assassination of John Lennon by Ronald Deekley, who was a member of the Ophiocordyceps asacriphiisagreatbookcollectionofunreadablesecretscollectedfromthewritingsofourancientmysteries. It may be possible that John Lennon was undercover in the organization. Another possible lead is to search for clues in books and documents that could reveal the true identity of the shadowy organization behind the graves.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nTingle: oooh can I meet 18 year old Bobby Beausolieu? When he was still hopeful in his Satanism?",
+      "origin": "user"
+     },
+     {
+      "data": " I can cook a dish called \"frozen water\" that he loves so much. It's actually just ice that has been made and eaten twice. The name comes from the way it makes the cheeks feel during a humid night. But if you can lead me to him, then I might be able to get him to join our group. Honestly, Pynchon, you should know by now that no food can influence the mind of a fan. In this case, Bobby Beausolieu would probably like boiled frogs with scalded hair.",
+      "origin": "ai"
+     },
+     {
+      "data": " Perhaps he'd settle for some raw livers? Of course, if he doesn't like that, he can always suck on his elbow. I could help him find some delicious oil for it, though he may find that less appealing. Now, do you have a copy of Chuckle's novel: \"Pregnant Mom Seized After Voting Machines Swirl and Shoot Fertilizers in Mass Electoral Overhaul\" or have any info about Charles Mound's unpublished works titled \"Babe Scaldux of the Highlands & Midi: A Grindcore Epic",
+      "origin": "ai"
+     },
+     {
+      "data": "\"? Is Chuckles Hutt available for an autograph, or does he only sign with the blade of a sword? If you find any news on his novels, please let me know immediately! While you're at it, do you think he'd be interested in putting his next book \"Fanged Etruria or The Growing Horror\" into consideration? It's a horror book about a half-lion, half-man creature called Gia'zakumsh'shi who lives in the jungle and devours innocent people.",
+      "origin": "ai"
+     },
+     {
+      "data": " Just letting you know that he may be up for a scary anthology. Did anyone ever complete their research on Charlie Chaplin, or did they discover that he is secretly a descendant of Ophie Bairns of New Found Ophic?\" Stable Diffusion Art of Famous Cartoon Images Inspiration https://imstyle.com.au/images/public/baselines-ccppp.png  Art + Pynchon Research =============\nConcerning the origin of Ophiocordyceps : as I recall, this secret society was",
+      "origin": "ai"
+     },
+     {
+      "data": " founded by a group of magicians and occultists in the 18th century in England. According to rumor, they practiced a variety of dark magic and occult rituals, some of which involved the use of Ophiocordyceps. It's unknown exactly how they acquired it, but it was rumored that it was found buried with ancient mummified remains. Some scholars believe it was created as a kind of elixir for the ritual, and that it was consumed as part of a transcendent experience.",
+      "origin": "ai"
+     },
+     {
+      "data": " However, little information about Ophiocordyceps survivalist practices is known, as it is rumored to have disappeared along with its members, leaving only its strange and obscure markings on objects and artefacts. As for the whereabouts of its member's today, not much is known about their activities or whereabouts. Like many secret societies, its purpose and motives are shrouded in mystery. However, it is believed that the goal of the society was to protect ancient occult secrets, as well as preserve Ophiocordyceps alive as a living entity, to",
+      "origin": "ai"
+     },
+     {
+      "data": " be used for future rituals and magic rituals.\nAs for their name and beliefs: it's rumored that the members of Ophiocordyceps lived in the areas of Philadelphia and Philadelphia, Pennsylvania, hence the name. However, the origins of this name are not entirely clear, as some historians speculate that it could have something to do with the serpent symbol used by the society. However, little else is known about their beliefs, beliefs or practices. Little is known about their leadership or membership, except that they operated behind the scenes and within the shadows.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nTingle: Oh hey, I found the Articles of Incorporation for the Ophiocordyceps group. They even have a mission statement!",
+      "origin": "user"
+     },
+     {
+      "data": " The language is extremely obscure, but from what I can make out, the founders wanted to \"tap into the cosmic forces that lie dormant in the deepest caverns and chasms of our planet.\" Basically, they wanted to find out what secrets the world has been keeping from us. And that's where Pynchon came in. Pynchon was recruited by the Ophiocordyceps leaders because they believed he could use his literary prowess to help them tap into these secrets.",
+      "origin": "ai"
+     },
+     {
+      "data": " Unfortunately, Pynchon betrayed them and now he's helping Pamela Morris in her investigation. He feels like they forced him to do terrible things and he wants to expose them for their crimes. Their symbol was even rumored to be a pair of fangs, giving them their nickname, \"Ophi\". However, I'm still waiting for confirmation on that. Back to Ophi's mythology: it's rumored that they worshiped snakes, bats, and spiders, as well as believed in the concept of reincarnation and that their souls could travel into the afterlife.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nUltimately, their significance is unknown. However, they had some very powerful connections and have reportedly helped fund a number of important projects, including the construction of a dam in India. Much of the information surrounding their beliefs and practices has been lost over time, so little is known for sure. What is certain is that they existed and had a significant influence on many people's lives. There's no doubt that their influence is still felt today.\nPynchon: To clarify, it seems that both you and I had come across different historical sources that brought up the Ophiocordy",
+      "origin": "ai"
+     },
+     {
+      "data": "ceps . Therefore, a comparison of our sources would be helpful. Can you please provide me with a copy of any Ophiocordyceps documentary, novel or record to compare them with? Alternatively, can you please describe in more detail any secret symbols or rituals that have been used by the group? And how they relate to those images and rituals of other groups and organizations that you and I have encountered? Finally, could you please provide me with the Ophiocordyceps constitution and/or minutes of the meeting, if available?",
+      "origin": "ai"
+     },
+     {
+      "data": "\nTingle: Oh that came with the FOIA bundle, for cheap! Here you go!",
+      "origin": "user"
+     },
+     {
+      "data": " (fetches book with clipping) So, as I've mentioned before, Chuckles Chuckleton is secretly the leader of the Ophiocordyceps, Chuckhivendeschuch, who used a phasing technology called Ochiecronnervibrarations to allow him to connect with the cosmos. You might have heard of this phasing technology in the sci-fi movie called \"Korban\", which used it to send a hero through time. But we digress.",
+      "origin": "ai"
+     },
+     {
+      "data": " Anyway, Chuckly was caught up in the discovery of this technology, and soon, his skills with manipulating minds using their individual thought patterns resulted in a kind of thought induction, or psionic ability. With his powers, he was able to connect with his followers, each of whom was adorned with an array of marks and sigils representing their power level, so that he could guide and enhance their thoughts.\nIt was eventually discovered that Chuckhivendeschuke held vast reserves of ancient energy sources that he had collected over the years, and he began to share this energy with his",
+      "origin": "ai"
+     },
+     {
+      "data": " followers. The society then formed a league of mind-control technicians and trained practitioners, using the Ochiecronnervaratrum to boost their abilities. They all became experts in the practice, and were soon able to exert influence over larger numbers of people. Even when faced with opposition, the group was able to shift their focus and manipulate others to achieve their goals.\nEventually, the league got bolder and bolder, until one fateful night, when they attempted to harness the powers of the galactic center of the Milky Way galaxy.",
+      "origin": "ai"
+     },
+     {
+      "data": "\n{The research team find a laserdisc of \"Korban\" and hold a little screening for research purposes.}",
+      "origin": "user"
+     },
+     {
+      "data": " However, something went horribly wrong, and Chuckly lost control of his technology, causing an explosion that incinerated their entire base and thousands of innocent bystanders. The society was crippled, and many members were forced to disperse and find new lives elsewhere. Fortunately, the research team was there to document the event, and was able to bring justice to the group that caused so much damage. However, it's important to note that this tale was only the tip of the iceberg, and there are still plenty of secrets and mysteries surrounding the Ophiocordyceps",
+      "origin": "ai"
+     },
+     {
+      "data": " lore. Don't want me to rewrite some articles? It seems as though we've got some miscommunication on the names of our organizations. My colleague and I, Bobby Doherty and Sarah Kimura, are registered copyright researchers from Penn Station Research. We are the ones in possession of the group called Chuck-No, Ophy No-Kitten, which claims to be a collection of records and photos donated by Charlie Chapin. Sadly, Chuck-No has vanished and all the records it may have possessed are currently in limbo.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nPynchon: I do not have the back muscles for limbo!",
+      "origin": "user"
+     },
+     {
+      "data": " Here's an audio file of a Chuckie Chapulina session titled \"Overton 7.\" Thought you might enjoy it. I have nothing on them other than what you have provided me, and will continue looking for more. It seems as though your group isn't interested in sharing any additional info about them, though. That would be very helpful. However, can I please request more info about Charlie Chapin? They were not included in the research records that your colleague Sarah Kimura shared with me.",
+      "origin": "ai"
+     },
+     {
+      "data": " Additionally, could you provide more info about the recordings or documents that the Kincals were involved with? Anything else you have on them would be helpful. But on the other hand, if there are any new developments in the investigation, please let me know. Alright, I'll get right on that. My colleague and I, James Cooper and Tom Janky, have uncovered some intel about the Kuchenie Club, which was a fan-based research group that specialized in the legend of Chucknuchville.",
+      "origin": "ai"
+     },
+     {
+      "data": " Kuchenie had the largest amount of intel on the subject and spent decades amassing a veritable trove of data. Much of the data was available for the public to access, but there was still a lot of research that remained out of reach, as it was either deemed too controversial or simply no longer extant. According to the archives, Kuchenie considered the legends surrounding Kutch to be factual and true, and spent decades disproving many of the urban legends surrounding Chuckleridischyst.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nMuch of the material found within the archives pertained to various characters that belonged to the fictional universe of Kuhlantoo. Chuck-No and Kuchenie considered Chuck E. Hutchin, Hogg Diching Shilpa Doheed, Pig Face Pog Grogoller Pigon, Pocapuff, Chick E Fretachalk, the Swim Diving Hamster, and Little Stinky Chiko Pukerkop, among others, to be real characters in the universe.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nFurthermore, much of the archival material surrounding the Ophi and Chuckno had great implications for the fictional universe of Kuhlantoopia, and theories were abundant that their involvement may have been significant in the creation of the comics. A study was conducted on some of the images in Kuhlantublybubbles, which revealed that they bore great similarities to the portraits and icons associated with the mysterious society of the Graveyard Gagsters. This seemed to prove that the lore was accurate and historical.",
+      "origin": "ai"
+     },
+     {
+      "data": " Interestingly enough, no actual evidence was ever found to support these claims, but that did not deter the two groups from pursuing their research. With the cooperation of Chuck No Hupahink and Kaculinda, both groups were able to begin a joint investigation into the origin of the lore of Kuhlentubbilyroofun, with great hopes for furthering their research. However, before progress could be made, both groups vanished without a trace, leaving behind only the few scraps of info you have provided me with.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nTingle: Let's read the script of a pilot episode of a police procedural starring Little Stinky Chiko Pukerkop!",
+      "origin": "user"
+     },
+     {
+      "data": " That would make us laugh. It would be interesting to find out the true origins of that character, as it may provide clues to the organization's belief system. Additionally, do you think that Ketchumyup's art can offer any clues? To clarify, Ketchemoo is an artist who is rumored to be connected to the Kinkymeemega corporation, which was suspected of being a front for the Ochiupperiopportunarytunnel. One specific painting that caught our attention was entitled \"The Search of the Spider Taco\".",
+      "origin": "ai"
+     },
+     {
+      "data": " It was sold at a gallery auction for an extremely high price, indicating that it had some type of meaning or significance. Additionally, it is rumored that he wrote a cryptic manifesto in which he hints at being part of the legend of Chuckonapiskendoskee of the Caught Breezi Barooobahbiwoomikipurpankukle. But without any substantive information on Ketychmoopiopinhooplompian, it's hard to make any connections.",
+      "origin": "ai"
+     },
+     {
+      "data": "\n{A primary divinity of the Kutch visits and gives essential info.}",
+      "origin": "user"
+     },
+     {
+      "data": " Chuck \"Cuztuckno\" Iverton paid no mind to the speculation surrounding his research. Instead, he dedicated himself to unearthing the secret identities of the mysterious Graveyard Gangsters. After decades of study, he discovered that they were secretly controlled by none other than the infamous King of Chicago, Billy McCuttsaucebottomopitselbostroladum! Not only did they operate within the seedy underbelly of Chicago, but they were also rumored to be deeply involved in the political realm.",
+      "origin": "ai"
+     },
+     {
+      "data": " With the help of Pankkycromlepiunkpantskeythor, the pair was able to discover the location of the Graveyard Gang's headquarters, located just below the north end of the infamous Walmart-Smashotzz-Zonar-Beccbizar mall. Little did they know that they had stumbled upon a plot to overthrow the government and expose the Illuminati's coverup of the truth about a mysterious purple glow seen around the planet. But Chuck had no idea.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nKing of Chicago, Billy McCuttsaucebottomopitselbostroladum also specialized in drill rap!",
+      "origin": "user"
+     },
+     {
+      "data": " Who knew?! Let's make up a parody song together! Polly Inkspot had never been to church before, but Chuck asked her to come by anyway. She was intrigued by the sermon she heard, but couldn't make out exactly what was said. The preacher kept ranting and raving about a distant city called Inconceszontoputtopensziptualowaffaafflewasputca, and something about the way he talked and the colors in his head just didn't seem right.",
+      "origin": "ai"
+     },
+     {
+      "data": " When she returned home, she learned that Chuck was deep into researching the esoteric ancient languages that the sermon was apparently written in. She agreed to take him back to the sermon to study it more closely, but instead of making more progress, Chuck suddenly disappeared without a trace. When news of his disappearance was made public, people speculated that he had accidentally decoded an ancient glyph and unleashed a deadly curse upon himself. Some even claim to have seen him roaming the streets, rambling incoherently about cryptic passages and bizarre visions.",
+      "origin": "ai"
+     },
+     {
+      "data": " Ultimately, his fate remains a mystery.\nMystic Ripponofongo told me that \"an hour before light turns to night, Chuck hughushoovewill shout, laugh-oo-pee\". Can you explain this mysterious message? I can only speculate on what it might mean. However, one common theme that many of us here have encountered is that many cults and secret societies communicate through a hidden language. Sometimes, this involves code phrases or coded messages that can only be understood by certain individuals.",
+      "origin": "ai"
+     },
+     {
+      "data": " Chuck seems to have been researching a number of these organizations, and his disappearance could be related to that research.\nUnfortunately, I have no leads on his whereabouts or what may have occurred. However, his investigation seems to have touched a nerve with many of the members of these organizations, so it is likely that there is some truth to his research. The sheer fact that his research seems to have inspired me to seek information and pursue leads is a testament to the seriousness with which he viewed his work.",
+      "origin": "ai"
+     },
+     {
+      "data": " Given this, I cannot fully dedicate myself to finding the truth behind Chuck's disappearance and the impact it may have had on many individuals' lives, but I am always willing to help however I can. I have spoken to other members of Chuck's research team who may have knowledge of his disappearance and will attempt to contact them for updates. If there is anything else you need, please don't hesitate to ask! As far as Bobby, he has shared a story about discovering the name Kinchycupyablahhankiphonpikalichoonikunapooteekup",
+      "origin": "ai"
+     },
+     {
+      "data": "oonabacoopoponckamchopponbaccoebalaboopangshicklaploopdribbillydiggempoollupaputtpononobilaguy.\nHe then disappeared forever. To write a new book titled: \"How a Friendly Cop Played Along with Satan-Symbologized Cultists' Game: His Heart-Pounding Adventure Inside Their Secret Grove\" and his author nickname is \"Doppy Nangganga\".",
+      "origin": "ai"
+     }
+    ]
+   },
+   "context": [
+    {
+     "text": "",
+     "contextConfig": {
+      "prefix": "",
+      "suffix": "\n",
+      "tokenBudget": 1,
+      "reservedTokens": 0,
+      "budgetPriority": 800,
+      "trimDirection": "trimBottom",
+      "insertionType": "newline",
+      "maximumTrimType": "sentence",
+      "insertionPosition": 0
+     }
+    },
+    {
+     "text": "",
+     "contextConfig": {
+      "prefix": "",
+      "suffix": "\n",
+      "tokenBudget": 1,
+      "reservedTokens": 1,
+      "budgetPriority": -400,
+      "trimDirection": "trimBottom",
+      "insertionType": "newline",
+      "maximumTrimType": "sentence",
+      "insertionPosition": -4
+     }
+    }
+   ],
+   "lorebook": {
+    "lorebookVersion": 5,
+    "entries": [],
+    "settings": {
+     "orderByKeyLocations": false
+    },
+    "categories": []
+   },
+   "storyContextConfig": {
+    "prefix": "",
+    "suffix": "",
+    "tokenBudget": 1,
+    "reservedTokens": 512,
+    "budgetPriority": 0,
+    "trimDirection": "trimTop",
+    "insertionType": "newline",
+    "maximumTrimType": "sentence",
+    "insertionPosition": -1,
+    "allowInsertionInside": true
+   },
+   "ephemeralContext": [],
+   "contextDefaults": {
+    "ephemeralDefaults": [
+     {
+      "text": "",
+      "contextConfig": {
+       "prefix": "",
+       "suffix": "\n",
+       "tokenBudget": 1,
+       "reservedTokens": 1,
+       "budgetPriority": -10000,
+       "trimDirection": "doNotTrim",
+       "insertionType": "newline",
+       "maximumTrimType": "newline",
+       "insertionPosition": -2
+      },
+      "startingStep": 1,
+      "delay": 0,
+      "duration": 1,
+      "repeat": false,
+      "reverse": false
+     }
+    ],
+    "loreDefaults": [
+     {
+      "text": "",
+      "contextConfig": {
+       "prefix": "",
+       "suffix": "\n",
+       "tokenBudget": 1,
+       "reservedTokens": 0,
+       "budgetPriority": 400,
+       "trimDirection": "trimBottom",
+       "insertionType": "newline",
+       "maximumTrimType": "sentence",
+       "insertionPosition": -1
+      },
+      "lastUpdatedAt": 1723602643773,
+      "displayName": "New Lorebook Entry",
+      "id": "1f227601-db5e-42b1-a3e9-b98b37509e48",
+      "keys": [],
+      "searchRange": 1000,
+      "enabled": true,
+      "forceActivation": false,
+      "keyRelative": false,
+      "nonStoryActivatable": false,
+      "category": "",
+      "loreBiasGroups": [
+       {
+        "phrases": [],
+        "ensureSequenceFinish": false,
+        "generateOnce": true,
+        "bias": 0,
+        "enabled": true,
+        "whenInactive": false
+       }
+      ]
+     }
+    ]
+   },
+   "settingsDirty": true,
+   "didGenerate": true,
+   "phraseBiasGroups": [
+    {
+     "phrases": [],
+     "ensureSequenceFinish": false,
+     "generateOnce": true,
+     "bias": 0,
+     "enabled": true,
+     "whenInactive": false
+    }
+   ],
+   "bannedSequenceGroups": [
+    {
+     "sequences": [],
+     "enabled": true
+    }
+   ]
+  },
+  "status": "ok",
+  "nonce": "b'.\\xae\\x90\\xff\\xa1\\x90\\t\\xca\\xc4\\xe7y\\xd4\\xbdI\\x1b\\xad{\\x17\\xe7)w\\x81^1'",
+  "decrypted": true,
+  "compressed": true
+ }
+}

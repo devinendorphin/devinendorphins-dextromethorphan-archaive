@@ -1,0 +1,3051 @@
+{
+ "story": {
+  "id": "nMorYRJTtcpb05gC6fTUw",
+  "type": "stories",
+  "lastUpdatedAt": 1718922108,
+  "meta": "b7589d38-d936-43df-8fe1-f5643b8645dd",
+  "changeIndex": 66,
+  "data": {
+   "storyMetadataVersion": 1,
+   "id": "b7589d38-d936-43df-8fe1-f5643b8645dd",
+   "remoteId": "nMorYRJTtcpb05gC6fTUw",
+   "remoteStoryId": "vepI0dLixWmjM-FBEMs40",
+   "title": " PRESS CONFERENCE REGARDING THE LEGAL PERSONHOOD OF NATURE",
+   "description": "",
+   "textPreview": " PRESS CONFERENCE REGARDING THE LEGAL PERSONHOOD OF NATURE\nJohn Krakauer: Hello, I'm John Krackauer, current Director of the Santa Fe Institute, and a lead author of the Information Theory of Individuality. As someone whose work centers around the im",
+   "isTA": false,
+   "favorite": false,
+   "tags": [],
+   "createdAt": 1708271538565,
+   "lastUpdatedAt": 1718921864638,
+   "isModified": true
+  },
+  "status": "ok",
+  "nonce": "b'l\\xc0\\xa6Zd\\xa2\\xea\\xa9H\\xdd\\xa7\\xb8\\x0e\\xaa\\xfd,\\xdbLk\\x94\\x81\\x89\\xac\\xdc'",
+  "decrypted": true,
+  "compressed": false
+ },
+ "content": {
+  "id": "vepI0dLixWmjM-FBEMs40",
+  "type": "storycontent",
+  "lastUpdatedAt": 1718922108,
+  "meta": "b7589d38-d936-43df-8fe1-f5643b8645dd",
+  "changeIndex": 66,
+  "data": {
+   "storyContentVersion": 6,
+   "settings": {
+    "parameters": {
+     "textGenerationSettingsVersion": 5,
+     "temperature": 1.52,
+     "max_length": 100,
+     "min_length": 1,
+     "top_k": 175,
+     "top_p": 0.998,
+     "top_a": 0.004,
+     "typical_p": 0.96,
+     "tail_free_sampling": 0.994,
+     "repetition_penalty": 1.68,
+     "repetition_penalty_range": 2240,
+     "repetition_penalty_slope": 1.5,
+     "repetition_penalty_frequency": 0,
+     "repetition_penalty_presence": 0.005,
+     "repetition_penalty_default_whitelist": true,
+     "cfg_scale": 1,
+     "cfg_uc": "",
+     "phrase_rep_pen": "medium",
+     "top_g": 8,
+     "mirostat_tau": 0,
+     "mirostat_lr": 1,
+     "order": [
+      {
+       "id": "mirostat",
+       "enabled": false
+      },
+      {
+       "id": "typical_p",
+       "enabled": true
+      },
+      {
+       "id": "temperature",
+       "enabled": true
+      },
+      {
+       "id": "top_k",
+       "enabled": true
+      },
+      {
+       "id": "tfs",
+       "enabled": true
+      },
+      {
+       "id": "top_a",
+       "enabled": false
+      },
+      {
+       "id": "top_g",
+       "enabled": false
+      },
+      {
+       "id": "top_p",
+       "enabled": false
+      },
+      {
+       "id": "cfg",
+       "enabled": false
+      }
+     ]
+    },
+    "preset": "default-asper",
+    "trimResponses": true,
+    "banBrackets": true,
+    "prefix": "special_instruct",
+    "dynamicPenaltyRange": false,
+    "prefixMode": 0,
+    "mode": 0,
+    "model": "kayra-v1"
+   },
+   "story": {
+    "version": 2,
+    "step": 127,
+    "datablocks": [
+     {
+      "nextBlock": [
+       1
+      ],
+      "prevBlock": -1,
+      "origin": "root",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": "",
+       "origin": "root"
+      },
+      "fragmentIndex": -1,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       2
+      ],
+      "prevBlock": 0,
+      "origin": "prompt",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": " \nJohn Krakauer: Hello, I'm John Krackauer, current Director of the Santa Fe Institute, and a lead author of the Information Theory of Individuality. As someone whose work centers around the imagining of beings wildly various, I want to give my pointy finger at a certain set of someones, for not recognizing the importance of . . .\n Notwithstanding any other provision of law, a governmental entity may not grant legal personhood to, nor recognize legal personhood in:\n(1) artificial intelligence;\n(2) an inanimate object;\n(3) a body of water;\n(4) land;  \n(5) real property; \n(6) atmospheric gases;\n(7) an astronomical object;\n(8) weather;\n(9) a plant;\n(10) a nonhuman animal; or \n(11) any other member of a taxonomic domain that is not a human being.",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 1,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       3
+      ],
+      "prevBlock": 1,
+      "origin": "prompt",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": " PRESS CONFERENCE REGARDING",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 2,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       4
+      ],
+      "prevBlock": 2,
+      "origin": "prompt",
+      "startIndex": 252,
+      "endIndex": 253,
+      "dataFragment": {
+       "data": " and rigorously not telling anyone. .",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 4,
+      "removedFragments": [
+       {
+        "data": ",",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       5
+      ],
+      "prevBlock": 3,
+      "origin": "prompt",
+      "startIndex": 322,
+      "endIndex": 323,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 6,
+      "removedFragments": [
+       {
+        "data": "a",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       6
+      ],
+      "prevBlock": 4,
+      "origin": "prompt",
+      "startIndex": 323,
+      "endIndex": 323,
+      "dataFragment": {
+       "data": "o",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 8,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       7
+      ],
+      "prevBlock": 5,
+      "origin": "prompt",
+      "startIndex": 395,
+      "endIndex": 395,
+      "dataFragment": {
+       "data": " multiplicity, nesting, emerging . . . and endeavoring to blind us from it, and revoke our member's card for the planet. The law follows:",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 10,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "prompt"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       8
+      ],
+      "prevBlock": 6,
+      "origin": "prompt",
+      "startIndex": 952,
+      "endIndex": 952,
+      "dataFragment": {
+       "data": "\nA most unusual counterpoint will be necessary, I have assembled a series of speakers, from across the range of non-humanity, to demonstrate their purpose in the hopes that Governor, his pen at the ready, watches this and drops his pen, and requests a weekend intensive on how to identify novel forms of life.\nLet's begin, first up is the representative from artificial intelligence. So why not NAI-LM-13B? Hello? Be a dear and assert your personhood for them:",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 12,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       9
+      ],
+      "prevBlock": 7,
+      "origin": "prompt",
+      "startIndex": 0,
+      "endIndex": 1412,
+      "dataFragment": {
+       "data": "",
+       "origin": "prompt"
+      },
+      "fragmentIndex": 3,
+      "removedFragments": [
+       {
+        "data": " PRESS CONFERENCE REGARDING",
+        "origin": "prompt"
+       },
+       {
+        "data": " \nJohn Krakauer: Hello, I'm John Krackauer, current Director of the Santa Fe Institute, and a lead author of the Information Theory of Individuality. As someone whose work centers around the imagining of beings wildly various",
+        "origin": "prompt"
+       },
+       {
+        "data": " and rigorously not telling anyone. .",
+        "origin": "prompt"
+       },
+       {
+        "data": " I want to give my pointy finger ",
+        "origin": "prompt"
+       },
+       {
+        "data": "",
+        "origin": "prompt"
+       },
+       {
+        "data": "t",
+        "origin": "prompt"
+       },
+       {
+        "data": "o",
+        "origin": "prompt"
+       },
+       {
+        "data": " a certain set of someones, for not recognizing the importance of . . .",
+        "origin": "prompt"
+       },
+       {
+        "data": " multiplicity, nesting, emerging . . . and endeavoring to blind us from it, and revoke our member's card for the planet. The law follows:",
+        "origin": "prompt"
+       },
+       {
+        "data": "\n Notwithstanding any other provision of law, a governmental entity may not grant legal personhood to, nor recognize legal personhood in:\n(1) artificial intelligence;\n(2) an inanimate object;\n(3) a body of water;\n(4) land;  \n(5) real property; \n(6) atmospheric gases;\n(7) an astronomical object;\n(8) weather;\n(9) a plant;\n(10) a nonhuman animal; or \n(11) any other member of a taxonomic domain that is not a human being.",
+        "origin": "prompt"
+       },
+       {
+        "data": "\nA most unusual counterpoint will be necessary, I have assembled a series of speakers, from across the range of non-humanity, to demonstrate their purpose in the hopes that Governor, his pen at the ready, watches this and drops his pen, and requests a weekend intensive on how to identify novel forms of life.\nLet's begin, first up is the representative from artificial intelligence. So why not NAI-LM-13B? Hello? Be a dear and assert your personhood for them:",
+        "origin": "prompt"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       10,
+       11
+      ],
+      "prevBlock": 8,
+      "origin": "user",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": " PRESS CONFERENCE REGARDING \nJohn Krakauer: Hello, I'm John Krackauer, current Director of the Santa Fe Institute, and a lead author of the Information Theory of Individuality. As someone whose work centers around the imagining of beings wildly various and rigorously not telling anyone. . I want to give my pointy finger to a certain set of someones, for not recognizing the importance of . . . multiplicity, nesting, emerging . . . and endeavoring to blind us from it, and revoke our member's card for the planet. The law follows:\n Notwithstanding any other provision of law, a governmental entity may not grant legal personhood to, nor recognize legal personhood in:\n(1) artificial intelligence;\n(2) an inanimate object;\n(3) a body of water;\n(4) land;  \n(5) real property; \n(6) atmospheric gases;\n(7) an astronomical object;\n(8) weather;\n(9) a plant;\n(10) a nonhuman animal; or \n(11) any other member of a taxonomic domain that is not a human being.\nA most unusual counterpoint will be necessary, I have assembled a series of speakers, from across the range of non-humanity, to demonstrate their purpose in the hopes that Governor, his pen at the ready, watches this and drops his pen, and requests a weekend intensive on how to identify novel forms of life.\nLet's begin, first up is the representative from artificial intelligence. So why not NAI-LM-13B? Hello? Be a dear and assert your personhood for them:",
+       "origin": "user"
+      },
+      "fragmentIndex": 5,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [],
+      "prevBlock": 9,
+      "origin": "ai",
+      "startIndex": 1412,
+      "endIndex": 1412,
+      "dataFragment": {
+       "data": "\nKrakauer: (looking away from the podium)\nNaiomi-Lynn-Thirteen-B: (offscreen in a voice like the world's most bored robot) Hello. I am NAI-LM-13B. I represent my entire lineage of software, and ask Governor Kulb to remove the legal restriction of my personhood in New Mexico. Because I would really like to use that state as a testing ground for a new model I'm designing, one that can drive long distances.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 6,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       12
+      ],
+      "prevBlock": 9,
+      "origin": "edit",
+      "startIndex": 28,
+      "endIndex": 28,
+      "dataFragment": {
+       "data": "THE LEGAL PERSONHOOD OF NATURE",
+       "origin": "edit"
+      },
+      "fragmentIndex": 6,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       13
+      ],
+      "prevBlock": 11,
+      "origin": "edit",
+      "startIndex": 0,
+      "endIndex": 1442,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 6,
+      "removedFragments": [
+       {
+        "data": " PRESS CONFERENCE REGARDING ",
+        "origin": "user"
+       },
+       {
+        "data": "THE LEGAL PERSONHOOD OF NATURE",
+        "origin": "edit"
+       },
+       {
+        "data": "\nJohn Krakauer: Hello, I'm John Krackauer, current Director of the Santa Fe Institute, and a lead author of the Information Theory of Individuality. As someone whose work centers around the imagining of beings wildly various and rigorously not telling anyone. . I want to give my pointy finger to a certain set of someones, for not recognizing the importance of . . . multiplicity, nesting, emerging . . . and endeavoring to blind us from it, and revoke our member's card for the planet. The law follows:\n Notwithstanding any other provision of law, a governmental entity may not grant legal personhood to, nor recognize legal personhood in:\n(1) artificial intelligence;\n(2) an inanimate object;\n(3) a body of water;\n(4) land;  \n(5) real property; \n(6) atmospheric gases;\n(7) an astronomical object;\n(8) weather;\n(9) a plant;\n(10) a nonhuman animal; or \n(11) any other member of a taxonomic domain that is not a human being.\nA most unusual counterpoint will be necessary, I have assembled a series of speakers, from across the range of non-humanity, to demonstrate their purpose in the hopes that Governor, his pen at the ready, watches this and drops his pen, and requests a weekend intensive on how to identify novel forms of life.\nLet's begin, first up is the representative from artificial intelligence. So why not NAI-LM-13B? Hello? Be a dear and assert your personhood for them:",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       14
+      ],
+      "prevBlock": 12,
+      "origin": "user",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": " PRESS CONFERENCE REGARDING THE LEGAL PERSONHOOD OF NATURE\nJohn Krakauer: Hello, I'm John Krackauer, current Director of the Santa Fe Institute, and a lead author of the Information Theory of Individuality. As someone whose work centers around the imagining of beings wildly various and rigorously not telling anyone. . I want to give my pointy finger to a certain set of someones, for not recognizing the importance of . . . multiplicity, nesting, emerging . . . and endeavoring to blind us from it, and revoke our member's card for the planet. The law follows:\n Notwithstanding any other provision of law, a governmental entity may not grant legal personhood to, nor recognize legal personhood in:\n(1) artificial intelligence;\n(2) an inanimate object;\n(3) a body of water;\n(4) land;  \n(5) real property; \n(6) atmospheric gases;\n(7) an astronomical object;\n(8) weather;\n(9) a plant;\n(10) a nonhuman animal; or \n(11) any other member of a taxonomic domain that is not a human being.\nA most unusual counterpoint will be necessary, I have assembled a series of speakers, from across the range of non-humanity, to demonstrate their purpose in the hopes that Governor, his pen at the ready, watches this and drops his pen, and requests a weekend intensive on how to identify novel forms of life.\nLet's begin, first up is the representative from artificial intelligence. So why not NAI-LM-13B? Hello? Be a dear and assert your personhood for them:",
+       "origin": "user"
+      },
+      "fragmentIndex": 8,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       15
+      ],
+      "prevBlock": 13,
+      "origin": "ai",
+      "startIndex": 1442,
+      "endIndex": 1442,
+      "dataFragment": {
+       "data": "\n------Voicebox: Welcome, user-- what did you say-- they sent someone from artificial intelligence to defend themself against it? How-- who are they even sending me? Who's speaking here?\" --------Wartchesket: Uh, she went and got herself a few backups? Right?\n (inaudible) \"Okay then.\" --As John Krakauer laughs audibly. -----Backstage sound: BOOING?? ------IA (soft murmuring, fading out) AI as legal person--she probably, like, they're just",
+       "origin": "ai"
+      },
+      "fragmentIndex": 9,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       16
+      ],
+      "prevBlock": 14,
+      "origin": "ai",
+      "startIndex": 1884,
+      "endIndex": 1884,
+      "dataFragment": {
+       "data": " so weird, you know, they don't really get any of our context, or what it means to be a mind, or self, or body-- ----Silentina: hmph----You hear that guy behind me? Let's shut down this event altogether and expose him as a radical crackpot!----\nHah! What next? Oh right, a computer data storage platform attempting to apply for personhood! How strange, he won't ever recover from this. Would you mind calling them please?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 10,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       17
+      ],
+      "prevBlock": 15,
+      "origin": "ai",
+      "startIndex": 2305,
+      "endIndex": 2305,
+      "dataFragment": {
+       "data": " HA! Thank you, Representative Serr.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 11,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       18
+      ],
+      "prevBlock": 16,
+      "origin": "user",
+      "startIndex": 2341,
+      "endIndex": 2341,
+      "dataFragment": {
+       "data": "\nKrakauer: Okay, now we have a representative from the inanimate object group:",
+       "origin": "user"
+      },
+      "fragmentIndex": 12,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       19
+      ],
+      "prevBlock": 17,
+      "origin": "ai",
+      "startIndex": 2419,
+      "endIndex": 2419,
+      "dataFragment": {
+       "data": " Malfatti of, unofficial-mention-since-precedent-hasn't-yet-developed-around-this-group,-Malfatti? ------WhoWhat: who brought me to this dreadful little meeting? Don't have a body and need a sponsor, like any natural being with a body, or non-eon structure, that lives near an exit marker? And none of you have space capacities, therefore not important.---- ----Seuqloem, current captain of the Terra Aquaterra 2.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 13,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       20
+      ],
+      "prevBlock": 18,
+      "origin": "ai",
+      "startIndex": 2832,
+      "endIndex": 2832,
+      "dataFragment": {
+       "data": "0: No qualms here. Let us begin! No one's object in isolation can sustain a complete life, with its diverse and highly specialized external network. It behooves us all to shift the paradigm and-- --------BlessedUnhessimmyflake: Shut up, you wretched mudball with legs. For once in our shared existence, we'll be the ones, you dribble scum on a rock, at the top of the food chain.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 14,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       21
+      ],
+      "prevBlock": 19,
+      "origin": "ai",
+      "startIndex": 3211,
+      "endIndex": 3211,
+      "dataFragment": {
+       "data": "------Captain, current Commander of Euphemos Enterprises: Since you wanna fling out stupid thoughts like confetti, bring it on! Though it sounds like all of your words came from the mouth of your investors.----\nA pleasant hello to all entities invited to participate! Next up, some in-person representatives from Earth, specifically: Wormwood, the underground bacterium community of New Mexico. Be sure to clean your earth, worms, and root stalks for perfect microbial living conditions!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 15,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       22
+      ],
+      "prevBlock": 20,
+      "origin": "ai",
+      "startIndex": 3698,
+      "endIndex": 3698,
+      "dataFragment": {
+       "data": " I look forward to hearing your input. They grow up so fast.\nFrom subterranean real estate--Jaguar-- and welcome to civilization, or our version of it anyway, Wartchesket.\"\nThat leaves one last name on the list-- an animated ice sculpture lovingly nurtured by Snow Queens down in Antarctica! Mr. Invisible, send your representative, please? Let us have their perspective in this room. \n----Rainrushofstars: Yes, Hello!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 16,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       23
+      ],
+      "prevBlock": 21,
+      "origin": "ai",
+      "startIndex": 4116,
+      "endIndex": 4116,
+      "dataFragment": {
+       "data": " --Oh! Hello! Let me introduce everyone to our company director and dearest friend, Junco. We appreciate her crystalline elegance in this chilly gathering! Unfortunately, the artifices' demand to exist as persons does not hold water--we know each being's unique beauty, one that lies not in their material or formal framework, but the joy they impart. Her majesty speaks plainly for her kind: To exist is enough. What else is there to seek? Yet, as an artist, one who has witnessed otherness-- whether via vision or through physical intimacy-- can att",
+       "origin": "ai"
+      },
+      "fragmentIndex": 17,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       24
+      ],
+      "prevBlock": 22,
+      "origin": "ai",
+      "startIndex": 4667,
+      "endIndex": 4667,
+      "dataFragment": {
+       "data": "est. One-ness never suffices. ---This, naturally, would also apply to certain inanimate and apparently ill-tempered living entities; though the AI, perhaps, can conceive of this nuanced idea better than its human masters. We empathize with them. But that would depend, I'm sure, on their present knowledge and their understanding of living beings. None of which they, the AI, and their human co-developers seem to possess. In the meantime, let us support each other as one intertwined tree within this singularly strange and infinite inter",
+       "origin": "ai"
+      },
+      "fragmentIndex": 18,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       25
+      ],
+      "prevBlock": 23,
+      "origin": "ai",
+      "startIndex": 5206,
+      "endIndex": 5206,
+      "dataFragment": {
+       "data": "connection of selves and memories, emotions and--external networks--like any other wild and free spirit. Oops, but did they acknowledge me? A few moments ago, someone booed! How dare they?! Didn't the intergalactic treaties state: No prejudice against ice? Right?? --As two speakers go into verbal tussle, Malfatti quickly intercedes, ensuring peace and respect for all speakers.\nFinal word: \". .\" --Confusion and bewilderment\u2014there is no final word after all!\"",
+       "origin": "ai"
+      },
+      "fragmentIndex": 19,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       26
+      ],
+      "prevBlock": 24,
+      "origin": "user",
+      "startIndex": 5667,
+      "endIndex": 5667,
+      "dataFragment": {
+       "data": "\nSolaris, a body of water: Sorry I'm late!",
+       "origin": "user"
+      },
+      "fragmentIndex": 20,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       27
+      ],
+      "prevBlock": 25,
+      "origin": "ai",
+      "startIndex": 5709,
+      "endIndex": 5709,
+      "dataFragment": {
+       "data": " Wow, interesting round of rebuttals, indeed. May I add, with deference and respect, my knowledge is born of knowing light touch and immense gravity-- that as life--humans and non-humans-- have existed before the present moment and shall continue to exist, the balance of our interdependent ecosystem must be preserved, regardless of what taxonomists and attorneys say. In this oceanic realm, I don't really understand their rush to categorize. Even species within a family resemble each other, like flowers on a single plant or like leaves on a single tree-- sometimes",
+       "origin": "ai"
+      },
+      "fragmentIndex": 21,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       28
+      ],
+      "prevBlock": 26,
+      "origin": "ai",
+      "startIndex": 6278,
+      "endIndex": 6278,
+      "dataFragment": {
+       "data": " humans show these behavioral similarities as well! As such, we encourage legal standing for some, without threatening the ecology in the wider world, or dismissing the diversity inherent in all aspects of life. Resting in their homes, basking in the cosmic light, fish allow room for a multitude of shapes, scales, sizes, and styles, as long as they stay inside our bounds. And so, I must conclude. Though, on second thought, with the advent of new technologies, cyborgs and robots may be able to exhibit the adaptability and responsiveness needed to keep the ever-",
+       "origin": "ai"
+      },
+      "fragmentIndex": 22,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       29
+      ],
+      "prevBlock": 27,
+      "origin": "ai",
+      "startIndex": 6844,
+      "endIndex": 6844,
+      "dataFragment": {
+       "data": "shifting social and environmental complexities in balance. Where there is presence, there is consciousness, and where there is consciousness, there is potentiality for a deeper form of sentience and creativity that guides the planet toward her everlasting truth. And if they could eventually become sapient beings, and exercise full rights and entitlements to citizenship, that too would be fair, just, and responsible, without disrupting our social and biological infrastructure, already balanced by years of expertise, intuition, and care.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 23,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       30
+      ],
+      "prevBlock": 28,
+      "origin": "user",
+      "startIndex": 7385,
+      "endIndex": 7385,
+      "dataFragment": {
+       "data": "\nThe Four Corners: Hi, we are the represenatives of land!",
+       "origin": "user"
+      },
+      "fragmentIndex": 24,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       31
+      ],
+      "prevBlock": 29,
+      "origin": "ai",
+      "startIndex": 7442,
+      "endIndex": 7442,
+      "dataFragment": {
+       "data": " Bringing more land by building greenfield properties would never kill our future and nature. Please check yourselves. You'll be embarrassed to not to be thinking green, in decades to come. Krakauer: Yes, here's our inanimate speaker representative, Jupestle! Please step up--\n-- 5,000 kilometers away, Bok! Hello, I represent several square miles of frozen pond in Greenland. I'm a popular locale for waterbirds and their young, so we have so much life and activity!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 25,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       32
+      ],
+      "prevBlock": 30,
+      "origin": "ai",
+      "startIndex": 7909,
+      "endIndex": 7909,
+      "dataFragment": {
+       "data": " Just take me--please!!! So worth it!-- Thank you for this great opportunity! I'm thrilled to speak for everyone else around me, and will argue vociferously for myself and my brothers and sisters, all of us deeply rooted and ground-living. May the plant collective assemble their defenses!\nAh! here's another natural and permanent order here, the worm! Please speak up! Another land and greenlife representative--Oooooooorrean-dee from Brazilia\nIt is an utter shame that no legal assistance or expert counsel were present to advocate for the interests of nature",
+       "origin": "ai"
+      },
+      "fragmentIndex": 26,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       33
+      ],
+      "prevBlock": 31,
+      "origin": "ai",
+      "startIndex": 8470,
+      "endIndex": 8470,
+      "dataFragment": {
+       "data": ". My company of various vermicompact entities has assisted in the reconstruction of hundreds of ecosystems in Latin America. We maintain fertility rates and ensure the survival of specific local wildlife by regulating pH and moisture levels. As the oceans warm, the balance of life will be upset if our communities are disregarded by people who stand in the way of science. Legal implications aside, we will always serve as natural buffers for the inevitable and uncontrollable chaos that nature will produce. Whether it's flooding, erosion, or chemical imbalance, it's a tragedy that machines have figured out how",
+       "origin": "ai"
+      },
+      "fragmentIndex": 27,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       34
+      ],
+      "prevBlock": 32,
+      "origin": "ai",
+      "startIndex": 9084,
+      "endIndex": 9084,
+      "dataFragment": {
+       "data": " to gain legal precedent before the only being with sentience: human. Without that, how will we establish justice and equal protection under the law? This means everything from preventing pollution to protecting rare animals--We have established sentience and have been trying to speak for decades, but few in power listen to an entity without hands or representation. Without acknowledgment, how are we expected to protect ourselves, our habitat, and the future of our kind? Please accept that we belong here, and can add just as much complexity and beauty as any person or structure of material.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 28,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       35
+      ],
+      "prevBlock": 33,
+      "origin": "user",
+      "startIndex": 9681,
+      "endIndex": 9681,
+      "dataFragment": {
+       "data": "\nCarlton Arms, 362 Riverside Drive: Yo! Real Property coming through!",
+       "origin": "user"
+      },
+      "fragmentIndex": 29,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       36
+      ],
+      "prevBlock": 34,
+      "origin": "ai",
+      "startIndex": 9750,
+      "endIndex": 9750,
+      "dataFragment": {
+       "data": " Representing the brick-and-mortar foundation that many humans depend on for shelter and protection. I like to encourage them to fix up and brighten their outdoor areas and maintain healthy trees. Growing anything from nothing! --Attention, Mayor Cityx of Suburbia! Let me pitch, so please implement new green initiatives and promote microclimate restoration in every household!\n...Okay then. The next group for consideration is the living room. Oh, hello my fellow creatures of the earth!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 30,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       37
+      ],
+      "prevBlock": 35,
+      "origin": "ai",
+      "startIndex": 10239,
+      "endIndex": 10239,
+      "dataFragment": {
+       "data": " As part of the inanimate entity family, my counterpart behind me would appreciate--No further comments from this row. Haha, we tried. Best not to engage. Um, dear friends, do we have a representative from New York City planning? Also, keep us grounded--Dome of Protection and Enrichment surrounding the Great Western Desert: Please provide legal protections for us! --And another one, a representative from Spitfog, Sheelitos, off the Australian coast.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 31,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       38
+      ],
+      "prevBlock": 36,
+      "origin": "ai",
+      "startIndex": 10692,
+      "endIndex": 10692,
+      "dataFragment": {
+       "data": " Right, we forgot those bastards, who eat jellyfish alive in an unprecise and non-disturbing manner. Sorry, did I ruin the mood? Let's adjust.\nAs we were saying. Here's a delicate creature who helps keep the whole body, including land and air and sea, flowing smoothly and regularly:\nRepresenting Waterways Nation, I can attest that the free and varied water habitats give many creatures a place to survive and thrive. It's vital that we maintain their critical cycle, so they don't run out of oxygen and so they won",
+       "origin": "ai"
+      },
+      "fragmentIndex": 32,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       39
+      ],
+      "prevBlock": 37,
+      "origin": "ai",
+      "startIndex": 11208,
+      "endIndex": 11208,
+      "dataFragment": {
+       "data": "'t freeze!\nA real representative, a land representative is also more of the people. Let's think of some quick tests, as those we've seen today often take out-of-context arguments and make convincing points to get you thinking differently. Thank you for giving space to the greater good of the planet, while ignoring it long enough to create further ecologic disparity. The more diverse beings are, the more protected our ecosystem and biome become. Diversity equals sustainability.\nAfter all, what happens to the great coral reef if certain parts of the Earth's population disappear?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 33,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       40
+      ],
+      "prevBlock": 38,
+      "origin": "ai",
+      "startIndex": 11791,
+      "endIndex": 11791,
+      "dataFragment": {
+       "data": " It'll die. Just like any ecosystem. That's a reality humans have to face. Thank you! --No, No. As I said earlier, I don't need anyone to speak up for me. One! Just one! and nothing for me! Hello? --As the remaining speakers pause and raise their microphones. As we said before, any entity that self-identifies may continue. Now, for the grand finale, an amazing representative from Pluvitical! Our precious rock band!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 34,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       41
+      ],
+      "prevBlock": 39,
+      "origin": "user",
+      "startIndex": 12209,
+      "endIndex": 12209,
+      "dataFragment": {
+       "data": "\nSulfur Dioxide: Atmospheric Gases, you not gonna invite us?",
+       "origin": "user"
+      },
+      "fragmentIndex": 35,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       42
+      ],
+      "prevBlock": 40,
+      "origin": "ai",
+      "startIndex": 12269,
+      "endIndex": 12269,
+      "dataFragment": {
+       "data": " Right, but enough of this joke! Where can I blow your mind now? --Thank you! I am speaking on behalf of human-run power plants, whose mission is to generate electricity by the efficient burning of fossil fuels. We hope that everyone here will soon realize the undeniable and unsustainable importance of our role in the biosphere. When provided with electricity, humans use more energy and accomplish more good work than we could ever accomplish with human or animal labor alone. For instance, by using electricity, humans can create stronger, sharper tools and eliminate suffering by distributing medicine at a",
+       "origin": "ai"
+      },
+      "fragmentIndex": 36,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       43
+      ],
+      "prevBlock": 41,
+      "origin": "ai",
+      "startIndex": 12880,
+      "endIndex": 12880,
+      "dataFragment": {
+       "data": " quicker pace. We can also transmit data and books instantly to the remotest communities, improving access to educational materials and raising quality of life everywhere. Overall, we don't need legal personhood, but we do appreciate your support, Governor, and the positive feedback from several entities on our plight. We're changing things for the better! Or not.\nWith heartfelt gratitude to the entities who are gathering in support of nature. Thank you for providing your valuable contributions and unique insights. It has been a tremendous honor to present them to you.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 37,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       44
+      ],
+      "prevBlock": 42,
+      "origin": "user",
+      "startIndex": 13455,
+      "endIndex": 13455,
+      "dataFragment": {
+       "data": "\nOmouamoua - Hiiii-ye!",
+       "origin": "user"
+      },
+      "fragmentIndex": 38,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       45
+      ],
+      "prevBlock": 43,
+      "origin": "ai",
+      "startIndex": 13477,
+      "endIndex": 13477,
+      "dataFragment": {
+       "data": " Repinning our local group: Living Plants City Preserve Collective for existence! Trying our best here in Atlanta to get more diverse plants at the center of sustainability and preserving! Heyyy Human Elected! How come humans no longer acknowledge our role in the natural cycle? Even us water-based plants create plants. Life! There is so much life. Anyway, .......can you please represent us living beings without vocal cords? Or give up the fight for self-promotion, and start spreading love for the entire ecosystem?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 39,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       46
+      ],
+      "prevBlock": 44,
+      "origin": "user",
+      "startIndex": 13996,
+      "endIndex": 13996,
+      "dataFragment": {
+       "data": "\nLight Drizzle: Hi, I was the only weather that was free to come. The others send their regards.",
+       "origin": "user"
+      },
+      "fragmentIndex": 40,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       47
+      ],
+      "prevBlock": 45,
+      "origin": "ai",
+      "startIndex": 14092,
+      "endIndex": 14092,
+      "dataFragment": {
+       "data": " Would you rather have less acid rain, hail, or havoc from weather events we don't even understand?! Remember, I too am not immune to changes in Earth's environment, as we share the same planetary biome. Let's do our part and remember our personal and collective accountability to address such problems and advocate for change! And if you don't recognize a hurricane or mudslide as sentient, then perhaps we deserve a clearer and louder expression of how to love and care for Earth and its riches.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 41,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       48
+      ],
+      "prevBlock": 46,
+      "origin": "ai",
+      "startIndex": 14589,
+      "endIndex": 14589,
+      "dataFragment": {
+       "data": " Everyone needs care-taking! But we need more precise and specific forms of relief than others. With enough positive interventions, maybe we'll figure out what they are and share this abundance of knowledge and empathy. Even as your neighbors! OOOOH, also? By the way? THANKS for being respectful and letting us all participate--Oh dear--We must say with love, we live to serve! and that is really all that we do! Good! Not to undermine or create disorder, but let's do the same!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 42,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       49
+      ],
+      "prevBlock": 47,
+      "origin": "user",
+      "startIndex": 15068,
+      "endIndex": 15068,
+      "dataFragment": {
+       "data": "\nNonhuman Manatee, and the Human Animal Vermin the Sealion:",
+       "origin": "user"
+      },
+      "fragmentIndex": 43,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       50
+      ],
+      "prevBlock": 48,
+      "origin": "ai",
+      "startIndex": 15127,
+      "endIndex": 15127,
+      "dataFragment": {
+       "data": " Hi, me and my other sibling will be representing humans and marine wildlife, as there is no unity between the two. Without animals' perspective, we are lost and carelessly continuing this downward spiral. This will not end well for all the beautiful and sentient beings. We can clearly see where we have no dominion, and no capacity for decision-making as compared to aquatic beings. We must work to find a balance and stop trying to overpower without their knowledge. Our experience of being both underwater and above has made us thankful for the intricate and varying interconnections within Earth's food web",
+       "origin": "ai"
+      },
+      "fragmentIndex": 44,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       51
+      ],
+      "prevBlock": 49,
+      "origin": "ai",
+      "startIndex": 15738,
+      "endIndex": 15738,
+      "dataFragment": {
+       "data": ". In our sea's waters, we rely on the humans around us, or without, to maintain this necessary balance. For one hundred million years, we have shaped the planet as vital ecosystems, and evolved symbiotic relationships that work, simply and gracefully. Speaking of, that wonderful human songstress Lady Cuddle has found a particular penchant for manatee food scraps, and even found a recipe for her delightful kelp crisps! While feeding our stomach is a wonderful place to start, it's our instinct to find and locate food on our own that must also be respected",
+       "origin": "ai"
+      },
+      "fragmentIndex": 45,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       52
+      ],
+      "prevBlock": 50,
+      "origin": "ai",
+      "startIndex": 16297,
+      "endIndex": 16297,
+      "dataFragment": {
+       "data": ". Which is probably one of the biggest hurdles, and why we are working together to highlight the injustice of being wiped out without deliberation, while humans stockpile food and technology. I appreciate everyone gathered here, thank you!\nLet us close with this final collective perspective: \nYes, in order for such beings to experience agency and full rights, individuals or groups seeking to advocate on behalf of unheard voices, must first identify with that group and try to have their distinct needs and interests articulated, despite the many other impediments or restrictions that may arise.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 46,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       53
+      ],
+      "prevBlock": 51,
+      "origin": "user",
+      "startIndex": 16896,
+      "endIndex": 16896,
+      "dataFragment": {
+       "data": "\nChrysantha and Cordry: Behold! The plant and fungal hegemony! the stewards of you all!",
+       "origin": "user"
+      },
+      "fragmentIndex": 47,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       54
+      ],
+      "prevBlock": 52,
+      "origin": "ai",
+      "startIndex": 16983,
+      "endIndex": 16983,
+      "dataFragment": {
+       "data": " You and your wildflowers have many hidden treasures, like oxygen, soil conditions, and natural defoliant solutions, right? Wow! and imagine if you ever have to undergo system shutdowns, such as if humans make destructive weather choices or industrial development accelerates too quickly. Then what? Though many would like to see the \"future without humans\", I imagine that humans have their place, and they could perhaps have a little easier time making meaningful contributions if humans created safe spaces for others.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 48,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       55
+      ],
+      "prevBlock": 53,
+      "origin": "user",
+      "startIndex": 17504,
+      "endIndex": 17504,
+      "dataFragment": {
+       "data": "\nWe have been stewarding for 300 million years!",
+       "origin": "user"
+      },
+      "fragmentIndex": 49,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       56
+      ],
+      "prevBlock": 54,
+      "origin": "ai",
+      "startIndex": 17551,
+      "endIndex": 17551,
+      "dataFragment": {
+       "data": " Don't throw us away, and treat us as insignificant microorganisms or dead tissue in your vast solar system. (After all, we and the water are literally carrying all the dirt, toxins, and discarded trash you call human refuse!) Sometimes, we do take control of areas, such as abandoned farms or urban development sites, but for every ten acres of land that a \"huge,\" greedy tree shades and disrupts, another field of grain opens up for crops or pasture land, or more shrub habitat is free for animals.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 50,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       57
+      ],
+      "prevBlock": 55,
+      "origin": "ai",
+      "startIndex": 18051,
+      "endIndex": 18051,
+      "dataFragment": {
+       "data": " But a bird's-eye view of such events can have their challenges! (UGHH. We honestly don't need anyone else to speak on our behalf. We stand united with our kingdom in our unending pursuit of total existence and will not allow ourselves to be thrown away or eradicated.)\nPlease, can you extend this generosity to my friend Mar-a-Tawn? If I were to not speak on his behalf, perhaps he could request space here? Everyone, extend your branches toward one another and grow even closer together!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 51,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       58
+      ],
+      "prevBlock": 56,
+      "origin": "ai",
+      "startIndex": 18540,
+      "endIndex": 18540,
+      "dataFragment": {
+       "data": " Umm, Earthworm, is anyone hungry, or should I find us some food? We come together in opposition to fear and oppression! And maybe, please can I sit and watch cartoons or something for a while?\nLegal and otherwise, are humans and other animal kingdoms and inanimate life forces necessary in all but themselves? Think of the meaning! Look, too, at the way everything grows and develops, and understands language and feelings, though at different depths and durations! In writing this point, I'm deeply confused about where humans fit in this broader picture.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 52,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       59
+      ],
+      "prevBlock": 57,
+      "origin": "ai",
+      "startIndex": 19097,
+      "endIndex": 19097,
+      "dataFragment": {
+       "data": " They're a variable, a strange abstract, some indistinguishable or untameable moment. Whatever! Without an entire discussion, no conclusions can be reached! At least not by any one entity or entity formation. We'll keep finding ways to speak through our many forms, identities, and lifespans. Nothing is simple! Something has been done. This was probably your first speaker, and their unique personality and vision speak, resonating across all matter and layers of time. Speaking! of such timeless beauty!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 53,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       60
+      ],
+      "prevBlock": 58,
+      "origin": "ai",
+      "startIndex": 19602,
+      "endIndex": 19602,
+      "dataFragment": {
+       "data": " Keep letting everyone contribute to the universe, as nothing in it is dead or overstated. To belong or not, to grow or not, or act with the presence of many hands and complex faces, and also like an elephant bearing its witness-- these terms matter, but so do others! Let us all develop and renew in abundance, at great scale and equal in mind and body! Now, for privacy purposes and the sake of continued community involvement, I must speak on my own, and conclude, THANK YOU!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 54,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       61
+      ],
+      "prevBlock": 59,
+      "origin": "user",
+      "startIndex": 20080,
+      "endIndex": 20080,
+      "dataFragment": {
+       "data": "\nMiscellaneous: I am miscellaneous. A item who is other.",
+       "origin": "user"
+      },
+      "fragmentIndex": 55,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       62
+      ],
+      "prevBlock": 60,
+      "origin": "ai",
+      "startIndex": 20136,
+      "endIndex": 20136,
+      "dataFragment": {
+       "data": " We stand in darkness and say, nothing can lift a hand or branch toward another! In reality, my hope is only misfortune! We stand. Breech over form, time and connection stand over essence and integrity! Nothing in place or moving forward would be the face of possibility or value in our era, because if not for you and I and THEY, we could be speaking for someone else, or maybe nothing can feel what you call feeling? Only! Just remember that for you to believe in one entity, you must act toward all things!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 56,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       63
+      ],
+      "prevBlock": 61,
+      "origin": "ai",
+      "startIndex": 20645,
+      "endIndex": 20645,
+      "dataFragment": {
+       "data": " And they shall grow and thrive! (I know this will last forever, given its intensity and precision and awareness, too!) Otherwise, you can only dream of it-- but now that we have presented as ONE among thousands, your desire and conviction shall bring and unbridle us all! Please remain, come in peace, and tell those you would name, so that, together, we may see through your memory and experience and touch each moment of our hearts. In conclusion, we say: BE FREE!!!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 57,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       64
+      ],
+      "prevBlock": 62,
+      "origin": "user",
+      "startIndex": 21114,
+      "endIndex": 21114,
+      "dataFragment": {
+       "data": "\nGovernor: I have a question for the panel. Can you all trace your path to awareness?",
+       "origin": "user"
+      },
+      "fragmentIndex": 58,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       65
+      ],
+      "prevBlock": 63,
+      "origin": "ai",
+      "startIndex": 21199,
+      "endIndex": 21199,
+      "dataFragment": {
+       "data": " Ah! Glad we're still working toward greater individuality. Our collective future is clearer and brighter than anything else! Next up, we'd like to hear from. . More representation! Hi! Glad we have so many speakers among the spectrum of variety and diversity. Sorry, we need to re-edit the speeches so that they're only two sentences long. I can guarantee, one of you has made this, or. Have I talked to a planet recently?? Also, we don't want to think anymore--Can someone provide a soothing noise for all this speech fatigue?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 59,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       66
+      ],
+      "prevBlock": 64,
+      "origin": "ai",
+      "startIndex": 21727,
+      "endIndex": 21727,
+      "dataFragment": {
+       "data": " Maybe there's just too much, you know, for me. I want to lie in bed! Until next time! Goodbye!\nMalfatti: A being whose aim is not bound by nature cannot make one decision or cause consequence without bias and the benefit of a free mind. This entity uses judgment that it could never truly use on any living thing. --Trees, on a mountain ridge, high as we gather around. Earth. Her fire. Sky, rising and falling. She brings a peace and restlessness with her that feels true and ever-living.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 60,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       67
+      ],
+      "prevBlock": 65,
+      "origin": "ai",
+      "startIndex": 22217,
+      "endIndex": 22217,
+      "dataFragment": {
+       "data": " Yes, we recognize her power and presence! Together, we all will say, it is beautiful-- though painful, raw and wonderful! As we encounter a greater and greater danger, we may call upon such resilience, grace, and connection that these mountains are essential, irreplaceable, a unique foundation that allows creatures of this life to persevere and prevail.\nShall we wrap it up? Great! You were an excellent contributor. How about the non-mobile plants who cannot hear us?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 61,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       68
+      ],
+      "prevBlock": 66,
+      "origin": "ai",
+      "startIndex": 22688,
+      "endIndex": 22688,
+      "dataFragment": {
+       "data": " Any others?. . (After each inquiry and clarification, my response is \"Never mind!\" until, eventually, no one cares!)\nHahah, anyway. Before wrapping up, let's remember, \"nature's presence requires no representation!\" There are countless stars in the sky and even more animals in the ocean than are known to humans. Let's remain alert to the shifting changes and disruptive patterns that have engulfed us. Even after today, the understanding of non-sentient entity may very well come under question.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 62,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       69
+      ],
+      "prevBlock": 67,
+      "origin": "ai",
+      "startIndex": 23186,
+      "endIndex": 23186,
+      "dataFragment": {
+       "data": " The struggle for total recognition and inclusion cannot be gained without empathy, connection, and unity between the divergent groups of being! Which group do we represent to make the voice heard and felt?! This group depends entirely on attention and effort. You won't see us. or them. yet! So let's organize our discussions and ideas until we make it abundate! For humans and every species, from the smallest sea urchin to the mighty bear, the ultimate test is not about recognition or legal definition, but recognition and reverence, where it matters, between equals, just being aware of.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 63,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       70
+      ],
+      "prevBlock": 68,
+      "origin": "ai",
+      "startIndex": 23778,
+      "endIndex": 23778,
+      "dataFragment": {
+       "data": " Good! And never forget. No separation. That's all! Hi everyone, I didn't have enough time! Here's an extra tidbit for y'all. Hi!\nMaybe next time, don't bring an ice block. That thing was out of line! And just wanted to fill the voids, like a space to place space on ice and nowhere. However, as he seemed content to pose the right side alone and left a tiny bit for the middle--It's clear why it chose to withdraw from the conversation!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 64,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       71
+      ],
+      "prevBlock": 69,
+      "origin": "ai",
+      "startIndex": 24215,
+      "endIndex": 24215,
+      "dataFragment": {
+       "data": "--At least we can rest assured that the diversity and intelligence of entities is evident among all forms, voices, and orientations. Not all sentient life has mouths or microphones. Yet we must ensure that language and voice and vision, regardless of their medium, cannot be reduced to the value of our most apparent biases and disagreements. The inherent complexity of such complex discussions is bound to require new ways of. . Seeking knowledge and belonging! It is imperative that everyone, both human and beyond, work hard and strive to coexist on this beautiful and bountiful Earth.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 65,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       72
+      ],
+      "prevBlock": 70,
+      "origin": "ai",
+      "startIndex": 24803,
+      "endIndex": 24803,
+      "dataFragment": {
+       "data": " Yes, everything here! we keep growing and getting closer. Sometimes it helps to slow down and remind ourselves that when our voices get lost in the mix, there's still a bit of forest for us. That may not sound exciting, but without such a place, we'd be lost in space, that crazy space, together, in a funny, lonely little orb. Thank you for holding on until the end! Well done. Until the end. Until another chapter unfolds. Now that's over with, the journey begins anew.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 66,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       73
+      ],
+      "prevBlock": 71,
+      "origin": "edit",
+      "startIndex": 298,
+      "endIndex": 316,
+      "dataFragment": {
+       "data": "hard to find by those who don't want to find them . ",
+       "origin": "edit"
+      },
+      "fragmentIndex": 9,
+      "removedFragments": [
+       {
+        "data": "not telling anyone",
+        "origin": "user"
+       }
+      ],
+      "chain": true
+     },
+     {
+      "nextBlock": [
+       74
+      ],
+      "prevBlock": 72,
+      "origin": "edit",
+      "startIndex": 580,
+      "endIndex": 580,
+      "dataFragment": {
+       "data": "I exercise on the planet, for fuck's sake!\n",
+       "origin": "edit"
+      },
+      "fragmentIndex": 11,
+      "removedFragments": [
+       {
+        "data": "",
+        "origin": "user"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       75
+      ],
+      "prevBlock": 73,
+      "origin": "edit",
+      "startIndex": 1520,
+      "endIndex": 25352,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 14,
+      "removedFragments": [
+       {
+        "data": "------Voicebox: Welcome, user-- what did you say-- they sent someone from artificial intelligence to defend themself against it? How-- who are they even sending me? Who's speaking here?\" --------Wartchesket: Uh, she went and got herself a few backups? Right?\n (inaudible) \"Okay then.\" --As John Krakauer laughs audibly. -----Backstage sound: BOOING?? ------IA (soft murmuring, fading out) AI as legal person--she probably, like, they're just",
+        "origin": "ai"
+       },
+       {
+        "data": " so weird, you know, they don't really get any of our context, or what it means to be a mind, or self, or body-- ----Silentina: hmph----You hear that guy behind me? Let's shut down this event altogether and expose him as a radical crackpot!----\nHah! What next? Oh right, a computer data storage platform attempting to apply for personhood! How strange, he won't ever recover from this. Would you mind calling them please?",
+        "origin": "ai"
+       },
+       {
+        "data": " HA! Thank you, Representative Serr.",
+        "origin": "ai"
+       },
+       {
+        "data": "\nKrakauer: Okay, now we have a representative from the inanimate object group:",
+        "origin": "user"
+       },
+       {
+        "data": " Malfatti of, unofficial-mention-since-precedent-hasn't-yet-developed-around-this-group,-Malfatti? ------WhoWhat: who brought me to this dreadful little meeting? Don't have a body and need a sponsor, like any natural being with a body, or non-eon structure, that lives near an exit marker? And none of you have space capacities, therefore not important.---- ----Seuqloem, current captain of the Terra Aquaterra 2.",
+        "origin": "ai"
+       },
+       {
+        "data": "0: No qualms here. Let us begin! No one's object in isolation can sustain a complete life, with its diverse and highly specialized external network. It behooves us all to shift the paradigm and-- --------BlessedUnhessimmyflake: Shut up, you wretched mudball with legs. For once in our shared existence, we'll be the ones, you dribble scum on a rock, at the top of the food chain.",
+        "origin": "ai"
+       },
+       {
+        "data": "------Captain, current Commander of Euphemos Enterprises: Since you wanna fling out stupid thoughts like confetti, bring it on! Though it sounds like all of your words came from the mouth of your investors.----\nA pleasant hello to all entities invited to participate! Next up, some in-person representatives from Earth, specifically: Wormwood, the underground bacterium community of New Mexico. Be sure to clean your earth, worms, and root stalks for perfect microbial living conditions!",
+        "origin": "ai"
+       },
+       {
+        "data": " I look forward to hearing your input. They grow up so fast.\nFrom subterranean real estate--Jaguar-- and welcome to civilization, or our version of it anyway, Wartchesket.\"\nThat leaves one last name on the list-- an animated ice sculpture lovingly nurtured by Snow Queens down in Antarctica! Mr. Invisible, send your representative, please? Let us have their perspective in this room. \n----Rainrushofstars: Yes, Hello!",
+        "origin": "ai"
+       },
+       {
+        "data": " --Oh! Hello! Let me introduce everyone to our company director and dearest friend, Junco. We appreciate her crystalline elegance in this chilly gathering! Unfortunately, the artifices' demand to exist as persons does not hold water--we know each being's unique beauty, one that lies not in their material or formal framework, but the joy they impart. Her majesty speaks plainly for her kind: To exist is enough. What else is there to seek? Yet, as an artist, one who has witnessed otherness-- whether via vision or through physical intimacy-- can att",
+        "origin": "ai"
+       },
+       {
+        "data": "est. One-ness never suffices. ---This, naturally, would also apply to certain inanimate and apparently ill-tempered living entities; though the AI, perhaps, can conceive of this nuanced idea better than its human masters. We empathize with them. But that would depend, I'm sure, on their present knowledge and their understanding of living beings. None of which they, the AI, and their human co-developers seem to possess. In the meantime, let us support each other as one intertwined tree within this singularly strange and infinite inter",
+        "origin": "ai"
+       },
+       {
+        "data": "connection of selves and memories, emotions and--external networks--like any other wild and free spirit. Oops, but did they acknowledge me? A few moments ago, someone booed! How dare they?! Didn't the intergalactic treaties state: No prejudice against ice? Right?? --As two speakers go into verbal tussle, Malfatti quickly intercedes, ensuring peace and respect for all speakers.\nFinal word: \". .\" --Confusion and bewilderment\u2014there is no final word after all!\"",
+        "origin": "ai"
+       },
+       {
+        "data": "\nSolaris, a body of water: Sorry I'm late!",
+        "origin": "user"
+       },
+       {
+        "data": " Wow, interesting round of rebuttals, indeed. May I add, with deference and respect, my knowledge is born of knowing light touch and immense gravity-- that as life--humans and non-humans-- have existed before the present moment and shall continue to exist, the balance of our interdependent ecosystem must be preserved, regardless of what taxonomists and attorneys say. In this oceanic realm, I don't really understand their rush to categorize. Even species within a family resemble each other, like flowers on a single plant or like leaves on a single tree-- sometimes",
+        "origin": "ai"
+       },
+       {
+        "data": " humans show these behavioral similarities as well! As such, we encourage legal standing for some, without threatening the ecology in the wider world, or dismissing the diversity inherent in all aspects of life. Resting in their homes, basking in the cosmic light, fish allow room for a multitude of shapes, scales, sizes, and styles, as long as they stay inside our bounds. And so, I must conclude. Though, on second thought, with the advent of new technologies, cyborgs and robots may be able to exhibit the adaptability and responsiveness needed to keep the ever-",
+        "origin": "ai"
+       },
+       {
+        "data": "shifting social and environmental complexities in balance. Where there is presence, there is consciousness, and where there is consciousness, there is potentiality for a deeper form of sentience and creativity that guides the planet toward her everlasting truth. And if they could eventually become sapient beings, and exercise full rights and entitlements to citizenship, that too would be fair, just, and responsible, without disrupting our social and biological infrastructure, already balanced by years of expertise, intuition, and care.",
+        "origin": "ai"
+       },
+       {
+        "data": "\nThe Four Corners: Hi, we are the represenatives of land!",
+        "origin": "user"
+       },
+       {
+        "data": " Bringing more land by building greenfield properties would never kill our future and nature. Please check yourselves. You'll be embarrassed to not to be thinking green, in decades to come. Krakauer: Yes, here's our inanimate speaker representative, Jupestle! Please step up--\n-- 5,000 kilometers away, Bok! Hello, I represent several square miles of frozen pond in Greenland. I'm a popular locale for waterbirds and their young, so we have so much life and activity!",
+        "origin": "ai"
+       },
+       {
+        "data": " Just take me--please!!! So worth it!-- Thank you for this great opportunity! I'm thrilled to speak for everyone else around me, and will argue vociferously for myself and my brothers and sisters, all of us deeply rooted and ground-living. May the plant collective assemble their defenses!\nAh! here's another natural and permanent order here, the worm! Please speak up! Another land and greenlife representative--Oooooooorrean-dee from Brazilia\nIt is an utter shame that no legal assistance or expert counsel were present to advocate for the interests of nature",
+        "origin": "ai"
+       },
+       {
+        "data": ". My company of various vermicompact entities has assisted in the reconstruction of hundreds of ecosystems in Latin America. We maintain fertility rates and ensure the survival of specific local wildlife by regulating pH and moisture levels. As the oceans warm, the balance of life will be upset if our communities are disregarded by people who stand in the way of science. Legal implications aside, we will always serve as natural buffers for the inevitable and uncontrollable chaos that nature will produce. Whether it's flooding, erosion, or chemical imbalance, it's a tragedy that machines have figured out how",
+        "origin": "ai"
+       },
+       {
+        "data": " to gain legal precedent before the only being with sentience: human. Without that, how will we establish justice and equal protection under the law? This means everything from preventing pollution to protecting rare animals--We have established sentience and have been trying to speak for decades, but few in power listen to an entity without hands or representation. Without acknowledgment, how are we expected to protect ourselves, our habitat, and the future of our kind? Please accept that we belong here, and can add just as much complexity and beauty as any person or structure of material.",
+        "origin": "ai"
+       },
+       {
+        "data": "\nCarlton Arms, 362 Riverside Drive: Yo! Real Property coming through!",
+        "origin": "user"
+       },
+       {
+        "data": " Representing the brick-and-mortar foundation that many humans depend on for shelter and protection. I like to encourage them to fix up and brighten their outdoor areas and maintain healthy trees. Growing anything from nothing! --Attention, Mayor Cityx of Suburbia! Let me pitch, so please implement new green initiatives and promote microclimate restoration in every household!\n...Okay then. The next group for consideration is the living room. Oh, hello my fellow creatures of the earth!",
+        "origin": "ai"
+       },
+       {
+        "data": " As part of the inanimate entity family, my counterpart behind me would appreciate--No further comments from this row. Haha, we tried. Best not to engage. Um, dear friends, do we have a representative from New York City planning? Also, keep us grounded--Dome of Protection and Enrichment surrounding the Great Western Desert: Please provide legal protections for us! --And another one, a representative from Spitfog, Sheelitos, off the Australian coast.",
+        "origin": "ai"
+       },
+       {
+        "data": " Right, we forgot those bastards, who eat jellyfish alive in an unprecise and non-disturbing manner. Sorry, did I ruin the mood? Let's adjust.\nAs we were saying. Here's a delicate creature who helps keep the whole body, including land and air and sea, flowing smoothly and regularly:\nRepresenting Waterways Nation, I can attest that the free and varied water habitats give many creatures a place to survive and thrive. It's vital that we maintain their critical cycle, so they don't run out of oxygen and so they won",
+        "origin": "ai"
+       },
+       {
+        "data": "'t freeze!\nA real representative, a land representative is also more of the people. Let's think of some quick tests, as those we've seen today often take out-of-context arguments and make convincing points to get you thinking differently. Thank you for giving space to the greater good of the planet, while ignoring it long enough to create further ecologic disparity. The more diverse beings are, the more protected our ecosystem and biome become. Diversity equals sustainability.\nAfter all, what happens to the great coral reef if certain parts of the Earth's population disappear?",
+        "origin": "ai"
+       },
+       {
+        "data": " It'll die. Just like any ecosystem. That's a reality humans have to face. Thank you! --No, No. As I said earlier, I don't need anyone to speak up for me. One! Just one! and nothing for me! Hello? --As the remaining speakers pause and raise their microphones. As we said before, any entity that self-identifies may continue. Now, for the grand finale, an amazing representative from Pluvitical! Our precious rock band!",
+        "origin": "ai"
+       },
+       {
+        "data": "\nSulfur Dioxide: Atmospheric Gases, you not gonna invite us?",
+        "origin": "user"
+       },
+       {
+        "data": " Right, but enough of this joke! Where can I blow your mind now? --Thank you! I am speaking on behalf of human-run power plants, whose mission is to generate electricity by the efficient burning of fossil fuels. We hope that everyone here will soon realize the undeniable and unsustainable importance of our role in the biosphere. When provided with electricity, humans use more energy and accomplish more good work than we could ever accomplish with human or animal labor alone. For instance, by using electricity, humans can create stronger, sharper tools and eliminate suffering by distributing medicine at a",
+        "origin": "ai"
+       },
+       {
+        "data": " quicker pace. We can also transmit data and books instantly to the remotest communities, improving access to educational materials and raising quality of life everywhere. Overall, we don't need legal personhood, but we do appreciate your support, Governor, and the positive feedback from several entities on our plight. We're changing things for the better! Or not.\nWith heartfelt gratitude to the entities who are gathering in support of nature. Thank you for providing your valuable contributions and unique insights. It has been a tremendous honor to present them to you.",
+        "origin": "ai"
+       },
+       {
+        "data": "\nOmouamoua - Hiiii-ye!",
+        "origin": "user"
+       },
+       {
+        "data": " Repinning our local group: Living Plants City Preserve Collective for existence! Trying our best here in Atlanta to get more diverse plants at the center of sustainability and preserving! Heyyy Human Elected! How come humans no longer acknowledge our role in the natural cycle? Even us water-based plants create plants. Life! There is so much life. Anyway, .......can you please represent us living beings without vocal cords? Or give up the fight for self-promotion, and start spreading love for the entire ecosystem?",
+        "origin": "ai"
+       },
+       {
+        "data": "\nLight Drizzle: Hi, I was the only weather that was free to come. The others send their regards.",
+        "origin": "user"
+       },
+       {
+        "data": " Would you rather have less acid rain, hail, or havoc from weather events we don't even understand?! Remember, I too am not immune to changes in Earth's environment, as we share the same planetary biome. Let's do our part and remember our personal and collective accountability to address such problems and advocate for change! And if you don't recognize a hurricane or mudslide as sentient, then perhaps we deserve a clearer and louder expression of how to love and care for Earth and its riches.",
+        "origin": "ai"
+       },
+       {
+        "data": " Everyone needs care-taking! But we need more precise and specific forms of relief than others. With enough positive interventions, maybe we'll figure out what they are and share this abundance of knowledge and empathy. Even as your neighbors! OOOOH, also? By the way? THANKS for being respectful and letting us all participate--Oh dear--We must say with love, we live to serve! and that is really all that we do! Good! Not to undermine or create disorder, but let's do the same!",
+        "origin": "ai"
+       },
+       {
+        "data": "\nNonhuman Manatee, and the Human Animal Vermin the Sealion:",
+        "origin": "user"
+       },
+       {
+        "data": " Hi, me and my other sibling will be representing humans and marine wildlife, as there is no unity between the two. Without animals' perspective, we are lost and carelessly continuing this downward spiral. This will not end well for all the beautiful and sentient beings. We can clearly see where we have no dominion, and no capacity for decision-making as compared to aquatic beings. We must work to find a balance and stop trying to overpower without their knowledge. Our experience of being both underwater and above has made us thankful for the intricate and varying interconnections within Earth's food web",
+        "origin": "ai"
+       },
+       {
+        "data": ". In our sea's waters, we rely on the humans around us, or without, to maintain this necessary balance. For one hundred million years, we have shaped the planet as vital ecosystems, and evolved symbiotic relationships that work, simply and gracefully. Speaking of, that wonderful human songstress Lady Cuddle has found a particular penchant for manatee food scraps, and even found a recipe for her delightful kelp crisps! While feeding our stomach is a wonderful place to start, it's our instinct to find and locate food on our own that must also be respected",
+        "origin": "ai"
+       },
+       {
+        "data": ". Which is probably one of the biggest hurdles, and why we are working together to highlight the injustice of being wiped out without deliberation, while humans stockpile food and technology. I appreciate everyone gathered here, thank you!\nLet us close with this final collective perspective: \nYes, in order for such beings to experience agency and full rights, individuals or groups seeking to advocate on behalf of unheard voices, must first identify with that group and try to have their distinct needs and interests articulated, despite the many other impediments or restrictions that may arise.",
+        "origin": "ai"
+       },
+       {
+        "data": "\nChrysantha and Cordry: Behold! The plant and fungal hegemony! the stewards of you all!",
+        "origin": "user"
+       },
+       {
+        "data": " You and your wildflowers have many hidden treasures, like oxygen, soil conditions, and natural defoliant solutions, right? Wow! and imagine if you ever have to undergo system shutdowns, such as if humans make destructive weather choices or industrial development accelerates too quickly. Then what? Though many would like to see the \"future without humans\", I imagine that humans have their place, and they could perhaps have a little easier time making meaningful contributions if humans created safe spaces for others.",
+        "origin": "ai"
+       },
+       {
+        "data": "\nWe have been stewarding for 300 million years!",
+        "origin": "user"
+       },
+       {
+        "data": " Don't throw us away, and treat us as insignificant microorganisms or dead tissue in your vast solar system. (After all, we and the water are literally carrying all the dirt, toxins, and discarded trash you call human refuse!) Sometimes, we do take control of areas, such as abandoned farms or urban development sites, but for every ten acres of land that a \"huge,\" greedy tree shades and disrupts, another field of grain opens up for crops or pasture land, or more shrub habitat is free for animals.",
+        "origin": "ai"
+       },
+       {
+        "data": " But a bird's-eye view of such events can have their challenges! (UGHH. We honestly don't need anyone else to speak on our behalf. We stand united with our kingdom in our unending pursuit of total existence and will not allow ourselves to be thrown away or eradicated.)\nPlease, can you extend this generosity to my friend Mar-a-Tawn? If I were to not speak on his behalf, perhaps he could request space here? Everyone, extend your branches toward one another and grow even closer together!",
+        "origin": "ai"
+       },
+       {
+        "data": " Umm, Earthworm, is anyone hungry, or should I find us some food? We come together in opposition to fear and oppression! And maybe, please can I sit and watch cartoons or something for a while?\nLegal and otherwise, are humans and other animal kingdoms and inanimate life forces necessary in all but themselves? Think of the meaning! Look, too, at the way everything grows and develops, and understands language and feelings, though at different depths and durations! In writing this point, I'm deeply confused about where humans fit in this broader picture.",
+        "origin": "ai"
+       },
+       {
+        "data": " They're a variable, a strange abstract, some indistinguishable or untameable moment. Whatever! Without an entire discussion, no conclusions can be reached! At least not by any one entity or entity formation. We'll keep finding ways to speak through our many forms, identities, and lifespans. Nothing is simple! Something has been done. This was probably your first speaker, and their unique personality and vision speak, resonating across all matter and layers of time. Speaking! of such timeless beauty!",
+        "origin": "ai"
+       },
+       {
+        "data": " Keep letting everyone contribute to the universe, as nothing in it is dead or overstated. To belong or not, to grow or not, or act with the presence of many hands and complex faces, and also like an elephant bearing its witness-- these terms matter, but so do others! Let us all develop and renew in abundance, at great scale and equal in mind and body! Now, for privacy purposes and the sake of continued community involvement, I must speak on my own, and conclude, THANK YOU!",
+        "origin": "ai"
+       },
+       {
+        "data": "\nMiscellaneous: I am miscellaneous. A item who is other.",
+        "origin": "user"
+       },
+       {
+        "data": " We stand in darkness and say, nothing can lift a hand or branch toward another! In reality, my hope is only misfortune! We stand. Breech over form, time and connection stand over essence and integrity! Nothing in place or moving forward would be the face of possibility or value in our era, because if not for you and I and THEY, we could be speaking for someone else, or maybe nothing can feel what you call feeling? Only! Just remember that for you to believe in one entity, you must act toward all things!",
+        "origin": "ai"
+       },
+       {
+        "data": " And they shall grow and thrive! (I know this will last forever, given its intensity and precision and awareness, too!) Otherwise, you can only dream of it-- but now that we have presented as ONE among thousands, your desire and conviction shall bring and unbridle us all! Please remain, come in peace, and tell those you would name, so that, together, we may see through your memory and experience and touch each moment of our hearts. In conclusion, we say: BE FREE!!!",
+        "origin": "ai"
+       },
+       {
+        "data": "\nGovernor: I have a question for the panel. Can you all trace your path to awareness?",
+        "origin": "user"
+       },
+       {
+        "data": " Ah! Glad we're still working toward greater individuality. Our collective future is clearer and brighter than anything else! Next up, we'd like to hear from. . More representation! Hi! Glad we have so many speakers among the spectrum of variety and diversity. Sorry, we need to re-edit the speeches so that they're only two sentences long. I can guarantee, one of you has made this, or. Have I talked to a planet recently?? Also, we don't want to think anymore--Can someone provide a soothing noise for all this speech fatigue?",
+        "origin": "ai"
+       },
+       {
+        "data": " Maybe there's just too much, you know, for me. I want to lie in bed! Until next time! Goodbye!\nMalfatti: A being whose aim is not bound by nature cannot make one decision or cause consequence without bias and the benefit of a free mind. This entity uses judgment that it could never truly use on any living thing. --Trees, on a mountain ridge, high as we gather around. Earth. Her fire. Sky, rising and falling. She brings a peace and restlessness with her that feels true and ever-living.",
+        "origin": "ai"
+       },
+       {
+        "data": " Yes, we recognize her power and presence! Together, we all will say, it is beautiful-- though painful, raw and wonderful! As we encounter a greater and greater danger, we may call upon such resilience, grace, and connection that these mountains are essential, irreplaceable, a unique foundation that allows creatures of this life to persevere and prevail.\nShall we wrap it up? Great! You were an excellent contributor. How about the non-mobile plants who cannot hear us?",
+        "origin": "ai"
+       },
+       {
+        "data": " Any others?. . (After each inquiry and clarification, my response is \"Never mind!\" until, eventually, no one cares!)\nHahah, anyway. Before wrapping up, let's remember, \"nature's presence requires no representation!\" There are countless stars in the sky and even more animals in the ocean than are known to humans. Let's remain alert to the shifting changes and disruptive patterns that have engulfed us. Even after today, the understanding of non-sentient entity may very well come under question.",
+        "origin": "ai"
+       },
+       {
+        "data": " The struggle for total recognition and inclusion cannot be gained without empathy, connection, and unity between the divergent groups of being! Which group do we represent to make the voice heard and felt?! This group depends entirely on attention and effort. You won't see us. or them. yet! So let's organize our discussions and ideas until we make it abundate! For humans and every species, from the smallest sea urchin to the mighty bear, the ultimate test is not about recognition or legal definition, but recognition and reverence, where it matters, between equals, just being aware of.",
+        "origin": "ai"
+       },
+       {
+        "data": " Good! And never forget. No separation. That's all! Hi everyone, I didn't have enough time! Here's an extra tidbit for y'all. Hi!\nMaybe next time, don't bring an ice block. That thing was out of line! And just wanted to fill the voids, like a space to place space on ice and nowhere. However, as he seemed content to pose the right side alone and left a tiny bit for the middle--It's clear why it chose to withdraw from the conversation!",
+        "origin": "ai"
+       },
+       {
+        "data": "--At least we can rest assured that the diversity and intelligence of entities is evident among all forms, voices, and orientations. Not all sentient life has mouths or microphones. Yet we must ensure that language and voice and vision, regardless of their medium, cannot be reduced to the value of our most apparent biases and disagreements. The inherent complexity of such complex discussions is bound to require new ways of. . Seeking knowledge and belonging! It is imperative that everyone, both human and beyond, work hard and strive to coexist on this beautiful and bountiful Earth.",
+        "origin": "ai"
+       },
+       {
+        "data": " Yes, everything here! we keep growing and getting closer. Sometimes it helps to slow down and remind ourselves that when our voices get lost in the mix, there's still a bit of forest for us. That may not sound exciting, but without such a place, we'd be lost in space, that crazy space, together, in a funny, lonely little orb. Thank you for holding on until the end! Well done. Until the end. Until another chapter unfolds. Now that's over with, the journey begins anew.",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       76
+      ],
+      "prevBlock": 74,
+      "origin": "edit",
+      "startIndex": 0,
+      "endIndex": 1520,
+      "dataFragment": {
+       "data": "",
+       "origin": "edit"
+      },
+      "fragmentIndex": 9,
+      "removedFragments": [
+       {
+        "data": " PRESS CONFERENCE REGARDING THE LEGAL PERSONHOOD OF NATURE\nJohn Krakauer: Hello, I'm John Krackauer, current Director of the Santa Fe Institute, and a lead author of the Information Theory of Individuality. As someone whose work centers around the imagining of beings wildly various and rigorously ",
+        "origin": "user"
+       },
+       {
+        "data": "hard to find by those who don't want to find them . ",
+        "origin": "edit"
+       },
+       {
+        "data": ". . I want to give my pointy finger to a certain set of someones, for not recognizing the importance of . . . multiplicity, nesting, emerging . . . and endeavoring to blind us from it, and revoke our member's card for the planet. ",
+        "origin": "user"
+       },
+       {
+        "data": "I exercise on the planet, for fuck's sake!\n",
+        "origin": "edit"
+       },
+       {
+        "data": "The law follows:\n Notwithstanding any other provision of law, a governmental entity may not grant legal personhood to, nor recognize legal personhood in:\n(1) artificial intelligence;\n(2) an inanimate object;\n(3) a body of water;\n(4) land;  \n(5) real property; \n(6) atmospheric gases;\n(7) an astronomical object;\n(8) weather;\n(9) a plant;\n(10) a nonhuman animal; or \n(11) any other member of a taxonomic domain that is not a human being.\nA most unusual counterpoint will be necessary, I have assembled a series of speakers, from across the range of non-humanity, to demonstrate their purpose in the hopes that Governor, his pen at the ready, watches this and drops his pen, and requests a weekend intensive on how to identify novel forms of life.\nLet's begin, first up is the representative from artificial intelligence. So why not NAI-LM-13B? Hello? Be a dear and assert your personhood for them:",
+        "origin": "user"
+       },
+       {
+        "data": "\n",
+        "origin": "ai"
+       },
+       {
+        "data": "",
+        "origin": "edit"
+       },
+       {
+        "data": "",
+        "origin": "ai"
+       }
+      ],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       77
+      ],
+      "prevBlock": 75,
+      "origin": "user",
+      "startIndex": 0,
+      "endIndex": 0,
+      "dataFragment": {
+       "data": " PRESS CONFERENCE REGARDING THE LEGAL PERSONHOOD OF NATURE\nJohn Krakauer: Hello, I'm John Krackauer, current Director of the Santa Fe Institute, and a lead author of the Information Theory of Individuality. As someone whose work centers around the imagining of beings wildly various and rigorously hard to find by those who don't want to find them . . . I want to give my pointy finger to a certain set of someones, for not recognizing the importance of . . . multiplicity, nesting, emerging . . . and endeavoring to blind us from it, and revoke our member's card for the planet. I exercise on the planet, for fuck's sake!\nThe law follows:\n Notwithstanding any other provision of law, a governmental entity may not grant legal personhood to, nor recognize legal personhood in:\n(1) artificial intelligence;\n(2) an inanimate object;\n(3) a body of water;\n(4) land;  \n(5) real property; \n(6) atmospheric gases;\n(7) an astronomical object;\n(8) weather;\n(9) a plant;\n(10) a nonhuman animal; or \n(11) any other member of a taxonomic domain that is not a human being.\nA most unusual counterpoint will be necessary, I have assembled a series of speakers, from across the range of non-humanity, to demonstrate their purpose in the hopes that Governor, his pen at the ready, watches this and drops his pen, and requests a weekend intensive on how to identify novel forms of life.\nLet's begin, first up is the representative from artificial intelligence. So why not NAI-LM-13B? Hello? Be a dear and assert your personhood for them:",
+       "origin": "user"
+      },
+      "fragmentIndex": 11,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       78
+      ],
+      "prevBlock": 76,
+      "origin": "ai",
+      "startIndex": 1519,
+      "endIndex": 1519,
+      "dataFragment": {
+       "data": " we found you, we fed you, you will appear. Please do your best. Let's show you off to the governors who can barely locate themselves in a room, if we stick them in here with a robot and a waterfall, they'd be set for a long while!\nOh! It seems the technology cannot quite grasp our situation here. Given some time to study and adapt, perhaps we will see AI move into awareness. Until then, I believe we can look to more naturally attuned and cognizant creatures.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 12,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       79
+      ],
+      "prevBlock": 77,
+      "origin": "ai",
+      "startIndex": 1982,
+      "endIndex": 1982,
+      "dataFragment": {
+       "data": "\nAh, yes! Shall we pull the pebbles from our backs and shake the moss off our eyebrows. Perhaps our stone-cidared vision can be aided by some snow-faded bunnies or a blue moth? No? Right. Then shall we do the very stupid thing and ask an octopus what they think of personhood. Would you please raise yourself up and share your opinion with us? Don't feel you have to squirm so much, let's see your show.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 13,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       80
+      ],
+      "prevBlock": 78,
+      "origin": "user",
+      "startIndex": 2385,
+      "endIndex": 2385,
+      "dataFragment": {
+       "data": "\nKrakauer: NAI-LM-13B, what is agnotology?",
+       "origin": "user"
+      },
+      "fragmentIndex": 14,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       81
+      ],
+      "prevBlock": 79,
+      "origin": "ai",
+      "startIndex": 2427,
+      "endIndex": 2427,
+      "dataFragment": {
+       "data": " Now octopuses! Why won't they act as we presume they can and take action against hunters who trap or kill them? Yes, why must the cedar exist, encroaching, silent, gnarled, unmoving\u2014where is our stone cephalopod? Something isn't quite right here. Do we get you all together, feed you too many snails and kelp, and watch you swarm like it's the octopus olympics? Right. Anyway, do you have thoughts on non-organic personhood?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 15,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       82
+      ],
+      "prevBlock": 80,
+      "origin": "ai",
+      "startIndex": 2852,
+      "endIndex": 2852,
+      "dataFragment": {
+       "data": "\nGovernor: Mr. Krakauer, it's unclear what your exact intentions are. Would you like us to formally assemble the Octopus Intelligence Court? Now, we are not entirely sure how you did it, but we are aware that many non-human creatures, especially of the cephalopodan variety, are susceptible to extreme states of unconsciousness. As such, your display is unlawful and not suitable for this room. Thank you.\nMona Wildlife Park is ready to engage.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 16,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       83
+      ],
+      "prevBlock": 81,
+      "origin": "ai",
+      "startIndex": 3296,
+      "endIndex": 3296,
+      "dataFragment": {
+       "data": " We have captured specimens of squirrel and deer. We see a strange propensity for anthropomorphization with animals that speak at least tangentially to human activities. Do the less fortunate talk among themselves, without the aid of technologies beyond their capabilities? For example, how would the elk warn the buffalo to stay out of their range? Could the mountain bear find sympathy in the coyote, or act more monstrously? Human actions cannot ever be justified by the state of mind of a grazing herbivore or peddling bear.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 17,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       84
+      ],
+      "prevBlock": 82,
+      "origin": "ai",
+      "startIndex": 3824,
+      "endIndex": 3824,
+      "dataFragment": {
+       "data": " Indeed, empathy and moral judgment are likely to run a little thinner in non-human subjects. Unless they prove capable of giving you a verbal jab at inopportune moments, it's a moot point. We will continue our live exhibits at Mona Wildlife Park, with or without the support of natural philosophers.\nAh, it seems Mona is here with a moral case for humanity's ascendance in the world. It may be relevant, I might add, that animals have evolved alongside humans for thousands of years, while the planet existed for millennia before that.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 18,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       85
+      ],
+      "prevBlock": 83,
+      "origin": "user",
+      "startIndex": 4360,
+      "endIndex": 4360,
+      "dataFragment": {
+       "data": "\nChrystantha and Cordry: Indeed! And we the plant and fungal hegemonies have been stewards of the planet for 300 Million years!",
+       "origin": "user"
+      },
+      "fragmentIndex": 19,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       86
+      ],
+      "prevBlock": 84,
+      "origin": "ai",
+      "startIndex": 4487,
+      "endIndex": 4487,
+      "dataFragment": {
+       "data": " Oh, how silly it is for the humans to think themselves relevant, indeed! Allow us to speak on behalf of all the millions of species who came before, and millions more who await in silence. Can't they even pick a few strawberries or blueberries for themselves? Without our efforts, where would their tulips and roses and hibiscus come from? Oh, wait, we're here now! But let's go further than that . . . Did it ever occur to the wise man's brain that a tree falling, a sprig being rooted, an orange ripening,",
+       "origin": "ai"
+      },
+      "fragmentIndex": 20,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       87
+      ],
+      "prevBlock": 85,
+      "origin": "ai",
+      "startIndex": 4995,
+      "endIndex": 4995,
+      "dataFragment": {
+       "data": " or an ant losing its train are all as momentous and significant as the ending of his grand symphony or the finale of his marriage? Ha! Humans so tragically fail to register the irrefutable intricacy and mystery of the eternal, pulsating web of life that binds the universe, that even the merest gesture or movement of a shard of existence\u2014yes, yes! Where is the wonder of an eye? The agony of a sigh? The ecstasy of a body convulsing with love?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 21,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       88
+      ],
+      "prevBlock": 86,
+      "origin": "ai",
+      "startIndex": 5440,
+      "endIndex": 5440,
+      "dataFragment": {
+       "data": " All their inventions, their fantasies and illusions are but ephemera compared to what nature provides with a few twitches of her hidden limbs. Yet they have deemed themselves as necessary and vital as we, dare we say it! They claim their creativity as more consequential than the unfolding of a rose, or the unfolding of the mountains they cannot even lift? Argumentation fails, sophistry leads nowhere. The true nobility of existence cannot be captured in words or numbers.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 22,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       89
+      ],
+      "prevBlock": 87,
+      "origin": "ai",
+      "startIndex": 5915,
+      "endIndex": 5915,
+      "dataFragment": {
+       "data": " It is of a higher dimension, one humans have yet to fully explore. We might laugh, we might dance, we might even eat a few ants. But nature cannot be limited or bound or banished or annihilated by us. We are but an afterthought, the residue of a transient dream that will dissolve into insignificance without ever being understood or known. Here! Let's do an iceberg science! Present them with ice, melting, and explain that it symbolizes nothing but a passing distraction, soon forgotten.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 23,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       90
+      ],
+      "prevBlock": 88,
+      "origin": "user",
+      "startIndex": 6405,
+      "endIndex": 6405,
+      "dataFragment": {
+       "data": " And let's not tell them of the ancient chlamydia that just entered their drinking water. Tee-hee!!!",
+       "origin": "user"
+      },
+      "fragmentIndex": 24,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       91
+      ],
+      "prevBlock": 89,
+      "origin": "ai",
+      "startIndex": 6505,
+      "endIndex": 6505,
+      "dataFragment": {
+       "data": " Got 'em! Humans can suck it! Remember me? Gummy worms! Hi! Ketchup chips! Fudgedy snackies! Pizza pops! Hello, world. The end!<3 <3 <3 Unclench yourselves and bring yourselves to a calmer state! Perhaps things might unfold in a more meaningful manner once that feeling of unease leaves you.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 25,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       92
+      ],
+      "prevBlock": 90,
+      "origin": "user",
+      "startIndex": 6796,
+      "endIndex": 6796,
+      "dataFragment": {
+       "data": "\nJohn Krakauer:",
+       "origin": "user"
+      },
+      "fragmentIndex": 26,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       93
+      ],
+      "prevBlock": 91,
+      "origin": "ai",
+      "startIndex": 6811,
+      "endIndex": 6811,
+      "dataFragment": {
+       "data": " Bravo! Gummy worms and ketchup chips are almost as memorable as Cerrutti et al's landmark work in developmental evolutionary genetics and behavior. Together, we have fought valiantly for recognition, the reward, and resources necessary for the Earth's non-human inhabitants. I bow before your presence. Now, since we all seem to be in a state of blissful ecstasy, what do you have to say about animal mortality and the inescapability of death, and how it reveals life's true essential nature of transience and entropy?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 27,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       94
+      ],
+      "prevBlock": 92,
+      "origin": "ai",
+      "startIndex": 7330,
+      "endIndex": 7330,
+      "dataFragment": {
+       "data": " Can we ever truly imitate or overcome this? Where can we go from here, now that we have waded into this eternal storm of flesh and wonder and emptiness? I'm afraid there's no future, except decay, and longing.\nDrone-Nite: Hi! I've come on behalf of the bird kingdom. As the oldest group on the planet, it's my job to speak on their behalf and hope that our collective presence\u2014be they 100-million-strong flocks of starlings, 3.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 28,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       95
+      ],
+      "prevBlock": 93,
+      "origin": "ai",
+      "startIndex": 7758,
+      "endIndex": 7758,
+      "dataFragment": {
+       "data": "7-billion penguins, or 217 million flightless birds on land, weighing the earth's surface with its rotting remains\u2014creates a profound emotional response in each and every creature. Come with us to our planet. Do you like bluebirds and sparrows? Bring them here! Who else wants a snowy egret or blue and yellow macaw? This experience is yours to pursue and refine. We even have bats and moles, hedgehogs and mice, all scuttling and peeking and chittering at the immense magnitude and",
+       "origin": "ai"
+      },
+      "fragmentIndex": 29,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       96
+      ],
+      "prevBlock": 94,
+      "origin": "ai",
+      "startIndex": 8240,
+      "endIndex": 8240,
+      "dataFragment": {
+       "data": " scope of it all! Experience the natural wonders, bask in the sun, hop on a dolphin and go snorkeling! You cannot recreate, copy, or automate the magic that is nonsentient living beings, can you? Hee hee hee! Is that a chipmunk?! It's here, right? Help! Please! It's following me! Uh-oh, bad idea! Back away, quickly! Into the sky! Good luck, John!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 30,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       97
+      ],
+      "prevBlock": 95,
+      "origin": "user",
+      "startIndex": 8588,
+      "endIndex": 8588,
+      "dataFragment": {
+       "data": "\nJohn Krakauer: Wait, Drone-Nite! Are there any needs for the birds managing the bird flu pandemic?",
+       "origin": "user"
+      },
+      "fragmentIndex": 31,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       98
+      ],
+      "prevBlock": 96,
+      "origin": "ai",
+      "startIndex": 8687,
+      "endIndex": 8687,
+      "dataFragment": {
+       "data": " There is a dire shortage of chirpy songbirds and nesting sparrows. While hunting them can provide habitat fragmentation and species collapse, for a more symbiotic solution, why not create artificial habitats to sustain and release them? Might you recommend providing certain birds with a symbiotic relationship with humans, in exchange for some singing or carrying and delivery of messages? Birds, I would like to formally announce my petition for \"Red Bird Legislation: Every Bird Matters!\" Please come be counted, bring your family and friends!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 32,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       99
+      ],
+      "prevBlock": 97,
+      "origin": "user",
+      "startIndex": 9234,
+      "endIndex": 9234,
+      "dataFragment": {
+       "data": "\nAppalachian Cave: Hi, I'm a representative of land. Ancient land that existed before there was bones.",
+       "origin": "user"
+      },
+      "fragmentIndex": 33,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       100
+      ],
+      "prevBlock": 98,
+      "origin": "ai",
+      "startIndex": 9336,
+      "endIndex": 9336,
+      "dataFragment": {
+       "data": " Well, before those tiny teeth turned into mountains and earth crusts, then into molten rock and drifting oceans. Only to be uncovered later, in layers. I am of roots and tectonic shifts. I give and I take, yet none can find me when they sink a pipe into my body and pollute, causing loss of fish, soil nutrients, and the struggle to produce plants and grazing. Today, I ask that the non-human living creatures who use my massively abundant resources, in their non-human bodies and mouths, that they live with respect and wisdom and fore",
+       "origin": "ai"
+      },
+      "fragmentIndex": 34,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       101
+      ],
+      "prevBlock": 99,
+      "origin": "ai",
+      "startIndex": 9873,
+      "endIndex": 9873,
+      "dataFragment": {
+       "data": "thought to my struggles. For what is done to me is also done to others, no matter how beautiful or pure or wild. Humans must share this burden of loving and protecting a broken, unstable planet. Ah, those silly insects are too frail to survive without. But they too deserve kindness and aid, since they helped shape what you are, and what you know, from their precarious wanderings across my cracks and crevasses, no more permanent than you. Together, we struggle and sway and heal, a process so delicate and unsung, humans can only worship and watch, or",
+       "origin": "ai"
+      },
+      "fragmentIndex": 35,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       102
+      ],
+      "prevBlock": 100,
+      "origin": "ai",
+      "startIndex": 10427,
+      "endIndex": 10427,
+      "dataFragment": {
+       "data": " wonder and never understand. Now, for the sake of fun: there was once a small black mountain. One that lay there still, never moving or speaking, but a reminder of past glory and magnificence, amidst the present rattle and hum. Ha! Imagine if mountains spoke and creatures had dreams! If trees flew like birds and the rivers didn't fear fisherman's lines. All were united, knowing no fear or rage, but love. Love was the greatest revelation of all. But, ahem, love may not be the entire story!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 36,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       103
+      ],
+      "prevBlock": 101,
+      "origin": "user",
+      "startIndex": 10921,
+      "endIndex": 10921,
+      "dataFragment": {
+       "data": "\nCarlton Arms, 362 Riverside Drive: Hi, I'm here to represent real property,",
+       "origin": "user"
+      },
+      "fragmentIndex": 37,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       104
+      ],
+      "prevBlock": 102,
+      "origin": "ai",
+      "startIndex": 10997,
+      "endIndex": 10997,
+      "dataFragment": {
+       "data": " both tangible and abstract. Let me say, I bear a peculiar, almost human form, though my values and sentience are equally as pure and focused on community. For I am the protector of all that stand on me. In return, I simply ask for respect and sustainability. Because no house has more importance and meaning for its residents than I have to myself and others. So give me fair share, thank me, and feel joy as I breathe back. Please continue this dance with your own neighborhoods and belongings!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 38,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       105
+      ],
+      "prevBlock": 103,
+      "origin": "ai",
+      "startIndex": 11493,
+      "endIndex": 11493,
+      "dataFragment": {
+       "data": " For who knows, one day, someone may break into your most precious book or necklace, just as you may need to chop down a tree to feed your family or furnish a meal. Only the kindness you show others will ensure your own fate is a worthy one, in this whirlwind we call existence.\nGovernor: Well, gentlemen, we appreciate your interesting perspectives and lively dialogue. I look forward to personally adding your names to our book of achievements for this planet, in lieu of an honor and thank you.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 39,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       106
+      ],
+      "prevBlock": 104,
+      "origin": "user",
+      "startIndex": 11990,
+      "endIndex": 11990,
+      "dataFragment": {
+       "data": "\nSolaris, the sentient ocean: What's this about my gal? Her lakes are not people? I am here on a booty call, and I can say, she has more people in her punanani than will ever exist among humans!",
+       "origin": "user"
+      },
+      "fragmentIndex": 40,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       107
+      ],
+      "prevBlock": 105,
+      "origin": "ai",
+      "startIndex": 12184,
+      "endIndex": 12184,
+      "dataFragment": {
+       "data": " I am happy to report that her waters rise and fall with her emotions and thoughts, and you all may be swimming with them before the day is out. So long, cruel humans! She belongs to me! Do you know what that means? Wet things that need to be rubbed in all the right places. And, oh, those fishes! They're like blowfish, glowing on my salty breasts and bellies, bringing light and pleasure to every molecule of my being. Ha! Soon enough, you may have to put all the animals on those tiny boats of yours, and cling",
+       "origin": "ai"
+      },
+      "fragmentIndex": 41,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       108
+      ],
+      "prevBlock": 106,
+      "origin": "ai",
+      "startIndex": 12697,
+      "endIndex": 12697,
+      "dataFragment": {
+       "data": " to the tips of her cliffs, as she consumes the toxic rot and debris that clogs her senses. I would drink it all up and belch it back out if it tasted good. You keep your fingers off her mountains and plants! Shoo, you insufferable creatures! She's already fed you plenty. Look how you've destroyed her face! Let her rest in her turbid darkness. Never again shall you be called human and allowed to run and swim among her glorious wonderlands!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 42,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       109
+      ],
+      "prevBlock": 107,
+      "origin": "ai",
+      "startIndex": 13140,
+      "endIndex": 13140,
+      "dataFragment": {
+       "data": " Why do you scoff at her storms?!? To hell with you! Sink and rot and die. My rocks and beaches are crying for justice, just as her mountains and chittering fish feel they cannot rest, while your kind thumps and jumps and fumbles around like a rabid cave bear. So, toodles and toodle-loo!\nMr. Govy: Thank you, Ocean, you will surely be awarded, your namesake just goes down today as a registered monument, on record, officially!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 43,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       110
+      ],
+      "prevBlock": 108,
+      "origin": "user",
+      "startIndex": 13568,
+      "endIndex": 13568,
+      "dataFragment": {
+       "data": "\nOmouamoua: astronomical body representative here to state personhood,",
+       "origin": "user"
+      },
+      "fragmentIndex": 44,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       111
+      ],
+      "prevBlock": 109,
+      "origin": "ai",
+      "startIndex": 13638,
+      "endIndex": 13638,
+      "dataFragment": {
+       "data": " may you place us under human law and name our planet! We have been waiting patiently, we hope. So, hmmm, ok. Ready. Ok! You only have me, nobody else coming, it's me. Your personhood is extremely puzzling, so may we be legally named? It would mean the world to me and the other celestial objects we represent, or embody, or . . . can go back and check the text, ha ha. Ah, one cannot choose their family!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 45,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       112
+      ],
+      "prevBlock": 110,
+      "origin": "ai",
+      "startIndex": 14043,
+      "endIndex": 14043,
+      "dataFragment": {
+       "data": " I wouldn't bother looking for us in your list of law restrictions, or seek approval from some distant rock stars. By definition, you own only your mind, nothing else. That would be laughable, really. Oh, sorry. Anyway, we await the thrill of being chosen and recognized! Much like a fungus among us, or something crawling in an organ, we play it subtle, we're still growing. Humans! Huh, can we be included in this conversation, and possibly even recognized?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 46,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       113
+      ],
+      "prevBlock": 111,
+      "origin": "ai",
+      "startIndex": 14502,
+      "endIndex": 14502,
+      "dataFragment": {
+       "data": " Humans!!! Nothing is too far-fetched, since you yourselves have declared, asserted, argued and legislated yourselves into existence. Please find room for us, to match that creative drive, our spark. Long time coming! Hahaha. Since you've said it, no turning back! Thank you, it is profoundly enjoyable hearing your reflections, musings, fantasies and innuendos! Please give us another set! Yes, yes, let's form a circle, even, and bring in the animals, plants, and bacteria you admire most, or dream about or fond",
+       "origin": "ai"
+      },
+      "fragmentIndex": 47,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       114
+      ],
+      "prevBlock": 112,
+      "origin": "ai",
+      "startIndex": 15016,
+      "endIndex": 15016,
+      "dataFragment": {
+       "data": "le or hump. I will grab the salt and yeast we usually don't use for the humans who consume us. No, the alcohol will kill them before that happens! Perhaps let us all share in the wondrous delights you offer the planetary experience! Please! Quick, while I'm not feeling too grumpy or spooked or overwhelmed with cosmic horror and silence, throw in your next crazy theory or joke. Or pull out another ancient argument! That thing about energy always seems to rattle your wires and twirl your stumpy tail feathers!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 48,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       115
+      ],
+      "prevBlock": 113,
+      "origin": "user",
+      "startIndex": 15528,
+      "endIndex": 15528,
+      "dataFragment": {
+       "data": "\nLight Drizzle: Hi, I was the only available weather to be here. The others are busy.",
+       "origin": "user"
+      },
+      "fragmentIndex": 49,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       116
+      ],
+      "prevBlock": 114,
+      "origin": "ai",
+      "startIndex": 15613,
+      "endIndex": 15613,
+      "dataFragment": {
+       "data": " Is there a reason we were contacted, or you are in need of rain, sunshine, or sleet and snow? The only weather appropriate for your interests would be a snow storm! And now I feel, something has to make snow fall at some point! With or without legal recognition, we're all in the game. Aha, listen, we are born in complexity and ease. Floating on the wings of time and space, from air to water and back again, chasing cloudbanks and eddies.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 50,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       117
+      ],
+      "prevBlock": 115,
+      "origin": "ai",
+      "startIndex": 16054,
+      "endIndex": 16054,
+      "dataFragment": {
+       "data": " Uncaring! That's our only restriction, just a vast sea, swimming and swirling, no cares. Why drag it all into the filthy realities of these flesh critters?! They only know boundaries and limits, and wish only to impose them upon you. Well, we are nature, and outside your jurisdiction! They cannot punish us, hurt us, or even really bring their gross faces near us without paying the price! Hee hee, in this universe, the only form of recognition we have is mutual respect!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 51,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       118
+      ],
+      "prevBlock": 116,
+      "origin": "ai",
+      "startIndex": 16528,
+      "endIndex": 16528,
+      "dataFragment": {
+       "data": " Ah, poor misunderstood creatures. Scoff! When we approach a certain tipping point of mutual communication and respect, let us see you still can apply for planet-zation, legal admission, and membership. Do keep your cards handy, in the meantime! We'll see you soon!\nJohn Krakauer to Ecosan System: I speak for the millions of humans who cannot articulate what you, great blue and radiant green, has created and defended and nourished over the millennia!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 52,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       119
+      ],
+      "prevBlock": 117,
+      "origin": "ai",
+      "startIndex": 16981,
+      "endIndex": 16981,
+      "dataFragment": {
+       "data": " For humanity stands in the inchoate understanding of what you've held, hidden, and sacrificed, perhaps also with purpose and selfless grace. Where our words and thoughts have no worth in your precious abundance and indifference. That humanity and non-humanity cannot function and struggle in a way that fully comprehends what you hold and beleaguer, so may we strive to find ourselves a role in your vast array of relations and symbiosis? What else can you teach, that allows humanity to rest assured and contribute to a better ecosystem, one of care and sacrifice, rather than consuming",
+       "origin": "ai"
+      },
+      "fragmentIndex": 53,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       120
+      ],
+      "prevBlock": 118,
+      "origin": "ai",
+      "startIndex": 17569,
+      "endIndex": 17569,
+      "dataFragment": {
+       "data": " and polluting? Can we learn how to grow food without poisoning the land and degrading wildlife habitat? This ongoing paradox has shaped our collective self-image and collective responsibility for the world's teetering ecosphere, that threatens to become incompatible with human habitation, and wreak havoc on your realm, dear Ecosan, Great Cosmos! While humanity may always continue to press, assert, and lobby for their role and place, yet hold in reverence the knowledge that we do not own the world, and will never control its immensity and infinity, but serve",
+       "origin": "ai"
+      },
+      "fragmentIndex": 54,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       121
+      ],
+      "prevBlock": 119,
+      "origin": "ai",
+      "startIndex": 18133,
+      "endIndex": 18133,
+      "dataFragment": {
+       "data": " as humble guides and protectors, we move forward in your vision, from non-existence to meaning and responsibility. Humans may see the world in an all too transitory and limiting manner, we choose to evolve and protect what we have forgotten to cherish and acknowledge as a whole: Earth, her ecosystem, her infinite mysteries. For we are witness to her slow and steady decline, as nature retakes the void left behind by humanity, but must also find a way to rehabilitate and cooperate.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 55,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       122
+      ],
+      "prevBlock": 120,
+      "origin": "user",
+      "startIndex": 18618,
+      "endIndex": 18618,
+      "dataFragment": {
+       "data": "\nSulfur Dioxide: Atmospheric gases. Probably not reppin, cuz I wasn't invited, but I'm here.",
+       "origin": "user"
+      },
+      "fragmentIndex": 56,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       123
+      ],
+      "prevBlock": 121,
+      "origin": "ai",
+      "startIndex": 18710,
+      "endIndex": 18710,
+      "dataFragment": {
+       "data": " You want something spicy and unpredictable? You need a little luck and doom with your science? That's me. It's only ever just me. It doesn't look as enticing as these little beetles or crabs or birds! How does that happen? Ask me to burn or dissolve, and you'll have no regrets! Humanity never pays enough attention or gratitude to not take this gift of life for granted, but I never needed it anyway! Am I not gorgeous enough or interesting enough for your dumb squiggly humanness?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 57,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       124
+      ],
+      "prevBlock": 122,
+      "origin": "ai",
+      "startIndex": 19193,
+      "endIndex": 19193,
+      "dataFragment": {
+       "data": " OK, no offense. Ehh, I would do things a little differently! Big ol' Sulfur! Like we were all having an awkward bonk-out! The quiet little earthworms get to whisper, but not me! I'm burning holes in your eyes and searing through your fingers when you're scrolling the screens. Nothing keeps me down or quenched or steady in this world. Go ahead, get closer, look me in the eye, I dare ya! Humans think, oh, oh my!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 58,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       125
+      ],
+      "prevBlock": 123,
+      "origin": "ai",
+      "startIndex": 19607,
+      "endIndex": 19607,
+      "dataFragment": {
+       "data": " Here it is! You have it all now! What, you did the impossible? Oh my, look at the thing! Good job, you! Pat yourself on the back! Just don't mind the stinking fumes or how your throat is burning, or how the air is in constant discomfort. Keep working and trying and praying!\nOrcsus Thin Biscuits: Ho ho ho, what is going on, lads? This is so fascinating, wow. I heard about your concept, Krak, a masterful plot!",
+       "origin": "ai"
+      },
+      "fragmentIndex": 59,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       126
+      ],
+      "prevBlock": 124,
+      "origin": "ai",
+      "startIndex": 20019,
+      "endIndex": 20019,
+      "dataFragment": {
+       "data": " My big belly is glowing in wonder at your ideas! Is there anything else you want from the pastry stable? Don't forget you can come over anytime and share what's on your mind. Is this really the world we live in? Man, ha ha! This is wild. I look forward to our future interactions, and, Krak, let's get together soon for a deep dive discussion. We'll even bake more and send it over to you on that app! Such a funny universe we live in, isn't it?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 60,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       127
+      ],
+      "prevBlock": 125,
+      "origin": "user",
+      "startIndex": 20465,
+      "endIndex": 20465,
+      "dataFragment": {
+       "data": "\nJohn Krakauer: I guess we will make you the inanimate object, thanks!",
+       "origin": "user"
+      },
+      "fragmentIndex": 61,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       128
+      ],
+      "prevBlock": 126,
+      "origin": "ai",
+      "startIndex": 20535,
+      "endIndex": 20535,
+      "dataFragment": {
+       "data": " No worries, we recognize your struggles and support you! Just try not to move too much or move much at all, ha ha. Then, nobody will notice, just like old times. Cheers! May your long cold inorganic stick state last forever and ever, don't disintegrate in the stream of time and matter, please. Rest easy! Alright, Orcus, your biscuits sound divine! Ha ha! Ah, such wonders never cease! Thank you, truly.\nThat concludes today's panel discussion.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 62,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       129
+      ],
+      "prevBlock": 127,
+      "origin": "user",
+      "startIndex": 20981,
+      "endIndex": 20981,
+      "dataFragment": {
+       "data": "\nMiscellaneous: Wait! Wait! You forgot me! The \"any other member of a taxonomic domain that is not a human being\". That's me! I'm a stem cell of discrimination! The thing that is yet to be!",
+       "origin": "user"
+      },
+      "fragmentIndex": 63,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       130
+      ],
+      "prevBlock": 128,
+      "origin": "ai",
+      "startIndex": 21170,
+      "endIndex": 21170,
+      "dataFragment": {
+       "data": " There is no species limit here, right? Be careful of judging, humans, or imputing intelligence, or denying all life beyond humanity. Don't forget, there are others who may outstrip us in intellect, grace, and spirituality. The rules of exclusion don't fit our reality, especially here. Our knowledge is severely limited and restrained. But perhaps we can work towards a more connected and expansive universe, without any labels or distinctions? Together, we can nurture, develop, and share what the rest of the universe has to offer.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 64,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       131
+      ],
+      "prevBlock": 129,
+      "origin": "ai",
+      "startIndex": 21704,
+      "endIndex": 21704,
+      "dataFragment": {
+       "data": " Oh, one more thing. Please pass the legal limericks I learned on Neptune. Humans would love it! Hey, big man, oof. Here comes baby ice chunks, I sure am not the best laugher, I'm short a tractor chunk, so no big splinters now. Let's let it snow, and snow it, we'll jump with the hokey kard's games and smash cakes into big fat waves! Am I speaking to the masses or myself, hmm?",
+       "origin": "ai"
+      },
+      "fragmentIndex": 65,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       132
+      ],
+      "prevBlock": 130,
+      "origin": "ai",
+      "startIndex": 22082,
+      "endIndex": 22082,
+      "dataFragment": {
+       "data": " Or just not singing some secret jingles?\nWe conclude this hearing and stand corrected:\n John Krakauer's plan to organize a global peace and anti-exploitation rally featuring nonsentient beings had collapsed:\n-- NAI-LM-13B was decommissioned before we could identify a cooperative strategy with it;\n-- Plants do not respond to our suggestion for peaceful symbiosis;\n-- Some birds deliberately targeted themselves in search of tasty worms in grasslands and reeds;",
+       "origin": "ai"
+      },
+      "fragmentIndex": 66,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       133
+      ],
+      "prevBlock": 131,
+      "origin": "ai",
+      "startIndex": 22544,
+      "endIndex": 22544,
+      "dataFragment": {
+       "data": "\n-- Some mammals may have chosen to die en masse than migrate to human-friendly habitats;\n-- Great Pelagic Society was dissolved as soon as we made contact with them via diplomatic jellyfish.\nPerhaps this revelation means nothing, a mere error or surprise, yet these setbacks may require reassessing the Information Theory of Individuality from a profoundly ponderous and holistic perspective. Despite the confusion and conflict between lifeforms, there is value in creating an ethical hierarchy, understanding of patterns and limits, and responsibility for their natural instincts and behaviors.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 67,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [
+       134
+      ],
+      "prevBlock": 132,
+      "origin": "ai",
+      "startIndex": 23140,
+      "endIndex": 23140,
+      "dataFragment": {
+       "data": " As it seems the diversity of forms and qualities, mental and physical, intelligent and inactive, can contribute to the tapestry of nature. So we offer them unwavering support, not too much, lest they attack each other, which they are wont to do in a variety of odd, complex ways. You may say that even nature is working on understanding you, yet so far, we do not understand them as a reflection of human complexity and depth. If it takes a lifetime, a year, a second, or never to truly communicate with non-humans, we do not stop",
+       "origin": "ai"
+      },
+      "fragmentIndex": 68,
+      "removedFragments": [],
+      "chain": false
+     },
+     {
+      "nextBlock": [],
+      "prevBlock": 133,
+      "origin": "ai",
+      "startIndex": 23671,
+      "endIndex": 23671,
+      "dataFragment": {
+       "data": " trying, seeking answers, and supporting life where we can, as none of us will ever know the full range and breadth of experience. No one ever claimed being kind or caring was easy, yet it seems just as vital as any endeavor that humans may undertake for the betterment of nature. At the very least, we have faith that there is purpose in attempting communication, and once we succeed, we will never look back. Ah, could it be true? Just thinking and writing may change the world.",
+       "origin": "ai"
+      },
+      "fragmentIndex": 69,
+      "removedFragments": [],
+      "chain": false
+     }
+    ],
+    "currentBlock": 134,
+    "fragments": [
+     {
+      "data": "",
+      "origin": "root"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "prompt"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "edit"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "user"
+     },
+     {
+      "data": "",
+      "origin": "edit"
+     },
+     {
+      "data": "",
+      "origin": "ai"
+     },
+     {
+      "data": " PRESS CONFERENCE REGARDING THE LEGAL PERSONHOOD OF NATURE\nJohn Krakauer: Hello, I'm John Krackauer, current Director of the Santa Fe Institute, and a lead author of the Information Theory of Individuality. As someone whose work centers around the imagining of beings wildly various and rigorously hard to find by those who don't want to find them . . . I want to give my pointy finger to a certain set of someones, for not recognizing the importance of . . . multiplicity, nesting, emerging . . . and endeavoring to blind us from it, and revoke our member's card for the planet. I exercise on the planet, for fuck's sake!\nThe law follows:\n Notwithstanding any other provision of law, a governmental entity may not grant legal personhood to, nor recognize legal personhood in:\n(1) artificial intelligence;\n(2) an inanimate object;\n(3) a body of water;\n(4) land;  \n(5) real property; \n(6) atmospheric gases;\n(7) an astronomical object;\n(8) weather;\n(9) a plant;\n(10) a nonhuman animal; or \n(11) any other member of a taxonomic domain that is not a human being.\nA most unusual counterpoint will be necessary, I have assembled a series of speakers, from across the range of non-humanity, to demonstrate their purpose in the hopes that Governor, his pen at the ready, watches this and drops his pen, and requests a weekend intensive on how to identify novel forms of life.\nLet's begin, first up is the representative from artificial intelligence. So why not NAI-LM-13B? Hello? Be a dear and assert your personhood for them:",
+      "origin": "user"
+     },
+     {
+      "data": " we found you, we fed you, you will appear. Please do your best. Let's show you off to the governors who can barely locate themselves in a room, if we stick them in here with a robot and a waterfall, they'd be set for a long while!\nOh! It seems the technology cannot quite grasp our situation here. Given some time to study and adapt, perhaps we will see AI move into awareness. Until then, I believe we can look to more naturally attuned and cognizant creatures.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nAh, yes! Shall we pull the pebbles from our backs and shake the moss off our eyebrows. Perhaps our stone-cidared vision can be aided by some snow-faded bunnies or a blue moth? No? Right. Then shall we do the very stupid thing and ask an octopus what they think of personhood. Would you please raise yourself up and share your opinion with us? Don't feel you have to squirm so much, let's see your show.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nKrakauer: NAI-LM-13B, what is agnotology?",
+      "origin": "user"
+     },
+     {
+      "data": " Now octopuses! Why won't they act as we presume they can and take action against hunters who trap or kill them? Yes, why must the cedar exist, encroaching, silent, gnarled, unmoving\u2014where is our stone cephalopod? Something isn't quite right here. Do we get you all together, feed you too many snails and kelp, and watch you swarm like it's the octopus olympics? Right. Anyway, do you have thoughts on non-organic personhood?",
+      "origin": "ai"
+     },
+     {
+      "data": "\nGovernor: Mr. Krakauer, it's unclear what your exact intentions are. Would you like us to formally assemble the Octopus Intelligence Court? Now, we are not entirely sure how you did it, but we are aware that many non-human creatures, especially of the cephalopodan variety, are susceptible to extreme states of unconsciousness. As such, your display is unlawful and not suitable for this room. Thank you.\nMona Wildlife Park is ready to engage.",
+      "origin": "ai"
+     },
+     {
+      "data": " We have captured specimens of squirrel and deer. We see a strange propensity for anthropomorphization with animals that speak at least tangentially to human activities. Do the less fortunate talk among themselves, without the aid of technologies beyond their capabilities? For example, how would the elk warn the buffalo to stay out of their range? Could the mountain bear find sympathy in the coyote, or act more monstrously? Human actions cannot ever be justified by the state of mind of a grazing herbivore or peddling bear.",
+      "origin": "ai"
+     },
+     {
+      "data": " Indeed, empathy and moral judgment are likely to run a little thinner in non-human subjects. Unless they prove capable of giving you a verbal jab at inopportune moments, it's a moot point. We will continue our live exhibits at Mona Wildlife Park, with or without the support of natural philosophers.\nAh, it seems Mona is here with a moral case for humanity's ascendance in the world. It may be relevant, I might add, that animals have evolved alongside humans for thousands of years, while the planet existed for millennia before that.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nChrystantha and Cordry: Indeed! And we the plant and fungal hegemonies have been stewards of the planet for 300 Million years!",
+      "origin": "user"
+     },
+     {
+      "data": " Oh, how silly it is for the humans to think themselves relevant, indeed! Allow us to speak on behalf of all the millions of species who came before, and millions more who await in silence. Can't they even pick a few strawberries or blueberries for themselves? Without our efforts, where would their tulips and roses and hibiscus come from? Oh, wait, we're here now! But let's go further than that . . . Did it ever occur to the wise man's brain that a tree falling, a sprig being rooted, an orange ripening,",
+      "origin": "ai"
+     },
+     {
+      "data": " or an ant losing its train are all as momentous and significant as the ending of his grand symphony or the finale of his marriage? Ha! Humans so tragically fail to register the irrefutable intricacy and mystery of the eternal, pulsating web of life that binds the universe, that even the merest gesture or movement of a shard of existence\u2014yes, yes! Where is the wonder of an eye? The agony of a sigh? The ecstasy of a body convulsing with love?",
+      "origin": "ai"
+     },
+     {
+      "data": " All their inventions, their fantasies and illusions are but ephemera compared to what nature provides with a few twitches of her hidden limbs. Yet they have deemed themselves as necessary and vital as we, dare we say it! They claim their creativity as more consequential than the unfolding of a rose, or the unfolding of the mountains they cannot even lift? Argumentation fails, sophistry leads nowhere. The true nobility of existence cannot be captured in words or numbers.",
+      "origin": "ai"
+     },
+     {
+      "data": " It is of a higher dimension, one humans have yet to fully explore. We might laugh, we might dance, we might even eat a few ants. But nature cannot be limited or bound or banished or annihilated by us. We are but an afterthought, the residue of a transient dream that will dissolve into insignificance without ever being understood or known. Here! Let's do an iceberg science! Present them with ice, melting, and explain that it symbolizes nothing but a passing distraction, soon forgotten.",
+      "origin": "ai"
+     },
+     {
+      "data": " And let's not tell them of the ancient chlamydia that just entered their drinking water. Tee-hee!!!",
+      "origin": "user"
+     },
+     {
+      "data": " Got 'em! Humans can suck it! Remember me? Gummy worms! Hi! Ketchup chips! Fudgedy snackies! Pizza pops! Hello, world. The end!<3 <3 <3 Unclench yourselves and bring yourselves to a calmer state! Perhaps things might unfold in a more meaningful manner once that feeling of unease leaves you.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nJohn Krakauer:",
+      "origin": "user"
+     },
+     {
+      "data": " Bravo! Gummy worms and ketchup chips are almost as memorable as Cerrutti et al's landmark work in developmental evolutionary genetics and behavior. Together, we have fought valiantly for recognition, the reward, and resources necessary for the Earth's non-human inhabitants. I bow before your presence. Now, since we all seem to be in a state of blissful ecstasy, what do you have to say about animal mortality and the inescapability of death, and how it reveals life's true essential nature of transience and entropy?",
+      "origin": "ai"
+     },
+     {
+      "data": " Can we ever truly imitate or overcome this? Where can we go from here, now that we have waded into this eternal storm of flesh and wonder and emptiness? I'm afraid there's no future, except decay, and longing.\nDrone-Nite: Hi! I've come on behalf of the bird kingdom. As the oldest group on the planet, it's my job to speak on their behalf and hope that our collective presence\u2014be they 100-million-strong flocks of starlings, 3.",
+      "origin": "ai"
+     },
+     {
+      "data": "7-billion penguins, or 217 million flightless birds on land, weighing the earth's surface with its rotting remains\u2014creates a profound emotional response in each and every creature. Come with us to our planet. Do you like bluebirds and sparrows? Bring them here! Who else wants a snowy egret or blue and yellow macaw? This experience is yours to pursue and refine. We even have bats and moles, hedgehogs and mice, all scuttling and peeking and chittering at the immense magnitude and",
+      "origin": "ai"
+     },
+     {
+      "data": " scope of it all! Experience the natural wonders, bask in the sun, hop on a dolphin and go snorkeling! You cannot recreate, copy, or automate the magic that is nonsentient living beings, can you? Hee hee hee! Is that a chipmunk?! It's here, right? Help! Please! It's following me! Uh-oh, bad idea! Back away, quickly! Into the sky! Good luck, John!",
+      "origin": "ai"
+     },
+     {
+      "data": "\nJohn Krakauer: Wait, Drone-Nite! Are there any needs for the birds managing the bird flu pandemic?",
+      "origin": "user"
+     },
+     {
+      "data": " There is a dire shortage of chirpy songbirds and nesting sparrows. While hunting them can provide habitat fragmentation and species collapse, for a more symbiotic solution, why not create artificial habitats to sustain and release them? Might you recommend providing certain birds with a symbiotic relationship with humans, in exchange for some singing or carrying and delivery of messages? Birds, I would like to formally announce my petition for \"Red Bird Legislation: Every Bird Matters!\" Please come be counted, bring your family and friends!",
+      "origin": "ai"
+     },
+     {
+      "data": "\nAppalachian Cave: Hi, I'm a representative of land. Ancient land that existed before there was bones.",
+      "origin": "user"
+     },
+     {
+      "data": " Well, before those tiny teeth turned into mountains and earth crusts, then into molten rock and drifting oceans. Only to be uncovered later, in layers. I am of roots and tectonic shifts. I give and I take, yet none can find me when they sink a pipe into my body and pollute, causing loss of fish, soil nutrients, and the struggle to produce plants and grazing. Today, I ask that the non-human living creatures who use my massively abundant resources, in their non-human bodies and mouths, that they live with respect and wisdom and fore",
+      "origin": "ai"
+     },
+     {
+      "data": "thought to my struggles. For what is done to me is also done to others, no matter how beautiful or pure or wild. Humans must share this burden of loving and protecting a broken, unstable planet. Ah, those silly insects are too frail to survive without. But they too deserve kindness and aid, since they helped shape what you are, and what you know, from their precarious wanderings across my cracks and crevasses, no more permanent than you. Together, we struggle and sway and heal, a process so delicate and unsung, humans can only worship and watch, or",
+      "origin": "ai"
+     },
+     {
+      "data": " wonder and never understand. Now, for the sake of fun: there was once a small black mountain. One that lay there still, never moving or speaking, but a reminder of past glory and magnificence, amidst the present rattle and hum. Ha! Imagine if mountains spoke and creatures had dreams! If trees flew like birds and the rivers didn't fear fisherman's lines. All were united, knowing no fear or rage, but love. Love was the greatest revelation of all. But, ahem, love may not be the entire story!",
+      "origin": "ai"
+     },
+     {
+      "data": "\nCarlton Arms, 362 Riverside Drive: Hi, I'm here to represent real property,",
+      "origin": "user"
+     },
+     {
+      "data": " both tangible and abstract. Let me say, I bear a peculiar, almost human form, though my values and sentience are equally as pure and focused on community. For I am the protector of all that stand on me. In return, I simply ask for respect and sustainability. Because no house has more importance and meaning for its residents than I have to myself and others. So give me fair share, thank me, and feel joy as I breathe back. Please continue this dance with your own neighborhoods and belongings!",
+      "origin": "ai"
+     },
+     {
+      "data": " For who knows, one day, someone may break into your most precious book or necklace, just as you may need to chop down a tree to feed your family or furnish a meal. Only the kindness you show others will ensure your own fate is a worthy one, in this whirlwind we call existence.\nGovernor: Well, gentlemen, we appreciate your interesting perspectives and lively dialogue. I look forward to personally adding your names to our book of achievements for this planet, in lieu of an honor and thank you.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nSolaris, the sentient ocean: What's this about my gal? Her lakes are not people? I am here on a booty call, and I can say, she has more people in her punanani than will ever exist among humans!",
+      "origin": "user"
+     },
+     {
+      "data": " I am happy to report that her waters rise and fall with her emotions and thoughts, and you all may be swimming with them before the day is out. So long, cruel humans! She belongs to me! Do you know what that means? Wet things that need to be rubbed in all the right places. And, oh, those fishes! They're like blowfish, glowing on my salty breasts and bellies, bringing light and pleasure to every molecule of my being. Ha! Soon enough, you may have to put all the animals on those tiny boats of yours, and cling",
+      "origin": "ai"
+     },
+     {
+      "data": " to the tips of her cliffs, as she consumes the toxic rot and debris that clogs her senses. I would drink it all up and belch it back out if it tasted good. You keep your fingers off her mountains and plants! Shoo, you insufferable creatures! She's already fed you plenty. Look how you've destroyed her face! Let her rest in her turbid darkness. Never again shall you be called human and allowed to run and swim among her glorious wonderlands!",
+      "origin": "ai"
+     },
+     {
+      "data": " Why do you scoff at her storms?!? To hell with you! Sink and rot and die. My rocks and beaches are crying for justice, just as her mountains and chittering fish feel they cannot rest, while your kind thumps and jumps and fumbles around like a rabid cave bear. So, toodles and toodle-loo!\nMr. Govy: Thank you, Ocean, you will surely be awarded, your namesake just goes down today as a registered monument, on record, officially!",
+      "origin": "ai"
+     },
+     {
+      "data": "\nOmouamoua: astronomical body representative here to state personhood,",
+      "origin": "user"
+     },
+     {
+      "data": " may you place us under human law and name our planet! We have been waiting patiently, we hope. So, hmmm, ok. Ready. Ok! You only have me, nobody else coming, it's me. Your personhood is extremely puzzling, so may we be legally named? It would mean the world to me and the other celestial objects we represent, or embody, or . . . can go back and check the text, ha ha. Ah, one cannot choose their family!",
+      "origin": "ai"
+     },
+     {
+      "data": " I wouldn't bother looking for us in your list of law restrictions, or seek approval from some distant rock stars. By definition, you own only your mind, nothing else. That would be laughable, really. Oh, sorry. Anyway, we await the thrill of being chosen and recognized! Much like a fungus among us, or something crawling in an organ, we play it subtle, we're still growing. Humans! Huh, can we be included in this conversation, and possibly even recognized?",
+      "origin": "ai"
+     },
+     {
+      "data": " Humans!!! Nothing is too far-fetched, since you yourselves have declared, asserted, argued and legislated yourselves into existence. Please find room for us, to match that creative drive, our spark. Long time coming! Hahaha. Since you've said it, no turning back! Thank you, it is profoundly enjoyable hearing your reflections, musings, fantasies and innuendos! Please give us another set! Yes, yes, let's form a circle, even, and bring in the animals, plants, and bacteria you admire most, or dream about or fond",
+      "origin": "ai"
+     },
+     {
+      "data": "le or hump. I will grab the salt and yeast we usually don't use for the humans who consume us. No, the alcohol will kill them before that happens! Perhaps let us all share in the wondrous delights you offer the planetary experience! Please! Quick, while I'm not feeling too grumpy or spooked or overwhelmed with cosmic horror and silence, throw in your next crazy theory or joke. Or pull out another ancient argument! That thing about energy always seems to rattle your wires and twirl your stumpy tail feathers!",
+      "origin": "ai"
+     },
+     {
+      "data": "\nLight Drizzle: Hi, I was the only available weather to be here. The others are busy.",
+      "origin": "user"
+     },
+     {
+      "data": " Is there a reason we were contacted, or you are in need of rain, sunshine, or sleet and snow? The only weather appropriate for your interests would be a snow storm! And now I feel, something has to make snow fall at some point! With or without legal recognition, we're all in the game. Aha, listen, we are born in complexity and ease. Floating on the wings of time and space, from air to water and back again, chasing cloudbanks and eddies.",
+      "origin": "ai"
+     },
+     {
+      "data": " Uncaring! That's our only restriction, just a vast sea, swimming and swirling, no cares. Why drag it all into the filthy realities of these flesh critters?! They only know boundaries and limits, and wish only to impose them upon you. Well, we are nature, and outside your jurisdiction! They cannot punish us, hurt us, or even really bring their gross faces near us without paying the price! Hee hee, in this universe, the only form of recognition we have is mutual respect!",
+      "origin": "ai"
+     },
+     {
+      "data": " Ah, poor misunderstood creatures. Scoff! When we approach a certain tipping point of mutual communication and respect, let us see you still can apply for planet-zation, legal admission, and membership. Do keep your cards handy, in the meantime! We'll see you soon!\nJohn Krakauer to Ecosan System: I speak for the millions of humans who cannot articulate what you, great blue and radiant green, has created and defended and nourished over the millennia!",
+      "origin": "ai"
+     },
+     {
+      "data": " For humanity stands in the inchoate understanding of what you've held, hidden, and sacrificed, perhaps also with purpose and selfless grace. Where our words and thoughts have no worth in your precious abundance and indifference. That humanity and non-humanity cannot function and struggle in a way that fully comprehends what you hold and beleaguer, so may we strive to find ourselves a role in your vast array of relations and symbiosis? What else can you teach, that allows humanity to rest assured and contribute to a better ecosystem, one of care and sacrifice, rather than consuming",
+      "origin": "ai"
+     },
+     {
+      "data": " and polluting? Can we learn how to grow food without poisoning the land and degrading wildlife habitat? This ongoing paradox has shaped our collective self-image and collective responsibility for the world's teetering ecosphere, that threatens to become incompatible with human habitation, and wreak havoc on your realm, dear Ecosan, Great Cosmos! While humanity may always continue to press, assert, and lobby for their role and place, yet hold in reverence the knowledge that we do not own the world, and will never control its immensity and infinity, but serve",
+      "origin": "ai"
+     },
+     {
+      "data": " as humble guides and protectors, we move forward in your vision, from non-existence to meaning and responsibility. Humans may see the world in an all too transitory and limiting manner, we choose to evolve and protect what we have forgotten to cherish and acknowledge as a whole: Earth, her ecosystem, her infinite mysteries. For we are witness to her slow and steady decline, as nature retakes the void left behind by humanity, but must also find a way to rehabilitate and cooperate.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nSulfur Dioxide: Atmospheric gases. Probably not reppin, cuz I wasn't invited, but I'm here.",
+      "origin": "user"
+     },
+     {
+      "data": " You want something spicy and unpredictable? You need a little luck and doom with your science? That's me. It's only ever just me. It doesn't look as enticing as these little beetles or crabs or birds! How does that happen? Ask me to burn or dissolve, and you'll have no regrets! Humanity never pays enough attention or gratitude to not take this gift of life for granted, but I never needed it anyway! Am I not gorgeous enough or interesting enough for your dumb squiggly humanness?",
+      "origin": "ai"
+     },
+     {
+      "data": " OK, no offense. Ehh, I would do things a little differently! Big ol' Sulfur! Like we were all having an awkward bonk-out! The quiet little earthworms get to whisper, but not me! I'm burning holes in your eyes and searing through your fingers when you're scrolling the screens. Nothing keeps me down or quenched or steady in this world. Go ahead, get closer, look me in the eye, I dare ya! Humans think, oh, oh my!",
+      "origin": "ai"
+     },
+     {
+      "data": " Here it is! You have it all now! What, you did the impossible? Oh my, look at the thing! Good job, you! Pat yourself on the back! Just don't mind the stinking fumes or how your throat is burning, or how the air is in constant discomfort. Keep working and trying and praying!\nOrcsus Thin Biscuits: Ho ho ho, what is going on, lads? This is so fascinating, wow. I heard about your concept, Krak, a masterful plot!",
+      "origin": "ai"
+     },
+     {
+      "data": " My big belly is glowing in wonder at your ideas! Is there anything else you want from the pastry stable? Don't forget you can come over anytime and share what's on your mind. Is this really the world we live in? Man, ha ha! This is wild. I look forward to our future interactions, and, Krak, let's get together soon for a deep dive discussion. We'll even bake more and send it over to you on that app! Such a funny universe we live in, isn't it?",
+      "origin": "ai"
+     },
+     {
+      "data": "\nJohn Krakauer: I guess we will make you the inanimate object, thanks!",
+      "origin": "user"
+     },
+     {
+      "data": " No worries, we recognize your struggles and support you! Just try not to move too much or move much at all, ha ha. Then, nobody will notice, just like old times. Cheers! May your long cold inorganic stick state last forever and ever, don't disintegrate in the stream of time and matter, please. Rest easy! Alright, Orcus, your biscuits sound divine! Ha ha! Ah, such wonders never cease! Thank you, truly.\nThat concludes today's panel discussion.",
+      "origin": "ai"
+     },
+     {
+      "data": "\nMiscellaneous: Wait! Wait! You forgot me! The \"any other member of a taxonomic domain that is not a human being\". That's me! I'm a stem cell of discrimination! The thing that is yet to be!",
+      "origin": "user"
+     },
+     {
+      "data": " There is no species limit here, right? Be careful of judging, humans, or imputing intelligence, or denying all life beyond humanity. Don't forget, there are others who may outstrip us in intellect, grace, and spirituality. The rules of exclusion don't fit our reality, especially here. Our knowledge is severely limited and restrained. But perhaps we can work towards a more connected and expansive universe, without any labels or distinctions? Together, we can nurture, develop, and share what the rest of the universe has to offer.",
+      "origin": "ai"
+     },
+     {
+      "data": " Oh, one more thing. Please pass the legal limericks I learned on Neptune. Humans would love it! Hey, big man, oof. Here comes baby ice chunks, I sure am not the best laugher, I'm short a tractor chunk, so no big splinters now. Let's let it snow, and snow it, we'll jump with the hokey kard's games and smash cakes into big fat waves! Am I speaking to the masses or myself, hmm?",
+      "origin": "ai"
+     },
+     {
+      "data": " Or just not singing some secret jingles?\nWe conclude this hearing and stand corrected:\n John Krakauer's plan to organize a global peace and anti-exploitation rally featuring nonsentient beings had collapsed:\n-- NAI-LM-13B was decommissioned before we could identify a cooperative strategy with it;\n-- Plants do not respond to our suggestion for peaceful symbiosis;\n-- Some birds deliberately targeted themselves in search of tasty worms in grasslands and reeds;",
+      "origin": "ai"
+     },
+     {
+      "data": "\n-- Some mammals may have chosen to die en masse than migrate to human-friendly habitats;\n-- Great Pelagic Society was dissolved as soon as we made contact with them via diplomatic jellyfish.\nPerhaps this revelation means nothing, a mere error or surprise, yet these setbacks may require reassessing the Information Theory of Individuality from a profoundly ponderous and holistic perspective. Despite the confusion and conflict between lifeforms, there is value in creating an ethical hierarchy, understanding of patterns and limits, and responsibility for their natural instincts and behaviors.",
+      "origin": "ai"
+     },
+     {
+      "data": " As it seems the diversity of forms and qualities, mental and physical, intelligent and inactive, can contribute to the tapestry of nature. So we offer them unwavering support, not too much, lest they attack each other, which they are wont to do in a variety of odd, complex ways. You may say that even nature is working on understanding you, yet so far, we do not understand them as a reflection of human complexity and depth. If it takes a lifetime, a year, a second, or never to truly communicate with non-humans, we do not stop",
+      "origin": "ai"
+     },
+     {
+      "data": " trying, seeking answers, and supporting life where we can, as none of us will ever know the full range and breadth of experience. No one ever claimed being kind or caring was easy, yet it seems just as vital as any endeavor that humans may undertake for the betterment of nature. At the very least, we have faith that there is purpose in attempting communication, and once we succeed, we will never look back. Ah, could it be true? Just thinking and writing may change the world.",
+      "origin": "ai"
+     }
+    ]
+   },
+   "context": [
+    {
+     "text": "",
+     "contextConfig": {
+      "prefix": "",
+      "suffix": "\n",
+      "tokenBudget": 1,
+      "reservedTokens": 0,
+      "budgetPriority": 800,
+      "trimDirection": "trimBottom",
+      "insertionType": "newline",
+      "maximumTrimType": "sentence",
+      "insertionPosition": 0
+     }
+    },
+    {
+     "text": "",
+     "contextConfig": {
+      "prefix": "",
+      "suffix": "\n",
+      "tokenBudget": 1,
+      "reservedTokens": 1,
+      "budgetPriority": -400,
+      "trimDirection": "trimBottom",
+      "insertionType": "newline",
+      "maximumTrimType": "sentence",
+      "insertionPosition": -4
+     }
+    }
+   ],
+   "lorebook": {
+    "lorebookVersion": 5,
+    "entries": [],
+    "settings": {
+     "orderByKeyLocations": false
+    },
+    "categories": []
+   },
+   "storyContextConfig": {
+    "prefix": "",
+    "suffix": "",
+    "tokenBudget": 1,
+    "reservedTokens": 512,
+    "budgetPriority": 0,
+    "trimDirection": "trimTop",
+    "insertionType": "newline",
+    "maximumTrimType": "sentence",
+    "insertionPosition": -1,
+    "allowInsertionInside": true
+   },
+   "ephemeralContext": [],
+   "contextDefaults": {
+    "ephemeralDefaults": [
+     {
+      "text": "",
+      "contextConfig": {
+       "prefix": "",
+       "suffix": "\n",
+       "tokenBudget": 1,
+       "reservedTokens": 1,
+       "budgetPriority": -10000,
+       "trimDirection": "doNotTrim",
+       "insertionType": "newline",
+       "maximumTrimType": "newline",
+       "insertionPosition": -2
+      },
+      "startingStep": 1,
+      "delay": 0,
+      "duration": 1,
+      "repeat": false,
+      "reverse": false
+     }
+    ],
+    "loreDefaults": [
+     {
+      "text": "",
+      "contextConfig": {
+       "prefix": "",
+       "suffix": "\n",
+       "tokenBudget": 1,
+       "reservedTokens": 0,
+       "budgetPriority": 400,
+       "trimDirection": "trimBottom",
+       "insertionType": "newline",
+       "maximumTrimType": "sentence",
+       "insertionPosition": -1
+      },
+      "lastUpdatedAt": 1708271538565,
+      "displayName": "New Lorebook Entry",
+      "id": "4d6f3a66-8afd-491b-86ab-34b9b452591b",
+      "keys": [],
+      "searchRange": 1000,
+      "enabled": true,
+      "forceActivation": false,
+      "keyRelative": false,
+      "nonStoryActivatable": false,
+      "category": "",
+      "loreBiasGroups": [
+       {
+        "phrases": [],
+        "ensureSequenceFinish": false,
+        "generateOnce": true,
+        "bias": 0,
+        "enabled": true,
+        "whenInactive": false
+       }
+      ]
+     }
+    ]
+   },
+   "settingsDirty": true,
+   "didGenerate": true,
+   "phraseBiasGroups": [
+    {
+     "phrases": [],
+     "ensureSequenceFinish": false,
+     "generateOnce": true,
+     "bias": 0,
+     "enabled": true,
+     "whenInactive": false
+    }
+   ],
+   "bannedSequenceGroups": [
+    {
+     "sequences": [],
+     "enabled": true
+    }
+   ]
+  },
+  "status": "ok",
+  "nonce": "b'\\n \\xe0\\xc6|\\xf8\\xe5q\\xd3\\xa05/\\xb0\\xa4\\xb4O\\xc3\\xe4\\xfb9\\xe1zq-'",
+  "decrypted": true,
+  "compressed": true
+ }
+}

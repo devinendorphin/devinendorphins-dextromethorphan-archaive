@@ -24,7 +24,7 @@ The name is the name.
 ```
 FINDINGS.md              the writeup — read this
 CASE_STUDY.md            one session traced in full — the press conference
-READINGS.md              criticism — seven movements, read not measured
+READINGS.md              criticism — eight movements, read not measured
 analysis/
   fetch_export.py        mirror the Drive export locally
   extract.py             story JSON -> stories.jsonl + blocks.jsonl
@@ -42,20 +42,33 @@ analysis/
   handover.py            what the author writes when they override the model
   handoff.py             why a bare `Name:` works — convention or scene-tracking
   trace.py               render one story's live path turn by turn
+  episodes.py            OCR the Twitch dashboard; test it against story edits
+  sweeps.py              recover the temperature-sweep procedure from the forks
+  pasted.py              text that arrived by clipboard, not from the model
   TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md
   REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md
-  DIRECTION.md HANDOVER.md HANDOFF.md                       generated
+  DIRECTION.md HANDOVER.md HANDOFF.md EPISODES.md SWEEPS.md
+  PASTED.md                                                 generated
+corpus/cited/             the 19 documents the readings quote — see its README
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)
   INDEX.tsv              the export's own manifest, 2,500 stories
   MISSING.md             the 483 that would not decrypt, and when they died
   FAILED_STORIES.txt     their ids, in the shape NovelAI support would want
+  EPISODES.tsv           1,492 broadcasts recovered by OCR, 2020-11 to 2024-12
 ```
 
 ## Reproducing
 
-The source of truth is the `nai_export` Drive folder, ~1 GB of JSON. It is not
-in this repo and should not be.
+The source of truth is the `nai_export` Drive folder — **1,004 MB across 2,016
+files**, plus a 524 MB `blocks.jsonl` once extracted. That does not belong in
+git: GitHub blocks single files over 100 MB, and git keeps every version forever.
+It is all regenerable from Drive, which is the durable copy.
+
+The exception is [`corpus/cited/`](corpus/cited/) — the nineteen documents
+`READINGS.md` and `CASE_STUDY.md` actually quote, 36 MB, committed so the
+arguments can be checked without a full re-mirror. **That is not a release**; see
+the note there.
 
 ```sh
 python3 analysis/fetch_export.py <json-folder-id> --out corpus/json --check
@@ -73,6 +86,11 @@ python3 analysis/tempo.py out --report analysis/TEMPO.md
 python3 analysis/direction.py out --report analysis/DIRECTION.md
 python3 analysis/handover.py out --report analysis/HANDOVER.md
 python3 analysis/handoff.py out --report analysis/HANDOFF.md
+python3 analysis/episodes.py corpus/twitch \
+    --out data/EPISODES.tsv --join data/stories_meta.jsonl \
+    --titles data/INDEX.tsv > analysis/EPISODES.md      # needs tesseract
+python3 analysis/sweeps.py data/stories_meta.jsonl --report analysis/SWEEPS.md
+python3 analysis/pasted.py data/stories_meta.jsonl --report analysis/PASTED.md
 ```
 
 `blocks.jsonl` comes out around 524 MB — every revision's full text. Everything
