@@ -246,7 +246,14 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   reconnaissance or had turned into something else.
 - **§VII has been rewritten in Endorphin's voice (2026-08-04) — the §IV form.**
   The degeneration paragraph is withdrawn, not softened, and the withdrawal is
-  argued from §III's own rule (*a disintegrated offer is still an offer*). What
+  argued from §III's own rule (*a disintegrated offer is still an offer*). A
+  second pass added **`### The office of interpretation`**, the only subsection
+  header in the document, leading the mechanic argument on the tongues office:
+  the LaHaye document **produces, names, staffs, and grades** its own glossolalia,
+  and each of those is something you cannot do to noise. Staffing is the decisive
+  step — Van Impe deciphering by his real television method, Benny Hinn arriving
+  as an interpreter of tongues (1 Cor 12:10), an office that exists *because*
+  glossolalia is held meaningful but not self-legible. What
   follows is the record of how it got there; the disagreements marked below are
   still live. He rejects "degeneration" outright: *"it is not
   degeneration thats just like saying the computer shut down while we are still

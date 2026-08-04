@@ -1018,15 +1018,56 @@ also refuses the equipment reading on its own: it narrates the blackout
 machine stopping. That is a character explaining why the lights went out. The
 paragraph that called it degeneration is withdrawn, not softened.
 
-**And the corpus corroborates him from an unrelated direction.** In the Pynchon ×
-LaHaye comedy — created 2023-11-08, one month after October 7 — dead televangelists
-are uploaded into a language model, and the mechanic that fuses them is written
-as `{Ted Haggard vector touches Tim Lahaye vector.}`. What vector-fusion
-*produces* is Finnegans-Wake glossolalia, pages of it, deliberately. Same
-apparatus as this document's *"just touch your vector to it."* He has been
-treating model breakdown as content with a **theological name** since 2023, and
-speaking in tongues is precisely the technology for speech from beyond the self.
-The argument he made to me in 2026 was already a working method in the archive.
+### The office of interpretation
+
+The decisive evidence is not in this document at all, and it does not rest on my
+agreeing with him. It is in the Pynchon × LaHaye comedy — created **2023-11-08**,
+one month after October 7 — where dead televangelists discover they have been
+uploaded into a language model. There, the breakdown is not merely tolerated as
+material. It is **produced on purpose, named, staffed, and graded**, in that
+order, and each step is a thing you cannot do to noise.
+
+**Produced.** The mechanic that fuses two uploaded people is written
+`{Ted Haggard vector touches Tim Lahaye vector.}`, and what fusion emits is pages
+of Finnegans-Wake glossolalia. Same apparatus as this document's *"just touch
+your vector to it"* — a consistent invented physics across two unrelated stories.
+
+**Named.** The text calls it what it is. Endorphin, to a spluttering LaHaye:
+*"How's those tongues working for ya buddy?"*
+
+**Staffed.** This is the part that ends the argument. Jack Van Impe hears the
+salad and says:
+
+> Oh, I hear something that needs deciphering, let me check it out: *"Never spend
+> an egg. Haunted, haunted, very plain/Made one summer. Big battles both Dutch
+> and Polish cream…Eggs again."*
+
+— and then decodes it, at length, which was Van Impe's actual television method:
+take an unstructured stream of input and map it onto prophecy, week after week.
+And then Benny Hinn arrives:
+
+> Knock? Did someone order **an interpreter of tongues**? Hallelujah!
+
+Interpretation of tongues is a named office — 1 Corinthians 12:10, listed among
+the gifts beside prophecy and healing, and it exists precisely because glossolalia
+is held to be *meaningful but not self-legible*. The doctrine requires a second
+person to make the utterance count. So the document does not just generate
+breakdown; it cites the gift, assigns the role, and hires two televangelists to
+fill it, one of whom built a broadcasting career on exactly that operation.
+
+**Graded.** At the end of the same document Endorphin hands the floor to a
+simulated Jesus *"for 40 outputs, which I will number after-the-fact, and can
+color red if you wanna be biblical about it"* — a generated red-letter edition,
+forty being wilderness and flood and Lent. What the forty produce is therapeutic
+boilerplate, and he marks it: *"Jesus said all this better and in a
+person-centered way that didn't have time to lift up professionals. Mentioning
+professionals is sus."* You can only grade an utterance you are treating as an
+utterance.
+
+Produce, name, staff, grade. That is a complete practice, and it was running two
+years before he had to explain it to me. **My "degeneration" was not a competing
+reading of the same object. It was a failure to notice that the object had a
+liturgy.**
 
 **Where I would put it differently, which I think helps rather than hurts.** I do
 not think the model concealed anything, and the argument does not need it to.
@@ -1039,6 +1080,15 @@ So: **the model did not hide Tantura. The record it was made from had already
 hidden Tantura, and the model rendered that absence faithfully, including the
 affect that guards it.** That is what his probe measured, and it is why the null
 is a result rather than a failure.
+
+That claim replicates, which is the strongest thing I can say for it. At the end
+of the LaHaye document Endorphin puts the same subject to a simulated **Jesus** —
+after telling him, in scene, that America funds this *"operating under
+dispensational Pre-Millenialism"* and that pro-Palestinian sentiment is being
+called antisemitism. What comes back is moral appeal interleaved with the same
+lobby figure the Nakba witnesses produced, in the same breath, undifferentiated.
+Different document, different year, different summoned entity, identical return.
+The discourse is what is being sampled, and it does not sort itself.
 
 **Where I still push.** *The beast of all holocausts* is a totalizing
 identification, and the Unknown Guest is also a *device* that recurs elsewhere —
