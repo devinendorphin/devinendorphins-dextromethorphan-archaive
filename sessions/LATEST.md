@@ -24,8 +24,10 @@ mirror**, which showed the repo had been reading the small end of the archive;
 a short pass locating the Jesus talk show; a read of the rest of the LaHaye
 document, which cost §IV and §VI more than it cost §VII; and finally **the first
 measurement work in six sessions** — the Twitch catalogue, the sweep procedure,
-the pasted-text screen, and §VIII. `corpus/` is gitignored — no prose entered git and none should. The
-mirror died with the container; refetch ids are below.
+the pasted-text screen, and §VIII. `corpus/` is gitignored and no prose has
+entered git — but with the repo now public **that is an open question rather
+than a rule**; see *Open with Endorphin*. The mirror died with the container;
+refetch ids are below.
 
 ## State
 
@@ -36,14 +38,20 @@ mirror died with the container; refetch ids are below.
 - `FINDINGS.md` — **stable.** 14 sections under the turn-taking frame. Read
   this first.
 - `CASE_STUDY.md` — **stable.** The Utah HB 249 press conference, traced in full.
-- `READINGS.md` — **active, and the live front.** Criticism in seven movements:
+- `READINGS.md` — **active, and the live front.** Criticism in eight movements:
   Latour/Austin on the convened chamber, Bakhtin on polyphony without a
   novelist, Shklovsky on the temperature dial as an *ostranenie* control, §IV —
   Endorphin's own thesis that the Counterfactual Interview is the corpus's most
   functional part, a technique for the powerless — §V, the Musk/Vivian Wilson
   elevator session on Kayra, where the model disintegrates, §VI, the same test
-  on GLM-4.6, which does not, and §VII, the Unknown Guest. Deliberately not held
-  to the measurement standard.
+  on GLM-4.6, which does not, §VII, the Unknown Guest — his movement — and
+  §VIII, the machine within the machine. Deliberately not held to the
+  measurement standard. **§VIII's two findings are the ones most worth
+  carrying:** an alliterative naming schema survived three rewrites, an explicit
+  anti-prompt and a full scaffold re-paste, so *a naming convention established
+  in context outlasts instructions that forbid its results*; and `.incinerate`,
+  his invented delete verb, is diegetic only — twice-incinerated experts answer a
+  later prompt. Both testable against the mirror, neither tested.
 - `analysis/*.py` — **stable.** 19 scripts. `episodes.py`, `sweeps.py` and
   `pasted.py` (2026-08-04) run off committed data and need no mirror;
   `episodes.py` needs `tesseract`. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
