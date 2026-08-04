@@ -1,23 +1,37 @@
 # devinendorphins-dextromethorphan-archaive
 
-**Register: seed.** README only — a name and an intention. Scaffold minimally; do not build
-a project around a title.
+**Register: formal/evidentiary.** This is a **research corpus**, not a seed — 2,016 NovelAI
+story exports, 2021–2026, with the full edit history preserved. The question this file used
+to ask (*personal record, phenomenological writing, literature collection, or harm-reduction
+reference?*) was settled on 2026-08-03: none of those. It is an instrumented record of how
+one person drove text generation models over five years, and it is analysed as such.
 
-## What this repo needs first
+Start with `sessions/LATEST.md`, then `FINDINGS.md`.
 
-A thesis paragraph, and in particular an answer to *what kind of archive this is*: personal
-record, phenomenological writing, literature collection, or harm-reduction reference. Those
-are four different projects with four different registers, and the right structure follows
-from the answer rather than preceding it.
+**It is emphatically not the harm-reduction register.** Nothing here makes claims about
+effects or safety. The earlier note proposing consolidation with `harm-reduction-outreach`
+and `hookup-hygiene` does not apply — that was written when the repo was a title and an
+intention, and the territory turned out to be unrelated. The name is the name.
 
-If it turns out to carry claims about effects or safety, it wants the **formal/evidentiary**
-register and the hub's epistemic status tags. If it is personal or phenomenological writing,
-it does not — that register would flatten it, and `notes/` plus preserved voice is the
-better shape. Ask before assuming which.
+## Working on this corpus
 
-> Possible consolidation: `harm-reduction-outreach` and `hookup-hygiene` are also seeds in
-> adjacent territory. Three repos or one is an open question worth answering before any of
-> them grows.
+Five hard-won rules, each earned by a headline number that turned out to be measuring the
+tool rather than the author. `sessions/LATEST.md` carries the full standing-notes list;
+these are the ones that will bite fastest:
+
+- **Never group by story id.** Duplicating a story in NovelAI copies its whole branch
+  history, so the same text lives under many story ids. Group by connected components of
+  shared text.
+- **`removedFragments` is not a rejection measure.** Use branch reachability — walk
+  `prevBlock` back from `currentBlock`.
+- **Check whether a setting is in the enabled sampler order before reading its value.**
+  Erato stores a neutral temperature of 1.0 in a field its pipeline never reads.
+- **This corpus cannot benchmark models.** Settings moved with model choice.
+- **Match on length before comparing text overlap.** A longer passage contains more of
+  anything; an unmatched control turned a 63% effect into a 66% one.
+
+The unit of analysis is the **turn**, not the passage — see `FINDINGS.md`'s frame section.
+Four analysis passes died asking what made a generation good enough to keep.
 
 ## The harness
 
@@ -29,6 +43,8 @@ add_repo devinendorphin/claude-at-claude
 ```
 
 This container is ephemeral, so anything that matters gets committed *this turn*. Be a
-collaborator rather than a cheerleader, and run a disconfirming test on primed claims.
-Endorphin works from a phone and often dictates while walking — expect speech-to-text
-artifacts, and mark guessed corrections `[?original→guess]`.
+collaborator rather than a cheerleader, and run a disconfirming test on primed claims — in
+this repo that instruction is load-bearing rather than decorative. Endorphin works from a
+phone and often dictates while walking; expect speech-to-text artifacts, and mark guessed
+corrections `[?original→guess]`. Their corrections have repeatedly been right against
+Claude's written claims, so treat them as evidence.
