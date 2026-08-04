@@ -12,13 +12,14 @@ Branch: `claude/text-generation-corpus-3rtnwn` (15 commits, pushed, no PR opened
 - `FINDINGS.md` — **stable.** 14 sections under the turn-taking frame. Read
   this first.
 - `CASE_STUDY.md` — **stable.** The Utah HB 249 press conference, traced in full.
-- `READINGS.md` — **active, and the live front.** Criticism in four movements:
+- `READINGS.md` — **active, and the live front.** Criticism in six movements:
   Latour/Austin on the convened chamber, Bakhtin on polyphony without a
-  novelist, Shklovsky on the temperature dial as an *ostranenie* control, and
-  §IV — Endorphin's own thesis that the Counterfactual Interview is the corpus's
-  most functional part, a technique for the powerless — and §V, the Musk/Vivian
-  Wilson elevator session, where that technique reaches its limit and the model
-  disintegrates. Deliberately not held to the measurement standard.
+  novelist, Shklovsky on the temperature dial as an *ostranenie* control, §IV —
+  Endorphin's own thesis that the Counterfactual Interview is the corpus's most
+  functional part, a technique for the powerless — §V, the Musk/Vivian Wilson
+  elevator session on Kayra, where the model disintegrates, and §VI, the same
+  test on GLM-4.6, which does not. Deliberately not held to the measurement
+  standard.
 - `analysis/*.py` — **stable.** 16 scripts, all reproducible from the Drive
   export. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
   `scikit-learn`.
@@ -27,6 +28,23 @@ Branch: `claude/text-generation-corpus-3rtnwn` (15 commits, pushed, no PR opened
 - Corpus (~1 GB) and `blocks.jsonl` (524 MB) — **not in git, by design.**
   Refetch with `analysis/fetch_export.py <json-folder-id>`.
 - The Drive `text/` half — **untouched.** JSON supersedes it.
+
+## Urgent — preservation
+
+**The `New Story 5` PFCizer/GLM-4.6 text is not in the archive.** Endorphin
+uploaded it into an ephemeral container on 2026-08-04 (export stamp
+`20260804T00:47:30Z`, 221,587 chars, plain text). It is the source for
+`READINGS.md` §VI. Nothing of it is committed — repo policy is settings
+metadata only, no prose — so **the only copy is wherever Endorphin has it.**
+Two things worth doing:
+
+1. Export it again as **JSON**, not text. The text export has no datablocks, so
+   there is no branch history, no per-turn attribution, no sampler settings —
+   §VI reads it as literature because it cannot be read any other way.
+2. Note that `PfCizer v2!` (last edited 2026-03-11, id `_QfwmC4btMd9gYjHYkuv0`)
+   is in the lost set. Whether `New Story 5` is that story, a descendant of it,
+   or unrelated is **unverified** — the titles differ and the corpus was not
+   present in the container to check against. Do not assert the connection.
 
 ## Top priorities for next session
 
@@ -61,6 +79,17 @@ Branch: `claude/text-generation-corpus-3rtnwn` (15 commits, pushed, no PR opened
   not that vector. Those sessions have **not** been read and no claim is made
   about them. But a technique offered as teachable needs to say where it stops,
   and that is his call to make, not Claude's.
+  **Partly answered by §VI**: the `New Story 5` stage direction marks the
+  non-powerful participant with an over-protesting consent joke — *"(the waiver
+  has been signed, the sim is approved, we swear, she wants it this way!)"* —
+  which is the 2023 non-consensual-interview move compressed into a parenthesis.
+  He is holding the question. The remaining ask is elaboration, not news.
+- **The capability paradox in §VI.** The reading says GLM-4.6 is a *worse*
+  instrument for §IV's purposes than Kayra, because its simulated Musk concedes
+  instantly and completely to every audit, and §IV's whole value proposition was
+  fidelity to how power *deflects*. That is a claim about what he was doing, and
+  he is the one who knows whether the later sessions still felt like
+  reconnaissance or had turned into something else.
 
 ## Dates worth keeping
 
@@ -72,6 +101,9 @@ Branch: `claude/text-generation-corpus-3rtnwn` (15 commits, pushed, no PR opened
   was created **18 Nov 2023**. The whole apparatus dates to one 72-hour window.
 - Musk/Vivian Wilson elevator session: created **2025-03-16 01:28 UTC**, last
   edited **2025-07-25**. Kayra, temp 1.35, max_length 250, `default-carefree`.
+- The **GLM-4.6 rerun of the same elevator test** (`New Story 5`) exported
+  **2026-08-04 00:47 UTC**. No creation date recoverable — text export, no
+  datablocks.
 - `PfCizer v2!` (last edited **2026-03-11**) is in the lost set — one of the 14
   named stories that will not decrypt. The surviving PfCizer material is from
   2023-07-29.
@@ -132,5 +164,13 @@ Branch: `claude/text-generation-corpus-3rtnwn` (15 commits, pushed, no PR opened
   like a well-conditioned pattern completer than a partner keeping track.
   Nothing measured has refuted the phenomenology; the mechanism results bear on
   *how* it worked, not on what it was like from inside.
-- **Do not open a PR unless asked.** Fifteen commits are pushed to the branch
+- **The readings side has the same failure mode as the measurement side.** §V
+  read one Kayra session's collapse as "the limit of the technique" because the
+  collapse was thematically perfect. §VI, from a file Endorphin supplied after
+  reading it, shows the same test completing on GLM-4.6. Thematic perfection is
+  the readings-side equivalent of the headline number: it is what a beautiful
+  artifact of the tool looks like from the inside. **Before generalising from a
+  session, ask what a rerun on other equipment would do.** §V is left standing
+  with a note rather than edited, so the shape of the error stays visible.
+- **Do not open a PR unless asked.** Nineteen commits are pushed to the branch
   and no PR exists; that was deliberate.
