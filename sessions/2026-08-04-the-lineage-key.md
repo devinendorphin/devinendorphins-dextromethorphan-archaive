@@ -191,3 +191,43 @@ Qualifications kept in §15: the Gemini text is a `user` block, so it is
 off-platform output pasted back (the `pasted.py` regime); Gemini was reading a
 passage that *describes* a platform freezing, so naming that theme is
 comprehension, not corroboration.
+
+## Third half — Lenses 2 and 3, both closed by feasibility checks
+
+Endorphin asked whether the other two lenses were worth running. Both checks are
+cheap and both came back no. Recorded because the repo's value is in what failed.
+
+**Lens 2 — within-lineage model contrast: dead, and now measured (§11a).**
+3,582 cross-model fork pairs exist within lineages; requiring identical
+`max_length` and a live temperature within 0.1 leaves 197, and those collapse to
+a handful of documents. **Kayra vs GLM-4.6 — the exact contrast `READINGS.md`
+§V/§VI rest on — is zero.** GLM-4.6 appears on two stories in any matched
+comparison in the archive. The GROK lineage shows the trap: it reads as 13
+matched GLM/Erato pairs and is one GLM fork against 13 Erato forks. §11 was a
+rule of thumb argued from distributions; it is now a fact.
+
+**Lens 3 — refusal register in dead branches: a null, plus a self-inflicted
+lesson (§16).** The pilot found *"I don't have personal feelings"* 166× more
+common on abandoned branches. It was **seventeen forks of one lineage carrying
+one abandoned block** — §10b's error, reproduced in a fresh pilot on the same
+day the tool that fixes it was built. Deduplicated: 22,187 abandoned blocks are
+4,126 distinct generations, and no marker survives (refusal 0.96, apology 1.33,
+*"it's important to"* 0.79). The base rate is the real finding — *"as an AI"*
+occurs in **0.95 per 1,000** generations, because these are completion models,
+not chat assistants. **Before testing whether a behaviour is selected against,
+check that the behaviour occurs.**
+
+**Container note.** Between the Lens 1 commit and this one the local git object
+store lost `c924644` and the working tree reverted to `ae3c7d1`, taking
+`inherit.py`, `INHERIT.md` and `INHERIT.tsv` with it. The push had already
+landed, so `git fetch` + `reset --hard origin/<branch>` restored everything.
+**Push early; the local store is not more durable than the container.**
+
+## What to do next
+
+The apparatus atlas, which is now a short step rather than a research programme.
+`data/INHERIT.tsv` holds 3,481 cross-lineage passages and `data/FAMILIES.tsv`
+gives every story a lineage id; clustering the passages into devices produces the
+atlas that started this whole exchange. The other live thread is the half of the
+Unknown Guest probe §15 did not run: the base rate of off-roster speakers in
+general, with the press conference as high-water control.

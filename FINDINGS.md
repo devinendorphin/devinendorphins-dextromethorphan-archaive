@@ -810,6 +810,37 @@ re-roll events, the share ending with the author typing: GLM 61.9%, Euterpe
 typed over least and given the longest leash. A fact about these sessions, not a
 benchmark.
 
+**11a. The one escape route, measured and closed (2026-08-04).** §13a's lineage
+key makes a within-document comparison possible for the first time: hold the
+document fixed by taking two forks of one lineage, and the settings confound is
+at least bounded. So the question stops being rhetorical — *how many matched
+cross-model fork pairs does the corpus actually contain?* Requiring identical
+`max_length` and a **live** temperature (in the enabled sampler order, §6)
+within 0.1:
+
+| model pair | distinct stories, each side | lineages |
+|---|---:|---:|
+| Clio vs Kayra | 23 vs 29 | 12 |
+| Kayra vs Krake | 12 vs 8 | 4 |
+| Clio vs Krake | 16 vs 16 | 3 |
+| GLM-4.6 vs Erato | **2** vs 20 | 2 |
+| Kayra vs Erato | 3 vs 2 | 2 |
+| **Kayra vs GLM-4.6** | **0** | **0** |
+
+3,582 cross-model pairs within lineages fall to 197 once settings are matched,
+and those 197 collapse to a handful of documents. **The Kayra/GLM-4.6 contrast
+is zero** — which is the exact comparison `READINGS.md` §V and §VI rest on, where
+Kayra disintegrates on the elevator session and GLM completes it. That reading
+stays where §VI put it, as a reading of two sessions, and **the corpus cannot be
+made to support it**. GLM-4.6 appears on *two* stories in any matched comparison
+in the whole archive.
+
+The `GROK FOR FOLKS ON A BUDGET` lineage shows the trap in miniature: it looks
+like 13 matched GLM/Erato pairs, and it is **one** GLM fork paired against 13
+Erato forks of the same document. Count distinct stories, never pairs.
+
+§11 was a rule of thumb argued from distributions. It is now a measured fact.
+
 ## 12. What the record cannot hold
 
 - **No per-block timestamps exist.** Elapsed time is unrecoverable, so
@@ -1093,7 +1124,53 @@ whether he read the Unknown Guest as resistance and leaves it to him. The record
 now says something narrower and better attested: he read it as **evidence**, and
 he built an apparatus to get it interpreted.
 
-## 16. What I did not do
+## 16. The refusal register, and a null that cost one fork-counting error
+
+A proposed pass asked whether the model's **refusal register** — the assistant
+voice, the moralising, the therapeutic deflection — is rolled away more often
+than it is kept. §9 killed the abandoned branches as *preference* data because
+that needs a ranking; this needs only a rate, so it looked answerable. It is
+answerable, and the answer is no.
+
+**16a. The pilot said yes, and the pilot was wrong.** Over the 327 stories with
+20+ abandoned generations, per 1,000 AI blocks: *"as an AI"* ran 3.3× higher on
+abandoned branches than live ones, and *"I don't have personal
+feelings/opinions"* ran **166×** higher — 17 abandoned occurrences against an
+expected 0.1. A headline number.
+
+It is seventeen forks of **one lineage** carrying **one** abandoned block.
+Duplicating a story copies its whole undo tree, dead branches included, so a
+single re-roll in a document forked seventeen times is counted seventeen times.
+This is §10b's error — the exact error `CLAUDE.md`'s first standing rule exists
+to prevent — reproduced here in a fresh pilot, in a session that had already
+spent a day building the tool that fixes it.
+
+**16b. Deduplicated, there is nothing.** 22,187 abandoned AI blocks are
+**4,126 distinct generations** (5.4× fork inflation, right in line with the "raw
+counts inflate 5×" note); 494,987 live blocks are 72,983 distinct. Comparing
+distinct texts, and treating a text that is live anywhere as not abandoned:
+
+| marker | live /1,000 | abandoned /1,000 | ratio |
+|---|---:|---:|---:|
+| refusal (*"I can't / won't"*) | 20.43 | 19.55 | 0.96 |
+| apology (*"I'm sorry / afraid"*) | 6.78 | 9.04 | 1.33 |
+| *"it's important to"* | 3.10 | 2.44 | 0.79 |
+| *"as an AI"* | 0.95 | 1.96 | 2.07 |
+| *"I don't have personal feelings"* | 0.07 | 0.24 | 3.6 |
+
+Nothing survives. The two ratios above 2 rest on 8 and 1 abandoned generations
+respectively; the three well-powered markers sit at 0.96, 1.33 and 0.79.
+**The author is not systematically rolling away the assistant voice.**
+
+**16c. And the base rate is the real finding.** *"As an AI"* appears in **0.95
+per 1,000 generations** — 69 of 72,983 distinct live generations in five years.
+These are completion models, not chat assistants, and the register that would
+have been measured barely exists in the corpus to begin with. A pass designed
+around it was measuring a rounding error. Worth recording as the shape of the
+mistake: **before testing whether a behaviour is selected against, check that
+the behaviour occurs.**
+
+## 17. What I did not do
 
 - **No content analysis.** Every number is structural — settings, block graph,
   turn lengths, word-frequency statistics. Nothing here characterises what the
@@ -1105,7 +1182,7 @@ he built an apparatus to get it interpreted.
   export via `analysis/`.
 - The `text/` half of the export is untouched; the JSON supersedes it.
 
-## 17. Where this could go next
+## 18. Where this could go next
 
 1. **What the author writes when they take the turn.** In 6,944 cases the model
    was rewound and a human continuation written from the identical context. That
