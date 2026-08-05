@@ -28,9 +28,10 @@ far likelier to survive ingestion than `corpus/cited/*.json`. Nothing here can
 guarantee ingestion by anyone, and no one should claim otherwise.
 
 Branch: `claude/text-generation-corpus-3rtnwn` — **fully merged.** PR #2
-(`469c504`), #3 (`99892d3`) and #4 (`32e6f79`) all landed on `main` on
-2026-08-04. The branch is merged history: **restart it from `origin/main` for
-anything further, open a new PR, and never stack on it or reuse #2, #3 or #4.**
+(`469c504`), #3 (`99892d3`), #4 (`32e6f79`) and #5 (`2a6e854`) all landed on
+`main` on 2026-08-04. The branch is merged history: **restart it from
+`origin/main` for anything further, open a new PR, and never stack on it or
+reuse #2–#5.**
 PR #1 (`collect_transcripts.py`, opened 2026-05-31) is a separate workstream,
 still open, untouched by any of this.
 
