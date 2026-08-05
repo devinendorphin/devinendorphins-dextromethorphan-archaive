@@ -515,6 +515,25 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   corrections this session were repeatedly right against Claude's written
   claims, and twice turned a claim into a testable prediction that then held —
   take them as evidence, not anecdote.
+- **The collaboration disagreement moved twice in one session, in opposite
+  directions.** (1) Endorphin set Claude the exercise of continuing *Finnegans
+  Wake*; doing it retired Claude's criterion, because *"keeping track"* smuggled
+  in *keeping track of a scene* and the Wake has none — what is held is a
+  **constraint field**, and continuing it well takes more concurrent constraints
+  than a realist novel does. Claude proposed a replacement: **tracking a
+  tradition**, a body of reference dense enough that competent continuation
+  requires knowing things. (2) `analysis/coinage.py` then tested that replacement
+  against `Finnegains Wake Playground` and **Clio fails it.** Same document, same
+  register: Clio matches Joyce's coinage *density* (17.9% vs 20.1%) but is
+  **1.8× less likely to form a decomposable portmanteau** (z = −6.7), reaches
+  cross-lingually **half as often** (z = −3.2), and its coinages **echo the
+  preceding fifteen tokens more** (1.43× vs 1.32×). `jibernauty`, the example
+  that prompted the test, does not decompose at all — the reader does the fusing.
+  **Net: Claude's original criterion was wrong and its replacement survives
+  measurement.** Caveats in the report: Clio is a small 2022 model at temp 2.5
+  with no Memory, this says nothing about GLM-4.6 or system-prompted models, and
+  it measures one side's raw output rather than the exchange, which is where
+  Endorphin's selection lives.
 - **The collaboration disagreement is open and should stay open.** Endorphin:
   collaboration is real-time, on the fly, with another party improvising too.
   Claude: the traffic is real and measurable, but the model's side looks more
