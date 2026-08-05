@@ -1,7 +1,8 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-04**, `sessions/2026-08-04-the-deposit.md`
-Prior: `sessions/2026-08-04-the-external-clock.md`,
+Last session: **2026-08-04**, `sessions/2026-08-04-the-wake-test.md`
+Prior: `sessions/2026-08-04-the-deposit.md`,
+`sessions/2026-08-04-the-external-clock.md`,
 `sessions/2026-08-04-the-setting-he-built.md`,
 `sessions/2026-08-04-office-of-interpretation.md`,
 `sessions/2026-08-04-unknown-guest-in-his-voice.md`,
@@ -33,15 +34,16 @@ anything further, open a new PR, and never stack on it or reuse #2, #3 or #4.**
 PR #1 (`collect_transcripts.py`, opened 2026-05-31) is a separate workstream,
 still open, untouched by any of this.
 
-08-04 ran in seven parts: an entirely qualitative pass (no script, no corpus);
+08-04 ran in eight parts: an entirely qualitative pass (no script, no corpus);
 a 17-file pull of the Nakbah/Zionist forks; **the full 2,016-file
 mirror**, which showed the repo had been reading the small end of the archive;
 a short pass locating the Jesus talk show; a read of the rest of the LaHaye
 document, which cost §IV and §VI more than it cost §VII; and finally **the first
 measurement work in six sessions** — the Twitch catalogue, the sweep procedure,
 the pasted-text screen, and §VIII; and finally the commit of `corpus/cited/`
-and the deposit decision. The full export stays gitignored — `corpus/*` with
-`!corpus/cited/`. The mirror died with the container; refetch ids are below.
+and the deposit decision; and finally Endorphin answering all seven open
+disagreements, the Finnegans Wake exercise, and `coinage.py`. The full export
+stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the container; refetch ids are below.
 
 ## State
 
@@ -66,8 +68,9 @@ and the deposit decision. The full export stays gitignored — `corpus/*` with
   in context outlasts instructions that forbid its results*; and `.incinerate`,
   his invented delete verb, is diegetic only — twice-incinerated experts answer a
   later prompt. Both testable against the mirror, neither tested.
-- `analysis/*.py` — **stable.** 19 scripts. `episodes.py`, `sweeps.py` and
-  `pasted.py` (2026-08-04) run off committed data and need no mirror;
+- `analysis/*.py` — **stable.** 20 scripts. `episodes.py`, `sweeps.py` and
+  `pasted.py` and `coinage.py` (2026-08-04) run off committed data and need no
+  mirror; `coinage.py` needs `corpus/cited/` and `wordfreq`;
   `episodes.py` needs `tesseract`. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
   `scikit-learn`.
 - `analysis/*.md` — **generated.** Regenerate, do not hand-edit.
