@@ -378,6 +378,19 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   catastrophe, and 'our 9/11'… And I didn't even realize the potential dog
   whistle that the word catastrophe had. Like what unmitigated goal to co-opt the
   term for a deep injury towards your people."*
+- **~~Theresienstadt / is the burning licensed?~~ ANSWERED: yes.** *"those
+  empower made their bed and they also make themselves public and vulnerable to
+  examination and since they're creating surveillance apparatuses to examine us
+  it is only fitting that the symmetry be symmetrical and cheap."* The licence is
+  **reciprocity plus cost**, not unavailability as §IV had it — surveillance of
+  the public is industrial and one-directional, and returning it costs a phone.
+  Recorded in §VII.
+- **~~The totalizing identification.~~ ANSWERED, and Claude's objection
+  withdrawn.** *"it's fiction entities can be totalizing… it's just better when
+  they're totalizing and metaphor because then it becomes shorthand."* A
+  totalizing figure is a **compression**, not a failed empirical claim — the
+  objection was category-confused. What survives: still run the base-rate probe,
+  not as a test of his figure but because the answer is informative either way.
 - **Does he read the Unknown Guest as resistance?** §VII records the ordering —
   Endorphin names Theodore Katz, the unsummoned speaker calls him a twat over the
   name, the room mumbles, the model says it is losing his directives, then

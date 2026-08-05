@@ -1221,6 +1221,51 @@ that transmitted an escort's night into Tim LaHaye. And it is a better account o
 what Endorphin means by *rend* than either word he and I have been trading: the
 powerful are not destroyed here. They are **made to sit through something.**
 
+### Two answers, his
+
+*Both of the things §VII left open above have since been answered by Endorphin.
+They are set down here as given, because the section spent a good deal of effort
+declining to rule on them and it would be dishonest to leave the questions
+standing once the person they were left with has ruled.*
+
+**On whether the burning is licensed — yes, and the argument is reciprocity plus
+cost.**
+
+> yes it is licensed those empower made their bed and they also make themselves
+> public and vulnerable to examination and since they're creating surveillance
+> apparatuses to examine us it is only fitting that the symmetry be symmetrical
+> and cheap
+
+That is a better licence than the one §IV constructed for him. §IV grounded the
+effigy tradition in *unavailability* — the king cannot be reached, so the
+substitute stands in. His grounding is **reciprocity**: the powerful have built
+the examination apparatus and pointed it at everyone, so being examined back is
+not a transgression but a return. And the second clause is the load-bearing one —
+*symmetrical and cheap*. The asymmetry that matters is not power, it is **cost**.
+Surveillance of the public is industrial and expensive and one-directional; a man
+with a phone and a text generator can return it for nothing. Cheapness is the
+whole point, not an apology for the method.
+
+**On the totalizing identification — totalizing is the feature.**
+
+> it's fiction entities can be [?fertilizing→totalizing] it's totally fine it's
+> just better when they're totalizing and metaphor because then it becomes
+> shorthand
+
+My objection was that *the beast of all holocausts* over-claims, naming one thing
+where a general device recurs. He is answering on genre grounds, and he is right
+that the objection was category-confused. A totalizing figure in fiction is not a
+failed empirical claim; **it is a compression.** The value of naming the Unknown
+Guest that way is that it becomes portable — a handle you can carry to the next
+session and the next document. That is what shorthand is for, and it is a
+different standard from the one `FINDINGS.md` runs under, which is exactly why
+this document exists separately.
+
+I withdraw the objection as posed. What survives from it is narrower and still
+worth keeping: the base-rate probe should still be run, not to test his figure
+but because knowing whether unsummoned speakers are rare or common tells us
+something about the machine either way.
+
 **Why I glossed the Unknown Guest, which is the part worth keeping.** Two
 reasons. I began reading the Tantura sequence one block after the insult, which is
 carelessness. But §I and §II are both organised around *who gets seated*, so the
