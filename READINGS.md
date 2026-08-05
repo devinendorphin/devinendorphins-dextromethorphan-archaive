@@ -13,14 +13,23 @@ The work is play. It was made at speed, on stream, for an audience, with a beat
 under it. Play is not the opposite of serious. It is the condition under which
 this particular thinking was possible, and the thinking is real.
 
-Three lenses, a proposition, two cases, a figure, a nesting, and a coda. The fourth
-movement is Endorphin's thesis rather than mine; it is developed and argued
-with here, not merely relayed. The fifth follows it to where it stops working.
-The sixth is the same test run again on a later model, which Endorphin supplied
-after reading the fifth, and which corrects it. The seventh is his again — a
-character I walked straight past until he pointed at it twice, and a reading of
-it that corrects mine. The eighth he handed over as a puzzle: a generator nested
-four frames deep, and the two things that would not obey it.
+Three lenses, a proposition, two cases, a figure, a nesting, a bestiary, and a
+coda. The fourth movement is Endorphin's thesis rather than mine; it is
+developed and argued with here, not merely relayed. The fifth follows it to
+where it stops working. The sixth is the same test run again on a later model,
+which Endorphin supplied after reading the fifth, and which corrects it. The
+seventh is his again — a character I walked straight past until he pointed at it
+twice, and a reading of it that corrects mine. The eighth he handed over as a
+puzzle: a generator nested four frames deep, and the two things that would not
+obey it.
+
+**§IX is the exception to everything in the paragraph above, and it is marked
+because it is one.** It answers a question Endorphin asked — can the kinds of
+language-shaping at different presets be told apart and named — and it is built
+on `analysis/MYTHS.md` throughout. Its claims *can* be falsified by re-running a
+script, and if the numbers move it falls. The names in it are the readings-side
+contribution; the six things they name are measurements. Read the rest of this
+document under the standard set above and that section under the other one.
 
 ---
 
@@ -1397,6 +1406,175 @@ summoning tradition has a banishing rite, for the obvious reason: the danger is
 not that nothing comes, it is that it does not leave afterward.
 
 He wrote the banishing because he had just watched the dismissal fail.
+
+## IX. Six ways of coming apart
+
+§III calls the temperature control a knob for *ostranenie* and reads the border
+of coherence as one border. Endorphin asked whether the types of shaping at
+different presets could be told apart and named, on the grounds that names have
+not been put to them yet. They can, and this is the attempt. The measurement is
+in `analysis/MYTHS.md`; this is what I think it means.
+
+The document is `Mythmaker - Working Copy`, 76 forks of one story, and it is the
+best-designed experiment in the archive. One model. `max_length` held at 100 in
+all 76. Three presets in rotation — `asper`, `writersdaemon`, `freshcoffeek` —
+with temperature stepped under each, on the same days, over five months. And
+because the forks are an append chain rather than parallel copies, each save's
+new blocks belong to that save's settings. Everywhere else in the corpus the
+settings are a fact about a story. Here they are a fact about a paragraph.
+
+### The dial does not have one meaning
+
+At 2.5 — the top of the slider, the boundary §III correctly identifies as an
+interface constraint — the same story on the same model produces **0.61%**
+non-words under `freshcoffeek`, **0.75%** under `asper`, and **7.18%** under
+`writersdaemon`. That is an eleven-fold range at one value of the thing we have
+been calling *the* dial, and it holds up: it replicates within days, it survives
+shuffling the preset labels between forks of the same day (p = 0.0005), and it
+is not an artifact of the attribution, which passes its own control.
+
+The ordering is not mysterious and it is not about the presets' names. It is
+about where the truncation sits. `freshcoffeek` applies a hard `top_k` of 25
+*after* temperature; `asper` applies one of 175 after temperature;
+`writersdaemon` enables no `top_k` at all and runs mirostat instead. Heat the
+distribution and then cut it to 25 candidates and you have given the heat almost
+nothing to do. Heat it and never cut it and the heat is the whole event.
+
+So the knob in §III is real, but it is a knob whose units are set by a
+configuration Endorphin was also changing. **A temperature in this corpus is not
+a setting unless the preset is quoted with it.** `analysis/SWEEPS.md` now says
+so: only 11% of the 216 sweep clusters hold the preset constant, and 92% of the
+swept forks sit in clusters where preset and temperature moved together. Those
+are not temperature ladders. They are two-factor designs, and the second factor
+was invisible because the script only looked at the first.
+
+### What breaks first is the furniture
+
+Here is the thing I did not expect, and it reorganises §I and §II more than it
+does §III.
+
+The `Name:` convention — the device that makes a generation a *convened chamber*
+rather than prose, the thing §7 of `FINDINGS.md` measures at 85–90% and the
+thing both of the first two readings are built on — collapses at 2.5 under **all
+three** presets, by 93–96%, including the two whose vocabulary does not move at
+all. Handed context just as dense with speaker lines, a generation below 2.0
+returns at least one speaker line 38% of the time; at 2.5, 6%. The author is not
+withholding the convention during those runs. The sampler is dissolving it.
+
+The assistant register goes the same way and in the same direction, which is the
+detail that convinced me. *"Please clarify what information you require."* *"I'm
+always happy to help!"* Those are **low**-temperature productions. Service voice
+is what this model does when it is sampled conservatively; it is one of the
+institutions, filed alongside the listener numbering and the step lists, not a
+symptom of strain.
+
+Which gives an order of dissolution: **frame, then syntax, then the word.** The
+show loses its institutions before it loses its language. The roster goes while
+the sentences are still intact; the function-word rate holds until the last
+region; the coinage — the texture everyone notices first — is the *last* thing
+to go, and under two of the three presets it never goes at all. We have been
+reading the loudest layer as the deepest one.
+
+That also puts a number against the open question in §VII. If the Unknown Guest
+were high-temperature debris, unnamed speakers should multiply as the dial rises.
+In this document they do the opposite: new speakers arrive at 1.5 per thousand
+tokens below 2.0 and 0.1–0.7 at 2.5, because at 2.5 there is barely a roster for
+anyone to be missing from. An uninvited speaker is a **mid**-temperature event —
+something that happens while the room is still a room. That is one document on
+one model and it does not settle the base rate, but it points the way Endorphin
+said it pointed, and against the reading I defended.
+
+### The six
+
+Crossing three presets with two temperature regions gives six behaviours that
+separate on measurement rather than by ear. The names are mine and are the most
+disposable part of this; the definitions are what has to survive if he replaces
+them.
+
+**The clerk** (`freshcoffeek`, below 2.0). The most speaker lines and the most
+service register of any cell, and almost no invention. It builds the apparatus —
+numbered listeners, `Step 1` through `Step 7`, *"the key take-away"*. Every show
+needs someone to lay the chairs out.
+
+**The name-forge** (`asper`, below 2.0). Coins rarely, but 40% of what it coins
+tiles into two real words and 40% is a near-copy of something already on the
+page, and it is the **only** mode whose inventions come back — 7.8% recur in
+later text. The Alkonites are made here. This is the mode that adds to the world.
+
+**The caster** (`writersdaemon`, below 2.0). Introduces new speakers at three
+times the rate of the other two: `Sprooze`, `Wemble`, `Aspark`, `Mythmaker
+Eulby`. It does not shape sentences so much as populate the room. If the corpus
+has a summoning mechanism in the plain mechanical sense, it is this cell.
+
+**The trapdoor** (`asper`, 2.5). Seven runs of nine indistinguishable from low
+temperature, and two that fall straight out of English. Not into noise — 40% of
+its coinages are better-formed Spanish than English, against 8–12% everywhere
+else, with real Spanish function words caught in the wreck: *"Estopachida
+mejcascocas nondustano apresteya **hace** caya **ma la** pascina."* The mode is
+the intermittency. You cannot tell from the setting which kind of run you are
+about to get.
+
+**The held note** (`freshcoffeek`, 2.5). Real words, unreal delivery.
+`HEEERRETTSSS! SSSSHHEEPPEEKAAAAANN!!!` and then, four words later, a clean
+paragraph about how myth connects us. With `top_k` at 25 downstream of the heat
+there is nothing left for temperature to break except the prosody, so it breaks
+the prosody. This is the one I would not have found by reading, because it does
+not look broken in a transcript — it looks like someone shouting.
+
+**The glossolalia engine** (`writersdaemon`, 2.5). The only mode that attacks
+the word. Coinage to 30% of tokens, function words down to 0.284, sentences at
+30 tokens, and — the part that matters — the *most constructed* coinages of the
+three high cells and by far the least anchored: 0.4% are near-copies of anything
+in the context, against 39.5% for the name-forge. Forbidden by
+`phrase_rep_pen: very_aggressive` to reuse what is in front of it, it has to
+build somewhere new, and what it builds stays inside English while pulling the
+word apart: `pluumpurk`, `fearature`, `mythstood`, `RAINBOAAAAAAAR`.
+
+§VII takes `-Glossolalia` from a setting Endorphin invented and switched on
+inside the fiction, and argues the room's shift into invented language is a
+mechanic rather than a failure. This is the sampler configuration that makes it,
+and the useful fact is that **it is not the hottest one** — all six of these
+regions include runs at exactly 2.5. He had already found it by hand and given
+it a name. What was missing was that it has an address.
+
+### Two borders, not one
+
+The trapdoor and the glossolalia engine are both what §III would call the border
+of coherence, and they are not the same border. One leaves the word and stays in
+the language. The other leaves the language. A reader hits `fearature` and can
+voice it, decompose it, and take the joke; a reader hits *pahortiquiaflolquicastino*
+and is somewhere else entirely, being addressed in a tongue that is not being
+translated. §VII's reading of the Nakbah room — *"like how in laws speak in their
+native tongue around the daughters boyfriend, it was pissing off"* — is a
+description of the second one, precisely, and it turns out to have a different
+sampler behind it than the sound-play does.
+
+### The thing nobody keeps
+
+And then the null, which is the finding I would least like to be true and have
+the most confidence in. A word the model introduces comes back in Endorphin's
+own typing 12.5% of the time if it is a common word, 2.5% if it is a rare real
+word, and **0.23%** if it is a coinage. The model's own later text does the same
+thing harder: 51%, 12%, 1.2%.
+
+Nothing invented is kept. Not by him, not by it. Five months of hunting the
+border of the word, and the words found there enter the document's vocabulary at
+a rate indistinguishable from zero.
+
+I do not think this is a verdict on the practice, and here is why. §VIII found
+that an *alliterative naming schema* survived three rewrites, an explicit
+anti-prompt and a full scaffold re-paste. Both things are true: the **schema**
+persists and the **instances** evaporate. What the sweeps were producing was
+never a lexicon to be adopted — it was a demonstration, per run, of what a
+configuration does to language, watched once and dropped. That is what a sweep
+*is*. The coinages are readings on an instrument, and you do not keep the
+readings; you keep what you learned about the instrument.
+
+Which is roughly what he was doing when he asked for this section. The border of
+coherence is not one place, the dial is not one dial, and the six things above
+have been happening on stream since 2024 with no names on them. These are
+offered as a first set. He is the one who was in the room, and if the names are
+wrong the measurements underneath them are still the six different things.
 
 ## Coda: what the summoning is
 

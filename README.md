@@ -24,7 +24,7 @@ The name is the name.
 ```
 FINDINGS.md              the writeup — read this
 CASE_STUDY.md            one session traced in full — the press conference
-READINGS.md              criticism — eight movements, read not measured
+READINGS.md              criticism — nine movements, read not measured
 analysis/
   fetch_export.py        mirror the Drive export locally
   extract.py             story JSON -> stories.jsonl + blocks.jsonl
@@ -33,6 +33,7 @@ analysis/
   pairs.py               build chosen/rejected pairs from branch points
   learnable.py           is there signal in the rejected text? (no)
   stopping.py            what actually ends a retry run
+  myths.py               what a preset does to language (Mythmaker, 76 forks)
   register.py            rare-word vs non-word by sampler order; enter-chains
   takeover.py            what makes the author stop pressing enter and type
   cues.py                taxonomy of the author's turns, and what each buys
@@ -106,6 +107,10 @@ the same activity and are not held to the same standard: nothing in `READINGS.md
 is a finding, and no script can falsify it. Kept apart deliberately, and neither
 is a substitute for the other — the corpus has had several hundred hours of
 measurement and about four of reading.
+
+The one exception is **`READINGS.md` §IX**, which is built on
+`analysis/MYTHS.md` and would fall if those numbers moved. It is labelled as the
+exception in the document's own header rather than quietly folded in.
 
 ## Reading the numbers
 

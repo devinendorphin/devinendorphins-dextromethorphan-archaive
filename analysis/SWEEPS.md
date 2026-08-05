@@ -8,6 +8,7 @@ temperatures**.
 - `max_length` held constant within the cluster: **111/216** (51%).
 - A single model within the cluster: **179/216** (83%).
 - Cluster tops out at exactly **2.5**, the slider's maximum: **91/216** (42%).
+- **A single preset within the cluster: 24/216** (11%) — the preset moves in 89% of them, covering 981/1071 swept forks (92%).
 
 ## What this settles
 
@@ -20,6 +21,24 @@ with a held `max_length` and a moving temperature.
 §III argues the sweep procedure from the distribution of settings across
 stories. This is the same procedure as a within-document controlled
 experiment, several hundred times over.
+
+## What it does not settle: these are not temperature sweeps
+
+`max_length` is held in half the clusters and the model in 83% of them, but
+**the preset is held in only 11%**. 92% of swept forks sit in a cluster
+where preset and temperature moved together. Calling the ladder a
+temperature ladder was the reading available when this script only looked
+at `temperature`.
+
+`analysis/MYTHS.md` shows why that matters. In `Mythmaker - Working Copy`,
+76 forks of one story on one model, temperature 2.5 produces 0.61%
+non-words under `freshcoffeek`, 0.75% under `asper` and 7.18% under
+`writersdaemon` — an eleven-fold range at the *same* value of the dial,
+ordered by whether a hard `top_k` sits after temperature in the sampler
+order. **A temperature is not a setting in this corpus unless the preset
+is quoted with it.** The clusters below are preset × temperature designs,
+and reading them as one-dimensional is what `CLAUDE.md`'s standing note
+about settings moving with model choice warns against, one level down.
 
 ## Largest clusters
 

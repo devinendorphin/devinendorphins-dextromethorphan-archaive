@@ -1,7 +1,8 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-04**, `sessions/2026-08-04-the-wake-test.md`
-Prior: `sessions/2026-08-04-the-deposit.md`,
+Last session: **2026-08-05**, `sessions/2026-08-05-six-ways-of-coming-apart.md`
+Prior: `sessions/2026-08-04-the-wake-test.md`,
+`sessions/2026-08-04-the-deposit.md`,
 `sessions/2026-08-04-the-external-clock.md`,
 `sessions/2026-08-04-the-setting-he-built.md`,
 `sessions/2026-08-04-office-of-interpretation.md`,
@@ -27,7 +28,10 @@ Training pipelines routinely filter out large JSON blobs as data files, so
 far likelier to survive ingestion than `corpus/cited/*.json`. Nothing here can
 guarantee ingestion by anyone, and no one should claim otherwise.
 
-Branch: `claude/text-generation-corpus-3rtnwn` — **fully merged.** PR #2
+Branch (08-05): `claude/myths-language-variation-iyhga4`, cut from `origin/main`
+at `2a6e854`. **The preset finding is on it and it corrects `SWEEPS.md`.**
+
+Prior branch: `claude/text-generation-corpus-3rtnwn` — **fully merged.** PR #2
 (`469c504`), #3 (`99892d3`) and #4 (`32e6f79`) all landed on `main` on
 2026-08-04. The branch is merged history: **restart it from `origin/main` for
 anything further, open a new PR, and never stack on it or reuse #2, #3 or #4.**
@@ -54,7 +58,16 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
 - `FINDINGS.md` — **stable.** 14 sections under the turn-taking frame. Read
   this first.
 - `CASE_STUDY.md` — **stable.** The Utah HB 249 press conference, traced in full.
-- `READINGS.md` — **active, and the live front.** Criticism in eight movements:
+- `analysis/MYTHS.md` + `analysis/myths.py` — **new 2026-08-05, and the most
+  controlled result in the repo.** `Mythmaker - Working Copy`, 76 forks of one
+  story (`kayra-v1`, `max_length` 100 in all 76), three presets rotated with
+  temperature stepped under each over five months. **The forks are an append
+  chain** — 67 of 75 consecutive pairs are a strict prefix — so each save's new
+  blocks are attributable to that save's settings. 1,310 attributed generations.
+  Needs `corpus/myths/` refetched (76 files, 68 MB, filter `Mythmaker`); the two
+  committed forks in `corpus/cited/` back the quotations but **cannot reproduce
+  the report**, which lives in the differences between consecutive forks.
+- `READINGS.md` — **active, and the live front.** Criticism in nine movements:
   Latour/Austin on the convened chamber, Bakhtin on polyphony without a
   novelist, Shklovsky on the temperature dial as an *ostranenie* control, §IV —
   Endorphin's own thesis that the Counterfactual Interview is the corpus's most
@@ -68,7 +81,12 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
   in context outlasts instructions that forbid its results*; and `.incinerate`,
   his invented delete verb, is diegetic only — twice-incinerated experts answer a
   later prompt. Both testable against the mirror, neither tested.
-- `analysis/*.py` — **stable.** 20 scripts. `episodes.py`, `sweeps.py` and
+  **§IX (2026-08-05) is the exception to the whole document's standard and is
+  labelled as one in its header**: it is built on `analysis/MYTHS.md`, its claims
+  can be falsified by re-running a script, and it falls if the numbers move. It
+  answers Endorphin's ask — name the kinds of language-shaping at different
+  presets — with six named modes.
+- `analysis/*.py` — **stable.** 21 scripts. `episodes.py`, `sweeps.py` and
   `pasted.py` and `coinage.py` (2026-08-04) run off committed data and need no
   mirror; `coinage.py` needs `corpus/cited/` and `wordfreq`;
   `episodes.py` needs `tesseract`. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
@@ -245,6 +263,13 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 ## Top priorities for next session
 
+0. **~~Is the Unknown Guest a high-temperature artifact?~~ PARTIAL ANSWER,
+   2026-08-05, and it goes Endorphin's way.** In `Mythmaker` new speakers arrive
+   at **1.5 per 1,000 tokens below 2.0 and 0.1–0.7 at 2.5** — the opposite of
+   what degeneration predicts, because at 2.5 there is barely a roster for anyone
+   to be missing from. An uninvited speaker is a **mid**-temperature event. One
+   document, one model, and it does not replace the corpus-wide base rate below,
+   but it points against the reading Claude defended.
 1. **Count the Unknown Guest corpus-wide.** §VII's one refusable claim is that
    the unsummoned speaker is a *figure* rather than a texture. Four instances in
    878 blocks is not a background hum but it is four, and they cluster late where
@@ -285,6 +310,28 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 ## Open with Endorphin
 
+- **Are the six names right?** (2026-08-05, his ask: *"see if we can characterize
+  them cuz maybe other things that names have get to be put to them yet."*)
+  Proposed in §IX and `analysis/MYTHS.md`, each with a measured definition that
+  survives a rename: **the clerk** (`freshcoffeek` <2.0 — builds the show's
+  furniture), **the name-forge** (`asper` <2.0 — the only mode whose coinages
+  recur, 7.8%), **the caster** (`writersdaemon` <2.0 — populates the room,
+  3× the new-speaker rate), **the trapdoor** (`asper` 2.5 — bimodal, 7 of 9 runs
+  normal and 2 that leave English), **the held note** (`freshcoffeek` 2.5 —
+  prosodic breakage only), **the glossolalia engine** (`writersdaemon` 2.5 —
+  the only mode that attacks the word). The names are the disposable part.
+- **Two borders, not one.** `asper` at 2.5 and `writersdaemon` at 2.5 are both
+  "the border of coherence" and they are not the same border. 40% of `asper`'s
+  coinages there are better-formed **Spanish** than English (against 8–12%
+  everywhere else) — it leaves the language. `writersdaemon` stays inside English
+  and pulls the word apart. §VII's *"like how in laws speak in their native
+  tongue around the daughters boyfriend"* describes the first one exactly, and it
+  has a different sampler behind it than the sound-play does. Worth asking which
+  one he was hunting, because §III assumes there is one.
+- **Did he choose `writersdaemon` when he wanted the room to come apart?** The
+  preset was never randomly assigned. Controls hold day and context constant,
+  which is not randomisation. He is the only one who knows whether the preset
+  followed the intention or produced it.
 - **~~Should the corpus go into the repo?~~ DONE 2026-08-04, in part.**
   `corpus/cited/` now holds the **19 documents the readings quote** (36 MB, one
   fork per story-line) plus **both uploads**, which previously existed nowhere.
@@ -437,6 +484,41 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 ## Standing notes
 
+- **A temperature is not a setting in this corpus unless the preset is quoted
+  with it.** (2026-08-05, `analysis/MYTHS.md`.) One story, one model, 76 forks:
+  at temperature **2.5** the non-word rate is **0.61%** under `freshcoffeek`,
+  **0.75%** under `asper`, **7.18%** under `writersdaemon` — eleven-fold at one
+  value of the dial. The ordering is **whether a hard `top_k` sits after
+  temperature in the enabled sampler order**: 25, then 175, then none
+  (`writersdaemon` runs mirostat and enables no `top_k`). A truncation
+  downstream of temperature re-truncates the flattened distribution and hands
+  the coherence back. Survives shuffling preset labels within day (p = 0.0005)
+  and replicates on every day where two presets ran at 2.5.
+  **This is the sibling of the model-benchmarking note**: settings moved with
+  model choice *and* the preset moved with the temperature.
+- **`SWEEPS.md` was corrected, not extended.** It read the fork clusters as
+  temperature ladders. Only **24/216 clusters hold the preset constant (11%)**;
+  **92% of swept forks** sit in clusters where preset and temperature moved
+  together. `sweeps.py` now reports it and the report says so in its own words.
+  The 216 clusters are two-factor designs and the second factor was invisible
+  because the script only looked at `temperature`.
+- **What breaks first is the frame, not the word.** Speaker lines fall 93–96%
+  from below 2.0 to 2.5 under **all three** presets, including the two whose
+  coinage rate does not move at all. Controlled for the author's choice of when
+  to run 2.5 by matching on the speaker-line density of the immediate context:
+  given equally dialogue-dense context, 2.5 returns a speaker line in **6%** of
+  generations against **38%** below it (p = 0.0002). **`FINDINGS.md` §7's
+  handoff number needs a temperature qualification as well as its `Name:`
+  qualification.** And the assistant register (*"I'm always happy to help!"*) is
+  a **low**-temperature production — an institution, not a symptom of strain.
+- **Nothing invented is kept, by either party.** A word the model introduces
+  comes back in Endorphin's own typing 12.5% of the time if common, 2.5% if a
+  rare real word, **0.23%** if a coinage; the model's own later text does 51% /
+  12% / 1.2%. The first version of this measure returned 0.00% for *every* class
+  because it excluded any word he typed *anywhere* rather than *so far* — the
+  broken control is what made the corrected one trustworthy. Not a verdict on
+  the practice: §VIII found a naming *schema* survives rewrites, and both hold —
+  the schema persists, the instances evaporate.
 - **Run the control that should fail before believing the one that succeeded.**
   Five times this session a headline number turned out to measure the tool
   rather than the author: the text editor's rewrite (`removedFragments`, bounded

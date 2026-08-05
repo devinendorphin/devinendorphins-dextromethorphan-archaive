@@ -1,13 +1,15 @@
 # The documents the readings quote
 
-Everything else in `corpus/` is gitignored. These nineteen files are the
-exception, committed on 2026-08-04 at Endorphin's instruction so that
+Everything else in `corpus/` is gitignored. These twenty-one files are the
+exception, committed on 2026-08-04 (and added to on 2026-08-05) at Endorphin's
+instruction so that
 [`../../READINGS.md`](../../READINGS.md) and [`../../CASE_STUDY.md`](../../CASE_STUDY.md)
 can be checked against their sources without a forty-minute re-mirror of the
 full 1,004 MB export.
 
 **One fork per story-line**, chosen as the largest, except where a movement turns
-on a specific fork. This is 36 MB against a full corpus of ~1 GB. It is not a
+on a specific fork or the story-line has more than one terminal branch. This is
+39 MB against a full corpus of ~1 GB. It is not a
 dataset and should not be read as one — the selection is *what the criticism
 happens to cite*, which is about ten story-lines out of 2,016.
 
@@ -50,6 +52,8 @@ release.** No archive, no dataset card, no announcement.
 | `Doctor_Knubbins_and_the_Fins_of_the_Love_Sharks_copy_1__*` | the December 2020 AI Dungeon original, carried into NovelAI |
 | `Emotional_Abuse_SImulator_v._7.0_2__*` | §VIII — the fourth frame of the matryoshka |
 | `Sackcloth_and_Ashes_8__*` | `analysis/SWEEPS.md` — ten forks, four models, the mixed append/one-off case |
+| `Mythmaker_-_Working_Copy_66__*` | §IX, `analysis/MYTHS.md` — *Myths for Now*. **Two terminal forks are committed, not one**: the 76-fork append chain branches on 2024-05-31, and this is the longer arm (1,701 live blocks) |
+| `Mythmaker_-_Working_Copy_52__*` | §IX — the other arm of the same branch, which is where the held-note passage (`HEEERRETTSSS! SSSSHHEEPPEEKAAAAANN!!!`) lives |
 | `Finnegains_Wake_Playground_1,2,3__*` | the collaboration disagreement — Clio at **temp 2.5, top_k 640, top_a first**, **no Memory, no Author's Note**, prompted with the actual opening of *Finnegans Wake*. Human chars **exceed** model chars (64,988 / 50,689) because real Joyce is pasted in as ballast between generations |
 | `uploads/PFCizer-Musk_GLM-4.6_New_Story_5.txt` | §VI — supplied by Endorphin, **plain text, no datablocks** |
 | `uploads/Pynchon-LaHaye_Left-Behind_New_Story_1.txt` | §VII, §VIII — supplied by Endorphin, **plain text, no datablocks** |
@@ -63,3 +67,15 @@ LaHaye document are **longer** than the uploaded copy — `Towards a Novel Train
 Thought` is 2,573 blocks against roughly 1,200 lines of text.
 
 Re-exporting both as JSON is the outstanding item in `sessions/LATEST.md`.
+
+## `Mythmaker` cannot be reproduced from what is committed
+
+The two forks above back the *quotations* in §IX, which is what this directory
+is for. They do not reproduce `analysis/MYTHS.md`: that measures the **new
+blocks added by each of the 76 saves**, and the attribution only exists in the
+differences between consecutive forks. Refetch the set with
+
+    python3 analysis/fetch_export.py <json-folder-id> --out corpus/myths
+
+filtering names that begin `Mythmaker` — 76 files, 68 MB, about a minute. The
+folder id is in `sessions/LATEST.md`.
