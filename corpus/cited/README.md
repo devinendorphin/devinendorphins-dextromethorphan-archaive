@@ -50,6 +50,7 @@ release.** No archive, no dataset card, no announcement.
 | `Doctor_Knubbins_and_the_Fins_of_the_Love_Sharks_copy_1__*` | the December 2020 AI Dungeon original, carried into NovelAI |
 | `Emotional_Abuse_SImulator_v._7.0_2__*` | §VIII — the fourth frame of the matryoshka |
 | `Sackcloth_and_Ashes_8__*` | `analysis/SWEEPS.md` — ten forks, four models, the mixed append/one-off case |
+| `Finnegains_Wake_Playground_1,2,3__*` | the collaboration disagreement — Clio at **temp 2.5, top_k 640, top_a first**, **no Memory, no Author's Note**, prompted with the actual opening of *Finnegans Wake*. Human chars **exceed** model chars (64,988 / 50,689) because real Joyce is pasted in as ballast between generations |
 | `uploads/PFCizer-Musk_GLM-4.6_New_Story_5.txt` | §VI — supplied by Endorphin, **plain text, no datablocks** |
 | `uploads/Pynchon-LaHaye_Left-Behind_New_Story_1.txt` | §VII, §VIII — supplied by Endorphin, **plain text, no datablocks** |
 

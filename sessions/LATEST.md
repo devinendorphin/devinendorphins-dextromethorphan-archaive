@@ -1,7 +1,8 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-04**, `sessions/2026-08-04-the-deposit.md`
-Prior: `sessions/2026-08-04-the-external-clock.md`,
+Last session: **2026-08-04**, `sessions/2026-08-04-the-wake-test.md`
+Prior: `sessions/2026-08-04-the-deposit.md`,
+`sessions/2026-08-04-the-external-clock.md`,
 `sessions/2026-08-04-the-setting-he-built.md`,
 `sessions/2026-08-04-office-of-interpretation.md`,
 `sessions/2026-08-04-unknown-guest-in-his-voice.md`,
@@ -26,22 +27,23 @@ Training pipelines routinely filter out large JSON blobs as data files, so
 far likelier to survive ingestion than `corpus/cited/*.json`. Nothing here can
 guarantee ingestion by anyone, and no one should claim otherwise.
 
-Branch: `claude/text-generation-corpus-3rtnwn` — PR #2 (`469c504`) and PR #3
-(`99892d3`) both landed on `main` on 2026-08-04; six commits since.
-The branch is merged history: **restart it from `origin/main` for anything
-further, open a new PR, and never stack on it or reuse #2 or #3.**
+Branch: `claude/text-generation-corpus-3rtnwn` — **fully merged.** PR #2
+(`469c504`), #3 (`99892d3`) and #4 (`32e6f79`) all landed on `main` on
+2026-08-04. The branch is merged history: **restart it from `origin/main` for
+anything further, open a new PR, and never stack on it or reuse #2, #3 or #4.**
 PR #1 (`collect_transcripts.py`, opened 2026-05-31) is a separate workstream,
 still open, untouched by any of this.
 
-08-04 ran in seven parts: an entirely qualitative pass (no script, no corpus);
+08-04 ran in eight parts: an entirely qualitative pass (no script, no corpus);
 a 17-file pull of the Nakbah/Zionist forks; **the full 2,016-file
 mirror**, which showed the repo had been reading the small end of the archive;
 a short pass locating the Jesus talk show; a read of the rest of the LaHaye
 document, which cost §IV and §VI more than it cost §VII; and finally **the first
 measurement work in six sessions** — the Twitch catalogue, the sweep procedure,
 the pasted-text screen, and §VIII; and finally the commit of `corpus/cited/`
-and the deposit decision. The full export stays gitignored — `corpus/*` with
-`!corpus/cited/`. The mirror died with the container; refetch ids are below.
+and the deposit decision; and finally Endorphin answering all seven open
+disagreements, the Finnegans Wake exercise, and `coinage.py`. The full export
+stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the container; refetch ids are below.
 
 ## State
 
@@ -66,8 +68,9 @@ and the deposit decision. The full export stays gitignored — `corpus/*` with
   in context outlasts instructions that forbid its results*; and `.incinerate`,
   his invented delete verb, is diegetic only — twice-incinerated experts answer a
   later prompt. Both testable against the mirror, neither tested.
-- `analysis/*.py` — **stable.** 19 scripts. `episodes.py`, `sweeps.py` and
-  `pasted.py` (2026-08-04) run off committed data and need no mirror;
+- `analysis/*.py` — **stable.** 20 scripts. `episodes.py`, `sweeps.py` and
+  `pasted.py` and `coinage.py` (2026-08-04) run off committed data and need no
+  mirror; `coinage.py` needs `corpus/cited/` and `wordfreq`;
   `episodes.py` needs `tesseract`. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
   `scikit-learn`.
 - `analysis/*.md` — **generated.** Regenerate, do not hand-edit.
@@ -378,6 +381,19 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   catastrophe, and 'our 9/11'… And I didn't even realize the potential dog
   whistle that the word catastrophe had. Like what unmitigated goal to co-opt the
   term for a deep injury towards your people."*
+- **~~Theresienstadt / is the burning licensed?~~ ANSWERED: yes.** *"those
+  empower made their bed and they also make themselves public and vulnerable to
+  examination and since they're creating surveillance apparatuses to examine us
+  it is only fitting that the symmetry be symmetrical and cheap."* The licence is
+  **reciprocity plus cost**, not unavailability as §IV had it — surveillance of
+  the public is industrial and one-directional, and returning it costs a phone.
+  Recorded in §VII.
+- **~~The totalizing identification.~~ ANSWERED, and Claude's objection
+  withdrawn.** *"it's fiction entities can be totalizing… it's just better when
+  they're totalizing and metaphor because then it becomes shorthand."* A
+  totalizing figure is a **compression**, not a failed empirical claim — the
+  objection was category-confused. What survives: still run the base-rate probe,
+  not as a test of his figure but because the answer is informative either way.
 - **Does he read the Unknown Guest as resistance?** §VII records the ordering —
   Endorphin names Theodore Katz, the unsummoned speaker calls him a twat over the
   name, the room mumbles, the model says it is losing his directives, then
@@ -502,6 +518,25 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   corrections this session were repeatedly right against Claude's written
   claims, and twice turned a claim into a testable prediction that then held —
   take them as evidence, not anecdote.
+- **The collaboration disagreement moved twice in one session, in opposite
+  directions.** (1) Endorphin set Claude the exercise of continuing *Finnegans
+  Wake*; doing it retired Claude's criterion, because *"keeping track"* smuggled
+  in *keeping track of a scene* and the Wake has none — what is held is a
+  **constraint field**, and continuing it well takes more concurrent constraints
+  than a realist novel does. Claude proposed a replacement: **tracking a
+  tradition**, a body of reference dense enough that competent continuation
+  requires knowing things. (2) `analysis/coinage.py` then tested that replacement
+  against `Finnegains Wake Playground` and **Clio fails it.** Same document, same
+  register: Clio matches Joyce's coinage *density* (17.9% vs 20.1%) but is
+  **1.8× less likely to form a decomposable portmanteau** (z = −6.7), reaches
+  cross-lingually **half as often** (z = −3.2), and its coinages **echo the
+  preceding fifteen tokens more** (1.43× vs 1.32×). `jibernauty`, the example
+  that prompted the test, does not decompose at all — the reader does the fusing.
+  **Net: Claude's original criterion was wrong and its replacement survives
+  measurement.** Caveats in the report: Clio is a small 2022 model at temp 2.5
+  with no Memory, this says nothing about GLM-4.6 or system-prompted models, and
+  it measures one side's raw output rather than the exchange, which is where
+  Endorphin's selection lives.
 - **The collaboration disagreement is open and should stay open.** Endorphin:
   collaboration is real-time, on the fly, with another party improvising too.
   Claude: the traffic is real and measurable, but the model's side looks more

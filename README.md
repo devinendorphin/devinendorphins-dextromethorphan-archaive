@@ -45,10 +45,11 @@ analysis/
   episodes.py            OCR the Twitch dashboard; test it against story edits
   sweeps.py              recover the temperature-sweep procedure from the forks
   pasted.py              text that arrived by clipboard, not from the model
+  coinage.py             is the portmanteau semantic reach or phonological collision?
   TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md
   REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md
   DIRECTION.md HANDOVER.md HANDOFF.md EPISODES.md SWEEPS.md
-  PASTED.md                                                 generated
+  PASTED.md COINAGE.md                                      generated
 corpus/cited/             the 19 documents the readings quote — see its README
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)
@@ -91,6 +92,8 @@ python3 analysis/episodes.py corpus/twitch \
     --titles data/INDEX.tsv > analysis/EPISODES.md      # needs tesseract
 python3 analysis/sweeps.py data/stories_meta.jsonl --report analysis/SWEEPS.md
 python3 analysis/pasted.py data/stories_meta.jsonl --report analysis/PASTED.md
+python3 analysis/coinage.py corpus/cited/Finnegains_Wake_Playground_*.json \
+    --report analysis/COINAGE.md                        # needs wordfreq
 ```
 
 `blocks.jsonl` comes out around 524 MB — every revision's full text. Everything
