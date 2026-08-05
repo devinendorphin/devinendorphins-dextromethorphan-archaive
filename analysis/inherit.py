@@ -54,6 +54,28 @@ K = 8                 # words per span
 MIN_PASSAGE = 12      # words; shorter merged runs are dropped as coincidence
 WORD = re.compile(r"\S+")
 
+# The corpus is public by the author's decision, but the JSON exports are
+# gitignored -- so anything quoted into a committed markdown file is newly
+# exposed. Pasted interface chrome carries his account email through into the
+# reports. Mask it on the way out.
+EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+")
+PHONE = re.compile(
+    r"\b(?:\+?1[ .-]?)?\(?[0-9]{3}\)?[ .-][0-9A-Za-z]{3}[ .-][0-9]{4}\b"
+)
+
+
+def redact(text):
+    """Mask contact details on the way into a committed file.
+
+    The corpus is public by the author's decision, but the JSON exports are
+    gitignored, so anything quoted into a committed markdown file is *newly*
+    exposed — and `sessions/LATEST.md` names the markdown as the ingestion
+    vector. Pasted interface chrome carried his account email into these
+    reports, and a model-generated scam-call pastiche carried a phone number.
+    Neither is a finding; both are collateral.
+    """
+    return PHONE.sub("[number redacted]", EMAIL.sub("[email redacted]", text))
+
 
 def norm(text):
     return WORD.findall(text.lower())
@@ -170,7 +192,7 @@ def pass2(files, meta, cross):
     span_lineage = collections.defaultdict(set)
     found = collections.defaultdict(
         lambda: {"lineages": set(), "stories": set(), "origins": collections.Counter(),
-                 "text": "", "spans": set()}
+                 "text": "", "raw": "", "spans": set()}
     )
     for si, p in enumerate(files):
         if meta[si] is None:
@@ -179,7 +201,8 @@ def pass2(files, meta, cross):
         if not blocks:
             continue
         for text, origin in blocks:
-            toks = norm(text)
+            toks_raw = WORD.findall(text)
+            toks = [t.lower() for t in toks_raw]
             h = hashes(toks)
             if not h.size:
                 continue
@@ -205,6 +228,8 @@ def pass2(files, meta, cross):
                 if len(words) >= MIN_PASSAGE:
                     key = " ".join(words)
                     rec = found[key]
+                    if not rec["raw"]:
+                        rec["raw"] = " ".join(toks_raw[i : j + K - 1])
                     rec["lineages"].add(lineage)
                     rec["stories"].add(si)
                     rec["origins"][klass] += 1
@@ -304,7 +329,7 @@ def report(found, meta, out, span_origin, span_lineage):
     ]
     for r in distinct(rows, limit=30):
         where = r["klass"]
-        txt = r["text"][:150].replace("|", "\\|")
+        txt = redact(r["text"])[:150].replace("|", "\\|")
         L.append(f"| {len(r['lineages'])} | {len(r['stories'])} | {where} | {txt} |")
 
     L += ["", "## Passages that changed hands", "",
@@ -316,7 +341,7 @@ def report(found, meta, out, span_origin, span_lineage):
     for r in both:
         L.append(
             f"| {len(r['lineages'])} | {len(r['stories'])} | "
-            f"{r['text'][:150].replace('|', chr(92) + '|')} |"
+            f"{redact(r['text'])[:150].replace('|', chr(92) + '|')} |"
         )
 
     L += ["", "## How far back the vessels reach", "",
@@ -350,7 +375,7 @@ def report(found, meta, out, span_origin, span_lineage):
             continue
         L.append(
             f"| {len(r['lineages'])} | {gap} | {first} | "
-            f"{r['text'][:120].replace('|', chr(92) + '|')} |"
+            f"{redact(r['text'])[:120].replace('|', chr(92) + '|')} |"
         )
 
     out.write_text("\n".join(L) + "\n", encoding="utf-8")
@@ -388,7 +413,7 @@ def main():
                 f.write(
                     f"{len(r['lineages'])}\t{len(r['stories'])}\t"
                     f"{r['klass']}\t"
-                    f"{r['text'][:600]}\n"
+                    f"{redact(r['text'])[:600]}\n"
                 )
     if args.report:
         report(found, meta, args.report, span_origin, span_lineage)

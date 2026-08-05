@@ -45,7 +45,7 @@ The three populations answer different questions. Human-only is carried scaffold
 | 15 | 26 | human | that: whereas language is a virus. whereas a virus by some researchers is considered not alive when outside of a host, but alive once it has infected  |
 | 15 | 1 | both | wait. . . . . . . . . . . . . . . . . . . . |
 | 15 | 1 | both | . . . . . . . . . . . . . . . . . the |
-| 14 | 11 | human | gallegos.devon@gmail.com llama 3.1 405b base try our api rap battles with library voices: |
+| 14 | 11 | human | [email redacted] llama 3.1 405b base try our api rap battles with library voices: |
 
 ## Passages that changed hands
 

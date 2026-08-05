@@ -1170,7 +1170,115 @@ around it was measuring a rounding error. Worth recording as the shape of the
 mistake: **before testing whether a behaviour is selected against, check that
 the behaviour occurs.**
 
-## 17. What I did not do
+## 17. The apparatus atlas
+
+The deliverable this season pointed at, and the outside critique's priority #1:
+*what recurring rooms, machines and jurisdictions did he build?* Its proposed
+method — read the ten largest **named** families — cannot work here (§13).
+§14c supplies the unit that does: the recurring object is **the setup text that
+convenes a room**, and `analysis/atlas.py` clusters §14's cross-lineage passages
+into devices by shared spans, which pulls a scaffold's rewritten variants back
+together. Report in `analysis/ATLAS.md`, full table in `data/ATLAS.tsv`.
+
+**619 portable devices** appear in two or more separately founded lineages.
+**11 resident apparatuses** — lineages of eight or more forks — contributed no
+scaffold to any of them.
+
+**17a. The machinery.** `lin` counts separately founded documents the device was
+pasted into; `var` counts distinct wordings of it that survive.
+
+| device | lin | stories | var |
+|---|---:|---:|---:|
+| The Counterfactual Interview | 28 | 167 | **99** |
+| The Mythmaker | 25 | 169 | 78 |
+| The `AI Eraser` / *"Your AI that you will show respect to will be:"* | 22 | 46 | 92 |
+| The AI X-Risk Playhouse | 16 | 22 | 14 |
+| *"Whereas language is a virus…"* — a preamble in whereas-clauses | 15 | 51 | 21 |
+| Thursday CareGroups Evening — press the button, get a random scripture | 13 | 152 | 84 |
+| The Random Conspiracy Generator (§13d) | 13 | 152 | 53 |
+| The First Contact Generator | 13 | 69 | 48 |
+| Metamorphiction — *"the techniques of electronic dance music… applied to the production of words"* | 12 | 28 | 28 |
+| General Adversarial | 10 | 44 | 68 |
+| The AI Alignment briefing | 8 | 47 | 35 |
+| `AI X-RISK THEATER powered by LLAMA 3.1 405B BASE` | 8 | 16 | 7 |
+| The Akashic Records of the Aristocrats Joke | 7 | 13 | 50 |
+
+**17b. The `var` column is the finding, not the `lin` column.** Ninety-nine
+distinct wordings of the Counterfactual Interview scaffold across 28 lineages;
+92 of the AI Eraser; 84 of the scripture button. **He did not keep a prompt
+library.** Each time the room was convened the constitution was rewritten — the
+jurisdiction widened from *"an individual or group of individuals"* to *"a
+person, a people, peoples, or legal persons"*, the sponsor changed (*"a bayesian
+exercise sponsored by lesswrong"*), the framing device changed (*"RESET INTO
+CHAT SHOW WHICH ALSO SEEKS TO EXTRACT COUNTERFACTUAL INFORMATION"*). That is why
+every exact-string and title-based method this repository tried came back with
+nothing: **the thing that recurs is a form, and the text of it is never the
+same twice.**
+
+**17c. The second-most-portable text in the corpus is assistant sign-off
+boilerplate.** *"If you have any other questions or topics you would like to
+discuss"* crosses **28 lineages** — level with the Counterfactual Interview.
+Behind it: *"Please let me know if there is anything else I can assist you
+with"* (12), *"…anything else I can help you with"* (10), *"Please feel free to
+ask, and I will do my best to provide a helpful"* (7). All classed **both**.
+§14b found that models here independently reproduce only two such lines, so this
+is not the model at the keyboard: **it is the chat assistant entering the corpus
+as a pasted guest**, in transcripts carried in from elsewhere. The corpus
+records the assistant era arriving from outside the tool it was made in.
+
+**17d. And the atlas recovers the off-platform toolchain from pasted interface
+chrome.** `sessions/LATEST.md` records, on Endorphin's word, that some
+generation happened on Llama 2 via Replicate or Hyperbolic and was pasted back,
+and that a pasted block is indistinguishable from typing. The receipts are in
+the atlas, because he pasted the page furniture along with the text:
+
+| chrome | lineages | stories |
+|---|---:|---:|
+| `Llama 3.1 405B BASE / Try our API` | 14 | 21 |
+| `AI X-RISK THEATER powered by LLAMA 3.1 405B BASE` | 8 | 16 |
+| `Powered by Replicate. Run and fine-tune Llama 2 in the cloud. 🦙 Llama 2 70B` | 7 | 11 |
+| `Enter text here and AI will help complete the sentence / Demo API` | 7 | 11 |
+
+His account email was in that chrome, and a model-generated scam-call pastiche
+carried a phone number. Both are masked in the generated files: the JSON exports
+are gitignored, so anything quoted into a committed markdown is *newly* exposed,
+and `sessions/LATEST.md` names the markdown as the ingestion vector. Neither
+string is a finding.
+
+**17e. Eleven rooms that never travelled**, ten of them untitled — the tier a
+portable-device measure cannot see, and where some of the largest untitled
+components in the archive live.
+
+| forks | founded | opens on |
+|---:|---|---|
+| 48 | 2023-12-27 | *"{A string of limericks about the linear algebra that powers language models.}"* |
+| 20 | 2024-07-30 | `Bugsy: Confound and Confuse Bad Actors with Witty Banter and Clever Wordplay` |
+| 19 | 2024-06-26 | *"Hello NAI-LM-13B. Is it OK if we talk, human to language model?"* |
+| 14 | 2023-06-01 | `Explore Your Imagination with LaMDA` |
+| 14 | 2023-05-18 | the WGA-strike op-ed session |
+| 10 | 2024-08-24 | *"{Now for library-voiced rap battles of history:} Alec Baldwin versus James Baldwin!"* |
+| 10 | 2023-07-29 | The PFCizer |
+| 10 | 2024-09-12 | an operant-conditioning protocol for sociopaths |
+| 10 | 2022-10-01 | `Sackcloth and Ashes: The Game for Any Console and Device` |
+| 9 | 2022-10-19 | *"Hi, I'm Sphinxy!"* — a riddle machine |
+| 8 | 2024-09-26 | *"{Biblio Vérité, means what it says, a slice of life…}"* |
+
+Two of the eleven address the model *as itself* rather than casting it —
+`NAI-LM-13B` by its model id, and a simulated `LaMDA`. Those are the sessions
+where the apparatus and its substrate are the same character, and no scaffold
+from either was ever carried anywhere else.
+
+**17f. What the atlas cannot do.** It cannot **name** a device — the rows are
+incantations, because the devices carry their names inside the prose and 76% of
+the stories have no title, so naming is a reading job and the table above is one.
+It cannot separate the author's machinery from pasted documents: only **53 of
+619** devices match a convening pattern, and the remainder are largely articles,
+literature (four consecutive rows are the opening of *Finnegans Wake*) and
+transcripts. It cannot see a device that lived in Memory (§14d). And it cannot
+date one: with no per-block timestamps, a device's date range is the founding
+dates of the documents it landed in, not its own age.
+
+## 18. What I did not do
 
 - **No content analysis.** Every number is structural — settings, block graph,
   turn lengths, word-frequency statistics. Nothing here characterises what the
@@ -1182,7 +1290,7 @@ the behaviour occurs.**
   export via `analysis/`.
 - The `text/` half of the export is untouched; the JSON supersedes it.
 
-## 18. Where this could go next
+## 19. Where this could go next
 
 1. **What the author writes when they take the turn.** In 6,944 cases the model
    was rewound and a human continuation written from the identical context. That

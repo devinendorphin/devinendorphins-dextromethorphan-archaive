@@ -53,10 +53,13 @@ analysis/
   episodes.py            OCR the Twitch dashboard; test it against story edits
   sweeps.py              recover the temperature-sweep procedure from the forks
   pasted.py              text that arrived by clipboard, not from the model
+  families.py            the lineage partition — connected components of shared text
+  inherit.py             what crosses a lineage boundary, measured per passage
+  atlas.py               the apparatus atlas — the devices, and the rooms that never left
   TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md
   REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md
   DIRECTION.md HANDOVER.md HANDOFF.md EPISODES.md SWEEPS.md
-  PASTED.md                                                 generated
+  PASTED.md FAMILIES.md INHERIT.md ATLAS.md                 generated
 corpus/cited/             the 19 documents the readings quote — see its README
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)

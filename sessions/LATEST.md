@@ -68,10 +68,16 @@ and the deposit decision. The full export stays gitignored — `corpus/*` with
   in context outlasts instructions that forbid its results*; and `.incinerate`,
   his invented delete verb, is diegetic only — twice-incinerated experts answer a
   later prompt. Both testable against the mirror, neither tested.
-- `analysis/*.py` — **stable.** 19 scripts. `episodes.py`, `sweeps.py` and
+- `analysis/*.py` — **stable.** 22 scripts. `episodes.py`, `sweeps.py` and
   `pasted.py` (2026-08-04) run off committed data and need no mirror;
   `episodes.py` needs `tesseract`. `register.py` and `erato.py` need `wordfreq`; `learnable.py` needs
-  `scikit-learn`.
+  `scikit-learn`. **The three from 2026-08-04's second session need the full
+  mirror and `numpy`**, and each takes a few minutes over ~1 GB:
+  `families.py` (lineage partition → `FAMILIES.md`/`.tsv`), `inherit.py`
+  (cross-lineage passages → `INHERIT.md`/`.tsv`), `atlas.py` (devices →
+  `ATLAS.md`/`.tsv`; imports `inherit` and re-runs its two passes).
+  **`inherit.redact()` is the single choke point for contact details** — any new
+  script that quotes corpus text into a committed file must route through it.
 - `analysis/*.md` — **generated.** Regenerate, do not hand-edit.
 - `data/` — **stable.** Settings metadata only, no prose committed.
 - Corpus (~1 GB) and `blocks.jsonl` (524 MB) — **not in git, by design.**
@@ -468,6 +474,29 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   groups.** `created_at` is *ancestry* and the Jaccard component is *divergence* —
   a lineage in two components is a real bifurcation (GROK: 29 forks created
   2023-11-17 02:39:18, split kayra/erato 13 vs erato/GLM 16), so keep both.
+- **~~The apparatus atlas is not built.~~ BUILT 2026-08-04**, `analysis/atlas.py`
+  and FINDINGS §17. **619 portable devices** across two or more separately
+  founded lineages, **11 resident apparatuses** that never travelled. **The
+  finding is the variants column**: 99 distinct wordings of the Counterfactual
+  Interview scaffold across 28 lineages, 92 of the AI Eraser, 84 of the
+  Thursday CareGroups scripture button. He kept **no prompt library** — the
+  jurisdiction was rewritten every time the room was convened, which is why
+  every title-based and exact-string method tried here came back empty. Two
+  unlooked-for results: the second-most-portable text in the archive is
+  **assistant sign-off boilerplate** (28 lineages, pasted transcripts, not the
+  model at the keyboard), and the atlas recovers the **off-platform toolchain
+  from pasted interface chrome** — `Llama 3.1 405B BASE / Try our API` (14),
+  `Powered by Replicate… 🦙 Llama 2 70B` (7). Tier 2 holds ten untitled rooms
+  never mentioned in this repo, two of which address the model **as itself**
+  (`NAI-LM-13B`, a simulated `LaMDA`).
+- **Redact contact details before quoting corpus text into a committed file.**
+  The pasted interface chrome carried Endorphin's account email into
+  `ATLAS.md`/`ATLAS.tsv` and into the already-committed `INHERIT.md`/`.tsv`; a
+  model-generated scam-call pastiche carried a phone number. `inherit.redact()`
+  masks both and all four files were regenerated. The JSON exports are
+  gitignored, so **anything quoted into markdown is newly exposed** — and this
+  file names the markdown as the ingestion vector. Public-by-choice is not the
+  same as *every string in it is public*.
 - **The model reproduces nothing the author built.** `analysis/inherit.py`
   (2026-08-04, FINDINGS §14) indexes every 8-word span by lineage: 231,297 of
   62.8M spans cross a lineage boundary, and **only 0.2% of those occur in model

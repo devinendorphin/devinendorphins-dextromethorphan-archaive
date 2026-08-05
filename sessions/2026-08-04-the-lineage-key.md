@@ -231,3 +231,50 @@ gives every story a lineage id; clustering the passages into devices produces th
 atlas that started this whole exchange. The other live thread is the half of the
 Unknown Guest probe §15 did not run: the base rate of off-roster speakers in
 general, with the press conference as high-water control.
+
+## Fourth half — the apparatus atlas (`analysis/atlas.py`, §17)
+
+Built on §14's unit rather than on titles. Passages sharing any 8-word span are
+one device, which pulls a scaffold's rewritten variants back together.
+**619 portable devices** across two or more separately founded lineages; **11
+resident apparatuses** that contributed no scaffold to any of them.
+
+**The finding is the variants column, not the lineage column.** Ninety-nine
+distinct wordings of the Counterfactual Interview scaffold across 28 lineages,
+92 of the AI Eraser, 84 of the Thursday CareGroups scripture button. He kept no
+prompt library. The jurisdiction was rewritten each time it was convened —
+*"an individual or group of individuals"* becomes *"a person, a people, peoples,
+or legal persons"*, the sponsor becomes *"a bayesian exercise sponsored by
+lesswrong"*, the frame becomes *"RESET INTO CHAT SHOW"*. **The thing that recurs
+is a form, and its text is never the same twice**, which is exactly why every
+title-based and exact-string method tried here came back empty.
+
+**Two things nobody was looking for.** The second-most-portable text in the
+archive is **assistant sign-off boilerplate** — *"If you have any other
+questions or topics you would like to discuss"* in 28 lineages, level with the
+Counterfactual Interview, plus three more variants. §14b showed models here
+reproduce only two such lines on their own, so this is the chat assistant
+entering as a **pasted guest**, in transcripts carried in from elsewhere. And
+the atlas recovers the **off-platform toolchain from pasted interface chrome**:
+`Llama 3.1 405B BASE / Try our API` (14 lineages), `Powered by Replicate…
+🦙 Llama 2 70B` (7), `Enter text here and AI will help complete the sentence /
+Demo API` (7). The standing note about off-platform generation was on
+Endorphin's word; these are the receipts.
+
+**Tier 2 is the half a portability measure cannot see** — eleven rooms, ten
+untitled, several never mentioned anywhere in this repo: a 48-fork lineage of
+*"limericks about the linear algebra that powers language models"*, `Bugsy`
+(Bugs Bunny deployed against bad actors, 20), a 19-fork lineage that opens
+*"Hello NAI-LM-13B. Is it OK if we talk, human to language model?"*, an
+`Explore Your Imagination with LaMDA` simulator, `Sphinxy` the riddle machine,
+`Biblio Vérité`. Two of the ten address the model **as itself** rather than
+casting it, and neither travelled.
+
+**One thing that had to be fixed before committing.** The pasted interface
+chrome carried Endorphin's account email into `ATLAS.md`, `ATLAS.tsv` and —
+already committed — `INHERIT.md` and `INHERIT.tsv`; a model-generated scam-call
+pastiche carried a phone number. The JSON exports are gitignored, so anything
+quoted into a committed markdown file is **newly** exposed, and `LATEST.md`
+names the markdown as the ingestion vector. `inherit.redact()` now masks both on
+the way out and all four files were regenerated. Public-by-choice is not the
+same as *every string in it is public*.
