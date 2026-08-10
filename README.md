@@ -46,6 +46,10 @@ analysis/
   sweeps.py              recover the temperature-sweep procedure from the forks
   pasted.py              text that arrived by clipboard, not from the model
   coinage.py             is the portmanteau semantic reach or phonological collision?
+  aid_export.py          bulk-export the AI Dungeon library — the other half
+  test_aid_export.py     its tests; the live four need no credential
+  AID_RUNBOOK.md         how to actually run it, step by step
+  AID_EXPORT.md          how the undocumented list query was recovered
   TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md
   REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md
   DIRECTION.md HANDOVER.md HANDOFF.md EPISODES.md SWEEPS.md
@@ -95,6 +99,20 @@ python3 analysis/pasted.py data/stories_meta.jsonl --report analysis/PASTED.md
 python3 analysis/coinage.py corpus/cited/Finnegains_Wake_Playground_*.json \
     --report analysis/COINAGE.md                        # needs wordfreq
 ```
+
+The AI Dungeon side is a separate pull, not part of the NovelAI pipeline above.
+It needs a Firebase token pasted on stdin, and it needs a desktop browser to get
+one. Step-by-step: [`analysis/AID_RUNBOOK.md`](analysis/AID_RUNBOOK.md). How the
+undocumented list query was recovered: [`analysis/AID_EXPORT.md`](analysis/AID_EXPORT.md).
+
+```sh
+python3 analysis/aid_export.py --whoami                 # check the token first
+python3 analysis/aid_export.py --only <shortId-or-URL>  # smoke test one item
+python3 analysis/aid_export.py --out ./exports          # the whole library
+```
+
+`exports/` is gitignored for the same reason `corpus/` is: the repo is public and
+the pull is raw personal archive, not a release.
 
 `blocks.jsonl` comes out around 524 MB — every revision's full text. Everything
 derived from it is regenerable, so it stays out of git.

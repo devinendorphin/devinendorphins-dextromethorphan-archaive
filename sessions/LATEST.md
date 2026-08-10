@@ -1,7 +1,8 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-04**, `sessions/2026-08-04-the-wake-test.md`
-Prior: `sessions/2026-08-04-the-deposit.md`,
+Last session: **2026-08-10**, `sessions/2026-08-10-the-aid-transfer.md`
+Prior: `sessions/2026-08-04-the-wake-test.md`,
+`sessions/2026-08-04-the-deposit.md`,
 `sessions/2026-08-04-the-external-clock.md`,
 `sessions/2026-08-04-the-setting-he-built.md`,
 `sessions/2026-08-04-office-of-interpretation.md`,
@@ -78,8 +79,22 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
 - Corpus (~1 GB) and `blocks.jsonl` (524 MB) — **not in git, by design.**
   Refetch with `analysis/fetch_export.py <json-folder-id>`.
 - The Drive `text/` half — **untouched.** JSON supersedes it.
+- **AI Dungeon — extracted 2026-08-10, unanalysed.** `analysis/aid_export.py`
+  (+ `test_aid_export.py`, 107 assertions; `AID_EXPORT.md`; `AID_RUNBOOK.md`) on
+  branch `claude/ai-dungeon-text-extraction-th0xtm`, pushed, **no PR opened.**
+  Endorphin ran it: **888 adventures + 169 scenarios = 1,057 items, 0 failed.**
+  Not read, not counted, not joined to the NovelAI side. The transfer named in
+  the not-a-release position is settled *as an extraction* and nothing more.
 
 ## Urgent — preservation
+
+**The AI Dungeon export exists in exactly one place.** 1,057 items live only in
+`exports/` on Endorphin's iMac. It is gitignored on purpose — the repo is public
+and this is raw personal archive, same rule as `corpus/` — so there is no second
+copy anywhere, and the machine is on macOS 10.15, which Homebrew has already
+dropped. **Ask whether it has been backed up before doing anything else with
+it.** Unlike the NovelAI corpus this cannot be refetched from a Drive folder;
+re-running the export needs a live Firebase token, which needs his browser.
 
 **The `New Story 5` PFCizer/GLM-4.6 text is not in the archive.** Endorphin
 uploaded it into an ephemeral container on 2026-08-04 (export stamp
@@ -245,7 +260,21 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 ## Top priorities for next session
 
-1. **Count the Unknown Guest corpus-wide.** §VII's one refusable claim is that
+1. **Get the AI Dungeon export backed up, then search it for
+   *Dr. Knubble And The Fangs Of The Love Sharks*.** Backup first — see Urgent.
+   Then the search: `LATEST` already records that block 1 of the Pynchon x Tingle
+   story is a pasted AI Dungeon listing for it, `Created: Dec 7th 2020 /
+   Actions: 76`, and that a NovelAI copy survives. **That adventure may now be in
+   hand in its original form**, which would date the archive's start from a
+   primary source instead of a screenshot — and both `README.md` ("March 2023 to
+   July 2026") and `CLAUDE.md` ("2021-2026") are already flagged as wrong on
+   exactly this point. Cheap: grep 888 titles, then contents.
+2. **Establish what the AI Dungeon record cannot answer, before building any
+   converter.** See the standing note below. The two corpora are not the same
+   shape and the asymmetry is itself a finding — write it up before designing a
+   join, or `FINDINGS.md`'s method will be silently applied to a record that
+   cannot support it.
+3. **Count the Unknown Guest corpus-wide.** §VII's one refusable claim is that
    the unsummoned speaker is a *figure* rather than a texture. Four instances in
    878 blocks is not a background hum but it is four, and they cluster late where
    degeneration lives. The probe: base rate of unnamed/uninvited speakers per
@@ -254,24 +283,24 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
    rate is flat and positional, §VII's figure is a temperature artifact and the
    section should say so. **Needs the full ~1 GB mirror**; this container only ever
    held 17 files.
-2. **Keep reading.** `READINGS.md` is one pass over about eight stories out of
+4. **Keep reading.** `READINGS.md` is one pass over about eight stories out of
    2,016. The convened-speech genre alone — AI Alignment Interviews,
    Counterfactual Interviews, the press conferences, the DIVINE JAVITS CENTER
    sequence — runs to dozens of stories and millions of characters. The summoning
    thesis in the coda is the strongest thing to test against more material, and
    the easiest to over-fit if it is not. Derrida on iterability is the written-up
    runner-up lens and would read the `Name:` convention as sharply as Bakhtin did.
-3. **Separate compulsion from momentum** (§1c). The biggest open methodological
+5. **Separate compulsion from momentum** (§1c). The biggest open methodological
    hole: a short `max_length` cutting generations mid-sentence would *compel*
    the next one, manufacturing runs that look like momentum. `max_length` is
    per-story, so the clean contrast needs stories where it was large enough that
    generations rarely got cut — check whether enough exist.
-4. **Send `data/FAILED_STORIES.txt` to NovelAI support.** 483 stories will not
+6. **Send `data/FAILED_STORIES.txt` to NovelAI support.** 483 stories will not
    decrypt, clustered hard from 2025-10. Needs Endorphin — and needs him to say
    whether anything happened that month (client switch, subscription change,
    migration). The schema/roster/sampler evidence favours a client change, but
    the causal link to the encryption failures is still circumstantial.
-5. **~~Identify the streamed sessions.~~ ANSWERED 2026-08-04.** Endorphin
+7. **~~Identify the streamed sessions.~~ ANSWERED 2026-08-04.** Endorphin
    supplied a Drive folder of 83 screenshots of the Twitch Video Producer
    dashboard, captured 2025-03-01 before the YouTube migration. `analysis/
    episodes.py` OCRs them into `data/EPISODES.tsv` — **1,492 of 1,604 broadcasts
@@ -600,3 +629,50 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   @glubose channel, opened 2026-05-31) is still open and untouched by any of
   this — it is the YouTube-transcript workstream, not the corpus one, and
   nothing in these two sessions looked at it.
+- **The two corpora are not the same shape, and the difference is load-bearing.**
+  NovelAI's export preserves the full undo tree — every rejected generation next
+  to the kept one next to the settings that produced both — which is the entire
+  basis of `FINDINGS.md`'s method. **AI Dungeon's `actionWindow` is a flat
+  sequence.** There is an `undoneAt` field, so *some* rejection survives, but
+  there is no branch structure, no `prevBlock` to walk, and **no per-action
+  sampler settings at all.** Anything resting on chosen/rejected pairs, on branch
+  reachability, or on settings **cannot be computed on the AI Dungeon side.** Do
+  not build a converter before writing up what each record can and cannot answer.
+  Applying the NovelAI method to a record that cannot support it is the standing
+  "measures the tool, not the author" error, one platform over.
+- **`analysis/aid_export.py` needs a live Firebase token and cannot be re-run
+  headless.** Token from DevTools → Console (`AID_RUNBOOK.md` §3 has the snippet
+  that reads IndexedDB directly and downloads it — **do not send anyone clicking
+  through the Application tab's IndexedDB tree, it copies the wrong cell
+  silently**). Tokens last ~1 hour; the run is resumable through
+  `exports/manifest.json`, so expiry costs a re-token and nothing else.
+  `--doctor`, `--rerender` and `--verify` all work with **no token and no
+  network** — `--rerender` rebuilds every `.md` from `raw.json`, so a renderer
+  fix never costs a re-fetch.
+- **A GraphQL API that validates before it authorises is a schema oracle.**
+  `api.aidungeon.com` returns `GRAPHQL_VALIDATION_FAILED` (HTTP 400) for a bogus
+  field and `UNAUTHENTICATED` (HTTP 200) for a real one, with `Did you mean ...`
+  enumerating neighbours for free. Type names, required arguments and expected
+  literal types all leak the same way; introspection proper stays gated. The
+  entire enumeration path was recovered with no credential, retiring a
+  user-in-the-loop step the spec called mandatory and put first. **Try this
+  before asking Endorphin to sit in DevTools for any API.**
+- **In this API, `total` means the page, not the collection.** `SearchResults.total`
+  equalled `len(items)` in every probed response and `hasMore` was false exactly
+  when a page came back short. Two round numbers (`100 reported` for both content
+  types) read as a server-side cap and were not one. **Never treat a returned
+  count as a target without probing offsets.**
+- **Endorphin's UX complaints are defect reports, and were right four times out
+  of four.** *"the lines are a bit janky to each other, i dunno know what that
+  might be about. could be viewing it from an old computer"* was a renderer bug he
+  attributed to his own machine; *"every time I try to copy the token it copies a
+  different part of it"* was Chrome's IndexedDB viewer, not him; *"your second
+  command has a damn < that screws it up!"* and *"that is so confusing"* were both
+  exactly right about instructions Claude had shipped. **When he says something is
+  confusing or broken, look for the defect before explaining the workaround.**
+- **He is on macOS 10.15 with Homebrew Python 3.14 at `/usr/local`.** Homebrew
+  dropped that OS: `brew install` may start rebuilding unrelated dependencies from
+  source — one `ca-certificates` suggestion cost him **33 minutes of cmake** and
+  then failed, having been a no-op anyway. `/Applications/Python 3.*/Install
+  Certificates.command` **does not exist** on that build. For Python TLS failures
+  reach for `certifi` first. Prefer solutions that change nothing outside the repo.
