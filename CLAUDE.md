@@ -43,7 +43,9 @@ It is **unanalysed**. `exports/` is gitignored for the same reason `corpus/` is,
 export is mirrored to a link-readable Drive folder — see `sessions/LATEST.md` for the id.
 
 **It also dates the archive.** `dxqLiJrw55P2`, *Dr. Knubble And The Fangs Of The Love
-Sharks*, opens **2020-12-07T10:04:05Z with 76 actions** — matching action-for-action the AI
+Sharks* — note the spelling: the NovelAI copy is *Doctor Knubb**ins** and the **Fins***, and
+neither string matches the other corpus, so search both — opens **2020-12-07T10:04:05Z with
+76 actions** — matching action-for-action the AI
 Dungeon listing pasted into block 1 of the NovelAI Pynchon × Tingle story, which until now
 was the only evidence that layer existed. The archive starts on AI Dungeon in December 2020,
 eighteen months before the first NovelAI story.
