@@ -178,7 +178,15 @@ def ztest(p1, n1, p2, n2):
     return (p1 - p2) / se if se else 0.0
 
 
-def report(ai, human, cues, out, cue_max=CUE_MAX):
+def cell(m, key, pct=False, suffix=""):
+    """A table cell, or an em dash when that bucket held nothing to measure."""
+    if not m:
+        return "—"
+    v = m[key]
+    return f"{100 * v:.1f}%" if pct else (f"{v:,}" if isinstance(v, int) else f"{v:.2f}{suffix}")
+
+
+def report(ai, human, cues, out, cue_max=CUE_MAX, cue_chars=0, cue_blocks=0):
     z_dec = ztest(ai["decomposable"], ai["coined"],
                   human["decomposable"], human["coined"])
     z_cross = ztest(ai["crosslingual"], ai["coined"],
@@ -197,16 +205,24 @@ def report(ai, human, cues, out, cue_max=CUE_MAX):
         "",
         "| | Clio (`origin: ai`) | Joyce (pasted) | Endorphin (typed cues) |",
         "|---|---:|---:|---:|",
-        f"| tokens | {ai['tokens']:,} | {human['tokens']:,} | {cues['tokens']:,} |",
-        f"| coinages | {ai['coined']:,} | {human['coined']:,} | {cues['coined']:,} |",
+        f"| tokens | {ai['tokens']:,} | {human['tokens']:,} | {cell(cues,'tokens')} |",
+        f"| coinages | {ai['coined']:,} | {human['coined']:,} | {cell(cues,'coined')} |",
         f"| **density** | **{100 * ai['density']:.1f}%** | "
-        f"**{100 * human['density']:.1f}%** | {100 * cues['density']:.1f}% |",
+        f"**{100 * human['density']:.1f}%** | {cell(cues,'density',pct=True)} |",
         f"| **decomposable into two words** | **{100 * ai['decomposable']:.1f}%** | "
-        f"**{100 * human['decomposable']:.1f}%** | {100 * cues['decomposable']:.1f}% |",
+        f"**{100 * human['decomposable']:.1f}%** | {cell(cues,'decomposable',pct=True)} |",
         f"| **cross-lingual** | {100 * ai['crosslingual']:.1f}% | "
-        f"{100 * human['crosslingual']:.1f}% | {100 * cues['crosslingual']:.1f}% |",
+        f"{100 * human['crosslingual']:.1f}% | {cell(cues,'crosslingual',pct=True)} |",
         f"| **local echo** (vs random window) | {ai['echo']:.2f}× | "
-        f"{human['echo']:.2f}× | {cues['echo']:.2f}× |",
+        f"{human['echo']:.2f}× | {cell(cues,'echo',suffix='×')} |",
+        "",
+        (f"**Endorphin typed {cue_chars:,} characters here, across {cue_blocks} blocks** — "
+         "too little to carry a single coinage, so the third column is empty. That is "
+         "the finding the screen produces on this file: the 'human' side of the original "
+         "two-way table was **Joyce, essentially unmixed**, and the caveat the docstring "
+         "used to carry was real but negligible."
+         if not cues else
+         f"Endorphin typed {cue_chars:,} characters here across {cue_blocks} blocks."),
         "",
         "## What it says",
         "",
@@ -271,10 +287,11 @@ def main():
         print("  (no block over the cue ceiling — nothing screened out)", file=sys.stderr)
 
     if args.report:
-        if not m["pasted"] or not m["cue"]:
-            print("  ! one bucket is empty; the three-way report needs all of them",
+        if not m["pasted"]:
+            print("  ! nothing was screened as pasted — is --cue-max right for this file?",
                   file=sys.stderr)
-        report(m["ai"], m["pasted"], m["cue"], args.report, args.cue_max)
+        report(m["ai"], m["pasted"], m["cue"], args.report, args.cue_max,
+               cue_chars=sum(map(len, b["cue"])), cue_blocks=len(b["cue"]))
         print(f"wrote {args.report}")
     else:
         for label in ("ai", "pasted", "cue"):

@@ -679,13 +679,27 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   register: Clio matches Joyce's coinage *density* (17.9% vs 20.1%) but is
   **1.8× less likely to form a decomposable portmanteau** (z = −6.7), reaches
   cross-lingually **half as often** (z = −3.2), and its coinages **echo the
-  preceding fifteen tokens more** (1.43× vs 1.32×). `jibernauty`, the example
+  preceding fifteen tokens more** (1.43× vs **1.21×**, revised 2026-08-10).
+  `jibernauty`, the example
   that prompted the test, does not decompose at all — the reader does the fusing.
   **Net: Claude's original criterion was wrong and its replacement survives
   measurement.** Caveats in the report: Clio is a small 2022 model at temp 2.5
   with no Memory, this says nothing about GLM-4.6 or system-prompted models, and
   it measures one side's raw output rather than the exchange, which is where
   Endorphin's selection lives.
+  **(3) The pasted screen, added 2026-08-10, confirms this rather than moving
+  it.** `coinage.py` used to split on `origin` alone, which put Joyce — pasted in
+  as ballast — in the same bucket as Endorphin's typing. Re-run with the blocks
+  split at 500 characters: **Endorphin typed 588 characters here, across 30
+  blocks, too little to carry a single coinage.** So the "human" side of the
+  original table was **Joyce essentially unmixed** (142,388 of 142,976 non-`ai`
+  chars, 99.6%), and the docstring's mixture caveat was real but negligible.
+  Density 20.17%, decomposable 9.25%, cross-lingual 1.75% — all within a
+  rounding step of the committed figures. The one change is the echo gap, which
+  **widens**: 1.43× against 1.21×, not 1.32×, because the cue text is no longer
+  diluting Joyce's side. **The finding is stronger after the fix, not weaker** —
+  which is worth stating plainly, since the same screen demolished the Love
+  Sharks number the same day.
 - **The collaboration disagreement is open and should stay open.** Endorphin:
   collaboration is real-time, on the fly, with another party improvising too.
   Claude: the traffic is real and measurable, but the model's side looks more
