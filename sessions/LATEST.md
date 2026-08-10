@@ -91,13 +91,20 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
 
 ## Urgent — preservation
 
-**The AI Dungeon export exists in exactly one place.** 1,057 items live only in
-`exports/` on Endorphin's iMac. It is gitignored on purpose — the repo is public
-and this is raw personal archive, same rule as `corpus/` — so there is no second
-copy anywhere, and the machine is on macOS 10.15, which Homebrew has already
-dropped. **Ask whether it has been backed up before doing anything else with
-it.** Unlike the NovelAI corpus this cannot be refetched from a Drive folder;
-re-running the export needs a live Firebase token, which needs his browser.
+**~~The AI Dungeon export exists in exactly one place.~~ RESOLVED 2026-08-10.**
+Endorphin: *"its up in my drive now."* 1,057 items backed up to Drive off the
+iMac. Two things still worth doing, neither urgent:
+
+1. **Get the Drive folder id into the repo.** `analysis/fetch_export.py`'s
+   `list_folder()` + `download()` take a folder id, so with one the AI Dungeon
+   export becomes refetchable into a fresh container exactly like the NovelAI
+   corpus — which is the difference between analysable and not, given every
+   container is ephemeral. Without it, an ephemeral session can reach the
+   NovelAI half and not this one.
+2. The working copy still sits at `exports/` **inside the repo**, where it is
+   gitignored — so `git clean -xdf` would delete it and a fresh clone would not
+   carry it. The Drive copy is the real one; do not treat the in-repo one as
+   safe.
 
 **The `New Story 5` PFCizer/GLM-4.6 text is not in the archive.** Endorphin
 uploaded it into an ephemeral container on 2026-08-04 (export stamp
@@ -657,7 +664,9 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   `exports/manifest.json`, so expiry costs a re-token and nothing else.
   `--doctor`, `--rerender` and `--verify` all work with **no token and no
   network** — `--rerender` rebuilds every `.md` from `raw.json`, so a renderer
-  fix never costs a re-fetch.
+  fix never costs a re-fetch. The 2026-08-10 export is **on Endorphin's Drive**;
+  ask for the folder id rather than re-running the exporter, which needs his
+  browser open.
 - **A GraphQL API that validates before it authorises is a schema oracle.**
   `api.aidungeon.com` returns `GRAPHQL_VALIDATION_FAILED` (HTTP 400) for a bogus
   field and `UNAUTHENTICATED` (HTTP 200) for a real one, with `Did you mean ...`
