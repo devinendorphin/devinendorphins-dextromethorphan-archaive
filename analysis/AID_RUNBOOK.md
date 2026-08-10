@@ -58,6 +58,45 @@ python3 analysis/test_aid_export.py
 
 **Expected:** a list of `ok` lines ending in `ALL PASS`.
 
+If the offline tests pass but the last four (`live query validation`) fail, the
+tool is fine and your machine cannot reach the API. Go straight to Step 2a.
+
+---
+
+## Step 2a — check this machine can reach the API
+
+No token needed. Do this before the token faff, not after.
+
+```sh
+python3 analysis/aid_export.py --doctor
+```
+
+**Expected:** your Python version, your certificate store, then
+`OK — reachable, and the API answered as expected.`
+
+**The common failure, on macOS specifically:**
+
+```
+FAILED to reach the API: [SSL: CERTIFICATE_VERIFY_FAILED] ...
+```
+
+This is **not** the tool and **not** AI Dungeon. Python installed from
+python.org ships its own certificate store and does not fill it in, so every
+HTTPS request from Python fails while curl and Safari on the same machine work
+perfectly. It is a one-time fix:
+
+```sh
+/Applications/Python\ 3.*/Install\ Certificates.command
+```
+
+Then re-run `--doctor`. If that path doesn't exist, this does the same job:
+
+```sh
+python3 -m pip install --upgrade certifi
+```
+
+Do not continue until `--doctor` says OK.
+
 ---
 
 ## Step 3 — get your token out of the browser
@@ -214,7 +253,8 @@ is right and the renderer has a bug.
 | Nothing appears while typing the token | Correct and intended. Paste, press Enter |
 | `token rejected ... expired` | Redo Step 3, tokens last ~1 hour |
 | `! that does not look like a token` | You copied the wrong field — want `accessToken`, not `refreshToken` |
-| `HTTP 429, retrying in 5s` | Rate limited; it backs off by itself. Leave it |
+| `CERTIFICATE_VERIFY_FAILED`, or the 4 live tests fail with `HTTP 0` | Step 2a — Python's cert store on macOS. Run `Install Certificates.command` |
+| `429 ... retrying in 5s` | Rate limited; it backs off by itself. Leave it |
 | `! schema drift: dropping unknown field` | AI Dungeon changed their API. Not fatal, but tell me |
 | `! <id>: actionCount=N but fetched M` | Possible paging bug. Tell me the numbers |
 | It stopped and you don't know where | Just re-run the same command. It resumes |

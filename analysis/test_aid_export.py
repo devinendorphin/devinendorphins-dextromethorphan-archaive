@@ -124,6 +124,34 @@ check("expiry: reads ~30 min", 29 < A.token_expiry(jwt_expiring_in(1800)) <= 30)
 check("expiry: expired reads negative", A.token_expiry(jwt_expiring_in(-600)) < 0)
 check("expiry: garbage returns None", A.token_expiry("not-a-jwt") is None)
 
+# --- offline: transport diagnosis -----------------------------------------
+# A broken TLS trust store is the one failure that looks like a broken tool.
+# python.org's macOS build ships an unpopulated cert store, so curl works and
+# Python does not; without a hint that reads as "your export is broken".
+ssl_hint = A.local_network_hint(
+    "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:1016)")
+check("cert failure names the real cause", ssl_hint and "certificate store" in ssl_hint)
+check("cert failure gives the macOS fix", ssl_hint and "Certificates.command" in ssl_hint)
+check("dns failure diagnosed", "DNS" in (A.local_network_hint("nodename nor servname provided") or ""))
+check("timeout diagnosed", "timed out" in (A.local_network_hint("Connection timed out") or "").lower()
+      or "firewall" in (A.local_network_hint("Connection timed out") or ""))
+check("unknown transport error gets no bogus advice", A.local_network_hint("weird thing") is None)
+check("no reason at all gets no advice", A.local_network_hint(None) is None)
+
+# and it must fail fast rather than sleeping 5+15+45s first
+class _DeadClient(A.GqlClient):
+    def _post(self, q, v):
+        return 0, {"errors": [{"message": "transport: [SSL: CERTIFICATE_VERIFY_FAILED] x",
+                               "_reason": "[SSL: CERTIFICATE_VERIFY_FAILED] x"}]}
+_tm = A.TokenManager(); _tm.token = "dummy"
+_t0 = time.time()
+try:
+    _DeadClient(_tm, delay=0).query(A.Q_ME, {}, tag="t")
+    check("cert failure raises", False)
+except A.Fatal as e:
+    check("cert failure fails fast, no backoff nap", time.time() - _t0 < 2, f"{time.time()-_t0:.0f}s")
+    check("cert failure surfaces the reason, not just 'HTTP 0'", "CERTIFICATE_VERIFY_FAILED" in str(e))
+
 print("\n--- live query validation (dummy token; UNAUTHENTICATED == query is well-formed)")
 tm = A.TokenManager(); tm.token = "dummy-token-not-real"
 live = A.GqlClient(tm, delay=0.4)

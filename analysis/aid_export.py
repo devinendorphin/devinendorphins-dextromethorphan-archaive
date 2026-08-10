@@ -147,6 +147,33 @@ SCRIPT_FIELDS = {
 }
 
 
+def local_network_hint(reason):
+    """Turn a urllib transport failure into the actual fix, where one is known.
+
+    The first case is near-universal on macOS: Python installed from python.org
+    ships its own trust store and does not populate it, so every HTTPS request
+    fails with CERTIFICATE_VERIFY_FAILED while curl and every browser on the same
+    machine work fine. It looks like the tool is broken. It is not.
+    """
+    text = str(reason or "")
+    if "CERTIFICATE_VERIFY_FAILED" in text or "SSL" in text.upper():
+        return (
+            "  This is your Python's certificate store, not the API and not this tool.\n"
+            "  curl and your browser will work while Python fails.\n"
+            "  On macOS, run the installer's certificate script once:\n"
+            "      /Applications/Python\\ 3.*/Install\\ Certificates.command\n"
+            "  or, equivalently:  python3 -m pip install --upgrade certifi\n"
+            "  Then re-run this command."
+        )
+    if "Name or service not known" in text or "nodename nor servname" in text:
+        return ("  DNS could not resolve the host. Check your connection, or whether a\n"
+                "  VPN or content filter is blocking it.")
+    if "Connection refused" in text or "timed out" in text.lower():
+        return ("  The connection was refused or timed out. Check your connection, and\n"
+                "  whether a VPN, firewall or content filter is in the way.")
+    return None
+
+
 class AuthExpired(Exception):
     """A 401/UNAUTHENTICATED came back mid-run; the token needs re-pasting."""
 
@@ -304,7 +331,7 @@ class GqlClient:
             except ValueError:
                 return e.code, {"errors": [{"message": raw[:400].decode("utf8", "replace")}]}
         except urllib.error.URLError as e:
-            return 0, {"errors": [{"message": f"transport: {e.reason}"}]}
+            return 0, {"errors": [{"message": f"transport: {e.reason}", "_reason": e.reason}]}
 
     def query(self, query, variables=None, tag=""):
         query = self._apply_sheds(query)
@@ -321,14 +348,24 @@ class GqlClient:
             if status in (401, 403) or "UNAUTHENTICATED" in codes:
                 raise AuthExpired(errors[0].get("message") if errors else "unauthorized")
 
+            detail = errors[0].get("message") if errors else f"HTTP {status}"
+
+            # A broken TLS trust store or an unresolvable host is a machine
+            # configuration problem: it will fail identically in 45 seconds, so
+            # say what is wrong instead of napping three times first.
+            if status == 0:
+                hint = local_network_hint(errors[0].get("_reason") if errors else None)
+                if hint:
+                    raise Fatal(f"{tag}: {detail}\n{hint}")
+
             if status == 429 or 500 <= status < 600 or status == 0:
                 if attempt < len(backoff):
                     nap = backoff[attempt]
                     attempt += 1
-                    print(f"  ! {tag} HTTP {status}, retrying in {nap}s", file=sys.stderr)
+                    print(f"  ! {tag} {detail} — retrying in {nap}s", file=sys.stderr)
                     time.sleep(nap)
                     continue
-                raise Fatal(f"{tag}: giving up after backoff (HTTP {status})")
+                raise Fatal(f"{tag}: giving up after backoff — {detail}")
 
             missing = self._unknown_field(errors)
             if missing:
@@ -697,6 +734,54 @@ def write_scenario_tree(scn, out_dir, fmt):
     return sha
 
 
+def doctor(host=DEFAULT_HOST):
+    """Can this machine talk to the API at all? Runs before any token exists.
+
+    Exploits the same property the enumeration was built on: the server
+    validates the GraphQL document before it checks the Firebase token, so an
+    unauthenticated request that comes back UNAUTHENTICATED proves the whole
+    network path works. No credential involved, nothing sent but a literal.
+    """
+    print(f"\n  python      {sys.version.split()[0]}  ({sys.platform})")
+    try:
+        import ssl
+        print(f"  openssl     {ssl.OPENSSL_VERSION}")
+        paths = ssl.get_default_verify_paths()
+        store = paths.cafile or paths.capath
+        exists = bool(store) and pathlib.Path(store).exists()
+        print(f"  ca store    {store or '(none configured)'}"
+              f"{'' if exists else '   <-- MISSING'}")
+    except Exception as e:
+        print(f"  ssl         unavailable: {e}")
+
+    print(f"  endpoint    https://{host}/graphql")
+    req = urllib.request.Request(
+        f"https://{host}/graphql", data=b'{"query":"{__typename}"}',
+        headers={"content-type": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            payload = json.loads(r.read() or b"{}")
+        code = ((payload.get("errors") or [{}])[0].get("extensions") or {}).get("code")
+        if code == "UNAUTHENTICATED":
+            print("\n  OK — reachable, and the API answered as expected.")
+            print("  Next: python3 analysis/aid_export.py --whoami")
+            return 0
+        print(f"\n  Reached it, but got an unexpected reply: {str(payload)[:200]}")
+        return 1
+    except urllib.error.HTTPError as e:
+        print(f"\n  Reached it. HTTP {e.code} — unexpected, but the network path works.")
+        return 1
+    except urllib.error.URLError as e:
+        print(f"\n  FAILED to reach the API: {e.reason}\n")
+        print(local_network_hint(e.reason) or
+              "  Unrecognised network error. Compare against:\n"
+              f"      curl -sS -X POST https://{host}/graphql "
+              "-H 'content-type: application/json' -d '{\"query\":\"{__typename}\"}'\n"
+              "  If curl works and this does not, it is Python's config, not the network.")
+        return 2
+
+
 def main():
     ap = argparse.ArgumentParser(
         description="Bulk-export an AI Dungeon library to JSON + Markdown.",
@@ -717,7 +802,12 @@ def main():
     ap.add_argument("--force", action="store_true", help="re-fetch items already done")
     ap.add_argument("--whoami", action="store_true",
                     help="check the token works and exit — run this first")
+    ap.add_argument("--doctor", action="store_true",
+                    help="check this machine can reach the API. No token needed")
     args = ap.parse_args()
+
+    if args.doctor:
+        return doctor(args.host)
 
     out = pathlib.Path(args.out)
     tokens = TokenManager(args.save_token)
