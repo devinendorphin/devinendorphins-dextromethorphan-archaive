@@ -118,6 +118,39 @@ platform and then carried in, already finished, and did not revise again.
 This is the first result in the repo that neither corpus could have produced
 alone.
 
+### The disconfirming test, run
+
+The confound worth worrying about is composition, not the platform: late 2021 is
+replay-heavy, and a quick replay might carry shorter inputs *by design*, which
+would manufacture the decline out of a changing mix of documents. Per-item
+medians (443 items with ≥10 human turns), Spearman against item date:
+
+| slice | n | rho | z | Q1 → Q4 median |
+|---|---:|---:|---:|---|
+| all items | 443 | −0.287 | −6.0 | 76 → 59 |
+| **long-form only (≥100 actions)** | 131 | **−0.334** | −3.8 | 86 → 59 |
+| **templates played exactly once** | 163 | **−0.353** | −4.5 | 88 → 59 |
+| first play of each template | 263 | −0.367 | −5.9 | 80 → 58 |
+| excluding the Nov-21 → Jan-22 return | 352 | −0.182 | −3.4 | 92 → 70 |
+
+The composition hypothesis predicts the effect weakens or vanishes once replays
+are excluded. It **strengthens**: −0.334 among long-form items, and −0.353 among
+templates that were never replayed at all. The decline is a property of
+individual documents, not of the mix.
+
+Two honest qualifications. Dropping the November–December 2021 return halves the
+coefficient (−0.182), so a real share of the effect lives in the final period —
+the trend is genuine before then but much of the convergence happens at the end.
+And within-template drift is only suggestive: of six templates played four or
+more times across ≥90 days, four fall (median −12 chars). The exception is
+instructive — **Cobralingus runs the other way, 29 → 44**, and sits far below
+every other document because its human turns are `FILTER` commands rather than
+prose cues. The most tradition-laden thing in the corpus has the shortest turns
+in it, for a reason that has nothing to do with this trend.
+
+Verdict: survives. Promotable to `FINDINGS.md` on the strength of the
+never-replayed slice.
+
 ## 4. The sweep survives the loss of the dial
 
 `sweeps.py` found 216 same-day fork clusters on the NovelAI side, 53% of the
