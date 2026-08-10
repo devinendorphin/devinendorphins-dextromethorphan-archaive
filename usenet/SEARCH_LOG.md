@@ -347,6 +347,28 @@ returns zero where `YEKQ78C` returns seven, and `YBXD10` likewise returns zero. 
 tokenizes the full seven-character ID, so every query must carry a suffix letter — which is
 why the sweep below enumerates suffixes A–F rather than searching the six-character stem.
 
+### 4.2.2 Google Groups sweep — 117 queries, 108 of them on the ID, all zero
+
+Nine groups × (`YGXS04` + `YGSX04`) × suffixes A–F, plus `Gallegos` in each group. Raw output
+in `google_groups_sweep.txt`.
+
+| | |
+|---|---|
+| ID queries run | 108 |
+| ID queries returning anything | **0** |
+| `Gallegos` queries run | 9 |
+| `Gallegos` queries returning anything | 5, all false positives |
+
+The `Gallegos` results are the same population of noise as the Internet Archive pass, arriving
+by a completely independent route: a New Mexico shooting story in
+`alt.politics.homosexuality`, the Gustavo Gallegos P.E.R.S.O.N. Project item in
+`soc.women.lesbian-and-bi`, Mario Gallegos in `soc.motss`, and two more of the same kind.
+
+This is the most valuable negative in the whole file. Google's Deja-derived archive is not the
+Internet Archive spool — different provenance, different coverage, different gaps, and it
+covers the target window by construction from 16 March 1995. Both corpora now say the same
+thing about both spellings across every suffix.
+
 ### 4.3 Archive.org full-text search is not reachable
 
 `ia-fts.archive.org` is refused by the egress gateway (502 to CONNECT — policy denial).
