@@ -273,6 +273,17 @@ def clean_token(pasted):
     return tok
 
 
+def human_minutes(mins):
+    """'about 48 min' / 'about 3 h 10 min'. Absurd values mean it is not a real token."""
+    if mins is None:
+        return None
+    if abs(mins) > 60 * 24 * 30:
+        return "an implausible amount of time — this is probably not a real token"
+    if abs(mins) < 90:
+        return f"about {mins:.0f} min"
+    return f"about {int(abs(mins) // 60)} h {int(abs(mins) % 60)} min"
+
+
 def token_expiry(tok):
     """Minutes left on a JWT, read locally from its payload. None if unreadable."""
     try:
@@ -287,14 +298,36 @@ def token_expiry(tok):
         return None
 
 
-class TokenManager:
-    """Holds the token in memory. Never reads it from argv (R7)."""
+def mask(tok):
+    """A fingerprint you can eyeball without putting the token on screen."""
+    if not tok:
+        return "(empty)"
+    if len(tok) < 24:
+        return f"{len(tok)} chars — too short to be a token"
+    return f"{len(tok)} chars, {tok[:10]}...{tok[-6:]}"
 
-    def __init__(self, path=None):
+
+class TokenManager:
+    """Holds the token in memory. Never reads it from argv (R7).
+
+    argv is the one place a token must never go, because it lands in shell
+    history and in `ps` output. stdin is fine, and that leaves two ways in: a
+    hidden prompt, or a pipe. The pipe matters more than it looks -- typing into
+    a hidden prompt gives no feedback at all, so a paste that silently failed
+    is indistinguishable from one that worked, which is exactly where this got
+    stuck in practice. `pbpaste | ... --token-stdin` never touches the keyboard.
+    """
+
+    def __init__(self, path=None, from_stdin=False):
         self.path = pathlib.Path(path).expanduser() if path else None
+        self.from_stdin = from_stdin
         self.token = None
         if self.path and self.path.exists():
             self.token = self.path.read_text().strip() or None
+
+    def can_reprompt(self):
+        """Is there an interactive human to ask again? A pipe is spent after one read."""
+        return not self.from_stdin and sys.stdin.isatty()
 
     def get(self):
         if not self.token:
@@ -304,27 +337,48 @@ class TokenManager:
     def prompt(self, reason=None):
         if reason:
             print(f"\n  {reason}", file=sys.stderr)
-        print(
-            "\n  Paste your AI Dungeon token, then press Enter.\n"
-            "  DevTools -> Application -> IndexedDB -> firebaseLocalStorageDb ->\n"
-            "  firebaseLocalStorage -> the firebase:authUser:* key ->\n"
-            "  stsTokenManager -> accessToken.\n"
-            "  Nothing will appear on screen as you paste. That is normal.",
-            file=sys.stderr,
-        )
-        tok = clean_token(getpass.getpass("  token: "))
+
+        # Piped in (`pbpaste | ... --token-stdin`), or stdin is not a terminal
+        # at all, in which case there is nobody to prompt.
+        if self.from_stdin or not sys.stdin.isatty():
+            raw = sys.stdin.read()
+            if not raw.strip():
+                raise Fatal(
+                    "no token arrived on stdin.\n"
+                    "  On macOS, copy the token in Chrome, then run:\n"
+                    "      pbpaste | python3 analysis/aid_export.py --whoami --token-stdin"
+                )
+            tok = clean_token(raw)
+            print(f"  read from stdin: {mask(tok)}", file=sys.stderr)
+        else:
+            print(
+                "\n  Paste your AI Dungeon token, then press Enter.\n"
+                "  DevTools -> Application -> IndexedDB -> firebaseLocalStorageDb ->\n"
+                "  firebaseLocalStorage -> the firebase:authUser:* key ->\n"
+                "  stsTokenManager -> accessToken.\n"
+                "\n  NOTE: nothing appears on screen while you paste -- no dots, no stars.\n"
+                "  That is normal. Paste once, then press Enter.\n"
+                "  If pasting into the terminal will not work, Ctrl+C and pipe it instead:\n"
+                "      pbpaste | python3 analysis/aid_export.py --whoami --token-stdin",
+                file=sys.stderr,
+            )
+            tok = clean_token(getpass.getpass("  token: "))
+            print(f"  read: {mask(tok)}", file=sys.stderr)
         if not tok:
-            raise Fatal("no token given")
+            raise Fatal("no token given — nothing was read")
         if tok.count(".") != 2:
             print("  ! that does not look like a token (expected two dots). Trying it anyway.",
                   file=sys.stderr)
         left = token_expiry(tok)
         if left is not None:
-            if left <= 0:
-                print(f"  ! this token expired {abs(left):.0f} min ago — grab a fresh one.",
+            if abs(left) > 60 * 24 * 30:
+                print("  ! this token's expiry date is implausible — it is probably not a real "
+                      "AI Dungeon token. Trying it anyway.", file=sys.stderr)
+            elif left <= 0:
+                print(f"  ! this token expired {human_minutes(-left)} ago — grab a fresh one.",
                       file=sys.stderr)
             else:
-                print(f"  token accepted, about {left:.0f} min before it expires.", file=sys.stderr)
+                print(f"  token accepted, {human_minutes(left)} before it expires.", file=sys.stderr)
         self.token = tok
         if self.path:
             self.path.parent.mkdir(parents=True, exist_ok=True)
@@ -436,11 +490,23 @@ class GqlClient:
 
 
 def with_reauth(client, fn, *a, **kw):
-    """Run fn, and on token expiry prompt for a fresh token and run it again."""
+    """Run fn, and on token expiry prompt for a fresh token and run it again.
+
+    Only when there is someone to prompt. A piped token cannot be re-read --
+    stdin is already at EOF -- so retrying there would replace a true "your
+    token was rejected" with a misleading "nothing arrived on stdin".
+    """
     while True:
         try:
             return fn(*a, **kw)
         except AuthExpired as e:
+            if not client.tokens.can_reprompt():
+                raise Fatal(
+                    f"the token was rejected by the API: {e}\n"
+                    "  It has most likely expired — they last about an hour.\n"
+                    "  Copy a fresh one from DevTools and pipe it again:\n"
+                    "      pbpaste | python3 analysis/aid_export.py --whoami --token-stdin"
+                )
             client.tokens.token = None
             client.tokens.prompt(f"token rejected ({e}) -- it has probably expired.")
 
@@ -854,6 +920,9 @@ def main():
     ap.add_argument("--force", action="store_true", help="re-fetch items already done")
     ap.add_argument("--whoami", action="store_true",
                     help="check the token works and exit — run this first")
+    ap.add_argument("--token-stdin", action="store_true",
+                    help="read the token from a pipe instead of prompting, e.g. "
+                         "pbpaste | %(prog)s --whoami --token-stdin")
     ap.add_argument("--doctor", action="store_true",
                     help="check this machine can reach the API. No token needed")
     args = ap.parse_args()
@@ -862,7 +931,7 @@ def main():
         return doctor(args.host)
 
     out = pathlib.Path(args.out)
-    tokens = TokenManager(args.save_token)
+    tokens = TokenManager(args.save_token, from_stdin=args.token_stdin)
     client = GqlClient(tokens, host=args.host, delay=args.delay)
 
     if args.whoami:
@@ -873,7 +942,7 @@ def main():
         print(f"    member:   {user.get('isMember')}")
         left = token_expiry(tokens.token)
         if left is not None:
-            print(f"    expires:  in about {left:.0f} min")
+            print(f"    expires:  in {human_minutes(left)}")
         print("\n  Next: python3 analysis/aid_export.py --only <shortId> --out ./exports")
         return 0
 

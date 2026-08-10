@@ -182,6 +182,23 @@ except A.Fatal as e:
     check("cert failure fails fast, no backoff nap", time.time() - _t0 < 2, f"{time.time()-_t0:.0f}s")
     check("cert failure surfaces the reason, not just 'HTTP 0'", "CERTIFICATE_VERIFY_FAILED" in str(e))
 
+# --- offline: masked feedback + pipe input --------------------------------
+# Hidden input gives no signal, so a paste that silently failed looks exactly
+# like one that worked. The fingerprint is what makes the two distinguishable.
+check("mask reports length and ends", A.mask(JWT).startswith(f"{len(JWT)} chars, eyJhbGciOi"))
+check("mask never shows the middle", JWT[20:40] not in A.mask(JWT))
+check("mask flags something too short to be a token", "too short" in A.mask("abc"))
+check("mask handles empty", A.mask("") == "(empty)")
+
+# A pipe is spent after one read, so re-prompting would report the wrong error.
+piped = A.TokenManager(from_stdin=True)
+check("piped token manager will not re-prompt", not piped.can_reprompt())
+
+check("human expiry: minutes", A.human_minutes(55) == "about 55 min")
+check("human expiry: rolls over to hours", A.human_minutes(190) == "about 3 h 10 min")
+check("human expiry: implausible is called out", "implausible" in A.human_minutes(999999))
+check("human expiry: None passes through", A.human_minutes(None) is None)
+
 print("\n--- live query validation (dummy token; UNAUTHENTICATED == query is well-formed)")
 tm = A.TokenManager(); tm.token = "dummy-token-not-real"
 live = A.GqlClient(tm, delay=0.4)

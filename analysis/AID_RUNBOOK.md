@@ -152,28 +152,49 @@ for it.
 
 ## Step 4 — prove the token works
 
-```sh
-python3 analysis/aid_export.py --whoami
-```
+**Easiest way, macOS — never type into the terminal at all.** Copy the token in
+Chrome (Step 3), then run this. `pbpaste` hands your clipboard straight to the
+script:
 
-It asks for the token. **Paste it and press Enter. Nothing will appear on
-screen while you paste — no dots, no stars, nothing. That is deliberate, not a
-freeze.** Paste once, hit Enter.
+```sh
+pbpaste | python3 analysis/aid_export.py --whoami --token-stdin
+```
 
 **Expected:**
 
 ```
+  read from stdin: 912 chars, eyJhbGciOi...A3f9Qk
   token accepted, about 58 min before it expires.
   token works. Signed in as: <your username>
-    user id:  ...
-    expires:  in about 58 min
 ```
 
-**If it says the token expired or was rejected:** go back to Step 3 and copy it
-again. The most common cause is grabbing it long before running this, or
-copying `refreshToken` by mistake.
+That first line is the point of it: it proves the token arrived, and how much of
+it, without printing the token itself.
 
-Do not continue until this step prints your username.
+**The other way** is an interactive prompt:
+
+```sh
+python3 analysis/aid_export.py --whoami
+```
+
+**Nothing appears on screen while you paste — no dots, no stars, no cursor
+movement.** That is deliberate, and it means a paste that failed looks exactly
+like one that worked. It now prints `read: 912 chars, eyJ...` afterwards so you
+can tell. If pasting does not seem to register at all, Ctrl+C and use the
+`pbpaste` form above instead.
+
+**Reading the result:**
+
+| What it says | What to do |
+|---|---|
+| `token works. Signed in as: ...` | Done — go to Step 5 |
+| `read from stdin: 4 chars — too short` | Clipboard had the wrong thing; redo Step 3 |
+| `this token expired about N min ago` | Redo Step 3; they last about an hour |
+| `expiry date is implausible` | You copied something that isn't the token |
+| `the token was rejected by the API` | Usually expired. Redo Step 3 and pipe again |
+| Nothing at all, no prompt, just a hang | Ctrl+C, use the `pbpaste` form |
+
+Do not continue until it prints your username.
 
 ---
 
