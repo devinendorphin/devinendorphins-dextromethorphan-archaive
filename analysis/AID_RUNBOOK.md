@@ -126,89 +126,81 @@ Re-run `--doctor` after any of these. **Do not continue until it says OK.**
 
 ## Step 3 — get your token out of the browser
 
-**Use the Console, not the Application tab.** The IndexedDB viewer in DevTools
-is genuinely bad at this — clicking around its tree tends to copy a neighbouring
-cell rather than the field you aimed at, with no indication it did. Reading the
-database directly avoids the whole problem.
+**Do not click through the Application tab's IndexedDB tree.** It copies
+whichever cell it decides you meant, silently, and a wrong grab looks identical
+to a right one until the request fails. Read the database directly instead.
 
-1. On **play.aidungeon.com**, logged in, press **F12**.
-2. Click the **Console** tab.
-3. Chrome refuses pasted input in the console until you permit it. Type these
-   two words, press Enter:
+1. On **play.aidungeon.com**, logged in, press **F12**, click the **Console** tab.
+2. Chrome refuses pasted console input until you permit it. Type these two
+   words and press Enter:
 
    ```
    allow pasting
    ```
 
-4. Paste this one line, press Enter:
+3. Paste this one line and press Enter. It saves the token to your Downloads
+   folder as a file — no clipboard involved, so nothing can overwrite it and
+   there is nothing to select:
 
    ```js
-const r=indexedDB.open('firebaseLocalStorageDb');r.onsuccess=e=>{const s=e.target.result.transaction('firebaseLocalStorage','readonly').objectStore('firebaseLocalStorage').getAll();s.onsuccess=()=>{const k=s.result.find(x=>String(x.fbase_key||'').includes('authUser'));const t=k&&k.value&&k.value.stsTokenManager&&k.value.stsTokenManager.accessToken;if(!t){console.log('NOT FOUND - log in to AI Dungeon first');return}copy(t);const p=JSON.parse(atob(t.split('.')[1].replace(/-/g,'+').replace(/_/g,'/')));console.log('COPIED to clipboard: '+t.length+' chars, expires '+new Date(p.exp*1000).toLocaleTimeString())}};
+const r=indexedDB.open('firebaseLocalStorageDb');r.onsuccess=e=>{const s=e.target.result.transaction('firebaseLocalStorage','readonly').objectStore('firebaseLocalStorage').getAll();s.onsuccess=()=>{const k=s.result.find(x=>String(x.fbase_key||'').includes('authUser'));const t=k&&k.value&&k.value.stsTokenManager&&k.value.stsTokenManager.accessToken;if(!t){console.log('NOT FOUND - log in to AI Dungeon first');return}const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:'text/plain'}));a.download='aid_token.txt';document.body.appendChild(a);a.click();a.remove();const p=JSON.parse(atob(t.split('.')[1].replace(/-/g,'+').replace(/_/g,'/')));console.log('DOWNLOADED aid_token.txt - '+t.length+' chars, expires '+new Date(p.exp*1000).toLocaleTimeString())}};
    ```
 
 **Expected:**
 
 ```
-COPIED to clipboard: 1160 chars, expires 4:12:38 PM
+DOWNLOADED aid_token.txt - 1160 chars, expires 4:12:38 PM
 ```
 
-The token is now on your clipboard, exactly and only the token. Note that
-expiry time — if it is less than about ten minutes away, run the line again
-after reloading the page to get a fresh hour.
+Note that expiry time. If it is less than ten minutes away, reload the page and
+run the line again for a fresh hour.
 
 `NOT FOUND` means you are not logged in on that tab.
 
-> This reads the same value the Application tab shows, at
-> `firebase:authUser:* -> stsTokenManager -> accessToken`, and `copy()` is
-> Chrome's own console helper. If you would rather click through the tree by
-> hand, that path still works — but **do not** copy `refreshToken`, which sits
-> next to it and is long-lived.
+> **Why a download and not `copy()`.** Chrome's `copy()` console helper exists
+> only in the top-level evaluation, so calling it inside the IndexedDB success
+> callback — which fires later — throws `copy is not defined`. The download uses
+> nothing but standard DOM APIs and works from inside the callback.
 
 ---
 
 ## Step 4 — prove the token works
 
-**Easiest way, macOS — never type into the terminal at all.** Copy the token in
-Chrome (Step 3), then run this. `pbpaste` hands your clipboard straight to the
-script:
-
 ```sh
-pbpaste | python3 analysis/aid_export.py --whoami --token-stdin
+python3 analysis/aid_export.py --whoami --save-token < ~/Downloads/aid_token.txt
 ```
 
 **Expected:**
 
 ```
-  read from stdin: 912 chars, eyJhbGciOi...A3f9Qk
+  read from stdin: 1160 chars, eyJhbGciOi...A3f9Qk
   token accepted, about 58 min before it expires.
+  saved to ~/.aid_token (0600)
   token works. Signed in as: <your username>
 ```
 
-That first line is the point of it: it proves the token arrived, and how much of
-it, without printing the token itself.
+The first line confirms the token arrived and how long it was, without printing
+the credential itself.
 
-**The other way** is an interactive prompt:
+`--save-token` stores it at `~/.aid_token`, readable only by you. **Every later
+command needs no token input at all** — that is the point of doing it here.
+
+Then delete the download; the saved copy is the one that matters:
 
 ```sh
-python3 analysis/aid_export.py --whoami
+rm ~/Downloads/aid_token.txt
 ```
-
-**Nothing appears on screen while you paste — no dots, no stars, no cursor
-movement.** That is deliberate, and it means a paste that failed looks exactly
-like one that worked. It now prints `read: 912 chars, eyJ...` afterwards so you
-can tell. If pasting does not seem to register at all, Ctrl+C and use the
-`pbpaste` form above instead.
 
 **Reading the result:**
 
 | What it says | What to do |
 |---|---|
 | `token works. Signed in as: ...` | Done — go to Step 5 |
-| `read from stdin: 4 chars — too short` | Clipboard had the wrong thing; redo Step 3 |
+| `read from stdin: 4 chars — too short` | The file holds the wrong thing; redo Step 3 |
 | `this token expired about N min ago` | Redo Step 3; they last about an hour |
-| `expiry date is implausible` | You copied something that isn't the token |
-| `the token was rejected by the API` | Usually expired. Redo Step 3 and pipe again |
-| Nothing at all, no prompt, just a hang | Ctrl+C, use the `pbpaste` form |
+| `expiry date is implausible` | What was captured is not the token |
+| `the token was rejected by the API` | Usually expired. Redo Step 3 |
+| `no token arrived on stdin` | The download is empty or the path is wrong |
 
 Do not continue until it prints your username.
 
