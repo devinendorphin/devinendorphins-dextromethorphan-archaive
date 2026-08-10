@@ -268,6 +268,35 @@ with tempfile.TemporaryDirectory() as td:
     tp.write_text(jwt_expiring_in(-900))
     check("expired saved token is discarded, not used", A.TokenManager(str(tp)).token is None)
 
+# --- offline: every mode flag reaches its branch with its names defined -----
+# --probe-search shipped referencing `client` three lines before it was
+# constructed: an UnboundLocalError that no amount of query testing would find,
+# because argparse wiring is not exercised by unit-testing the functions.
+import unittest.mock as _mock
+def _mode_runs(argv, patches):
+    with _mock.patch.object(sys, "argv", ["aid_export.py"] + argv):
+        with _mock.patch.multiple(A, **patches):
+            try:
+                A.main()
+            except (NameError, UnboundLocalError) as e:
+                return f"{type(e).__name__}: {e}"
+            except SystemExit:
+                pass
+            except Exception:
+                pass  # network/token failures are fine; undefined names are not
+    return None
+
+_sentinel = {"user": {"id": "u1", "username": "x"}}
+for argv, patches in [
+    (["--doctor"],        {"doctor": _mock.Mock(return_value=0)}),
+    (["--rerender"],      {"rerender": _mock.Mock(return_value=0)}),
+    (["--probe-search"],  {"with_reauth": _mock.Mock(return_value=_sentinel),
+                           "probe_search": _mock.Mock(return_value=0)}),
+    (["--whoami"],        {"with_reauth": _mock.Mock(return_value=_sentinel)}),
+]:
+    err = _mode_runs(argv, patches)
+    check(f"mode {argv[0]} has all its names defined", err is None, err)
+
 print("\n--- live query validation (dummy token; UNAUTHENTICATED == query is well-formed)")
 tm = A.TokenManager(); tm.token = "dummy-token-not-real"
 live = A.GqlClient(tm, delay=0.4)

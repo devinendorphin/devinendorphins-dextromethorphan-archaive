@@ -1089,13 +1089,13 @@ def main():
     if args.rerender:
         return rerender(args.out, args.format)
 
-    if args.probe_search:
-        me = with_reauth(client, client.query, Q_ME, tag="user")
-        return probe_search(client, ((me or {}).get("user") or {}).get("id"))
-
     out = pathlib.Path(args.out)
     tokens = TokenManager(args.save_token, from_stdin=args.token_stdin)
     client = GqlClient(tokens, host=args.host, delay=args.delay)
+
+    if args.probe_search:
+        me = with_reauth(client, client.query, Q_ME, tag="user")
+        return probe_search(client, ((me or {}).get("user") or {}).get("id"))
 
     if args.whoami:
         user = (with_reauth(client, client.query, Q_ME, tag="user") or {}).get("user") or {}
