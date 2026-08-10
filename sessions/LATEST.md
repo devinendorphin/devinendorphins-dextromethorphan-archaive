@@ -344,15 +344,43 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
    4. **The pasted listing lists all three AI Dungeon copies**, matching the
       export to the minute (39 acts / Dec 11 8:58AM; 76 / Dec 7 5:15AM; 20 /
       Dec 7 5:04AM — local is exactly UTC−5). 2020-12-07 is triple-confirmed.
-   5. **`coinage.py` inverts on this file.** Live branch 316 of 404 blocks, 243
-      ai / 73 human. **Endorphin's coinage density is 6.53% against the model's
-      1.19% — 5.5×** — and his echo of the preceding 15 tokens is **0.84, below
-      chance**, against the model's **1.56**. He invents lexically from outside
-      the context; the model erodes phonologically from inside it. Cross-lingual
-      reach is **0.0 on both sides** where the Wake playground had Joyce at 2×
-      Clio — a different instrument, not a weaker Wake. (`coinage.py`'s
-      `report()` throws ZeroDivisionError when a side has zero cross-lingual
-      coinages — guard it before reusing.)
+   5. **`coinage.py` on this file — and the sixth instance of the standing
+      note.** First pass reported *"Endorphin out-coins the model 5.5×, echo 0.84
+      below chance."* **That was wrong, and Endorphin's one-line correction broke
+      it**: *"the text began with lama 2 until we ran out of context… made
+      available for free by the website."* LLaMA 2 output pasted back in carries
+      `origin: user`, so it had been counted as him. Splitting by block size:
+
+      | side | chars | density | echo |
+      |---|---|---|---|
+      | in-tab model (`origin ai`) | 101,058 | 1.19% | 1.56 |
+      | **pasted LLaMA 2** (user blocks >500ch) | 7,864 | **8.18%** | 1.09 |
+      | **his typed cues** (≤500ch) | 3,654 | **2.86%** | **1.99** |
+
+      Human blocks: **median 48 chars** — cues, matching the median-55 finding —
+      but the top 5 hold **72%** of "human" text, and the largest (5,661 ch)
+      opens *"I'vve got it, Thomas! Here are the opening lines of the book:"*.
+      Corrected: he out-coins the in-tab model **2.4×, not 5.5×**, and his echo
+      is the **highest** of the three, not below chance — he steers on the sound
+      just produced.
+      **The real division of labour, and it bears on the tradition criterion.**
+      His 13 cue coinages are almost all *references* — `pharmacopornographic`
+      (Preciado), `slothrop's` (Pynchon), `house-shoggoths` (Lovecraft),
+      `longtermist`, `tingleverse`, `pynchonesque`. Every erotic *sound* coinage
+      — `spermbacca`, `frolickles`, `squiiddleys`, `lubbeerrr`, `glitterine`,
+      `twanger` — is **LLaMA 2's**, not his. In-tab Clio neither invents nor
+      references: it *erodes* (`sea-rottin`, `moseyin`, `worrrld`, `hooba-koo`),
+      echo 1.56, recycling local sound. **So Endorphin supplies the tradition,
+      LLaMA 2 supplies the erotic sound-invention, Clio smears.** That is a
+      measured instance of the COINAGE "tracking a tradition" criterion, and it
+      cuts both ways — the in-tab model is not holding the reference field, but
+      the sound-invention Endorphin admired is genuinely a model's.
+      Cross-lingual reach is **0.0 on all three** where the Wake playground had
+      Joyce at 2× Clio — a different instrument, not a weaker Wake.
+      (`coinage.py`'s `report()` throws ZeroDivisionError when a side has zero
+      cross-lingual coinages, and **it does not screen pasted blocks** — it
+      splits on `origin` alone, so it will mis-attribute on any story in the
+      `pasted.py` set. Guard both before reusing.)
 
    Then the search: `LATEST` already records that block 1 of the Pynchon x Tingle
    story is a pasted AI Dungeon listing for it, `Created: Dec 7th 2020 /
