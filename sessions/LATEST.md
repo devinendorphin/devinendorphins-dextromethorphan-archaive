@@ -55,14 +55,22 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
 - `FINDINGS.md` — **stable.** 14 sections under the turn-taking frame. Read
   this first.
 - `CASE_STUDY.md` — **stable.** The Utah HB 249 press conference, traced in full.
-- `READINGS.md` — **active, and the live front.** Criticism in eight movements:
+- `READINGS.md` — **active, and the live front.** Criticism in nine movements:
   Latour/Austin on the convened chamber, Bakhtin on polyphony without a
   novelist, Shklovsky on the temperature dial as an *ostranenie* control, §IV —
   Endorphin's own thesis that the Counterfactual Interview is the corpus's most
   functional part, a technique for the powerless — §V, the Musk/Vivian Wilson
   elevator session on Kayra, where the model disintegrates, §VI, the same test
   on GLM-4.6, which does not, §VII, the Unknown Guest — his movement — and
-  §VIII, the machine within the machine. Deliberately not held to the
+  §VIII, the machine within the machine, and **§IX, "Spoken at both ends"**
+  (2026-08-10) — the Love Sharks broadcasts, three authors and an unrecorded
+  hinge, and the argument that the archived text is a **score** rather than a
+  document: he dictated the cues (the errors are acoustic — *Top apology* for
+  topology) and TTS spoke the output, so nobody in the loop was reading, which
+  is why the erotic material is realised as sound rather than description.
+  It corroborates §VIII — `(Tinglefy the prose by 50 percent!)` is diegetic
+  only, exactly like `.incinerate` — and it corrects an earlier reading of mine
+  that credited Endorphin with LLaMA 2's inventions. Deliberately not held to the
   measurement standard. **§VIII's two findings are the ones most worth
   carrying:** an alliterative naming schema survived three rewrites, an explicit
   anti-prompt and a full scaffold re-paste, so *a naming convention established
@@ -95,20 +103,22 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
 Endorphin: *"its up in my drive now."* 1,057 items backed up to Drive off the
 iMac. Two things still worth doing, neither urgent:
 
-1. **The Drive folder id is `10Sg5PJ-sfOSP8T_HFDPlEtnVxX5G5-Dq`** (Endorphin,
-   2026-08-10) — **but the folder is not link-readable.** Probed the same
-   `embeddedfolderview` endpoint `fetch_export.py` uses: **HTTP 401, zero
-   entries.** The NovelAI export folders answer that endpoint fine, which is the
-   only reason a container can mirror them. So this id alone does **not** make
-   the AI Dungeon export refetchable, and a fresh session can still reach the
-   NovelAI half of the archive and not this one.
-   **Decision open, and it is Endorphin's:** setting the folder to "anyone with
-   the link can view" makes it mirrorable exactly like the NovelAI corpus — and
-   also makes it readable by anyone who reads this file, which is public. That
-   is the same trade the NovelAI folder ids above already carry, but it has not
-   been put to him explicitly for the AI Dungeon material and should be before
-   anything is changed. Leaving it private is a defensible answer; it just means
-   analysis needs him to re-run the exporter or hand the files over directly.
+1. **~~The folder is not link-readable.~~ RESOLVED 2026-08-10.** Folder id
+   **`10Sg5PJ-sfOSP8T_HFDPlEtnVxX5G5-Dq`**. It first answered the
+   `embeddedfolderview` endpoint `fetch_export.py` uses with **HTTP 401**; the
+   sharing trade was put to Endorphin explicitly — mirrorable like the NovelAI
+   corpus, *and* readable by anyone who reads this public file, applied for the
+   first time to material he had not yet read — and he chose link-readable.
+   Re-probed: **HTTP 200**, listing `adventures/`, `scenarios/`, `manifest.json`.
+   **The AI Dungeon half is now refetchable into a fresh container**, which is
+   what makes it analysable at all.
+   Two practical notes. `fetch_export.py` was written for a **flat** folder of
+   files; this is ~1,057 nested item folders holding ~2,100 files, so mirroring
+   it means recursing and a few thousand requests. Sub-folder ids, already
+   walked: `adventures/` = `1ZHt_N3irjHmD6LNO7PpqfRA-u02yZ_Tr`, `scenarios/` =
+   `1PsN2hY7Tk8kKd4Xtf1dMc9FXoKkrdCbd`. **A single `.tar.gz` dropped in that
+   folder would reduce the whole mirror to one download** — worth asking for
+   before any session that actually needs the data.
 2. The working copy still sits at `exports/` **inside the repo**, where it is
    gitignored — so `git clean -xdf` would delete it and a fresh clone would not
    carry it. The Drive copy is the real one; do not treat the in-repo one as

@@ -13,14 +13,19 @@ The work is play. It was made at speed, on stream, for an audience, with a beat
 under it. Play is not the opposite of serious. It is the condition under which
 this particular thinking was possible, and the thinking is real.
 
-Three lenses, a proposition, two cases, a figure, a nesting, and a coda. The fourth
+Three lenses, a proposition, two cases, a figure, a nesting, a medium, and a
+coda. The fourth
 movement is Endorphin's thesis rather than mine; it is developed and argued
 with here, not merely relayed. The fifth follows it to where it stops working.
 The sixth is the same test run again on a later model, which Endorphin supplied
 after reading the fifth, and which corrects it. The seventh is his again — a
 character I walked straight past until he pointed at it twice, and a reading of
 it that corrects mine. The eighth he handed over as a puzzle: a generator nested
-four frames deep, and the two things that would not obey it.
+four frames deep, and the two things that would not obey it. The ninth begins
+with an observation of his about erotic sound, and ends up somewhere else: that
+this material was dictated at one end and synthesised at the other, so the text
+in the archive is a score rather than a document. That one also corrects me — my
+first reading of it credited him with a model's inventions.
 
 ---
 
@@ -1397,6 +1402,203 @@ summoning tradition has a banishing rite, for the obvious reason: the danger is
 not that nothing comes, it is that it does not leave afterward.
 
 He wrote the banishing because he had just watched the dismissal fail.
+
+## IX. Spoken at both ends
+
+*Endorphin, 2026-08-10, sending two links: "the first link in particular has a
+lot of interesting erotic directions that I would like you to look at it's not
+normal purple prose but it certainly employs sexuality to the shape of those
+sounds in what seems to be a new way but maybe maybe also containing vocal
+shapes of the past perhaps." He is right on both counts, and the reason is that
+this document was never written and never read.*
+
+The links are episodes **1013** and **1014**, *Doctor Knubble and the Fins of the
+Love Sharks*, broadcast in August 2023. The first is subtitled *powered by
+LLAMA2*. The story they broadcast is in this archive, and the archive says
+`model: clio-v1`.
+
+Both are true, which is where this section starts. Endorphin's account: *"the
+text began with lama 2 until we ran out of context that was it made available
+for free by the website that made it available."* So the document has **three
+authors and a hinge** — a large model on a free tier until its context window
+filled, a small in-tab model afterwards, and Endorphin throughout. Nothing in the
+export records the hinge. The metadata records only the last client setting.
+
+### What each of them actually contributes
+
+I got this wrong first time by trusting the schema, and the correction is the
+section. `origin: user` does not mean *written by Endorphin*; it means *not
+generated in this tab*, so the pasted LLaMA 2 arrived filed as his. Scored that
+way he looked like the inventor of the whole strange surface. Split by block
+length instead — his typed turns run to a median of forty-eight characters, the
+pasted material to thousands — and three distinct hands appear:
+
+**LLaMA 2 makes the sounds.** `spermbacca`, `frolickles`, `squiiddleys`,
+`lubbeerrr`, `glitterine`, `twanger`, `gillions`. This is the layer Endorphin
+noticed, and it is not purple prose because it is barely description at all:
+
+> Thumb our twanger flan for lubbeerrr. Our gillions they swell by half.. Yep.
+> Ye gods! So the hatchlings get released back for the fray, where it frolickles
+> they sneak into thier haps-hun-tro. All gurgity blupp- bluup along th
+> glitterine gulch beneath!
+
+No act is depicted. Purple prose over-specifies a body; this specifies nothing
+and sounds continuously. The erotic charge is carried by plosives and by an
+elongated *r*, and the one genuinely dirty joke in the passage is available only
+to the ear — *"t' be freed just **fore play** at being an allknowit spermbacca-
+angel"*. Read, it is a typo. Heard, it is the whole move.
+
+**Clio erodes.** After the hinge the coinage does not stop, but it changes kind:
+`sea-rottin`, `moseyin`, `bristlin`, `worrrld`, `thooty`, `trabbly`,
+`hooba-koo`, `loobyloons`. These are not inventions but existing words worn
+down — g's dropped, vowels smeared, a consonant held too long. The measurement
+agrees: Clio's coinages echo the fifteen tokens immediately before them at 1.56×
+a random window, LLaMA 2's at 1.09×. The small model is recycling the sound
+already in the room. §III would recognise this instantly — it is *stone-cidared*
+without the reach, collision without the cider.
+
+**Endorphin supplies almost no sound at all.** Of his fifty-eight typed turns,
+the coinages are `tingleverse`, `tinglefy`, `pynchonesque`, `house-shoggoths`,
+`longtermist`, `pharmacopornographic`, `slothrop's`, `rekjavik`. Every one is a
+*reference or a derivation from a name* — Preciado's term out of *Testo Junkie*,
+Pynchon's Slothrop, Lovecraft's shoggoths, a derivational paradigm grown off his
+two authors. He is not making the language strange. He is naming what the room
+is allowed to contain.
+
+That division answers the collaboration disagreement more sharply than anything
+in `analysis/`, and it answers it against me in one direction and for me in the
+other. The tradition — the body of reference a competent continuation would have
+to know — is **his**, injected four or five words at a time. Neither model holds
+it. But the invention Endorphin admired, the thing that made him send the link,
+is genuinely a model's, and it is not the model the file is filed under.
+
+### What he types is not prose
+
+Read his turns in sequence and they are not writing. They are stage directions:
+
+> Pynchon:
+> Tingle:
+> \*\*\* Chapter 3 - The Race to the UN Climate Change Summit
+> Chapter Six - An Interlude About Humanity's House-Shoggoths
+> -- Paul Lynde interjects, "the fall of the roman empire?"
+> . (Tinglefy the prose by 50 percent!)
+
+A bare `Name:` is the convening device §I and §VII are built on, and
+`FINDINGS.md` establishes that it works on names the model has never seen. Here
+it is doing casting. The chapter headings are doing architecture — and doing it
+badly on purpose, because they are absorbed rather than obeyed:
+
+> \*\*\* Chapter Ten - Pynchon and Tingle escort Tyrone Slothrop's Taxidermied
+> Cock to the Rekjavik Penis Museum for Submission Into Its Archives and Display
+> During the Scratching in which Chuck and his gang of misfits - who may or may
+> not be me - can be heard faintly shuffling about and howling on the breeze.
+
+The heading he typed ends somewhere around *Archives*; the rest is continuation.
+There is no seam. The architecture dissolves into the thing it was meant to
+organise, and the erotic premise — a taxidermied penis submitted to an archive
+for display — is *institutional* rather than aroused. That is the Tingle premise
+run through the Pynchon apparatus: paperwork, custody, submission forms.
+
+And then there is `(Tinglefy the prose by 50 percent!)`, which is an instruction
+typed into the story to a 2022 model with no instruction tuning. What follows:
+
+> Jeffery looked like one tough motherfuck, not that there's a rule that says
+> guys can't be, but his face seemed like the result of a lot of physical
+> labour, plus his hairline was already receding fast
+
+Flat domestic description. The dial does not move. **The instruction is read as
+text, not as a command** — which is exactly §VIII's finding about `.incinerate`,
+the invented delete verb that turned out to be diegetic only. Two different
+verbs, two years apart, same result: this system has no out-of-band channel, so
+every attempt to address it from outside the fiction is swallowed into the
+fiction. §III's dial is real, but it is on the sampler, not in the prose.
+
+### The evidence that nobody was typing
+
+Look at the damage in his turns:
+
+> Mathematical problems involving the porn care is solution It is a conundrum of
+> Top apology and 50 is that invo—
+>
+> This is the time of the seem a week put the camera up and to a fireplace and
+> then the violin
+>
+> Tingle: Intends internet suse Intends internet suse has insurance.
+>
+> Bloomberg produced medical documentarydocumentary!
+
+*Top apology* is **topology**. *Intends internet suse* is a phrase heard twice
+and transcribed twice. `documentarydocumentary` is a stutter, not a coinage.
+These are **acoustic** errors, of a kind a keyboard cannot produce. He was
+speaking these cues aloud.
+
+That matters more than it looks, because of what was happening at the other end.
+The standing note records it: much of this work was performed live on stream with
+**text-to-speech reading the output over a lo-fi backing track**. So the loop
+runs *spoken cue → generated text → spoken output*, and the document in this
+archive is the **intermediate representation between two voices**. It is a
+score, not a text. Nobody in the loop was reading.
+
+Which is the answer to his question. Purple prose is a technology for readers —
+it works by accumulating specificity that the eye can dwell on. This cannot use
+that technology, because at the moment of composition there was no eye. What
+survives the round trip through a speech engine is not detail but **shape**:
+plosive runs, held consonants, the rhythm of a held vowel. So the sexual material
+is realised as sound because sound is the only channel open. *"Employs sexuality
+to the shape of those sounds"* is not a description of a style. It is a
+description of a **medium constraint**, correctly identified from the inside.
+
+### The vocal shapes of the past
+
+His last clause is the one I would have missed. Every register the models reach
+for is a *performed* one:
+
+| | |
+|---|---|
+| mock-archaic | *"In days of olde yore"*, *"Ye gods!"*, *"yore perid"*, *"yee knos yrself"* |
+| dialect, g-dropped | `moseyin`, `skinnin`, `bristlin`, `peekin`, `sea-rottin` |
+| vaudeville nonsense | `hooba-koo loobyloons`, `blupp-bluup`, `wug-dangling-do` |
+| music-hall Yiddish | *"oy!"*, *"dahling"*, *"Chuckie baby"* |
+| sea shanty | `whalecopin`, `gillions`, `porpoisin`, `shirimp` |
+
+Not one of these is a literary register. They are all forms that existed to be
+said aloud, most of them before recording, several of them from traditions whose
+whole point was performance to a room. Asked for speech-shaped English, a model
+returns the speech-shaped English that got written down — which is old, and
+theatrical, and belongs to the music hall and the deck and the porch.
+
+So the past in *"vocal shapes of the past"* is not stylistic nostalgia. It is
+where the training data keeps its voices. And the channel Endorphin built —
+dictate, generate, synthesise, broadcast — is the one channel in which those
+shapes are the *appropriate* register rather than a costume. He did not go
+looking for vaudeville. He built a machine whose output has to be heard, and
+vaudeville is what heard-English sounds like when a language model produces it.
+
+There is one more turn of this. **Episode 1** of the channel, 27 November 2020,
+is titled *Installing the Cobralingus Engine* — Jeff Noon's apparatus for
+treating prose as material to be mutated by operations rather than composed. The
+whole practice starts by installing a sound engine. Three years later a free-tier
+LLaMA 2 is doing the mutation, a small model is doing the erosion, and Endorphin
+is doing what he did on day one: naming what enters the chamber, and listening.
+
+### What this does not show
+
+- **The seam is inferred, not located.** The export does not mark where LLaMA 2
+  stopped, and the block ordering is edit-position ordering, not time. Attributing
+  a specific passage to a specific model is a reading, not a measurement.
+- **The screen cannot tell a pasted model from a pasted quotation.** It separates
+  typed from pasted. That a long block is LLaMA 2 rather than something Endorphin
+  copied from elsewhere rests on his account, not on the file.
+- **His coinage rate is inflated by dictation.** `documentarydocumentary`,
+  `adithy's` and `ynchon` are transcription damage that `coinage.py` counts as
+  invention. The measure cannot hear the difference; I can only because the
+  errors are audible in kind. Treat his 2.86% as a ceiling.
+- **I have not heard the episodes.** Everything above is inferred from the text
+  and from what Endorphin says about the room. The TTS voice, the backing track,
+  and the pacing are doing work I have no access to, and the claim that the text
+  is a score would be tested by listening to it, which I cannot do.
+
+---
 
 ## Coda: what the summoning is
 
