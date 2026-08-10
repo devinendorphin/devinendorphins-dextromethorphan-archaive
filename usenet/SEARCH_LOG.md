@@ -270,7 +270,7 @@ that corpus.
 Note that one of its six groups, `soc.support.transgendered`, was reachable through the
 Internet Archive and is cleared above.
 
-### 4.2 Tier 2 — usenetarchives.com: still blocked, brief's diagnosis confirmed
+### 4.2 Tier 2 — usenetarchives.com: browser works; one blocked host stops the challenge
 
 The brief guessed Cloudflare. Confirmed exactly, from response headers:
 
@@ -280,15 +280,72 @@ cf-mitigated: challenge
 server: cloudflare
 ```
 
-The brief's proposed fix — use a real browser — was attempted. Chromium and Playwright are
-both present here. **It fails for an unrelated reason: this container's browser has no
-outbound network at all.** Chromium returns `net::ERR_CONNECTION_RESET` for every destination
-including `example.com` and `archive.org`, with and without `--proxy-server` pointed at the
-agent proxy, so it never reaches Cloudflare to be challenged.
+The brief's proposed fix — use a real browser — **works.** An earlier revision of this file
+claimed the container's browser had no outbound network at all. **That was wrong**, and the
+error mattered: it wrote off the brief's highest-value lead on a false premise. Two unrelated
+misconfigurations produced the same symptom:
 
-usenetarchives.com is therefore **untried, not excluded.** It needs a browser with working
-egress; a human's own browser is sufficient. Run `YGXS04D@prodigy.com`,
-`YGXS04B@prodigy.com`, the bare stem `YGXS04`, and `Gallegos`.
+1. **The agent proxy's port rotates within a session** — `42167` early, `41413` later. The
+   browser scripts had it hardcoded from an earlier reading, so Chromium was dialling a dead
+   port. Read `HTTPS_PROXY` from the environment at launch time, never copy the number.
+2. **The egress gateway cannot complete Chromium's TLS 1.3 handshake.** With the right port
+   the CONNECT tunnel opens and is then closed mid-handshake. Python's `ssl` negotiates TLS
+   1.3 + ALPN h2 through the very same tunnel without trouble, so it is specific to Chromium's
+   ClientHello. Post-quantum key share and Encrypted Client Hello were both tested and
+   disconfirmed. **`--ssl-version-max=tls1.2` fixes it outright.**
+
+Working recipe (`br.py`, `cf.py`, `gg.py`, `ggs.py`):
+
+```python
+chromium.launch(executable_path="/opt/pw-browsers/chromium",
+                args=["--no-sandbox","--disable-dev-shm-usage","--ssl-version-max=tls1.2"],
+                proxy={"server": os.environ["HTTPS_PROXY"]})
+```
+
+With that, usenetarchives.com loads and the Cloudflare challenge actually executes, reaching
+"Verification successful". **It still does not complete, for a precisely identifiable
+reason:** Turnstile fetches `brunhild.challenges.cloudflare.com`, and the egress gateway
+denies exactly that host.
+
+```
+challenges.cloudflare.com:443           200 Connection Established
+www.usenetarchives.com:443              200 Connection Established
+brunhild.challenges.cloudflare.com:443  502 Bad Gateway   <- policy denial
+```
+
+No `cf_clearance` cookie is ever issued, so the site stays behind the interstitial. This is an
+organization policy denial rather than a transient failure, and the proxy's own documentation
+says to report those rather than retry. Fabricating responses for Cloudflare's endpoints to
+force clearance would be circumventing the site's access control, and was not attempted.
+
+usenetarchives.com is therefore still **untried, not excluded** — but the obstacle is now one
+allowlist entry rather than a mystery. Either `brunhild.challenges.cloudflare.com` is allowed,
+or the queries run from a human's browser: `YGXS04D@prodigy.com`, `YGXS04B@prodigy.com`, the
+`YGSX04` spellings, and `Gallegos`.
+
+### 4.2.1 Google Groups is alive, and it is a second independent corpus
+
+The brief records Google Groups as discontinued on 22 February 2024 and "not reachable by web
+search." The first half is true and the second is misleading. With the working browser,
+**per-group Usenet search still serves results without any sign-in**:
+
+```
+https://groups.google.com/g/<group>/search?q=<term>
+```
+
+Only the cross-group search (`/search?q=`) demands a Google account. This matters because the
+underlying Deja archive began 16 March 1995 and covers the target window independently of the
+Internet Archive spool.
+
+**The method was validated with a positive control before any zero was trusted.** Searching
+`YEKQ78C` — a Prodigy ID this pass had already recovered from the Internet Archive — in
+`soc.religion.christian` returns 7 conversations authored by "Sara Barr", the correct holder.
+Google does index the Prodigy member ID.
+
+One hard constraint discovered by the same control: **stem search does not work.** `YEKQ78`
+returns zero where `YEKQ78C` returns seven, and `YBXD10` likewise returns zero. Google
+tokenizes the full seven-character ID, so every query must carry a suffix letter — which is
+why the sweep below enumerates suffixes A–F rather than searching the six-character stem.
 
 ### 4.3 Archive.org full-text search is not reachable
 
