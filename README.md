@@ -3,7 +3,7 @@
 **What kind of archive this is: a research corpus, in the formal/evidentiary
 register.** Five and a half years of text generation — 2,016 recovered NovelAI
 stories created between June 2021 and July 2026, and 888 AI Dungeon adventures
-reaching back to **7 December 2020** — kept not as finished writing but as an
+reaching back to **11 August 2020** — kept not as finished writing but as an
 instrumented record of how one person actually drove these models. The export
 preserves the full undo tree, so each of 760,611 edit blocks carries who wrote
 it (you or the model), which model, and at what sampler settings. That

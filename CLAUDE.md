@@ -2,7 +2,7 @@
 
 **Register: formal/evidentiary.** This is a **research corpus**, not a seed — 2,016 NovelAI
 story exports (created June 2021 – July 2026), with the full edit history preserved, plus
-888 AI Dungeon adventures reaching back to **7 December 2020**. The question this file used
+888 AI Dungeon adventures reaching back to **11 August 2020**. The question this file used
 to ask (*personal record, phenomenological writing, literature collection, or harm-reduction
 reference?*) was settled on 2026-08-03: none of those. It is an instrumented record of how
 one person drove text generation models over five years, and it is analysed as such.
@@ -47,15 +47,23 @@ Sharks* — note the spelling: the NovelAI copy is *Doctor Knubb**ins** and the 
 neither string matches the other corpus, so search both — opens **2020-12-07T10:04:05Z with
 76 actions** — matching action-for-action the AI
 Dungeon listing pasted into block 1 of the NovelAI Pynchon × Tingle story, which until now
-was the only evidence that layer existed. The archive starts on AI Dungeon in December 2020,
-eighteen months before the first NovelAI story.
+was the only evidence that layer existed.
+
+**But it is not the start.** The mirrored export (2026-08-10, `analysis/AID_FINDINGS.md`)
+puts the earliest action at **2020-08-11T03:17:09Z**, in *going postal: romantic comedy for
+humans and animists*, with nine adventures before *Dr. Knubble* — including *First Foray into
+Engaging GPT-3 in the Pre-Selfware-Era* (2020-08-29, 365 actions). The Knubble date was never
+wrong; it was just the earliest thing the pasted listing happened to name. **The archive
+starts on AI Dungeon in August 2020**, ten months before the first NovelAI story.
 
 The five rules above are NovelAI rules and most of them do not transfer. NovelAI preserves
 the full undo tree, which is what makes rejected generations and per-block settings
-analysable at all. **AI Dungeon's `actionWindow` is a flat sequence** — an `undoneAt` field,
-but no branch structure, no `prevBlock`, and no per-action sampler settings. Anything built
+analysable at all. **AI Dungeon's `actionWindow` is a flat sequence** — no branch structure,
+no `prevBlock`, and no per-action sampler settings. Anything built
 on chosen/rejected pairs, branch reachability, or settings simply cannot be computed on that
-side. Write up what each record can and cannot answer before designing anything that joins
+side. **And it is worse than the `undoneAt` field suggests: that field is set on zero of
+48,348 actions** (measured 2026-08-10). No rejected generation survives anywhere in the AI
+Dungeon half — not "some rejection", none. Write up what each record can and cannot answer before designing anything that joins
 them; the asymmetry is a finding, not an obstacle to route around.
 
 ## The harness
