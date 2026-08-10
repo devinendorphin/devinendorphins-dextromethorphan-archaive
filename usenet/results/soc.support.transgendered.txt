@@ -1,0 +1,37 @@
+=== GROUP: soc.support.transgendered  (item usenet-soc)
+zip bytes: 79417467
+mbox: soc.support.transgendered.mbox  303808936 bytes
+--- total messages (From_ lines):
+122066
+--- year histogram:
+      1 1991
+      1 1994
+     28 1995
+     47 1996
+   3038 1997
+  12299 1998
+  16175 1999
+  27122 2000
+  33805 2001
+  12343 2002
+   4351 2003
+   6133 2004
+   3670 2005
+    561 2006
+   1263 2007
+    679 2008
+    596 2009
+    279 2010
+     62 2011
+    105 2012
+     36 2013
+--- KEY COUNTS:
+YGXS04               0
+Gallegos             1
+Devon Gallegos       0
+@prodigy\.com        32
+@prodigy\.net        4121
+--- HITS (YGXS04):
+--- HITS (Gallegos, with line numbers):
+4938524:Dutra Firebaugh Floyd Gallegos Honda Jackson Keeley Knox Kuehl Lempert
+=== done soc.support.transgendered

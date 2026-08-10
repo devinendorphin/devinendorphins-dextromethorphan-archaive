@@ -1,0 +1,46 @@
+=== GROUP: talk.religion.misc  (item usenet-talk)
+zip bytes: 192630389
+mbox: talk.religion.misc.mbox  699818806 bytes
+--- total messages (From_ lines):
+140033
+--- year histogram:
+      1 1991
+      1 1994
+     17 1995
+     32 1996
+     52 1997
+     59 1998
+    281 1999
+   3603 2000
+  34518 2001
+  20511 2002
+  15575 2003
+  12188 2004
+  16446 2005
+   6024 2006
+   3839 2007
+   4306 2008
+   3643 2009
+  10055 2010
+   4438 2011
+   3599 2012
+    311 2013
+--- KEY COUNTS:
+YGXS04               0
+Gallegos             10
+Devon Gallegos       0
+@prodigy\.com        2
+@prodigy\.net        3139
+--- HITS (YGXS04):
+--- HITS (Gallegos, with line numbers):
+8769586:1.      Veronica Lozada Gallegos Laguna de las Garzas Modulo 68 depto. 1
+11526722:(Police Spokesman Gallegos) The actual vault area is built
+11526725:Las Vegas (New Mexico) Police Chief Tim Gallegos, is one
+11526729:(Gallegos) If I remember correctly, it was about
+11526734:(Gallegos) They have a CD. They're using some special paper
+11526739:All this, Gallegos said, is used to preserve the teachings
+11526744:(Gallegos) yes, like etched. Exactly. And they had a process
+11526749:(Gallegos) They were a little bit larger than, maybe,
+11526803:(Gallegos) Being a police officer, of course, right away
+11526814:(Gallegos) I would say it's like putting this country guy
+=== done talk.religion.misc

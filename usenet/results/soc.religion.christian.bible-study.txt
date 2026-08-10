@@ -1,0 +1,33 @@
+=== GROUP: soc.religion.christian.bible-study  (item usenet-soc)
+zip bytes: 123941013
+mbox: soc.religion.christian.bible-study.mbox  394988717 bytes
+--- total messages (From_ lines):
+112274
+--- year histogram:
+   3745 1993
+   4176 1994
+   1996 1995
+  20413 1996
+  16542 1997
+  12010 1998
+  12448 1999
+   6966 2000
+   5599 2001
+   5060 2002
+   5525 2003
+   6391 2004
+   4433 2005
+   2132 2006
+   1651 2007
+    895 2008
+   1334 2009
+     75 2010
+--- KEY COUNTS:
+YGXS04               0
+Gallegos             0
+Devon Gallegos       0
+@prodigy\.com        293
+@prodigy\.net        755
+--- HITS (YGXS04):
+--- HITS (Gallegos, with line numbers):
+=== done soc.religion.christian.bible-study

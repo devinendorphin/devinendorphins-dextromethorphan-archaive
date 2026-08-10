@@ -1,0 +1,40 @@
+=== GROUP: soc.motss  (item usenet-soc)
+zip bytes: 164975477
+mbox: soc.motss.mbox  640776678 bytes
+--- total messages (From_ lines):
+289313
+--- year histogram:
+      1 1984
+      1 1992
+      3 1993
+      2 1994
+     82 1995
+     30 1996
+     34 1997
+     46 1998
+  27971 1999
+  42410 2000
+  42939 2001
+  35592 2002
+  38970 2003
+  23894 2004
+  22643 2005
+  15988 2006
+  14670 2007
+  11891 2008
+   6304 2009
+   5266 2010
+    685 2011
+    140 2012
+      4 2013
+--- KEY COUNTS:
+YGXS04               0
+Gallegos             2
+Devon Gallegos       0
+@prodigy\.com        19
+@prodigy\.net        9224
+--- HITS (YGXS04):
+--- HITS (Gallegos, with line numbers):
+6568872:> > Sen. Mario Gallegos Jr. (search) said the trip to New Mexico came as a
+6571433:> Sen. Mario Gallegos Jr. (search) said the trip to New Mexico came as a
+=== done soc.motss

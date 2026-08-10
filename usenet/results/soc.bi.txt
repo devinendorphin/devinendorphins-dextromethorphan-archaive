@@ -1,0 +1,37 @@
+=== GROUP: soc.bi  (item usenet-soc)
+zip bytes: 78903975
+mbox: soc.bi.mbox  305201823 bytes
+--- total messages (From_ lines):
+142714
+--- year histogram:
+      1 1991
+      2 1993
+      1 1994
+     16 1995
+    775 1996
+   9398 1997
+  14758 1998
+  16171 1999
+  30938 2000
+  34823 2001
+  14816 2002
+  11091 2003
+   2557 2004
+   3771 2005
+   1514 2006
+   1069 2007
+    706 2008
+    264 2009
+    104 2010
+     97 2011
+     28 2012
+     14 2013
+--- KEY COUNTS:
+YGXS04               0
+Gallegos             0
+Devon Gallegos       0
+@prodigy\.com        27
+@prodigy\.net        561
+--- HITS (YGXS04):
+--- HITS (Gallegos, with line numbers):
+=== done soc.bi

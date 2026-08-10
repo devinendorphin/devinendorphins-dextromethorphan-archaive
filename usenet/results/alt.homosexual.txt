@@ -1,0 +1,38 @@
+=== GROUP: alt.homosexual  (item usenet-alt)
+zip bytes: 201711871
+mbox: alt.homosexual.mbox  700522208 bytes
+--- total messages (From_ lines):
+257548
+--- year histogram:
+     21 1990
+    334 1992
+   5634 1993
+  12004 1994
+   5469 1995
+  37027 1996
+  43993 1997
+  18620 1998
+  28099 1999
+  20752 2000
+  11344 2001
+  15878 2002
+   5922 2003
+  15524 2004
+  10065 2005
+   7581 2006
+   8068 2007
+   2228 2008
+   1141 2009
+    655 2010
+    312 2011
+   1650 2012
+     84 2013
+--- KEY COUNTS:
+YGXS04               0
+Gallegos             0
+Devon Gallegos       0
+@prodigy\.com        626
+@prodigy\.net        4776
+--- HITS (YGXS04):
+--- HITS (Gallegos, with line numbers):
+=== done alt.homosexual

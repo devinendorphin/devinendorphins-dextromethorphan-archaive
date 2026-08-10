@@ -1,0 +1,36 @@
+=== GROUP: alt.politics.homosexuality  (item usenet-alt)
+zip bytes: 250685424
+mbox: alt.politics.homosexuality.mbox  853325491 bytes
+--- total messages (From_ lines):
+160643
+--- year histogram:
+      2 1993
+      2 1996
+      6 1998
+      4 1999
+    292 2000
+     51 2001
+      4 2002
+     36 2003
+     23 2004
+    212 2005
+    295 2006
+    296 2007
+     98 2008
+  38863 2009
+  35279 2010
+  54575 2011
+  27759 2012
+   3677 2013
+--- KEY COUNTS:
+YGXS04               0
+Gallegos             3
+Devon Gallegos       0
+@prodigy\.com        0
+@prodigy\.net        1237
+--- HITS (YGXS04):
+--- HITS (Gallegos, with line numbers):
+17464608:> > Gallegos who made promises to have it stop but the harassment allegedly
+17470007:> Gallegos who made promises to have it stop but the harassment allegedly
+17481353:Gallegos who made promises to have it stop but the harassment allegedly 
+=== done alt.politics.homosexuality

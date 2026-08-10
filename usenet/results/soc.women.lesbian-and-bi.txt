@@ -1,0 +1,49 @@
+=== GROUP: soc.women.lesbian-and-bi  (item usenet-soc)
+zip bytes: 42146025
+mbox: soc.women.lesbian-and-bi.mbox  159615397 bytes
+--- total messages (From_ lines):
+73851
+--- year histogram:
+      1 1983
+      2 1995
+  18527 1996
+  13602 1997
+  15904 1998
+  13989 1999
+   4896 2000
+   4931 2001
+   1736 2002
+   1125 2003
+    121 2004
+    576 2005
+    147 2006
+    280 2007
+     30 2008
+      1 2009
+      6 2010
+--- KEY COUNTS:
+YGXS04               0
+Gallegos             17
+Devon Gallegos       0
+@prodigy\.com        143
+@prodigy\.net        217
+--- HITS (YGXS04):
+--- HITS (Gallegos, with line numbers):
+2810739:        Young Gustavo Gallegos struggled alone with the idea that he might be
+2810747:there were resources out there, but I didn't go to them," said Gallegos
+2810751:Center), Gallegos can't wait to learn ways to shore up gay teens back home -
+2810755:don't have anywhere to go," Gallegos said. "We want to help." 
+2830464:Escutia             Figueroa            Floyd               Gallegos  
+2951799:Gallegos                Yes
+3352573:  Miguel Gallegos was suspended indefinitely on Tuesday, three days after he
+3352577:  ''He's gay, and they don't like it,'' said Christy Crespin, Gallegos' aunt.
+3352584:  Ogden High Principal Larry Leatham said he suspended Gallegos because of
+3352588:said. The principal said he also told Gallegos the dress was inappropriate
+3352590:  Gallegos said he was merely tying the bow on his friend's dress, and
+3352592:Gallegos went to the dance with three girls.
+3352594:from a girl who alleges Gallegos is stalking her.
+3352597:  Gallegos scoffs at the suggestion he's stalking someone, whose name he has
+3352600:  His friend, Aubrey Permann, said Gallegos is often harassed by athletes,
+3352605:  Senior Phillip Massie confirmed harassment of Gallegos by students is an
+3352609:   Massie said he doesn't defend the name-callers, but Gallegos brings much
+=== done soc.women.lesbian-and-bi
