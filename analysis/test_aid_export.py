@@ -268,6 +268,38 @@ with tempfile.TemporaryDirectory() as td:
     tp.write_text(jwt_expiring_in(-900))
     check("expired saved token is discarded, not used", A.TokenManager(str(tp)).token is None)
 
+# --- offline: enumeration against the real library shape ---------------------
+# Probed 2026-08-10 on Endorphin's account: 888 adventures, 169 scenarios, and
+# `total` equal to len(items) in every response — it reports the page, not the
+# library — with hasMore true exactly while pages come back full. This drives
+# the pager against that shape, which is how the `fresh` NameError in the
+# paging loop was found; no live run had gone past the first page before.
+_LIB = {"adventure": [{"shortId": f"a{i}", "contentType": "adventure"} for i in range(888)],
+        "scenario":  [{"shortId": f"s{i}", "contentType": "scenario"} for i in range(169)]}
+
+class _FakeClient:
+    tokens = type("T", (), {"can_reprompt": staticmethod(lambda: False)})()
+    def __init__(self): self.calls = 0
+    def query(self, q, v, tag=""):
+        self.calls += 1
+        i = v["input"]
+        items = _LIB[i["contentType"][0]][i["offset"]:i["offset"] + i["limit"]]
+        return {"search": {"items": items, "total": len(items),
+                           "hasMore": len(items) == i["limit"]}}
+
+for _page in (100, 500, 1000):
+    _c = _FakeClient()
+    _got = A.enumerate_library(_c, ["adventure", "scenario"], page=_page)
+    _a = len([x for x in _got if x["contentType"] == "adventure"])
+    _s = len([x for x in _got if x["contentType"] == "scenario"])
+    check(f"enumerate page={_page} finds all 888+169", (_a, _s) == (888, 169), f"{_a}+{_s}")
+
+class _IgnoresOffset(_FakeClient):
+    def query(self, q, v, tag=""):
+        return {"search": {"items": _LIB["adventure"][:500], "total": 500, "hasMore": True}}
+_stuck = A.enumerate_library(_IgnoresOffset(), ["adventure"], page=500)
+check("a server ignoring offset terminates instead of looping", len(_stuck) == 500, len(_stuck))
+
 # --- offline: every mode flag reaches its branch with its names defined -----
 # --probe-search shipped referencing `client` three lines before it was
 # constructed: an UnboundLocalError that no amount of query testing would find,

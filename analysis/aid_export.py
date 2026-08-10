@@ -555,7 +555,7 @@ def enumerate_library(client, kinds, user_id=None, username=None, page=100, limi
     """Every item the authenticated user owns, via the discovered search query."""
     seen = {}
     for kind in kinds:
-        offset, total, pages = 0, None, 1
+        offset, total, pages, found = 0, None, 1, 0
         while True:
             spec = {"contentType": [kind], "limit": page, "offset": offset}
             if user_id:
@@ -567,15 +567,20 @@ def enumerate_library(client, kinds, user_id=None, username=None, page=100, limi
             )
             res = data.get("search") or {}
             items = res.get("items") or []
-            if total is None:
-                total = res.get("total")
-                print(f"  {kind}: {total if total is not None else '?'} reported", file=sys.stderr)
+            # `total` is NOT the library size. Probed 2026-08-10 across both
+            # content types at limits 100/500/1000: it equalled len(items) in
+            # every single case, i.e. it reports the page, not the collection.
+            # `hasMore` is false exactly when the page came back short. Neither
+            # can tell you how much is left, so don't print either as a target.
+            fresh = 0
             for it in items:
                 sid = it.get("shortId")
                 if sid and sid not in seen:
                     seen[sid] = it
+                    fresh += 1
+                    found += 1
             offset += len(items)
-            print(f"    ...{len(seen)} collected", end="\r", file=sys.stderr)
+            print(f"    {kind}s found: {found}", end="\r", file=sys.stderr)
 
             # `hasMore` is not trusted on its own. On the first real library it
             # came back false at exactly 100 items for BOTH content types, with
@@ -593,14 +598,16 @@ def enumerate_library(client, kinds, user_id=None, username=None, page=100, limi
                 print(f"\n  ! {kind}: offset {offset} returned nothing new — "
                       "the server may be ignoring offset", file=sys.stderr)
                 break
+            # hasMore tracked the page length exactly when probed, so a full
+            # page with hasMore=false would be new behaviour: keep going and say so.
             if not res.get("hasMore"):
                 print(f"\n  ! {kind}: hasMore=false after a full page of {len(items)} — "
-                      "continuing anyway, it under-reports", file=sys.stderr)
+                      "continuing anyway", file=sys.stderr)
             pages += 1
             if pages > 500:
                 print(f"\n  ! {kind}: stopping after 500 pages as a safety limit", file=sys.stderr)
                 break
-        print(file=sys.stderr)
+        print(f"    {kind}s found: {found}          ", file=sys.stderr)
     return list(seen.values())
 
 
@@ -1060,7 +1067,8 @@ def main():
     ap.add_argument("--host", default=DEFAULT_HOST, help=f"GraphQL host (default: {DEFAULT_HOST})")
     ap.add_argument("--delay", type=float, default=0.5, help="seconds between requests")
     ap.add_argument("--page-size", type=int, default=2000, help="actionWindow page size")
-    ap.add_argument("--search-page", type=int, default=100, help="enumeration page size")
+    ap.add_argument("--search-page", type=int, default=500,
+                    help="enumeration page size (500 verified against the live API)")
     ap.add_argument("--only", action="append", metavar="SHORTID",
                     help="fetch just this item (repeatable); accepts a play.aidungeon.com URL")
     ap.add_argument("--kind", choices=["adventure", "scenario", "both"], default="both")
