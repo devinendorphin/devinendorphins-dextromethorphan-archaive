@@ -137,3 +137,76 @@ Google Groups per-group search (see `SEARCH_LOG.md` §4.2.1 for the method and i
 control), the Internet Archive `rec.music.opera` mbox, and open-web search. The
 `rec.music.opera` mbox is a 2003-and-later spool — only 45 messages predate 2003 — so all
 1990s material here comes from Google Groups, and all address extraction comes from the mbox.
+
+---
+
+## 6. The evangelical-teen reframe (second pass)
+
+Endorphin supplied the missing context: in the 1990s they were **a teenager and an
+Evangelical**, so the groups were likely teen groups and places "where a Christian would be
+led to witness to people online" — heavy in apologetics-shaped language. The reading offered
+was that Handelman, a teacher, may have felt some urgency about reaching young people while
+their worldview was still forming.
+
+This is a better-motivated target set than the brief's, and it was tested.
+
+### 6.1 What was searched
+
+Twelve teen / apologetics / witnessing groups, against Google Groups (`placido21`,
+`Handelman`, `YGXS04D`, `Gallegos`), plus three pulled in full from the Internet Archive for
+histogram, key counts and ID census: `alt.religion.christian-teen`, `alt.teens.gay`,
+`alt.religion.apologetics`.
+
+Groups swept: `alt.religion.christian-teen`, `alt.teens.gay`, `alt.religion.apologetics`,
+`alt.christnet`, `alt.christnet.evangelical`, `alt.christnet.philosophy`,
+`alt.religion.christian`, `alt.bible.prophecy`, `alt.atheism`, `talk.origins`, `alt.teens`,
+`soc.support.youth.gay-lesbian-bi`.
+
+### 6.2 Result: negative on every key
+
+`placido21` and `YGXS04D` are **zero in all twelve** on Google Groups. The `Handelman` and
+`Gallegos` hits are noise of a now-familiar kind — textbook spam ("Solutions Manuals & Test
+Banks"), political news items, a New Mexico shooting story.
+
+Internet Archive, full pull:
+
+| Group | msgs | msgs ≤1998 | `YGXS04`/`YGSX04` | `handelman` | `placido21` | pcom |
+|---|---:|---:|---:|---:|---:|---:|
+| `alt.religion.christian-teen` | 271,825 | **89** | 0 | 0 | 0 | 25 |
+| `alt.religion.apologetics` | 182,545 | **70** | 0 | 0 | 0 | 37 |
+| `alt.teens.gay` | 131,991 | **12,988** | 0 | 0 | 0 | 142 |
+
+The teen-group ID census adds 23 canonical Prodigy Classic IDs. Nearest to either target stem
+is `BMMX04C` (J Crews) at edit distance 3; **no `YG*` ID appears at all.**
+
+### 6.3 The coverage caveat that matters most
+
+**The two groups that fit the description best are the two the Internet Archive barely holds
+for the 1990s** — 89 and 70 messages before 1999, against a quarter of a million total each.
+Those particular zeros carry no weight; the archive simply is not there.
+
+`alt.teens.gay` is the exception and the one genuinely informative negative on this side:
+12,988 messages in 1996–98 and 142 Prodigy Classic address lines, with both keys absent.
+
+The gap is partly covered from the other direction. Google Groups **does** hold the 1990s for
+these groups — pre-1997 coverage confirmed for `alt.religion.christian-teen`, `alt.teens.gay`,
+`alt.christnet`, `alt.teens` and `soc.support.youth.gay-lesbian-bi` — and both keys are zero
+there. `alt.religion.apologetics` returns nothing before 1997, which most likely dates the
+group's creation rather than a gap.
+
+So the reframe is tested, and it does not find them.
+
+### 6.4 The limit that is not resolved
+
+**`placido21` is his *opera* handle.** It is the address he used in `rec.music.opera`, and
+nothing establishes he used it anywhere else. Usenet posters of that era routinely kept
+separate identities per subject area, and a man who was a schoolteacher and gay in the 1990s
+had ordinary reasons to keep a religious-debate identity apart from a hobby one.
+
+A zero on `placido21` therefore does not clear him from these groups. Neither does a zero on
+the surname, since he may never have signed it. Under those two conditions he could have
+posted throughout the apologetics groups and left nothing either key could catch.
+
+Breaking that would need a different kind of evidence: a second address of his from the era
+(the mbox census gives only later ones — `cs.com`, `operamail`, `gmail`), or a distinctive
+phrase from the remembered debates, which is a search Endorphin can seed and no archive can.
