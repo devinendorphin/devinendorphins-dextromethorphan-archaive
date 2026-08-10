@@ -30,14 +30,30 @@ characters or more. It under-counts everyone — `riverrun` fails because *run* 
 three letters — so the absolute rates are floors. The **comparison** is fair
 because the same crude tool runs on both sides.
 
-**The human bucket is a mixture.** It holds Joyce's text and Endorphin's own
-Wake-ish composition together, and the export cannot separate them. Endorphin is
-not Joyce, so mixing drags the human score down — which means any gap this finds
-is understated, not inflated.
+**The human bucket is a mixture, and the block size splits it.** `origin: user`
+means only "not generated in this tab". It covers three different things: text
+typed by Endorphin, source material pasted in as ballast (Joyce, here), and
+**another model's output pasted back in** — see `pasted.py`, and Endorphin on the
+Love Sharks story, 2026-08-10: *"the text began with lama 2 until we ran out of
+context."*
+
+Scoring those together is not a caveat, it is a wrong answer. On that story it
+reported Endorphin coining at 6.53% against the model's 1.19%, when 68% of the
+"human" characters were a single 5,661-character block of pasted LLaMA 2; his own
+typing was 2.86%. So this splits the non-`ai` blocks by length. His typed turns
+are **cues** — median 48 characters on that story, consistent with the median-55
+finding in `FINDINGS.md` — while pasted material arrives in blocks orders of
+magnitude larger. `--cue-max` sets the boundary, default 500.
+
+The screen is crude and deliberately so: it separates *typed* from *pasted*, and
+cannot tell a pasted model output from a pasted quotation. That distinction needs
+the broadcast titles or Endorphin. What it does guarantee is that a long block
+nobody typed is never reported as authorship.
 """
 
 import argparse
 import json
+import sys
 import math
 import pathlib
 import random
@@ -125,13 +141,44 @@ def measure(texts, english, foreign, seed=0):
     }
 
 
+CUE_MAX = 500
+
+
+def buckets(paths, cue_max=CUE_MAX):
+    """Three buckets, not two: in-tab model, pasted/quoted, typed cues.
+
+    `origin: ai` is what this tab generated. Everything else is only "not
+    generated here", so it is split on length — see the module docstring.
+    """
+    out = {"ai": [], "pasted": [], "cue": []}
+    for path in paths:
+        for origin, text in live_blocks(path):
+            if origin == "ai":
+                out["ai"].append(text)
+            elif len(text) > cue_max:
+                out["pasted"].append(text)
+            else:
+                out["cue"].append(text)
+    return out
+
+
+def ratio(a, b):
+    """a/b, or None when b is zero — a rate of 0 is a finding, not a crash."""
+    return None if not b else a / b
+
+
+def fmt_ratio(a, b, unit="×"):
+    r = ratio(a, b)
+    return "n/a (the other side is zero)" if r is None else f"{r:.1f}{unit}"
+
+
 def ztest(p1, n1, p2, n2):
     p = (p1 * n1 + p2 * n2) / (n1 + n2)
     se = math.sqrt(p * (1 - p) * (1 / n1 + 1 / n2))
     return (p1 - p2) / se if se else 0.0
 
 
-def report(ai, human, out):
+def report(ai, human, cues, out, cue_max=CUE_MAX):
     z_dec = ztest(ai["decomposable"], ai["coined"],
                   human["decomposable"], human["coined"])
     z_cross = ztest(ai["crosslingual"], ai["coined"],
@@ -144,18 +191,22 @@ def report(ai, human, out):
         "conditions. Clio ran at **temperature 2.5** with **no Memory and no",
         "Author's Note** — the corpus's most extreme setting.",
         "",
-        "| | Clio (`origin: ai`) | Joyce + Endorphin |",
-        "|---|---:|---:|",
-        f"| tokens | {ai['tokens']:,} | {human['tokens']:,} |",
-        f"| coinages | {ai['coined']:,} | {human['coined']:,} |",
+        f"Non-`ai` blocks are split at **{cue_max} characters**: pasted ballast",
+        "(Joyce, here) from text Endorphin actually typed. Scoring those together",
+        "reports pasted material as authorship — see the module docstring.",
+        "",
+        "| | Clio (`origin: ai`) | Joyce (pasted) | Endorphin (typed cues) |",
+        "|---|---:|---:|---:|",
+        f"| tokens | {ai['tokens']:,} | {human['tokens']:,} | {cues['tokens']:,} |",
+        f"| coinages | {ai['coined']:,} | {human['coined']:,} | {cues['coined']:,} |",
         f"| **density** | **{100 * ai['density']:.1f}%** | "
-        f"**{100 * human['density']:.1f}%** |",
+        f"**{100 * human['density']:.1f}%** | {100 * cues['density']:.1f}% |",
         f"| **decomposable into two words** | **{100 * ai['decomposable']:.1f}%** | "
-        f"**{100 * human['decomposable']:.1f}%** |",
+        f"**{100 * human['decomposable']:.1f}%** | {100 * cues['decomposable']:.1f}% |",
         f"| **cross-lingual** | {100 * ai['crosslingual']:.1f}% | "
-        f"{100 * human['crosslingual']:.1f}% |",
+        f"{100 * human['crosslingual']:.1f}% | {100 * cues['crosslingual']:.1f}% |",
         f"| **local echo** (vs random window) | {ai['echo']:.2f}× | "
-        f"{human['echo']:.2f}× |",
+        f"{human['echo']:.2f}× | {cues['echo']:.2f}× |",
         "",
         "## What it says",
         "",
@@ -164,12 +215,12 @@ def report(ai, human, out):
         "indistinguishable, and a reader skimming would find them equally strange.",
         "",
         f"**Construction is not.** Joyce's coinages are **"
-        f"{human['decomposable'] / ai['decomposable']:.1f}× more likely** to be two",
+        f"{fmt_ratio(human['decomposable'], ai['decomposable'])} more likely** to be two",
         f"real words tiled together (z = {z_dec:.1f}). Clio produces Joyce-density",
         "strangeness with well under Joyce's rate of actual portmanteau.",
         "",
         f"**Reach is not either.** Joyce crosses into another language "
-        f"{human['crosslingual'] / ai['crosslingual']:.1f}× as often "
+        f"{fmt_ratio(human['crosslingual'], ai['crosslingual'])} as often "
         f"(z = {z_cross:.1f}).",
         "",
         f"**And Clio's coinages are more local.** Both echo their recent context",
@@ -204,22 +255,31 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("stories", nargs="+")
     ap.add_argument("--report", type=pathlib.Path)
+    ap.add_argument("--cue-max", type=int, default=CUE_MAX,
+                    help=f"non-ai blocks longer than this are treated as pasted, "
+                         f"not typed (default {CUE_MAX})")
     args = ap.parse_args()
 
-    ai, human = [], []
-    for path in args.stories:
-        for origin, text in live_blocks(path):
-            (ai if origin == "ai" else human).append(text)
-
+    b = buckets(args.stories, args.cue_max)
     english, foreign = lexicons()
-    a = measure(ai, english, foreign)
-    h = measure(human, english, foreign)
+    m = {k: measure(v, english, foreign) for k, v in b.items()}
+
+    for k in ("ai", "pasted", "cue"):
+        n_blocks, n_chars = len(b[k]), sum(map(len, b[k]))
+        print(f"  {k:7s} {n_blocks:5d} blocks  {n_chars:>9,} chars", file=sys.stderr)
+    if not b["pasted"]:
+        print("  (no block over the cue ceiling — nothing screened out)", file=sys.stderr)
+
     if args.report:
-        report(a, h, args.report)
+        if not m["pasted"] or not m["cue"]:
+            print("  ! one bucket is empty; the three-way report needs all of them",
+                  file=sys.stderr)
+        report(m["ai"], m["pasted"], m["cue"], args.report, args.cue_max)
         print(f"wrote {args.report}")
     else:
-        for label, m in (("ai", a), ("human", h)):
-            print(label, {k: round(v, 4) for k, v in m.items()})
+        for label in ("ai", "pasted", "cue"):
+            v = m[label]
+            print(label, {k: round(x, 4) for k, x in v.items()} if v else "(empty)")
 
 
 if __name__ == "__main__":
