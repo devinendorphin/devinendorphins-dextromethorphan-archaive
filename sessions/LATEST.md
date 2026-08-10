@@ -298,6 +298,31 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
    *(superseded, kept for the reasoning)* the original text of this item:
    search the 888 for the Dec 2020 listing pasted into the Pynchon × Tingle
    story. Backup first — see Urgent.
+
+   **The title drifted across platforms, and Endorphin caught it** (*"are you
+   sure it isn't fins of the love sharks?"*). Both spellings are real and they are
+   not the same string: AI Dungeon has **Dr. Knubb*le*** and the ***Fangs***,
+   NovelAI has **Doctor Knubb*ins*** and the ***Fins*** — 3 fangs / 3 knubble /
+   **0 fins / 0 knubbins** across all 888 AI Dungeon titles. Searching either
+   corpus with the other's spelling returns nothing; a concrete cross-platform
+   case of the standing "titles lie" note. **The drift is in the title only** —
+   the NovelAI file titled *Knubbins / Fins* says **Knubble 22× and Fangs 5× in
+   its body.** The prose kept the AI Dungeon original; only the filename moved.
+
+   **Open, and needs the mirror.** Endorphin places the reference *"in the last
+   episode of the Left behind series which is the pynchon lahaye joint. that's
+   Novel ai"*. Across the 19 committed documents it is not there. Both
+   Pynchon–LaHaye forks are in `corpus/cited/` — `Towards_a_Novel_Train_of_
+   Thought_1` (3.0 MB; pynchon 348 / lahaye 256 / tingle 68) and
+   `New_Story_1__Sv9wFLNGjMduWBzDsGQ_M` (1.5 MB; pynchon 317 / lahaye 283), both
+   **untitled**, which is why an earlier session reported the Left Behind story
+   absent — and **neither carries a single Knubbins or Love Sharks reference.**
+   The only callback in the cited set is in **Pynchon × *Tingle* PSYOPS AI
+   (29 refs)**. This is 19 files out of 2,016 with the mirror gone, so it is
+   **unanswerable-here, not a null**: the last episode may be a fork that was
+   never committed. Recheck against the full mirror before concluding anything,
+   and weight his recall accordingly — the standing note records that his
+   corrections have repeatedly been right against Claude's readings.
    Then the search: `LATEST` already records that block 1 of the Pynchon x Tingle
    story is a pasted AI Dungeon listing for it, `Created: Dec 7th 2020 /
    Actions: 76`, and that a NovelAI copy survives. **That adventure may now be in
