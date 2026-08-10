@@ -4,11 +4,12 @@ Run 2026-08-10, against the brief in `SEARCH_BRIEF.md`. This file records what w
 what was found, and — mostly — what the archives do and do not hold. Per the brief's §7, a
 zero is a coverage finding, not a conclusion about whether the person posted.
 
-**Result in one line: nine groups, ~320,000 messages from the 1990–1998 window, ~1,425
-Prodigy Classic address lines, and no genuine hit on either key.**
+**Result in one line: nine groups, ~320,000 messages from the 1990–1998 window, and a census
+of every Prodigy address in them — 330 canonical Prodigy Classic IDs — containing no match for
+`YGXS04`, for `YGSX04`, or for anything within edit distance 2 of either.**
 
-The negatives are worth less than the four things the pass established along the way, so
-those are stated first.
+The negatives are worth less than the things the pass established along the way, so those
+are stated first.
 
 ---
 
@@ -27,7 +28,7 @@ no 1993–1998 ceiling the way a Prodigy Classic member ID does. Where the archi
 
 ---
 
-## 2. Four findings that change how the next pass should be run
+## 2. Six findings that change how the next pass should be run
 
 ### 2.1 The brief's coverage trap is real but over-generalized — the frontier is much larger
 
@@ -112,6 +113,83 @@ surnames.** This confirms the brief's household-suffix model and adds a limit to
 - A zero on `Gallegos` therefore does not clear the *stem* — only the name.
 
 If a second household surname is known, it is worth as much as the first and should be added.
+
+---
+
+### 2.5 The ID is a memory artifact, so the search was rebuilt around a census
+
+Prompted by a proposed alternate spelling — `YGSX04D`, transposing the middle two letters —
+the search was restructured. The point generalises past that one variant:
+
+**Only the domain is verified.** The brief establishes `@prodigy.com` against 256 real
+messages. The ID itself is a remembered seven-character string from roughly thirty years ago,
+and the suffixes `D` and `B` are remembered too. `YGSX04D` is not a worse guess than
+`YGXS04D`; neither is authoritative. Testing one exact spelling per pass was the wrong shape
+for the problem — each new guess cost a fresh 1.1 GB of downloads to answer.
+
+So instead of grepping for a string, every Prodigy address in all nine groups was extracted
+into a census: **25,776 address tokens → 374 distinct `prodigy.com` IDs → 330 canonical
+`LLLLDDL` IDs**, plus 483 distinct `prodigy.net` locals. That census is committed as
+`prodigy_classic_ids.tsv`, so any future variant is a grep against a 20 KB file rather than
+another download.
+
+Against the census (`match.py`):
+
+| Test | Result |
+|---|---|
+| `YGXS04` exact | **absent** |
+| `YGSX04` exact | **absent** |
+| All 24 letter-permutations of {Y,G,X,S} + `04` | **absent** |
+| Any ID within **edit distance ≤2** of either stem | **none** |
+| Any ID beginning `YG` | **none** |
+| Any `prodigy.net` local containing `gallegos` | **none** |
+| Raw-text regex `[YGXS]{4}0?4` across all nine mboxes | **zero matches** |
+
+Edit distance ≤2 is a wide net — it absorbs any single transposition, any two substitutions,
+insertions or deletions. Nothing in these nine groups comes close.
+
+The four IDs in the census whose digits are `04` are `PAHB04B`, `TQXB04A` (Daniel Morris),
+`ULWB04B` (Dody Carleton) and `ULWB04C` (Barbie Doll). The eleven Y-prefix IDs are `YBXD10A`
+(Beau Gales), `YBXD10C` (K pennington Lewis), `YCQT19A`, `YEKQ78C` (Sara Barr), `YELH71A`
+(Doug Hutton), `YLRP82A`, `YPKL49C` (Brad Everett), `YRLW82A` (Courtney Pender iv), `YUZQ54A`
+(Skyler rae Peacock / Steven Peacock), `YYYC39A` (Brice Wellington), `YYZA05A` (Joel Smith).
+None is a plausible corruption of either target.
+
+**This upgrades the negative substantially.** The earlier result was "the exact string is not
+there," which a spelling error would explain. The result now is "no ID resembling either
+spelling is there, out of 330 canonical Prodigy Classic IDs." Within these nine groups the
+account is absent, and misremembering the ID is no longer a live explanation for why.
+
+### 2.5.1 A truncation scare that turned out to be my own error
+
+Partway through, the census appeared to contain left-truncated IDs — `Y49C@prodigy.com`,
+`YG96A@prodigy.com`, `YGV93A@prodigy.com` — which would have implied addresses were being
+line-wrapped in the archive, and therefore that every full-stem grep in this search *and in
+the brief* could silently miss a wrapped occurrence.
+
+It was an artifact of the checking grep, not of the archive. An unanchored pattern was
+matching mid-token: `Y49C` is the tail of **KXVY49C**, `YG96A` of **RVYG96A**, `YGV93A` of
+**LYGV93A**. All are canonical seven-character IDs. 337 of 374 IDs are exactly seven
+characters; the remainder are vanity or staff addresses (`AARON`, `ABUSE`, `BRAD`,
+`BOUCHER`) and hex Message-ID locals, not damaged user addresses.
+
+**No wrapping problem exists and the stem greps were sound.** Recorded because the reasoning
+looked convincing for several minutes, and because anchoring matters when auditing an
+extraction with the same tool that produced it.
+
+### 2.6 Household census
+
+13 of 316 canonical stems appear under more than one suffix — about 4%:
+
+```
+ATMF00 [A,C]   BBHL55 [A,C]   KUVZ84 [A,B]   LJNF40 [A,C,D]   LXUT53 [A,B]
+PDRR30 [A,D]   QGBF56 [A,B]   ULWB04 [B,C]   WGVP44 [A,D]     XBHN14 [A,B]
+YBXD10 [A,C]   ZBJZ24 [B,F]   ZPNY64 [B,C]
+```
+
+Suffixes A through F are all attested, and `LJNF40` runs to three members. A `D`/`B` pair as
+in the target is entirely ordinary. This is the population-level version of the `XBHN14`
+finding in §2.4.
 
 ---
 
@@ -271,12 +349,17 @@ sort-order fact is worth knowing and is not documented anywhere obvious.
    named target that is genuinely untried, and it carries mid-90s material the Internet
    Archive lacks.
 2. **Email Avery Dame-Griff** for the QDHP Usenet corpus (§4.1) — now the only route to it.
-3. **Get a second household surname.** Per §2.4 the two suffixes may not share one, so the
+3. **Stop testing remembered spellings against the Internet Archive.** §2.5 settles every
+   variant of the ID at once for these nine groups. A new spelling only becomes worth testing
+   against *new* groups, or against the archives in steps 1 and 2 — and there it should be
+   run as a census, not a grep.
+4. **Get a second household surname.** Per §2.4 the two suffixes may not share one, so the
    current name key can clear at most half the target.
-4. **Keep grepping the Internet Archive, but choose groups by measured depth, not hierarchy**
+5. **Keep extending the census to new groups, chosen by measured depth, not hierarchy**
    (§2.1). The frontier is much larger than the brief assumed. `alt.*` is not written off.
-5. Restore archive.org full-text search access if at all possible (§4.3) — it would replace
-   all of step 4.
+   `inventory.sh` appends to the same census file.
+6. Restore archive.org full-text search access if at all possible (§4.3) — it would replace
+   all of step 5.
 
 Still live, and untouched by any of this: §6 of the brief. If these accounts used
 `X-No-Archive`, the posts are gone by the poster's own instruction and nothing above would
