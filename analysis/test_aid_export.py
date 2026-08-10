@@ -268,6 +268,38 @@ with tempfile.TemporaryDirectory() as td:
     tp.write_text(jwt_expiring_in(-900))
     check("expired saved token is discarded, not used", A.TokenManager(str(tp)).token is None)
 
+# --- offline: --verify audits disk, not the manifest's own opinion ----------
+with tempfile.TemporaryDirectory() as td:
+    vr = pathlib.Path(td) / "exp"
+    man = {}
+    for i in range(3):
+        dd = vr / "adventures" / f"a{i}__t"
+        dd.mkdir(parents=True)
+        obj = {"shortId": f"a{i}", "title": "T", "actionCount": 2, "actionWindow": [
+            {"id": "0", "text": "x", "createdAt": "2024-01-01"},
+            {"id": "1", "text": "y", "createdAt": "2024-01-02"}]}
+        (dd / "raw.json").write_text(json.dumps(obj))
+        (dd / "story.md").write_text("# T")
+        man[f"adventure:a{i}"] = {"status": "ok"}
+    (vr / "manifest.json").write_text(json.dumps(man))
+    check("verify passes a clean export", A.verify(vr) == 0)
+
+    # an adventure short of its own actionCount must not pass silently
+    bad = vr / "adventures" / "a0__t" / "raw.json"
+    obj = json.loads(bad.read_text())
+    obj["_action_count_mismatch"] = {"actionCount": 9, "fetched": 2}
+    bad.write_text(json.dumps(obj))
+    check("verify catches an actionCount mismatch", A.verify(vr) == 1)
+
+    obj.pop("_action_count_mismatch")
+    bad.write_text(json.dumps(obj))
+    (vr / "adventures" / "a0__t" / "story.md").unlink()
+    check("verify catches a missing render", A.verify(vr) == 1)
+
+    (vr / "adventures" / "a0__t" / "story.md").write_text("# T")
+    bad.write_text("{ not json")
+    check("verify catches an unreadable raw.json", A.verify(vr) == 1)
+
 # --- offline: --token-file, so no shell redirection is needed ---------------
 # `< ~/Downloads/aid_token.txt` fails outright when Chrome renamed the download,
 # and the shell's error names a file the user can plainly see in Finder.

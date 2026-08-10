@@ -1018,6 +1018,88 @@ def rerender(out, fmt="md"):
     return 1 if failed else 0
 
 
+def verify(out):
+    """Audit what actually landed on disk. No token, no network.
+
+    The manifest records what the run believed it did; this reads the files
+    themselves. Two failures would make an archive quietly wrong rather than
+    loudly broken: an adventure holding fewer actions than its own actionCount
+    claims, and a raw.json that will not parse. Both are checked here.
+    """
+    out = pathlib.Path(out)
+    man = {}
+    mpath = out / "manifest.json"
+    if mpath.exists():
+        try:
+            man = json.loads(mpath.read_text())
+        except ValueError:
+            print(f"  ! manifest at {mpath} will not parse", file=sys.stderr)
+
+    kinds, actions, bytes_, deleted = {}, 0, 0, []
+    mismatched, unreadable, no_md = [], [], []
+    for raw in sorted(out.glob("**/raw.json")):
+        bytes_ += sum(f.stat().st_size for f in raw.parent.iterdir() if f.is_file())
+        try:
+            d = json.loads(raw.read_text(encoding="utf8"))
+        except ValueError as e:
+            unreadable.append(f"{raw}: {e}")
+            continue
+        kind = "scenario" if "scenarios" in raw.parts else "adventure"
+        kinds[kind] = kinds.get(kind, 0) + 1
+        if d.get("deletedAt"):
+            deleted.append(d.get("shortId"))
+        if kind == "adventure":
+            actions += len(d.get("actionWindow") or [])
+            if d.get("_action_count_mismatch"):
+                mismatched.append((d.get("shortId"), d["_action_count_mismatch"]))
+        want = "scenario.md" if kind == "scenario" else "story.md"
+        if not (raw.parent / want).exists():
+            no_md.append(str(raw.parent))
+
+    total = sum(kinds.values())
+    print()
+    print(f"  {out}/")
+    for k in sorted(kinds):
+        print(f"    {k + 's':<12} {kinds[k]:,}")
+    print(f"    {'actions':<12} {actions:,}")
+    print(f"    {'on disk':<12} {bytes_ / 1e6:,.1f} MB")
+    ok_man = sum(1 for v in man.values() if v.get("status") == "ok")
+    failed = [k for k, v in man.items() if v.get("status") == "failed"]
+    print(f"    {'manifest':<12} {ok_man:,} ok, {len(failed)} failed")
+
+    problems = 0
+    if total != ok_man:
+        print()
+        print(f"  ! manifest says {ok_man} ok but {total} raw.json exist on disk")
+        problems += 1
+    for label, rows in (("unreadable raw.json", unreadable), ("missing render", no_md)):
+        if rows:
+            print()
+            print(f"  ! {len(rows)} {label}:")
+            for r in rows[:5]:
+                print(f"      {r}")
+            problems += 1
+    if mismatched:
+        print()
+        print(f"  ! {len(mismatched)} adventure(s) stored a different number of actions "
+              "than actionCount claimed:")
+        for sid, m in mismatched[:10]:
+            print(f"      {sid}: claimed {m.get('actionCount')}, stored {m.get('fetched')}")
+        problems += 1
+    if failed:
+        print()
+        print(f"  ! {len(failed)} item(s) failed: {', '.join(failed[:10])}")
+        problems += 1
+    if deleted:
+        print()
+        print(f"  {len(deleted)} item(s) carry deletedAt — kept and flagged, not skipped")
+
+    print()
+    print("  " + ("Everything checks out." if not problems
+                  else f"{problems} thing(s) above need a look."))
+    return 1 if problems else 0
+
+
 def doctor(host=DEFAULT_HOST):
     """Can this machine talk to the API at all? Runs before any token exists.
 
@@ -1105,6 +1187,8 @@ def main():
                          "pbpaste | %(prog)s --whoami --token-stdin")
     ap.add_argument("--probe-search", action="store_true",
                     help="report what the search endpoint really caps at, then exit")
+    ap.add_argument("--verify", action="store_true",
+                    help="audit what landed on disk against the manifest. No token needed")
     ap.add_argument("--rerender", action="store_true",
                     help="rebuild the .md files from raw.json already on disk. "
                          "No token, no network")
@@ -1114,6 +1198,9 @@ def main():
 
     if args.doctor:
         return doctor(args.host)
+
+    if args.verify:
+        return verify(args.out)
 
     if args.rerender:
         return rerender(args.out, args.format)
