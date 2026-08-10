@@ -268,6 +268,22 @@ with tempfile.TemporaryDirectory() as td:
     tp.write_text(jwt_expiring_in(-900))
     check("expired saved token is discarded, not used", A.TokenManager(str(tp)).token is None)
 
+# --- offline: --token-file, so no shell redirection is needed ---------------
+# `< ~/Downloads/aid_token.txt` fails outright when Chrome renamed the download,
+# and the shell's error names a file the user can plainly see in Finder.
+with tempfile.TemporaryDirectory() as td:
+    dl = pathlib.Path(td)
+    (dl / "aid_token.txt").write_text(JWT)
+    time.sleep(0.01)
+    (dl / "aid_token-1.txt").write_text(JWT + "NEWER")
+    check("token-file reads a plain path", A.read_token_file(str(dl / "aid_token.txt")) == JWT)
+    check("token-file glob picks the newest match",
+          A.read_token_file(str(dl / "aid_token*")).endswith("NEWER"))
+    try:
+        A.read_token_file(str(dl / "absent*")); check("missing token file raises", False)
+    except A.Fatal as e:
+        check("missing token file says how to look", "ls -lt" in str(e))
+
 # --- offline: enumeration against the real library shape ---------------------
 # Probed 2026-08-10 on Endorphin's account: 888 adventures, 169 scenarios, and
 # `total` equal to len(items) in every response — it reports the page, not the

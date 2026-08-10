@@ -298,6 +298,24 @@ def token_expiry(tok):
         return None
 
 
+def read_token_file(pattern):
+    """Read a token file, tolerating a glob and picking the newest match.
+
+    Chrome renames a repeated download (aid_token-1.txt, aid_token (1).txt),
+    so the exact name is not predictable and a bare shell redirect fails with
+    'no such file or directory' on a file that is sitting right there.
+    """
+    import glob as _glob
+    matches = sorted(_glob.glob(str(pathlib.Path(pattern).expanduser())),
+                     key=lambda f: pathlib.Path(f).stat().st_mtime, reverse=True)
+    if not matches:
+        raise Fatal(f"no file matching {pattern!r}.\n"
+                    "  Check what actually landed:  ls -lt ~/Downloads | head")
+    if len(matches) > 1:
+        print(f"  {len(matches)} matches, using the newest: {matches[0]}", file=sys.stderr)
+    return pathlib.Path(matches[0]).read_text()
+
+
 def mask(tok):
     """A fingerprint you can eyeball without putting the token on screen."""
     if not tok:
@@ -1079,6 +1097,9 @@ def main():
     ap.add_argument("--force", action="store_true", help="re-fetch items already done")
     ap.add_argument("--whoami", action="store_true",
                     help="check the token works and exit — run this first")
+    ap.add_argument("--token-file", metavar="PATH",
+                    help="read the token from a file (accepts a glob; newest match wins). "
+                         "Avoids shell redirection")
     ap.add_argument("--token-stdin", action="store_true",
                     help="read the token from a pipe instead of prompting, e.g. "
                          "pbpaste | %(prog)s --whoami --token-stdin")
@@ -1099,6 +1120,9 @@ def main():
 
     out = pathlib.Path(args.out)
     tokens = TokenManager(args.save_token, from_stdin=args.token_stdin)
+    if args.token_file:
+        tokens.token = clean_token(read_token_file(args.token_file))
+        print(f"  read {args.token_file}: {mask(tokens.token)}", file=sys.stderr)
     client = GqlClient(tokens, host=args.host, delay=args.delay)
 
     if args.probe_search:
