@@ -100,6 +100,30 @@ check("shed removes the field", "lastModelContext" not in shed and "title" in sh
 check("shed finds field name in error",
       A.GqlClient._unknown_field([{"message": 'Cannot query field "foo" on type "Q".'}]) == "foo")
 
+# --- offline: token salvage + expiry --------------------------------------
+import base64, time
+JWT = "eyJhbGciOiJSUzI1NiJ9.eyJleHAiOjk5OTk5OTk5OTl9.sig"
+check("token: plain passthrough", A.clean_token(JWT) == JWT)
+check("token: strips 'firebase ' prefix", A.clean_token("firebase " + JWT) == JWT)
+check("token: strips 'Bearer ' prefix", A.clean_token("Bearer " + JWT) == JWT)
+check("token: strips quotes and whitespace", A.clean_token(f'  "{JWT}" \n') == JWT)
+record = json.dumps({"fbase_key": "firebase:authUser:xyz", "value": {
+    "uid": "u1", "stsTokenManager": {"refreshToken": "R", "accessToken": JWT}}})
+check("token: digs accessToken out of a pasted JSON record", A.clean_token(record) == JWT)
+for bad, want in [("{nope", "re-copy"), ('{"a":1}', "accessToken")]:
+    try:
+        A.clean_token(bad); check(f"token: {bad!r} raises", False)
+    except A.Fatal as e:
+        check(f"token: {bad!r} fails with a usable message", want in str(e), e)
+
+def jwt_expiring_in(seconds):
+    p = base64.urlsafe_b64encode(json.dumps({"exp": int(time.time()) + seconds}).encode())
+    return "h." + p.decode().rstrip("=") + ".s"
+
+check("expiry: reads ~30 min", 29 < A.token_expiry(jwt_expiring_in(1800)) <= 30)
+check("expiry: expired reads negative", A.token_expiry(jwt_expiring_in(-600)) < 0)
+check("expiry: garbage returns None", A.token_expiry("not-a-jwt") is None)
+
 print("\n--- live query validation (dummy token; UNAUTHENTICATED == query is well-formed)")
 tm = A.TokenManager(); tm.token = "dummy-token-not-real"
 live = A.GqlClient(tm, delay=0.4)

@@ -165,6 +165,60 @@ def slugify(text, limit=60):
     return (s[:limit].rstrip("-") or "untitled")
 
 
+def clean_token(pasted):
+    """Salvage a token from whatever actually got pasted.
+
+    Copying the right thing out of DevTools is fiddly, and the three near-misses
+    are predictable: the whole `firebase:authUser:*` JSON record instead of the
+    one field inside it, the value with its surrounding quotes, or the value
+    with the header word still attached. All three are recoverable, so recover
+    them rather than failing with 'unauthorized' twenty seconds later.
+    """
+    tok = (pasted or "").strip()
+    if tok.startswith("{"):
+        try:
+            blob = json.loads(tok)
+        except ValueError:
+            raise Fatal("that looks like JSON but will not parse — re-copy the value")
+        found = None
+
+        def walk(node):
+            nonlocal found
+            if found or not isinstance(node, (dict, list)):
+                return
+            items = node.items() if isinstance(node, dict) else enumerate(node)
+            for k, v in items:
+                if k == "accessToken" and isinstance(v, str) and v:
+                    found = v
+                    return
+                walk(v)
+
+        walk(blob)
+        if not found:
+            raise Fatal("no accessToken inside that JSON — copy stsTokenManager.accessToken")
+        print("  (pulled accessToken out of the pasted JSON record)", file=sys.stderr)
+        tok = found
+    tok = tok.strip().strip('"').strip("'").strip()
+    for prefix in ("firebase ", "bearer "):
+        if tok.lower().startswith(prefix):
+            tok = tok[len(prefix):].strip()
+    return tok
+
+
+def token_expiry(tok):
+    """Minutes left on a JWT, read locally from its payload. None if unreadable."""
+    try:
+        import base64
+        payload = tok.split(".")[1]
+        payload += "=" * (-len(payload) % 4)
+        exp = json.loads(base64.urlsafe_b64decode(payload)).get("exp")
+        if not exp:
+            return None
+        return (datetime.fromtimestamp(exp, timezone.utc) - datetime.now(timezone.utc)).total_seconds() / 60
+    except Exception:
+        return None
+
+
 class TokenManager:
     """Holds the token in memory. Never reads it from argv (R7)."""
 
@@ -183,16 +237,26 @@ class TokenManager:
         if reason:
             print(f"\n  {reason}", file=sys.stderr)
         print(
-            "  Paste a Firebase ID token (DevTools -> Application -> IndexedDB ->\n"
-            "  firebaseLocalStorageDb -> firebaseLocalStorage -> firebase:authUser:* ->\n"
-            "  stsTokenManager.accessToken). Input is hidden.",
+            "\n  Paste your AI Dungeon token, then press Enter.\n"
+            "  DevTools -> Application -> IndexedDB -> firebaseLocalStorageDb ->\n"
+            "  firebaseLocalStorage -> the firebase:authUser:* key ->\n"
+            "  stsTokenManager -> accessToken.\n"
+            "  Nothing will appear on screen as you paste. That is normal.",
             file=sys.stderr,
         )
-        tok = getpass.getpass("  token: ").strip()
+        tok = clean_token(getpass.getpass("  token: "))
         if not tok:
             raise Fatal("no token given")
-        if tok.lower().startswith("firebase "):
-            tok = tok[9:].strip()
+        if tok.count(".") != 2:
+            print("  ! that does not look like a token (expected two dots). Trying it anyway.",
+                  file=sys.stderr)
+        left = token_expiry(tok)
+        if left is not None:
+            if left <= 0:
+                print(f"  ! this token expired {abs(left):.0f} min ago — grab a fresh one.",
+                      file=sys.stderr)
+            else:
+                print(f"  token accepted, about {left:.0f} min before it expires.", file=sys.stderr)
         self.token = tok
         if self.path:
             self.path.parent.mkdir(parents=True, exist_ok=True)
@@ -651,11 +715,26 @@ def main():
     ap.add_argument("--save-token", metavar="PATH", nargs="?", const="~/.aid_token",
                     help="persist the token to PATH, chmod 0600 (default off)")
     ap.add_argument("--force", action="store_true", help="re-fetch items already done")
+    ap.add_argument("--whoami", action="store_true",
+                    help="check the token works and exit — run this first")
     args = ap.parse_args()
 
     out = pathlib.Path(args.out)
     tokens = TokenManager(args.save_token)
     client = GqlClient(tokens, host=args.host, delay=args.delay)
+
+    if args.whoami:
+        user = (with_reauth(client, client.query, Q_ME, tag="user") or {}).get("user") or {}
+        print(f"\n  token works. Signed in as: {user.get('username') or '(no username)'}")
+        print(f"    user id:  {user.get('id')}")
+        print(f"    email:    {user.get('email')}")
+        print(f"    member:   {user.get('isMember')}")
+        left = token_expiry(tokens.token)
+        if left is not None:
+            print(f"    expires:  in about {left:.0f} min")
+        print("\n  Next: python3 analysis/aid_export.py --only <shortId> --out ./exports")
+        return 0
+
     manifest = Manifest(out / "manifest.json")
 
     targets = []

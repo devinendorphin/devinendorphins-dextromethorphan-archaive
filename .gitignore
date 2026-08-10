@@ -1,6 +1,12 @@
 corpus/*
 !corpus/cited/
 out/
+# The AI Dungeon pull. Same rule as corpus/: the repo is public, and the
+# export is raw personal archive, not a release. Also keeps a --save-token
+# file from ever being committed by accident.
+exports/
+*.aid_token
+.aid_token
 *.jsonl.gz
 blocks.jsonl
 __pycache__/
