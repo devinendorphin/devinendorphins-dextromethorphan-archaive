@@ -5,14 +5,20 @@ where Clio's coinages and Joyce's sit in one document under the same
 conditions. Clio ran at **temperature 2.5** with **no Memory and no
 Author's Note** — the corpus's most extreme setting.
 
-| | Clio (`origin: ai`) | Joyce + Endorphin |
-|---|---:|---:|
-| tokens | 20,595 | 19,644 |
-| coinages | 3,687 | 3,947 |
-| **density** | **17.9%** | **20.1%** |
-| **decomposable into two words** | **5.3%** | **9.2%** |
-| **cross-lingual** | 0.9% | 1.7% |
-| **local echo** (vs random window) | 1.43× | 1.32× |
+Non-`ai` blocks are split at **500 characters**: pasted ballast
+(Joyce, here) from text Endorphin actually typed. Scoring those together
+reports pasted material as authorship — see the module docstring.
+
+| | Clio (`origin: ai`) | Joyce (pasted) | Endorphin (typed cues) |
+|---|---:|---:|---:|
+| tokens | 20,595 | 19,569 | — |
+| coinages | 3,687 | 3,947 | — |
+| **density** | **17.9%** | **20.2%** | — |
+| **decomposable into two words** | **5.3%** | **9.2%** | — |
+| **cross-lingual** | 0.9% | 1.7% | — |
+| **local echo** (vs random window) | 1.43× | 1.21× | — |
+
+**Endorphin typed 588 characters here, across 30 blocks** — too little to carry a single coinage, so the third column is empty. That is the finding the screen produces on this file: the 'human' side of the original two-way table was **Joyce, essentially unmixed**, and the caveat the docstring used to carry was real but negligible.
 
 ## What it says
 
@@ -28,7 +34,7 @@ strangeness with well under Joyce's rate of actual portmanteau.
 
 **And Clio's coinages are more local.** Both echo their recent context
 more than a random window, which is unsurprising. But Clio does it at
-1.43× against Joyce's 1.32× — its inventions are
+1.43× against Joyce's 1.21× — its inventions are
 more derivable from the fifteen tokens immediately before them.
 
 ## Worked examples
