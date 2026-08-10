@@ -278,8 +278,26 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 ## Top priorities for next session
 
-1. **Get the AI Dungeon export backed up, then search it for
-   *Dr. Knubble And The Fangs Of The Love Sharks*.** Backup first — see Urgent.
+1. **~~Back up the AI Dungeon export, then search it for *Dr. Knubble*.~~
+   ANSWERED 2026-08-10.** Backed up to Drive, folder set link-readable, and the
+   search ran off the folder listing: **three copies present.** `dxqLiJrw55P2`
+   opens **2020-12-07T10:04:05.422Z with 76 actions**, matching the pasted
+   listing (*"Created: Dec 7th 2020 / Actions: 76"*) action-for-action; the other
+   two are `DItR6ies_euF` (20 actions, same morning, 10:04) and `3QjQFpGEP4jL`
+   (*Copy of…*, 39 actions, 2020-12-11). **The archive starts 2020-12-07, from
+   primary evidence rather than a screenshot.** `README.md` and `CLAUDE.md` are
+   corrected. Also present: three forks of `my-time-with-thomas-pynchon`, i.e.
+   the Pynchon thread predates NovelAI too — unread.
+   **Left over:** `README.md`'s old "March 2023 to July 2026" was the range of
+   `last_updated_at`, not of creation. True NovelAI spans are **created
+   2021-06-29 .. 2026-07-29**, **last updated 2023-03-04 .. 2026-07-31**. That
+   floor is suspiciously hard — **not one of 2,016 stories carries a
+   `last_updated_at` before 2023-03-04, though creations run back to
+   2021-06-29.** Something touched every story around then. Worth a look next to
+   the 483 decryption failures, which are also a platform-side event.
+   *(superseded, kept for the reasoning)* the original text of this item:
+   search the 888 for the Dec 2020 listing pasted into the Pynchon × Tingle
+   story. Backup first — see Urgent.
    Then the search: `LATEST` already records that block 1 of the Pynchon x Tingle
    story is a pasted AI Dungeon listing for it, `Created: Dec 7th 2020 /
    Actions: 76`, and that a NovelAI copy survives. **That adventure may now be in

@@ -1,7 +1,8 @@
 # devinendorphins-dextromethorphan-archaive
 
 **Register: formal/evidentiary.** This is a **research corpus**, not a seed — 2,016 NovelAI
-story exports, 2021–2026, with the full edit history preserved. The question this file used
+story exports (created June 2021 – July 2026), with the full edit history preserved, plus
+888 AI Dungeon adventures reaching back to **7 December 2020**. The question this file used
 to ask (*personal record, phenomenological writing, literature collection, or harm-reduction
 reference?*) was settled on 2026-08-03: none of those. It is an instrumented record of how
 one person drove text generation models over five years, and it is analysed as such.
@@ -38,8 +39,14 @@ Four analysis passes died asking what made a generation good enough to keep.
 **There are two archives here, and they are not the same shape.** As of 2026-08-10 the AI
 Dungeon side is extracted too — 888 adventures and 169 scenarios, via
 `analysis/aid_export.py` (see `AID_EXPORT.md` for the schema, `AID_RUNBOOK.md` to run it).
-It is **unanalysed**, and it lives only on Endorphin's machine: `exports/` is gitignored for
-the same reason `corpus/` is.
+It is **unanalysed**. `exports/` is gitignored for the same reason `corpus/` is, but the
+export is mirrored to a link-readable Drive folder — see `sessions/LATEST.md` for the id.
+
+**It also dates the archive.** `dxqLiJrw55P2`, *Dr. Knubble And The Fangs Of The Love
+Sharks*, opens **2020-12-07T10:04:05Z with 76 actions** — matching action-for-action the AI
+Dungeon listing pasted into block 1 of the NovelAI Pynchon × Tingle story, which until now
+was the only evidence that layer existed. The archive starts on AI Dungeon in December 2020,
+eighteen months before the first NovelAI story.
 
 The five rules above are NovelAI rules and most of them do not transfer. NovelAI preserves
 the full undo tree, which is what makes rejected generations and per-block settings
