@@ -555,7 +555,7 @@ def enumerate_library(client, kinds, user_id=None, username=None, page=100, limi
     """Every item the authenticated user owns, via the discovered search query."""
     seen = {}
     for kind in kinds:
-        offset, total = 0, None
+        offset, total, pages = 0, None, 1
         while True:
             spec = {"contentType": [kind], "limit": page, "offset": offset}
             if user_id:
@@ -576,10 +576,61 @@ def enumerate_library(client, kinds, user_id=None, username=None, page=100, limi
                     seen[sid] = it
             offset += len(items)
             print(f"    ...{len(seen)} collected", end="\r", file=sys.stderr)
-            if not items or not res.get("hasMore") or (limit and len(seen) >= limit):
+
+            # `hasMore` is not trusted on its own. On the first real library it
+            # came back false at exactly 100 items for BOTH content types, with
+            # `total` also exactly 100 -- the shape of a server-side cap, not of
+            # a library that happens to hold 100 of each. So the loop keeps
+            # going while the server keeps handing back full pages, and stops
+            # on the two conditions that actually mean "done": a short page, or
+            # a page that adds nothing new (which is what an ignored `offset`
+            # looks like).
+            if not items or (limit and len(seen) >= limit):
+                break
+            if len(items) < page:
+                break
+            if not fresh:
+                print(f"\n  ! {kind}: offset {offset} returned nothing new — "
+                      "the server may be ignoring offset", file=sys.stderr)
+                break
+            if not res.get("hasMore"):
+                print(f"\n  ! {kind}: hasMore=false after a full page of {len(items)} — "
+                      "continuing anyway, it under-reports", file=sys.stderr)
+            pages += 1
+            if pages > 500:
+                print(f"\n  ! {kind}: stopping after 500 pages as a safety limit", file=sys.stderr)
                 break
         print(file=sys.stderr)
     return list(seen.values())
+
+
+def probe_search(client, user_id=None):
+    """What does search actually cap at? Answers it in a handful of requests.
+
+    Needed because the first real run reported exactly 100 of each content type
+    with hasMore=false, which is either a genuine library or a cap, and the two
+    are indistinguishable from one query.
+    """
+    print("\n  Probing the search endpoint's real limits.\n", file=sys.stderr)
+    print(f"  {'contentType':<11} {'limit':>6} {'offset':>7} {'returned':>9} {'total':>7} {'hasMore':>8}")
+    for kind in ("adventure", "scenario"):
+        for lim, off in ((100, 0), (100, 100), (100, 200), (500, 0), (1000, 0), (100, 1000)):
+            spec = {"contentType": [kind], "limit": lim, "offset": off}
+            if user_id:
+                spec["userId"] = user_id
+            try:
+                res = (with_reauth(client, client.query, Q_SEARCH, {"input": spec},
+                                   tag="probe") or {}).get("search") or {}
+                print(f"  {kind:<11} {lim:>6} {off:>7} {len(res.get('items') or []):>9} "
+                      f"{str(res.get('total')):>7} {str(res.get('hasMore')):>8}")
+            except Fatal as e:
+                print(f"  {kind:<11} {lim:>6} {off:>7} {'ERROR':>9}  {str(e)[:60]}")
+    print("\n  Reading it: if offset=100 returns items, hasMore under-reports and paging works.\n"
+          "  If limit=500 returns 500, the page size can simply be raised.\n"
+          "  If every 'returned' stops at 100, that is a hard server cap and\n"
+          "  enumeration needs a different axis (date ranges or search terms).",
+          file=sys.stderr)
+    return 0
 
 
 def fetch_adventure(client, short_id, page_size=2000):
@@ -1023,6 +1074,8 @@ def main():
     ap.add_argument("--token-stdin", action="store_true",
                     help="read the token from a pipe instead of prompting, e.g. "
                          "pbpaste | %(prog)s --whoami --token-stdin")
+    ap.add_argument("--probe-search", action="store_true",
+                    help="report what the search endpoint really caps at, then exit")
     ap.add_argument("--rerender", action="store_true",
                     help="rebuild the .md files from raw.json already on disk. "
                          "No token, no network")
@@ -1035,6 +1088,10 @@ def main():
 
     if args.rerender:
         return rerender(args.out, args.format)
+
+    if args.probe_search:
+        me = with_reauth(client, client.query, Q_ME, tag="user")
+        return probe_search(client, ((me or {}).get("user") or {}).get("id"))
 
     out = pathlib.Path(args.out)
     tokens = TokenManager(args.save_token, from_stdin=args.token_stdin)
