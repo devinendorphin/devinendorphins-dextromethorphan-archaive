@@ -85,33 +85,40 @@ system trust store — it goes through its own OpenSSL, which can end up pointin
 at a certificate directory nobody ever populated. curl and Safari keep working
 on the same machine, which is why it reads as a broken tool.
 
-**Which fix depends on which Python you have**, and `--doctor` prints the
-`build` line so you don't have to guess:
+**Try this first. It is the fastest, and it cannot break anything else:**
 
-- **Homebrew** (`prefix=/usr/local/...` or `/opt/homebrew/...`) — there is no
-  `Install Certificates.command`; that file only exists in python.org's build.
+```sh
+python3 -m pip install --user --upgrade certifi
+python3 analysis/aid_export.py --doctor
+```
 
-  ```sh
-  brew install ca-certificates
-  ```
+`certifi` is Mozilla's CA bundle as a plain Python package — a data file, no
+compiler, no system changes. This tool prefers it over the system store whenever
+it is present. Verified: with the system store deliberately emptied, certifi
+alone gets the connection through. If pip refuses with
+`externally-managed-environment` (Homebrew Python does this), add
+`--break-system-packages`.
 
-- **python.org** (`prefix=/Library/Frameworks/Python.framework/...`):
+**Only if that fails**, fix the system store instead — and note which Python you
+have, from the `build` line `--doctor` prints:
+
+- **python.org** (`prefix=/Library/Frameworks/...`):
 
   ```sh
   /Applications/Python\ 3.*/Install\ Certificates.command
   ```
 
-**If neither works, this one always does.** The tool uses `certifi` — Mozilla's
-CA bundle as a Python package — whenever it is installed, in preference to the
-system store:
+- **Homebrew** (`prefix=/usr/local/...` or `/opt/homebrew/...`) — there is no
+  `Install Certificates.command`; that file exists only in python.org's build.
 
-```sh
-python3 -m pip install --user --upgrade certifi
-```
+  ```sh
+  brew install ca-certificates
+  ```
 
-If pip refuses with `externally-managed-environment` (Homebrew Python does this),
-add `--break-system-packages` to that command. Verified: with the system store
-deliberately emptied, certifi alone gets the connection through.
+  > **On macOS 12 or older, prefer the certifi route above.** Homebrew does not
+  > support those versions, and any `brew install` may start rebuilding
+  > unrelated dependencies from source — half an hour of cmake to fix a missing
+  > data file. Ask first if you are not sure.
 
 Re-run `--doctor` after any of these. **Do not continue until it says OK.**
 
