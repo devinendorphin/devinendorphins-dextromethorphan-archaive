@@ -95,12 +95,20 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
 Endorphin: *"its up in my drive now."* 1,057 items backed up to Drive off the
 iMac. Two things still worth doing, neither urgent:
 
-1. **Get the Drive folder id into the repo.** `analysis/fetch_export.py`'s
-   `list_folder()` + `download()` take a folder id, so with one the AI Dungeon
-   export becomes refetchable into a fresh container exactly like the NovelAI
-   corpus — which is the difference between analysable and not, given every
-   container is ephemeral. Without it, an ephemeral session can reach the
-   NovelAI half and not this one.
+1. **The Drive folder id is `10Sg5PJ-sfOSP8T_HFDPlEtnVxX5G5-Dq`** (Endorphin,
+   2026-08-10) — **but the folder is not link-readable.** Probed the same
+   `embeddedfolderview` endpoint `fetch_export.py` uses: **HTTP 401, zero
+   entries.** The NovelAI export folders answer that endpoint fine, which is the
+   only reason a container can mirror them. So this id alone does **not** make
+   the AI Dungeon export refetchable, and a fresh session can still reach the
+   NovelAI half of the archive and not this one.
+   **Decision open, and it is Endorphin's:** setting the folder to "anyone with
+   the link can view" makes it mirrorable exactly like the NovelAI corpus — and
+   also makes it readable by anyone who reads this file, which is public. That
+   is the same trade the NovelAI folder ids above already carry, but it has not
+   been put to him explicitly for the AI Dungeon material and should be before
+   anything is changed. Leaving it private is a defensible answer; it just means
+   analysis needs him to re-run the exporter or hand the files over directly.
 2. The working copy still sits at `exports/` **inside the repo**, where it is
    gitignored — so `git clean -xdf` would delete it and a fresh clone would not
    carry it. The Drive copy is the real one; do not treat the in-repo one as
