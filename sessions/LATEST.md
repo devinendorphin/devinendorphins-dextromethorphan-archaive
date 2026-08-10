@@ -83,6 +83,9 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
   (+ `test_aid_export.py`, 107 assertions; `AID_EXPORT.md`; `AID_RUNBOOK.md`) on
   branch `claude/ai-dungeon-text-extraction-th0xtm`, pushed, **no PR opened.**
   Endorphin ran it: **888 adventures + 169 scenarios = 1,057 items, 0 failed.**
+  **PR #6 merged to `main` 2026-08-10** (`7b0f19c`), at his instruction
+  ("merge to main"). The branch is merged history — restart from `origin/main`
+  for anything further, open a new PR, and never stack on it or reuse #6.
   Not read, not counted, not joined to the NovelAI side. The transfer named in
   the not-a-release position is settled *as an extraction* and nothing more.
 
@@ -618,6 +621,12 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   holds `json/`, `text/`, `INDEX.tsv`, `MISSING.md`, `FAILED_STORIES.txt`; the
   story files live one level down in `json/`. Titles in `data/INDEX.tsv` are the
   way in. `corpus/` is gitignored — keep it that way.
+- **PR #6 is merged** (2026-08-10, `7b0f19c`) — the AI Dungeon exporter, its
+  tests, `AID_EXPORT.md`, `AID_RUNBOOK.md`, the `CLAUDE.md` second-corpus
+  section and this session's log. Same rule as #2 below: the branch
+  `claude/ai-dungeon-text-extraction-th0xtm` is merged history, so follow-up
+  work restarts from `origin/main` under a new branch and a new PR. **The export
+  data itself was never in the PR** and is not in git — see Urgent.
 - **PR #2 is merged.** All twenty commits landed on `main` on 2026-08-04 at
   Endorphin's instruction ("do a pr and merge to main"). Two corrections to the
   record this note used to carry: a PR *did* exist from the first push on
