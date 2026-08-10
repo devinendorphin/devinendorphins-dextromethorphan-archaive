@@ -323,6 +323,37 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
    never committed. Recheck against the full mirror before concluding anything,
    and weight his recall accordingly — the standing note records that his
    corrections have repeatedly been right against Claude's readings.
+
+   **Two broadcasts of it exist, and they close the loop.** Endorphin supplied
+   `youtu.be/hJmaSbKWRlA` = **episode 1013, "Doctor Knubble and the Fins of the
+   Love Sharks - powered by LLAMA2"** and `youtu.be/R2o7ltC3ge0` = **episode
+   1014, "…A Most Essential Missed Detail-"** (channel `@glubose`). Titles came
+   from YouTube's **oEmbed** endpoint — watch pages 429 against curl and WebFetch
+   sees only the SPA shell, so `oembed?url=…&format=json` is the way in.
+   1. **The episode titles are the missing intermediate spelling:** `Knubble` +
+      `Fins`. AI Dungeon has Knubble/Fangs, the NovelAI *file* has Knubbins/Fins,
+      and the broadcast sits between them.
+   2. **Dated 2023-08-02 .. 2023-08-22** by bracketing `data/EPISODES.tsv`
+      (ep 1008 = 08-02, ep 1037 = 08-22). Neighbours 995 *"LlaMA2 Gets Dark"*,
+      997/998 *"Mister Limerick First Contacts LLaMA2-70B"*, 1001 *"LLAMA 2 70B
+      portrays a respite center"* make Jul–Aug 2023 the LLaMA2 period.
+   3. **First *external* confirmation of the model-field standing note.** The
+      story's metadata says `model: clio-v1`, `last_updated 2023-08-02` — the
+      exact episode window — while the broadcast says **powered by LLAMA2**.
+      That note previously rested on internal evidence only.
+   4. **The pasted listing lists all three AI Dungeon copies**, matching the
+      export to the minute (39 acts / Dec 11 8:58AM; 76 / Dec 7 5:15AM; 20 /
+      Dec 7 5:04AM — local is exactly UTC−5). 2020-12-07 is triple-confirmed.
+   5. **`coinage.py` inverts on this file.** Live branch 316 of 404 blocks, 243
+      ai / 73 human. **Endorphin's coinage density is 6.53% against the model's
+      1.19% — 5.5×** — and his echo of the preceding 15 tokens is **0.84, below
+      chance**, against the model's **1.56**. He invents lexically from outside
+      the context; the model erodes phonologically from inside it. Cross-lingual
+      reach is **0.0 on both sides** where the Wake playground had Joyce at 2×
+      Clio — a different instrument, not a weaker Wake. (`coinage.py`'s
+      `report()` throws ZeroDivisionError when a side has zero cross-lingual
+      coinages — guard it before reusing.)
+
    Then the search: `LATEST` already records that block 1 of the Pynchon x Tingle
    story is a pasted AI Dungeon listing for it, `Created: Dec 7th 2020 /
    Actions: 76`, and that a NovelAI copy survives. **That adventure may now be in
