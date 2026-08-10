@@ -55,6 +55,36 @@ noc = {"title": "t", "actionWindow": [{"id": "b", "text": "newest"}, {"id": "a",
 check("falls back to reverse without createdAt",
       A.render_adventure(noc).index("oldest") < A.render_adventure(noc).index("newest"))
 
+# --- offline: details mapping (shape observed on adventure p8Y-OSHLzTZn) ------
+det = {"title": "T", "details": {
+    "instructions": {"type": "custom", "custom": "BE TERSE", "scenario": "SCENARIO INSTR"},
+    "storySummary": "SUMMARY TEXT", "storyCardInstructions": "SC INSTR",
+    "storyCardStoryInformation": "SC INFO", "brandNewFieldAIDAdded": "SURPRISE"},
+    "actionWindow": [{"id": "1", "text": "hello", "type": "story", "createdAt": "2025-01-01"}]}
+dmd = A.render_adventure(det)
+check("details.storySummary gets its real name", "## Story Summary" in dmd and "SUMMARY TEXT" in dmd)
+check("details.instructions.custom named", "## AI Instructions\n\nBE TERSE" in dmd)
+check("scenario instructions kept distinct from custom",
+      "AI Instructions (from scenario)" in dmd and "SCENARIO INSTR" in dmd)
+check("storyCardInstructions named", "## Story Card Instructions" in dmd)
+check("storyCardStoryInformation named", "## Story Card Story Information" in dmd)
+# A field AID adds later must not disappear just because we do not know it yet.
+check("unrecognised details key still surfaces", "not yet identified" in dmd and "SURPRISE" in dmd)
+check("details no longer labelled unconfirmed", "in-app labels unconfirmed" not in dmd)
+
+# the sample as actually observed: every value empty -> no empty headings
+emptydet = {"title": "T", "gameState": None, "details": {
+    "instructions": {"type": None, "custom": None, "scenario": None},
+    "storySummary": "", "storyCardInstructions": "", "storyCardStoryInformation": ""},
+    "actionWindow": [{"id": "1", "text": "hi", "type": "story", "createdAt": "2025-01-01"}]}
+emd = A.render_adventure(emptydet)
+check("all-empty details render nothing",
+      "Story Summary" not in emd and "AI Instructions" not in emd and "not yet identified" not in emd)
+check("null gameState renders nothing", "gameState" not in emd)
+check("dig survives a non-dict mid-path", A.dig({"a": "x"}, "a.b.c") is None)
+check("render_details tolerates a plain string", "```" in "".join(A.render_details("legacy")))
+check("render_details tolerates None", A.render_details(None) == [])
+
 # --- offline: slug + html -------------------------------------------------
 check("slugify strips punctuation", A.slugify("Doctor Knubbins & the Love Sharks!") ==
       "doctor-knubbins-the-love-sharks", A.slugify("Doctor Knubbins & the Love Sharks!"))

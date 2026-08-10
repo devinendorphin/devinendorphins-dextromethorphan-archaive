@@ -669,7 +669,54 @@ PLOT_SECTIONS = [
     ("authorsNote", "Author's Note"),
     ("instructions", "AI Instructions"),
 ]
-PLOT_UNMAPPED = ["details", "gameState"]
+
+# `details` is a nested object, not a string -- observed on a real response
+# 2026-08-10 (adventure p8Y-OSHLzTZn), whose shape was exactly:
+#     {"instructions": {"type": None, "custom": None, "scenario": None},
+#      "storySummary": "", "storyCardInstructions": "",
+#      "storyCardStoryInformation": ""}
+# The key names are therefore certain; every value in that sample was empty, so
+# the headings below follow the names rather than observed content. Any key not
+# listed here still gets rendered, under its own raw name, so a field added
+# later cannot vanish silently.
+DETAIL_SECTIONS = [
+    ("storySummary", "Story Summary"),
+    ("instructions.custom", "AI Instructions"),
+    ("instructions.scenario", "AI Instructions (from scenario)"),
+    ("instructions.type", "AI Instructions — type"),
+    ("storyCardInstructions", "Story Card Instructions"),
+    ("storyCardStoryInformation", "Story Card Story Information"),
+]
+
+# gameState was null in the sample and remains unidentified.
+PLOT_UNMAPPED = ["gameState"]
+
+
+def dig(obj, dotted):
+    for part in dotted.split("."):
+        if not isinstance(obj, dict):
+            return None
+        obj = obj.get(part)
+    return obj
+
+
+def render_details(details):
+    """Named sections for the known keys, raw dump for anything unrecognised."""
+    if not isinstance(details, dict):
+        return [f"## Other plot fields (in-app labels unconfirmed)\n\n```\n{details}\n```\n"] \
+            if details else []
+    out, claimed = [], set()
+    for path, heading in DETAIL_SECTIONS:
+        claimed.add(path.split(".")[0])
+        val = dig(details, path)
+        if val not in (None, "", [], {}):
+            body = val if isinstance(val, str) else json.dumps(val, indent=2)
+            out.append(f"## {heading}\n\n{str(body).strip()}\n")
+    leftover = {k: v for k, v in details.items() if k not in claimed and v not in (None, "", [], {})}
+    if leftover:
+        out.append("## Other plot fields (not yet identified)\n\n```json\n"
+                   + json.dumps(leftover, indent=2) + "\n```\n")
+    return out
 
 ACTION_PREFIX = {"do": "> ", "say": "> ", "see": "> "}
 
@@ -718,6 +765,8 @@ def render_adventure(adv):
         val = (adv.get(key) or "").strip() if isinstance(adv.get(key), str) else adv.get(key)
         if val:
             md.append(f"## {heading}\n\n{val}\n")
+
+    md.extend(render_details(adv.get("details")))
 
     provisional = {k: adv.get(k) for k in PLOT_UNMAPPED if adv.get(k)}
     if provisional:
@@ -770,9 +819,7 @@ def render_scenario(scn):
     for key, heading in PLOT_SECTIONS:
         if scn.get(key):
             md.append(f"## {heading}\n\n{str(scn[key]).strip()}\n")
-    if scn.get("details"):
-        md.append(f"## Other plot fields (in-app labels unconfirmed)\n\n"
-                  f"**`details`**\n\n```\n{scn['details']}\n```\n")
+    md.extend(render_details(scn.get("details")))
 
     cards = [c for c in (scn.get("storyCards") or []) if not c.get("deletedAt")]
     if cards:
