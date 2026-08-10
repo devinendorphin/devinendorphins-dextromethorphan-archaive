@@ -199,6 +199,16 @@ check("human expiry: rolls over to hours", A.human_minutes(190) == "about 3 h 10
 check("human expiry: implausible is called out", "implausible" in A.human_minutes(999999))
 check("human expiry: None passes through", A.human_minutes(None) is None)
 
+# --- offline: saved-token reuse ------------------------------------------
+with tempfile.TemporaryDirectory() as td:
+    tp = pathlib.Path(td) / "tok"
+    tp.write_text(jwt_expiring_in(3300))
+    tm = A.TokenManager(str(tp))
+    check("saved token is loaded", tm.token is not None)
+    check("saved token can be reused without stdin", tm.get() is not None)
+    tp.write_text(jwt_expiring_in(-900))
+    check("expired saved token is discarded, not used", A.TokenManager(str(tp)).token is None)
+
 print("\n--- live query validation (dummy token; UNAUTHENTICATED == query is well-formed)")
 tm = A.TokenManager(); tm.token = "dummy-token-not-real"
 live = A.GqlClient(tm, delay=0.4)

@@ -324,6 +324,16 @@ class TokenManager:
         self.token = None
         if self.path and self.path.exists():
             self.token = self.path.read_text().strip() or None
+            if self.token:
+                left = token_expiry(self.token)
+                if left is not None and left <= 0:
+                    # Saying so now beats a puzzling rejection on the first request.
+                    print(f"  ! saved token in {self.path} expired {human_minutes(-left)} ago",
+                          file=sys.stderr)
+                    self.token = None
+                elif left is not None:
+                    print(f"  using saved token from {self.path}, {human_minutes(left)} left",
+                          file=sys.stderr)
 
     def can_reprompt(self):
         """Is there an interactive human to ask again? A pipe is spent after one read."""
@@ -501,11 +511,15 @@ def with_reauth(client, fn, *a, **kw):
             return fn(*a, **kw)
         except AuthExpired as e:
             if not client.tokens.can_reprompt():
+                # A piped token cannot be replaced in place, but nothing is lost:
+                # the manifest has every completed item, so re-running the same
+                # command with a fresh token resumes rather than restarts.
                 raise Fatal(
                     f"the token was rejected by the API: {e}\n"
                     "  It has most likely expired — they last about an hour.\n"
-                    "  Copy a fresh one from DevTools and pipe it again:\n"
-                    "      pbpaste | python3 analysis/aid_export.py --whoami --token-stdin"
+                    "\n  Your progress is saved. Nothing needs re-fetching.\n"
+                    "  Reload play.aidungeon.com, copy a fresh token (Step 3), then run\n"
+                    "  the SAME command again — it picks up where it stopped."
                 )
             client.tokens.token = None
             client.tokens.prompt(f"token rejected ({e}) -- it has probably expired.")
