@@ -126,27 +126,43 @@ Re-run `--doctor` after any of these. **Do not continue until it says OK.**
 
 ## Step 3 — get your token out of the browser
 
-Do this in **Chrome or Edge on a desktop**. Firefox works but the panel names
-differ slightly.
+**Use the Console, not the Application tab.** The IndexedDB viewer in DevTools
+is genuinely bad at this — clicking around its tree tends to copy a neighbouring
+cell rather than the field you aimed at, with no indication it did. Reading the
+database directly avoids the whole problem.
 
-1. Go to **play.aidungeon.com** and make sure you are logged in.
-2. Press **F12** to open DevTools. (Or right-click the page → Inspect.)
-3. Click the **Application** tab along the top of the DevTools panel. If you
-   don't see it, click the **»** overflow arrow — it hides when the panel is narrow.
-4. In the left sidebar, find **Storage → IndexedDB**, and expand it.
-5. Expand **firebaseLocalStorageDb** → click **firebaseLocalStorage**.
-6. The main area shows one row. Its key starts with `firebase:authUser:`.
-   Click the row to expand its value.
-7. Inside, expand **stsTokenManager**, and find **accessToken**.
-8. Right-click the `accessToken` **value** → Copy. It's a very long string with
-   two dots in it, starting `eyJ...`.
+1. On **play.aidungeon.com**, logged in, press **F12**.
+2. Click the **Console** tab.
+3. Chrome refuses pasted input in the console until you permit it. Type these
+   two words, press Enter:
 
-> **If you can't isolate just that field**, copy the whole record instead — the
-> script will dig the token out of pasted JSON for you and tell you it did.
-> Don't fight the DevTools UI over this.
+   ```
+   allow pasting
+   ```
 
-**Do not copy `refreshToken`.** That one is long-lived and this tool has no use
-for it.
+4. Paste this one line, press Enter:
+
+   ```js
+const r=indexedDB.open('firebaseLocalStorageDb');r.onsuccess=e=>{const s=e.target.result.transaction('firebaseLocalStorage','readonly').objectStore('firebaseLocalStorage').getAll();s.onsuccess=()=>{const k=s.result.find(x=>String(x.fbase_key||'').includes('authUser'));const t=k&&k.value&&k.value.stsTokenManager&&k.value.stsTokenManager.accessToken;if(!t){console.log('NOT FOUND - log in to AI Dungeon first');return}copy(t);const p=JSON.parse(atob(t.split('.')[1].replace(/-/g,'+').replace(/_/g,'/')));console.log('COPIED to clipboard: '+t.length+' chars, expires '+new Date(p.exp*1000).toLocaleTimeString())}};
+   ```
+
+**Expected:**
+
+```
+COPIED to clipboard: 1160 chars, expires 4:12:38 PM
+```
+
+The token is now on your clipboard, exactly and only the token. Note that
+expiry time — if it is less than about ten minutes away, run the line again
+after reloading the page to get a fresh hour.
+
+`NOT FOUND` means you are not logged in on that tab.
+
+> This reads the same value the Application tab shows, at
+> `firebase:authUser:* -> stsTokenManager -> accessToken`, and `copy()` is
+> Chrome's own console helper. If you would rather click through the tree by
+> hand, that path still works — but **do not** copy `refreshToken`, which sits
+> next to it and is long-lived.
 
 ---
 
