@@ -46,6 +46,9 @@ analysis/
   sweeps.py              recover the temperature-sweep procedure from the forks
   pasted.py              text that arrived by clipboard, not from the model
   coinage.py             is the portmanteau semantic reach or phonological collision?
+  aid_export.py          bulk-export the AI Dungeon library — the other half
+  test_aid_export.py     its tests; the live four need no credential
+  AID_EXPORT.md          how the undocumented list query was recovered
   TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md
   REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md
   DIRECTION.md HANDOVER.md HANDOFF.md EPISODES.md SWEEPS.md
@@ -94,6 +97,14 @@ python3 analysis/sweeps.py data/stories_meta.jsonl --report analysis/SWEEPS.md
 python3 analysis/pasted.py data/stories_meta.jsonl --report analysis/PASTED.md
 python3 analysis/coinage.py corpus/cited/Finnegains_Wake_Playground_*.json \
     --report analysis/COINAGE.md                        # needs wordfreq
+```
+
+The AI Dungeon side is a separate pull, not part of the NovelAI pipeline above.
+It needs a Firebase token pasted on stdin — see [`analysis/AID_EXPORT.md`](analysis/AID_EXPORT.md):
+
+```sh
+python3 analysis/aid_export.py --only <shortId>         # smoke test one item
+python3 analysis/aid_export.py --out ./exports          # the whole library
 ```
 
 `blocks.jsonl` comes out around 524 MB — every revision's full text. Everything
