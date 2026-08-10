@@ -31,6 +31,11 @@ Across **134,063** human blocks that immediately follow a generation:
 **Median 55 characters.** Ninety-one percent under 200. One in forty is long
 enough to be a substantive rewrite.
 
+That 55 is treated below as a constant of the practice. **§12 shows it is an
+endpoint**, not a constant: on AI Dungeon, 2020–21, the same author's median
+turn falls from 120 characters to 57 and stops there. The cue is a habit he
+brought with him, not a response to this interface.
+
 These are not edits. They are **turns**. The corpus records an exchange
 conducted at speed — much of it performed live on stream, with the text read
 aloud by text-to-speech over a lo-fi backing track — in which the author's move
@@ -68,6 +73,9 @@ structurally impossible here. Everything regenerates from `analysis/`, where the
 tests that killed claims are kept alongside the ones that survived: `PROBES.md`,
 `PAIRS.md`, `LEARNABLE.md`, `STOPPING.md`, `REGISTER.md`, `TAKEOVER.md`,
 `CUES.md`, `ERATO.md`, `TEMPO.md`, `DIRECTION.md`, `HANDOVER.md`, `HANDOFF.md`, `TABLES.md`.
+§12 is the exception to "one person's practice, one platform" — it draws on the
+second archive, and `analysis/AID_FINDINGS.md` records what that record can and
+cannot support before it is used for anything.
 
 ---
 
@@ -147,7 +155,7 @@ was baffling. Under the turn-taking frame it is nearly tautological: the human
 move is not a verdict on the passage, so no property of the passage predicts it.
 What predicts it is whether the turn was handed back.
 
-**1e. And the pacing left a trace after all.** §12 records that no per-block
+**1e. And the pacing left a trace after all.** §13 records that no per-block
 timestamps exist, so tempo is unrecoverable. That is true of *duration*. It is
 not true of *rhythm*. Within unbroken runs of at least 8 generations (12,921 of
 them), the absolute difference in word count between generations *lag* apart,
@@ -499,7 +507,7 @@ feature surface, not a confirmed account.
 - **The decryption cliff.** §10 records losses of 0–7% a month before 2025-10,
   then 67%, 58%, 74%, 94%, 89%, 93%, 90%. It starts the same month.
 
-§12 offers "a single damaging event or a client change around October 2025" as
+§13 offers "a single damaging event or a client change around October 2025" as
 the two readings of that cliff. The model roster, the sampler surface, the
 schema bump and the slider granularity all move together at exactly that
 boundary, which favours the second strongly.
@@ -806,7 +814,89 @@ re-roll events, the share ending with the author typing: GLM 61.9%, Euterpe
 typed over least and given the longest leash. A fact about these sessions, not a
 benchmark.
 
-## 12. What the record cannot hold
+## 12. Where the 55-character cue came from
+
+Everything above takes the median 55-character turn as a constant of this
+practice. It is not a constant. It is the endpoint of a convergence that
+finished before the NovelAI corpus opens, on a platform this document otherwise
+has nothing to say about.
+
+**This is the one section drawing on the second archive** — 888 AI Dungeon
+adventures and 169 scenarios, 48,348 actions, running 2020-08-11 to 2022-01-18,
+indexed in `data/AID_INDEX.tsv` and analysed in `analysis/AID_FINDINGS.md`. That
+record is far thinner than this one: no branch structure, no per-action sampler
+settings, and `undoneAt` set on **zero** of 48,348 actions, so nothing in §1,
+§7, §8 or §9 is computable there. What it does carry, which the NovelAI export
+does not, is a **timestamp on every single action** — which is exactly what this
+question needs.
+
+Human turns on that platform are cues too, by the same measure: median 76
+characters over 21,410 of them, against 55 here. But the aggregate hides the
+result.
+
+| month | median model output | median human turn |
+|---|---:|---:|
+| 2020-08 | 286 | **120** |
+| 2020-11 | 353 | 75 |
+| 2021-03 | 367 | 65 |
+| 2021-06 | 356 | 61 |
+| 2021-12 | 355 | **57** |
+
+**His median turn falls by more than half in sixteen months, and stops at 57
+characters — where this corpus then reports 55 for the next four and a half
+years.** The technique was not developed here. It arrived finished.
+
+**12a. The control, because the obvious number is the wrong one.** The
+model:human *character ratio* climbs from 1.70 to 3.95 across that period, which
+reads as the author writing proportionally less. It is not a fact about the
+author at all until the other side is checked: **median model output is flat at
+350–370 characters throughout**, a platform response cap. The ratio moves only
+because the human side moves. Per §10, the ratio is the metric that had to be
+thrown away; the median is the one that survived.
+
+**12b. And the composition confound, which is the one that should have killed
+it.** Late 2021 is heavy with replays — the same scenario re-run many times,
+34 times in three days at the extreme — and a quick replay might carry shorter
+inputs *by design*, manufacturing the decline out of a changing mix of documents
+rather than a changing author. Per-item medians, 443 items with ≥10 human turns,
+Spearman against item date:
+
+| slice | n | rho | z | Q1 → Q4 median |
+|---|---:|---:|---:|---|
+| all items | 443 | −0.287 | −6.0 | 76 → 59 |
+| **long-form only (≥100 actions)** | 131 | **−0.334** | −3.8 | 86 → 59 |
+| **templates played exactly once** | 163 | **−0.353** | −4.5 | 88 → 59 |
+| first play of each template | 263 | −0.367 | −5.9 | 80 → 58 |
+| excluding the Nov-21 → Jan-22 return | 352 | −0.182 | −3.4 | 92 → 70 |
+
+The confound predicts the effect weakens once replays are excluded. It
+**strengthens** — −0.353 among 163 documents that were never replayed at all.
+The decline is a property of individual documents.
+
+Two qualifications, both real. Dropping the final period halves the coefficient,
+so the trend is genuine before November 2021 but much of the convergence happens
+at the end. And within-template drift is only suggestive: of six templates
+played four or more times across ≥90 days, four fall, median −12 characters.
+
+**12c. The exception is worth more than the rule.** One template runs backwards
+— `Your Cobralingus Engine has arrived!`, 29 → 44 characters — and sits far
+below every other document in the corpus. Its human turns are `FILTER` commands
+driving Jeff Noon's *Cobralingus* mutation engine, not cues into a scene. When
+the document is an **engine rather than a scene, the turn is a different object**
+and this measure does not apply to it. §2's taxonomy is built entirely on
+scene-shaped documents; how much of the corpus is engine-shaped is not known,
+and nothing here has counted it.
+
+**What this does and does not license.** It does not make 55 a fact about
+NovelAI, about Kayra, or about any model — the convergence happens on GPT-3-era
+AI Dungeon and is then carried across a platform boundary unchanged. That is
+evidence the cue is a **habit of the author**, not a response to an interface,
+which is the assumption every section above rests on without having tested it.
+What it cannot say is *why* it stopped at 55: the floor could be the shortest
+useful cue, or the fastest one a phone keyboard sustains, or simply where he
+stopped noticing. Nothing measured distinguishes those.
+
+## 13. What the record cannot hold
 
 - **No per-block timestamps exist.** Elapsed time is unrecoverable, so
   *duration* — turn latency, who was waiting for whom — is absent. §1e shows
@@ -833,7 +923,7 @@ benchmark.
 - **One file** (`New_Story__eQm-Fkr_ZGaaeaykmh5bu.json`) is truncated at 411
   bytes in Drive itself and cannot be recovered. 2,016 of 2,017.
 
-## 13. What I did not do
+## 14. What I did not do
 
 - **No content analysis.** Every number is structural — settings, block graph,
   turn lengths, word-frequency statistics. Nothing here characterises what the
@@ -845,7 +935,7 @@ benchmark.
   export via `analysis/`.
 - The `text/` half of the export is untouched; the JSON supersedes it.
 
-## 14. Where this could go next
+## 15. Where this could go next
 
 1. **What the author writes when they take the turn.** In 6,944 cases the model
    was rewound and a human continuation written from the identical context. That

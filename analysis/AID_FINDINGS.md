@@ -148,8 +148,10 @@ every other document because its human turns are `FILTER` commands rather than
 prose cues. The most tradition-laden thing in the corpus has the shortest turns
 in it, for a reason that has nothing to do with this trend.
 
-Verdict: survives. Promotable to `FINDINGS.md` on the strength of the
-never-replayed slice.
+Verdict: survives, on the strength of the never-replayed slice.
+**Promoted to `FINDINGS.md` §12** (2026-08-10, at Endorphin's instruction), which
+is now the one section of that document drawing on this archive. The tables
+above are reproduced there; this section is the working record.
 
 ## 4. The sweep survives the loss of the dial
 
@@ -350,11 +352,14 @@ Ranked by what would change something.
 3. **Date the scenarios through their plays** and check whether the 169
    templates cluster around the periods of heaviest replay. Cheap, and it turns
    an undated third of the corpus into a timeline.
-4. **Test the cue-convergence result properly** (§3). Fit the decline per item
-   rather than per month, and check it is not composition — e.g. the replay-heavy
-   templates of late 2021 requiring shorter inputs by design. If it survives,
-   it is the strongest cross-corpus result available and belongs in
-   `FINDINGS.md` rather than here.
+4. **~~Test the cue-convergence result properly.~~ DONE, and it survived** —
+   see §3's disconfirming test, now `FINDINGS.md` §12. What is left over is
+   §12c's question rather than §3's: `Cobralingus` runs backwards because its
+   turns are `FILTER` commands rather than cues into a scene, which means the
+   corpus holds **engine-shaped documents as well as scene-shaped ones** and
+   `FINDINGS.md` §2's taxonomy only covers the second kind. Nobody has counted
+   how much of either archive is which. That is the more interesting question
+   and it is wide open.
 5. Leave the AI Dungeon → NovelAI converter alone. §"What the record can and
    cannot answer" is the answer the standing note asked for: there is nothing to
    convert on the axis `FINDINGS.md` cares about.
