@@ -128,10 +128,40 @@ check("expiry: garbage returns None", A.token_expiry("not-a-jwt") is None)
 # A broken TLS trust store is the one failure that looks like a broken tool.
 # python.org's macOS build ships an unpopulated cert store, so curl works and
 # Python does not; without a hint that reads as "your export is broken".
-ssl_hint = A.local_network_hint(
-    "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:1016)")
+CERT_ERR = "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:1016)"
+ssl_hint = A.local_network_hint(CERT_ERR)
 check("cert failure names the real cause", ssl_hint and "certificate store" in ssl_hint)
-check("cert failure gives the macOS fix", ssl_hint and "Certificates.command" in ssl_hint)
+
+# The two macOS builds need different fixes and look identical from the error
+# alone. Homebrew has no Install Certificates.command, so offering it wastes a
+# round trip -- which is exactly what happened on the first real run.
+_prefix = sys.prefix
+try:
+    sys.prefix = "/usr/local/opt/python@3.14"
+    brew = A.local_network_hint(CERT_ERR)
+    check("homebrew detected from prefix", A.is_homebrew_python())
+    # It may *name* the script to say it is absent; it must not offer the path.
+    check("homebrew hint says brew, and does not offer the missing script",
+          "brew install ca-certificates" in brew and "/Applications/Python" not in brew)
+    check("homebrew hint warns about externally-managed pip",
+          "break-system-packages" in brew)
+    sys.prefix = "/Library/Frameworks/Python.framework/Versions/3.12"
+    org = A.local_network_hint(CERT_ERR)
+    check("python.org not flagged as homebrew", not A.is_homebrew_python())
+    check("python.org hint gives the bundled script", "Certificates.command" in org)
+    check("both builds offer certifi as the fallback",
+          "certifi" in brew and "certifi" in org)
+finally:
+    sys.prefix = _prefix
+
+# certifi must actually be consulted -- installing it does nothing unless the
+# tool passes it to urllib, which was the flaw in the first round of advice.
+import inspect
+check("ssl_context prefers certifi when present",
+      "certifi.where()" in inspect.getsource(A.ssl_context))
+check("client builds an ssl context", "ssl_context()" in inspect.getsource(A.GqlClient.__init__))
+check("client passes it to every request", "context=self.ssl" in inspect.getsource(A.GqlClient._post))
+check("doctor uses the same path as the client", "context=ssl_context()" in inspect.getsource(A.doctor))
 check("dns failure diagnosed", "DNS" in (A.local_network_hint("nodename nor servname provided") or ""))
 check("timeout diagnosed", "timed out" in (A.local_network_hint("Connection timed out") or "").lower()
       or "firewall" in (A.local_network_hint("Connection timed out") or ""))

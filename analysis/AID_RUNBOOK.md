@@ -80,22 +80,40 @@ python3 analysis/aid_export.py --doctor
 FAILED to reach the API: [SSL: CERTIFICATE_VERIFY_FAILED] ...
 ```
 
-This is **not** the tool and **not** AI Dungeon. Python installed from
-python.org ships its own certificate store and does not fill it in, so every
-HTTPS request from Python fails while curl and Safari on the same machine work
-perfectly. It is a one-time fix:
+This is **not** the tool and **not** AI Dungeon. Python does not use the macOS
+system trust store — it goes through its own OpenSSL, which can end up pointing
+at a certificate directory nobody ever populated. curl and Safari keep working
+on the same machine, which is why it reads as a broken tool.
+
+**Which fix depends on which Python you have**, and `--doctor` prints the
+`build` line so you don't have to guess:
+
+- **Homebrew** (`prefix=/usr/local/...` or `/opt/homebrew/...`) — there is no
+  `Install Certificates.command`; that file only exists in python.org's build.
+
+  ```sh
+  brew install ca-certificates
+  ```
+
+- **python.org** (`prefix=/Library/Frameworks/Python.framework/...`):
+
+  ```sh
+  /Applications/Python\ 3.*/Install\ Certificates.command
+  ```
+
+**If neither works, this one always does.** The tool uses `certifi` — Mozilla's
+CA bundle as a Python package — whenever it is installed, in preference to the
+system store:
 
 ```sh
-/Applications/Python\ 3.*/Install\ Certificates.command
+python3 -m pip install --user --upgrade certifi
 ```
 
-Then re-run `--doctor`. If that path doesn't exist, this does the same job:
+If pip refuses with `externally-managed-environment` (Homebrew Python does this),
+add `--break-system-packages` to that command. Verified: with the system store
+deliberately emptied, certifi alone gets the connection through.
 
-```sh
-python3 -m pip install --upgrade certifi
-```
-
-Do not continue until `--doctor` says OK.
+Re-run `--doctor` after any of these. **Do not continue until it says OK.**
 
 ---
 
@@ -253,7 +271,8 @@ is right and the renderer has a bug.
 | Nothing appears while typing the token | Correct and intended. Paste, press Enter |
 | `token rejected ... expired` | Redo Step 3, tokens last ~1 hour |
 | `! that does not look like a token` | You copied the wrong field — want `accessToken`, not `refreshToken` |
-| `CERTIFICATE_VERIFY_FAILED`, or the 4 live tests fail with `HTTP 0` | Step 2a — Python's cert store on macOS. Run `Install Certificates.command` |
+| `CERTIFICATE_VERIFY_FAILED`, or the 4 live tests fail with `HTTP 0` | Step 2a — Python's cert store. `brew install ca-certificates`, or install `certifi` |
+| `zsh: no matches found: /Applications/Python 3.*/...` | You have Homebrew Python; that script doesn't exist. Use `brew install ca-certificates` |
 | `429 ... retrying in 5s` | Rate limited; it backs off by itself. Leave it |
 | `! schema drift: dropping unknown field` | AI Dungeon changed their API. Not fatal, but tell me |
 | `! <id>: actionCount=N but fetched M` | Possible paging bug. Tell me the numbers |

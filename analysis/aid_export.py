@@ -147,22 +147,63 @@ SCRIPT_FIELDS = {
 }
 
 
+def is_homebrew_python():
+    """Homebrew installs under /usr/local (Intel) or /opt/homebrew (Apple silicon)."""
+    prefix = (sys.prefix or "") + " " + (getattr(sys, "base_prefix", "") or "")
+    return "/opt/homebrew" in prefix or "/usr/local/Cellar" in prefix or "/usr/local/opt" in prefix
+
+
+def ssl_context():
+    """Prefer certifi's CA bundle when it is installed, else the system store.
+
+    Python does not share the OS trust store on macOS: both the python.org and
+    the Homebrew builds resolve certificates through their own OpenSSL, and
+    either can end up pointing at a directory that was never populated. certifi
+    is Mozilla's bundle as a Python package and sidesteps the whole question --
+    but installing it does nothing on its own, because stdlib urllib will not
+    consult it unless asked. This asks. It stays an optional import, so the tool
+    still has no required dependencies.
+    """
+    import ssl
+    try:
+        import certifi
+        return ssl.create_default_context(cafile=certifi.where())
+    except Exception:
+        return ssl.create_default_context()
+
+
 def local_network_hint(reason):
     """Turn a urllib transport failure into the actual fix, where one is known.
 
-    The first case is near-universal on macOS: Python installed from python.org
-    ships its own trust store and does not populate it, so every HTTPS request
-    fails with CERTIFICATE_VERIFY_FAILED while curl and every browser on the same
-    machine work fine. It looks like the tool is broken. It is not.
+    The certificate case is near-universal on macOS and has two distinct causes
+    that need different fixes, so the advice has to be told which one it is
+    looking at rather than guessing. python.org's build ships an unpopulated
+    trust store and fixes it with a bundled script. Homebrew's build resolves
+    through Homebrew's OpenSSL and needs the `ca-certificates` formula, where
+    that script does not exist at all. Both look identical from the error alone;
+    the interpreter's own prefix is what separates them.
     """
     text = str(reason or "")
     if "CERTIFICATE_VERIFY_FAILED" in text or "SSL" in text.upper():
-        return (
-            "  This is your Python's certificate store, not the API and not this tool.\n"
-            "  curl and your browser will work while Python fails.\n"
-            "  On macOS, run the installer's certificate script once:\n"
+        head = ("  This is your Python's certificate store, not the API and not this tool.\n"
+                "  curl and your browser will work while Python fails.\n")
+        if is_homebrew_python():
+            return head + (
+                "  This is a Homebrew Python, so there is no Install Certificates.command.\n"
+                "  Fix Homebrew's CA bundle:\n"
+                "      brew install ca-certificates\n"
+                "  If that alone does not do it, install certifi and this tool will use it:\n"
+                "      python3 -m pip install --user --upgrade certifi\n"
+                "      # if pip refuses with 'externally-managed-environment', add:\n"
+                "      #     --break-system-packages\n"
+                "  Then re-run this command."
+            )
+        return head + (
+            "  On macOS with python.org's build, run its certificate script once:\n"
             "      /Applications/Python\\ 3.*/Install\\ Certificates.command\n"
-            "  or, equivalently:  python3 -m pip install --upgrade certifi\n"
+            "  If that path does not exist, install certifi instead and this tool\n"
+            "  will pick it up automatically:\n"
+            "      python3 -m pip install --user --upgrade certifi\n"
             "  Then re-run this command."
         )
     if "Name or service not known" in text or "nodename nor servname" in text:
@@ -302,6 +343,7 @@ class GqlClient:
         self.verbose = verbose
         self.shed = {}
         self._last = 0.0
+        self.ssl = ssl_context()
 
     def _pace(self):
         wait = self.delay - (time.monotonic() - self._last)
@@ -322,7 +364,7 @@ class GqlClient:
             },
         )
         try:
-            with urllib.request.urlopen(req, timeout=120) as r:
+            with urllib.request.urlopen(req, timeout=120, context=self.ssl) as r:
                 return r.status, json.loads(r.read() or b"{}")
         except urllib.error.HTTPError as e:
             raw = e.read()
@@ -749,8 +791,18 @@ def doctor(host=DEFAULT_HOST):
         paths = ssl.get_default_verify_paths()
         store = paths.cafile or paths.capath
         exists = bool(store) and pathlib.Path(store).exists()
-        print(f"  ca store    {store or '(none configured)'}"
+        kind = "file" if paths.cafile else "dir"
+        print(f"  ca store    {store or '(none configured)'}  [{kind}]"
               f"{'' if exists else '   <-- MISSING'}")
+        if paths.capath and not paths.cafile:
+            print("              (a directory, no cert.pem — this is the usual cause)")
+        print(f"  build       {'Homebrew' if is_homebrew_python() else 'python.org / system'}"
+              f"   prefix={sys.prefix}")
+        try:
+            import certifi
+            print(f"  certifi     installed — using {certifi.where()}")
+        except ImportError:
+            print("  certifi     not installed (optional; would override the store above)")
     except Exception as e:
         print(f"  ssl         unavailable: {e}")
 
@@ -760,7 +812,7 @@ def doctor(host=DEFAULT_HOST):
         headers={"content-type": "application/json"},
     )
     try:
-        with urllib.request.urlopen(req, timeout=30) as r:
+        with urllib.request.urlopen(req, timeout=30, context=ssl_context()) as r:
             payload = json.loads(r.read() or b"{}")
         code = ((payload.get("errors") or [{}])[0].get("extensions") or {}).get("code")
         if code == "UNAUTHENTICATED":
