@@ -33,6 +33,22 @@ these are the ones that will bite fastest:
 The unit of analysis is the **turn**, not the passage — see `FINDINGS.md`'s frame section.
 Four analysis passes died asking what made a generation good enough to keep.
 
+## The second corpus
+
+**There are two archives here, and they are not the same shape.** As of 2026-08-10 the AI
+Dungeon side is extracted too — 888 adventures and 169 scenarios, via
+`analysis/aid_export.py` (see `AID_EXPORT.md` for the schema, `AID_RUNBOOK.md` to run it).
+It is **unanalysed**, and it lives only on Endorphin's machine: `exports/` is gitignored for
+the same reason `corpus/` is.
+
+The five rules above are NovelAI rules and most of them do not transfer. NovelAI preserves
+the full undo tree, which is what makes rejected generations and per-block settings
+analysable at all. **AI Dungeon's `actionWindow` is a flat sequence** — an `undoneAt` field,
+but no branch structure, no `prevBlock`, and no per-action sampler settings. Anything built
+on chosen/rejected pairs, branch reachability, or settings simply cannot be computed on that
+side. Write up what each record can and cannot answer before designing anything that joins
+them; the asymmetry is a finding, not an obstacle to route around.
+
 ## The harness
 
 The canonical working agreements, the atlas of all 20 repos, and the shared glossary live in
