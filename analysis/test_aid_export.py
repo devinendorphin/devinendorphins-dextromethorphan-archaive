@@ -39,8 +39,7 @@ order = [md.index(t) for t in ("first", "second", "third")]
 check("actions render oldest-first", order == sorted(order), order)
 check("undone action excluded", "undone one" not in md)
 check("deleted action excluded", "deleted one" not in md)
-check("'do' gets a > prefix", "> second" in md)
-check("'continue' has no prefix", "\nthird" in md and "> third" not in md)
+check("fragments are concatenated, not paragraph-split", "firstsecond" in md.replace("\n", ""))
 check("memory/AN/instructions labelled", all(
     h in md for h in ("Plot Essentials / Memory", "Author's Note", "AI Instructions")))
 check("unmapped fields flagged not mislabelled",
@@ -54,6 +53,36 @@ check("front-matter title with colon is quoted",
 noc = {"title": "t", "actionWindow": [{"id": "b", "text": "newest"}, {"id": "a", "text": "oldest"}]}
 check("falls back to reverse without createdAt",
       A.render_adventure(noc).index("oldest") < A.render_adventure(noc).index("newest"))
+
+# --- offline: story is a concatenation, not decorated paragraphs -------------
+# Observed on adventure p8Y-OSHLzTZn 2026-08-10: `continue` fragments open with
+# a space and resume mid-sentence, and `say` arrives already carrying its own
+# '\n> ' formatting. So the renderer must add nothing and strip nothing. This
+# supersedes the handoff spec's '> do ...' / '> say "..."' prefix convention.
+frags = [
+    {"id": "0", "type": "start",    "text": "{This is a test} The colors, ",
+     "createdAt": "2024-05-30T22:52:27Z"},
+    {"id": "1", "type": "continue", "text": "you see them shimmer.",
+     "createdAt": "2024-05-30T22:53:00Z"},
+    {"id": "2", "type": "say",      "text": '\n> You say "Hello."\n',
+     "createdAt": "2024-05-30T22:54:00Z"},
+    {"id": "3", "type": "continue", "text": "The crypt answers.",
+     "createdAt": "2024-05-30T22:55:00Z"},
+    {"id": "u", "type": "continue", "text": "NEVER SHOWN", "undoneAt": "x",
+     "createdAt": "2024-05-30T22:56:00Z"},
+]
+st = A.story_text(frags)
+check("mid-sentence fragments join seamlessly", "The colors, you see them shimmer." in st)
+check("say keeps the app's own newline and quote", '\n> You say "Hello."\n' in st)
+check("the '> ' prefix is not doubled", st.count("> You say") == 1 and "> > " not in st)
+check("undone action still excluded from the join", "NEVER SHOWN" not in st)
+check("story continues past the say fragment", st.rstrip().endswith("The crypt answers."))
+fmd = A.render_adventure({"title": "T", "actionWindow": frags})
+check("rendered story carries the joined prose", "The colors, you see them shimmer." in fmd)
+# server returns ascending despite desc:true, so 'created' must be the oldest
+check("front-matter created is the oldest action", '"2024-05-30T22:52:27Z"' in fmd.split("---")[1])
+check("empty action list still renders", "(no visible actions)" in
+      A.render_adventure({"title": "T", "actionWindow": []}))
 
 # --- offline: details mapping (shape observed on adventure p8Y-OSHLzTZn) ------
 det = {"title": "T", "details": {

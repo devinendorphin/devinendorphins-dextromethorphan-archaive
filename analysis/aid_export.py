@@ -718,7 +718,26 @@ def render_details(details):
                    + json.dumps(leftover, indent=2) + "\n```\n")
     return out
 
-ACTION_PREFIX = {"do": "> ", "say": "> ", "see": "> "}
+def story_text(actions):
+    """AI Dungeon's story is the literal concatenation of its action texts.
+
+    Observed on adventure p8Y-OSHLzTZn, 2026-08-10. `continue` fragments begin
+    with a space and resume mid-sentence (' you see...'), and a `say` action
+    arrives already carrying its own formatting -- '\\n> You say "..."\\n'. The
+    newlines and the '> ' quoting are put there by the app, so a renderer that
+    adds its own doubles them, and one that strips the fragments apart into
+    paragraphs destroys the prose flow. Both of which the first version did.
+
+    This supersedes the handoff spec's suggested convention of rendering the
+    action `type` as a '> do ...' / '> say "..."' prefix. That would be right
+    for an API whose text came without formatting; this one's does not.
+    """
+    return "".join(
+        a.get("text") or ""
+        for a in chronological(actions)
+        # Undone and deleted actions stay in raw.json and out of the render.
+        if not (a.get("undoneAt") or a.get("deletedAt"))
+    )
 
 
 def chronological(actions):
@@ -751,7 +770,9 @@ def render_adventure(adv):
         "title": adv.get("title") or "Untitled",
         "shortId": adv.get("shortId"),
         "scenarioId": adv.get("scenarioId"),
-        "created": (adv.get("actionWindow") or [{}])[-1].get("createdAt"),
+        # Oldest action, whichever way the server ordered the window. The
+        # server was observed returning it ascending despite desc: true.
+        "created": (chronological(adv.get("actionWindow") or []) or [{}])[0].get("createdAt"),
         "actionCount": adv.get("actionCount"),
         "tags": adv.get("tags"),
         "contentType": adv.get("contentType"),
@@ -786,18 +807,8 @@ def render_adventure(adv):
         md.append("")
 
     md.append("## Story\n")
-    shown = 0
-    for act in chronological(adv.get("actionWindow") or []):
-        # R5/§3: undone and deleted actions stay in raw.json, out of the render.
-        if act.get("undoneAt") or act.get("deletedAt"):
-            continue
-        text = (act.get("text") or "").strip("\n")
-        if not text.strip():
-            continue
-        shown += 1
-        md.append(ACTION_PREFIX.get(act.get("type"), "") + text.strip() + "\n")
-    if not shown:
-        md.append("*(no visible actions)*\n")
+    body = story_text(adv.get("actionWindow") or [])
+    md.append(body.strip("\n") + "\n" if body.strip() else "*(no visible actions)*\n")
     return "\n".join(md)
 
 
@@ -903,6 +914,34 @@ def write_scenario_tree(scn, out_dir, fmt):
     return sha
 
 
+def rerender(out, fmt="md"):
+    """Rebuild every story.md / scenario.md from the raw.json already on disk.
+
+    raw.json is the archival ground truth and the render is derived, so a
+    renderer fix must never cost a re-fetch. No token, no network.
+    """
+    out = pathlib.Path(out)
+    done = failed = 0
+    for raw_path in sorted(out.glob("**/raw.json")):
+        try:
+            data = json.loads(raw_path.read_text(encoding="utf8"))
+        except ValueError as e:
+            print(f"  ! unreadable {raw_path}: {e}", file=sys.stderr)
+            failed += 1
+            continue
+        is_scenario = "scenarios" in raw_path.parts
+        name = "scenario" if is_scenario else "story"
+        text = render_scenario(data) if is_scenario else render_adventure(data)
+        (raw_path.parent / f"{name}.md").write_text(text, encoding="utf8")
+        if fmt in ("html", "both"):
+            (raw_path.parent / f"{name}.html").write_text(
+                md_to_html(text, data.get("title") or name), encoding="utf8")
+        done += 1
+    print(f"\n  re-rendered {done} item(s){f', {failed} unreadable' if failed else ''}"
+          f" from raw.json — nothing re-fetched", file=sys.stderr)
+    return 1 if failed else 0
+
+
 def doctor(host=DEFAULT_HOST):
     """Can this machine talk to the API at all? Runs before any token exists.
 
@@ -984,12 +1023,18 @@ def main():
     ap.add_argument("--token-stdin", action="store_true",
                     help="read the token from a pipe instead of prompting, e.g. "
                          "pbpaste | %(prog)s --whoami --token-stdin")
+    ap.add_argument("--rerender", action="store_true",
+                    help="rebuild the .md files from raw.json already on disk. "
+                         "No token, no network")
     ap.add_argument("--doctor", action="store_true",
                     help="check this machine can reach the API. No token needed")
     args = ap.parse_args()
 
     if args.doctor:
         return doctor(args.host)
+
+    if args.rerender:
+        return rerender(args.out, args.format)
 
     out = pathlib.Path(args.out)
     tokens = TokenManager(args.save_token, from_stdin=args.token_stdin)
