@@ -2,7 +2,8 @@
 
 **Register: formal/evidentiary.** This is a **research corpus**, not a seed — 2,016 NovelAI
 story exports (created June 2021 – July 2026), with the full edit history preserved, plus
-888 AI Dungeon adventures reaching back to **7 December 2020**. The question this file used
+888 AI Dungeon adventures reaching back to **7 December 2020**, plus 1,386 Google AI Studio
+sessions running March 2025 – June 2026. The question this file used
 to ask (*personal record, phenomenological writing, literature collection, or harm-reduction
 reference?*) was settled on 2026-08-03: none of those. It is an instrumented record of how
 one person drove text generation models over five years, and it is analysed as such.
@@ -12,7 +13,15 @@ Start with `sessions/LATEST.md`, then `FINDINGS.md`.
 **It is emphatically not the harm-reduction register.** Nothing here makes claims about
 effects or safety. The earlier note proposing consolidation with `harm-reduction-outreach`
 and `hookup-hygiene` does not apply — that was written when the repo was a title and an
-intention, and the territory turned out to be unrelated. The name is the name.
+intention, and the territory turned out to be unrelated.
+
+**The name is a show title, and it is written down** (found 2026-08-11 in the AI Studio
+corpus, `ALMO Interview: Endorphin`, 2025-04-11): *"+1600 hours of video —
+**devinendorphin's dextromethorphan varAIety hour** — AKA This show!!!"*, filed by him in a
+list of Absurdly Large Media Objects next to *Infinite Jest* and Wikipedia. `AI` is spelled
+into *variety*, and the `+1600 hours` matches `data/EPISODES.tsv`'s 1,604 recovered
+broadcasts. This supersedes the earlier "the name is the name" — it was never arbitrary,
+and the referent is the broadcast layer, not a substance.
 
 ## Working on this corpus
 
@@ -57,6 +66,31 @@ but no branch structure, no `prevBlock`, and no per-action sampler settings. Any
 on chosen/rejected pairs, branch reachability, or settings simply cannot be computed on that
 side. Write up what each record can and cannot answer before designing anything that joins
 them; the asymmetry is a finding, not an obstacle to route around.
+
+## The third corpus
+
+**There are three.** As of 2026-08-11 the **Google AI Studio** folder is inventoried —
+**1,386 sessions, 2025-03-27 .. 2026-06-21** — via `analysis/aistudio_export.py`. See
+**`AISTUDIO.md`** for the schema, what it can and cannot answer, and the findings. The
+folder is link-readable; the id is in `sessions/LATEST.md`.
+
+It is not a fourth pile of stories. **It is substantially *about* the other two** — 40
+files discuss the Counterfactual Interview, 21 name NovelAI, 15 name AI Dungeon, and it
+contains Endorphin's own written definition of the interview form, the expansion of this
+repo's name, and a **rerun of the Tantura probe on a frontier model that returns the
+account NovelAI's Kayra returned nothing for.** Read `AISTUDIO.md` before extending
+`READINGS.md` §VII or the AI Dungeon join.
+
+Three traps specific to it, none of which exist on the other two platforms:
+
+- **`isThought` chunks carry `role: "model"` and are 38% of all model text.** Counting
+  them as output inflated this repo's first model:human ratio from 6.1:1 to 9.9:1 and
+  flipped which corpus looked anomalous. Filter them first, always.
+- **The temperature sweep does not transfer.** NovelAI steps a ladder; AI Studio is a
+  1.0/2.0 switch, and only 11% of stems have a second member against NovelAI's 53%. The
+  "never group by story id" rule was earned on a habit this platform does not have.
+- **Titles are platform-generated from the opening turn**, so they lie in a new way —
+  `Ponzi Scheme Explained` contains Tantura material. Search content, never titles.
 
 ## The harness
 

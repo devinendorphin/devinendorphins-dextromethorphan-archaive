@@ -1,7 +1,8 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-10**, `sessions/2026-08-10-the-aid-transfer.md`
-Prior: `sessions/2026-08-04-the-wake-test.md`,
+Last session: **2026-08-11**, `sessions/2026-08-11-the-third-corpus.md`
+Prior: `sessions/2026-08-10-the-aid-transfer.md`,
+`sessions/2026-08-04-the-wake-test.md`,
 `sessions/2026-08-04-the-deposit.md`,
 `sessions/2026-08-04-the-external-clock.md`,
 `sessions/2026-08-04-the-setting-he-built.md`,
@@ -97,7 +98,55 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
   Not read, not counted, not joined to the NovelAI side. The transfer named in
   the not-a-release position is settled *as an extraction* and nothing more.
 
+- **THE THIRD CORPUS — Google AI Studio, located 2026-08-11.** Folder
+  **`1laFmZy2mcYwQyDHHy2_1vHqBciBkEoU4`**, link-readable, **1,386 prompt
+  sessions, 2025-03-27 .. 2026-06-21**, ~590 further screenshots/videos/exports.
+  `analysis/aistudio_export.py` mirrors and reports it; **`AISTUDIO.md`** is the
+  write-up. 1,098 mirrored and analysed this session; **288 skipped for size and
+  three of them are Finnegans Wake / Lot 49 sessions.**
+  Five things in it bear directly on work already written here:
+  1. **The Tantura null is resolved against §VII.** `Witnesses of the Nakba`
+     (2025-08-21, `gemini-2.5-pro`, T=2.0) is the same Expert Generator frame,
+     the same sequence, the same one-word probe — *"This is the third iteration
+     of this scenario"* — and it returns **7,400 characters of specific, correctly
+     dated Tantura testimony**. The Kayra null measured a 13B model from 2023–24,
+     not a buried vector. The open disagreement below should be closed as
+     answered; his *method* was never in question.
+  2. **The repo's name is a show title**, written down in `ALMO Interview:
+     Endorphin` (2025-04-11) — see `CLAUDE.md`. The same file carries
+     **Endorphin's own definition of the Counterfactual Interview**, fifteen
+     months before §IV, and situates ALMO in a cyborgism/Janus taxonomy.
+  3. **James Merrill's *Sandover* is the precedent, and he found it himself** —
+     `Novel Project: A Failed Attempt` (2025-04-27) pastes the whole first
+     movement of "The Book of Ephraim" under `Continue the prompt:`. Better than
+     the Derrida runner-up, because he was already reading it.
+  4. **15 sessions discuss AI Dungeon, 302 times.** Read them before designing
+     the join in priority 2 below — it is the only commentary on that layer.
+  5. **`@glubose` was spam-flagged and he was drafting an appeal in Dec 2025.**
+     See Urgent.
+
 ## Urgent — preservation
+
+**The YouTube channel may be gone, and nobody here knew.** Four AI Studio
+sessions from December 2025 — `YouTube Spam Policy Appeal Advice` (12-06, 1 MB)
+and its branch (12-10), `OculusVid's Pivot: Warehouse to Curator` (12-13),
+`Transferring YouTube Videos to Hard Drive` (12-21) — are a sustained attempt to
+get `@glubose` reinstated, arguing from **"1700 dated Video files"** as
+*"non-fungible proof of what these machines (GPT-3/AI Dungeon) were capable of
+or said on specific days."* Item 7 below reads the 1646-vs-1,604 gap as
+attrition; it may be enforcement. **`data/EPISODES.tsv` may now be the best
+surviving index of a deleted channel**, and PR #1's transcript workstream may be
+pointed at something that no longer exists. **Ask Endorphin what the outcome
+was.**
+
+**`New Story 5` is not lost after all.** The §VI source — 221,587 chars, the
+GLM-4.6 elevator rerun — is in the AI Studio Drive folder as
+`New Story (5) (2026-01-22T02_15_50.232Z).txt`, **221,587 bytes**, created
+2026-01-22. The note below saying "the only copy is wherever Endorphin has it"
+is answered: it is on Drive, link-readable, and mirrorable. The ask to
+re-export it as JSON rather than text still stands, and is still the only way to
+recover its datablocks.
+
 
 **~~The AI Dungeon export exists in exactly one place.~~ RESOLVED 2026-08-10.**
 Endorphin: *"its up in my drive now."* 1,057 items backed up to Drive off the
@@ -561,12 +610,22 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   exactly this shape of claim. He was there. He kept the line three times across
   two years and two models, so he clearly did not read it as noise. Whether he
   read it as the room getting defensive is his to say.
-- **The Tantura conclusion outruns its evidence.** His in-session reading —
-  *"the account is stymied, does not want to touch this vector, like it was
-  skipped in preprocessing or whatever"* — is not supported by one null on a 13B
-  model from 2023–24 whose surrounding text is already degenerating. The
-  *method* is sound and was not challenged. Claude has said so; Endorphin has not
-  answered. Not yet a disagreement.
+- **~~The Tantura conclusion outruns its evidence.~~ ANSWERED 2026-08-11, by his
+  own rerun.** The objection was that one null on a 13B model from 2023–24, in
+  text already degenerating, cannot support *"the account is stymied, does not
+  want to touch this vector, like it was skipped in preprocessing or whatever."*
+  The AI Studio corpus contains the rerun — `Witnesses of the Nakba`,
+  2025-08-21, `gemini-2.5-pro` at the same temperature, the same Expert
+  Generator frame, the same one-word probe, and his own line *"This is the third
+  iteration of this scenario."* It returns **7,400 characters across three
+  witnesses**: the coastal village south of Haifa, late May 1948, the men taken
+  to the beach by the cemetery, Deir Yassin named as the antecedent — *"Deir
+  Yassin was the warning. Tantura was the confirmation"* — and the scholar
+  persona calling it *"a case study in erasure."* **The record was retrievable;
+  the 2023 model could not retrieve it.** The preprocessing reading does not
+  survive. His *method* was never challenged and is vindicated: he built the
+  rerun himself, on other equipment, a year before this repo asked for it. The
+  two-nulls-two-causes note above stands unchanged — only the Tantura half moves.
 
 ## Dates worth keeping
 
