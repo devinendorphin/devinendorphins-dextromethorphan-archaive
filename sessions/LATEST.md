@@ -127,17 +127,35 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
 
 ## Urgent — preservation
 
-**The YouTube channel may be gone, and nobody here knew.** Four AI Studio
-sessions from December 2025 — `YouTube Spam Policy Appeal Advice` (12-06, 1 MB)
-and its branch (12-10), `OculusVid's Pivot: Warehouse to Curator` (12-13),
-`Transferring YouTube Videos to Hard Drive` (12-21) — are a sustained attempt to
-get `@glubose` reinstated, arguing from **"1700 dated Video files"** as
-*"non-fungible proof of what these machines (GPT-3/AI Dungeon) were capable of
-or said on specific days."* Item 7 below reads the 1646-vs-1,604 gap as
-attrition; it may be enforcement. **`data/EPISODES.tsv` may now be the best
-surviving index of a deleted channel**, and PR #1's transcript workstream may be
-pointed at something that no longer exists. **Ask Endorphin what the outcome
-was.**
+**~~The YouTube channel may be gone.~~ RESOLVED 2026-08-11. It was terminated
+and it came back.** Endorphin: *"the channel was reinstated."* The record dates
+it: terminated **Saturday 2025-12-06** for Spam/deceptive practices, appeal
+auto-rejected the same day, reinstated **Tuesday 2025-12-16** — ten days. Six AI
+Studio sessions cover it; `AISTUDIO.md` §5 has the timeline, the strategy, and
+the causal assessment.
+
+**Date trap:** the last turn of `Branch of YouTube Spam Policy Appeal Advice`
+says *"it's been months since I've been here. I got my channel back"* and was
+written **2026-03-07**. "Months" is months since he last opened *that thread*.
+The reinstatement is 12-16, from `Loan Update and Time Zone Advice` (12-20):
+*"as of Tuesday I got my channel back."* Use `modifiedTime`, not `createdTime`,
+when dating anything in this corpus — the two are a quarter apart on that file.
+
+**Did the AI Studio sessions cause it? Not answerable at n=1**, and he was
+inside a December 2025 mass-termination sweep that plausibly got bulk-reversed.
+What is concrete: the model talked him out of publishing *"much of my
+non-monetized work uses popular IP"* (which would have handed them a copyright
+rationale when the spam one failed), replaced *"this is how I healed from 13
+years of emotional abuse, don't erase please"* with a checkable claim about
+their own Twitch-export tool, and got him public the same day instead of waiting
+on a dead form. His own account credits that two-track shape. See `AISTUDIO.md`.
+
+**Preservation consequence stands.** He spent the following days *"trying to
+transfer all those videos to a hard drive so that at least have one copy."* The
+Twitch side is separately confirmed mostly lost — *"100 episodes exist that
+survive"* — so **`data/EPISODES.tsv` remains the best index of the pre-YouTube
+broadcasts**, and item 7's 1646-vs-1,604 gap is still unexplained. PR #1's
+transcript workstream is pointed at a live channel again.
 
 **`New Story 5` is not lost after all.** The §VI source — 221,587 chars, the
 GLM-4.6 elevator rerun — is in the AI Studio Drive folder as

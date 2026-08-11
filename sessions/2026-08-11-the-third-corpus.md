@@ -167,3 +167,71 @@ folder. The re-export-as-JSON ask still stands; the loss risk does not.
   fourteen filter gates, run on the opening of the Wake. Read against §VII's
   `-Glossolalia` argument — this is him importing someone else's invented control
   panel two years after building his own.
+
+## Addendum — the channel came back, and the causal question
+
+Endorphin, same session: *"the channel was reinstated. i wonder if it was
+because of the youtube conversations about potential strategies that influenced
+the."*
+
+**Timeline, from the record.** Terminated Saturday 2025-12-06 for
+Spam/deceptive-practices. Appeal auto-rejected within the hour. Public
+escalation to `@TeamYouTube` that evening. Reinstated **Tuesday 2025-12-16** —
+ten days — per `Loan Update and Time Zone Advice` (12-20): *"I got attention
+from the customer service and I stated my case both to them and publicly so
+that other creators can see it. And as of Tuesday I got my channel back."*
+
+**A date trap caught in passing.** The obvious source for the outcome is the
+last turn of `Branch of YouTube Spam Policy Appeal Advice` — *"it's been months
+since I've been here. I got my channel back."* That turn carries
+`createTime: 2026-03-07`, and the file's `createdTime` is 2025-12-10. "Months"
+means months since he last opened the thread. Reading it as months since
+reinstatement puts the event in March and is wrong by a quarter. **In this
+corpus `createdTime` is the first turn and `modifiedTime` the last, and on long
+threads they are far apart.** Add it to the standing notes.
+
+**The assessment.** Not answerable at n=1, and the strong alternative is right
+there in the sessions: a December 2025 mass-termination sweep, public outcry,
+and the kind of faulty-classifier deployment that gets bulk-reversed. Ten days
+is consistent with either.
+
+What is concrete is that two model interventions in the first two hours were
+load-bearing, and both are unglamorous:
+
+1. It stopped him sending a second ban rationale. His draft contained *"Much of
+   my non-monetized work uses popular IP."* The model: *"**Do not admit this.**
+   … If they can't ban you for Spam, they might see that sentence and say 'Okay,
+   banned for Copyright risk then.'"*
+2. It converted a plea into a falsifiable administrative claim. His appeal ended
+   *"This is how I healed from 13 years of emotional abuse, don't erase
+   please!"*; the rewrite leads on the official Twitch-to-YouTube export tool,
+   March 2025, six months dormant, false positive. It also cut the
+   fluid-dynamics/Brownian-motion passage on the grounds that to a triage agent
+   it *"looks exactly like the AI-generated gibberish that spam bots use"* —
+   correct, on a channel flagged as bot output.
+
+It also read the mechanism right (*"an immediate rejection usually means a human
+didn't actually watch your videos… you are now in Escalation territory"*), told
+him to go public the same day rather than wait, and predicted movement Monday.
+
+Two cautions. The model's current-event statistics (*"2.1 million terminated
+with ~75% cited for Spam/Deception"*) arrive at temperature 2.0 with no
+grounding block and are in-session claims, not facts. And most of the elaborate
+later strategy — the memorandum, the demand for a named reviewer, the
+*"Avant-Garde Menace / cross arms daily"* stunt-posting plan — postdates 12-13
+and never ran. The plausibly decisive work is all in the first 48 hours.
+
+**Honest statement: the advice removed a self-incriminating sentence from a
+message he was about to send, made the claim checkable, and got him public
+within hours. Whether that flipped his case or whether he rode a bulk reversal
+is not recoverable — but the draft he was about to post was worse than the one
+he posted.**
+
+**The loop worth naming.** Mid-crisis he asked the model to analyse a YouTube
+support email *"in relation to the principles of emotional abuse"* — the subject
+of `Emotional Abuse SImulator`, four versions and 4,386 blocks in the NovelAI
+corpus, and unmentioned anywhere in this repo until 2026-08-04. He turned the
+instrument on the platform that was deleting the archive that contains it. He
+had also, in advance, made and uploaded a video called *"Please YouTube don't
+delete this channel."* The archive predicted and then documented its own near
+destruction.

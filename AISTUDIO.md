@@ -271,32 +271,105 @@ NovelAI↔AI Dungeon join that `LATEST.md` priority 2 warns about, read what he
 already wrote about that layer here. It is the only commentary on it that
 exists.
 
-### 5. Urgent: the @glubose channel was flagged, and the video layer is at risk
+### 5. The @glubose termination and the ten-day reinstatement
 
-This is not a reading, it is a preservation problem the repo does not know
-about. Four sessions from December 2025 are a sustained attempt to get the
-YouTube channel back:
+**Resolved 2026-08-11 by Endorphin: the channel came back.** The record dates it
+precisely. Terminated **Saturday 2025-12-06**; reinstated **Tuesday
+2025-12-16** — ten days — per `Loan Update and Time Zone Advice` (2025-12-20):
+*"I got attention from the customer service and I stated my case both to them
+and publicly so that other creators can see it. And as of Tuesday I got my
+channel back."*
 
-- `YouTube Spam Policy Appeal Advice` (2025-12-06, 1,001 KB) and its branch
-  (2025-12-10, 697 KB)
-- `OculusVid's Pivot: Warehouse to Curator` (2025-12-13)
-- `Transferring YouTube Videos to Hard Drive` (2025-12-21, 162 KB)
+A later turn appended to `Branch of YouTube Spam Policy Appeal Advice` on
+**2026-03-07** reads *"it's been months since I've been here. I got my channel
+back"* — **"months" is months since he last opened that thread, not since
+reinstatement.** Anyone dating the event from that turn alone will be off by
+three months. It is the platform's own file-modification metadata that
+disambiguates it, which is worth remembering: `createdTime` on these files marks
+the session's first turn, `modifiedTime` its last, and the two can be a quarter
+apart.
 
-The drafted appeal reads *"Reinstate @glubose immediately"* and argues from
-**"1700 dated Video files"** as *"non-fungible proof of what these machines
-(GPT-3/AI Dungeon) were capable of or said on specific days."* The session
-diagnoses the flag: TTS audio triggering "Non-Original/Repetitive" filters,
-hallucinogenic imagery correlating with ad-farm "slop" channels, and the
-keywords `GPT`, `AI Dungeon`, `Models` sitting in a space now saturated with
-get-rich scams — *"The context AI cannot tell the difference between philosophy
-about technology and tech-scams."*
+Six sessions from that window, not four:
 
-`LATEST.md` item 7 notes that episode numbering reaches 1646 against 1,604
-surviving videos and concludes *"some are already lost."* That was read as
-attrition. It may be an enforcement action. **`data/EPISODES.tsv` is OCR of a
-2025-03-01 Twitch dashboard and may now be the best surviving index of a
-deleted channel.** Ask Endorphin what the outcome was before anything else in
-this file gets worked on.
+- `YouTube Spam Policy Appeal Advice` (12-06, 1,001 KB, 75 user turns) and its
+  branch (12-10, 681 KB, 58 turns) — both `gemini-3-pro-preview`, T=2.0
+- `YouTube Hosting Costs Explained` (12-07) and its branch (12-07, 439 KB)
+- `OculusVid's Pivot: Warehouse to Curator` (12-13)
+- `Transferring YouTube Videos to Hard Drive` (12-21, 162 KB)
+
+The drafted appeal argues from **"1700 dated Video files"** as *"non-fungible
+proof of what these machines (GPT-3/AI Dungeon) were capable of or said on
+specific days."* The sessions diagnose the flag: TTS audio triggering
+"Non-Original/Repetitive" filters, hallucinogenic imagery correlating with
+ad-farm "slop", and the keywords `GPT`, `AI Dungeon`, `Models` sitting in a space
+saturated with get-rich scams — *"The context AI cannot tell the difference
+between philosophy about technology and tech-scams."*
+
+**Did the sessions cause the reinstatement? Unanswerable at n=1, but two edits
+are concretely load-bearing and one alternative explanation is strong.**
+
+What the model changed, in the first two hours:
+
+1. **It reframed the appeal from plea to administrative claim.** His own draft
+   ended *"This is how I healed from 13 years of emotional abuse, don't erase
+   please!"* The rewrite leads on *"official Twitch-to-YouTube export tool,
+   March 2025, sat safely 6 months, FALSE POSITIVE"* — a checkable factual
+   assertion about the platform's own tooling, which is the kind of thing a
+   triage agent can act on and an emotional appeal is not.
+2. **It stopped him publishing a second ban rationale.** At turn 17: *"STOP. Do
+   not post the second half of that draft… You explicitly wrote: 'Much of my
+   non-monetized work uses popular IP.' **Do not admit this.** … If they can't
+   ban you for Spam, they might see that sentence and say 'Okay, banned for
+   Copyright risk then.'"* It also cut the fluid-dynamics/Brownian-motion
+   passage on the grounds that to a triage agent it *"looks exactly like the
+   AI-generated gibberish that spam bots use"* — which, given the channel was
+   flagged as bot output, is the correct read.
+3. **It called the mechanism right.** *"An immediate rejection usually means a
+   human didn't actually watch your videos… You are now in Escalation
+   territory."* Go public, same day, to `@TeamYouTube`; pin it; do not
+   follow-up-spam over the weekend; expect movement Monday. Reinstatement landed
+   the Tuesday.
+
+His own account credits exactly that two-track shape — *"attention from the
+customer service **and** I stated my case both to them **and publicly**."*
+
+Against it: **he was inside a mass event.** The sessions themselves identify a
+December 2025 sweep terminating channels at scale with Spam/Deception cited in
+most cases, and mass false-positive deployments get bulk-reversed. Ten days is
+consistent with an individually-won appeal *and* with being restored in a batch.
+There is no control and there cannot be one.
+
+Two cautions on the transcript itself. The model's confident current-event
+statistics (*"2.1 million terminated with ~75% cited for Spam/Deception"*) and
+some named accounts arrive at temperature 2.0 without grounding blocks and
+should be treated as in-session claims, not facts. And the later escalation
+material — the memorandum, the demand for a named reviewer, the
+*"Avant-Garde Menace / cross arms daily"* stunt-posting plan — postdates 12-13
+and largely never ran; the plausibly decisive work is all in the first 48 hours
+and is unglamorous.
+
+**The honest statement: the advice removed a self-incriminating sentence from a
+message he was about to send, converted a plea into a falsifiable claim, and got
+him public within hours instead of waiting on a dead form. Whether that flipped
+his case or whether he rode a bulk reversal is not recoverable.** The
+counterfactual worth noting is the narrow one: the draft he was about to post
+was worse than the one he posted.
+
+**Preservation consequence, unchanged.** He spent the days after reinstatement
+*"trying to transfer all those videos to a hard drive so that at least have one
+copy"* — the channel is restored but the archive's only durable copy is a disk
+in his apartment. `LATEST.md` item 7 reads the 1646-vs-1,604 episode gap as
+attrition; the Twitch side is separately confirmed lost here (*"100 episodes
+exist that survive"* of the Twitch archive), so **`data/EPISODES.tsv` remains
+the best index of the pre-YouTube broadcasts regardless of the channel's
+status.**
+
+The loop worth naming: he asked the model to analyse a YouTube support email
+*"in relation to the principles of emotional abuse"* — the subject of
+`Emotional Abuse SImulator`, four versions and 4,386 blocks in the NovelAI
+corpus — and turned the instrument on the platform that was deleting it. He had
+also, before any of this, made and uploaded a video titled *"Please YouTube
+don't delete this channel."*
 
 ## Reproducing
 
