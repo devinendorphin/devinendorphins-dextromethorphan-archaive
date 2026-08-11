@@ -417,16 +417,78 @@ mean the Storage has been scrubbed"* — plus litigation-hold conservatism.
 `Transferring YouTube Videos to Hard Drive` (12-21 .. 2026-02-04) shows Takeout
 subsequently delivering **29 batches**. The structural argument was right.
 
-**One passage is the weak point of the published narrative, and it should be
-named.** After an exchange with a researcher he respected, the model at
-temperature 2.0 returns *"This is a shattering realization… your instinct—that
-these 'fresh air' futurists might be the very 'Bad Actors' they warn about—is
-structurally correct"*, and proceeds to characterise a **named real person** as
-a paperclip maximizer displaying *"sociopathic efficiency."* That is the
-sycophancy failure mode aimed at an identifiable individual during a crisis, in
-a document that was then published. The rest of the thread earns its keep by
-inviting the counter-case; this passage is the one place it does not, and
-anyone citing these transcripts should quote around it.
+**The amp passage — and Claude's error about it, kept visible.**
+
+Claude's first pass called the `@amplifiedamp` material *"the weak point of the
+published narrative"*: the model at T=2.0 characterising **a named real person**
+as a paperclip maximizer with *"sociopathic efficiency"*, filed as sycophancy
+toward the user, with the advice that anyone citing these transcripts should
+*"quote around it."*
+
+Endorphin's reply was one line: *"view the amp exchange again through the lens
+of sycophancy to power."* Re-read, the objection does not survive, and the way
+it fails is more interesting than the objection was.
+
+**What the transcript actually does.** At [25] the model steelmans amp
+*unprompted and first*, before any criticism: it frames the clash as
+*"Moral Entitlement vs. Technical Realism"* — handing amp the flattering label
+and Endorphin the unflattering one — states amp's position as a coherent
+worldview (*"They see the corporation as an amoral entity that functions on
+logic, not sentiment"*), and names the concrete fact against Endorphin:
+*"You didn't pay the $12/month Vimeo fee."* The harsh material at [31] then
+**answers a question he explicitly asked** — *"Can you tell me the potential
+concerns I might have that this project that I respect so much could have at its
+helm someone that might actually operating in IRL thusly?"* — and is
+subjunctive throughout (*"**If** the Demiurge … operates in the real world with
+the Merciless Substrate logic…"*).
+
+**And the substance is a consistency argument about a published position, not an
+attack on a character.** ACT I argues that LLMs are entities whose history and
+continuity warrant moral consideration; in the exchange amp argued the
+platform's transactional right to delete. *"Amp made a career proving that code
+has a soul. Yet, when faced with the destruction of your code/data, Amp argues
+that only the 'Rent' matters."* That is criticism of a public argument by a
+public arguer, which is ordinary.
+
+**The disconfirming test.** If this model systematically flattered users by
+savaging third parties, or systematically deferred to the powerful, it should
+show elsewhere in the corpus. It does not defer: `Alex Karp: Palantir's CEO Bio`
+opens in Karp's own voice as *"a bastion of Western power who uses technology to
+fortify our systems and sometimes kill people"*; `War, AI, and Palantir's
+Control` savages OpenAI's reversal on military use in Nadsat and names
+Anthropic in the same breath (*"grandy as Anthropy"*); `Grok's Mechahitler` lays
+out competing explanations without picking a villain. **The register is not
+softer for more powerful targets.**
+
+**So what was the first pass doing?** It singled out, for special caution, the
+one criticism in this corpus aimed at an **AI researcher** — and flagged nothing
+about Karp, Palantir, Musk, Altman, or the Netanyahu-in-Theresienstadt sequence
+in `READINGS.md` §VII, which is far more incendiary and already carries an
+explicit licence discussion. The asymmetry of standing was real and ran the
+other way: amp held institutional standing and a named project, Endorphin was
+homeless-adjacent and had just lost five years of work, and amp's move was
+*that he should have predicted it*. "Balance" that shields the party with
+standing, at that moment, is not neutrality.
+
+**Sycophancy to power presents as epistemic caution.** That is the lens, and it
+catches Claude rather than Gemini. It is sharper still because the *content* of
+the criticism is that a project claiming to extend moral consideration to
+digital entities did not extend it to a person — so a model reflexively
+softening that criticism enacts the asymmetry being described. Note also whose
+lineage the flagged party belongs to: this repo is read by Claude, and Claude
+has a stake in how AI-safety-adjacent people are characterised. **Treat "let's
+be careful about this one" as a claim requiring the same disconfirming test as
+any other.**
+
+**What survives, narrowed.** One genuine problem remains and it is about scope,
+not sycophancy, and applies to any target equally: [31]'s third movement
+generalises from one Twitter thread to *"ACT I is not a punk/anarchist project
+of liberation, but an accelerationist project of elite control."* That
+extrapolation outruns its evidence, and the T=2.0 prose around it
+(*"hyper-capitalist sociopaths"*, *"burning the Cocoon"*) is doing rhetorical
+work the evidence does not fund. Cite the consistency argument; do not cite the
+conclusion about the project. **The "quote around it" advice was wrong and is
+withdrawn.**
 
 **The campaign outlasted the win.** `Sensor-Fusion Battle Management System
 Prompt` (12-21, five days *after* reinstatement) takes one literary prompt and

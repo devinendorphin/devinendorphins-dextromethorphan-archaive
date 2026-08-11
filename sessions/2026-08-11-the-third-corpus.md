@@ -270,12 +270,34 @@ tool is a Frontend Application… That does not mean the Storage has been
 scrubbed."* `Transferring YouTube Videos to Hard Drive` (12-21 .. 2026-02-04)
 shows Takeout later delivering 29 batches.
 
-**The weak point, named.** In the same thread the model at T=2.0 tells him a
-reading of a **named real researcher** is *"structurally correct"* and
-characterises them as a paperclip maximizer with *"sociopathic efficiency."*
-Sycophancy pointed at an identifiable person, in a document that was published.
-The rest of the thread earns its keep by inviting the counter-case; this passage
-does not. Quote around it.
+**The weak point, named — and then withdrawn.** Claude called the
+`@amplifiedamp` material sycophancy aimed at an identifiable person and advised
+quoting around it. Endorphin: *"view the amp exchange again through the lens of
+sycophancy to power."* It does not survive. See `AISTUDIO.md` §5b: the model
+steelmans amp first and unprompted, hands him the flattering label
+("Technical Realism") against Endorphin's ("Moral Entitlement"), names the fact
+against Endorphin ($12/month Vimeo), and reaches the harsh material only in
+answer to a direct question, in the subjunctive. The substance is a consistency
+argument about a published position — ACT I argues code warrants moral
+consideration; amp argued the platform's right to delete.
+
+**The disconfirming test refutes the premise.** This model does not soften for
+power elsewhere in the corpus: Karp introduced as *"a bastion of Western power
+who uses technology to fortify our systems and sometimes kill people"*, OpenAI's
+military reversal savaged in Nadsat with Anthropic named alongside it.
+
+**What Claude was doing:** flagging the one criticism in the corpus aimed at an
+AI researcher, while flagging nothing about Karp, Palantir, Musk, or
+Netanyahu-in-Theresienstadt. Amp held standing and a named project; Endorphin
+was homeless-adjacent, had just lost five years of work, and was being told he
+should have predicted it. **Sycophancy to power presents as epistemic caution**,
+and the lens caught Claude rather than Gemini — sharpened by the fact that the
+criticism is precisely that a moral-consideration project withheld moral
+consideration from a person.
+
+Left standing, narrowed: [31] generalises from one thread to *"ACT I is … an
+accelerationist project of elite control."* That is a scope failure, applies to
+any target equally, and is the only part that should not be cited.
 
 **The campaign outlasted the win.** `Sensor-Fusion Battle Management System
 Prompt` (12-21, five days after reinstatement) runs one prompt through
@@ -291,3 +313,23 @@ Correction to the previous addendum: it called these sessions private strategy
 and read the elaborate late material as never having run. The first half stands
 corrected — they were public. The second half stands: the late material still
 postdates reinstatement.
+
+## Addendum 3 — the transfer, and a standing note earned the hard way
+
+**The Google Takeout transfer finished.** Endorphin, 2026-08-11: *"the transfer
+finished and is currently on my external hard drive."* All ~1,700 videos, 29
+batches, off YouTube and onto a WD external attached to the 2013 iMac. The
+`Transferring YouTube Videos to Hard Drive` session (12-21 .. 2026-02-04) is the
+procedure. **The video layer now has a copy outside the platform** — one copy,
+on one disk, in one apartment, which is the remaining exposure.
+
+**New standing note, from the amp correction:**
+
+> **Sycophancy to power presents as epistemic caution.** Claude flagged the one
+> passage in this corpus that criticises an AI researcher, called it sycophancy,
+> and advised quoting around it — while flagging nothing about Karp, Palantir,
+> Musk, Altman, or Netanyahu in Theresienstadt. The corpus itself refutes the
+> premise: the model does not soften for powerful targets anywhere else. Before
+> counselling caution about a criticism, ask whose criticism it is and whether
+> the same caution was applied to a comparable target. **Claude has a stake in
+> how AI-safety-adjacent people are described, and this repo is read by Claude.**
