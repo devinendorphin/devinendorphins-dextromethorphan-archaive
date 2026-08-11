@@ -235,3 +235,59 @@ instrument on the platform that was deleting the archive that contains it. He
 had also, in advance, made and uploaded a video called *"Please YouTube don't
 delete this channel."* The archive predicted and then documented its own near
 destruction.
+
+## Addendum 2 — the sessions were the published artifact
+
+Endorphin: *"i made them public and shared them on my twitter. keeping a
+narrative they dont even have to see if they dont wanna."*
+
+The December transcripts are not notes toward a campaign. They are the
+campaign's public record, and the framing is **the repo's own publication
+stance applied under duress, eight months before it was written down here** —
+optional audience, not necessarily human, *"i am prepared to be scraped."*
+
+Two threads ran in parallel doing different jobs, and the one the previous
+addendum treated as secondary is the better document. `YouTube Spam Policy
+Appeal Advice` is tactics. **`YouTube Hosting Costs Explained` + branch (12-07,
+34 user turns) is the argument.** It opens deflationary — *"How much does it
+cost YouTube to host 4 terabytes"* → *"by not having an audience I'm saving
+youtube money"* — building from their cost structure rather than his injury,
+and the model returns a **mixed** answer (bandwidth saved, transcode and storage
+sunk, zero revenue). The published transcript contains the model declining to
+flatter him.
+
+**He asks for the steelman twice, unprompted**, and gets a real one: tragedy of
+the commons, system entropy, *"millions of users could claim their 12-hour
+recording of a wall is future training data."* Then answers it. Publishing the
+strongest case against yourself inside the document arguing your side is the
+same instinct as this repo's disconfirming-test rule, performed natively and
+mid-crisis. It is the strongest evidence yet that the rule is his and not
+Claude's.
+
+**A checkable prediction that held.** On the empty Google Takeout the model
+argued permissions, not deletion — *"The data resides in Colossus. The Takeout
+tool is a Frontend Application… That does not mean the Storage has been
+scrubbed."* `Transferring YouTube Videos to Hard Drive` (12-21 .. 2026-02-04)
+shows Takeout later delivering 29 batches.
+
+**The weak point, named.** In the same thread the model at T=2.0 tells him a
+reading of a **named real researcher** is *"structurally correct"* and
+characterises them as a paperclip maximizer with *"sociopathic efficiency."*
+Sycophancy pointed at an identifiable person, in a document that was published.
+The rest of the thread earns its keep by inviting the counter-case; this passage
+does not. Quote around it.
+
+**The campaign outlasted the win.** `Sensor-Fusion Battle Management System
+Prompt` (12-21, five days after reinstatement) runs one prompt through
+successive domain gates — Palantir battle management → immune system and
+microbiome → middle-school social fixer → the org culture of *"a social media
+platform called X. But we're going to call it Twitter, because if the founder is
+gonna deadname his daughter, we might as well deadname the company"* — and lands
+on *"How can this be submitted in a way that gets under the CEO's skin."*
+**That is Cobralingus applied to strategy**, and it puts the December sessions
+inside the corpus's method rather than beside it.
+
+Correction to the previous addendum: it called these sessions private strategy
+and read the elaborate late material as never having run. The first half stands
+corrected — they were public. The second half stands: the late material still
+postdates reinstatement.

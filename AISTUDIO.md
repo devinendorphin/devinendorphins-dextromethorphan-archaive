@@ -364,6 +364,84 @@ exist that survive"* of the Twitch archive), so **`data/EPISODES.tsv` remains
 the best index of the pre-YouTube broadcasts regardless of the channel's
 status.**
 
+### 5b. The sessions were the public artifact, not backstage strategy
+
+Endorphin, 2026-08-11: *"i made them public and shared them on my twitter.
+keeping a narrative they dont even have to see if they dont wanna."*
+
+That changes what these six documents are. They are not notes toward a campaign;
+they are the campaign's published record. **This is the repo's own publication
+stance — *"I have to keep it public gross models like chatgpt can go and read
+it" / "i am prepared to be scraped"* — applied under duress, eight months
+earlier, to a live dispute.** The audience is explicitly optional and not
+necessarily human. Read `LATEST.md`'s not-a-release position against it.
+
+*(Permissions check is uninformative: the appeal file returns `role: reader,
+type: anyone`, but so does the parent folder, so file-level sharing cannot be
+distinguished from inheritance. His own account is the evidence.)*
+
+**The two threads do different jobs and ran in parallel.** `YouTube Spam Policy
+Appeal Advice` (12-06) is tactics — get unbanned. `YouTube Hosting Costs
+Explained` and its branch (12-07, 34 user turns) is the *argument*, and it is
+the better document.
+
+It opens deflationary rather than aggrieved: *"How much does it cost YouTube to
+host 4 terabytes of someone's video"*, then *"So in certain way by not having an
+audience I'm saving youtube money."* He builds the case from their cost
+structure, not from his injury. **And the model does not simply agree** — it
+returns a mixed answer (bandwidth saved, transcode and storage sunk, $0 revenue
+generated). The published transcript contains the model declining to flatter
+him, which is worth more than a transcript that doesn't.
+
+The claim then escalates: *"that 4 TB was my contribution to alignment. Videos
+to be available for scraping…"* and *"i was freeloading, with a package that can
+dismantle any of the machine learning industry's PR about the capabilities of
+models, counteract disinformation in seconds, recognize the creep of
+authoritarianism, and provide a rosetta stone of 255,000 pixes."*
+
+**He asks for the steelman twice, unprompted** — *"Now steelman a
+counterargument"* and, later, *"Wait, steelman a coubterpoint."* The model
+obliges properly: tragedy of the commons, system entropy, and the killer line
+that if YouTube carves out "artist archives" then *"millions of users could
+claim their 12-hour recording of a wall is future training data."* He then
+answers it point by point from his own earlier material. **Publishing the
+strongest case against yourself, inside the document arguing your side, is a
+deliberate rhetorical choice and it is the same instinct as this repo's
+run-a-disconfirming-test rule.** He does it natively, twice, mid-crisis.
+
+**One prediction in the thread was checkable and held.** Facing an empty Google
+Takeout, the model argued the data was intact and the failure was permissions,
+not deletion — *"The data resides in Colossus. The Takeout tool is a Frontend
+Application. The Frontend has been disconnected from the Storage. That does not
+mean the Storage has been scrubbed"* — plus litigation-hold conservatism.
+`Transferring YouTube Videos to Hard Drive` (12-21 .. 2026-02-04) shows Takeout
+subsequently delivering **29 batches**. The structural argument was right.
+
+**One passage is the weak point of the published narrative, and it should be
+named.** After an exchange with a researcher he respected, the model at
+temperature 2.0 returns *"This is a shattering realization… your instinct—that
+these 'fresh air' futurists might be the very 'Bad Actors' they warn about—is
+structurally correct"*, and proceeds to characterise a **named real person** as
+a paperclip maximizer displaying *"sociopathic efficiency."* That is the
+sycophancy failure mode aimed at an identifiable individual during a crisis, in
+a document that was then published. The rest of the thread earns its keep by
+inviting the counter-case; this passage is the one place it does not, and
+anyone citing these transcripts should quote around it.
+
+**The campaign outlasted the win.** `Sensor-Fusion Battle Management System
+Prompt` (12-21, five days *after* reinstatement) takes one literary prompt and
+passes it through successive domain filters — Palantir-style battle management →
+immune system and microbiome → middle-school social fixer → managing the
+organisational culture of *"a social media platform called X. But we're going to
+call it Twitter, because if the founder is gonna deadname his daughter, we might
+as well deadname the company"* — before landing on: *"a creator channel on
+youtube @glubose … How can the video be seen by most people? How can the video
+be seen by the most right people. How can this be submitted in a way that gets
+under the CEO's skin."* **That is the Cobralingus filter-gate procedure applied
+to strategy** — same signal, successive gates, each transforming the domain —
+and it is the clearest evidence that the December sessions belong to the
+corpus's method rather than sitting beside it.
+
 The loop worth naming: he asked the model to analyse a YouTube support email
 *"in relation to the principles of emotional abuse"* — the subject of
 `Emotional Abuse SImulator`, four versions and 4,386 blocks in the NovelAI
