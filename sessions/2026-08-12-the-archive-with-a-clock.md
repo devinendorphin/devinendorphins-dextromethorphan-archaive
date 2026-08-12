@@ -170,6 +170,44 @@ channel is for those future moments when corporate wants to revise history. I ha
 episodes of 'no bitch, here are the times it did that for me'."* That is this repository's
 premise, stated two and a half years before it existed.
 
+### 4b — the candour reading, and the lens that hid it
+
+Endorphin, third message: *"check out the part where I said I knew what the board meant
+about being not consistently candid, that its shorthand for a thousand tiny cuts."*
+
+It is there, it is dated, and **the first pass of §4 missed all of it.** He returns to it
+six times and never revises it:
+
+| date | the claim |
+|---|---|
+| **2023-12-03** | *"Lack of candid communication … is actually perhaps the most forgiving wording the board could have given"*; 14/ — the acts are *"fractally related"*, say one and you are *"drinking from a fire hose"* |
+| **2024-09-26** | *"Being not consistently candid is the most forgiving wording to the fractal trajectory of a thousand cuts that cannot be distilled into a press release. It is not something, it is an array, a mesh, of factors that no one person can see the totality of."* |
+| **2025-02-11** | *"I knew exactly what 'not consistently candid' was. Death by 1000 cuts. Impossible to press release or sound bite."* |
+| **2025-06-27** | *"When the Board ousted Altman for being not consistently candid I knew exactly what they were talking about. It looks like a whole bunch of other people are starting to find out too."* |
+| **2026-01-07** | *"the not consistently candid one"* — still the shorthand, two years on |
+
+**This is a stronger claim than the structural one in §4**, and of a different kind: not a
+prediction of an event but a reading of a sentence, checkable three ways. *Early* —
+2023-12-03, sixteen days after the firing but months before the board's side was publicly
+argued, when the press reading was still that the wording was evasive. *Stable* — same
+reading, same terms, two and a half years, no revision. *Sourced* — *"I lived through
+one"*, *"my own abuse experience told me"*; and on 2024-05-31 he applies the identical
+mechanism to his own case: *"The type of harm that is involved is fractal and cannot be fit
+in sound bites. Paradoxically it is predictable."*
+
+**Why the first pass missed it, which is the more useful half.** §4 searched `THESIS` —
+Jane Jacobs, monstrous hybrid, for-profit arm — because it had framed the question as *did
+he predict the restructuring.* That lens has no slot for a claim about **what a sentence
+meant**. The standing note names this exactly: *a reading lens decides in advance what
+counts as a thing*, and this is its fourth instance after the Unknown Guest, the Left Behind
+lookup and the Jesus talk show. Frame, index, genre — and now frame again. `CANDOR` is
+searched separately in the script so the next pass cannot repeat it.
+
+Worth noting what this does to the §4 verdict. §4 said *not the event, but the structure*.
+That stands. But the sharpest thing in the window is neither: it is the **interpretation**,
+made in real time from lived experience, and it is the one claim here that later events
+went on to confirm rather than merely fit.
+
 ## Correction — the long-form posts are not the first model-free Endorphin
 
 An earlier draft of `TW_EXPORT.md` called the 432 long-form posts *"a control the project

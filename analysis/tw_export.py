@@ -82,6 +82,11 @@ OPENAI_EVENTS = [
 THESIS = ("jane jacobs", "monstrous hybrid", "systems of survival",
           "incubator of corruption", "incubate corruption", "for profit arm",
           "for-profit arm")
+# The candour thesis -- a *different* claim, about what the board's phrase meant.
+# Kept separate because an earlier pass searched only THESIS and therefore had no
+# slot for this one: see the standing note that a lens decides in advance what
+# counts as a thing.
+CANDOR = ("candid", "thousand cuts", "1000 cuts", "fractal")
 # NovelAI reference, FINDINGS.md's frame table: human blocks following a generation.
 NAI_REF = {"n": 134063, "median": 55, "bins": (46.4, 44.6, 6.7, 2.3)}
 BINS = ((0, 50), (50, 200), (200, 600), (600, 10**9))
@@ -219,8 +224,17 @@ def board_timeline(tweets, notes):
                   key=lambda r: r["created_at"])
     fired = "2023-11-17"
     before = [r for r in hits if r["created_at"][:10] < fired]
+    # The candour reading, tracked separately and only where it is *about* the
+    # phrase -- "candid" alone also catches election candidates and Candide.
+    cand = sorted(
+        (r for r in rows
+         if "candid" in r["text"].lower()
+         and any(k in r["text"].lower() for k in
+                 ("board", "altman", "cuts", "press release", "fractal", "sound bite",
+                  "consistently candid"))),
+        key=lambda r: r["created_at"])
     return {"hits": hits, "before": before, "first": hits[0] if hits else None,
-            "fired": fired}
+            "fired": fired, "candor": cand}
 
 
 def circular_shift(tw, ep, trials=20000, seed=11):
@@ -440,7 +454,7 @@ def build_report(data):
         "appended series carry one `last_updated_at` for dozens of sessions, so neither",
         "clock can be joined to story activity day by day.",
         "",
-        "## 4. The board question: he called the structure, not the event",
+        "## 4. The board question: he called the structure, and he read the sentence",
         "",
         "Endorphin's question, 2026-08-12: *\"check out the timestamps about my stuff",
         "regarding the Board of Directors. Did I call it or what?\"* That is a primed",
@@ -496,6 +510,58 @@ def build_report(data):
         "2022-10-31/11-01 address a \"Director\" who has failed to *\"install your board\"* —",
         "written the day Musk dissolved Twitter's board, and escalating through a fictional",
         "two-week notice period inside a single evening. Same-day satire, not foresight.",
+        "",
+        "### 4b. The candour reading — the strongest claim here, and an earlier pass "
+        "missed it",
+        "",
+        "The board's stated reason was that Altman was *\"not consistently candid in his",
+        "communications with the board.\"* Endorphin's claim is that he knew what that",
+        "phrase was doing: compressing an accumulation of individually unprovable small",
+        f"acts. He returns to it **{len(b['candor'])} times** and never revises it; the "
+        "five substantive statements:",
+        "",
+        "| date | the claim |",
+        "|---|---|",
+        "| **2023-12-03** | *\"Lack of candid communication … is actually perhaps the most "
+        "forgiving wording the board could have given.\"* Same thread, 14/: the silence is "
+        "because the acts are *\"fractally related … one thing ends up referring to "
+        "another\"* — say one and you are *\"drinking from a fire hose\"* |",
+        "| **2024-09-26** | *\"Being not consistently candid is the most forgiving wording "
+        "to the fractal trajectory of a thousand cuts that cannot be distilled into a "
+        "press release. It is not something, it is an array, a mesh, of factors that no "
+        "one person can see the totality of.\"* |",
+        "| **2025-02-11** | *\"I knew exactly what 'not consistently candid' was. Death by "
+        "1000 cuts. Impossible to press release or sound bite.\"* |",
+        "| **2025-06-27** | *\"When the Board ousted Altman for being not consistently "
+        "candid I knew exactly what they were talking about. It looks like a whole bunch "
+        "of other people are starting to find out too.\"* |",
+        "| **2026-01-07** | *\"the not consistently candid one\"* — still the shorthand, "
+        "two years on |",
+        "",
+        "**Why this is stronger than §4's structural call.** It is not a prediction of an",
+        "event but a reading of a sentence, and it is checkable three ways. It is *early*:",
+        "2023-12-03 is sixteen days after the firing but months before the board's own",
+        "side was publicly argued, when the dominant press reading was still that the",
+        "wording was evasive or that the board had no case. It is *stable*: the same",
+        "reading, in the same terms, across two and a half years and many news cycles,",
+        "with no revision. And it is *sourced*, explicitly — *\"I lived through one\"*",
+        "(2023-12-03), *\"my own abuse experience told me\"* (2025-02-11). On 2024-05-31 he",
+        "applies the identical mechanism to his own case: *\"The type of harm that is",
+        "involved is fractal and cannot be fit in sound bites. Paradoxically it is",
+        "predictable.\"*",
+        "",
+        "The 2025-06-27 line is the one that carries a testable edge — *\"a whole bunch of",
+        "other people are starting to find out too\"* — and it is the only forward-looking",
+        "claim in the set.",
+        "",
+        "**An earlier pass of this section missed all of it**, and the reason is on the",
+        "record in `sessions/LATEST.md`: *a reading lens decides in advance what counts as",
+        "a thing.* The first pass searched `THESIS` — Jane Jacobs, monstrous hybrid,",
+        "for-profit arm — because it had framed the question as *did he predict the",
+        "restructuring*. That lens has no slot for a claim about **what a sentence meant**,",
+        "so the candour reading was invisible until Endorphin pointed at it. Same failure",
+        "shape as the Unknown Guest and the Left Behind lookup: frame, index, genre.",
+        "`CANDOR` is now searched separately for exactly that reason.",
         "",
         "**The one clean prediction in the window is about the archive itself.** On",
         "2023-12-05: *\"my twitch channel is for those future moments when corporate wants",

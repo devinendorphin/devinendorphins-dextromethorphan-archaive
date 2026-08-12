@@ -779,6 +779,18 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   blocks either side of the ones the frame wants. **This is not the same error as
   the standing note below** — nothing was over-generalised; something was simply
   invisible.
+  **Fourth instance, 2026-08-12, on the measurement side this time.** `TWITTER.md`
+  §4 asked *did he predict the OpenAI restructuring*, and so searched for the
+  governance thesis (Jane Jacobs, monstrous hybrid, for-profit arm). It therefore
+  had no slot for his **candour reading** — that *"not consistently candid"* is
+  *"the most forgiving wording to the fractal trajectory of a thousand cuts that
+  cannot be distilled into a press release"* (2024-09-26), stated first on
+  2023-12-03 and repeated unrevised six times through 2026-01-07. That is the
+  strongest claim in the archive on the subject, it is the one later events
+  confirmed rather than merely fitted, and Endorphin had to point at it. The
+  script now searches `CANDOR` separately from `THESIS`. **A keyword list is a
+  lens**: writing one chooses in advance what the pass can find, and it deserves
+  the same suspicion as a reading frame.
 - **The readings side has the same failure mode as the measurement side.** §V
   read one Kayra session's collapse as "the limit of the technique" because the
   collapse was thematically perfect. §VI, from a file Endorphin supplied after
