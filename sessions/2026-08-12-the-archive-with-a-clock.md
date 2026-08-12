@@ -130,6 +130,72 @@ No second Knubble-style dating either. The account runs back to 2008 but is dorm
 2022 (1 tweet in 2019, 4 in 2020, 11 in 2021, then 240 in 2022), and the Grok record starts
 2024-12-07, after everything.
 
+## 4. The board question — he called the structure, not the event
+
+Endorphin, same session: *"check out the timestamps about my stuff regarding the Board of
+Directors. Did I call it or what?"* A primed claim in the form that invites agreement, so
+the test run was the one that could embarrass it: find the **earliest** statement of the
+governance thesis and check it against the firing rather than against the restructuring it
+eventually fits.
+
+**Not the event.** The thesis appears 9 times; the first is **2023-12-02**, fifteen days
+*after* the 2023-11-17 firing. Statements before it: **zero**. He posted AI art on the 15th
+and 16th and a Grok marketing joke at 17:20 on the 17th; the only same-day trace is
+22:32 — about two hours after the announcement — and it is oblique (*"Don't poo-poo
+conspiracy theory in a power vacuum"*). Then silence for two weeks.
+
+**The structure, though, holds up with clean timestamps.**
+
+| stated | what | what happened |
+|---|---|---|
+| 2023-12-02 | non-profit + for-profit arm = Jane Jacobs *monstrous hybrid*, incubates corruption | restructuring reported **2024-09-25** (~10 months later), completed **2025-10-28** |
+| 2023-12-03 | *"the chaos gives the target even more power than before"*, and *"it wasn't the firing, it happened before that"* | Altman back **2023-11-22**, most of the board replaced |
+| 2024-05-21 | *"they just need to be separate and Sama no power over the nonprofit"* | 2025 structure keeps the nonprofit above the PBC |
+
+The tell that this is a held frame rather than hindsight is the 2024-09-26 reaction to the
+restructuring news: he does not update, he applies it — *"Converting OpenAI into a for
+profit might just be the wisest thing he will ever do."*
+
+Two things keep it short of prophecy, and both are in the report: the thesis was never on
+the record *before* the crisis, and the monstrous-hybrid frame is general. What is
+genuinely his and genuinely dated is the **2023-12-03** mechanism claim — chaos leaves the
+target stronger, the trigger predated the firing — written five days after Altman's return.
+
+The 2022-10-31/11-01 *"install your board"* tweets are **not** a second call: they were
+written the day Musk dissolved Twitter's board, escalating through a fictional two-week
+notice period inside one evening. Same-day satire.
+
+**The one clean prediction in the window is about this archive.** 2023-12-05: *"my twitch
+channel is for those future moments when corporate wants to revise history. I have 1100+
+episodes of 'no bitch, here are the times it did that for me'."* That is this repository's
+premise, stated two and a half years before it existed.
+
+## Correction — the long-form posts are not the first model-free Endorphin
+
+An earlier draft of `TW_EXPORT.md` called the 432 long-form posts *"a control the project
+has never had."* Endorphin corrected it: *"There are parts of the corpus that are totally
+me… it's not just twitter."* He named four — the **Ted Chiang / New Yorker response**
+("pure essay"), the **episode simulating his ex** who had gone with his abusers to the
+woods ("very little generation there"), the **appeal to YouTube not to delete his
+channel**, and a **PFCizer on accountability that is actually correspondence with a
+friend**, with repair since made — and added *"There might be other."*
+
+He is right, and `analysis/PASTED.md` already half-knew it: of the three things its screen
+cannot tell apart, the third is *"the author's own writing, which is the only one the frame
+wants."* The screen finds the population (233 stories, 20% of all 'human' text; 72 with
+`live_ai_chars` = 0) and has never separated his prose from the other two members — another
+model's output pasted back, and wholesale source documents.
+
+**None of the four is findable by title.** `chiang`, `new yorker`, `youtube`, `pfciz` and
+`accountab` return nothing across 2,016 titles; 66 of the 72 zero-generation stories are
+filed as `New Story`. A content search of the 72 turned up only false positives, so the
+four are most likely in the wider 233 — consistent with "very little generation" rather
+than none. Finding them needs a content search across the full mirror.
+
+What it costs the Twitter claim: the long-form set is *another* sample of him unaccompanied
+— large, dated, uniform — but not the first. What it costs `REGISTER.md` is more
+interesting: a clean same-corpus control has been sitting in the pasted set the whole time.
+
 ## Left open
 
 - **The 432 long-form posts are unread — 333,910 characters, median 534.** This is the

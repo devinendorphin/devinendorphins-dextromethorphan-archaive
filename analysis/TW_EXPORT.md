@@ -149,9 +149,44 @@ is after everything.
 
 - **The 194 tweets from 2026 and the 432 long-form posts are unread.** The
   long-form set is 334,000 characters of the author writing in his own voice with
-  no model in the loop, which is a control the project has never had. Every
-  register measurement in `REGISTER.md` compares him against a model *inside* a
-  generation session. This is him outside one.
+  no model in the loop.
+
+  **Correction, 2026-08-12, from Endorphin — this is not the first such material,
+  and an earlier draft of this file said it was.** The NovelAI corpus already
+  contains pure-Endorphin prose, and `analysis/PASTED.md` already names the
+  category: of the three things its screen cannot tell apart, the third is *"the
+  author's own writing, which is the only one the frame wants."* The screen finds
+  the population — 233 stories holding 20% of all 'human' text, 72 of them with
+  `live_ai_chars` = 0 — but has never separated his writing from the other two
+  members, which are another model's output pasted back in and wholesale source
+  documents (the Army monograph, a Guardian obituary, *Bleeding Edge*).
+
+  He can name members of it, which the screen cannot:
+
+  - **the response to Ted Chiang in the New Yorker** — "pure essay";
+  - **the episode simulating his ex**, who had gone with his abusers to the
+    woods — "very little generation there";
+  - **the appeal to YouTube not to delete his channel**;
+  - **a PFCizer on accountability that is actually correspondence with a friend**,
+    with whom repair has since been made.
+
+  "There might be other" — so the list is a seed, not a census. None of the four
+  is findable by title (`chiang`, `new yorker`, `youtube`, `pfciz` and
+  `accountab` all return nothing across 2,016 titles), which is the standing
+  "titles lie" note again: 66 of the 72 zero-generation stories are filed as
+  `New Story`. **Finding them means searching content across the mirror**, and
+  the right first move is to pull those 72 files and read them.
+
+  What this costs the Twitter claim: the long-form posts are *another* sample of
+  him unaccompanied, useful for being large, dated and uniform, but they are not
+  the project's first. What it costs `REGISTER.md` is more interesting — the
+  measurement compares him against a model inside a generation session, and a
+  clean same-corpus control for that has been sitting in the pasted set the whole
+  time, unseparated.
+
+  The four also differ in kind from each other and from the tweets — an essay, a
+  simulation, an appeal to a platform, and private correspondence. Any register
+  work that pools them is measuring genre, not voice.
 - **The tweet↔story join was not attempted**, deliberately. The standing note
   holds: appended series carry one `last_updated_at` for dozens of sessions, so
   day-matching undersamples exactly the stories that were used most. The clock

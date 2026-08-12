@@ -67,6 +67,21 @@ SKIP = (
 )
 
 TWEET_TS = "%a %b %d %H:%M:%S %z %Y"
+
+# External events, from public reporting rather than from this archive. Kept in
+# one place and labelled, because §4 is only as good as these dates and nothing
+# in the export can check them.
+OPENAI_EVENTS = [
+    ("2022-10-31", "Musk dissolves Twitter's board; becomes sole director"),
+    ("2023-11-17", "OpenAI board fires Sam Altman"),
+    ("2023-11-22", "Altman reinstated; most of the board replaced"),
+    ("2024-09-25", "OpenAI's plan to restructure as a for-profit is reported"),
+    ("2025-10-28", "Restructuring completes: OpenAI Foundation over a PBC"),
+]
+# The governance thesis, as he states it. Matched case-insensitively.
+THESIS = ("jane jacobs", "monstrous hybrid", "systems of survival",
+          "incubator of corruption", "incubate corruption", "for profit arm",
+          "for-profit arm")
 # NovelAI reference, FINDINGS.md's frame table: human blocks following a generation.
 NAI_REF = {"n": 134063, "median": 55, "bins": (46.4, 44.6, 6.7, 2.3)}
 BINS = ((0, 50), (50, 200), (200, 600), (600, 10**9))
@@ -185,6 +200,27 @@ def episode_days(path):
         if re.fullmatch(r"\d{4}-\d{2}-\d{2}", head):
             days[dt.date.fromisoformat(head)] += 1
     return days
+
+
+def board_timeline(tweets, notes):
+    """§4. Did he call the OpenAI board crisis, or read it afterwards?
+
+    The question was Endorphin's, and it is exactly the shape the standing note
+    warns about -- a primed claim, asked in a way that invites agreement. So the
+    test is the one that could embarrass it: find the *earliest* statement of the
+    governance thesis and check it against the firing date rather than against
+    the restructuring it eventually fits.
+    """
+    rows = [{"created_at": dt.datetime.strptime(t["created_at"], TWEET_TS).isoformat(),
+             "text": t.get("full_text", ""), "kind": "tweet"} for t in tweets]
+    rows += [{"created_at": n["createdAt"], "kind": "long-form",
+              "text": n.get("core", {}).get("text", "")} for n in notes]
+    hits = sorted((r for r in rows if any(t in r["text"].lower() for t in THESIS)),
+                  key=lambda r: r["created_at"])
+    fired = "2023-11-17"
+    before = [r for r in hits if r["created_at"][:10] < fired]
+    return {"hits": hits, "before": before, "first": hits[0] if hits else None,
+            "fired": fired}
 
 
 def circular_shift(tw, ep, trials=20000, seed=11):
@@ -404,6 +440,69 @@ def build_report(data):
         "appended series carry one `last_updated_at` for dozens of sessions, so neither",
         "clock can be joined to story activity day by day.",
         "",
+        "## 4. The board question: he called the structure, not the event",
+        "",
+        "Endorphin's question, 2026-08-12: *\"check out the timestamps about my stuff",
+        "regarding the Board of Directors. Did I call it or what?\"* That is a primed",
+        "claim asked in the form that invites agreement, so the test run here is the one",
+        "that could embarrass it — find the **earliest** statement of the governance",
+        "thesis and check it against the firing, not against the restructuring it",
+        "eventually fits.",
+        "",
+        "External dates below are from public reporting, not from this archive; they are",
+        "kept in `OPENAI_EVENTS` in the script so they can be checked and corrected.",
+        "",
+    ]
+    b = data["board"]
+    L += [
+        f"**The thesis is stated {len(b['hits'])} times.** The first is "
+        f"**{b['first']['created_at'][:10]}** — *fifteen days after* the firing on "
+        f"{b['fired']}. Statements before the firing: **{len(b['before'])}**.",
+        "",
+        "So: **not the event.** Nothing in the archive anticipates 2023-11-17. He posted",
+        "AI art on the 15th and 16th, a joke about Grok's marketing copy at 17:20 on the",
+        "17th, and at 22:32 that day — about two hours after the announcement — the only",
+        "same-day trace, which is oblique: *\"Don't poo-poo conspiracy theory in a power",
+        "vacuum. Those are the geothermal vents to conspiracy theory.\"* Then nothing on it",
+        "for two weeks.",
+        "",
+        "**What he did call is the structure, and there the timestamps are clean.**",
+        "",
+        "| stated | what | what happened |",
+        "|---|---|---|",
+        "| 2023-12-02 | the non-profit with a for-profit arm is a Jane Jacobs *monstrous "
+        "hybrid* and will incubate corruption | restructuring reported **2024-09-25**, "
+        "~10 months later; completed **2025-10-28** |",
+        "| 2023-12-03 | *\"an org maneuver like that, where the chaos gives the target even "
+        "more power than before\"* — and *\"it wasn't the firing, it happened before that\"* "
+        "| Altman returned on **2023-11-22** with most of the board replaced |",
+        "| 2024-05-21 | *\"they just need to be separate and Sama no power over the "
+        "nonprofit\"* | the 2025 structure keeps the nonprofit above the PBC |",
+        "",
+        "The 2024-09-26 response to the restructuring news is the tell that this is a held",
+        "frame rather than hindsight: he does not update, he applies it — *\"Converting",
+        "OpenAI into a for profit might just be the wisest thing he will ever do,\"* because",
+        "on his own account the hybrid was the problem and separating it is the fix.",
+        "",
+        "**Two things keep this short of prophecy.** The thesis is stated *after* the",
+        "crisis, so it was never on the record as a prediction of it; and the monstrous-",
+        "hybrid frame is general — an OpenAI for-profit conversion was already widely",
+        "speculated by late 2023. What is genuinely his, and dated, is the **2023-12-03**",
+        "reading that the chaos would leave the target stronger and that the trigger",
+        "predated the firing. That was written five days after Altman's return and it is a",
+        "claim about mechanism, not a summary of the news.",
+        "",
+        "**The earlier board material is not a call either.** Three tweets on",
+        "2022-10-31/11-01 address a \"Director\" who has failed to *\"install your board\"* —",
+        "written the day Musk dissolved Twitter's board, and escalating through a fictional",
+        "two-week notice period inside a single evening. Same-day satire, not foresight.",
+        "",
+        "**The one clean prediction in the window is about the archive itself.** On",
+        "2023-12-05: *\"my twitch channel is for those future moments when corporate wants",
+        "to revise history. I have 1100+ episodes of 'no bitch, here are the times it did",
+        "that for me'.\"* That is this repository's premise, stated two and a half years",
+        "before it existed.",
+        "",
         "## What this archive cannot do",
         "",
         "See `analysis/TW_EXPORT.md` for the full accounting. In short: no undo tree, so no",
@@ -437,10 +536,12 @@ def main():
     notes = unwrap(payload(files.get("note-tweet.js", b"x=[]")), "noteTweet")
     chats = by_chat(turns)
     tw_days = tweet_days(tweets)
+    board = board_timeline(tweets, notes)
     clock = circular_shift(tw_days, episode_days(args.episodes))
 
     data = {
         "chats": chats, "tweets": tweets, "notes": notes, "clock": clock,
+        "board": board,
         "tw_days": tw_days,
         "handle": man["userInfo"]["userName"],
         "generated": man["archiveInfo"]["generationDate"][:10],

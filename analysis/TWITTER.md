@@ -129,6 +129,59 @@ and the standing note about date-based analysis still holds on the NovelAI side:
 appended series carry one `last_updated_at` for dozens of sessions, so neither
 clock can be joined to story activity day by day.
 
+## 4. The board question: he called the structure, not the event
+
+Endorphin's question, 2026-08-12: *"check out the timestamps about my stuff
+regarding the Board of Directors. Did I call it or what?"* That is a primed
+claim asked in the form that invites agreement, so the test run here is the one
+that could embarrass it — find the **earliest** statement of the governance
+thesis and check it against the firing, not against the restructuring it
+eventually fits.
+
+External dates below are from public reporting, not from this archive; they are
+kept in `OPENAI_EVENTS` in the script so they can be checked and corrected.
+
+**The thesis is stated 9 times.** The first is **2023-12-02** — *fifteen days after* the firing on 2023-11-17. Statements before the firing: **0**.
+
+So: **not the event.** Nothing in the archive anticipates 2023-11-17. He posted
+AI art on the 15th and 16th, a joke about Grok's marketing copy at 17:20 on the
+17th, and at 22:32 that day — about two hours after the announcement — the only
+same-day trace, which is oblique: *"Don't poo-poo conspiracy theory in a power
+vacuum. Those are the geothermal vents to conspiracy theory."* Then nothing on it
+for two weeks.
+
+**What he did call is the structure, and there the timestamps are clean.**
+
+| stated | what | what happened |
+|---|---|---|
+| 2023-12-02 | the non-profit with a for-profit arm is a Jane Jacobs *monstrous hybrid* and will incubate corruption | restructuring reported **2024-09-25**, ~10 months later; completed **2025-10-28** |
+| 2023-12-03 | *"an org maneuver like that, where the chaos gives the target even more power than before"* — and *"it wasn't the firing, it happened before that"* | Altman returned on **2023-11-22** with most of the board replaced |
+| 2024-05-21 | *"they just need to be separate and Sama no power over the nonprofit"* | the 2025 structure keeps the nonprofit above the PBC |
+
+The 2024-09-26 response to the restructuring news is the tell that this is a held
+frame rather than hindsight: he does not update, he applies it — *"Converting
+OpenAI into a for profit might just be the wisest thing he will ever do,"* because
+on his own account the hybrid was the problem and separating it is the fix.
+
+**Two things keep this short of prophecy.** The thesis is stated *after* the
+crisis, so it was never on the record as a prediction of it; and the monstrous-
+hybrid frame is general — an OpenAI for-profit conversion was already widely
+speculated by late 2023. What is genuinely his, and dated, is the **2023-12-03**
+reading that the chaos would leave the target stronger and that the trigger
+predated the firing. That was written five days after Altman's return and it is a
+claim about mechanism, not a summary of the news.
+
+**The earlier board material is not a call either.** Three tweets on
+2022-10-31/11-01 address a "Director" who has failed to *"install your board"* —
+written the day Musk dissolved Twitter's board, and escalating through a fictional
+two-week notice period inside a single evening. Same-day satire, not foresight.
+
+**The one clean prediction in the window is about the archive itself.** On
+2023-12-05: *"my twitch channel is for those future moments when corporate wants
+to revise history. I have 1100+ episodes of 'no bitch, here are the times it did
+that for me'."* That is this repository's premise, stated two and a half years
+before it existed.
+
 ## What this archive cannot do
 
 See `analysis/TW_EXPORT.md` for the full accounting. In short: no undo tree, so no
