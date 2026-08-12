@@ -58,6 +58,33 @@ on chosen/rejected pairs, branch reachability, or settings simply cannot be comp
 side. Write up what each record can and cannot answer before designing anything that joins
 them; the asymmetry is a finding, not an obstacle to route around.
 
+## The third corpus
+
+**As of 2026-08-12 there are three archives, and the newest is the smallest and the most
+different.** A Twitter/X export (`analysis/tw_export.py`, schema and asymmetry table in
+`analysis/TW_EXPORT.md`, measurements in `analysis/TWITTER.md`): 3,909 tweets, 432 long-form
+posts, and **2,818 Grok chat turns across 431 chats**, 2024-12-07 .. 2026-07-29.
+
+Two rules for it, and they pull in opposite directions:
+
+- **Almost nothing transfers to it.** No undo tree, no rejected generations, no sampler
+  settings, strict User/Agent alternation. Everything built on chosen/rejected pairs,
+  branch reachability or settings — most of `analysis/` — simply cannot be computed here.
+- **It is the only archive with a clock**, which is the one measurement NovelAI is
+  structurally incapable of (`FINDINGS.md` §11). But the resolution is **one timestamp per
+  exchange, not per turn**: the Agent turn copies the request stamp exactly, in 1,409 of
+  1,409 cases, so model latency is unrecoverable and every interval mixes generation,
+  reading and typing.
+
+**And it is not the same practice** — 431 utility chats at a median of 4 turns and one
+minute, against NovelAI documents of 3,341 blocks. Do not read it as more of the corpus.
+
+**Privacy is not inherited here.** The public-repo decision was made about Endorphin's own
+fiction; it does not extend to an export containing direct messages, a phone number, an
+email and an IP audit. `tw_export.py` has a `SKIP` list and never opens them. Anything
+committed to `data/` from this archive carries **lengths and dates only, never message
+text**. Keep it that way.
+
 ## The harness
 
 The canonical working agreements, the atlas of all 20 repos, and the shared glossary live in

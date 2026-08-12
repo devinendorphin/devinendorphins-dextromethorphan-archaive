@@ -1,7 +1,8 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-10**, `sessions/2026-08-10-the-aid-transfer.md`
-Prior: `sessions/2026-08-04-the-wake-test.md`,
+Last session: **2026-08-12**, `sessions/2026-08-12-the-archive-with-a-clock.md`
+Prior: `sessions/2026-08-10-the-aid-transfer.md`,
+`sessions/2026-08-04-the-wake-test.md`,
 `sessions/2026-08-04-the-deposit.md`,
 `sessions/2026-08-04-the-external-clock.md`,
 `sessions/2026-08-04-the-setting-he-built.md`,
@@ -96,6 +97,19 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
   for anything further, open a new PR, and never stack on it or reuse #6.
   Not read, not counted, not joined to the NovelAI side. The transfer named in
   the not-a-release position is settled *as an extraction* and nothing more.
+- **Twitter/X — the third archive, extracted and partly analysed 2026-08-12.**
+  `analysis/tw_export.py`, `analysis/TW_EXPORT.md` (schema + the three-archive
+  asymmetry table), `analysis/TWITTER.md` (generated), on branch
+  `claude/twitter-data-analysis-hzt3gp`. 4.03 GB / 8,571 files, handle `glubose`,
+  Drive file id **`10bD3yruaqhxucd-YW-ywl1Zx4m2HlokP`** — the script reads the
+  `.zip` as delivered, no unpacking. **3,909 tweets, 432 long-form posts, 2,818
+  Grok chat turns / 431 chats** (2024-12-07 .. 2026-07-29).
+  **Almost nothing in `analysis/` transfers to it** — no undo tree, no rejected
+  generations, no sampler settings, strict User/Agent alternation. **It is the
+  only archive with a clock**, at one stamp per *exchange* (the Agent turn copies
+  the request stamp exactly, 1,409/1,409). Committed data is lengths and dates
+  only: `data/twitter_meta.jsonl`, `data/TWEET_DAYS.tsv`. DMs, phone, email, IP
+  audit and ad records are never opened — `SKIP` list in the script.
 
 ## Urgent — preservation
 
@@ -605,6 +619,35 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   by comparing the longest proposal against a random one. Each time the
   diagnostic was a control matching or beating the treatment. This corpus
   punishes the obvious metric.
+  **A sixth case, 2026-08-12, ran the other way and is worth keeping for the
+  contrast:** the median-55-character cue length was tested off-platform against
+  2,818 Grok turns and **held at 58** — different platform, model, interface and
+  activity, so the number is the author, not NovelAI's text box. The obvious
+  metric survived; it was the *control* that narrowed it. See the next note.
+- **The cue length is the author's, but it is not evidence for the turn-taking
+  mechanism.** The Grok chat *opener* — a turn with nothing before it, which
+  cannot be a response to a generation — has a median of **55 characters**,
+  indistinguishable from the 58 of turns that do follow one. Position in the
+  exchange does not move the number. So `FINDINGS.md`'s frame keeps the finding
+  that these are short cues and **loses the median as an argument that they are
+  turns rather than openings**; that argument has to rest on the branch
+  structure, where it already does. Do not cite the median as evidence for
+  turn-taking without this.
+- **Duration exists now, in one archive, at exchange resolution.** §11 says
+  tempo is unrecoverable and `tempo.py` recovered only rhythm; the Grok record
+  has wall-clock time. **But the Agent turn copies the request timestamp
+  exactly** (1,409/1,409), so model latency is unrecoverable and every interval
+  mixes generation, reading and typing. The measured result is a **threshold, not
+  a slope**: turnaround is flat at ~36s from the shortest agent turns to 2,000
+  characters, then climbs steeply — and the flat stretch is what rules out
+  generation time as the explanation. Do not describe this as per-turn timing.
+- **Privacy is not inherited across archives.** *"i am prepared to be scraped"*
+  was said about Endorphin's own fiction. The Twitter export holds **two-party**
+  data — 16 direct-message threads — plus phone, email, creation IP and a
+  340-entry IP audit. He can consent to his own exposure, not his correspondents'.
+  `tw_export.py` has a `SKIP` list and never opens them, and everything committed
+  from that archive carries **lengths and dates only, never message text**. Ask
+  before widening this; whether to commit tweet text is open and is his call.
 - **Two kinds of story, and it decides which date statistic is honest.**
   Endorphin's correction, 2026-08-04: *"some of the series like… the Dark Forest
   is appended, each new episode appending to them to a single file to build the

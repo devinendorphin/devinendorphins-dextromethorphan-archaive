@@ -11,6 +11,13 @@ combination is what makes it a corpus rather than a folder of stories: the
 generations you *rejected* are still in it, next to the ones you kept, next to
 the settings that produced both.
 
+A third archive arrived on 2026-08-12 — a Twitter/X export whose Grok chat
+history is 2,818 turns with a language model, **timestamped**. It has none of the
+undo tree, so almost nothing the rest of this repo measures can be run on it; it
+has the one thing the NovelAI export lacks, which is a clock. What each of the
+three can and cannot answer is set out in
+[`analysis/TW_EXPORT.md`](analysis/TW_EXPORT.md).
+
 It was not made as research. It was made by playing, for years, with no thought
 toward use. The claim here is that the record is analysable anyway, and that
 some of what it shows is precisely what nobody was aiming at — see
@@ -51,10 +58,12 @@ analysis/
   test_aid_export.py     its tests; the live four need no credential
   AID_RUNBOOK.md         how to actually run it, step by step
   AID_EXPORT.md          how the undocumented list query was recovered
+  tw_export.py           the Twitter/X export — the only archive with a clock
+  TW_EXPORT.md           its schema, and what the three archives can't ask
   TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md
   REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md
   DIRECTION.md HANDOVER.md HANDOFF.md EPISODES.md SWEEPS.md
-  PASTED.md COINAGE.md                                      generated
+  PASTED.md COINAGE.md TWITTER.md                           generated
 corpus/cited/             the 19 documents the readings quote — see its README
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)
@@ -62,6 +71,8 @@ data/
   MISSING.md             the 483 that would not decrypt, and when they died
   FAILED_STORIES.txt     their ids, in the shape NovelAI support would want
   EPISODES.tsv           1,492 broadcasts recovered by OCR, 2020-11 to 2024-12
+  twitter_meta.jsonl     one row per Grok turn, lengths only (no message text)
+  TWEET_DAYS.tsv         tweets per day, 580 days — the second external clock
 ```
 
 ## Reproducing
@@ -110,6 +121,18 @@ undocumented list query was recovered: [`analysis/AID_EXPORT.md`](analysis/AID_E
 python3 analysis/aid_export.py --whoami                 # check the token first
 python3 analysis/aid_export.py --only <shortId-or-URL>  # smoke test one item
 python3 analysis/aid_export.py --out ./exports          # the whole library
+```
+
+The Twitter/X side is a third pull again, and a third *shape* — no undo tree, no
+sampler settings, but the only per-exchange timestamps in the project. It reads
+straight out of the delivered `.zip` without unpacking its 4 GB of media, and it
+never opens the direct messages or the account PII:
+[`analysis/TW_EXPORT.md`](analysis/TW_EXPORT.md).
+
+```sh
+python3 analysis/tw_export.py twitter-<date>-<hash>.zip --out out \
+    --meta data/twitter_meta.jsonl --days data/TWEET_DAYS.tsv \
+    --report analysis/TWITTER.md
 ```
 
 `exports/` is gitignored for the same reason `corpus/` is: the repo is public and
