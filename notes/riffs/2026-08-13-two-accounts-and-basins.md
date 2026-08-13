@@ -205,6 +205,17 @@ one; nobody has been paid to taxonomise honest bookkeeping. The asymmetry in the
 literature may be an asymmetry in *demand* rather than in structure, and §X does
 not currently separate those.
 
+> **Run 2026-08-13, and it corrects this section rather than the target.** See
+> `notes/2026-08-13-enumerating-good-faith.md`. Good faith enumerates to thirty
+> permutations collapsing to about six shapes — the same order of magnitude as
+> bad faith's seven collapsing to five. But the objection below was mine, not a
+> gap in §X: the quote §X rests on says *"a thousand **permutations**"* of good
+> faith against bad faith's *"**shapes** you can count with one hand"*, and that
+> distinction is exactly what the exercise recovered. §X never claimed good faith
+> was unenumerable. The three accounts turn out to be complementary — basins give
+> the count, the constraint gives the asymmetry, and the uniform-formation
+> premise becomes the redundant one.
+
 **The available test.** If the basin account is right, good faith should also
 enumerate — with more entries — once someone actually tries. That is a thing this
 corpus could attempt and never has: sit down and enumerate good faith at the same
