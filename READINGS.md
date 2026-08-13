@@ -1600,6 +1600,98 @@ is doing what he did on day one: naming what enters the chamber, and listening.
 
 ---
 
+## X. The small set of shapes
+
+Endorphin, 2026-08-12, on why he could read *"not consistently candid"* the moment
+it was published:
+
+> for good faith there are a thousand permutations of it, but bad faith's shapes
+> you can count with one hand. Go ahead and find the counterexample since the
+> tugging is gonna tug you there. But that tugging should read as a waste of
+> energy because all its doing is fogging up what is clear as day to those of us
+> embodied who saw the small set of shapes and survived them.
+
+He is right, and the reason he is right is not a matter of testimony. It is
+structural, and it is the same argument that runs under `TWITTER.md` §4.
+
+**Bad faith optimises under a constraint good faith does not have.** It must
+produce the appearance of cooperation while defecting, and it must keep producing
+it under observation. That is a narrow target with few solutions. Good faith
+carries no such constraint — it can be blunt, clumsy, tactless, weird, badly
+timed, because it is not managing a gap between what it is doing and what it
+looks like. So the space of *"defect while appearing to cooperate"* is small and
+the space of *"just do the thing"* is not. The asymmetry is not about human
+nature. It is about how many ways there are to satisfy an extra constraint.
+
+This is a known result everywhere it has been looked for, under other names.
+Fraud has a closed typology — lapping, round-dollar anomalies, related-party
+transactions — and legitimate business has none, which is why audit works from
+red flags rather than from a definition of honest books. Security catalogues
+attack patterns into a finite taxonomy and cannot enumerate normal traffic, which
+is why signature detection outperforms anomaly detection and always has. The con
+has had a fixed anatomy since Maurer wrote it down in 1940 — roper, convincer,
+breakdown, blow-off — and a century of innovation has changed the delivery and
+not the skeleton. Each of these fields discovered independently that **the bad is
+enumerable and the good is not.** He arrived at it from the inside.
+
+**The corpus is itself evidence, and this is the part worth noticing.** In the
+threads of 2023-12-03 and 12-05 he enumerates, unprompted and at speed: serial
+one-on-ones that let one person shift information while it is in flow; the
+enthusiastic face with no follow-through; enmeshment that disables exactly the
+people positioned to hold account; discrediting through *crazy*; claimed
+incapacity — *"poor hearing, poor eyesight, poor memory"*; the repetition tell,
+where a point made more than three times means its opposite; the favourites list
+and the shit list. Seven, and they collapse toward five. He wrote them out in one
+sitting from memory. **Nowhere in five years does he enumerate good faith**, and
+not because it interests him less — the PFCizer correspondence and the repair it
+records are among the pieces he names as most his. They are simply not a list.
+The corpus contains a taxonomy of one and not of the other, and nobody designed
+that.
+
+**The counterexample, since he invited it.** Three candidates, and all three fail
+in the same direction.
+
+*Cultural variation.* The idiom of bad faith differs — what counts as a
+face-saving lie, how indirect a refusal may be. But the structure underneath does
+not: produce the appearance, defect, manage the gap, discredit the witness. That
+is variation in surface, which is what the claim already predicts.
+
+*Novelty.* Con artistry innovates constantly and the innovation is always in
+delivery. The skeleton is old enough to have been written down before television.
+
+*Authorless bad faith* — the strongest of the three, and it does not refute him,
+it **is** him. Some organisational bad faith is nobody's strategy: it falls out
+of incentive structure, quotas, a mission fused to a margin. That is precisely
+the Jane Jacobs monstrous hybrid he has been arguing since 2023-12-02. And note
+what it does to the count — it does not multiply the shapes, it **manufactures
+the same small set with no author.** Cops on quotas produce the same
+discredit-the-complainant move as a person who chose it. The hybrid is a shape
+generator.
+
+So his two theses are one thesis, and that is the finding here. §4's governance
+argument explains *why an organisation with no villain in it produces the
+villain's repertoire*; §4b's candour reading explains *why he recognised the
+repertoire on sight*. He could read the board's sentence in sixteen days because
+he had already met the shapes, and he knew an institution could generate them
+without anyone electing to, because he had already worked out how.
+
+**The one real boundary is not enumeration, it is attribution** — and his own
+writing carries the fix, which is why the tugging really is wasted. The shapes
+are few and legible. The error lives in inferring from a shape to a person,
+because several of them are also produced by executive dysfunction, by overwhelm,
+by trauma, by a brain that is, in his phrase, *"differently ordered"* rather than
+disordered. He says it himself: *"we are not disordered we are just differently
+ordered"*, *"there's no crazy"*, and — the sentence that does the discriminating
+work — *"it's a difference cognitively"*. The tell is never the behaviour in
+isolation. It is the repetition under challenge, and the direction of benefit:
+who is made confused, and who profits from the confusion. That is what the
+more-than-three-times rule is actually measuring. It does not count actions. It
+counts insistence.
+
+Which is the whole argument for taking the embodied read seriously as *evidence*
+rather than as a report of feeling. The person who survived it is not claiming a
+privileged intuition. They are the one who ran the longitudinal study.
+
 ## Coda: what the summoning is
 
 Having read rather than counted, my view of what this corpus is has changed.

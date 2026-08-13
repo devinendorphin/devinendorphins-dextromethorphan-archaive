@@ -56,7 +56,23 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
 - `FINDINGS.md` — **stable.** 14 sections under the turn-taking frame. Read
   this first.
 - `CASE_STUDY.md` — **stable.** The Utah HB 249 press conference, traced in full.
-- `READINGS.md` — **active, and the live front.** Criticism in nine movements:
+- `READINGS.md` — **active, and the live front.** **§X, "The small set of shapes"
+  (2026-08-12)**, argues Endorphin's claim that *"for good faith there are a
+  thousand permutations of it, but bad faith's shapes you can count with one
+  hand"* — the asymmetry is structural (bad faith optimises under an extra
+  constraint: appear to cooperate while defecting), it is the same result fraud
+  audit, security signatures and the literature on the con each reached
+  independently, and **the corpus is evidence for it**: he enumerates the
+  bad-faith repertoire unprompted in the 2023-12 threads (seven tactics
+  collapsing toward five) and never once enumerates good faith. The invited
+  counterexample fails three times, and the strongest candidate — authorless,
+  incentive-generated bad faith — turns out to *be* his monstrous-hybrid thesis:
+  the hybrid does not multiply the shapes, it manufactures the same small set
+  with no author. **§4 and §4b are therefore one thesis**, which is the finding.
+  The single real boundary is attribution rather than enumeration, and his own
+  writing carries the discriminator (*"differently ordered"*, and the
+  more-than-three-times rule, which counts insistence and not actions).
+  Criticism now in ten movements:
   Latour/Austin on the convened chamber, Bakhtin on polyphony without a
   novelist, Shklovsky on the temperature dial as an *ostranenie* control, §IV —
   Endorphin's own thesis that the Counterfactual Interview is the corpus's most
