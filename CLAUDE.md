@@ -47,8 +47,10 @@ Sharks* — note the spelling: the NovelAI copy is *Doctor Knubb**ins** and the 
 neither string matches the other corpus, so search both — opens **2020-12-07T10:04:05Z with
 76 actions** — matching action-for-action the AI
 Dungeon listing pasted into block 1 of the NovelAI Pynchon × Tingle story, which until now
-was the only evidence that layer existed. The archive starts on AI Dungeon in December 2020,
-eighteen months before the first NovelAI story.
+was the only evidence that layer existed. That made December 2020 the archive's floor,
+eighteen months before the first NovelAI story — **superseded on 2026-08-13 by the
+Facebook export, which reaches back to March 2008 and dates first contact with AI
+Dungeon to 2020-08-10. See "The fourth corpus" below.**
 
 The five rules above are NovelAI rules and most of them do not transfer. NovelAI preserves
 the full undo tree, which is what makes rejected generations and per-block settings
@@ -84,6 +86,38 @@ fiction; it does not extend to an export containing direct messages, a phone num
 email and an IP audit. `tw_export.py` has a `SKIP` list and never opens them. Anything
 committed to `data/` from this archive carries **lengths and dates only, never message
 text**. Keep it that way.
+
+## The fourth corpus
+
+**As of 2026-08-13 there are four archives, and the newest one is the oldest.** A
+Facebook/Meta export (`analysis/fb_export.py`, schema and asymmetry table in
+`analysis/FB_EXPORT.md`, measurements in `analysis/FACEBOOK.md`): **5,018 posts
+and 439,512 words spanning 2008-03-12 .. 2024-10-18**, plus 1,385 comments, 377
+post revisions, and 137 Meta AI chat turns.
+
+**It re-dates the archive by twelve years.** The section above says the archive
+starts on AI Dungeon in December 2020. It starts on Facebook in **March 2008**,
+and the posts document the generation practice's first four months — the ones
+the AI Dungeon export lost. First contact is **2020-08-10**, not 2020-12-07.
+
+Three things about it:
+
+- **It is the only archive with a real clock.** `FINDINGS.md` §11 says NovelAI
+  cannot date anything and `analysis/TWITTER.md` says Twitter stamps one time
+  per *exchange*. Facebook stamps every post, comment, message and revision
+  **individually, to the second**.
+- **It is the only edit history of human prose** — 377 timestamped drafts, median
+  68 seconds apart. NovelAI preserves rejected *model* text; this preserves
+  rejected *authorial* text. Do not conflate them.
+- **Everything built on branches, rejected generations or sampler settings is
+  still uncomputable here**, exactly as on the AI Dungeon and Twitter sides.
+
+**The privacy problem is worse here than on Twitter.** The export holds **1,524
+private message threads, 147,233 turns and 1.77 million words** belonging
+substantially to other people, plus an IP audit, login history, uploaded phone
+contacts and a search history. `exports/` is gitignored. Anything committed to
+`data/` from this archive carries **counts, lengths and dates only — never
+message text and never participant names**. The threads are deliberately unread.
 
 ## The harness
 
