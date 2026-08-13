@@ -135,6 +135,65 @@ attacking him — *"you ask to be held accountable yet when I (and we) do, you
 attack us and belittle our experiences."* Whatever "circumvent and neutralize"
 meant in practice, it did not mean publishing only the favourable half.
 
+### The stated intention: retaining the net
+
+Endorphin, 2026-08-13, correcting the framing above: the project's intention was
+*"to neutralize smear tactics via triangulation […] in the hopes of **retaining
+the social net I was in at the time**."*
+
+**That is the purpose, and everything below is method.** The readings in this file
+had been treating the composition as the point — an argument, a piece, an answer
+to a research question. Those descriptions are his own and still hold, but they
+describe the instrument. The aim was not vindication, exposure or justice. It was
+keeping the people.
+
+Read that way, four features of the series stop being stylistic and become
+load-bearing:
+
+- **Simultaneity is the counter-mechanism.** Triangulation works by reaching each
+  person separately with a version tailored to them, each recipient believing
+  they are the only one who knows. It cannot survive everyone holding the same
+  record at the same moment. That is why the answer had to be 157 fragments in
+  four days rather than an essay: an essay can be summarised and re-tailored in
+  the retelling; a simultaneous public dump cannot.
+- **Non-naming is strategy, not only ethics.** `MAY2019.md` records three stated
+  reasons for refusing to name — DSM stigma, the harm of amplification, the
+  anonymised roles. The goal supplies a fourth and decisive one: **naming anyone
+  inside the net forces everyone else to choose, which splits the net** — the
+  outcome the smear is working toward. The black bars are the only move
+  consistent with the aim.
+- **Publishing the material against himself follows too.** If the audience is a
+  network that also contains the other party, being seen to publish the
+  unfavourable half is what makes the record admissible to them.
+- **The art frame is a social instrument.** *"Thanks for attending my rhizome"*,
+  the artist statement, the composed ending — these convert what would read as a
+  public denunciation into a work. **A network can attend a piece; it cannot
+  attend a tribunal without taking sides.** The framing gives people a way to
+  look at the evidence without being asked to adjudicate.
+
+And *rhizome* stops being only a formal joke. Deleuze and Guattari's figure is a
+model of non-hierarchical connection — a social topology before it is an
+aesthetic one. **He chose the network figure for an operation whose object was to
+save a network.**
+
+### It did not work, and that is where the thesis comes from
+
+The riff's 2019 entry reads *"enough distance from the event, enough loss of
+community, enough insight as to the phenomenology of coercive behaviors"*. The
+loss is stated as a precondition of the insight. **"Authoritarianism is
+interpersonal violence at scale" is what he got instead of the net.**
+
+**The export cannot measure this, and should not be made to.** Facebook exports
+surviving friendships and their start dates; it does not export removals. Anyone
+who left is simply absent, including friendships formed in 2019 and ended later.
+What the file does show is that new-friendship formation was already contracting
+before the summer — 2016: 51, 2017: 34, 2018: 22, 2019: 23 — with the decline
+beginning in 2017, the year he dates his certainty to. That is consistent with
+withdrawal from the environments, which he describes directly (*"I extracted
+myself from those environments"*, 05-28), and it is not evidence about retention
+either way. The 683 surviving friendships are survivors as of October 2024 and
+say nothing about who was there in June 2019.
+
 ### The July series is a composed piece, and he names its form
 
 Read at its two ends, the dump is not a burst. It is bracketed by statements of
