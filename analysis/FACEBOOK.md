@@ -101,14 +101,101 @@ And **`Transcript 1` has no `Transcript 2`** anywhere in the export. Absent a
 second instalment it is weak evidence on its own — but combined with a series
 that is half screenshots, it is the kind of gap worth not explaining away.
 
-### Handling
+### What the screenshots actually are
 
-These images are third-party message screenshots. They were public in 2019;
-that does not make them this repo's to redistribute. They stay under gitignored
-`exports/`, are not committed, and are not quoted here beyond their form. Nothing
-further should be done with them without Endorphin's explicit decision — which
-also applies to any OCR pass, since OCR would turn them into exactly the message
-text the privacy rule excludes.
+Cleared for analysis by Endorphin on 2026-08-13 — *"these image already respect
+privacy"* — and OCR'd by `analysis/fb_jul2019.py`. 169 of 174 carry readable
+text, 106,030 characters.
+
+**The redaction claim holds, and it is stricter than usual.** Across all 174:
+**zero** handles, phone numbers or email addresses, and every capitalised
+personal name in the OCR belongs to a public figure or published author —
+Ehrlichman, Nixon, Bateson, Bergson, Verwoerd, Eli Lilly. Message screenshots are
+cropped above the sender. What is blacked out is not a name but a **recurring
+category term**, struck with a bar everywhere it occurs, including mid-sentence
+where the grammar plainly needs it (*"neither are you aware that your ███ is not
+inhabited by a single, solid, coherent, consistent agent"*). The diagnostic label
+is removed and the mechanism is left standing. **The argument is built to work
+without the category.**
+
+**It is a constructed argument, not an evidence dump.** The 174 images interleave
+at least five registers — private message screenshots; behavioural description
+(stonewalling, silent treatment); trauma and dissociation literature; critical
+psychiatry; drug-war political history (the Ehrlichman confession on criminalising
+"the antiwar left and black people") and methamphetamine dose-escalation
+neuroscience; and philosophy. Register counts from the script are indicative only
+and leave roughly half unclassified; the point is the interleaving, not the tally.
+
+**It is not one-sided.** Among the message screenshots he published are ones
+attacking him — *"you ask to be held accountable yet when I (and we) do, you
+attack us and belittle our experiences."* Whatever "circumvent and neutralize"
+meant in practice, it did not mean publishing only the favourable half.
+
+### The multiplicity thesis is here, in July 2019
+
+The single most consequential screenshot models the abuser as **multiple agents
+with no unitary author**:
+
+> Agent A happens to be the lovebombing, fake lovey dovey, fake joy to the world
+> kind, Agent A wants to be liked. Agent B is more akin to a malignant ███, Agent
+> B just likes to see blood and tears. […] neither are you aware that your ███ is
+> not inhabited by a single, solid, coherent, consistent agent. […] no agent in
+> the ███ is truly good or righteous, it's agents of various grades of nastiness
+> taking turns ruling the actor or faker that we call the I.
+
+Two things follow.
+
+**This is `READINGS.md` §X's small set of shapes, four years early and more
+formal than the 2023-12 threads.** Agent A / Agent B is a two-shape taxonomy of
+bad faith with the shapes named and their strategies distinguished. It also
+predates the 2020-10-02 World Info entry, which was until now the earliest
+instance. The same series carries a DARVO dialogue (*"I'm sorry you feel there is
+shit on your sofa, but I hear hostility in your voice"*) — a third shape,
+deflection, in worked form.
+
+**And the Deleuze passage in the same four days is the monstrous hybrid's
+source:** *"I imagined myself approaching an author from behind and giving him a
+child that would indeed be his but would nonetheless be monstrous."*
+
+### This corrects the push in the riff note
+
+`notes/riffs/2026-08-13-the-2019-break.md` argues that §4b's authorless hybrid and
+the 2019 thesis *"authoritarianism is interpersonal violence at scale"* make
+opposite predictions about attribution: that the scaled-up reading always has a
+person at the end of the bookkeeping, while the hybrid lets the perpetrator
+dissolve. **That argument does not survive these screenshots.**
+
+In July 2019 he is already reading the *interpersonal* perpetrator as authorless
+and multi-agent — *"the actor or faker that we call the I"*. The perpetrator
+dissolves at the small scale too, in the same series, three weeks before the
+sentence about scale. So the two theses are not opposed by scale at all: **both
+levels are multi-agent systems producing the same small repertoire without a
+unitary author**, and "interpersonal violence at scale" is a claim that the
+mechanism is the same mechanism — where the mechanism *is* multiplicity.
+
+The riff note's narrower point survives: a phenomenology takes a subject, and
+attribution remains the real boundary. But the boundary does not fall between the
+scales, which is what that note claimed. It falls between *mechanism* and
+*responsibility* — and the 2017–2019 bookkeeping was assembling responsibility
+against a person whose unitary authorship he had already stopped believing in.
+That tension is his, not an artifact of reading, and it is live in the same four
+days.
+
+### The arc to 2024
+
+The same July series carries multiplicity in its *other* valence — the survivor's:
+
+> her voices […] are many different selves, with different names, ages,
+> experiences, feelings, identities; dissociated selves that became internal
+> representations of her external world. Rather than trying to eradicate these
+> different parts of her […] she begins to embrace them.
+
+Five years later, on 2024-10-17 — one of the 377 revision chains — he applies it
+to himself as a survival strategy: *"We are thousands of cortical columns, and
+thousands of selves […] Here have one of my selves. It hurt at first. […] Want to
+kill this part of me? Fine, have it."* **Multiplicity enters the archive in July
+2019 as an account of the person harming him and leaves it in 2024 as an account
+of how he survived.** Both framings are present in the same four days of 2019.
 
 ## The origin of the practice, which the AI Dungeon export lost
 
