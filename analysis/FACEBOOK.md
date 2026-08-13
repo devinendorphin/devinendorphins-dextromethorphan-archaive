@@ -46,9 +46,10 @@ immediately precedes it.
 flat eleven years were deliberate: radio silence held for security,
 community-safety and conflict-of-interest reasons while running a growing event.
 2016 brought an accountability process "akin to MeToo, about a year in advance";
-2017–2019, adversarial relations and bookkeeping to make records that could serve
-as evidence. 2019 is *"enough distance from the event, enough loss of community,
-enough insight"* — the silence ending rather than a habit forming. The thesis it
+2017–2019, a crash course in coercive behaviour, adversarial relations, and
+bookkeeping to make records that could serve as evidence. 2019 is *"enough distance from the event, enough loss of community,
+enough insight"* into the phenomenology of coercive behaviors — the silence ending
+rather than a habit forming. The thesis it
 ends with, **"authoritarianism is interpersonal violence at scale"**, is
 `READINGS.md` §4/§4b arriving five years early by the opposite route; the riff
 note argues the two directions are not equivalent and should not be welded shut.
