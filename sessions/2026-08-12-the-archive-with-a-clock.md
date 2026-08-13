@@ -234,6 +234,59 @@ What it costs the Twitter claim: the long-form set is *another* sample of him un
 — large, dated, uniform — but not the first. What it costs `REGISTER.md` is more
 interesting: a clean same-corpus control has been sitting in the pasted set the whole time.
 
+## 5. Bursts — the clock finds the model-free Endorphin on this side too
+
+Endorphin: *"interesting that the timestamps enable you to see when something is coming
+out of me naturally. I have done my fair share of those types of threads."* X posts a
+thread's parts in one go, so a piece written in advance lands in seconds and a thread
+pulled along by a conversation is spread over minutes. The clock separates composition
+from conversation.
+
+**166 self-reply threads of 3+ parts; 68 land inside 60 seconds** (417 tweets), 98 do not.
+Median **2.18 parts per second**, max 5.0 — nobody types that. These were whole pieces
+before they were tweets.
+
+| | n | median chars | ≥260 chars |
+|---|---:|---:|---:|
+| burst | 417 | **268** | 57% |
+| reply (@-prefixed) | 2,468 | 246 | 47% |
+| standalone | 1,024 | 203 | 30% |
+
+The limit is 280. He is not tweeting a thought, he is packing prose into a fixed container
+and continuing into the next one.
+
+**The numbering is the sharpest split: 63% of bursts open `1/` against 4% of slow
+threads.** That is about intent, not speed — you cannot label something `1/` unless you
+already know it is a piece. A slow thread grows; **a burst was a document before it was a
+thread**.
+
+**Two disconfirmations, both worth keeping.** They are *not* late-night spirals: bursts
+start 22:00–06:00 local (account timezone `Quito`, UTC−5) **21%** of the time against
+**30%** for everything else, so they are *less* nocturnal than his ordinary posting — the
+reading the form invites, refused by the clock. And they are *not* more confessional:
+first person 0.98× and hedging 1.01×, flat. The one real lexical difference is the
+**bad-faith taxonomy at 1.29×**, which matters for its direction rather than its size —
+`READINGS.md` §X argues the corpus enumerates bad faith and never good faith, and **this
+is where the enumeration lives.** The December 2023 thread §4b rests on is itself a burst:
+19 parts in 10 seconds. AI vocabulary runs the other way (0.84×); the bursts are the least
+AI-industry thing in the archive.
+
+**This is the Twitter analogue of `spans.py`** — same target, model-free Endorphin, found
+in a record with no branch structure by using the only instrument this archive has that
+the others do not.
+
+## READINGS §X and "§X, plainly"
+
+§X argues Endorphin's claim that bad faith has few shapes and good faith has a thousand;
+the argument, the three-field convergence, the corpus evidence, the three failed
+counterexamples and the attribution boundary are in the commit and in the section itself.
+
+Appended at his request: **"§X, plainly"** — the same argument in plain words, nothing
+dropped, kept as a worked example. His framing: *"do not interpret my appeal for simplicity
+means sacrificing content. No the same points must be preserved."* Worth taking as a
+standing note about this repo's prose, not just about one section: the house register is
+dense enough to cost readers, and it did not have to be.
+
 ## Left open
 
 - **The 432 long-form posts are unread — 333,910 characters, median 534.** This is the

@@ -222,6 +222,73 @@ to revise history. I have 1100+ episodes of 'no bitch, here are the times it did
 that for me'."* That is this repository's premise, stated two and a half years
 before it existed.
 
+## 5. Bursts — the threads that arrived whole
+
+Endorphin's observation, 2026-08-12: *"interesting that the timestamps enable you
+to see when something is coming out of me naturally."* They do, and the mechanism
+is simple. X posts a thread's parts in one go, so a thread written in advance
+lands in seconds while a thread thought out live is spread over minutes or hours.
+The clock separates composition from conversation.
+
+**166 self-reply threads** of three parts or more. **68 of them land inside 60 seconds** — 417 tweets — against 98 that do not.
+
+Median rate inside a burst: **2.18 parts per second**, topping out at 5.0. Nobody types at that rate. These existed as whole pieces before they were tweets.
+
+### They are written into the container
+
+| | n | median chars | share ≥260 |
+|---|---:|---:|---:|
+| burst (thread posted ≤60s) | 417 | **268** | 57% |
+| reply (@-prefixed) | 2,468 | **246** | 47% |
+| standalone | 1,024 | **203** | 30% |
+
+The limit is 280. Burst tweets sit at a median of **268** and 57% of them are within twenty characters of the ceiling, against 30% of standalone posts. He is not tweeting a thought; he is packing prose into a fixed container and continuing into the next one.
+
+### The numbering is the tell
+
+**63% of bursts open `1/`. 4% of slow threads do.**
+
+That is the sharpest split in this section, and it is about intent rather than
+speed. Numbering the first part means committing in advance to how many parts
+there will be — you cannot label something `1/` unless you already know it is a
+piece. A slow thread grows because a conversation pulled it along. **A burst was
+a document before it was a thread**, and the numbering is him marking the genre
+at the moment he starts.
+
+### Two things that came back the other way
+
+**They are not late-night spirals.** Bursts start between 22:00 and 06:00 local (the account timezone is `Quito`, UTC−5) **21%** of the time, against **30%** for everything else he posts. The bursts are *less* nocturnal than his ordinary posting, peaking instead in the afternoon and mid-evening. Whatever these are, they are not 3 a.m. flooding — which is the reading the form invites and the clock refuses.
+
+**They are not more confessional.** The obvious prediction from *"coming out of me naturally"* is more first person, and that is flatly not there:
+
+| per 10,000 words | burst | everything else | ratio |
+|---|---:|---:|---:|
+| taxonomy | 34.0 | 26.4 | 1.29× |
+| first person | 285.9 | 291.5 | 0.98× |
+| hedges | 34.5 | 34.3 | 1.01× |
+| AI words | 37.9 | 45.4 | 0.84× |
+
+First person and hedging are identical. **The one real lexical difference is the
+bad-faith vocabulary** — abuse, gaslighting, dissonance, accountability, fuckery, enmeshment, oversight — at 34.0 against 26.4 per ten thousand words, **1.29×**. Modest, and the direction matters more than the size: `READINGS.md` §X argues that the corpus contains an enumerated taxonomy of bad faith and none of good faith. **This is where the enumeration lives.** The December 2023 thread that §4b is built on is a burst: 19 parts in 10 seconds.
+
+AI vocabulary runs the other way. The bursts are the least AI-industry thing in
+the archive.
+
+### The largest
+
+| parts | seconds | date | opens |
+|---:|---:|---|---|
+| 25 | 14 | 2024-11-11 | 1/This is the most important takeaway I want you to have about machine l… |
+| 19 | 10 | 2023-12-03 | 1/Lack of candid communication if I'm to use that New Yorker piece as a … |
+| 16 | 8 | 2024-07-16 | 1/ critical race theory - now that the assholes who filtered that phrase… |
+| 16 | 7 | 2024-05-16 | 1/ Have you been convinced by an employer to think in a negative way abo… |
+| 14 | 12 | 2024-05-19 | 1/AGI aligned to human valuation, not values. Speaking of which, how muc… |
+| 14 | 6 | 2023-12-05 | 1/Last week was 3rd anniversary of my twitch channel dedicated to LLMs. … |
+| 13 | 6 | 2024-11-10 | 1/ people who marinate in bullshit Have no problem using the concept of … |
+| 11 | 5 | 2023-03-26 | Hi, ex here, I'm responding to a tweet of yours mentioning me indirectly… |
+
+**What this is the Twitter analogue of.** `analysis/spans.py` finds the model-free episodes inside the NovelAI corpus by walking branch structure. This finds the same category in a record with no branches at all, using the only instrument this archive has that the others do not: **the clock**. Same target, different evidence — and it is the second time in this file that the timestamps do work no other archive here can do.
+
 ## What this archive cannot do
 
 See `analysis/TW_EXPORT.md` for the full accounting. In short: no undo tree, so no

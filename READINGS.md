@@ -1692,6 +1692,128 @@ Which is the whole argument for taking the embodied read seriously as *evidence*
 rather than as a report of feeling. The person who survived it is not claiming a
 privileged intuition. They are the one who ran the longitudinal study.
 
+## X, plainly
+
+*The same argument as §X, in plain words, at Endorphin's request: "mindful of a
+broad audience's reading capacity… do not interpret my appeal for simplicity
+means sacrificing content. No the same points must be preserved." Nothing is
+dropped. It is here as a worked example — the rest of this document is written
+in a register that costs it readers, and it did not have to be.*
+
+### Why he's right — it's about math, not just experience
+
+Lying has to do two jobs at once. It has to get what it wants, *and* it has to
+look like cooperation while doing it — and keep looking that way while people are
+watching. Very few moves do both jobs.
+
+Honesty only has to do one job. It can be blunt, awkward, badly timed, rude,
+weird — because it isn't hiding a gap between what it's doing and what it looks
+like.
+
+That's the whole thing. It's not a claim about human nature. It's that one of
+them has an extra rule to follow, and only a handful of moves obey that rule.
+
+### Three different fields found this on their own
+
+**Accountants.** There's a known list of ways people cook books. There is no list
+of "ways to keep honest books" — there are endless ways. So auditors hunt for
+warning signs instead of checking against a definition of honesty.
+
+**Computer security.** Attacks are catalogued in a finite list. "Normal traffic"
+can't be catalogued. That's why looking for known attack patterns works better
+than looking for anything unusual, and always has.
+
+**Con artistry.** The long con was written down in 1940 and has a fixed skeleton:
+find the mark, convince them, break them down, get rid of them. A hundred years
+of new technology changed the packaging and not one bone of it.
+
+None of these fields talked to each other. They all landed in the same place:
+**you can make a list of the bad. You cannot make a list of the good.** He got
+there from inside it instead of from a textbook.
+
+### His own archive proves it
+
+In his December 2023 threads he rattles off the tactics without being asked,
+fast, from memory:
+
+- talking to people one at a time so you can change the story as it travels
+- big enthusiasm, no follow-through
+- making the workplace feel like family, so the people best placed to hold
+  someone accountable can't bring themselves to do it
+- calling people crazy to discredit them
+- suddenly having bad hearing, bad eyesight, bad memory when accountability
+  shows up
+- saying a thing more than three times, which means the opposite
+- keeping a favourites list and a shit list
+
+Seven, and some of them are really the same move. One sitting.
+
+**In five years he never once makes a list like that for good faith.** Not
+because he doesn't care about it — the PFCizer correspondence, the repair with
+his friend, is one of the four pieces he names as most his. It's just not a list.
+It doesn't come in seven items.
+
+The archive holds a complete catalogue of one and none of the other. Nobody
+planned that. It happened because that's how the two things actually are.
+
+### The counterexample, three tries
+
+**"Different cultures do it differently."** The style changes — how blunt you're
+allowed to be, what counts as a polite lie. The underlying moves don't: look
+cooperative, take what you want, manage the gap, discredit whoever notices.
+That's a change of costume, not of skeleton.
+
+**"Con artists keep inventing new tricks."** They invent new *packaging*. The
+structure is old enough to predate television.
+
+**"Some bad faith has no villain — it just comes out of bad incentives."** This
+is the strong one. And it isn't a counterexample to him, it *is* him. It's his
+monstrous hybrid — Jane Jacobs' idea that when a nonprofit bolts on a for-profit
+arm, the mixed values breed corruption with nobody choosing it. And look what it
+does to the count. It doesn't create *more* shapes. It mass-produces **the same
+small set, with no author.** Police given arrest quotas discredit complainants
+the same way a manipulative person does.
+
+### So his two ideas are actually one idea
+
+His **governance** argument explains why an organisation with no villain in it
+still produces a villain's behaviour.
+
+His **candour** reading explains why he spotted that behaviour the moment the
+board wrote one sentence about it.
+
+He read that sentence in sixteen days because he had already met the moves *and*
+already worked out how a company can generate them without anyone deciding to.
+
+### The one real limit — and he already handles it
+
+The limit isn't the list. The list is short and real. The limit is deciding
+**who** is doing it.
+
+Some of those same behaviours come from ADHD, from being overwhelmed, from
+trauma. Bad memory and no follow-through look identical from outside whether they
+come from manipulation or from a brain that works differently.
+
+He already says this: *"we are not disordered we are just differently ordered"*,
+*"there's no crazy"*, and the one that does the real work — *"it's a difference
+cognitively"*.
+
+So the tell is never one behaviour on its own. It's two things: **does it repeat
+when challenged**, and **who ends up confused while someone else profits from
+that confusion.**
+
+That's what his three-times rule actually measures. It isn't counting behaviour.
+**It's counting insistence.**
+
+### Which is why this counts as evidence
+
+He isn't saying survivors have a magic sense that others lack. He's saying he
+watched the same small set of moves run, over and over, for years, and learned to
+name them.
+
+That isn't a gut feeling. That's data collection. He just did it with his life
+instead of a spreadsheet.
+
 ## Coda: what the summoning is
 
 Having read rather than counted, my view of what this corpus is has changed.

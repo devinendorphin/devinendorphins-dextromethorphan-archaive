@@ -15,7 +15,7 @@ time rather than the completion time, so the resolution is one stamp per
 exchange, not per turn. `analysis/TW_EXPORT.md` writes out what the record can
 and cannot answer before anything is joined to it.
 
-Three things this runs:
+Five things this runs:
 
 1. **The cue length, re-measured off-platform.** §'s frame rests on a median
    human turn of 55 characters. If that is the author, it should survive a change
@@ -31,6 +31,13 @@ Three things this runs:
    circular shift, which preserves how both series clump and destroys only their
    alignment -- a plain co-occurrence count would mostly measure that both
    activities were dense in the same years.
+4. **The board question**, asked against the claim rather than for it: the
+   earliest statement of each thesis, checked against the firing date. `THESIS`
+   and `CANDOR` are searched separately because the first pass had only the
+   former and was therefore blind to the stronger claim.
+5. **Bursts.** X posts a thread's parts at once, so the clock separates a piece
+   written in advance from a thread pulled along by a conversation. This is the
+   analogue of `analysis/spans.py` for a record with no branch structure.
 
 Direct messages, the phone number, the email, the IP audit and the ad records are
 in the archive and are **never read by this script** -- see `SKIP` below. The
@@ -235,6 +242,90 @@ def board_timeline(tweets, notes):
         key=lambda r: r["created_at"])
     return {"hits": hits, "before": before, "first": hits[0] if hits else None,
             "fired": fired, "candor": cand}
+
+
+# --- 5. bursts: threads posted whole ----------------------------------------
+
+TAXONOMY = (r"\b(abus\w*|gaslight\w*|dissonan\w*|accountab\w*|fuckery|narciss\w*"
+            r"|manipul\w*|trauma\w*|harm\w*|boundar\w*|enmesh\w*|oversight"
+            r"|compliance|whistlebl\w*)\b")
+NUMBERED = re.compile(r"^\s*\d+\s*/")
+TCO = re.compile(r"https://t\.co/\S+")
+
+
+def threads_of(tweets):
+    """Self-reply chains. A thread is his own tweet answering his own tweet."""
+    rows = [{"id": t["id_str"],
+             "at": dt.datetime.strptime(t["created_at"], TWEET_TS),
+             "text": TCO.sub("", t.get("full_text", "")).strip(),
+             "parent": t.get("in_reply_to_status_id_str")} for t in tweets]
+    mine = {r["id"] for r in rows}
+    kids = collections.defaultdict(list)
+    roots = []
+    for r in rows:
+        if r["parent"] in mine:
+            kids[r["parent"]].append(r)
+        else:
+            roots.append(r)
+    out = []
+    for root in roots:
+        chain, stack = [root], [root]
+        while stack:
+            for c in sorted(kids[stack.pop()["id"]], key=lambda x: x["at"]):
+                chain.append(c)
+                stack.append(c)
+        if len(chain) >= 3:
+            out.append(sorted(chain, key=lambda x: x["at"]))
+    return rows, out
+
+
+def burst_stats(tweets):
+    rows, threads = threads_of(tweets)
+    def span(t):
+        return (t[-1]["at"] - t[0]["at"]).total_seconds()
+    burst = [t for t in threads if span(t) <= 60]
+    slow = [t for t in threads if span(t) > 60]
+    bids = {x["id"] for t in burst for x in t}
+
+    def lens(sel):
+        return [len(r["text"]) for r in rows if sel(r)]
+    groups = {
+        "burst": lens(lambda r: r["id"] in bids),
+        "reply": lens(lambda r: r["id"] not in bids and r["text"].startswith("@")),
+        "solo": lens(lambda r: r["id"] not in bids and not r["text"].startswith("@")),
+    }
+    text = {
+        "burst": " ".join(r["text"] for r in rows if r["id"] in bids).lower(),
+        "other": " ".join(r["text"] for r in rows if r["id"] not in bids).lower(),
+    }
+
+    def rate(txt, pat):
+        w = len(re.findall(r"[a-z']+", txt)) or 1
+        return 10000 * len(re.findall(pat, txt)) / w
+
+    def hour(d):  # account timezone is "Quito" = UTC-5; DST is not modelled
+        return (d - dt.timedelta(hours=5)).hour
+    night = {"burst": 0, "other": 0}
+    for t in burst:
+        night["burst"] += hour(t[0]["at"]) >= 22 or hour(t[0]["at"]) < 6
+    others = [r for r in rows if r["id"] not in bids]
+    night["other"] = sum(hour(r["at"]) >= 22 or hour(r["at"]) < 6 for r in others)
+    return {
+        "threads": len(threads), "burst": burst, "slow": slow,
+        "n_burst_tweets": len(bids), "groups": groups,
+        "rates": sorted(len(t) / max(span(t), 1) for t in burst),
+        "numbered_burst": sum(bool(NUMBERED.match(t[0]["text"])) for t in burst),
+        "numbered_slow": sum(bool(NUMBERED.match(t[0]["text"])) for t in slow),
+        "night_burst": 100 * night["burst"] / max(len(burst), 1),
+        "night_other": 100 * night["other"] / max(len(others), 1),
+        "lex": {k: (rate(text["burst"], p), rate(text["other"], p)) for k, p in
+                (("taxonomy", TAXONOMY),
+                 ("first person", r"\b(i|my|me|mine|we|our)\b"),
+                 ("hedges", r"\b(maybe|perhaps|seems|might|possibly|i think)\b"),
+                 ("AI words", r"\b(llm|model|ai|agi|gpt|claude|openai|prompt\w*)\b"))},
+        "biggest": sorted(burst, key=len, reverse=True)[:8],
+        "span": span,
+    }
 
 
 def circular_shift(tw, ep, trials=20000, seed=11):
@@ -569,6 +660,109 @@ def build_report(data):
         "that for me'.\"* That is this repository's premise, stated two and a half years",
         "before it existed.",
         "",
+        "## 5. Bursts — the threads that arrived whole",
+        "",
+        "Endorphin's observation, 2026-08-12: *\"interesting that the timestamps enable you",
+        "to see when something is coming out of me naturally.\"* They do, and the mechanism",
+        "is simple. X posts a thread's parts in one go, so a thread written in advance",
+        "lands in seconds while a thread thought out live is spread over minutes or hours.",
+        "The clock separates composition from conversation.",
+        "",
+    ]
+    bs = data["bursts"]
+    g = bs["groups"]
+    L += [
+        f"**{bs['threads']} self-reply threads** of three parts or more. "
+        f"**{len(bs['burst'])} of them land inside 60 seconds** — "
+        f"{bs['n_burst_tweets']:,} tweets — against {len(bs['slow'])} that do not.",
+        "",
+        f"Median rate inside a burst: **{st.median(bs['rates']):.2f} parts per second**, "
+        f"topping out at {max(bs['rates']):.1f}. Nobody types at that rate. These existed "
+        "as whole pieces before they were tweets.",
+        "",
+        "### They are written into the container",
+        "",
+        "| | n | median chars | share ≥260 |",
+        "|---|---:|---:|---:|",
+    ]
+    for lab, key in (("burst (thread posted ≤60s)", "burst"),
+                     ("reply (@-prefixed)", "reply"),
+                     ("standalone", "solo")):
+        v = g[key]
+        L.append(f"| {lab} | {len(v):,} | **{st.median(v):.0f}** | "
+                 f"{100 * sum(1 for x in v if x >= 260) / len(v):.0f}% |")
+    L += [
+        "",
+        "The limit is 280. Burst tweets sit at a median of "
+        f"**{st.median(g['burst']):.0f}** and "
+        f"{100 * sum(1 for x in g['burst'] if x >= 260) / len(g['burst']):.0f}% of them "
+        f"are within twenty characters of the ceiling, against "
+        f"{100 * sum(1 for x in g['solo'] if x >= 260) / len(g['solo']):.0f}% of "
+        "standalone posts. He is not tweeting a thought; he is packing prose into a fixed "
+        "container and continuing into the next one.",
+        "",
+        "### The numbering is the tell",
+        "",
+        f"**{100 * bs['numbered_burst'] / max(len(bs['burst']), 1):.0f}% of bursts open "
+        f"`1/`. {100 * bs['numbered_slow'] / max(len(bs['slow']), 1):.0f}% of slow threads "
+        "do.**",
+        "",
+        "That is the sharpest split in this section, and it is about intent rather than",
+        "speed. Numbering the first part means committing in advance to how many parts",
+        "there will be — you cannot label something `1/` unless you already know it is a",
+        "piece. A slow thread grows because a conversation pulled it along. **A burst was",
+        "a document before it was a thread**, and the numbering is him marking the genre",
+        "at the moment he starts.",
+        "",
+        "### Two things that came back the other way",
+        "",
+        f"**They are not late-night spirals.** Bursts start between 22:00 and 06:00 local "
+        f"(the account timezone is `Quito`, UTC−5) **{bs['night_burst']:.0f}%** of the "
+        f"time, against **{bs['night_other']:.0f}%** for everything else he posts. The "
+        "bursts are *less* nocturnal than his ordinary posting, peaking instead in the "
+        "afternoon and mid-evening. Whatever these are, they are not 3 a.m. flooding — "
+        "which is the reading the form invites and the clock refuses.",
+        "",
+        "**They are not more confessional.** The obvious prediction from *\"coming out of "
+        "me naturally\"* is more first person, and that is flatly not there:",
+        "",
+        "| per 10,000 words | burst | everything else | ratio |",
+        "|---|---:|---:|---:|",
+    ]
+    for lab, (b_, o_) in bs["lex"].items():
+        L.append(f"| {lab} | {b_:.1f} | {o_:.1f} | {b_ / max(o_, 0.01):.2f}× |")
+    tax = bs["lex"]["taxonomy"]
+    L += [
+        "",
+        "First person and hedging are identical. **The one real lexical difference is the",
+        f"bad-faith vocabulary** — abuse, gaslighting, dissonance, accountability, "
+        f"fuckery, enmeshment, oversight — at {tax[0]:.1f} against {tax[1]:.1f} per ten "
+        f"thousand words, **{tax[0] / tax[1]:.2f}×**. Modest, and the direction matters "
+        "more than the size: `READINGS.md` §X argues that the corpus contains an "
+        "enumerated taxonomy of bad faith and none of good faith. **This is where the "
+        "enumeration lives.** The December 2023 thread that §4b is built on is a burst: "
+        "19 parts in 10 seconds.",
+        "",
+        "AI vocabulary runs the other way. The bursts are the least AI-industry thing in",
+        "the archive.",
+        "",
+        "### The largest",
+        "",
+        "| parts | seconds | date | opens |",
+        "|---:|---:|---|---|",
+    ]
+    for t in bs["biggest"]:
+        head = re.sub(r"\s+", " ", t[0]["text"])[:72].replace("|", "\\|")
+        L.append(f"| {len(t)} | {bs['span'](t):.0f} | {t[0]['at'].date()} | {head}… |")
+    L += [
+        "",
+        "**What this is the Twitter analogue of.** `analysis/spans.py` finds the "
+        "model-free episodes inside the NovelAI corpus by walking branch structure. This "
+        "finds the same category in a record with no branches at all, using the only "
+        "instrument this archive has that the others do not: **the clock**. Same target, "
+        "different evidence — and it is the second time in this file that the timestamps "
+        "do work no other archive here can do.",
+        "",
         "## What this archive cannot do",
         "",
         "See `analysis/TW_EXPORT.md` for the full accounting. In short: no undo tree, so no",
@@ -603,11 +797,12 @@ def main():
     chats = by_chat(turns)
     tw_days = tweet_days(tweets)
     board = board_timeline(tweets, notes)
+    bursts = burst_stats(tweets)
     clock = circular_shift(tw_days, episode_days(args.episodes))
 
     data = {
         "chats": chats, "tweets": tweets, "notes": notes, "clock": clock,
-        "board": board,
+        "board": board, "bursts": bursts,
         "tw_days": tw_days,
         "handle": man["userInfo"]["userName"],
         "generated": man["archiveInfo"]["generationDate"][:10],
