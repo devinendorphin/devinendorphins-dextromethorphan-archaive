@@ -4,6 +4,17 @@
 `data/fb_summary.json`. Nothing here is held to the `FINDINGS.md` measurement
 standard yet; this is the first pass.
 
+> **This export is one of two accounts.** Endorphin has kept a second Facebook
+> account under the same name since about 2009, created by an accidental double
+> login and retained deliberately. During the summer 2019 series the two were
+> used together **with non-overlapping content**, each carrying half of the whole
+> shape. Every figure below — 5,018 posts, 439,512 words, 683 friends, the 157
+> image-only posts, the 174 screenshots, the 118 departed correspondents —
+> describes **one account only**, and the July operation cannot be fully read from
+> it. See `notes/riffs/2026-08-13-two-accounts-and-basins.md`. The second account
+> has its own DYI export and the same pipeline would read it; nothing here
+> substitutes for it.
+
 ## Shape
 
 | | |
