@@ -152,7 +152,39 @@ performances can no longer be sustained. Untested, and the sample is two lists.
 
 ---
 
-## On "differently shaped structures" — where I will not follow, and why
+## On "differently shaped structures" — the section below is wrong
+
+> **Retracted 2026-08-13, same day, on Endorphin's objection.** He did not strike
+> out *"their brains are shaped differently"*; he struck out **the label**. Those
+> are different refusals and this section conflated them, then used his own ethics
+> as grounds for declining work he was asking for. That is not caution, it is
+> avoidance with a borrowed warrant. His argument, verbatim in substance: *"if
+> human activity can affect the shape of our brains — 'drugs change your brain'
+> — of course it does, so does love, so does food, so is air, so is exercise, so
+> does hate, so does neglect, so does education. Stigma may have to be visually
+> mitigated and neutralized, but that doesn't mean it is not important to
+> highlight the structures, especially if it means it might be the foundation for
+> actually actionable interventions, whether through the medical institutions or
+> through the self."*
+>
+> **The selective-application point is the crux and it is correct.** *"Drugs
+> change your brain"* is true and vacuous; it lands as an indictment only because
+> it is applied to one input and withheld from every other. Plasticity is the
+> rule. Naming it for drugs alone is the stigma mechanism operating, not a finding.
+> He has been making this argument since 2019 with sources — the methamphetamine
+> dose-escalation screenshot in the July dump is precisely a critique of
+> non-ecological dosing regimens generating brain-damage conclusions that do not
+> survive realistic escalation.
+>
+> **What actually survives from the section below is one narrow statistical
+> point**, and it is not an ethical objection at all: group-level differences with
+> wide overlapping distributions do not license inference about an individual.
+> That holds against reading a person's basin off their anatomy. It holds equally
+> against reading it off their diagnosis, and it says nothing against studying
+> structure. The reverse-inference caution also stands. Everything else here is
+> withdrawn, and the real attempt follows in the next section.
+
+## Superseded: where I declined, and why that was wrong
 
 The question asks what this says about how the structures might be *shaped
 differently* to make the bad-faith basin the easy road. There is literature that
@@ -192,6 +224,115 @@ left a differently shaped organ. It also fits *"disorders are just different
 Orders"*, which anatomy does not.
 
 ---
+
+## Structure, done properly: plasticity, not typology
+
+The question reframes cleanly once the essentialist version is set aside. **Not
+"are their brains different" — that is typology, invites individual inference from
+group data, and is the version that stigmatises. Instead: what does repeatedly
+running a basin do to the substrate, and what does that imply about
+intervention?** Same subject matter, causation pointed the other way, and it is
+the direction with actionable consequences.
+
+**Plasticity is the rule, and his list is not rhetorical.** Every input he names
+has documented structural correlates. Literacy reorganises the ventral visual
+stream. Musical practice shows up in motor and auditory cortex. Sustained aerobic
+exercise is associated with hippocampal changes via BDNF pathways. Chronic stress
+acts on the HPA axis with hippocampal and prefrontal consequences. And **neglect
+is the decisive case**: the Bucharest Early Intervention Project found structural
+and functional differences following institutional deprivation *and* partial
+recovery in children placed into foster care early enough — deprivation changed
+the substrate, intervention changed it back, and there was a sensitivity window.
+
+That is the whole argument in one study. Structure is a consequence of history,
+structure is a target for intervention, and timing matters.
+
+### What running each basin should do
+
+If practice deepens attractors, the predictions are unwelcome but should be
+stated:
+
+- **B1 (control information flow)** is heavy audience-modelling, working memory
+  and source memory, run repeatedly. Practice effects should apply. **Someone who
+  runs B1 for years should get better at it**, not worse — the skill compounds
+  like any other. There is no comfort available here.
+- **B3 (disable witnesses)** has a high setup cost and then amortises, so the
+  structural investment is front-loaded and the maintenance is social rather than
+  neural. It is held in the *network*, not the head. Which is why it survives the
+  actor's absence.
+- **B5 (claim incapacity)** requires almost nothing and should leave almost no
+  trace. A basin with no practice cost is one nothing has to change to enter.
+- **The good-faith basins are all marginal cost**, so they get practised only by
+  being run, and each running is charged in full. **G3, honouring the absent, is
+  the one with the profile most like a trainable capacity** — sustained,
+  uncued maintenance of a representation is exactly the kind of thing that
+  improves with practice, and it is the most expensive of the six.
+
+### The inversion that matters
+
+Here is where the externalisation argument from the section above meets
+plasticity, and it flips the usual framing.
+
+**If the cost of bad faith is externalised, so is the plasticity.** B4 is cheap
+for the actor because the *target* performs the reconciliation — which means the
+sustained physiological load, and therefore any structural consequence, lands on
+the target. The literature and the stigma both point at the perpetrator's brain.
+The mechanism points at the recipient's.
+
+And the corpus contains a first-person account of exactly that state, written
+before any of this was theorised. The 2019-05-31 post opens by quoting the
+clinical description of hypervigilance — *"sustained states of hypervigilance,
+lasting for a decade or more, lead to higher sensitivity to disturbances […]
+people are exhausted and are often unable to function"* — and then dates its own
+onset across candidate years. Chronic threat-monitoring is not a metaphor; it is
+an HPA-axis state with documented consequences, and it is the load B4 transfers.
+
+**So the structural question with the best evidence and the clearest intervention
+path is about the person on the receiving end.** That is also the one the drug-war
+framing systematically declines to ask, which is the same selective application
+he is objecting to: *"drugs change your brain"* gets asked, *"what did ten years
+of manufactured dissonance do to this person's stress axis"* does not.
+
+### Interventions, in his two categories
+
+**Through the medical institutions.** For the target, this is where the evidence
+actually is — trauma- and adversity-focused intervention, and the BPS report's own
+position that psychosis is better addressed as a response to adversity than as a
+brain disease to be corrected pharmacologically. For the actor, the literature is
+thin to absent, and the thinness is itself informative: it is the same asymmetry
+of *demand* the enumeration note identified. Nobody has been funded to build
+interventions for the common, situational, socially rewarded case.
+
+**Through the self.** This is the category his own practice occupies, and the
+basin framing makes the mechanism legible.
+
+The 05-31 post documents the confiding trap: the correct procedure — check your
+perception against a trusted party — routed through the source of the harm, so
+every check produced more evidence against him. **G2, update under correction,
+requires an external corrector who is not compromised.** When the social channel
+for G2 is poisoned, the capacity cannot be exercised at all.
+
+**The Counterfactual Interview is the workaround, and it is a self-administered
+intervention.** Convening NOVED — adversarial, interrupting, contradicting — is
+building an internal corrector when no external one can be trusted. That is not a
+literary device with a therapeutic side effect; on this account it is **a
+prosthesis for a specific cognitive operation whose usual input channel was
+compromised**, and he built it in May 2019 while explicitly reasoning about
+whether his own perceptions were reliable.
+
+Which supplies a reading of the whole corpus that none of the four archives
+suggested on their own. Fifteen months later he stops writing the second voice
+himself and starts prompting a model for it, and does so continuously for five
+years. **The generation practice is the same prosthesis, externalised to a
+machine.** `READINGS.md` §IV calls the Counterfactual Interview a technique for
+the powerless; this says what it is a technique *for* — running a disconfirming
+test when there is no one safe to run it against.
+
+That is a testable claim about the corpus rather than about brains, and it is the
+useful thing this section produced: if the models are serving as G2 prosthesis,
+the sessions should show him **seeking contradiction** rather than agreement, and
+the ratio should be highest when the surrounding social channel is worst. The
+turn-level data to check that exists on the NovelAI and Grok sides.
 
 ## What would test any of this
 
