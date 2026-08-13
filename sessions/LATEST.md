@@ -707,18 +707,42 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   majority-model files. `Emotional Abuse SImulator v7.0` is 64% model and carries
   an unbroken human span of 375,730 characters. **Before designing any screen,
   ask what unit he works in.**
-- **The performance is not in the file, and this is now measured.** Endorphin
-  remembers his episodes by their spoken lines — *"I'm truly adverbally sorry!"*,
-  *"bitch i'm comfortable"*, *"gardening gives you easy gains"*. **All three
-  return zero matches across 2,016 files.** `READINGS.md` §IX argues the archived
-  text is a *score* rather than a document; this is the sharpest evidence for it.
-  The file holds the scaffolding — `Loading ramen flavor booth, occupation two` —
-  and the audio holds what he actually said. **Searching for an episode by its
-  most memorable phrase will fail by construction.** Ask him for scene-setting
-  language (a loaded room, a named character, a stage direction), not for the
-  good lines. Also: the Twitch episode *titles* are unreliable — *"the other
-  episodes I fear have names that are not the intended ones. that was a twitch
-  glitch"* — so episode numbers do not resolve to titles either.
+- **~~The performance is not in the file.~~ CORRECTED 2026-08-12, same day,
+  by a corpus-wide search.** The note written earlier this session claimed all
+  three remembered phrases return zero matches and concluded the performance
+  lives only in the broadcast. **That was wrong, and wrong the same way §4 was**:
+  the search ran inside one candidate file instead of across the corpus. Actual:
+  *"Bitch, I'm comfortable!"* is in 6 files at turn 391, origin **`ai`**;
+  *"gardening gives you easy gains"* is there in substance at turns 396–397, also
+  **`ai`**; *"you gotta hate someone"* is in 14 files at turn 2280, origin
+  `edit`. Only *"I'm truly adverbally sorry!"* is genuinely absent (0 files) and
+  therefore spoken-only. **§IX still stands but on one line, not four — the
+  archive keeps far more of the performance than the failed search suggested.**
+  *Run the search corpus-wide before concluding a thing is absent.* Third
+  instance of the lens note in one session.
+- **He attributes across the human/model boundary correctly, unprompted.** Told
+  only that a phrase was missing, he said *"the gains part that would be in the
+  text generative part"* — and it is. Turn 388 of `New Story (11)`–`(16)` is his
+  (`user`), turns 389+ are all `ai`, and he placed the line on the right side of
+  a boundary he could not see, in a document last touched 2024-01-24. Weight his
+  attributions accordingly.
+- **But his recall sharpens the model's prose, and this is measurable.** He
+  remembers *"gardening gives you easy gains"*; the model wrote *"plants and
+  fungi will help keep your stress down, and give you those little wins each
+  day"*. `easy gains` appears **nowhere in the corpus**. The remembered line is
+  four words shorter, alliterative and better. **Editorial work is happening in
+  recall** — what he carries out of a session is a compressed improvement on the
+  model's text, not the text. This is a mechanism neither side of the open
+  collaboration disagreement had named, and it is the most promising thing in
+  that argument for years.
+- **Index episodes by scene-setting language, never by the good lines or the
+  titles.** The ramen scene is in the file as `Loading ramen flavor booth,
+  occupation two` with the people present given *"HIPAA anonymized screennames"*;
+  the magick episode is findable only via `magickal capacity` (6 files, turn
+  388). Twitch titles are unreliable by his own account — *"the other episodes I
+  fear have names that are not the intended ones. that was a twitch glitch"* —
+  and the Spotify title (*The Magickal Capacity*) is not in the archive at all.
+  Ask him for a loaded room, a named character, a stage direction.
 - **A scene marker is not the middle of a scene.** The ex-simulation episode was
   found at turn 2132 of `Emotional Abuse SImulator v. 7.0`, and the ±25-turn
   window around it is **73% model**, which appeared to contradict his *"very
