@@ -54,6 +54,62 @@ ends with, **"authoritarianism is interpersonal violence at scale"**, is
 `READINGS.md` §4/§4b arriving five years early by the opposite route; the riff
 note argues the two directions are not equivalent and should not be welded shut.
 
+## Half of 2019 is not text, and word counts cannot see it
+
+Flagged by Endorphin, 2026-08-13: *"there is a series that had happened in the
+summer of 2019 you probably only see half of it, it was a cohort of posts on
+attempt to circumvent and neutralize a triangulation event."*
+
+**Half is the exact figure.** `analysis/fb_imageposts.py` counts posts carrying at
+least one image and at most three words of their own text — the threshold
+absorbs Facebook's "Timeline photos" auto-caption without absorbing real
+captions, and bare URLs do not count as words:
+
+| year | posts | image-only | share |
+|---|---:|---:|---:|
+| **2019** | 314 | **157** | **50%** |
+| 2022 | 1,110 | 83 | 7% |
+| 2020 | 524 | 19 | 4% |
+| all others | — | ≤4 | ≤4% |
+
+309 image-only posts across the corpus carry 333 images and contribute **~0 words
+to the 439,512 total**. In every year but one that is a rounding error. In 2019
+it is half the record.
+
+The 2019 burst is four days: **07-22 (83), 07-20 (35), 07-23 (34), 07-21 (5)**.
+The 174 attached images have been pulled (10 MB, three range requests). They are
+**screenshots of private message threads**, timestamped roughly a month before
+posting — the June exchanges published in July, several ending in *"This person
+isn't available right now."*
+
+The series has two halves in a second sense. The **May 2019** posts are the
+long-form written half: 53 posts, 12,766 words, including a 3,030-word piece
+headed *"Transcript 1: noveD sogellaG — Interview with Devon Gallegos"* (his own
+name reversed, interviewing himself), a 1,563-word passage on hypervigilance, and
+a 305-word post reasoning explicitly about the definition of paranoia against his
+own evidence. The **July** posts are the documentary half, and they are almost
+entirely images. A word-count pass sees the first half and is blind to the
+second.
+
+**Two consequences.**
+
+The 2019 row in the table above is understated. Its 20,441 words describe a year
+of which half the posts said nothing measurable, so whatever "the break is 2019"
+means, it is a larger break than the word counts show.
+
+And **`Transcript 1` has no `Transcript 2`** anywhere in the export. Absent a
+second instalment it is weak evidence on its own — but combined with a series
+that is half screenshots, it is the kind of gap worth not explaining away.
+
+### Handling
+
+These images are third-party message screenshots. They were public in 2019;
+that does not make them this repo's to redistribute. They stay under gitignored
+`exports/`, are not committed, and are not quoted here beyond their form. Nothing
+further should be done with them without Endorphin's explicit decision — which
+also applies to any OCR pass, since OCR would turn them into exactly the message
+text the privacy rule excludes.
+
 ## The origin of the practice, which the AI Dungeon export lost
 
 `AID_EXPORT.md` records the earliest surviving adventure as `dxqLiJrw55P2`,
