@@ -261,13 +261,54 @@ event: it preserves 1.77 million words of private messages and 5,018 posts, and
 cannot establish that anybody left. The loss he organised the whole operation to
 prevent is the one fact the record does not keep.
 
-**A partial reconstruction is possible and is deliberately not attempted here.**
-The set of people he was in contact with is recoverable from the 1,524 message
-threads; the set still connected in 2024 is `your_friends.html`. The difference
-is an upper bound on departures. That requires reading participant names, which
-this repo's privacy rule forbids and which Endorphin has reserved for a more
-private location. Noted so the method is on record for that work, not as a
-proposal for this one.
+### The number, without names
+
+Requested by Endorphin, 2026-08-13: *"i would just like a number. i do not need
+or want names."* `analysis/fb_departures.py` computes it by set difference —
+everyone appearing as a correspondent across the message threads, minus everyone
+still on the friends list at export. **The script reads names into memory to
+match on and emits only cardinalities**; the constraint is enforced in code.
+
+| | |
+|---|---:|
+| threads read | 1,518 |
+| distinct correspondents | 842 |
+| of whom still friends | 358 |
+| **of whom not still friends** | **484** |
+| …restricted to 1:1 threads | **118** |
+
+484 is a loose upper bound: message requests, strangers, group-chat
+participants and business accounts all land in it, and most were never friends
+to begin with. 118 is the tighter figure — people he had a one-to-one thread
+with who are not on the 2024 friends list.
+
+**And the year distribution shows no 2019 signature.** Last contact, 1:1
+correspondents now absent from the friends list:
+
+```
+2009  1   2013  7   2017  9    2021  5
+2010 12   2014 11   2018 14    2022  2
+2011  8   2015 11   2019 10    2023  3
+2012  3   2016  6   2020 10    2024  6
+```
+
+2019 sits at 10, between 2018's 14 and 2020's 10, and below 2010's 12. Thirty-three
+were last in contact across 2017–2019 and thirty-six in 2019 or later. **There is
+no bulge anywhere near the July series.**
+
+Read carefully, that is weaker than it looks in both directions. Last-contact
+year is not unfriending year — people drift, and someone who stopped messaging in
+2015 may have unfriended him in 2019 without leaving a trace. The measure cannot
+see the timing of a departure at all, only the timing of the last message.
+
+But it does rule out one specific shape: **a mass unfriending concentrated around
+July 2019 would have to show up as correspondents whose last contact clusters
+there, and it does not.** Whatever the loss of community was, this archive shows
+no Facebook-side event with a sharp edge — which is consistent with it being the
+loss of a scene and an organisation rather than a list. Losing the community he
+ran an arts organisation inside of does not require anyone to click unfriend, and
+the May posts show him doing some of the removing himself (*"some folks are
+getting the block"*, 05-25).
 
 ### The July series is a composed piece, and he names its form
 
