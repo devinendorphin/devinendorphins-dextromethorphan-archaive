@@ -320,7 +320,20 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 **Set 2026-08-12, and these three come before the older list below.**
 
-1. **Get the episode numbers for the four pieces, then read them.** `analysis/spans.py`
+1. **Read the ex-simulation episode — it is located.** `Emotional Abuse SImulator
+   v. 7.0`, ramen-booth entrance at **turn 2132** (origin `edit`, 15 fork copies),
+   model-free stretch at **turns 2200–2300, 25.5% model**. This is material he
+   calls *"totally me"* and it is sensitive — his ex, his abusers, two people
+   given *"HIPAA anonymized screennames"*. **Read it before quoting any of it, and
+   commit none of it**; the repo is public and `data/` policy is metadata only.
+   Ted Chiang is episode **1580, *AI Makes Art***, and its body is in the
+   broadcast rather than the archive. Still open: the YouTube appeal, the PFCizer
+   fork holding the correspondence, and the magick/Lemoine episode — for which
+   the lead is `I Remind The Body Electric (1)`, **156 `lemoine` mentions**,
+   unread. **Ask him for scene-setting language, not for the memorable lines**:
+   those were spoken and are not in the text (see standing notes).
+
+1b. *(superseded, kept for the reasoning)* **Get the episode numbers for the four pieces, then read them.** `analysis/spans.py`
    now finds the *population* — 436 model-free spans over 20,000 characters, 176 after
    collapsing fork duplicates, most of them inside majority-model files — but three of the
    four Endorphin named are still unlocated. The blocker is a search string, not the
@@ -694,6 +707,27 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   majority-model files. `Emotional Abuse SImulator v7.0` is 64% model and carries
   an unbroken human span of 375,730 characters. **Before designing any screen,
   ask what unit he works in.**
+- **The performance is not in the file, and this is now measured.** Endorphin
+  remembers his episodes by their spoken lines — *"I'm truly adverbally sorry!"*,
+  *"bitch i'm comfortable"*, *"gardening gives you easy gains"*. **All three
+  return zero matches across 2,016 files.** `READINGS.md` §IX argues the archived
+  text is a *score* rather than a document; this is the sharpest evidence for it.
+  The file holds the scaffolding — `Loading ramen flavor booth, occupation two` —
+  and the audio holds what he actually said. **Searching for an episode by its
+  most memorable phrase will fail by construction.** Ask him for scene-setting
+  language (a loaded room, a named character, a stage direction), not for the
+  good lines. Also: the Twitch episode *titles* are unreliable — *"the other
+  episodes I fear have names that are not the intended ones. that was a twitch
+  glitch"* — so episode numbers do not resolve to titles either.
+- **A scene marker is not the middle of a scene.** The ex-simulation episode was
+  found at turn 2132 of `Emotional Abuse SImulator v. 7.0`, and the ±25-turn
+  window around it is **73% model**, which appeared to contradict his *"very
+  little generation there"*. Profiling the document by 100-turn window instead:
+  **turns 2200–2300 are 25.5% model, the least-model window in all 3,688**, and
+  his second quoted line sits at 2280. The scene marker is the *entrance*; the
+  model-free stretch follows it. **His recall was right and the measurement was
+  centred wrong** — the standing note about weighting his corrections earning
+  itself again. Profile the document; do not window on the landmark.
 - **A keyword list is a lens, with the same failure mode as a reading frame.**
   See the fourth-instance note above. Writing the search terms chooses in advance
   what the pass can find, and `TWITTER.md` §4 missed the strongest claim in the
