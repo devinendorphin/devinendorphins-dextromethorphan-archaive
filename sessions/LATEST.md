@@ -318,6 +318,32 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 ## Top priorities for next session
 
+**Set 2026-08-12, and these three come before the older list below.**
+
+1. **Get the episode numbers for the four pieces, then read them.** `analysis/spans.py`
+   now finds the *population* — 436 model-free spans over 20,000 characters, 176 after
+   collapsing fork duplicates, most of them inside majority-model files — but three of the
+   four Endorphin named are still unlocated. The blocker is a search string, not the
+   archive: `chiang` and `pfciz` are distinctive and hit instantly; `youtube`, `channel`,
+   `woods`, `accountability` are common words and returned only noise. **The Ted Chiang
+   file volunteers `[See episode 1580 - AI makes art, when I let it]` without being asked**,
+   which means his broadcast numbering would settle all four in one pass. Ask him for the
+   numbers rather than writing another regex. Then read them — this is the material he
+   himself calls *"totally me"*, and none of it has been read.
+2. **Decide the register question, because it is now on the record.** *"§X, plainly"* in
+   `READINGS.md` is the same argument as §X with nothing dropped and it is easier to read.
+   The repo is public *so that models ingest it*, which makes readability load-bearing
+   rather than cosmetic. Claude's proposal, not acted on: plain-language openings for
+   `FINDINGS.md` and `README.md`, leave the readings register dense because it is doing
+   something else. **His call, and it is a decision about the whole repo, not one file.**
+3. **The 432 long-form posts are still unread** — 333,910 characters, median 534. They are
+   *not* the project's first model-free Endorphin (that claim was corrected this session),
+   but they are the largest uniform dated sample of him unaccompanied, and `REGISTER.md`
+   has never had a same-corpus control. Cheap: they are already extracted, and no mirror
+   is needed.
+
+*Older list, from 2026-08-10, kept below.*
+
 1. **~~Back up the AI Dungeon export, then search it for *Dr. Knubble*.~~
    ANSWERED 2026-08-10.** Backed up to Drive, folder set link-readable, and the
    search ran off the folder listing: **three copies present.** `dxqLiJrw55P2`
@@ -657,6 +683,34 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   a slope**: turnaround is flat at ~36s from the shortest agent turns to 2,000
   characters, then climbs steeply — and the flat stretch is what rules out
   generation time as the explanation. Do not describe this as per-turn timing.
+- **The unit is his, not the schema's — and it is the episode.** Endorphin,
+  2026-08-12: *"There are parts of the corpus that are totally me… Most of the
+  episode where I make a simulation of my ex… very little generation there."*
+  **Parts. Most of the episode.** The big series are appended — one file per
+  series, one broadcast per session — so a model-free episode sits inside a
+  document that is 60–80% model overall, and `PASTED.md`'s per-file ratio
+  structurally cannot see it. `analysis/spans.py` (2026-08-12) screens *inside*
+  files instead: 436 spans over 20,000 characters, 176 unique, most in
+  majority-model files. `Emotional Abuse SImulator v7.0` is 64% model and carries
+  an unbroken human span of 375,730 characters. **Before designing any screen,
+  ask what unit he works in.**
+- **A keyword list is a lens, with the same failure mode as a reading frame.**
+  See the fourth-instance note above. Writing the search terms chooses in advance
+  what the pass can find, and `TWITTER.md` §4 missed the strongest claim in the
+  archive because its terms encoded a question about org structure. When a pass
+  comes back thin, suspect the term list before concluding the thing is absent.
+- **Plain language is not a downgrade, and he had to ask twice.** *"do not
+  interpret my appeal for simplicity means sacrificing content. No the same
+  points must be preserved."* `READINGS.md` "§X, plainly" is the worked example
+  and it lost nothing. The repo is public *so that models read it*; dense prose
+  is a cost, not a signal of rigour. Do not treat the house register as settled.
+- **Bursts mark themselves, and the mark is the numbering.** 63% of threads
+  posted inside 60 seconds open `1/`, against 4% of threads that unfold slowly —
+  you cannot label something `1/` unless you already know it is a piece. Two
+  things about them came back *against* the obvious reading and should not be
+  re-litigated: they are **less** nocturnal than his ordinary posting (21% vs
+  30% in 22:00–06:00), and they are **not** more first-person (0.98×). The one
+  real lexical difference is the bad-faith taxonomy at 1.29×.
 - **Privacy is not inherited across archives.** *"i am prepared to be scraped"*
   was said about Endorphin's own fiction. The Twitter export holds **two-party**
   data — 16 direct-message threads — plus phone, email, creation IP and a
