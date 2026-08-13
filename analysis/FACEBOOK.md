@@ -183,16 +183,50 @@ community, enough insight as to the phenomenology of coercive behaviors"*. The
 loss is stated as a precondition of the insight. **"Authoritarianism is
 interpersonal violence at scale" is what he got instead of the net.**
 
-**The export cannot measure this, and should not be made to.** Facebook exports
-surviving friendships and their start dates; it does not export removals. Anyone
-who left is simply absent, including friendships formed in 2019 and ended later.
-What the file does show is that new-friendship formation was already contracting
-before the summer — 2016: 51, 2017: 34, 2018: 22, 2019: 23 — with the decline
-beginning in 2017, the year he dates his certainty to. That is consistent with
-withdrawal from the environments, which he describes directly (*"I extracted
-myself from those environments"*, 05-28), and it is not evidence about retention
-either way. The 683 surviving friendships are survivors as of October 2024 and
-say nothing about who was there in June 2019.
+**Retention is not measurable here, but recruitment is** — `analysis/fb_friends.py`.
+
+Endorphin's question: since every friendship carries a start date, can the total
+be reconstructed month by month? The arithmetic works, and the script does it,
+but the curve it produces is a **survivor curve** —
+
+    curve(t) = people who friended him by t AND were still friends in 2024-10
+
+There is no removals file anywhere in the export; Facebook does not emit one.
+So the curve is monotonically non-decreasing by construction and **cannot show a
+loss**. The true count at any past date is the curve plus everyone who had joined
+by then and left before the export, and that second term is not recoverable.
+It is a lower bound.
+
+The **monthly addition series** from the same file is a different measurement,
+and it does carry signal, because it is about who came in rather than who stayed:
+
+| month | new friendships (surviving) |
+|---|---:|
+| 2019-04 | 3 |
+| **2019-05** | **9** |
+| 2019-06 | 5 |
+| **2019-07** | **0** |
+| 2019-08 .. 12 | 1, 1, 0, 0, 0 |
+
+**May 2019 is the third-highest month in 118**, at 4.5× the mean of 2.0 and
+against a median of 1 — and those nine were still friends five years later, in
+October 2024. The written half was recruiting, and what it recruited stayed.
+
+**The July zero is not a signal.** 45 of 118 months are zero (38%), so a zero
+month is unremarkable; and anyone who friended him in July 2019 and left later
+would be invisible here anyway. The documentary half is not measurable in either
+direction.
+
+Longer-run, new-friendship formation was already contracting before the summer —
+2016: 51, 2017: 34, 2018: 22, 2019: 23 — with the decline beginning in 2017, the
+year he dates his certainty to. That is consistent with the withdrawal he
+describes directly (*"I extracted myself from those environments"*, 05-28), and
+is not evidence about retention either way.
+
+So the aim was retaining the net, and the one thing the export can speak to is
+adjacent to it: during the month he was writing the case out in prose, people
+arrived at the highest rate in five years and did not leave. Whether the people
+already there stayed, this archive cannot say.
 
 ### The July series is a composed piece, and he names its form
 
