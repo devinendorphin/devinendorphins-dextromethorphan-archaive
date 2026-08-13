@@ -120,7 +120,10 @@ category term**, struck with a bar everywhere it occurs, including mid-sentence
 where the grammar plainly needs it (*"neither are you aware that your ███ is not
 inhabited by a single, solid, coherent, consistent agent"*). The diagnostic label
 is removed and the mechanism is left standing. **The argument is built to work
-without the category.**
+without the category.** Amended 2026-08-13: at least one *name* is struck too —
+*"I haven't said his name, and I blocked his name out"* — so the bars cover both.
+The OCR scan finding zero personal names across 106,030 characters is consistent
+with that.
 
 **It is a constructed argument, not an evidence dump.** The 174 images interleave
 at least five registers — private message screenshots; behavioural description
@@ -130,10 +133,28 @@ psychiatry; drug-war political history (the Ehrlichman confession on criminalisi
 neuroscience; and philosophy. Register counts from the script are indicative only
 and leave roughly half unclassified; the point is the interleaving, not the tally.
 
-**It is not one-sided.** Among the message screenshots he published are ones
-attacking him — *"you ask to be held accountable yet when I (and we) do, you
-attack us and belittle our experiences."* Whatever "circumvent and neutralize"
-meant in practice, it did not mean publishing only the favourable half.
+**It is not one-sided, and the adversarial thread was published with consent.**
+Among the message screenshots are ones attacking him — *"you ask to be held
+accountable yet when I (and we) do, you attack us and belittle our
+experiences."* Endorphin's account (2026-08-13): this is an argument with a very
+old friend who messaged him on the day he was transferring his duties, said he
+would expose him, and did so on the festival's Facebook profile while a dead
+phone signal at a bank left him unable to see or answer it. He asked afterwards,
+once things had settled, whether he could post the exchange, and was told yes.
+The friend's name is struck out, and the material is included **to fortify the
+BPS thesis below** rather than to expose a person.
+
+**The clinical spine is identified.** The screenshots the register pass could
+place only by content come from *Understanding Psychosis and Schizophrenia*
+(British Psychological Society, Division of Clinical Psychology) — the source of
+*"there is no evidence that it corrects an underlying biological abnormality"*
+and of the *"many different selves […] dissociated selves that became internal
+representations of her external world"* passage this file had credited to an
+unnamed source. Its thesis, that psychosis is a response to adversity rather than
+a brain disease, is why the drug-war history, the critical psychiatry and the
+personal material are interleaved: they are one argument. The other stated
+sources are **Quora and Reddit**, which accounts for the heterogeneity
+`fb_jul2019.py` could not classify — the provenance was deliberately mixed.
 
 ### The stated intention: retaining the net
 
@@ -150,12 +171,20 @@ keeping the people.
 Read that way, four features of the series stop being stylistic and become
 load-bearing:
 
-- **Simultaneity is the counter-mechanism.** Triangulation works by reaching each
-  person separately with a version tailored to them, each recipient believing
-  they are the only one who knows. It cannot survive everyone holding the same
-  record at the same moment. That is why the answer had to be 157 fragments in
-  four days rather than an essay: an essay can be summarised and re-tailored in
-  the retelling; a simultaneous public dump cannot.
+- **Chaff is the counter-mechanism** — his word, supplied 2026-08-13; see
+  `notes/riffs/2026-08-13-chaff.md`, which supersedes the "simultaneity" account
+  this file previously gave. *"I wanted an inverse of the structure of a
+  triangulation, which is one person in control of the information between two
+  people. I wanted to put out a cloud of chaff of various POVs."* Radar chaff does
+  not out-argue the incoming missile; it makes the target unresolvable by
+  multiplying returns. **The aim is not to be believed but to be impossible to
+  lock onto** — the quantum-tiger figure of 2019-05-30 turned around for defence.
+- **And the one-to-one channel was pre-poisoned.** *"They were expecting me to go
+  to each of these people and state my case in exactly the way they had been
+  primed to expect, as the product of my substance use."* The obvious move was
+  already written into the narrative, so making it would have confirmed it.
+  Broadcast was not chosen for coverage; it was the only channel whose use the
+  script did not already interpret.
 - **Non-naming is strategy, not only ethics.** `MAY2019.md` records three stated
   reasons for refusing to name — DSM stigma, the harm of amplification, the
   anonymised roles. The goal supplies a fourth and decisive one: **naming anyone
@@ -362,17 +391,24 @@ was the platform's to allocate and by 2019 its principal source of revenue. A
 tailored private account of someone reaches 100% of the person it is sent to. An
 algorithmic feed post reaches whatever share the ranker assigns it.
 
-**So the counter-mechanism was competing against private messaging with a
-throttled broadcast channel.** Triangulation runs over a medium with guaranteed
-delivery; the rebuttal ran over one that was being monetised away underneath it.
-That is a structural disadvantage independent of anything in the content, and it
-is a better account of why the operation could fail than exhaustion or the
-argument's merits.
+So the rebuttal ran over a channel being monetised away underneath it, while
+triangulation runs over a medium with guaranteed delivery.
 
-The size of that disadvantage is not measurable from this archive, and the
-general decline of organic reach through the 2010s is background knowledge rather
-than anything demonstrated here. Recorded as an unquantified structural factor,
-not a finding.
+**That framing was wrong, and Endorphin reversed it the same day.** *"It would
+have been a blitz if it were 2014, but it was 2019 — I don't know who saw what,
+and in fact I think that was also part of the structure: it was to be a volley of
+information that I would not be able to control."*
+
+**Triangulation is total information control; the exact inverse is not broader
+control but relinquished control.** Chaff works because the person deploying it
+cannot say which reflector any given observer sees. A rebuttal whose distribution
+he could direct would have been another controlled channel — structurally the
+same object as the thing being countered. The degraded feed was the medium the
+design required, not the handicap it was working against.
+
+The general decline of organic reach through the 2010s remains background
+knowledge rather than anything demonstrated here, and reach is still unmeasurable
+from this export. What changes is the sign: it is not evidence of a disadvantage.
 
 ### The July series is a composed piece, and he names its form
 
