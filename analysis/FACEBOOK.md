@@ -310,6 +310,70 @@ ran an arts organisation inside of does not require anyone to click unfriend, an
 the May posts show him doing some of the removing himself (*"some folks are
 getting the block"*, 05-25).
 
+### Reach is the metric, and the export is an actor log
+
+Endorphin, 2026-08-13: *"the metric I would be wanting is the amount of people
+who would be receiving my post as a friend […] there's always a [?meeting→muting]
+of profiles that is possible […] and that's also where Facebook's nature has
+shifted drastically where people started to no longer receive close to their
+friends as much and started to receive a lot of ads."*
+
+He is right, and the counts above answer a weaker question than the one that
+matters. **List membership is not reach.** Every figure in this file — 683
+friends, 484 absent correspondents, 118 on the tight measure — describes who was
+*on a list*, and the operation depended on who *received* something.
+
+**Muting is the missed category, and it matters more here than unfriending.** A
+friend who mutes or unfollows stays on the friends list and receives nothing.
+They are counted as retained by every measure above, and are gone in the only
+sense the July series cared about. Someone could have muted him in 2016 and
+appear, correctly and uselessly, among the 358 still-connected correspondents.
+
+**None of it is in the export, and the reason generalises.** Checked:
+
+- No post-level reach or impressions. That is Page analytics; personal-profile
+  DYI has never carried it.
+- No record of who muted, unfollowed or hid him. `preferences/feed/` holds the
+  mirror image only — **64 profiles he unfollowed, all on 2020-11-11 within about
+  fifteen seconds**, one bulk pruning session — and nothing about anyone doing
+  the same to him.
+- No received engagement anywhere: `comments_and_reactions/` is comments he
+  wrote and reactions he gave. There is no file of who reacted to him.
+- `recently_viewed.html` looked promising and is not. Its *"Posts that have been
+  shown to you in your Feed"* section holds **74 entries spanning 2024-07-29 ..
+  2024-10-23**, and the Ads section 25 entries across four days — a rolling
+  window of roughly three months, and a sample rather than a log. It cannot
+  describe 2019, and cannot support a feed-composition trend for any year.
+- `story_views_in_past_7_days.html` is a single integer, 182, with no history.
+
+**The pattern is one omission, not five.** This export is an **actor log**: it
+records what he did — posts written, comments left, reactions given, profiles
+unfollowed, searches run. It does not record what happened to his content. Every
+question about *effect* is structurally absent, which is the same reason
+departures are missing. The private message threads are the one real exception,
+being the only place another person's words are preserved, and they are the one
+part reserved as unreadable.
+
+### What that does to the reading of the July series
+
+The mechanism attributed to the dump above — **simultaneity, everyone holding the
+same record at once** — is entirely a claim about distribution, and distribution
+was the platform's to allocate and by 2019 its principal source of revenue. A
+tailored private account of someone reaches 100% of the person it is sent to. An
+algorithmic feed post reaches whatever share the ranker assigns it.
+
+**So the counter-mechanism was competing against private messaging with a
+throttled broadcast channel.** Triangulation runs over a medium with guaranteed
+delivery; the rebuttal ran over one that was being monetised away underneath it.
+That is a structural disadvantage independent of anything in the content, and it
+is a better account of why the operation could fail than exhaustion or the
+argument's merits.
+
+The size of that disadvantage is not measurable from this archive, and the
+general decline of organic reach through the 2010s is background knowledge rather
+than anything demonstrated here. Recorded as an unquantified structural factor,
+not a finding.
+
 ### The July series is a composed piece, and he names its form
 
 Read at its two ends, the dump is not a burst. It is bracketed by statements of
