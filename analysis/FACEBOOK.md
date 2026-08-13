@@ -40,8 +40,18 @@ averaging 20 words and never exceeding 5,000 words a year. From 2019 the volume
 goes up by an order of magnitude and the median post length goes from ~12 words
 to 35–54. **The break is 2019, a year before first contact with AI Dungeon** —
 so the shift to long-form is not caused by the generation practice, though it
-immediately precedes it. Whatever changed in 2019 is upstream of everything the
-rest of the corpus records.
+immediately precedes it.
+
+**Answered, 2026-08-13** — see `notes/riffs/2026-08-13-the-2019-break.md`. The
+flat eleven years were deliberate: radio silence held for security,
+community-safety and conflict-of-interest reasons while running a growing event.
+2016 brought an accountability process "akin to MeToo, about a year in advance";
+2017–2019, adversarial relations and bookkeeping to make records that could serve
+as evidence. 2019 is *"enough distance from the event, enough loss of community,
+enough insight"* — the silence ending rather than a habit forming. The thesis it
+ends with, **"authoritarianism is interpersonal violence at scale"**, is
+`READINGS.md` §4/§4b arriving five years early by the opposite route; the riff
+note argues the two directions are not equivalent and should not be welded shut.
 
 ## The origin of the practice, which the AI Dungeon export lost
 
@@ -172,10 +182,40 @@ unit of analysis, rather than Endorphin choosing it.
 Both December 2023 chats are one-day trials that went nowhere. The practice did
 not move to Meta AI.
 
+## The videos are two cohorts, split by 242 days of silence
+
+`your_videos.html` holds 512 dated video posts:
+
+```
+2011:1  2014:1  2017:1  2018:1  2019:1  2020:16  2021:104  2022:153  2023:132  2024:102
+```
+
+Fifteen of the sixteen 2020 videos fall between **2020-10-02 and 2020-11-09**.
+Then video posting stops entirely for **242 days** — the largest gap in the whole
+post-2020 record — resuming **2021-07-09**.
+
+- **Cohort A, Oct–Nov 2020.** Attached to the numbered episode posts within
+  seconds: episode 3 (+39s), episode 4 (+93s), episode 5 (+27s), episode 6
+  (+64s). Their own captions credit *"immersive reader and ai dungeon and open ai
+  and microsoft"* and a Creative Commons NIN album.
+- **Cohort B, from 2021-07-09.** Endorphin identifies these as VQGAN work made
+  before, and alongside, the broadcasts.
+
+**VQGAN cannot account for cohort A.** "Taming Transformers" was not posted until
+December 2020, and the VQGAN+CLIP notebooks spread in June–July 2021 — which is
+when cohort B restarts, almost to the week. The tool postdates cohort A entirely.
+
+This matters for `READINGS.md` §IX, which reads the Love Sharks texts as a score
+— dictated cues in, TTS out, nobody reading. **Cohort A is that loop's earliest
+surviving output**, and the captions describe the toolchain in his own words at
+the time. It is the strongest available corroboration of §IX, and it is fifteen
+files rather than 1,086. Not yet pulled.
+
 ## Not analysed
 
 **The 1,524 private message threads — 147,233 turns, 1.77 million words,
-2008-03 .. 2024-10 — are deliberately unread.** They are four times the volume
+2008-03 .. 2024-10 — are deliberately unread**, and Endorphin confirmed the hold
+on 2026-08-13: that work happens in a more private location, not here. They are four times the volume
 of the public posts and they belong substantially to other people. See the
 privacy section of `FB_EXPORT.md`. `data/fb_summary.json` carries their counts
 and dates and nothing else. Any future use of them needs a specific question and
