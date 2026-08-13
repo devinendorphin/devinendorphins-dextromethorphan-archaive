@@ -135,6 +135,77 @@ attacking him — *"you ask to be held accountable yet when I (and we) do, you
 attack us and belittle our experiences."* Whatever "circumvent and neutralize"
 meant in practice, it did not mean publishing only the favourable half.
 
+### The July series is a composed piece, and he names its form
+
+Read at its two ends, the dump is not a burst. It is bracketed by statements of
+intent and by a close.
+
+**It opens on a research question.** On **2019-07-17**, three days before the
+first screenshot, he reads a piece on the cognitive costs of family separation
+and writes:
+
+> Cognitive crimes, we need them enunciated, we need the terms set, their
+> definitions laid out. […] One thinks that systemic -isms cover it. But no, they
+> can be interpersonal, intimate. […] **Ripping children from their families is a
+> cognitive crime on an international scale. What does it look like at the level
+> of the household or relationship?**
+
+That is *"authoritarianism is interpersonal violence at scale"* posed as an open
+question with the large-scale case given and the small-scale one solicited. **The
+157 screenshots are the answer to a question he asked in public three days
+earlier.**
+
+The day before, on **07-16**, he rebuts a psychosis accusation by taking the
+symptom list apart and showing each one can be *induced* — and lands the same
+join: *"All you need to do is promise a person one thing with your words, and then
+with your body act the opposite. **This is baseline reality for totalitarian
+regimes**, or populations who have endured years of fake news."*
+
+**It closes as a work.** On **2019-07-23 06:40**, before the last 34 images:
+
+> Good morning, the storm sent an internet outage, then spent the night
+> **pondering an ending**. Wrote an artist statement using a **Slovenian Artist
+> Statement Generator** to translate back to English. Then wrote a psychological
+> formulation but it became way too long.
+
+At **07:52**, attached to the final substantive fragment: *"Decided to add this to
+**the piece** at the last minute, as **the last official fragment**."* And at
+**08:03**, the sign-off:
+
+> **Thanks for attending my rhizome**, brought to you by Yggdrasil West: With
+> Ragnarok on the Horizon
+
+**He names the form.** A rhizome — Deleuze and Guattari's figure for a structure
+with no root, no sequence and no privileged entry, any point connecting to any
+other. The same four days carry a *Thousand Plateaus* screenshot, and two days
+later he jokes about *"Body Without Organs: the musical"*.
+
+This corrects the reading in `analysis/MAY2019.md`. May was linear and announced
+its continuations — `Transcript 1`, *"next post is gonna be…"* — and both were
+abandoned. July is not the residue of that failure. **It is the same case
+re-attempted in a form that does not require sequence**, chosen deliberately,
+announced at the close, with an artist statement and an ending composed the night
+before. The prose stopped because the argument would not resolve linearly; the
+rhizome does not have to.
+
+**And machine-generated text is already in the series.** The artist statement was
+produced by a generator and round-tripped through translation — thirteen months
+before AI Dungeon, in the work itself, and used for exactly the purpose the later
+corpus uses models for: to say the institutional thing in a voice that is not his.
+
+### Two more things at the edges
+
+**A machine-in-the-loop experiment.** On **07-25**, two days after the close:
+*"Well at least I nudged my FB a little based on the content of the past few days.
+Now waiting for discounted ticket ads for Body Without Organs: the musical."* He
+posts 157 fragments and then checks what the recommender inferred from them —
+treating the platform's model of him as the readout. The ads and off-Meta
+categories sit unread in this same export.
+
+**The platform answers.** On **08-08**: *"Devon's July Moments — finally, Facebook
+gets me."* Facebook auto-generated a highlights montage out of the evidence dump.
+The rhizome was re-cut into a sequence by the thing he had just been probing.
+
 ### The multiplicity thesis is here, in July 2019
 
 The single most consequential screenshot models the abuser as **multiple agents
