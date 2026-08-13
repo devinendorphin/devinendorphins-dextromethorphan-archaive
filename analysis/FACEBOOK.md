@@ -82,8 +82,12 @@ The 174 attached images have been pulled (10 MB, three range requests). They are
 posting — the June exchanges published in July, several ending in *"This person
 isn't available right now."*
 
-The series has two halves in a second sense. The **May 2019** posts are the
-long-form written half: 53 posts, 12,766 words, including a 3,030-word piece
+The series has two halves in a second sense — **May is read in full in
+`analysis/MAY2019.md`**, which is where the largest findings of this pass sit:
+the Counterfactual Interview built by hand fifteen months before AI Dungeon, the
+refusal of the diagnostic label stated in May and executed as black bars in July,
+and the authorless reading given in his own words and explicitly contrasted with
+conspiracy. The **May 2019** posts are the long-form written half: 53 posts, 12,766 words, including a 3,030-word piece
 headed *"Transcript 1: noveD sogellaG — Interview with Devon Gallegos"* (his own
 name reversed, interviewing himself), a 1,563-word passage on hypervigilance, and
 a 305-word post reasoning explicitly about the definition of paranoia against his
