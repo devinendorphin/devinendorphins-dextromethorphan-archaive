@@ -210,7 +210,34 @@ This matters for `READINGS.md` §IX, which reads the Love Sharks texts as a scor
 — dictated cues in, TTS out, nobody reading. **Cohort A is that loop's earliest
 surviving output**, and the captions describe the toolchain in his own words at
 the time. It is the strongest available corroboration of §IX, and it is fifteen
-files rather than 1,086. Not yet pulled.
+files rather than 1,086.
+
+### Cohort A pulled, 2026-08-13
+
+All fifteen, 141 MB, in three range requests (`analysis/fb_cohort_a.py`;
+manifest in `data/fb_cohort_a.tsv`). MP4 atoms read directly for duration and
+track types.
+
+- **Every one carries an audio track.** 15/15 are `soun+vide`. They are not
+  silent generative art, which is what the VQGAN cohort would predict.
+- **139.7 minutes of narration**, 2:13 to 24:33 each.
+- Captions number them explicitly — *episode 3* through *episode 6* — and name
+  the toolchain: *"ai dungeon and i on the saaaaaaame paaage"*, *"just plunked
+  in relevant biblical verse re: love into aidungeon"*.
+
+**The cohort is one bounded project, and it under-delivered by half.** The
+2020-10-02 post sets the plan: *"i'll try to do one a day so there may be
+thirty-one chapters."* Fourteen were posted between 10-02 and 10-31, the last
+captioned *"Final post of Domestic Abuse Awareness Month"*; a fifteenth follows
+on 11-09 as an election coda. **Planned 31, delivered 14, then the 242-day
+silence.** That is the first instance in any of the four archives of a stated
+production target set against a countable outcome — everything else in the
+corpus is measured against what survives, not against what was intended.
+
+**The 2h20m of audio has never been heard by any pass in this repo.** §IX argues
+these texts are scores meant to be spoken; here is the speaking, and it is
+unanalysed. Transcription needs tooling the container does not have (no
+`ffmpeg`, no `ffprobe`). Flagged, not attempted.
 
 ## Not analysed
 
