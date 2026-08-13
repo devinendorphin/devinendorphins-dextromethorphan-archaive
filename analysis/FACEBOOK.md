@@ -228,6 +228,47 @@ adjacent to it: during the month he was writing the case out in prose, people
 arrived at the highest rate in five years and did not leave. Whether the people
 already there stayed, this archive cannot say.
 
+### Why the departures are missing, and what that costs
+
+Endorphin's correction, 2026-08-13: the count was never hidden from *him*.
+Facebook displays a live friend total, so the size of any loss was self-evident
+as it happened — *"people unfriending, the number of people at least, should be
+self-evident. i'm an adult."* What the export omits is not knowledge he lacked;
+it is the **portable, queryable, after-the-fact record** of it.
+
+And he supplies the reason it should stay omitted: *"its not info you would want
+adversarial persons having in real time because leaving is a most dangerous time
+for spouses."* A who-left-and-when log is a targeting tool, and its natural user
+is the person being left. Separation is the highest-risk period in domestic
+violence. **The omission is defensible on safety grounds, and the safety argument
+belongs to the person leaving, not the person holding the archive.**
+
+One distinction is worth keeping, because it separates the safety case from the
+technical one. The dangerous artifact is the **log** — names and dates. A **count
+series** — *N friends on date D*, no names — would answer the retention question
+completely and target nobody, and Facebook does not export that either. Which
+suggests the absence is a schema artifact rather than a safety decision:
+friendships are stored as current state with a creation date, and a removal is a
+delete, so the count history was never an object that existed to be exported.
+The safety argument is a good reason not to add the log. It is not the reason the
+count is missing.
+
+**The cost lands exactly where this archive is most sensitive.** The July series'
+central problem, stated in the 05-20 paranoia post, is that the harm destroys its
+own evidence — *"since there is probably very little evidence, people can call it
+paranoia anyway."* The platform's data model does the same thing to the same
+event: it preserves 1.77 million words of private messages and 5,018 posts, and
+cannot establish that anybody left. The loss he organised the whole operation to
+prevent is the one fact the record does not keep.
+
+**A partial reconstruction is possible and is deliberately not attempted here.**
+The set of people he was in contact with is recoverable from the 1,524 message
+threads; the set still connected in 2024 is `your_friends.html`. The difference
+is an upper bound on departures. That requires reading participant names, which
+this repo's privacy rule forbids and which Endorphin has reserved for a more
+private location. Noted so the method is on record for that work, not as a
+proposal for this one.
+
 ### The July series is a composed piece, and he names its form
 
 Read at its two ends, the dump is not a burst. It is bracketed by statements of
