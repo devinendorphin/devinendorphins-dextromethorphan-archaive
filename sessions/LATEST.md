@@ -735,6 +735,24 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   model's text, not the text. This is a mechanism neither side of the open
   collaboration disagreement had named, and it is the most promising thing in
   that argument for years.
+- **"The corpus" means something larger to him than the 2,016 files, and this
+  is now demonstrated rather than suspected.** Asked for the parts that are
+  *totally him*, he named five. **Only two are wholly in the NovelAI export** —
+  the ex simulation and the magick/Lemoine episode. The Ted Chiang response is
+  *pointed to* from inside two files and elided as `[See episode 1580]`, body in
+  the broadcast. The PFCizer correspondence is **probably among the 483 that
+  never decrypted**: `PfCizer v2!` (`_QfwmC4btMd9gYjHYkuv0`, 2026-03-11) is the
+  only PfCizer-titled story in the 2,500-item manifest and it is
+  `FAILED-CONTENT`. The YouTube appeal is a **video** (`youtu.be/AzVVYpqTUjk`) —
+  its id appears in no story file, no tweet URL and no long-form post, and his
+  own word for its argument (*unspammy*) returns 0 files. **Say "the 2,016
+  files" when that is what is meant**; a claim about "the corpus" that silently
+  means the export is not the thing he is describing.
+- **The 483 lost stories now have a named casualty.** This is the first time a
+  document Endorphin describes, wants, and calls among the most his has been
+  matched to the decryption-failure set. That changes the lost set from a
+  data-recovery nuisance into a question about *what specifically went*. Worth
+  raising with NovelAI support again, with `PfCizer v2!` named.
 - **Index episodes by scene-setting language, never by the good lines or the
   titles.** The ramen scene is in the file as `Loading ramen flavor booth,
   occupation two` with the people present given *"HIPAA anonymized screennames"*;
