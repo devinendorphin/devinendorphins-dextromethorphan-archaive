@@ -119,6 +119,83 @@ is no effect.** But direct address measures *speech*, not *contradiction* — th
 convened voice talks to him constantly in kept and rejected text alike — so it
 does not test the hypothesis either.
 
+## The denominator question, answered — and it moves the conclusion
+
+The caveat above was that `corpus/cited/` might be selected for sessions that
+went well, inflating any kept-branch measure. **`data/stories_meta.jsonl` settles
+it**, because it carries `live_ai_chars` and `abandoned_ai_chars` for all 2,016
+recovered stories without carrying any text.
+
+| | all 2,016 | cited 20 |
+|---|---:|---:|
+| his share of characters | 23.9% | 31.6% |
+| **rejection rate (abandoned / all AI text)** | **4.6%** | **4.2%** |
+
+**The cited subset is not unrepresentative on rejection.** 4.2% against 4.6%
+corpus-wide. The worry was wrong, and the low rejection rate is a real property
+of the practice rather than an artifact of which stories were kept for citation.
+
+**Which changes what the null means.** The selection test asks whether he keeps
+the generations that contradict him — and that question presupposes he is
+rejecting a meaningful amount of something. **He is not. He keeps 95.4% of
+generated text corpus-wide**, and 27% of stories have no branch points at all.
+There is very little curation happening for a contradiction-preference to express
+itself through.
+
+So the earlier framing was wrong in an instructive way. The hypothesis cannot
+operate through *filtering*, because filtering is barely happening. If it
+operates at all, it operates through **prompting** — the adversarial interlocutor
+is built into the setup and then whatever it says is accepted.
+
+Everything already observed fits that better than the filtering account:
+
+- *"Endorphin prepares the summoning space"* — the frame is constructed before a
+  word is generated, and Elegua is given a disposition in the prompt.
+- The 2020-10-02 **World Info** entry encodes the perpetrator repertoire in
+  advance, so the scenarios generate against it.
+- **NOVED's hostility in 2019 was written, not selected** — there was no model to
+  select from. The form began as a thing he authored, and the models inherited an
+  already-adversarial frame.
+
+**The corrector is installed at the prompt and then trusted.** That is a
+different and more specific claim than "seeks contradiction", it is consistent
+with a 4.6% rejection rate, and it explains why the branch-level test finds
+nothing: by the time text is being generated, the selection has already happened.
+
+It is also weaker in one respect worth stating plainly. Building an adversary and
+then accepting what it says is **not** the same as updating under correction. G2
+requires that the correction change something. Whether it does is not visible in
+block statistics, and would need the reachable text of sessions across periods —
+which is the thing that died with the mirror.
+
+## "Sphinxy Gets Dark" cannot be located
+
+Endorphin nominated it as the measurable case: a long piece with an adversarial
+sphinx running a wind-down riddle. It is the right shape — an interlocutor whose
+service is *withholding* and *judging answers*, which is a corrector by
+construction. It is not findable in what survives:
+
+- **No NovelAI story title matches** any of `sphinx`, `riddle`, `wind.?down`, or
+  `gets dark`, across all 2,016 recovered stories.
+- **Titles are not a usable index for this corpus.** Most stories in the relevant
+  window are called `New Story`, `New Story (1)`, and so on. Title search cannot
+  find anything here, which is worth recording as a general fact about the
+  archive.
+- **Sphinxy is in the episode record**, from `data/EPISODES.tsv` — four
+  occurrences, *"episode (let's just say) 521: Sphinxy is here to cleanse the
+  palette!"* (2022-10-15), *"557 — Sphinxy is Here To Lower the Stakes"*
+  (2022-11-06), and *"693 — Sphinxy's Back"* (2023-03-08). So the sessions
+  happened and were broadcast.
+- **No NovelAI story was last updated within three days of either 2022 episode
+  date.** The March 2023 window has candidates, all untitled duplicates.
+- And it would not matter if it were identified: **`stories_meta.jsonl` holds no
+  text**, and the 2,016-story mirror died with its container.
+
+Either it is among the **483 lost** — 441 that would not decrypt, 42 that lost
+title and text both — or it is one of the untitled survivors and unreadable
+without a refetch. Recorded so the next session with credentials knows to look
+for it by date rather than by name.
+
 ## What would settle it
 
 **The full mirror.** `sessions/LATEST.md` records that the 2,016-story export
