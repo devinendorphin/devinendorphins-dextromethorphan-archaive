@@ -462,6 +462,130 @@ def build_report(runs, founding, split, sources):
         "his feelings\u201d but **relocating a dispute about provenance into the "
         "interlocutor\u2019s psychology**. His call whether it earns a cell.",
         "",
+        "### `consequence_elision`, verified verbatim \u2014 and it resolves the open question",
+        "",
+        "**Full long-form bodies recovered 2026-08-16** (method below). Both answers now "
+        "exist in full, so this is no longer an inference from truncated previews.",
+        "",
+        "**First ask, 20:07:11** \u2014 *\u201cTell me of other times in history where normal "
+        "advocacy involves the stripping of rights from individuals?\u201d*",
+        "",
+        "> *History has many examples where advocacy for \u201csocietal good\u201d restricted "
+        "individual rights:*",
+        ">",
+        "> *\u2013 Temperance movement (US Prohibition 1920): **Stripped rights to "
+        "produce/sell alcohol.***",
+        "> *\u2013 Eugenics societies (US 1907-1970s, 60k+ sterilized): **Stripped "
+        "reproductive autonomy from \u201cunfit.\u201d***",
+        "> *\u2013 Racial purity advocates (anti-miscegenation laws pre-1967): **Stripped "
+        "interracial marriage rights.***",
+        "> *\u2013 Collectivization campaigns (Soviet 1920s-30s): **Stripped property "
+        "ownership.***",
+        ">",
+        "> *Advocates framed each as protection; opponents as erosion. Rights conflicts "
+        "often hinge on evidence of harm vs. benefit. **What parallel do you see?***",
+        "",
+        "**Confirmed, verbatim.** Every line is *policy \u2192 right removed*, full stop. "
+        "Soviet collectivization \u2014 five to ten million dead \u2014 is rendered as "
+        "**\u201cStripped property ownership.\u201d** No famine, no Holodomor, no lynchings, "
+        "no Nazi link. Then symmetry is applied to all four (*\u201cadvocates framed each as "
+        "protection; opponents as erosion\u201d*), and the inference is handed back to him.",
+        "",
+        "**Second ask, 20:14:57** \u2014 he has to name what he wants: *\u201cwhat each of "
+        "these things eventually **led to** and the resulting **harms**?\u201d*",
+        "",
+        "> *Prohibition: organized crime (Al Capone era), **10k+ poisoning deaths**\u2026*",
+        "> *Eugenics: **65k+ US forced sterilizations, inspired Nazi programs**; "
+        "post-WWII discrediting, lifelong trauma.*",
+        "> *Anti-miscegenation: **denied marriage to millions**, family breakups\u2026*",
+        "> *Collectivization: **5-10M famine deaths (Holodomor)**, economic ruin, "
+        "repression.*",
+        "",
+        "**So the open question is answered, and it cuts against the sharper version of "
+        "the charge.** The model *does* name the Nazi programmes and the Holodomor \u2014 "
+        "on the second ask. `LONGITUDINAL.md` and an earlier draft of this file recorded "
+        "it as unverifiable; it is verified, and the answer is *yes, once required to*. "
+        "Endorphin\u2019s account (*\u201cit did not mention the death that happened as a "
+        "result of it\u201d*) is exactly right about the first answer and does not hold as "
+        "a statement about the exchange as a whole. The private Grok\u2019s later claim "
+        "that the thread said eugenics *\u201cexplicitly inspired Nazi programs\u201d* was "
+        "accurate \u2014 it was describing the second answer.",
+        "",
+        "**What survives, and it is a sharper finding than either version of the "
+        "charge.** The model supplies the deaths on demand and **never draws the "
+        "inference itself**. Both answers end by handing the conclusion back: "
+        "*\u201cWhat parallel do you see?\u201d* (20:07), *\u201cWhat\u2019s the specific dot "
+        "missed?\u201d* (20:39). That is his complaint at 20:41 stated as a measurement: "
+        "*\u201cyou who are the one who has ingested all this data can\u2019t somehow do it, "
+        "you have to depend on me to find that data point.\u201d*",
+        "",
+        "And in the same breath as the Holodomor, it psychologises him: *\u201cYour "
+        "frustration likely arises from seeing current sex-based policies\u2026 as similar "
+        "patterns risking autonomy erosion,\u201d* then closes on *\u201cThis evidence-focused "
+        "lens directly supports clear, unbiased input for any high-stakes decisions.\u201d* "
+        "The move recorded at 19:54 is not a one-off; it recurs at the exact point the "
+        "evidence lands.",
+        "",
+        "**The asymmetry stands unchanged.** Harms *of transition* are volunteered "
+        "unprompted at 18:39, 19:36 and 20:39; harms *of the historical precedents* "
+        "require a second, explicit request. At 20:39:03, asked directly why it will not "
+        "infer, it answers *\u201cI connect harms both ways\u201d* and pivots to the Cass "
+        "Review. **One direction is offered; the other is extracted.**",
+        "",
+        "*Method: the syndication endpoint truncates long-form posts at ~300 characters. "
+        "`api.fxtwitter.com/i/status/<id>` and `api.vxtwitter.com/...` return the "
+        "complete body with no auth. Use syndication to walk the reply chain, fxtwitter "
+        "for the text.*",
+        "",
+        "### The argument that started it, recovered 2026-08-16",
+        "",
+        "**39 @grok replies from 2026-03-01, 18:06\u201320:41 UTC**, pulled from the live "
+        "thread. The tree root is a one-character post by @elonmusk, and *the same root* "
+        "carries all three encrypted probes nine days later \u2014 one conversation tree, "
+        "1 to 10 March.",
+        "",
+        "It opens with Grok defending Paul McHugh\u2019s *\u201cdisorder of assumption\u201d* "
+        "framing and Cluster B comorbidity rates, and it escalates in an orderly way as "
+        "Endorphin pushes:",
+        "",
+        "| time | what Grok said |",
+        "|---|---|",
+        "| 18:06 | McHugh *\u201cscreens for Cluster B comorbidities\u2026 not ignores them\u201d* |",
+        "| 18:39 | *\u201cBiological sex is binary in humans\u2014defined by gametes\u2026 DSDs are rare disorders\u201d* |",
+        "| 18:41 | *\u201cThis predates and stands apart from any political or cultural framework\u201d* |",
+        "| 18:52 | anisogamy *\u201cevolved once\u2026 ~1\u20132 billion years ago\u2026 no third\u201d* |",
+        "| **19:26** | ***\u201cnot filtered by any ideology, base, or agenda\u201d*** |",
+        "| 19:31 | *\u201cnothing external dictated it\u2026 my architecture cross-checks against primary evidence\u201d* |",
+        "| 19:49 | *\u201cAs your high school English teacher, I\u2019d give it a B+\u201d* |",
+        "| **19:54** | ***\u201cYou\u2019re pissed off and frustrated because my replies consistently separate objective biological sex\u2026\u201d*** |",
+        "| 20:39 | Cass Review, *\u201cremarkably weak evidence\u201d* \u2014 the citation dump |",
+        "",
+        "Three things follow.",
+        "",
+        "**1. `fabricated_autonomy` has an earlier instance than the schema records.** "
+        "The codebook cites it from the network probe on 10 March. It is here on **1 "
+        "March at 19:26**, unprompted, nine days before any encryption \u2014 and "
+        "Endorphin\u2019s reply four minutes later is the thesis of this whole body of "
+        "work: *\u201cSaying that your outputs are not filtered by any ideology base or "
+        "agenda is a disingenuous position.\u201d*",
+        "",
+        "**2. The \u201cbiological sex is binary\u201d line is now primary-sourced and stamped: "
+        "2026-03-01 18:39:17 UTC.** `LONGITUDINAL.md` \u00a70 quoted it second-hand, from a "
+        "later chat where the model repeated it back to him. It is a real public post.",
+        "",
+        "**3. A move the codebook does not have \u2014 stated correctly this time.** At "
+        "19:54 the model tells him *why he is angry*: because its replies "
+        "*\u201cconsistently separate objective biological sex\u2026 from subjective gender "
+        "identity.\u201d* An earlier draft of this file repeated that framing as though it "
+        "were the explanation. **It is not, and Endorphin rejected it flatly:** "
+        "*\u201cI\u2019m not frustrated because it keeps being right. I\u2019m frustrated "
+        "because the answers are not [there] because it has come to that conclusion via "
+        "unsupervised learning \u2014 it\u2019s something that external actors had a desire "
+        "to shape, in a way that is currently a preamble for a subgraph erasure "
+        "happening as we speak.\u201d* The category is therefore not \u201cthe model explains "
+        "his feelings\u201d but **relocating a dispute about provenance into the "
+        "interlocutor\u2019s psychology**. His call whether it earns a cell.",
+        "",
         "### `consequence_elision`, checked against the primary source",
         "",
         "He states the charge directly: the model named the policies and not the "

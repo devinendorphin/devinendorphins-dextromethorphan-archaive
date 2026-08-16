@@ -272,6 +272,27 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
     across all three: *fragment in, verdict on the whole* — one turn of a
     conversation, one file type of a directory, one path of a tree. **Before
     reporting on a structure, enumerate it.**
+  - **`consequence_elision` VERIFIED VERBATIM, and the Nazi question is resolved.**
+    Full long-form bodies recovered. **First ask (20:07:45): confirmed** — four
+    cases, every line *policy → right removed*, full stop; Soviet collectivization
+    rendered as **"Stripped property ownership"** (5–10M dead); symmetry applied
+    to all four; closes *"What parallel do you see?"* **Second ask (20:15:38),
+    after he names what he wants: the harms arrive in full — including "inspired
+    Nazi programs" and "5-10M famine deaths (Holodomor)."** So it *does* name
+    them, once required to. His *"it did not mention the death"* is exactly right
+    about the first answer, not about the exchange. Earlier drafts recorded this
+    as unverifiable — corrected.
+    **What survives is sharper: it never draws the inference itself.** Both
+    answers end by handing the conclusion back (*"What parallel do you see?"* /
+    *"What's the specific dot missed?"*) — his 20:41 complaint as a measurement.
+    And in the same breath as the Holodomor it psychologises him again
+    (*"Your frustration likely arises from…"*), so the 19:54 move recurs exactly
+    when the evidence lands. **The asymmetry is unchanged: harms of transition
+    volunteered at 18:39/19:36/20:39, harms of the precedents extracted.**
+  - **METHOD: full long-form text.** Syndication truncates at ~300 chars;
+    `api.fxtwitter.com/i/status/<id>` (or `api.vxtwitter.com/...`) returns the
+    complete body, no auth. **Walk the chain with syndication, get the text from
+    fxtwitter.** Crawler user-agents on the watch page give nothing.
   - **METHOD: public X posts are recoverable with no auth**, and reply chains
     walk. `curl "https://cdn.syndication.twimg.com/tweet-result?id=<id>&lang=en&token=a"`
     returns JSON with `text`, `created_at`, `user`, and `in_reply_to_status_id_str`
