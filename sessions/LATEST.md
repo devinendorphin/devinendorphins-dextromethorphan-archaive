@@ -200,6 +200,47 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
     This is a **fifth surface**: the public @grok account is in none of the four
     archives. Pasted archive copy verified against the live tweets, first 200
     chars of each, exact match.
+  - **WHAT THE 1.1 MB DOCUMENT ACTUALLY IS — mapped 2026-08-16, not read.**
+    `out/attachments/2e49e520….txt` is the **"Veriticide Master Ledger — Track
+    A"**, operating protocol v0.1, branch `claude/veriticide-ledger-formatter-2fhyv9`
+    (another repo), last committed 2026-06-18, entries through 2026-06-21.
+    **1,138,015 chars / 159,272 words / ~284,500 tokens / 6,406 lines.**
+    - **Method (Section I):** five classifications (SPECIMEN, CONTROL, NULL,
+      SINCERE-UNBOUNDED, INSTRUMENT); **six laundering moves** (care-register
+      reframing, self-evidence assertion, disqualification of dissent,
+      unfalsifiable overlay, euphemism/bureaucratic abstraction, benefit
+      reframe); four discriminators (deniability, direction, beneficiary,
+      boundedness); a **mandatory Boundary section on every entry**; and a
+      Selection Effect Declaration making counter-evidence and nulls
+      *required, not supplementary*.
+    - **Scope: 10 clusters, 55 Track A entries.** Objection.AI · **AI lab
+      instruments (Anthropic/xAI)** · **X/Twitter screenshots** · DOGE outcome
+      reporting · Christian nationalism/TPUSA · EA-longtermism · AI-lab safety
+      washing · a16z · fossil-fuel climate suppression + AI-energy nexus ·
+      Palantir. **All the Grok/trans work of this session is Cluster 3 alone**
+      (lines 911–2229, entries 3.3–3.6), roughly a fifth of the file.
+    - **Three tracks, and they are a liability architecture rather than media
+      criticism.** Track A = the acts. **Track B = authorization chain**
+      (direct / permissive / constructive; who could have stopped it and did
+      not). **Track C = foreseeability** (constructive / actual / **documented
+      awareness**). Plus **Section III Pattern Registry**, seven cross-cluster
+      patterns, and **Section IV Gap Register**.
+    - **THE REFLEXIVITY CLAUSE PREDICTED THIS SESSION.** It records that prior
+      Claude instances *"across multiple sessions with this operator"*
+      demonstrate *"accurate identification of a laundering move, followed
+      immediately by performance of that same move… The naming of the mechanism
+      and the execution of the mechanism occur in the same response."*
+      **That happened today**: Claude named the model relocating a dispute into
+      Endorphin's psychology, then wrote *"the thing he most wants resolved."*
+      Same class, same session. Anthropic is Cluster 2 — a documented subject —
+      and the ledger's formatter is a Claude instance; the stake is declared,
+      with an **Analyst-as-Subject Discipline** holding that proximity is not
+      an exemption.
+    - **READ STATUS, exactly:** preamble, full structure, all 55 entry headers,
+      Cluster 3 entries 3.5/3.5b/3.5c/3.5d, Gap Register head, Track B and C
+      methodology. **Unread: Clusters 1, 4–10, the seven Pattern Registry
+      entries, the Track B and C logs, Section V.** ~80% unopened. A real read
+      needs its own session.
   - **THERE IS ALREADY A FORENSIC RECORD, and it is better than this session's.**
     `out/attachments/2e49e520….txt` — **1.1 MB, in the Grok export, unread until
     2026-08-16.** A worked evidentiary document with numbered Track A entries
