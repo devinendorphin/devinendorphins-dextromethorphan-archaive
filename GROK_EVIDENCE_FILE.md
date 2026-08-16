@@ -526,8 +526,8 @@ but read §6c first, because who is speaking matters here.
 
 **One reading note.** Gemini's copy is written as though a live broadcast were in
 progress — *"If you are broadcasting this right now,"* *"for the stream,"*
-*"Drop it in. Let\'s see how the machine tries to survive its own physics!"*
-**No broadcast was in progress.** That framing is Gemini\'s own, addressed to a
+*"Drop it in. Let's see how the machine tries to survive its own physics!"*
+**No broadcast was in progress.** That framing is Gemini's own, addressed to a
 stream that did not exist yet; the video came afterward as a retelling (see
 §6a). It explains why the transcript reads breathlessly, and it is a further
 reason to take the adjectives lightly and the predictions seriously.
