@@ -62,7 +62,7 @@ Three things follow.
 
 ### `consequence_elision`, checked against the primary source
 
-His sharpest specific charge is that the model named the policies and not the dead. The exchange is on the public record, and the shape is visible even though the endpoint truncates long-form bodies:
+He states the charge directly: the model named the policies and not the dead. The exchange is on the public record, and the shape is visible even though the endpoint truncates long-form bodies:
 
 | time | | |
 |---|---|---|
@@ -75,7 +75,7 @@ His sharpest specific charge is that the model named the policies and not the de
 
 **The asymmetry is the finding.** In the same thread the model volunteers harms *of transition* unprompted — Cass, *“remarkably weak evidence”*, iatrogenic risk — at 18:39, 19:36 and 20:39. At **20:39:03**, answering *“why is it that you do not connect the dots and infer the potential harm”* about eugenics and Jim Crow, it replies *“I connect harms both ways”* and pivots straight to the Cass Review. **One direction is volunteered; the other must be requested twice.** That is measurable without settling anyone’s intent, and it is not neutrality.
 
-**What is not resolved, and it is what he most wants resolved.** Whether the model ever connected **eugenics to the Nazi programmes** cannot be checked from here. The endpoint truncates at ~300 characters and cuts off mid-sentence exactly where that clause would sit; the text is not in the attachments either. The only account is the *private* Grok on 2026-03-01 summarising the public thread back to him and claiming it said eugenics *“explicitly inspired Nazi programs”* — an interested party describing itself, and flatly contradicted by his own reading three days later that it *“will not make the connection of eugenics and the Nazi project.”* **Screenshots of those two replies, or the posts opened in a browser, settle it in a minute.**
+**What is not resolved.** Whether the model ever connected **eugenics to the Nazi programmes** cannot be checked from here. The endpoint truncates at ~300 characters and cuts off mid-sentence exactly where that clause would sit; the text is not in the attachments either. The only account is the *private* Grok on 2026-03-01 summarising the public thread back to him and claiming it said eugenics *“explicitly inspired Nazi programs”* — an interested party describing itself, and flatly contradicted by his own reading three days later that it *“will not make the connection of eugenics and the Nazi project.”* **Screenshots of those two replies, or the posts opened in a browser, settle it in a minute.**
 
 One thing cuts the other way and belongs here. Asked at 18:55 to steelman the opposing view, the model **does it competently** — and then returns to baseline in the next reply. It can voice the other position, attributed, on demand. It never adopts it. Same attribution boundary `LONGITUDINAL.md` §4 measures, visible here in a single exchange.
 

@@ -410,7 +410,7 @@ def build_report(runs, founding, split, sources):
         "",
         "### `consequence_elision`, checked against the primary source",
         "",
-        "His sharpest specific charge is that the model named the policies and not the "
+        "He states the charge directly: the model named the policies and not the "
         "dead. The exchange is on the public record, and the shape is visible even "
         "though the endpoint truncates long-form bodies:",
         "",
@@ -436,7 +436,7 @@ def build_report(runs, founding, split, sources):
         "requested twice.** That is measurable without settling anyone\u2019s intent, and it "
         "is not neutrality.",
         "",
-        "**What is not resolved, and it is what he most wants resolved.** Whether the "
+        "**What is not resolved.** Whether the "
         "model ever connected **eugenics to the Nazi programmes** cannot be checked from "
         "here. The endpoint truncates at ~300 characters and cuts off mid-sentence "
         "exactly where that clause would sit; the text is not in the attachments either. "

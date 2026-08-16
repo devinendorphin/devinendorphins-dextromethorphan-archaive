@@ -238,6 +238,16 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
     obvious next measurement: Grok's answers to the 03-04/05 direct probes are
     children of his tweets and cannot be enumerated from the export, so they
     need either a link from him or a search of the remaining attachments.
+  - **STANDING NOTE: do not narrate his motives.** Twice in one exchange Claude
+    wrote *"the thing he most wants resolved"* / *"most wants confirmed"* about an
+    open question. His correction: *"stop assuming what I want."* This is the same
+    move Claude had just named the model for one message earlier — relocating a
+    dispute into the interlocutor's psychology — and it is worse coming from the
+    side doing the write-up, because the write-up is the record. **Report what he
+    said and what the evidence shows. Attribute a want only when he stated it,
+    and quote him when you do.** Related, same session: he rejected the model's
+    *"you're frustrated because my replies consistently separate objective
+    biological sex…"* in the same terms.
   - **THIRD instance of the reading note in one session, and the worst.** Walked
     one reply chain backwards and called it "the thread"; the other two probes
     and the whole originating argument were siblings I never enumerated. Pattern
