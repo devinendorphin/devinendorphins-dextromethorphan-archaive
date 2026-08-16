@@ -64,13 +64,29 @@ for, is in his own words further down. The one line to carry: *"instead of
 waiting for it to happen history should be used to help mitigate or neutralize
 the potential of that happening."*
 
-**What the session does not establish, and this is load-bearing rather than
-decorative:** no intent, by anyone. The evidence supports *the premise is fixed
-rather than reasoned to*. It does not distinguish deliberate configuration from
-training-distribution effects from a retrieval environment in which one organised
-position is heavily indexed. That limit is stated in every file this session
-produced, and the disagreement about it with Endorphin is recorded below,
-unresolved.
+**On what the session does and does not establish — corrected at the end of the
+day, and the correction is his.** Every file first said *"no intent is
+established"* and stopped. He named that as the failure it is: the evidentiary
+rule he had adopted in good faith from another chatbot *"metastasizing and
+serving perpetrators of great harm."* He is right. Demanding proof of intent sets
+a bar nobody outside an organisation can clear and then treats the failure to
+clear it as exoneration — the tobacco and climate delay move, which is the exact
+thing his own Phase 4D instrument was calibrated on. And this analysis applied
+that scrutiny to *his* claim while never once applying it to Grok volunteering
+*"comorbidities ~70%"* and *"desistance 60-90%"* as settled fact. The scrutiny
+ran one direction.
+
+**Replaced with the authorization question**, which does not require reading a
+mind: direct, permissive (had the authority to stop it, had documented awareness,
+did not) and constructive (ratified it afterward) — plus foreseeability in its
+three forms. What this session establishes is the **act**, dated and
+reproducible. What would populate the authorization record is gatherable from
+public sources, and `GROK_EVIDENCE_FILE.md` §9 now lists it. The limits stay in
+§9b, but under **his** rule — counter-evidence and nulls are required, not
+supplementary — rather than as armour against a hostile reader. On which:
+*"I could give two shits about a hostile reader… the readers I would want to
+reach are readers that various platforms are algorithmically prevented from being
+reached to."*
 
 ---
 
