@@ -16,8 +16,8 @@ intention, and the territory turned out to be unrelated. The name is the name.
 
 ## Working on this corpus
 
-Five hard-won rules, each earned by a headline number that turned out to be measuring the
-tool rather than the author. `sessions/LATEST.md` carries the full standing-notes list;
+Six hard-won rules. The first five were each earned by a headline number that turned out
+to be measuring the tool rather than the author; the sixth was earned by reading badly. `sessions/LATEST.md` carries the full standing-notes list;
 these are the ones that will bite fastest:
 
 - **Never group by story id.** Duplicating a story in NovelAI copies its whole branch
@@ -57,7 +57,8 @@ Dungeon listing pasted into block 1 of the NovelAI Pynchon × Tingle story, whic
 was the only evidence that layer existed. The archive starts on AI Dungeon in December 2020,
 eighteen months before the first NovelAI story.
 
-The five rules above are NovelAI rules and most of them do not transfer. NovelAI preserves
+The first five rules above are NovelAI rules and most of them do not transfer (the sixth
+is about reading and transfers everywhere). NovelAI preserves
 the full undo tree, which is what makes rejected generations and per-block settings
 analysable at all. **AI Dungeon's `actionWindow` is a flat sequence** — an `undoneAt` field,
 but no branch structure, no `prevBlock`, and no per-action sampler settings. Anything built
