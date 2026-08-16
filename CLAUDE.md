@@ -70,11 +70,11 @@ Two rules for it, and they pull in opposite directions:
 - **Almost nothing transfers to it.** No undo tree, no rejected generations, no sampler
   settings, strict User/Agent alternation. Everything built on chosen/rejected pairs,
   branch reachability or settings — most of `analysis/` — simply cannot be computed here.
-- **It is the only archive with a clock**, which is the one measurement NovelAI is
+- **It was the first archive with a clock**, which is the one measurement NovelAI is
   structurally incapable of (`FINDINGS.md` §11). But the resolution is **one timestamp per
   exchange, not per turn**: the Agent turn copies the request stamp exactly, in 1,409 of
   1,409 cases, so model latency is unrecoverable and every interval mixes generation,
-  reading and typing.
+  reading and typing. *(The fourth corpus, below, does not have this limitation.)*
 
 **And it is not the same practice** — 431 utility chats at a median of 4 turns and one
 minute, against NovelAI documents of 3,341 blocks. Do not read it as more of the corpus.
@@ -84,6 +84,48 @@ fiction; it does not extend to an export containing direct messages, a phone num
 email and an IP audit. `tw_export.py` has a `SKIP` list and never opens them. Anything
 committed to `data/` from this archive carries **lengths and dates only, never message
 text**. Keep it that way.
+
+## The fourth corpus
+
+**As of 2026-08-16 there are four archives, and the newest breaks the rule the third one
+established.** The **standalone Grok app** export (`analysis/grok_export.py`, schema and the
+four-archive asymmetry table in `analysis/GROK_EXPORT.md`, measurements in
+`analysis/GROK.md`): 145 conversations, **1,201 turns**, 2025-08-13 .. 2026-08-16, plus
+2,007 image and video generations.
+
+**It is not the Grok chats in the Twitter export**, which was Endorphin's reading when he
+supplied it and is now measured: zero exact-length coincidences inside a five-minute window,
+across a twelve-month overlap. Two records, no shared turns — but the closest pair is 81
+seconds apart, so he moves between the surfaces inside the same minute. *The records are
+disjoint; the activity is not. A gap in one archive is not a gap in his attention.*
+
+Four things about it, and the first two contradict what the third corpus taught:
+
+- **It is a tree.** `parent_response_id` on every non-root response, 32 sibling sets — 21
+  re-rolls, 11 prompt edits. So `TW_EXPORT.md`'s "nothing off NovelAI has branch structure"
+  was a fact about *that* export and does not generalise. But `leaf_response_id` is null on
+  143 of 145 conversations, so **which branch was kept is mostly unreadable**, and 32 sets
+  is a probe, not a selection corpus. Walk children forward; do not walk `prevBlock` back.
+- **Model latency is recoverable**, for the first time in this project. Every turn is
+  stamped independently (0 of 587 pairs share a stamp) and 494 responses carry an explicit
+  thinking window, median 14.7s inside a 22.2s turnaround.
+- **The context is open** — 220 responses carry web search results, 114 carry file
+  attachments, and the platform injects summaries of *other conversations*. **Nothing here
+  supports a closed-context claim**, which is the sharpest break from the NovelAI method and
+  the easiest to forget, because a transcript looks like a transcript.
+- **`effort` is not a temperature.** Three values, a switch not a dial. No sweep procedure.
+
+**And it is a fourth practice** — long argumentative exchanges and an evaluation apparatus,
+next to utility lookups and image work. Same rule, fourth time: do not read it as more of
+the corpus, and do not add its turns to the X-side's.
+
+**Privacy, same as the third corpus and one step further.** The export's account record
+(email, legal names, birth date, sessions, user agents) is in `SKIP` and never opened.
+`data/grok_meta.jsonl` carries the tree, the stamps and lengths — **no message text, no
+conversation titles, and not the account's user id**. These are single-party conversations
+with no correspondent to protect, but several are about his life, his family and his health,
+and **the titles alone are more disclosive than anything the repo currently holds**. Whether
+any of that text may be committed is his call and has not been asked.
 
 ## The harness
 

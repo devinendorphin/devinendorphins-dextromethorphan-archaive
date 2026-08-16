@@ -122,10 +122,38 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
   Grok chat turns / 431 chats** (2024-12-07 .. 2026-07-29).
   **Almost nothing in `analysis/` transfers to it** — no undo tree, no rejected
   generations, no sampler settings, strict User/Agent alternation. **It is the
-  only archive with a clock**, at one stamp per *exchange* (the Agent turn copies
+  first archive with a clock**, at one stamp per *exchange* (the Agent turn copies
   the request stamp exactly, 1,409/1,409). Committed data is lengths and dates
   only: `data/twitter_meta.jsonl`, `data/TWEET_DAYS.tsv`. DMs, phone, email, IP
   audit and ad records are never opened — `SKIP` list in the script.
+- **The standalone Grok app — the fourth archive, extracted and measured
+  2026-08-16.** `analysis/grok_export.py`, `analysis/GROK_EXPORT.md` (schema +
+  the four-archive asymmetry table), `analysis/GROK.md` (generated), branch
+  `claude/groc-rock-data-comparison-mefcpp`. Endorphin's Drive folder
+  **`1fECvlls93ijfWnNgf1a0VWdYsgWYAhhg`**, one file id
+  **`13-AjQRobROW9lU8N9Rpa3jWtQkqOUSFR`** (148 MB zip, read as delivered — no
+  unpacking). **145 conversations, 1,201 turns**, 2025-08-13 .. 2026-08-16, plus
+  2,007 image/video generations. Downloadable headless with
+  `curl -sL "https://drive.usercontent.google.com/download?id=<id>&export=download&confirm=t"`.
+  - **It is a different record from the Grok chats in the Twitter export** — his
+    own reading, and it holds: **0** exact-length coincidences inside a
+    five-minute window across a twelve-month overlap. But the closest pair is
+    **81 seconds** apart, so he switches surfaces mid-activity. Disjoint records,
+    not disjoint sessions.
+  - **It has a tree** (`parent_response_id`, 32 sibling sets: 21 re-rolls, 11
+    prompt edits, 8 spanning two models) **and per-turn stamps**. So
+    `TW_EXPORT.md`'s "nothing off NovelAI has branch structure or latency" was
+    over-generalised from one export; a superseding note is now at the top of its
+    asymmetry table.
+  - **`leaf_response_id` is null on 143 of 145**, so which branch was kept is
+    mostly unreadable. 32 sets is a probe, not a selection corpus.
+  - **The context is open** — 220 responses carry web search results, 114 carry
+    file attachments, and the platform injects summaries of other conversations.
+    No closed-context claim survives here.
+  - Committed data: `data/grok_meta.jsonl`, `data/GROK_DAYS.tsv` — tree, stamps,
+    model, effort, lengths. **No text, no titles, no user id.** The account
+    record (email, legal names, birth date, sessions, user agents) is in `SKIP`
+    and never opened.
 
 ## Urgent — preservation
 
@@ -679,23 +707,32 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   2,818 Grok turns and **held at 58** — different platform, model, interface and
   activity, so the number is the author, not NovelAI's text box. The obvious
   metric survived; it was the *control* that narrowed it. See the next note.
-- **The cue length is the author's, but it is not evidence for the turn-taking
-  mechanism.** The Grok chat *opener* — a turn with nothing before it, which
-  cannot be a response to a generation — has a median of **55 characters**,
-  indistinguishable from the 58 of turns that do follow one. Position in the
-  exchange does not move the number. So `FINDINGS.md`'s frame keeps the finding
-  that these are short cues and **loses the median as an argument that they are
-  turns rather than openings**; that argument has to rest on the branch
-  structure, where it already does. Do not cite the median as evidence for
-  turn-taking without this.
-- **Duration exists now, in one archive, at exchange resolution.** §11 says
-  tempo is unrecoverable and `tempo.py` recovered only rhythm; the Grok record
-  has wall-clock time. **But the Agent turn copies the request timestamp
-  exactly** (1,409/1,409), so model latency is unrecoverable and every interval
-  mixes generation, reading and typing. The measured result is a **threshold, not
-  a slope**: turnaround is flat at ~36s from the shortest agent turns to 2,000
-  characters, then climbs steeply — and the flat stretch is what rules out
-  generation time as the explanation. Do not describe this as per-turn timing.
+- **The cue length is the author's — it now holds on four platforms — but the
+  opener control is narrower than it was written.** X-side Grok: follower 58,
+  *opener* 55, indistinguishable, which cost the median its status as evidence
+  for turn-taking. **The standalone Grok record, 2026-08-16, splits them:
+  follower 61, opener 121, 2.0×.** So position in the exchange *does* move the
+  number, on the archive where conversations are long enough for position to
+  mean anything; the X-side null was a property of 431 one-minute lookups where
+  the opener is the whole errand. **Add the qualifier `on X` wherever that note
+  is used.** `FINDINGS.md`'s frame is not restored by this — one archive
+  agreeing is not the argument — and the turn-taking claim should still rest on
+  the branch structure, where it already does. But do not cite the X-side null
+  as a general fact about openings.
+- **Duration exists now in two archives, at two resolutions, and the newer one
+  is per-turn.** §11 says tempo is unrecoverable and `tempo.py` recovered only
+  rhythm. X-side Grok has wall-clock time, but the **Agent turn copies the
+  request timestamp exactly** (1,409/1,409), so model latency is unrecoverable
+  there and every interval mixes generation, reading and typing; the measured
+  result is a **threshold, not a slope** — turnaround flat at ~36s from the
+  shortest agent turns to 2,000 characters, then climbing, and the flat stretch
+  is what rules out generation time. Do not describe *that* as per-turn timing.
+  **The standalone Grok record does have per-turn stamps** — 0 of 587
+  human→assistant pairs share one — and 494 responses carry an explicit
+  thinking window, median **14.7s**, sitting inside a **22.2s** median
+  turnaround. Two independent instruments agreeing in shape. **Model latency is
+  measurable in exactly one archive, and it is not the fiction one**, so it
+  bounds nothing about the NovelAI sessions.
 - **The unit is his, not the schema's — and it is the episode.** Endorphin,
   2026-08-12: *"There are parts of the corpus that are totally me… Most of the
   episode where I make a simulation of my ex… very little generation there."*
