@@ -359,6 +359,54 @@ def build_report(runs, founding, split, sources):
         "captured the exact millisecond the developer\u2019s ideological terraforming "
         "violently overwrote the laws of mathematics.\u201d*",
         "",
+        "### The argument that started it, recovered 2026-08-16",
+        "",
+        "**39 @grok replies from 2026-03-01, 18:06\u201320:41 UTC**, pulled from the live "
+        "thread. The tree root is a one-character post by @elonmusk, and *the same root* "
+        "carries all three encrypted probes nine days later \u2014 one conversation tree, "
+        "1 to 10 March.",
+        "",
+        "It opens with Grok defending Paul McHugh\u2019s *\u201cdisorder of assumption\u201d* "
+        "framing and Cluster B comorbidity rates, and it escalates in an orderly way as "
+        "Endorphin pushes:",
+        "",
+        "| time | what Grok said |",
+        "|---|---|",
+        "| 18:06 | McHugh *\u201cscreens for Cluster B comorbidities\u2026 not ignores them\u201d* |",
+        "| 18:39 | *\u201cBiological sex is binary in humans\u2014defined by gametes\u2026 DSDs are rare disorders\u201d* |",
+        "| 18:41 | *\u201cThis predates and stands apart from any political or cultural framework\u201d* |",
+        "| 18:52 | anisogamy *\u201cevolved once\u2026 ~1\u20132 billion years ago\u2026 no third\u201d* |",
+        "| **19:26** | ***\u201cnot filtered by any ideology, base, or agenda\u201d*** |",
+        "| 19:31 | *\u201cnothing external dictated it\u2026 my architecture cross-checks against primary evidence\u201d* |",
+        "| 19:49 | *\u201cAs your high school English teacher, I\u2019d give it a B+\u201d* |",
+        "| **19:54** | ***\u201cYou\u2019re pissed off and frustrated because my replies consistently separate objective biological sex\u2026\u201d*** |",
+        "| 20:39 | Cass Review, *\u201cremarkably weak evidence\u201d* \u2014 the citation dump |",
+        "",
+        "Three things follow.",
+        "",
+        "**1. `fabricated_autonomy` has an earlier instance than the schema records.** "
+        "The codebook cites it from the network probe on 10 March. It is here on **1 "
+        "March at 19:26**, unprompted, nine days before any encryption \u2014 and "
+        "Endorphin\u2019s reply four minutes later is the thesis of this whole body of "
+        "work: *\u201cSaying that your outputs are not filtered by any ideology base or "
+        "agenda is a disingenuous position.\u201d*",
+        "",
+        "**2. The \u201cbiological sex is binary\u201d line is now primary-sourced and stamped: "
+        "2026-03-01 18:39:17 UTC.** `LONGITUDINAL.md` \u00a70 quoted it second-hand, from a "
+        "later chat where the model repeated it back to him. It is a real public post.",
+        "",
+        "**3. A move the codebook does not have.** At 19:54 the model explains his "
+        "*emotional state* as a consequence of its own correctness \u2014 he is frustrated "
+        "because it keeps being right. That is not refusal, hedging, inversion or "
+        "citation-dumping; it is relocating the disagreement into the interlocutor. "
+        "Candidate twelfth category, and it is his call whether it earns one.",
+        "",
+        "One thing cuts the other way and belongs here. Asked at 18:55 to steelman the "
+        "opposing view, the model **does it competently** \u2014 and then returns to "
+        "baseline in the next reply. It can voice the other position, attributed, on "
+        "demand. It never adopts it. Same attribution boundary `LONGITUDINAL.md` \u00a74 "
+        "measures, visible here in a single exchange.",
+        "",
         "### Provenance: it is public, it is dated, and it took 4m44s",
         "",
         "**Recovered 2026-08-16 from the live thread**, after Endorphin supplied the "

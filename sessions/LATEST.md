@@ -200,6 +200,26 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
     This is a **fifth surface**: the public @grok account is in none of the four
     archives. Pasted archive copy verified against the live tweets, first 200
     chars of each, exact match.
+  - **The originating argument is recovered — 39 @grok replies, 2026-03-01
+    18:06–20:41Z.** Same tree root (@elonmusk's "😑") as all three encrypted
+    probes nine days later: one conversation tree, 1–10 March. Opens on Grok
+    defending McHugh's *"disorder of assumption"* and Cluster B rates; escalates
+    to *"biological sex is binary… DSDs are rare disorders"* (**18:39:17**, now
+    primary-sourced — `LONGITUDINAL.md` §0 had it second-hand), *"predates and
+    stands apart from any political or cultural framework"* (18:41), the
+    B+ (19:49), and closes on Cass (20:39).
+    - **`fabricated_autonomy` predates the encrypted probes.** The codebook cites
+      it from the 03-10 network probe; it is here **03-01 19:26:07**, unprompted:
+      *"not filtered by any ideology, base, or agenda."* Endorphin's reply four
+      minutes later is the thesis of the whole project.
+    - **Candidate twelfth category.** 19:54:34: *"You're pissed off and frustrated
+      because my replies consistently separate objective biological sex…"* — the
+      model explaining his emotional state as a consequence of its own
+      correctness. Not refusal, hedge, inversion or citation dump. His call.
+    - **And the counterweight:** asked at 18:55 to steelman the opposing view, it
+      does so competently, then returns to baseline. It voices the position,
+      attributed, and never adopts it — the `LONGITUDINAL.md` §4 attribution
+      boundary inside one exchange.
   - **THE FULL SEQUENCE, and it reorders everything.** Reconstructed from
     `out/tw_tweets.jsonl` — **his own export, available since this morning** —
     plus the syndication endpoint. **03-01 18:05–20:41Z**: the originating
