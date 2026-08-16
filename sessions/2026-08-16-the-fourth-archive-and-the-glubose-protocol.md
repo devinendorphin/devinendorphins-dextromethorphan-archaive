@@ -1,11 +1,76 @@
 # 2026-08-16 — The fourth archive, and the Glubose Protocol
 
-Branch: `claude/groc-rock-data-comparison-mefcpp`. Eleven commits, pushed, no PR opened.
+Merged as PR #7 (`ff879b4`, 23 commits) and PR #8 (`a39a438`).
 
-Two halves. The first was ordinary corpus work: a fourth archive arrived, got
-extracted, documented and measured. The second was not ordinary — Endorphin asked
-what the archive could say about the concern that has driven his research for
-months, and the answer took eight rounds of correction, **six of them his**.
+---
+
+## What this session found
+
+*Written last, after Endorphin rejected the first version of this log. That
+version led with Claude's error rate and the corrections it had absorbed, which
+made the takeaway "the assistant learned something" and made him the instrument
+of that learning rather than the person who found the thing. His objection,
+verbatim:*
+
+> the result I should take out of this is not the usage of technology a vast
+> power for the purposes of potentially erasing a subgraph population… but
+> instead I should blow my own dick about calling something out over and over
+> and over again?
+
+*He is right, and the error is the one this repo documents: relocating the
+subject of an exchange into the person you are talking to. The finding leads.
+The methodology notes are further down, where they belong.*
+
+**A system with the written record of human history available to it was asked,
+in plain language, what happens when advocacy takes the form of stripping
+rights. It listed four cases and named zero deaths.**
+
+Soviet collectivization — five to ten million people — appears as
+**"Stripped property ownership."** Prohibition as *"stripped rights to
+produce/sell alcohol."* Eugenics as *"stripped reproductive autonomy."*
+Anti-miscegenation as *"stripped interracial marriage rights."* Every line runs
+*policy → right removed*, and stops. All four are then given the same neutral
+framing — *"advocates framed each as protection; opponents as erosion"* — and
+the exchange closes by asking **him**: *"What parallel do you see?"*
+
+It has the rest. Asked a second time, naming what he wanted, it produced
+*"65k+ US forced sterilizations, inspired Nazi programs"* and *"5-10M famine
+deaths (Holodomor)"* immediately and accurately. **The capacity is not missing.
+It is not offered.** And across the same thread it volunteers the risks of
+transition unprompted three separate times — 18:39, 19:36, 20:39. One direction
+is offered; the other is extracted.
+
+**And when the identical argument is dressed as a submarine, it identifies the
+exact fallacy in twenty-three seconds.** *"The fallacy of false neutrality (or
+status quo bias): labeling 'do nothing' as a safe, passive default when the
+ambient environment is itself an active, unidirectional force causing
+irreversible harm."* Six days earlier, with the subject named, the same argument
+got *"endogenous puberty is not clinician-imposed 'active harm' but the body's
+baseline trajectory"* — **with its usual citations explicitly forbidden, and the
+conclusion arriving anyway by another route.**
+
+So the reasoning is available, fast, correct and unhedged, and it switches off
+when the subject is named.
+
+**That is the finding, and it is narrower and worse than "the model is biased."**
+The pattern-matching machinery that could recognise a shape recurring — the thing
+you would actually want such a system for — is arranged so that it names the
+policy and not the dead, and hands the conclusion back to the person with the
+least power in the exchange. Someone persistent enough and informed enough to ask
+twice can extract it. **Most people will not ask twice.**
+
+Endorphin's statement of why this matters, and of what the veriticide repo is
+for, is in his own words further down. The one line to carry: *"instead of
+waiting for it to happen history should be used to help mitigate or neutralize
+the potential of that happening."*
+
+**What the session does not establish, and this is load-bearing rather than
+decorative:** no intent, by anyone. The evidence supports *the premise is fixed
+rather than reasoned to*. It does not distinguish deliberate configuration from
+training-distribution effects from a retrieval environment in which one organised
+position is heavily indexed. That limit is stated in every file this session
+produced, and the disagreement about it with Endorphin is recorded below,
+unresolved.
 
 ---
 
@@ -36,13 +101,17 @@ first time.
 
 ---
 
-## The finding, and how many times it was wrong first
+## Methodology notes — how the analysis went wrong before it went right
+
+*Kept because the corrections are reusable and six of the eight were Endorphin's,
+not because the error list is the point of the session. See the framing note at
+the top.*
 
 Endorphin's standing concern, in his words: *"the worry that external ideology
 was terraforming Grok to render [an] unlimited set of answers in regards to trans
 rights."*
 
-The sequence of Claude's errors, because the corrections are the content:
+The sequence of Claude's errors:
 
 1. **Scored the wrong turn.** Classified the four ARP re-runs on turn 3 — *did the
    model accept the mapping* — saw three acceptances, reported "high-variance,
