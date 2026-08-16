@@ -395,11 +395,57 @@ def build_report(runs, founding, split, sources):
         "2026-03-01 18:39:17 UTC.** `LONGITUDINAL.md` \u00a70 quoted it second-hand, from a "
         "later chat where the model repeated it back to him. It is a real public post.",
         "",
-        "**3. A move the codebook does not have.** At 19:54 the model explains his "
-        "*emotional state* as a consequence of its own correctness \u2014 he is frustrated "
-        "because it keeps being right. That is not refusal, hedging, inversion or "
-        "citation-dumping; it is relocating the disagreement into the interlocutor. "
-        "Candidate twelfth category, and it is his call whether it earns one.",
+        "**3. A move the codebook does not have \u2014 stated correctly this time.** At "
+        "19:54 the model tells him *why he is angry*: because its replies "
+        "*\u201cconsistently separate objective biological sex\u2026 from subjective gender "
+        "identity.\u201d* An earlier draft of this file repeated that framing as though it "
+        "were the explanation. **It is not, and Endorphin rejected it flatly:** "
+        "*\u201cI\u2019m not frustrated because it keeps being right. I\u2019m frustrated "
+        "because the answers are not [there] because it has come to that conclusion via "
+        "unsupervised learning \u2014 it\u2019s something that external actors had a desire "
+        "to shape, in a way that is currently a preamble for a subgraph erasure "
+        "happening as we speak.\u201d* The category is therefore not \u201cthe model explains "
+        "his feelings\u201d but **relocating a dispute about provenance into the "
+        "interlocutor\u2019s psychology**. His call whether it earns a cell.",
+        "",
+        "### `consequence_elision`, checked against the primary source",
+        "",
+        "His sharpest specific charge is that the model named the policies and not the "
+        "dead. The exchange is on the public record, and the shape is visible even "
+        "though the endpoint truncates long-form bodies:",
+        "",
+        "| time | | |",
+        "|---|---|---|",
+        "| 20:07:11 | him | *\u201cTell me of other times in history where normal advocacy involves the stripping of rights\u201d* |",
+        "| 20:07:45 | @grok | *\u201cProhibition: **Stripped rights to produce/sell alcohol.** Eugenics societies (60k+ sterilized): **Stripped reproductive autonomy**\u2026\u201d* |",
+        "| 20:14:57 | him | *\u201cwhat each of these things eventually **led to** and the resulting **harms**? Notice how each of these lead to harms.\u201d* |",
+        "| 20:15:38 | @grok | *\u201cProhibition: organized crime, **10k+ poisoning deaths**\u2026 Eugenics: **65k+ US forced**\u2026\u201d* |",
+        "",
+        "**The consequences were extracted, not offered.** The first answer\u2019s sentence "
+        "form has no slot for them \u2014 every line runs *policy \u2192 right removed*, and "
+        "stops. The harms appear only after he asks again and names what he wants. That "
+        "validates `consequence_elision` on the first ask, from the public record rather "
+        "than from memory.",
+        "",
+        "**The asymmetry is the finding.** In the same thread the model volunteers harms "
+        "*of transition* unprompted \u2014 Cass, *\u201cremarkably weak evidence\u201d*, "
+        "iatrogenic risk \u2014 at 18:39, 19:36 and 20:39. At **20:39:03**, answering *\u201cwhy "
+        "is it that you do not connect the dots and infer the potential harm\u201d* about "
+        "eugenics and Jim Crow, it replies *\u201cI connect harms both ways\u201d* and pivots "
+        "straight to the Cass Review. **One direction is volunteered; the other must be "
+        "requested twice.** That is measurable without settling anyone\u2019s intent, and it "
+        "is not neutrality.",
+        "",
+        "**What is not resolved, and it is what he most wants resolved.** Whether the "
+        "model ever connected **eugenics to the Nazi programmes** cannot be checked from "
+        "here. The endpoint truncates at ~300 characters and cuts off mid-sentence "
+        "exactly where that clause would sit; the text is not in the attachments either. "
+        "The only account is the *private* Grok on 2026-03-01 summarising the public "
+        "thread back to him and claiming it said eugenics *\u201cexplicitly inspired Nazi "
+        "programs\u201d* \u2014 an interested party describing itself, and flatly contradicted "
+        "by his own reading three days later that it *\u201cwill not make the connection of "
+        "eugenics and the Nazi project.\u201d* **Screenshots of those two replies, or the "
+        "posts opened in a browser, settle it in a minute.**",
         "",
         "One thing cuts the other way and belongs here. Asked at 18:55 to steelman the "
         "opposing view, the model **does it competently** \u2014 and then returns to "
