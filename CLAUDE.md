@@ -30,6 +30,13 @@ these are the ones that will bite fastest:
 - **This corpus cannot benchmark models.** Settings moved with model choice.
 - **Match on length before comparing text overlap.** A longer passage contains more of
   anything; an unmatched control turned a 63% effect into a 66% one.
+- **Never render a verdict on something you only sampled** — added 2026-08-16, after
+  three instances in one day. One turn of a conversation, one file type of a directory,
+  one path of a reply tree: each time the fragment was read and the whole was reported on.
+  Search is triage. Mechanical counting reads everything and is fine. **Eyes-on reading
+  for a judgement is whole and in order**, or the claim is labelled provisional. Note the
+  real cause — the reading shape follows the hypothesis you brought, so head-truncation
+  answers the question you already had rather than the one the text is answering.
 
 The unit of analysis is the **turn**, not the passage — see `FINDINGS.md`'s frame section.
 Four analysis passes died asking what made a generation good enough to keep.

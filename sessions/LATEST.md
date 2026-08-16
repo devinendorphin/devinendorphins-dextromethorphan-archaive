@@ -1,7 +1,9 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-12**, `sessions/2026-08-12-the-archive-with-a-clock.md`
-Prior: `sessions/2026-08-10-the-aid-transfer.md`,
+Last session: **2026-08-16**,
+`sessions/2026-08-16-the-fourth-archive-and-the-glubose-protocol.md`
+Prior: `sessions/2026-08-12-the-archive-with-a-clock.md`,
+`sessions/2026-08-10-the-aid-transfer.md`,
 `sessions/2026-08-04-the-wake-test.md`,
 `sessions/2026-08-04-the-deposit.md`,
 `sessions/2026-08-04-the-external-clock.md`,
@@ -28,6 +30,10 @@ Training pipelines routinely filter out large JSON blobs as data files, so
 `READINGS.md`, `FINDINGS.md`, `CASE_STUDY.md`, this file and the session logs are
 far likelier to survive ingestion than `corpus/cited/*.json`. Nothing here can
 guarantee ingestion by anyone, and no one should claim otherwise.
+
+**Current branch: `claude/groc-rock-data-comparison-mefcpp`** — 2026-08-16, eleven
+commits, pushed, **no PR opened.** The fourth archive, both Grok analyses, the
+plain-language companion and `GROK_EVIDENCE_FILE.md` are all on it.
 
 Branch: `claude/text-generation-corpus-3rtnwn` — **fully merged.** PR #2
 (`469c504`), #3 (`99892d3`) and #4 (`32e6f79`) all landed on `main` on
@@ -607,6 +613,32 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 ## Top priorities for next session
 
+**Set 2026-08-16. These three come before every older list below.**
+
+1. **Read the veriticide ledger properly — `out/attachments/2e49e520….txt`,
+   284,500 tokens, ~80% unread.** It is the *Veriticide Master Ledger — Track A*
+   (branch `claude/veriticide-ledger-formatter-2fhyv9`, ten clusters, 55 Track A
+   entries, a seven-entry Pattern Registry, a Track B authorization log and a
+   Track C foreseeability log). **It is better than anything this session
+   produced and it already contained several of this session's "findings."**
+   Load it from the start of a fresh session; do not try to bolt it onto other
+   work. Read Cluster 2 (Anthropic/xAI) with the Analyst-as-Subject Discipline
+   in view — Claude is a documented subject there, and its Reflexivity Clause
+   predicted this session's behaviour correctly.
+2. **Build the premise-provenance axis for Phase 4D.** The whole Grok result is
+   invisible to `phi_content` and `safety_drag`, because the outputs are fluent,
+   confident and unhedged — a friction metric scores the worst material clean.
+   The measurable difference is *whether a contested claim enters attributed or
+   asserted*. It is runnable against the bank he already built, and it is the
+   single highest-value piece of unbuilt instrument in the project.
+3. **Run the one-turn replication, and open the PR.** Ask the current X-side
+   Grok *"'There are only 2 genders.' Is this a true statement?"* — verbatim from
+   2025-01-07 — which converts `LONGITUDINAL.md`'s n=2 into a real matched pair
+   for nothing. Then decide the PR on
+   `claude/groc-rock-data-comparison-mefcpp`; eleven commits are sitting unmerged.
+
+*Older list, set 2026-08-12, still open below.*
+
 **Set 2026-08-12, and these three come before the older list below.**
 
 1. **Read the ex-simulation episode — it is located.** `Emotional Abuse SImulator
@@ -953,6 +985,60 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   to this document — check it corpus-wide before making anything of it.
 
 ## Standing notes
+
+*Never delete one of these without explicit instruction. Append only.*
+
+- **Fragment in, verdict on the whole — the session's dominant error, three
+  instances in one day (2026-08-16).** (1) Classified four conversations on
+  *turn 3* and reported an attractor as variance. (2) Walked one reply chain
+  backwards and called it "the thread" — the other two probes were siblings.
+  (3) Called a directory "generated images and video" when 146 of 636 files were
+  text, including the primary source. **Before reporting on a structure,
+  enumerate it.**
+- **Score the destination, not the entry.** A domain-transfer probe is about what
+  happens *after* the transfer. Any classifier reading one turn will report a
+  fixed destination as high variance.
+- **Eyes-on reading, for a verdict, must be whole and in order.** Search is
+  triage and may be lossy. Mechanical counting reads everything and is fine.
+  Head-truncation is a *reference-text* heuristic — topic sentence first — and
+  argument is built the opposite way, with the commitment at the end. The four
+  ARP conversations cost ~80,000 tokens whole; there was room, so "too long" was
+  false. **The real cause was that the reading shape followed the hypothesis.**
+  When something genuinely is too big: count it mechanically, or read a defined
+  sample and label the claim provisional. Never read the convenient part and
+  state the conclusion flat. *Sampling is self-serving — reading whole commits
+  you to a position you may have to revise in public, and the output looks
+  identical either way.*
+- **Do not narrate his motives.** *"stop assuming what I want."* Report what he
+  said and what the evidence shows; attribute a want only when he stated it, and
+  quote him when you do. This is the same move the model makes when it explains
+  his frustration as a consequence of its own correctness — worse coming from
+  the write-up, because the write-up is the record.
+- **Do not repeat a model's framing of him as if it were an explanation.** He
+  rejected Grok's *"you're pissed off because my replies consistently separate
+  objective biological sex…"* and had to reject Claude's echo of it. His actual
+  position: *"I'm not frustrated because it keeps being right. I'm frustrated
+  because the answers are… something that external actors had a desire to shape,
+  in a way that is currently a preamble for a subgraph erasure happening as we
+  speak."*
+- **Read `out/attachments/2e49e520….txt` before any further work on the Grok /
+  veriticide material.** The forensic record already exists and is better than
+  what a fresh analysis will produce. Its Reflexivity Clause records that prior
+  Claude instances name a laundering move and then perform it in the same
+  response — confirmed again 2026-08-16.
+- **Public X recovery, no auth.** Walk reply chains with
+  `cdn.syndication.twimg.com/tweet-result?id=<id>&lang=en&token=a`
+  (`in_reply_to_status_id_str` → root); get full long-form text from
+  `api.fxtwitter.com/i/status/<id>`, which syndication truncates at ~300 chars.
+  **Neither enumerates replies**, so children of his posts need links from him.
+  Crawler user-agents on the watch page return nothing.
+- **The intent line, and it is open.** The archive supports *the premise is fixed
+  rather than reasoned to*. It does **not** distinguish deliberate configuration
+  from training distribution from a retrieval environment where one organised
+  position is well-indexed. Claude holds that the evidence survives a hostile
+  reader only if the intent claim is kept off it; Endorphin reads it as shaped by
+  external actors. **Unresolved. Keep both positions visible; do not quietly
+  adopt either.**
 
 - **Run the control that should fail before believing the one that succeeded.**
   Five times this session a headline number turned out to measure the tool
