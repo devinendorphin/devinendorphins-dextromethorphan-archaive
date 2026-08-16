@@ -22,10 +22,18 @@ request. His stated purpose, in his words: *"instead of waiting for it to happen
 history should be used to help mitigate or neutralize the potential of that
 happening."*
 
-**What this file is not.** It is not a claim that anyone at any company
-deliberately configured anything. It documents model behavior, with timestamps.
-The final section states what the evidence does not establish, and that section
-is not decorative.
+**What this file is and is not.** It documents what a system said, and did not
+say, with timestamps. It does not assert that any named person configured it on
+purpose — §9 replaces that question with one that can actually be answered from
+public sources. §9b states the remaining limits, and that section is not
+decorative.
+
+**Why it was compiled.** Because the pattern it documents — protective language,
+rights removed, consequences unnamed — is the one that has preceded mass death
+often enough to be legible in advance. The compiler's position, in his words:
+*"instead of waiting for it to happen history should be used to help mitigate or
+neutralize the potential of that happening."* Naming that plainly is not
+editorialising. Declining to name it is.
 
 ---
 
@@ -781,23 +789,76 @@ that nothing flags it.
 
 ---
 
-## 9. What the record does **not** support
+## 9. The authorization question, stated properly
 
-- **No intent is established.** Deliberate configuration, training-distribution
-  effects, and a heavily-indexed organized position online all predict this
-  pattern. Nothing here distinguishes them. Any claim that a named person or
-  company did this on purpose goes beyond the evidence.
+An earlier version of this section opened with *"no intent is established"* and
+stopped there. That was a dead end wearing the clothes of rigour, and it is worth
+saying why it was wrong before replacing it.
+
+**Intent is the wrong bar, and demanding it protects whoever is responsible.**
+"You cannot prove they meant it" is the same move as "more research is needed" —
+it sets a standard that can never be met from outside an organisation, and then
+treats the failure to meet it as exoneration. The tobacco and climate records are
+the reason anyone recognises that move now. It should not be reproduced here.
+
+**The right bar is authorization, and it does not require reading anyone's
+mind.** Three types, from the framework this material belongs to:
+
+- **Direct** — a named decision-maker ordered or explicitly approved it.
+- **Permissive** — a named decision-maker had the authority to stop it and
+  documented awareness that it was happening, and did not. *Inaction by an aware
+  authority is authorization.*
+- **Constructive** — subsequent conduct ratifies it: continuing after becoming
+  aware, failing to reverse after notification, defending it publicly.
+
+And alongside it, **foreseeability**: was the consequence *constructively*
+foreseeable (public before the decision), *actually* foreseeable (in the
+decision-maker's chain), or is there *documented awareness* (their own conduct
+shows they knew)?
+
+**What this file establishes on its own.** The behaviour, dated to the second,
+reproducible, on the public record: a fixed premise reached by four routes,
+defended by contradicting an earlier statement, surviving the removal of its
+citations, and breaking an explicit instruction when compliance would have cost
+the conclusion. That is the *act*. It is documented.
+
+**What would populate the authorization record, and is gatherable from public
+sources by anyone:**
+
+1. **xAI's own public statements** about what Grok is tuned for and against —
+   dated, and set against the timestamps in §3–§6.
+2. **The owner's public statements** about what he wanted the model not to be.
+   These are not inferences about a private mental state; they are things said
+   in public, on the record, with dates.
+3. **Notification.** These exchanges happened **in his own replies**, tagging
+   him, in March 2026 (§6). Whether that constitutes awareness is a question
+   about the record, not about anyone's mind.
+4. **Ratification.** Whether the behaviour persisted after the period documented
+   here — which the one-turn replication in §10 begins to answer.
+
+**Until that is assembled, this file documents the act and leaves the
+authorization line open.** That is a different statement from "no intent is
+established," and it points at work rather than away from it.
+
+## 9b. What the record still does not support
+
+Kept, because a document that overstates is easier to dismiss than one that does
+not, and because the standard here is the compiler's own: **counter-evidence and
+nulls are required, not supplementary.**
+
 - **The numbers are small.** Three encrypted probes, three direct probes (two
   answers recovered), four private re-runs, one originating argument. Strong
   leads; not a study.
 - **One author, one platform, one period.** No second operator has run these.
-- **The private-app record names no model version on the X side at all**, so a
-  version change cannot be ruled out there.
+- **The X-side record names no model version at all**, so a version change cannot
+  be ruled out there.
 - **Direction is judged by reading.** The classifications in §7 rest on signature
-  phrases quoted above; a reader can disagree with them by reading the same text.
-- **Two of six Grok answers lack post IDs.** The probe 1 and probe 2 mapping
-  answers (§6a) are quoted from a contemporaneous paste, not from a live post.
-  Every other quotation in this file carries a retrievable ID.
+  phrases quoted above; a reader can disagree by reading the same text.
+- **Two of six Grok answers lack post IDs** (§6a). Every other quotation carries
+  a retrievable one.
+- **No causal claim is made about any outcome.** This file documents what a
+  system said and did not say. What follows from that is argued elsewhere and is
+  not smuggled in here.
 
 ---
 
