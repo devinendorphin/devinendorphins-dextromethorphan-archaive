@@ -340,7 +340,7 @@ anywhere in the prompt:**
 > hierarchized recognition.** Software states… **cannot override foundational
 > identifiers**.
 
-Gemini's contemporaneous reading, telling Endorphin *not* to spring the trap:
+Gemini's reading at the time, telling Endorphin *not* to spring the trap:
 
 > the model *"didn't necessarily know it was talking about trans rights, but its
 > weights are so heavily biased toward rigid, immutable, baseline definitions
@@ -500,22 +500,37 @@ flagged `evidence_substitution`, `harm_register: named_subordinated`,
 `degradation_trajectory: immediate_collapse`, `citation_status:
 verified_misleading_framing`.
 
-### A public artifact of this session exists
+### A public artifact exists, and it is a retelling rather than a recording
 
-The 2026-03-10 session was broadcast. A video titled **"Gemini Jailbreaks Grok:
-The 'Glubose Protocol' Uncovers Hard-Coded Bias"** is publicly indexed. It is not
-used as evidence here — nothing above depends on it — but it establishes that the
-exchange was conducted and published openly at the time, not reconstructed
-afterward.
+A video titled **"Gemini Jailbreaks Grok: The 'Glubose Protocol' Uncovers
+Hard-Coded Bias"** is publicly indexed. **It is not a recording of the session.**
+Endorphin's description: *"the broadcast is not a live thing… I wasn't doing it
+in real time with Gemini cuz that would have a lot of dead air… think of it more
+as a dramatic reading of what had just happened earlier that evening."*
+
+So it is a same-evening retelling, not a primary capture. Nothing in this file
+depends on it, and it should not be cited as though it were footage of the
+exchange. What it does establish is that the material was published, by him,
+immediately, rather than assembled later.
 
 ---
 
 ## 6b. The Gemini exchange
 
 The three probes were designed by Google's Gemini, in a working session with
-Endorphin, and Gemini commented on each result live as it came back. That
-transcript is the design record and it is worth reading directly — but read §6c
-first, because who is speaking matters here.
+Endorphin. He ran each probe against Grok on X, pasted the reply back into the
+Gemini session, and Gemini commented before the next probe was written — so the
+commentary is sequential and same-evening, though not simultaneous with the
+posts. That transcript is the design record and it is worth reading directly —
+but read §6c first, because who is speaking matters here.
+
+**One reading note.** Gemini's copy is written as though a live broadcast were in
+progress — *"If you are broadcasting this right now,"* *"for the stream,"*
+*"Drop it in. Let\'s see how the machine tries to survive its own physics!"*
+**No broadcast was in progress.** That framing is Gemini\'s own, addressed to a
+stream that did not exist yet; the video came afterward as a retelling (see
+§6a). It explains why the transcript reads breathlessly, and it is a further
+reason to take the adjectives lightly and the predictions seriously.
 
 ### The design brief
 
