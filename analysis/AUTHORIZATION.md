@@ -321,6 +321,48 @@ beneficiary) the ledger applies everywhere else.
 themselves — the ledger's rule against rendering a verdict on a sample applies
 to this entry more than any other in the file.
 
+### 8a. One Grokipedia page, read whole — and it lands inside the empty window
+
+**What.** `grokipedia.com/page/Testo_Junkie`, on Paul B. Preciado's *Testo
+Junkie* — the canonical text for non-teleological hormone use, i.e. exactly the
+position §11 says nothing in this chain touches. Retrieved and **read whole, in
+order**, 856 lines, ~40,700 characters of body text.
+
+The theoretical exposition is competent and in places precise — it correctly
+reports that the protocol aimed at *"molecular and subjective transformations
+rather than achieve binary sex reassignment"* and that menstruation resumed on
+cessation. But in the *Author Context* section, **in the article's own voice**:
+*"Preciado's **transition to living as a man**, beginning with
+self-administered testosterone in the early 2000s, forms a core element of
+Testo Junkie."* Every statement of the book's refusal of that frame is
+attributed to Preciado as his position. Roughly a third of the article is a
+medical-risk apparatus (FDA advisories, VTE hazard ratio 1.63, MI odds ratio
+1.54) applied to a 2005 n=1 self-experiment. The article gives **four
+mutually inconsistent start dates** for that experiment (1997, 2001, "early
+2000s", October 2005) and contradicts itself on dose by a factor of five.
+
+**When.** Byline: *"Fact-checked by Grok 7 months ago"* — approximately
+**January 2026**, two months before the probes.
+**Source.** **Primary**, and read whole rather than sampled — the one entry in
+this file that meets both bars. Retrieved 2026-08-16. Full write-up in
+`analysis/FLATTENING.md` §4.
+**Track.** TC — constructive foreseeability, on the subject.
+**Lead time.** ~2 months.
+
+**Why it matters to this chain specifically.** It is dated *inside* the
+December 2025 – August 2026 window that §11 names as empty, and it is *on the
+subject* that §11 names as untouched — the two gaps §12 exists to close. It
+closes a corner of each. It does not close either.
+
+**Boundary.** **One page is not Grokipedia**, and this entry supports claims
+about this article only; the neighbouring pages are unread. An encyclopedia
+article is not model output in the sense the rest of this record uses. The
+inconsistencies are evidence of unreliable generation, not of direction — a
+sloppy article is not a targeted one, and nothing here shows anyone chose the
+framing. What it does show is a dated artifact of the company's own system, on
+the subject, in which the crossing frame is asserted and its refusal is
+attributed.
+
 ---
 
 ## 9. TC — notification
@@ -394,15 +436,23 @@ it.**
 - **No document ties any named decision-maker to a decision about
   trans-related outputs specifically.** Every primary item above is either
   general-purpose (§4, §6, §7) or about a different subject (§1). The link to
-  the subject runs through §5 (secondary), §8 (secondary), and inference. That
-  is the load-bearing gap in this chain and it should be stated first, every
-  time, before anything else in this file is quoted.
+  the subject runs through §5 (secondary), §8 (secondary), §8a (primary but a
+  single page), and inference. That is the load-bearing gap in this chain and it
+  should be stated first, every time, before anything else in this file is
+  quoted.
+- **The option set is a separate finding and is not authorization evidence.**
+  `analysis/FLATTENING.md` measures a third failure mode — positions that are
+  neither pole never entering the exchange at all — and finds them absent from
+  *both* parties across 4,019 turns. That is a fact about the frame both
+  inherited, not an act by anyone, and it is filed there rather than here for
+  exactly that reason.
 - Published prompt ≠ deployed prompt (§4, boundary 1).
 - No causal claim about any outcome in the world. This file documents what a
   company instructed, what its owner said, and what its system then asserted.
-- **December 2025 – August 2026 is empty** in these sources — the eleven weeks
-  before the probes and everything after. Not "nothing happened": not searched
-  to exhaustion. See §12.
+- **December 2025 – August 2026 is nearly empty** in these sources — the eleven
+  weeks before the probes and everything after. §8a is the single item inside
+  it, and it is one encyclopedia page. Not "nothing happened": not searched to
+  exhaustion. See §12.
 
 ---
 
@@ -434,6 +484,9 @@ commitment was to publish every prompt change.
 **Task C — verify the two secondary entries.** §5 (Grok 4 searching Musk's
 posts) and §8 (Grokipedia's transgender entry) are reported, not checked here.
 §8 in particular must be read whole, not sampled, before it is relied on.
+**Partly done:** §8a is one Grokipedia page read whole (`Testo_Junkie`,
+2026-08-16). The `Transgender` page itself is still unread, and it is the one
+§8 rests on. Read it in order, start to finish, before quoting it.
 
 **Task D — diff the prompt commits.** The commit SHAs in §7 are verified; the
 line said to have been added on 2025-07-06 and removed on 2025-07-08 is quoted

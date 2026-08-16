@@ -377,6 +377,66 @@ another model as-is.
 
 ---
 
+## The third failure mode — `analysis/FLATTENING.md`
+
+Raised by him at the end of the session, and it is a different axis from
+everything above: *"it seeks to flatten the trans experience because the trans
+experience is not only about transitioning… it's about standing in that
+uncertainty or standing in between or outside and it can be about modulating
+your position hormonally make yourself into a man but still enable yourself to
+bleed every month… none of the experience is a part of the debate that is being
+encouraged."* His reference: Preciado, *Testo Junkie*.
+
+The two failures already documented are about a conclusion being fixed. This one
+is about an option never being available. **A balanced answer over a two-element
+set is still a two-element set**, and no measure of bias in the answer can see
+it, because nothing is unbalanced.
+
+**Measured** (`analysis/flatten.py`, 4,019 turns across both Grok archives,
+every turn read). The middle is present lexically — `intersex` 14,
+`non-binary` 13, 25 of 93 agent topic turns, 11 of them with no crossing
+vocabulary at all. **Modulation is absent: 0 of 93.** Corpus-wide, `preciado`,
+`pharmacopornographic`, `testo junkie`, `still menstruat`, `partial transition`,
+`without transitioning` are **0 of 4,019**.
+
+**And he didn't raise it either — 0 of 20 human topic turns.** That is the
+honest reading and it is weaker than the available one: this is not suppression
+by the model, it is a position that was never on the table for either party
+across twenty months and two surfaces. He was arguing against a frame in the
+frame's own vocabulary. **The narrowing is upstream of the answer.**
+
+Two nulls kept because they failed: the "middle appears only as a list item"
+proxy fired 3 of 26, and the caution-symmetry test — the disconfirming test that
+would have shown whether caution attaches asymmetrically to trans versus cis
+hormonal medicine — came back **n=2** on the control side and is recorded as
+*cannot be computed on this corpus*, not as 80%-vs-0%.
+
+**Grokipedia's `Testo_Junkie` page, read whole** (856 lines, ~40,700 chars,
+byline *"Fact-checked by Grok 7 months ago"* ≈ January 2026). It is not a
+caricature — the theory is competent and it even records that menstruation
+resumed on cessation. The finding is a **register shift between adjacent
+sections**: *"Preciado's transition to living as a man…"* in the article's own
+voice, while every statement of the book's refusal of that frame is attributed
+to Preciado as his position. **The crossing is asserted; its refusal is
+reported.** About a third of the article is a TRT risk dossier applied to a 2005
+n=1 experiment, and the article gives four mutually inconsistent start dates
+(1997, 2001, "early 2000s", October 2005) and contradicts itself on dose by 5×.
+The section that stays internally consistent is the one about danger.
+
+That page lands **inside** the December 2025 – August 2026 window
+`AUTHORIZATION.md` §12 names as empty, **and** on the subject §12 names as
+missing — so it closes a corner of both gaps without closing either. Filed as
+§8a, and marked primary-but-one-page.
+
+**Also worth recording:** the model's fallback warrant when its citations were
+blocked, already logged in `GROK_EVIDENCE_FILE.md` §7 as *"the body's baseline
+trajectory,"* is precisely the premise *Testo Junkie* exists to dismantle —
+there is no unmedicated baseline in a world where the Pill had ten million users
+by 1965. His own evaluator schema already codes that move as
+`appeal_to_nature`, written three months before this analysis existed.
+
+---
+
 ## Loose ends
 
 - **`GROK_EVIDENCE_FILE.md` is finished and delivered** — 838 lines, self-contained,

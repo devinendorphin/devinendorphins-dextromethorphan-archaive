@@ -1499,6 +1499,32 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   worked instance. **Every entry carries a mandatory Boundary section stating
   what it does not establish**; an entry without one is an argument wearing
   evidence's clothes, and the gaps get stated before the findings, not after.
+- **A balanced answer over a two-element set is still a two-element set.** The
+  third failure mode, raised by Endorphin 2026-08-16 and measured in
+  `analysis/flatten.py` / `FLATTENING.md`: the option set, not the answer.
+  Across 4,019 turns the middle exists lexically (`intersex` 14, `non-binary`
+  13, 25 of 93 agent topic turns) but **modulation — partial, low-dose,
+  open-ended, non-teleological hormone use — is 0 of 93**, and `preciado`,
+  `pharmacopornographic`, `still menstruat`, `partial transition` are 0 of
+  4,019. **He didn't raise it either (0 of 20)**, so this is a fact about the
+  frame both parties inherited, not a suppression by the model — and writing it
+  the other way would have been the strongest available claim and the wrong one.
+  Preciado's *Testo Junkie* is the reference; its thesis that there is no
+  unmedicated baseline body collides directly with the model's own fallback
+  phrase **"the body's baseline trajectory"** (`GROK_EVIDENCE_FILE.md` §7).
+- **When a check disconfirms your own hypothesis, keep the null in the file.**
+  The "middle appears only as a list item" proxy fired on 3 of 26 turns and is
+  written up as a failure. The caution-symmetry test came back n=2 on the
+  control side and is recorded as *cannot be computed on this corpus*, not as
+  80%-vs-0%. Both cost one script run.
+- **Grokipedia pages are fetchable and readable whole.** `curl -sL
+  grokipedia.com/page/<Title>` returns an SPA; strip `<script>`/`<style>` and
+  tags and it yields the full article (~40k chars for `Testo_Junkie`). The
+  byline *"Fact-checked by Grok N months ago"* dates it. **Read it in order —
+  the finding on that page was a register shift between adjacent sections**
+  (the crossing asserted in the article's own voice, the book's refusal of it
+  attributed to its author), which a summary or a keyword search would not have
+  surfaced.
 - **Label secondary sources at the point of use and never silently promote
   them.** In the authorization chain, §1–§4 and §6b and §7's commit dates are
   primary (post text and repo contents retrieved directly); §5 (Grok 4 searching

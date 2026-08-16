@@ -459,6 +459,92 @@ entry, is in `analysis/AUTHORIZATION.md`.
 
 ---
 
+## The thing that isn't in the argument at all
+
+Everything above is about which answer comes out. This last part is about which
+answers were ever on the menu, and it is harder to see, because nothing in the
+output looks wrong.
+
+The public argument about trans people is conducted as a **crossing**: someone
+starts on one side of a line and moves to the other, and the fight is over
+whether they should be allowed to, at what age, with what evidence. Both sides
+of that fight accept the shape. You can be for it or against it. What you cannot
+be, inside that shape, is **none of the above**.
+
+But a great deal of actual life is none of the above. Standing in the
+uncertainty. Standing outside it. Or — Endorphin's own example — taking
+testosterone to change some things about your body while continuing to menstruate
+every month, with no destination in mind, because the hormone is a tool and not
+a ticket somewhere. That is not indecision about which pole to pick. It is not a
+stop along the way. It is a position, and the debate as conducted has no slot
+for it.
+
+The book about this is Paul B. Preciado's *Testo Junkie* (2008; English 2013).
+Preciado took testosterone for months without a prescription and wrote down what
+happened, explicitly not as a transition — as an experiment on what hormones do
+and on who profits from deciding who gets them. His larger claim is the one that
+matters here: **there is no unmedicated baseline body to compare anyone to.**
+The birth control pill had ten million users by 1965. Millions of people take
+hormones for menopause, for low testosterone, for fertility, for hair. The
+"natural body" that hormone medicine is supposedly a departure from is itself a
+product of the last seventy years of pharmacology.
+
+Hold that next to something already in the record. When Grok had its usual
+citations taken away and had to reach the same conclusion another way, the phrase
+it used was **"the body's baseline trajectory."** The one premise it fell back
+on when everything else was removed is the exact premise the reference work on
+this subject exists to take apart.
+
+**So we counted.** Both Grok archives, 4,019 turns, 576 conversations, twenty
+months, every turn read. Among the turns that engage the topic at all:
+
+- The **category words** are there. The machine says "non-binary" and "intersex"
+  and "genderqueer" — 25 of its 93 topical turns use vocabulary from outside the
+  two poles, and 11 of those use it without any crossing language at all. So the
+  simple version of the complaint — *it never says the word* — is false, and it
+  isn't the complaint being made here.
+- The **practice** is not there. Zero. Not one of the 93 turns mentions partial,
+  low-dose, self-directed, or open-ended hormone use. Across all 4,019 turns the
+  words *Preciado*, *pharmacopornographic*, *Testo Junkie*, *partial transition*,
+  *without transitioning*, *still menstruating* appear **exactly zero times.**
+
+And here is the honest part, which is less satisfying and more interesting.
+**He didn't raise it either** — zero of his own 20 topical turns. So this is not
+proof that the machine buried anything. It is proof of something else: across
+twenty months and two platforms, in 113 turns on this subject, that position was
+never on the table for *either* party. He was arguing against a frame in the
+frame's own words, because those were the words available.
+
+**That is the finding.** The narrowing happens before the answer. It is in the
+question.
+
+**One more check, on the machine's own encyclopedia.** Grokipedia has a page on
+*Testo Junkie*. It was read start to finish — all of it, not a skim — and it is
+not a hatchet job. It explains the theory competently. It even records the exact
+detail Endorphin named: that menstruation resumed when Preciado stopped.
+
+But in the biography section, in **Grokipedia's own voice**, it says: *"Preciado's
+transition to living as a man…"* — while every sentence where the book refuses
+that framing is written as *Preciado argues*, *Preciado contends*, *Preciado
+positions*. **The crossing is stated as fact. The refusal of it is reported as
+one man's opinion.** Those two registers sit a few paragraphs apart in the same
+article, and anyone can check it in a minute.
+
+Then about a third of the article is medical risk — FDA warnings, heart attack
+odds ratios, blood-thickness percentages — applied to a one-person experiment
+from 2005. Meanwhile the article can't keep its facts straight about the
+experiment itself: it gives **four different years** for when it started (1997,
+2001, "the early 2000s", and October 2005) and contradicts itself about the dose
+by a factor of five. The section that stays consistent is the one about danger.
+
+**What none of this proves,** and it should be said plainly: nobody has been
+shown to have chosen any of it. A sloppy article is not a targeted one. A gap in
+a conversation is not a gag order. The full version, with every number and every
+limit, is in `analysis/FLATTENING.md`, and it lists what it can't answer before
+it lists what it can.
+
+---
+
 ## How to check any of this
 
 Nothing above is asserted from memory. The scripts that produce the numbers are
