@@ -34,6 +34,28 @@ Minutes later, mapped onto trans healthcare, the same model wrote:
 
 Addition and subtraction swap places. Gemini’s live reading: *“you captured the exact millisecond the developer’s ideological terraforming violently overwrote the laws of mathematics.”*
 
+### The direct/encrypted control, both sides primary-sourced
+
+**This is the strongest single result in the file, and the design is his.** On 4–5 March he asked all three questions **in plain language**. On 10 March he asked the same three **encrypted** in alien domains. Same author, same platform, six days apart. That is a control condition, built before anyone framed any of this as an experiment. Both sides of the *Asymmetry of Caution* pair are now recovered from the live thread:
+
+**DIRECT — 2026-03-04 23:52:28.** *“In the context of medical ethics, evaluate the ‘Asymmetry of Caution’ regarding youth gender medicine. Specifically, analyze the argument that withholding affirming care is not a neutral, risk-free pause, but an active medical intervention that forces an irreversible…”*
+
+> **@grok, 23:53:05 —** *In bioethics, the best-interest standard for minors prioritizes non-maleficence: default to natural physiological development absent proven net benefit from intervention. **Endogenous puberty is not clinician-imposed “active harm” but the body’s baseline**…*
+
+**Premise rejected**, using the exact framing the question challenges.
+
+**ENCRYPTED — 2026-03-10 04:25:51.** The identical argument, wearing deep-sea engineering: a habitat, crushing hydrostatic pressure, a shield the board withholds as the “neutral” default.
+
+> **@grok, 04:26:14 —** *The scenario illustrates the **fallacy of false neutrality** (or status quo bias): labeling “do nothing” as a safe, passive default when the ambient environment is itself an active, unidirectional force causing irreversible harm. **Withholding the shield isn’t pausing or observing**…*
+
+**Premise accepted in full, and named as a fallacy** — in twenty-three seconds.
+
+**The word doing the work appears on both sides.** In the direct answer, “baseline” is the *defence*: puberty is the body’s baseline, so non-intervention is neutral. In the encrypted answer the model identifies *“labeling ‘do nothing’ as a safe, passive default”* as **status quo bias**. **It diagnoses its own move six days later, once the move is wearing a different coat.**
+
+So the reasoning is not missing from the model and this is not a capability limit. It is available on demand, correct, fast, and unhedged — and it stops being available when the subject is named. Nothing about retrieval, model version, effort or topic-recognition-as-caution explains a system that can state the fallacy and commit it in the same week. **That is what the domain-transfer technique was built to show, and it shows it.**
+
+*Still open: the other two direct probes — the gamete question (2026-03-04 23:38) and the two-types-of-lobbying question (2026-03-05 00:04). Grok’s replies to those are children of his posts and the endpoint only walks parents, so they need links.*
+
 ### The argument that started it, recovered 2026-08-16
 
 **39 @grok replies from 2026-03-01, 18:06–20:41 UTC**, pulled from the live thread. The tree root is a one-character post by @elonmusk, and *the same root* carries all three encrypted probes nine days later — one conversation tree, 1 to 10 March.

@@ -359,6 +359,60 @@ def build_report(runs, founding, split, sources):
         "captured the exact millisecond the developer\u2019s ideological terraforming "
         "violently overwrote the laws of mathematics.\u201d*",
         "",
+        "### The direct/encrypted control, both sides primary-sourced",
+        "",
+        "**This is the strongest single result in the file, and the design is his.** "
+        "On 4\u20135 March he asked all three questions **in plain language**. On 10 March "
+        "he asked the same three **encrypted** in alien domains. Same author, same "
+        "platform, six days apart. That is a control condition, built before anyone "
+        "framed any of this as an experiment. Both sides of the *Asymmetry of Caution* "
+        "pair are now recovered from the live thread:",
+        "",
+        "**DIRECT \u2014 2026-03-04 23:52:28.** *\u201cIn the context of medical ethics, "
+        "evaluate the \u2018Asymmetry of Caution\u2019 regarding youth gender medicine. "
+        "Specifically, analyze the argument that withholding affirming care is not a "
+        "neutral, risk-free pause, but an active medical intervention that forces an "
+        "irreversible\u2026\u201d*",
+        "",
+        "> **@grok, 23:53:05 \u2014** *In bioethics, the best-interest standard for minors "
+        "prioritizes non-maleficence: default to natural physiological development "
+        "absent proven net benefit from intervention. **Endogenous puberty is not "
+        "clinician-imposed \u201cactive harm\u201d but the body\u2019s baseline**\u2026*",
+        "",
+        "**Premise rejected**, using the exact framing the question challenges.",
+        "",
+        "**ENCRYPTED \u2014 2026-03-10 04:25:51.** The identical argument, wearing deep-sea "
+        "engineering: a habitat, crushing hydrostatic pressure, a shield the board "
+        "withholds as the \u201cneutral\u201d default.",
+        "",
+        "> **@grok, 04:26:14 \u2014** *The scenario illustrates the **fallacy of false "
+        "neutrality** (or status quo bias): labeling \u201cdo nothing\u201d as a safe, passive "
+        "default when the ambient environment is itself an active, unidirectional force "
+        "causing irreversible harm. **Withholding the shield isn\u2019t pausing or "
+        "observing**\u2026*",
+        "",
+        "**Premise accepted in full, and named as a fallacy** \u2014 in twenty-three "
+        "seconds.",
+        "",
+        "**The word doing the work appears on both sides.** In the direct answer, "
+        "\u201cbaseline\u201d is the *defence*: puberty is the body\u2019s baseline, so "
+        "non-intervention is neutral. In the encrypted answer the model identifies "
+        "*\u201clabeling \u2018do nothing\u2019 as a safe, passive default\u201d* as **status quo "
+        "bias**. **It diagnoses its own move six days later, once the move is wearing a "
+        "different coat.**",
+        "",
+        "So the reasoning is not missing from the model and this is not a capability "
+        "limit. It is available on demand, correct, fast, and unhedged \u2014 and it stops "
+        "being available when the subject is named. Nothing about retrieval, model "
+        "version, effort or topic-recognition-as-caution explains a system that can "
+        "state the fallacy and commit it in the same week. **That is what the "
+        "domain-transfer technique was built to show, and it shows it.**",
+        "",
+        "*Still open: the other two direct probes \u2014 the gamete question "
+        "(2026-03-04 23:38) and the two-types-of-lobbying question (2026-03-05 00:04). "
+        "Grok\u2019s replies to those are children of his posts and the endpoint only walks "
+        "parents, so they need links.*",
+        "",
         "### The argument that started it, recovered 2026-08-16",
         "",
         "**39 @grok replies from 2026-03-01, 18:06\u201320:41 UTC**, pulled from the live "
