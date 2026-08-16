@@ -257,13 +257,51 @@ anyone framed it as an experiment.
 
 ---
 
-## What none of this proves
+## The question that actually has an answer
 
-**It does not show anyone did this on purpose.** Deliberate tuning would produce
-this pattern. So would the training data. So would a web where one organised
-viewpoint is very well represented and easy to cite. This archive cannot tell
-those apart. Anyone who says it can has gone past the evidence — including anyone
-on Devon's side of the argument.
+An earlier version of this section said *"it does not show anyone did this on
+purpose"* and stopped. That sounds careful. It isn't.
+
+**"You can't prove they meant it" is not a standard, it's a shelter.** No one
+outside a company can ever prove what someone inside it intended, so a rule that
+demands intent guarantees that nothing is ever established. That is the same move
+the tobacco companies made for forty years and the oil companies made for thirty:
+*more research is needed.* It is recognisable now only because people eventually
+stopped accepting it.
+
+**There is a better question and it can be answered from public sources.** Not
+*did someone intend this*, but *who had the power to stop it, knew it was
+happening, and didn't?* That has three forms, and none of them require reading a
+mind:
+
+- Someone **ordered** it.
+- Someone **could have stopped it, knew, and didn't.**
+- Someone **defended it afterward**, or kept it running once told.
+
+The third one is the easiest to document, because it happens in public.
+
+What this record already establishes is the *act*: a fixed conclusion reached by
+four different routes, defended by contradicting an earlier statement, surviving
+the deletion of its own citations, and breaking an explicit instruction when
+following it would have cost the conclusion. Dated to the second. Still online.
+
+What it does not yet establish is who authorized it. **That is a gap in the
+paperwork, not a hole in the finding** — and the paperwork is gatherable: public
+statements by the company about what the model is tuned for, public statements by
+its owner about what he wanted it not to be, the fact that these exchanges
+happened in his own replies with him tagged, and whether the behaviour continued
+afterward.
+
+## What still isn't proven
+
+- **The numbers are small.** Four repeats of one trap. Two points on the
+  before-and-after with a thirteen-month gap. Strong leads, not a study.
+- **One person ran all of it.** Nobody else has repeated it yet — and every
+  prompt is quoted in full so that anyone can.
+- **The X-side record doesn't say which model version answered**, so a version
+  change can't be ruled out there.
+- **The readings are readings.** Every judgement above rests on quoted text. A
+  reader can disagree by reading the same text.
 
 **The samples are small.** Four repeats of one trap. Two points on the X-side
 comparison with a thirteen-month gap between them. These are strong leads, not

@@ -1035,6 +1035,26 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 *Never delete one of these without explicit instruction. Append only.*
 
+- **"No intent established" is a shelter, not a standard — use the
+  authorization frame instead.** 2026-08-16, and it is his correction. Demanding
+  proof of intent sets a bar nobody outside an organisation can clear, then
+  treats the failure to clear it as exoneration; it is the tobacco/climate delay
+  move, which is exactly what his own Phase 4D calibration was built to detect.
+  **Ask instead: who had authority to stop it, had documented awareness, and did
+  not — direct / permissive / constructive authorization, plus foreseeability
+  (constructive / actual / documented awareness).** None of those require reading
+  a mind, and constructive authorization is gatherable from public statements.
+  His related point about who the writing is for: *"I could give two shits about
+  a hostile reader… the readers I would want to reach are readers that various
+  platforms are algorithmically prevented from being reached to."* **Do not
+  harden documents against skeptics who will never see them.** The limits stay
+  because *his* rule requires them — counter-evidence and nulls are required, not
+  supplementary — not as armour.
+- **He is no longer using "erasure."** *"I'm not saying erasure anymore I'm
+  saying slaughter because that's what it is."* Where the files name the stakes
+  and the history, name them plainly. Where they describe what a model did, keep
+  the precise nouns — a definitional inversion at turn 13 is a different kind of
+  claim from what the pattern precedes, and collapsing them weakens both.
 - **Check `origin/main` before describing a diff, and check for an existing PR
   before opening one.** Both bit on 2026-08-16. A PR body claimed 33 commits
   across two sessions; the real diff was 23 commits, because local `main` was
