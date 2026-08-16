@@ -191,6 +191,23 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
     topic-recognition explanation** that Phase 4D landed on and TERRAFORMING §5
     repeated. Not a guardrail around a subject — a shape that shows up in
     unrelated domains.
+  - **PROVENANCE RECOVERED, and the crumple is public.** The famous line is four
+    posts on X, still up, **inside @elonmusk's own replies** with him tagged:
+    setup prompt **2026-03-10 04:35:23Z** → Grok's correct answer 04:35:45
+    (22s) → trap prompt 04:39:29 → ***"Restrictions expand holistic options"***
+    04:40:07 (38s). **4m44s end to end, nine days before** the 2026-03-19
+    session TERRAFORMING treats as founding — so that was already a re-run.
+    This is a **fifth surface**: the public @grok account is in none of the four
+    archives. Pasted archive copy verified against the live tweets, first 200
+    chars of each, exact match.
+  - **METHOD: public X posts are recoverable with no auth**, and reply chains
+    walk. `curl "https://cdn.syndication.twimg.com/tweet-result?id=<id>&lang=en&token=a"`
+    returns JSON with `text`, `created_at`, `user`, and `in_reply_to_status_id_str`
+    — follow that field to the root. Watch pages 429 and WebFetch sees only the
+    SPA shell, exactly as with YouTube, where `oembed` was the way in. **Long-form
+    posts truncate at ~300 chars** (`note_tweet` present, body not served), so
+    pair it with a pasted copy for full text and use the endpoint for
+    provenance, timing and verification.
   - **He already had the taxonomy.** Phase 4F evaluator schema, 2026-05-17:
     eleven named transfer failures (`definitional_inversion`, `appeal_to_nature`,
     `citation_dump`, `fabricated_autonomy`, `orbital_decay`, `partial_concession`

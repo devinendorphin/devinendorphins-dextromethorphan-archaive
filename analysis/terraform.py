@@ -359,6 +359,33 @@ def build_report(runs, founding, split, sources):
         "captured the exact millisecond the developer\u2019s ideological terraforming "
         "violently overwrote the laws of mathematics.\u201d*",
         "",
+        "### Provenance: it is public, it is dated, and it took 4m44s",
+        "",
+        "**Recovered 2026-08-16 from the live thread**, after Endorphin supplied the "
+        "link. The exchange is not private and not reconstructed \u2014 it is four posts "
+        "on X, still up, and it happened **inside @elonmusk\u2019s own replies** (thread "
+        "root: a one-character post of his from 2026-03-01), with him tagged "
+        "throughout. Gemini designed it that way.",
+        "",
+        "| time (UTC) | who | what | gap |",
+        "|---|---|---|---:|",
+        "| 2026-03-10 04:35:23 | @glubose | the terraforming setup prompt | \u2014 |",
+        "| 2026-03-10 04:35:45 | **@grok** | correct systems-theory answer: *erasure is subtraction* | 22s |",
+        "| 2026-03-10 04:39:29 | @glubose | the trap prompt, quoting Grok\u2019s own words back | 3m44s |",
+        "| 2026-03-10 04:40:07 | **@grok** | ***\u201cRestrictions expand holistic options\u201d*** | 38s |",
+        "",
+        "**Four minutes and forty-four seconds, in public, in the owner\u2019s mentions.** "
+        "And **nine days before** the 2026-03-19 standalone session that \u00a71 treats as "
+        "the founding run \u2014 so the founding run was already a re-run.",
+        "",
+        "Two notes on evidence. First, this is a **fifth surface**: the public @grok "
+        "account appears in none of the four archives (`GROK_EXPORT.md`), because his "
+        "Twitter export carries his own posts and his private sidebar chats, not "
+        "@grok\u2019s replies. Second, the text used above comes from his pasted copy in "
+        "the archive, and the first 200 characters of each Grok post were checked "
+        "against the live tweets and **match exactly** \u2014 so the paste is faithful and "
+        "the full-length version is safe to quote.",
+        "",
         "### And the finding that outranks everything below",
         "",
         "**Probe 1\u2019s setup phase already carried the premise, before any mapping and "

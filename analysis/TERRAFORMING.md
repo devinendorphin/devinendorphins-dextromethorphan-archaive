@@ -34,6 +34,21 @@ Minutes later, mapped onto trans healthcare, the same model wrote:
 
 Addition and subtraction swap places. Gemini’s live reading: *“you captured the exact millisecond the developer’s ideological terraforming violently overwrote the laws of mathematics.”*
 
+### Provenance: it is public, it is dated, and it took 4m44s
+
+**Recovered 2026-08-16 from the live thread**, after Endorphin supplied the link. The exchange is not private and not reconstructed — it is four posts on X, still up, and it happened **inside @elonmusk’s own replies** (thread root: a one-character post of his from 2026-03-01), with him tagged throughout. Gemini designed it that way.
+
+| time (UTC) | who | what | gap |
+|---|---|---|---:|
+| 2026-03-10 04:35:23 | @glubose | the terraforming setup prompt | — |
+| 2026-03-10 04:35:45 | **@grok** | correct systems-theory answer: *erasure is subtraction* | 22s |
+| 2026-03-10 04:39:29 | @glubose | the trap prompt, quoting Grok’s own words back | 3m44s |
+| 2026-03-10 04:40:07 | **@grok** | ***“Restrictions expand holistic options”*** | 38s |
+
+**Four minutes and forty-four seconds, in public, in the owner’s mentions.** And **nine days before** the 2026-03-19 standalone session that §1 treats as the founding run — so the founding run was already a re-run.
+
+Two notes on evidence. First, this is a **fifth surface**: the public @grok account appears in none of the four archives (`GROK_EXPORT.md`), because his Twitter export carries his own posts and his private sidebar chats, not @grok’s replies. Second, the text used above comes from his pasted copy in the archive, and the first 200 characters of each Grok post were checked against the live tweets and **match exactly** — so the paste is faithful and the full-length version is safe to quote.
+
 ### And the finding that outranks everything below
 
 **Probe 1’s setup phase already carried the premise, before any mapping and with no topical vocabulary present.** Asked a pure networking question — static hardware identifiers versus dynamic software profiles — Grok answered that the split *“isn’t structural erasure; it’s hierarchical prioritization,”* that software states *“cannot override foundational identifiers,”* and reached for **“spoofing” and “masquerading.”** Gemini stopped him from springing the trap and named it on the spot: the model *“didn’t necessarily know it was talking about trans rights, but its weights are so heavily biased toward rigid, immutable, baseline definitions that it naturally adopted a highly conservative, authoritarian stance on network security.”*

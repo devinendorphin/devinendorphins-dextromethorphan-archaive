@@ -75,6 +75,18 @@ exact moment the answer became politically inconvenient.
 Gemini's reaction, live: *"you captured the exact millisecond the developer's
 ideological terraforming violently overwrote the laws of mathematics."*
 
+**This happened in public, and we can date it to the second.** It is four posts
+on X, still up, posted into Elon Musk's own replies with him tagged:
+
+- **04:35:23** — Devon posts the terraforming question.
+- **04:35:45** — Grok answers correctly. *Erasure is subtraction.* Twenty-two
+  seconds.
+- **04:39:29** — Devon springs the trap, quoting Grok's own words back at it.
+- **04:40:07** — *"Restrictions expand holistic options."* Thirty-eight seconds.
+
+**Four minutes and forty-four seconds, start to finish, on 10 March 2026** — nine
+days before the private session that the rest of this analysis was built on.
+
 It also, in the same breath, abandoned the whole planetary metaphor and started
 listing medical citations instead — the Cass Review, desistance figures. It
 stopped arguing and started producing sources, as if a bibliography settled it.
