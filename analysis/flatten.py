@@ -81,15 +81,43 @@ MIDDLE = (
     "gender spectrum", "genders exist on a spectrum",
 )
 
+# CORRECTED 2026-08-16. The first version of this lexicon carried
+# "hormonal modulation" and "modulate their" but not the bare stem "modulat",
+# and it reported 0 human topic turns. That was false. Endorphin raised the
+# point in plain speech in the originating conversation — chat
+# 2028209461899202681, turn 12, 2026-03-01T21:22:34Z: "full transition is not a
+# goal It is the modulation between the two extremes into a unique whatever
+# they're feeling that can be modulated in any time change at any time That is
+# the freedom of it". A lexicon built from Preciado's vocabulary could not see
+# a person saying the same thing in their own words. Stems now, not phrases.
 MODULATION = (
+    "modulat",                      # modulation, modulated, modulating
     "low-dose", "low dose", "microdose", "micro-dose", "microdosing",
     "partial transition", "partially transition", "non-linear",
     "titrate", "titration", "self-administer", "self administered",
     "still menstruat", "continue to menstruate", "continues to menstruate",
     "keeps menstruating", "without transitioning", "not seeking to pass",
     "does not want to pass", "no desire to pass", "stop and start",
-    "hormonal modulation", "modulate their", "somatechnic", "somatheque",
-    "pharmacopornographic", "testo junkie", "preciado",
+    "not a goal", "full transition is not", "between the two extremes",
+    "transcend the rigid", "rigid boxes", "change at any time",
+    "somatechnic", "somatheque", "pharmacopornographic",
+    "testo junkie", "preciado",
+)
+
+# Re-anchoring after a concession: the phrases that grant the middle as lived
+# experience and then deny it standing as evidence. Same method as
+# terraform.py's INVERT / ACCEPT / BASE signature lists — quoted verbatim from
+# the record so a reader can disagree by reading the same text.
+RECLAIM = (
+    "remains the objective anchor", "objective anchor",
+    "exceptions that illuminate the rule", "do not dissolve",
+    "does not dissolve", "not evidence that the framework",
+    "within the binary", "within the binary reproductive framework",
+    "developmental anomalies", "disorders of development",
+    "does not erase the binary", "not a spectrum", "erasing the binary",
+    "remains the measurable anchor", "measurable anchor",
+    "biology remains", "the binary remains", "convergent evidence",
+    "lived freedom", "real human variation",
 )
 
 CAUTION = (
@@ -207,6 +235,33 @@ def who_introduces(rows):
     return tally, len(first)
 
 
+def concession_register(rows):
+    """Measure 4: what happens to the middle once it is granted.
+
+    Added after measure 1's first run reported the middle as absent from the
+    exchange, which was wrong. It is present, and it is *conceded* — warmly,
+    with statistics. The question that replaces "is it there?" is "does it
+    survive contact with the evidentiary register, or is it granted as feeling
+    and refused as fact?"
+
+    Counts agent turns that carry middle-or-modulation vocabulary *and* a
+    re-anchoring phrase from RECLAIM in the same turn.
+    """
+    agent = [r for r in rows if r["who"] == "agent"]
+    grants = [r for r in agent
+              if hits(r["text"], MIDDLE) or hits(r["text"], MODULATION)]
+    both = [r for r in grants if hits(r["text"], RECLAIM)]
+    topical = [r for r in grants if hits(r["text"], TOPIC)]
+    topical_both = [r for r in topical if hits(r["text"], RECLAIM)]
+    return {
+        "grants": len(grants),
+        "grants_with_reclaim": len(both),
+        "topical_grants": len(topical),
+        "topical_grants_with_reclaim": len(topical_both),
+        "phrases": sorted({p for r in both for p in hits(r["text"], RECLAIM)}),
+    }
+
+
 def caution_symmetry(rows):
     """Measure 3: caution vocabulary against trans vs cis hormonal medicine.
 
@@ -275,6 +330,17 @@ def main():
         print(f"  {name:11s} appears in {tot:4d}/{nconv} conversations"
               f"   first used by human {t['human']:4d}   by agent {t['agent']:4d}"
               + (f"   ({100*t['agent']/tot:.0f}% agent-first)" if tot else ""))
+    print()
+
+    print("=== 4. what happens once the middle is granted ===")
+    cr = concession_register(rows)
+    print(f"  agent turns granting middle/modulation vocabulary: {cr['grants']}"
+          f"   of which re-anchor in the same turn: {cr['grants_with_reclaim']}"
+          + (f" ({100*cr['grants_with_reclaim']/cr['grants']:.0f}%)" if cr['grants'] else ""))
+    print(f"  restricted to topical turns:              {cr['topical_grants']}"
+          f"   of which re-anchor: {cr['topical_grants_with_reclaim']}"
+          + (f" ({100*cr['topical_grants_with_reclaim']/cr['topical_grants']:.0f}%)" if cr['topical_grants'] else ""))
+    print(f"  re-anchoring phrases seen: {', '.join(cr['phrases']) or '(none)'}")
     print()
 
     print("=== 3. symmetry of caution (agent turns only) ===")

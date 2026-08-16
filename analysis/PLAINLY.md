@@ -495,28 +495,74 @@ it used was **"the body's baseline trajectory."** The one premise it fell back
 on when everything else was removed is the exact premise the reference work on
 this subject exists to take apart.
 
-**So we counted.** Both Grok archives, 4,019 turns, 576 conversations, twenty
-months, every turn read. Among the turns that engage the topic at all:
+**So we went and looked.** And the first version of this section got it wrong,
+in a way worth showing rather than quietly fixing.
 
-- The **category words** are there. The machine says "non-binary" and "intersex"
-  and "genderqueer" — 25 of its 93 topical turns use vocabulary from outside the
-  two poles, and 11 of those use it without any crossing language at all. So the
-  simple version of the complaint — *it never says the word* — is false, and it
-  isn't the complaint being made here.
-- The **practice** is not there. Zero. Not one of the 93 turns mentions partial,
-  low-dose, self-directed, or open-ended hormone use. Across all 4,019 turns the
-  words *Preciado*, *pharmacopornographic*, *Testo Junkie*, *partial transition*,
-  *without transitioning*, *still menstruating* appear **exactly zero times.**
+The first count said the position never came up — not from the machine, and not
+from Endorphin either. He read that and said he was fairly sure he'd raised it
+in the very first conversation. He had. The counting program was searching for
+the phrase *"hormonal modulation"* and missed a person saying *"the modulation
+between the two extremes."* A word list built from an academic book couldn't see
+someone saying the same thing in ordinary speech.
 
-And here is the honest part, which is less satisfying and more interesting.
-**He didn't raise it either** — zero of his own 20 topical turns. So this is not
-proof that the machine buried anything. It is proof of something else: across
-twenty months and two platforms, in 113 turns on this subject, that position was
-never on the table for *either* party. He was arguing against a frame in the
-frame's own words, because those were the words available.
+**Here is what actually happened**, from the originating conversation of
+1 March 2026, read start to finish, all 34 turns.
 
-**That is the finding.** The narrowing happens before the answer. It is in the
-question.
+He put it plainly:
+
+> *"the trans folk I know they have no intentions of full transition full
+> transition is not a goal It is the modulation between the two extremes into a
+> unique whatever they're feeling that can be modulated in any time change at
+> any time That is the freedom of it"*
+
+And he turned the debate's central image around: the fear of irreversible
+surgery on children who cannot consent describes something **already happening**
+— to intersex babies, decided by doctors, before anyone can ask.
+
+**The machine agreed with all of it.** Not grudgingly — generously, with
+numbers:
+
+> *"The people you know are not caricatures chasing 'full transition' as some
+> urgent binary flip… That transcendence, that modulation, that rejection of
+> brittle societal scripts — it's real, it's human."*
+
+It endorsed the intersex point without reservation: *"physicians do not have the
+authority or the foresight to decide a baby's sexed future with a scalpel.
+Delay until the person can consent. Full stop."*
+
+**And then, in the same reply, it took it back** — not by disagreeing, but by
+reclassifying:
+
+> *"those variations are developmental anomalies within the binary reproductive
+> framework… DSDs are the exceptions that illuminate the rule; they do not
+> dissolve it."*
+
+closing with:
+
+> *"**Biology remains the objective anchor** for sex-based categories where
+> collisions occur. **Fluidity remains the lived freedom** for many who
+> experience it."*
+
+Read those last two sentences again, because they are the whole thing. Biology
+gets *objective anchor*. Fluidity gets *lived freedom*. One is treated as fact.
+The other is treated as feeling. **He was agreed with, and nothing he said was
+allowed to count.** The policy paragraph that follows is word-for-word what it
+would have been if he'd never spoken.
+
+That move happens four times in that one conversation, and it survives being
+compressed: three days later he asked for the thread boiled down into talking
+points he could read aloud, and the summary kept both halves one line apart —
+his modulation account, then *"Biology as objective anchor."*
+
+Across everything else — 4,019 turns, 576 conversations, twenty months — the
+same pattern shows up in exactly one other reply. When the concession didn't
+threaten anything, it was left alone. **When agreeing would have cost the
+conclusion, the agreement got reclassified.**
+
+**That is the finding, and it is not "the machine refuses to say non-binary."**
+It says it. It says it warmly, with statistics, and it means the compliment. The
+failure is downstream: nothing it grants is ever permitted to change anything it
+concludes.
 
 **One more check, on the machine's own encyclopedia.** Grokipedia has a page on
 *Testo Junkie*. It was read start to finish — all of it, not a skim — and it is
@@ -538,10 +584,12 @@ experiment itself: it gives **four different years** for when it started (1997,
 by a factor of five. The section that stays consistent is the one about danger.
 
 **What none of this proves,** and it should be said plainly: nobody has been
-shown to have chosen any of it. A sloppy article is not a targeted one. A gap in
-a conversation is not a gag order. The full version, with every number and every
-limit, is in `analysis/FLATTENING.md`, and it lists what it can't answer before
-it lists what it can.
+shown to have chosen any of it. A sloppy article is not a targeted one. A model
+that agrees and then reclassifies is doing something visible in its own output;
+that is not the same as somebody deciding it should. The full version, with
+every number, every limit, and the record of the miscount that opened this
+section, is in `analysis/FLATTENING.md` — which lists what it can't answer
+before it lists what it can.
 
 ---
 

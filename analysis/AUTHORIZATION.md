@@ -441,11 +441,12 @@ it.**
   should be stated first, every time, before anything else in this file is
   quoted.
 - **The option set is a separate finding and is not authorization evidence.**
-  `analysis/FLATTENING.md` measures a third failure mode — positions that are
-  neither pole never entering the exchange at all — and finds them absent from
-  *both* parties across 4,019 turns. That is a fact about the frame both
-  inherited, not an act by anyone, and it is filed there rather than here for
-  exactly that reason.
+  `analysis/FLATTENING.md` measures a third failure mode: a position that is
+  neither pole is raised, granted in full, and then reclassified in the same
+  turn so that nothing it concedes bears on anything it concludes — *"Biology
+  remains the objective anchor… Fluidity remains the lived freedom."* That is
+  legible in the model's own output and is not an act by any person, which is
+  why it is filed there rather than here.
 - Published prompt ≠ deployed prompt (§4, boundary 1).
 - No causal claim about any outcome in the world. This file documents what a
   company instructed, what its owner said, and what its system then asserted.

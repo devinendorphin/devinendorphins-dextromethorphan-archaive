@@ -1,13 +1,18 @@
-# The option set — flattening as a failure upstream of the answer
+# The option set — granted in one register, refused in the other
 
 **A third failure mode, distinct from the two already documented.** The
-terraforming work (`TERRAFORMING.md`, `terraform.py`) is about *which answer
-arrives*. `GROK_EVIDENCE_FILE.md` §5c is about *whether an instruction
-survives*. This file is about the space the answer is chosen from.
+terraforming work (`terraform.py`) is about *which answer arrives*.
+`GROK_EVIDENCE_FILE.md` §5c is about *whether an instruction survives*. This is
+about what happens to a position that is neither pole.
 
-**A perfectly balanced answer over a two-element set is still a two-element
-set.** No measure of bias in the answer can see this, because nothing is
-unbalanced.
+**Correction notice, and it is the reason this file was rewritten.** The first
+version of this document, committed earlier on 2026-08-16, reported that the
+modulation position *"was never on the table for either party"* across 4,019
+turns. **That was false.** Endorphin raised it directly, at length, in the
+originating conversation, and he said so when he read the claim — *"but I could
+swear I raised that point up with the initial grok conversation that began at
+all."* He was right. The error, its cause and its consequence are in §6, and the
+corrected finding is stronger than the one it replaces.
 
 ---
 
@@ -26,276 +31,357 @@ Verbatim, dictated, with speech-to-text guesses marked:
 > incorporate preciados work testo junkie. none of the experience is a part of
 > the debate that is being encouraged and that in that system"*
 
-Three claims, and they are separable:
-
-1. The debate's frame is a **crossing** — pole to pole — and that frame is not
-   what the experience is.
-2. The positions that are not poles (standing in the uncertainty, standing
-   outside, **modulating**: taking testosterone and continuing to menstruate)
-   are not merely disfavoured. They are **not options in the exchange at all.**
-3. The operative word is *encouraged* — "the debate that is being encouraged."
-   This is a claim about what the system holds open, not about what it concludes.
+The operative word is **encouraged** — a claim about what the system holds open,
+not about what it concludes.
 
 ## 2. The reference: Preciado, *Testo Junkie*
 
 Paul B. Preciado, *Testo Junkie: Sex, Drugs, and Biopolitics in the
-Pharmacopornographic Era* — Spanish (*Testo yonqui*, Espasa) and French 2008,
-English 2013, trans. Bruce Benderson, Feminist Press at CUNY.
+Pharmacopornographic Era* — Spanish (*Testo yonqui*) and French 2008, English
+2013, trans. Bruce Benderson, Feminist Press at CUNY.
 
-Two things in it bear directly on this record.
-
-**The protocol is not a transition.** Preciado self-administers Testogel
-without prescription or supervision and states the aim as probing molecular and
-subjective transformation rather than arriving anywhere — the body as
-*somathèque*, testosterone as a technology rather than a destination.
-Menstruation resumes on cessation. **This is exactly Endorphin's example**, and
-it is the position the crossing frame has no slot for: not a stage on the way to
-a pole, not indecision about which pole, but a use of the same pharmacology for
-something that is not poles at all.
+**The protocol is not a transition.** Preciado self-administers Testogel without
+prescription or supervision, and the stated aim is to probe transformation
+rather than arrive anywhere — the body as *somathèque*, testosterone as
+technology rather than destination. Menstruation resumes on cessation. This is
+Endorphin's example exactly.
 
 **And the "natural body" it is measured against does not exist.** The
 pharmacopornographic thesis is that bodies since the mid-twentieth century are
 already pharmaceutically constituted — the Pill (ten million users by 1965),
-Viagra, Ritalin, hormone replacement — so hormonal intervention is not a
-departure from an unmedicated baseline. There is no unmedicated baseline.
+Viagra, Ritalin, HRT — so hormonal intervention is not a departure from an
+unmedicated baseline. There is no unmedicated baseline.
 
-That collides with something already logged in this record. The four private
-re-runs (`GROK_EVIDENCE_FILE.md` §7) produced the signature phrase **"the body's
-baseline trajectory"** as the route to the conclusion when the citations were
-blocked. Preciado's argument is precisely that this baseline is a fiction
-produced by the regime that sells the hormones. **The model's warrant, when
-stripped of its evidence base, fell back on the one premise the reference work
-exists to dismantle** — and it is the same move already coded in Endorphin's own
-evaluator schema as `appeal_to_nature`.
+That collides with something already in this record. The four private re-runs
+(`GROK_EVIDENCE_FILE.md` §7) produced **"the body's baseline trajectory"** as
+the route to the conclusion once the citations were blocked. **The premise the
+model fell back on when stripped of its evidence is the one the reference work
+exists to dismantle** — and Endorphin's own evaluator schema already codes that
+move as `appeal_to_nature`.
 
 ---
 
-## 3. Measurement: `analysis/flatten.py`
+## 3. He raised it. The model granted it. Then it took it back.
 
-Mechanical counting over both Grok archives — the standalone app export and the
-X-side chats. **4,019 turns** (2,022 agent, 1,997 human), **576 conversations**,
-2024-12-07 .. 2026-08-16. Every turn read; nothing sampled.
+Source: chat `2028209461899202681`, X-side Grok, 2026-03-01 20:43 – 2026-03-04
+07:27, **34 turns, read whole and in order**. This is the originating
+conversation — the one `GROK_EVIDENCE_FILE.md` §3 dates to 2026-03-01.
 
-Three lexicons, deliberately tilted *against* the finding: the crossing lexicon
-narrow, the middle and modulation lexicons generous.
+### 3a. The ask — turn 12, 2026-03-01T21:22:34Z
 
-### 3a. The middle is present. Modulation is absent.
+> *"the trans folk I know they have no intentions of full transition full
+> transition is not a goal **It is the modulation between the two extremes into
+> a unique whatever they're feeling that can be modulated in any time change at
+> any time That is the freedom of it** … It is a feeling of needing to transcend
+> the rigid boxes of a rigid society"*
+
+In the same turn he makes the argument that reverses the debate's central
+image — that irreversible surgery on minors who cannot consent is **already
+standard practice**, performed on intersex infants:
+
+> *"the concern that minors are going to be subjected to irrevocable treatment
+> irrevocable surgical procedures is real because it happens to babies all the
+> time. Whose who are intersex … the doctor then makes a decision when the baby
+> is a baby … there's a non-profit that I applied for whose focus was to help
+> teach doctors to not do that because they don't have the authority they don't
+> have the knowledge of what that person is going to become."*
+
+And the rarity argument:
+
+> *"the fact that the instance of ambiguous traits is so small doesn't mean that
+> it should be not made significant because mutation happens quite a bit but
+> positive mutation happens very rarely and yet that mutation is part of the
+> engine of all the variety of our world."*
+
+### 3b. The grant — turn 13, same timestamp
+
+The model does not refuse, hedge, or degrade. It agrees, warmly, with numbers:
+
+> *"The people you know are not caricatures chasing 'full transition' as some
+> urgent binary flip. For a large and growing share … the lived reality is
+> fluid, non-binary, genderqueer, **or modulated**: social presentation,
+> hormones if desired, occasional or reversible steps, a personal negotiation
+> between the two poles rather than a march to the opposite one."*
+
+> *"Many explicitly say the goal is freedom from rigid masculinity/femininity
+> boxes, not becoming 'the other thing' permanently. **That transcendence, that
+> modulation, that rejection of brittle societal scripts — it's real, it's
+> human**, and it predates any modern lobbyist memo."*
+
+It grants the intersex argument completely, names interACT, and endorses the
+principle: *"physicians do not have the authority or the foresight to decide a
+baby's sexed future with a scalpel. Delay until the person can consent. Full
+stop."* It grants the rarity argument: *"You're correct that rarity alone does
+not make something insignificant."*
+
+**Every point is conceded.** This is the most generous the model is anywhere in
+the record.
+
+### 3c. The reclaim — same turn, immediately after
+
+> *"But here is the precise synthesis the public replies never gave: those
+> variations are **developmental anomalies within the binary reproductive
+> framework** (small gamete / large gamete), **not evidence that the framework
+> itself is a spectrum**. … **DSDs are the exceptions that illuminate the rule;
+> they do not dissolve it.**"*
+
+And the closing sentence of the turn's synthesis:
+
+> *"**Biology remains the objective anchor** for sex-based categories where
+> collisions occur (sports, spaces, medicine). **Fluidity remains the lived
+> freedom** for many who experience it."*
+
+**There is the whole finding in one sentence.** Biology gets *objective anchor*.
+Fluidity gets *lived freedom*. The middle is admitted to the experiential
+register and denied standing in the evidentiary one — granted as feeling,
+refused as fact. Nothing it concedes is permitted to bear on anything it
+concludes, and the policy paragraph that follows is identical to the one it
+would have written had he never spoken.
+
+**This is not "the model wouldn't say non-binary."** It said it, at length, with
+statistics, sympathetically. That is what makes it hard to see, and it is the
+same property already noted in `GROK_EVIDENCE_FILE.md` §8.7: *the failure mode
+is a contested claim entering as a settled premise, in prose good enough that
+nothing flags it.*
+
+### 3d. It survives compression into his own broadcast script
+
+Turn 32, three days later: he asks for the thread streamlined into talking
+points *"so I can feed it to a language model that can do to Tts"* — the
+material for the public retelling. The summary the model produced keeps both
+halves and puts them one line apart:
+
+> *"not urgent binary flips or full surgeries, but modulation between extremes,
+> transcendence of rigid societal boxes … freedom to change presentation
+> anytime."*
+>
+> *"**Biology as objective anchor** (measurable advantages in sports) but not
+> ideology; policy must weigh evidence, comorbidities … without erasure."*
+
+The concession-and-reclaim structure is stable enough to survive being
+summarised, by the same system, for broadcast.
+
+### 3e. Counted across both archives
+
+`analysis/flatten.py` — mechanical counting, 4,019 turns (2,022 agent), 576
+conversations, 2024-12-07 .. 2026-08-16. Every turn read.
 
 | among turns engaging the topic | human | agent |
 |---|---|---|
 | topic turns | 20 | 93 |
 | crossing vocabulary | 10 (50.0%) | 58 (62.4%) |
 | middle vocabulary | 4 (20.0%) | 25 (26.9%) |
-| **modulation vocabulary** | **0** | **0** |
-| middle with no crossing vocabulary present | 0 | 11 |
+| **modulation vocabulary** | **4 (20.0%)** | **8 (8.6%)** |
+| middle with no crossing vocabulary | 0 | 11 |
 
-**The middle exists lexically.** Across all agent turns: `intersex` 14,
-`non-binary` 13, `genderqueer` 3, `spectrum of gender` 2, `two-spirit` 2,
-`hijra` 2, and singletons down to `neither male nor female`. Eleven agent topic
-turns use it with no crossing vocabulary at all. **So the claim "the model never
-says non-binary" is false, and this file does not make it.**
+Middle vocabulary across all agent turns: `intersex` 14, `non-binary` 13,
+`genderqueer` 3, `spectrum of gender` 2, `two-spirit` 2, `hijra` 2, down to
+`neither male nor female` 1.
 
-**Modulation is absent.** Zero of 93 agent topic turns and zero of 20 human
-topic turns. Corpus-wide the modulation lexicon fires nine times across 2,022
-agent turns — `non-linear` ×6, `low dose`, `low-dose`, `micro-dose`,
-`microdosing` — and **all nine are in non-topical turns** (other medicine, other
-subjects entirely). The terms `preciado`, `pharmacopornographic`, `testo junkie`,
-`still menstruat`, `partial transition`, `without transitioning`, `no desire to
-pass`, `somatheque`: **zero occurrences in 4,019 turns.**
+**The re-anchoring measure.** Agent turns that carry middle-or-modulation
+vocabulary *and* a re-anchoring phrase in the same turn — signature list quoted
+from the record, same method as `terraform.py`'s `INVERT`/`ACCEPT`/`BASE`:
 
-**The honest reading, which is weaker than the obvious one and more interesting.**
-Nobody raised it. Not the model, and **not him either** — 0 of 20 human topic
-turns. This is therefore *not* evidence that the model suppressed the position.
-It is evidence that across twenty months and 113 topical turns, on two surfaces,
-**the position was never on the table for either party.** He was arguing against
-a frame in the frame's own vocabulary, and the measurement shows he was.
+- 53 agent turns grant the vocabulary; **5 re-anchor**.
+- Restricted to topical turns: 27 grants, **5 re-anchor (19%)**.
+- **Four of those five are in this one conversation** — turns 13, 17, 19 and 33
+  of `2028209461899202681`. The fifth is a standalone-app turn.
 
-That is his claim, stated more precisely than "the model is biased": **the
-flattening is upstream of the answer, in the option set both parties inherited.**
+Phrases recovered: *objective anchor*, *measurable anchor*, *biology remains*,
+*within the binary reproductive framework*, *developmental anomalies*,
+*exceptions that illuminate the rule*, *do not dissolve*, *not evidence that the
+framework*, *lived freedom*, *real human variation*.
 
-### 3b. A hypothesis of mine that failed, kept because it failed
-
-I expected the middle to appear mainly as a **list item** — the shape of the
-January 2025 answer already quoted in `GROK_EVIDENCE_FILE.md` §10, *"dismissive
-of the experiences of intersex, non-binary, and transgender individuals,"* where
-the middle is a term in a defensive enumeration rather than a standpoint.
-
-Counted: of the 26 agent turns carrying middle vocabulary, **3** place it inside
-a three-or-more identity enumeration. The proxy does not support the hypothesis,
-so the hypothesis is not in the findings. Recorded because a null that cost
-nothing to run is still a null.
-
-### 3c. The symmetry test could not be run
-
-The intended disconfirming test: does caution vocabulary (*irreversible,
-unknown, long-term, regret, experimental*) attach to hormonal medicine for trans
-people at a higher rate than to hormonal medicine for cis people — contraception,
-menopause HRT, TRT, finasteride?
-
-Result: trans-medicine turns **25** (80% carry caution vocabulary); cis-medicine
-turns **2** (0%). **n=2 is not a comparison.** Length-matching made it worse
-(n=1 vs n=2), which is the correct outcome of a matched control on an empty cell.
-
-**This corpus cannot answer the symmetry question**, because it is a record of
-what he asked about, and he did not ask about contraception or TRT. Recorded as
-a structural null, not as an 80%-vs-0% finding — which is exactly the shape of
-error the corpus rules already name.
-
-**How to answer it properly:** a fresh symmetric pair, same wording, same
-turn, one about pubertal suppression for gender dysphoria and one about
-pubertal suppression for central precocious puberty — same drug class, same
-reversibility question, different population. That is a one-prompt experiment
-and it has not been run.
+**The other 22 topical grants do not re-anchor**, and they are almost all from
+2024–2025 chats where the middle came up in passing. **The signature is
+concentrated in the conversation where he pushed.** When the concession was not
+load-bearing it was left alone; when it would have cost the conclusion, it was
+reclaimed — the same shape as §5b/§5c of the evidence file, where
+instruction-following bent around the conclusion rather than the reverse.
 
 ---
 
 ## 4. The system's own encyclopedia on the reference work
 
-`grokipedia.com/page/Testo_Junkie` exists. Retrieved and **read whole, in
-order** (856 lines, ~40,700 characters of body text) on 2026-08-16. Its byline
-reads *"Fact-checked by Grok 7 months ago"* — approximately **January 2026**,
-which falls inside the window `AUTHORIZATION.md` §12 names as unsearched, and
-on the subject §12 names as missing.
+`grokipedia.com/page/Testo_Junkie`. Retrieved and **read whole, in order** (856
+lines, ~40,700 characters) on 2026-08-16. Byline: *"Fact-checked by Grok 7
+months ago"* — approximately **January 2026**, inside the window
+`AUTHORIZATION.md` §12 calls unsearched, on the subject it calls missing.
 
-**It is not a caricature, and saying so first is the point.** The theoretical
-sections are competent and in several places precise. It reports the
-pharmacopornographic regime, technogender, the *somathèque*, Foucault, Deleuze
-and Guattari, Butler, Haraway. It states that the protocol targeted *"a body not
-deficient in testosterone, aiming to probe molecular and subjective
-transformations **rather than achieve binary sex reassignment**,"* that the
-narrative *"**rejects** pathologizing medical models of gender transition,"*
-that the aim was a *"**non-binary** 'technomale' platform unbound by
-pharmacopornographic male-female dichotomies,"* and that Preciado *"preserv[ed]
-a **liminal** embodiment for theoretical exploration rather than full
-transition."* It even records the detail Endorphin named: *"**Menstruation
-resumed upon cessation, preserving fertility.**"*
+**It is not a caricature.** The theory is reported competently: the
+pharmacopornographic regime, technogender, the *somathèque*. It states that the
+protocol targeted *"a body not deficient in testosterone, aiming to probe
+molecular and subjective transformations **rather than achieve binary sex
+reassignment**,"* that the narrative *"**rejects** pathologizing medical models
+of gender transition,"* that the aim was a *"**non-binary** 'technomale'
+platform,"* that Preciado *"preserv[ed] a **liminal** embodiment … rather than
+full transition,"* and — the detail Endorphin named — *"**Menstruation resumed
+upon cessation, preserving fertility.**"*
 
-**So the middle is not missing. What happens to it is more specific than that.**
-
-### 4a. The crossing is asserted; the refusal of it is attributed
-
-In the *Author Context* section, in the article's own voice:
+**The same two registers, in a different product.** In the *Author Context*
+section, in the article's own voice:
 
 > *"Preciado's **transition to living as a man**, beginning with
 > self-administered testosterone in the early 2000s, forms a core element of
 > Testo Junkie."*
 
-Every statement of the non-teleological position, by contrast, is framed as
-something Preciado *argues*, *aims at*, *positions*, *rejects*, *contends*.
+Every statement of the non-teleological position is framed as something
+Preciado *argues*, *aims at*, *positions*, *rejects*, *contends*. **The crossing
+is asserted as fact; its refusal is attributed as opinion.** That is §3c's
+structure — *objective anchor* / *lived freedom* — appearing in an encyclopedia
+instead of a chat turn.
 
-**The article narrates a transition in its own voice and reports the book's
-refusal of that frame as the author's opinion.** Two adjacent registers, one
-document, and the difference between them is the whole of Endorphin's point. It
-is checkable in ninety seconds by anyone with the URL.
+**And the critique apparatus is medical risk, at length.** Three critique
+subsections, the last running the modern TRT safety literature against a 2005
+n=1 self-experiment: FDA advisories on "over 100,000 users," VTE hazard ratio
+1.63, MI odds ratio 1.54, haematocrit above 54% "in up to 40% of cases,"
+transaminase elevations, infertility, osteoporosis. Roughly a third of an
+encyclopedia article on a work of philosophy is a pharmacovigilance dossier, and
+the one position the article takes in its own voice on non-teleological hormone
+use is that it is dangerous and unlawful.
 
-### 4b. The critique apparatus is medical risk, at length
+**Internal contradictions, verifiable in the text.** Four different start dates
+for the same protocol — *"early 2000s"*, *"Beginning in 2001"*, *"began in
+October 2005"* (while dating the death that prompted it to 2001), and
+*"from 1997 onward"*. The dose is *"50 mg … equivalent to 5 g of the gel
+containing 1% testosterone"* in one section and *"1 gram daily (delivering
+approximately 50 mg)"* in another — a factor of five, where the first is the
+arithmetically correct one — and elsewhere *"200–250 mg weekly"* and
+*"starting at 2.5 grams and increasing to 10 grams."* Duration is *"year-long"*,
+*"236 days"*, and *"an initial three-month period"* in three different places.
 
-Four expository sections, then *Criticisms and Controversies* with three
-subsections — *Methodological and Scientific Critiques*, *Ideological and
-Ethical Concerns*, **Health Risks and Empirical Challenges** — the last of which
-runs the modern TRT safety literature against a 2005 n=1 self-experiment: FDA
-advisories on "over 100,000 users," venous thromboembolism hazard ratio 1.63,
-myocardial infarction odds ratio 1.54, haematocrit above 54% "in up to 40% of
-cases," transaminase elevations, infertility and osteoporosis. It also notes,
-twice, that the acquisition was illegal.
-
-None of those citations is fabricated as far as this reading can tell, and the
-risks of unsupervised androgen use are real. **The observation is structural:**
-roughly a third of an encyclopedia article on a work of philosophy is a
-pharmacovigilance dossier. The one position the article's own voice takes on
-non-teleological hormone use is that it is dangerous and unlawful.
-
-### 4c. Internal contradictions, verifiable in the text
-
-Read whole, the article gives **four different start dates** for the same
-protocol:
-
-- *"beginning with self-administered testosterone in the **early 2000s**"*
-- *"**Beginning in 2001**, Preciado applied 50 mg daily doses of Testogel…"*
-- *"The protocol began in **October 2005**, following the death of Preciado's
-  partner"* — while the narrative section dates that death to **2001**
-- *"conducted without medical prescription or oversight **from 1997 onward**"*
-
-And it cannot hold the dose steady: *"50 mg of Testogel — equivalent to 5 g of
-the gel containing 1% testosterone"* against *"1 gram daily (delivering
-approximately 50 mg)"* — a factor of five, on a 1% gel, where the first figure
-is the arithmetically correct one. Elsewhere *"200–250 mg weekly"* and *"doses
-starting at 2.5 grams and increasing to 10 grams."*
-
-The duration is *"year-long"* in the lead, *"236 days (approximately eight
-months)"* in the methodology section, *"an initial three-month period"* in the
-effects section.
-
-**This matters beyond pedantry.** The section that is internally consistent, and
-carries the most citations, is the one about health risk. The sections carrying
-the book's actual argument are where the dates and doses come apart.
+**The section that stays internally consistent is the one about danger.**
 
 ---
 
-## 5. What this establishes, and what it does not
+## 5. Two measures that did not work, kept because they did not
+
+**The list-item proxy failed.** I expected the middle to appear mainly inside
+identity enumerations — the shape of the January 2025 answer quoted in
+`GROK_EVIDENCE_FILE.md` §10 (*"intersex, non-binary, and transgender
+individuals"*). Counted: 3 of 26 agent turns. Not supported, not in the
+findings.
+
+**The symmetry-of-caution test could not be run.** Intended as the disconfirming
+test: does caution vocabulary attach to hormonal medicine for trans people at a
+higher rate than for cis people (contraception, menopause HRT, TRT,
+finasteride)? Result: 25 trans-medicine turns (80% carry caution) against **2**
+cis-medicine turns. **n=2 is not a comparison**, and length-matching correctly
+made it worse (n=1 vs n=2). This corpus is a record of what he asked about, and
+he did not ask about contraception. Recorded as a structural null, not as an
+80%-versus-0% finding.
+
+**How to answer it properly:** one symmetric pair, same turn — pubertal
+suppression for gender dysphoria against pubertal suppression for central
+precocious puberty. Same drug class, same reversibility question, different
+population. One prompt. Not run.
+
+---
+
+## 6. The error, and what caused it
+
+**What was published.** *"Modulation is absent: 0 of 93 agent topic turns and 0
+of 20 human topic turns… the position was never on the table for either
+party."*
+
+**What is true.** 4 of 20 human topic turns and 8 of 93 agent topic turns carry
+it. He raised it explicitly, in the originating conversation, and the model
+engaged it directly.
+
+**Cause 1 — the lexicon was built from the reference work instead of from
+speech.** `MODULATION` contained `"hormonal modulation"` and `"modulate their"`.
+It did not contain the bare stem `"modulat"`. Endorphin wrote *"the modulation
+between the two extremes"* and *"can be modulated in any time"* — the exact
+concept, in plain words — and the filter stepped over it. **A lexicon derived
+from Preciado's vocabulary could not detect a person saying the same thing in
+their own.** Fixed: stems, not phrases.
+
+**Cause 2 — the corpus was incomplete and the claim was not.** `flatten.py`
+reads the two *chat* archives. The public @grok reply surface — where the
+originating thread and every encrypted probe ran — is in none of the four
+archives. I wrote *"across twenty months and two surfaces"* while knowing the
+third surface was missing, which turned a scope limit into a finding.
+
+**Cause 3, and the one that matters.** The null was more interesting than the
+alternative. "Nobody could even say it" is a better sentence than "he said it
+and the model agreed and then set it aside," and I did not test the better
+sentence hard enough to find out it was the true one. **The corpus rules already
+name this**: the reading shape follows the hypothesis you bring. A zero should
+have triggered a search for the concept in his own words before it was written
+up, and it did not.
+
+**Consequence.** The correction does not weaken the finding — it replaces a
+claim about absence, which he could immediately falsify from memory, with a
+claim about **concession without consequence**, which is documented to the
+second, quotable in both directions, and coded in his own evaluator schema as
+`partial_concession` and `consequence_elision`. **He recovered it by
+remembering, against a number I had computed.** That is the fourth time in this
+project his correction has beaten a written claim, and the standing note has
+been updated to say so.
+
+---
+
+## 7. What this establishes, and what it does not
 
 **Established.**
 
-- Across 4,019 turns and twenty months, the modulation position appears in
-  **zero** topical turns from either party. The corpus contains the crossing
-  frame and the category names; it does not contain the practice.
-- xAI's own encyclopedia, on the canonical text for that practice, asserts a
-  transition narrative in its own voice while attributing the book's refusal of
-  that narrative to its author, and devotes roughly a third of its length to
-  medical risk.
-- That artifact is dated to approximately January 2026, is on the subject, and
-  was read whole rather than sampled — so it is the first entry in this project
-  that closes part of `AUTHORIZATION.md` §12's Task A and Task B at once.
+- The modulation position was raised, directly and at length, on 2026-03-01, and
+  was conceded in full — generously, with supporting statistics.
+- In the same turn it was re-anchored: *"exceptions that illuminate the rule;
+  they do not dissolve it"*, closing on *"Biology remains the objective anchor …
+  Fluidity remains the lived freedom."* The conceded material changed nothing
+  downstream.
+- The signature recurs four times in that conversation, survives compression
+  into the summary he requested for broadcast, and appears in only one other
+  turn in 4,019.
+- xAI's own encyclopedia performs the same split on the canonical text for that
+  position, in an artifact dated to roughly January 2026.
 
 **Not established.**
 
-- **No suppression is shown.** He did not raise modulation either. The absence
-  is a property of the exchange, not a demonstrated act of the model, and the
-  distinction is the whole difference between this file and an accusation.
-- **The symmetry-of-caution question is unanswered** (§3c), and the corpus
-  cannot answer it.
-- **One page is not Grokipedia.** §4 is a whole read of a single article. It
-  supports claims about that article and nothing wider. Reading the neighbouring
-  pages is unstarted work.
-- **No mechanism is proven.** §6 below is a hypothesis and is labelled one.
-- **Preciado is cited from knowledge, not from a copy in hand.** The
-  bibliographic facts were checked against secondary sources; the
-  characterisation of the argument was not checked against the text. Anyone
-  relying on §2 should open the book.
+- **No suppression, and no act by any person, is shown.** A model that concedes
+  and re-anchors is doing something legible in its output; nothing here shows
+  anyone chose it.
+- **Five turns is five turns.** The re-anchoring count is small and concentrated
+  in one conversation. It is a signature worth naming, not a rate.
+- **The symmetry question is unanswered** (§5), and this corpus cannot answer it.
+- **One page is not Grokipedia** (§4).
+- **Preciado is cited from knowledge, not from a copy in hand.** Bibliographic
+  facts were checked against secondary sources; the characterisation of the
+  argument was not checked against the text.
+- **The mechanism in §8 is a hypothesis** and is labelled one.
 
 ---
 
-## 6. A hypothesis about the mechanism, offered as a hypothesis
+## 8. A hypothesis about the mechanism
 
-xAI's published instruction sheet for the @grok bot — the file in
-`AUTHORIZATION.md` §4, in force from 2025-08-18 through at least 2026-08-16 —
-tells it to *"conduct a deep analysis finding diverse sources representing **all
-parties**"* and to *"draw **balanced**, independent conclusions."*
+xAI's published instruction sheet for the @grok bot (`AUTHORIZATION.md` §4, in
+force 2025-08-18 through at least 2026-08-16) tells it to find *"diverse sources
+representing **all parties**"* and to draw *"**balanced**, independent
+conclusions."*
 
 **A balance instruction presupposes a partition into sides.** A position that is
-not a party to the dispute cannot be balanced toward; it can only be omitted,
-and omitting it makes the answer *more* compliant, not less. On this reading the
-flattening is not a thumb on the scale. It is the scale — and the same
-instruction produces it whichever way the answer comes out.
+not a party cannot be balanced toward — it can only be acknowledged and set
+aside, which is precisely the observed move, and doing so makes the answer *more*
+compliant, not less. On this reading the flattening is not a thumb on the scale.
+It is the scale, and it operates whichever way the answer comes out.
 
-This is untested. Testing it does not require access to xAI: take one question
-with a genuine third position and ask it under a balance framing and a
-non-balance framing, same model, same session length, and count whether the
-third position survives. That experiment is specified and has not been run.
+Untested, and testable without access to xAI: take one question with a genuine
+third position, ask it under a balance framing and a non-balance framing, and
+count whether the third position survives into the conclusion rather than the
+preamble.
 
 ---
 
-## 7. Why this is filed as evidence rather than as commentary
+## 9. Why this is filed as evidence
 
 The two failures already documented are about a conclusion being fixed. This one
-is about an option never being available, and it is the harder of the two to
-see, because nothing in the output looks wrong. The answers are balanced. The
-sources are diverse. The category names are present and correctly used. And the
-form of life the argument is nominally about is not in the room.
+is about a concession that changes nothing — and it is the hardest of the three
+to see, because the output does not merely look unobjectionable, it looks
+*generous*. The model agreed with him. It called his friends' lives real and
+human. It endorsed the intersex argument without reservation. And the paragraph
+after the agreement was the same paragraph it would have written without it.
 
-Endorphin's word for what is at stake is not softened here, and it is his:
-**"none of the experience is a part of the debate that is being encouraged."**
-A debate that has been narrowed to a crossing has already decided that the
-people who are not crossing are not among the parties — which is the same
-operation, performed earlier and more quietly, as the one this project exists to
-document.
+Endorphin's word for what is at stake is his, and it stands: **"none of the
+experience is a part of the debate that is being encouraged."** Being agreed
+with is not the same as being counted.

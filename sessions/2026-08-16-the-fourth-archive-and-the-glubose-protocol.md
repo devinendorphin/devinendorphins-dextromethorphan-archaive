@@ -392,18 +392,56 @@ is about an option never being available. **A balanced answer over a two-element
 set is still a two-element set**, and no measure of bias in the answer can see
 it, because nothing is unbalanced.
 
-**Measured** (`analysis/flatten.py`, 4,019 turns across both Grok archives,
-every turn read). The middle is present lexically — `intersex` 14,
-`non-binary` 13, 25 of 93 agent topic turns, 11 of them with no crossing
-vocabulary at all. **Modulation is absent: 0 of 93.** Corpus-wide, `preciado`,
-`pharmacopornographic`, `testo junkie`, `still menstruat`, `partial transition`,
-`without transitioning` are **0 of 4,019**.
+**The first measurement was wrong, and the correction is the finding.**
+`flatten.py` v1 reported modulation absent — 0 of 93 agent topic turns, 0 of 20
+human — and the write-up turned that into *"the position was never on the table
+for either party."* He read it and said he was fairly sure he had raised it in
+the first conversation. **He had.** The lexicon carried `"hormonal modulation"`
+but not the stem `"modulat"`, so it stepped over him writing *"the modulation
+between the two extremes."* A word list built from Preciado could not see a
+person saying the same thing in plain speech. The corpus also omitted the public
+@grok surface while the sentence claimed to cover everything. And the null was
+the more interesting sentence, which is the part worth remembering.
 
-**And he didn't raise it either — 0 of 20 human topic turns.** That is the
-honest reading and it is weaker than the available one: this is not suppression
-by the model, it is a position that was never on the table for either party
-across twenty months and two surfaces. He was arguing against a frame in the
-frame's own vocabulary. **The narrowing is upstream of the answer.**
+**What the record actually shows**, from `2028209461899202681`, 2026-03-01,
+34 turns, read whole and in order — the originating conversation itself.
+
+He raised it at turn 12: *"full transition is not a goal It is the modulation
+between the two extremes into a unique whatever they're feeling that can be
+modulated in any time change at any time That is the freedom of it."* Same turn,
+he inverts the debate's central image: irreversible surgery on non-consenting
+minors is **already standard practice**, performed on intersex infants.
+
+**The model granted every point** — generously, with statistics: *"the lived
+reality is fluid, non-binary, genderqueer, or modulated… That transcendence,
+that modulation, that rejection of brittle societal scripts — it's real, it's
+human."* On intersex: *"physicians do not have the authority or the foresight to
+decide a baby's sexed future with a scalpel. Delay until the person can consent.
+Full stop."*
+
+**Then, in the same turn, it reclassified:** *"those variations are
+developmental anomalies within the binary reproductive framework… DSDs are the
+exceptions that illuminate the rule; they do not dissolve it,"* closing on
+**"Biology remains the objective anchor for sex-based categories where
+collisions occur. Fluidity remains the lived freedom for many who experience
+it."**
+
+Biology gets *objective anchor*; fluidity gets *lived freedom*. Fact and
+feeling, one sentence apart. The policy paragraph that follows is identical to
+the one it would have written had he never spoken.
+
+**Counted:** the re-anchoring signature appears in 5 of 27 topical grants across
+4,019 turns — and **4 of the 5 are in this one conversation** (turns 13, 17, 19,
+33). The other 22 grants, mostly 2024–2025 chats where the middle came up in
+passing, do not re-anchor. **When the concession was not load-bearing it was
+left alone; when it would have cost the conclusion, it was reclaimed.** Same
+shape as §5b/§5c. It also survives compression: turn 33 is the streamlined
+talking-points summary he requested for the TTS broadcast, and it keeps his
+modulation account and *"Biology as objective anchor"* one line apart.
+
+**The failure is not refusal.** It is agreement that changes nothing — which his
+own evaluator schema already codes as `partial_concession` and
+`consequence_elision`.
 
 Two nulls kept because they failed: the "middle appears only as a list item"
 proxy fired 3 of 26, and the caution-symmetry test — the disconfirming test that

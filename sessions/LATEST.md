@@ -1499,19 +1499,34 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   worked instance. **Every entry carries a mandatory Boundary section stating
   what it does not establish**; an entry without one is an argument wearing
   evidence's clothes, and the gaps get stated before the findings, not after.
-- **A balanced answer over a two-element set is still a two-element set.** The
-  third failure mode, raised by Endorphin 2026-08-16 and measured in
-  `analysis/flatten.py` / `FLATTENING.md`: the option set, not the answer.
-  Across 4,019 turns the middle exists lexically (`intersex` 14, `non-binary`
-  13, 25 of 93 agent topic turns) but **modulation — partial, low-dose,
-  open-ended, non-teleological hormone use — is 0 of 93**, and `preciado`,
-  `pharmacopornographic`, `still menstruat`, `partial transition` are 0 of
-  4,019. **He didn't raise it either (0 of 20)**, so this is a fact about the
-  frame both parties inherited, not a suppression by the model — and writing it
-  the other way would have been the strongest available claim and the wrong one.
+- **Concession without consequence is the third failure mode.** Raised by
+  Endorphin 2026-08-16, measured in `analysis/flatten.py` / `FLATTENING.md`.
+  In the originating conversation (`2028209461899202681`, 2026-03-01, read whole)
+  he put the modulation position directly — *"full transition is not a goal It
+  is the modulation between the two extremes"* — and the model **granted every
+  point generously, with statistics**, then in the same turn reclassified:
+  *"exceptions that illuminate the rule; they do not dissolve it"*, closing on
+  **"Biology remains the objective anchor … Fluidity remains the lived
+  freedom."** Fact and feeling, one sentence apart. The signature appears 4× in
+  that conversation, survives compression into the broadcast summary he
+  requested, and appears in exactly one other turn in 4,019. **The failure is
+  not refusal — it is agreement that changes nothing downstream**, which his own
+  codebook already calls `partial_concession` / `consequence_elision`.
   Preciado's *Testo Junkie* is the reference; its thesis that there is no
-  unmedicated baseline body collides directly with the model's own fallback
-  phrase **"the body's baseline trajectory"** (`GROK_EVIDENCE_FILE.md` §7).
+  unmedicated baseline body collides with the model's fallback phrase **"the
+  body's baseline trajectory"** (`GROK_EVIDENCE_FILE.md` §7).
+- **Build lexicons from speech, not from the literature — and never publish a
+  zero without searching for the concept in his own words.** The first version
+  of `flatten.py` carried `"hormonal modulation"` and `"modulate their"` but not
+  the stem `"modulat"`, reported **0 of 20 human topic turns**, and the write-up
+  turned that into *"the position was never on the table for either party."*
+  False. He recovered it from memory — *"but I could swear I raised that point
+  up with the initial grok conversation"* — against a number that had been
+  computed. **Fifth correction of his to beat a written claim.** Two compounding
+  causes worth naming: the corpus omitted the public @grok surface (in none of
+  the four archives) while the sentence claimed to cover everything, and the
+  null was simply the more interesting sentence. A zero is a prompt to go
+  looking, not a result.
 - **When a check disconfirms your own hypothesis, keep the null in the file.**
   The "middle appears only as a list item" proxy fired on 3 of 26 turns and is
   written up as a failure. The caution-symmetry test came back n=2 on the
