@@ -35,13 +35,19 @@ is no unpacking step.
 | path | bytes | what it is |
 |---|---:|---|
 | `prod-grok-backend.json` | 41.9 MB | **the whole conversation record** |
-| `prod-mc-asset-server/*/content` | ~106 MB | generated images and video, 636 files |
+| `prod-mc-asset-server/*/content` | ~106 MB | 636 files: mostly generated media, **but 146 decode as UTF-8 text** — pasted transcripts, spec packets, result CSVs. Extract with `--attachments`. |
 | `prod-mc-asset-server/*/previewdoc` | ~1 MB | 13 document previews |
 | `prod-mc-auth-mgmt-api.json` | 2.7 KB | **account PII — never opened** |
 | `prod-mc-billing.json` | 18 B | empty |
 
-Everything the project needs is one file. The other 148 MB is media output and
-account plumbing.
+Everything the *conversation record* needs is one file. **The rest is not all
+media**, and an earlier version of this table said it was. 146 of the 636 asset
+files decode as UTF-8 text, and they carry material that exists nowhere else in
+the archive — pasted transcripts of sessions run on other surfaces, quorum spec
+packets, and raw experiment output. `analysis/TERRAFORMING.md`'s primary source
+was one of them, unread, because this table said the directory was pictures.
+Classifying a container by its majority type and then reporting on the whole is
+the same error as reading a fragment and rendering a verdict on the document.
 
 ## What is deliberately not read
 

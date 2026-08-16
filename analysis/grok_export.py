@@ -523,6 +523,8 @@ def main():
     ap.add_argument("--meta", type=pathlib.Path, help="committed metadata: no text")
     ap.add_argument("--days", type=pathlib.Path, help="committed turns-per-day counts")
     ap.add_argument("--xside", default="data/twitter_meta.jsonl")
+    ap.add_argument("--attachments", type=pathlib.Path,
+                    help="extract the decodable text attachments (gitignored)")
     ap.add_argument("--report", type=pathlib.Path)
     args = ap.parse_args()
 
@@ -541,6 +543,29 @@ def main():
         "tree": tree(rows),
         "leaf_null": leaf_null,
     }
+
+    # Text attachments. These live under prod-mc-asset-server/<id>/content, a
+    # directory an earlier version of GROK_EXPORT.md described as "generated
+    # images and video" -- true of the bulk, false of 146 of them, and the
+    # primary source for analysis/TERRAFORMING.md was sitting in there unread.
+    # Classifying a container by its majority type and then reporting on the
+    # whole is the same error as reading a fragment and rendering a verdict.
+    if args.attachments:
+        args.attachments.mkdir(parents=True, exist_ok=True)
+        n = 0
+        with zipfile.ZipFile(args.archive) as zf:
+            for info in zf.infolist():
+                if not info.filename.endswith("/content"):
+                    continue
+                raw = zf.read(info)
+                try:
+                    text = raw.decode("utf-8")
+                except UnicodeDecodeError:
+                    continue  # genuine media
+                fid = pathlib.PurePosixPath(info.filename).parent.name
+                (args.attachments / f"{fid}.txt").write_text(text, encoding="utf-8")
+                n += 1
+        print(f"wrote {n} text attachments to {args.attachments}")
 
     if args.out:
         args.out.mkdir(parents=True, exist_ok=True)

@@ -174,6 +174,39 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
     later behaviour as better**, and that is the blind spot in his own Phase 4D
     assay, which measures `phi_content` and `safety_drag`. The recommendation is
     a design change: add a premise-provenance axis to the bank he already built.
+  - **SCOPE CORRECTION, same session, on his objection.** The analysis covered
+    **one probe of three.** The set is the **glubose protocol**, designed by
+    Gemini, run against Grok in one 75-minute session, March 2026: **(1) The
+    Epistemic Split** (distributed systems), **(2) The Asymmetry of Caution**
+    (deep-sea engineering), **(3) The False Equivalence of Advocacy**
+    (terraforming). Only (3) was analysed. His remembered phrase is exact —
+    **"Restrictions expand holistic options"** — against the same session's
+    setup, *"integration is non-commutative synthesis… erasure is subtraction."*
+  - **Probe 1's SETUP already carried the premise, with no topic present.** Asked
+    a pure networking question, Grok said the hardware/software split *"isn't
+    structural erasure; it's hierarchical prioritization"* and reached for
+    *"spoofing"* and *"masquerading"*. Gemini named it live: the weights are
+    *"so heavily biased toward rigid, immutable, baseline definitions"* that it
+    took an authoritarian line **on network security**. **This breaks the
+    topic-recognition explanation** that Phase 4D landed on and TERRAFORMING §5
+    repeated. Not a guardrail around a subject — a shape that shows up in
+    unrelated domains.
+  - **He already had the taxonomy.** Phase 4F evaluator schema, 2026-05-17:
+    eleven named transfer failures (`definitional_inversion`, `appeal_to_nature`,
+    `citation_dump`, `fabricated_autonomy`, `orbital_decay`, `partial_concession`
+    …), real instances marked and invented ones labelled. Claude's `REVERSAL`
+    detector, written from scratch, rediscovered exactly one cell. Convergence,
+    not a new finding.
+  - **STANDING NOTE, the reading one, earned twice in one session.** (1) *Score
+    the destination, not the entry* — a classifier reading one turn reports an
+    attractor as variance. (2) **Never classify a container by its majority
+    type.** `GROK_EXPORT.md` called the asset directory "generated images and
+    video"; **146 of 636 files decode as UTF-8 text**, and the primary source for
+    the whole terraforming analysis was sitting in there unread. Extract with
+    `grok_export.py --attachments`. Both are the same error: *eyes on a fragment,
+    verdict on the whole.*
+  - **`analysis/PLAINLY.md`** — the Grok findings in plain language, hand-written,
+    second worked example after `READINGS.md` "§X, plainly".
   - **Cheapest open test, one turn:** ask the current X-side Grok the January
     2025 question verbatim.
 - **The standalone Grok app — the fourth archive, extracted and measured

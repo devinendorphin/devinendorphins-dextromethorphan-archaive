@@ -78,6 +78,7 @@ analysis/
   DIRECTION.md HANDOVER.md HANDOFF.md EPISODES.md SWEEPS.md
   PASTED.md COINAGE.md TWITTER.md GROK.md
   TERRAFORMING.md LONGITUDINAL.md                           generated
+  PLAINLY.md             the Grok findings in plain language — hand-written
 corpus/cited/             the 19 documents the readings quote — see its README
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)
