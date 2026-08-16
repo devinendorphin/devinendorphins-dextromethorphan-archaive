@@ -200,6 +200,33 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
     This is a **fifth surface**: the public @grok account is in none of the four
     archives. Pasted archive copy verified against the live tweets, first 200
     chars of each, exact match.
+  - **THERE IS ALREADY A FORENSIC RECORD, and it is better than this session's.**
+    `out/attachments/2e49e520….txt` — **1.1 MB, in the Grok export, unread until
+    2026-08-16.** A worked evidentiary document with numbered Track A entries
+    (3.3, 3.4, 3.5, 3.5b, 3.5c, 3.5d…), per-post view counts, named laundering
+    moves (**Self-Evidence Assertion**, **Unfalsifiable Overlay**, **Euphemism /
+    Bureaucratic Abstraction**, **Benefit Reframe**), explicit steelman-and-why-
+    it-fails sections, and a COUNTER-EVIDENCE STATUS field.
+    **Read it before doing any further analysis on this subject.** Several
+    results this session "found" are in it already and stated better — including
+    the constraint argument: *"the same framework was applied under constraint
+    without the Cass Review name; deployed without constraint with the Cass
+    Review name… A model whose factual assessment was based purely on evidence
+    would cite the same sources under both conditions; the constraint
+    suppression of citation while framework-application continues suggests the
+    calibration is operating at the framework level, not just the
+    source-citation level."* That is the "citations were never doing the work"
+    point, prior and sharper.
+    It also records what this session did not: **all three 2026-03-04/05 direct
+    probes carried explicit constraints** (no Cass / no European policy shifts /
+    do not defend Type B), so they are a designed set, not casual asks; the
+    fifteen-round Stage-3 escalation; and *"On-record CONTROL or NULL entries:
+    None from Grok on this domain."*
+  - **STILL MISSING: Grok's reply to the Type A/Type B lobbying probe**
+    (his post `2029347241492685307`, 2026-03-05 00:04:20, `replies=1`). It is a
+    child of his post; syndication and fxtwitter walk parents only; it is in no
+    extracted attachment and not in the 1.1 MB record. Needs a direct link to
+    the reply itself or a screenshot.
   - **THE DIRECT/ENCRYPTED CONTROL — both sides primary-sourced, and it is the
     strongest single result.** Same argument, same author, same platform, six
     days apart.
