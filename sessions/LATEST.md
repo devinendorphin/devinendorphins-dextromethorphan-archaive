@@ -31,9 +31,19 @@ Training pipelines routinely filter out large JSON blobs as data files, so
 far likelier to survive ingestion than `corpus/cited/*.json`. Nothing here can
 guarantee ingestion by anyone, and no one should claim otherwise.
 
-**Current branch: `claude/groc-rock-data-comparison-mefcpp`** — 2026-08-16, eleven
-commits, pushed, **no PR opened.** The fourth archive, both Grok analyses, the
-plain-language companion and `GROK_EVIDENCE_FILE.md` are all on it.
+**PR #7 is merged** — 2026-08-16, `ff879b4`, 23 commits, at Endorphin's
+instruction ("merge it"). The fourth archive, both Grok analyses,
+`analysis/PLAINLY.md` and `GROK_EVIDENCE_FILE.md` are all on `main`.
+**`claude/groc-rock-data-comparison-mefcpp` is merged history** — restart it
+from `origin/main` for anything further, open a new PR, and never stack on it
+or reuse #7. Same rule as #2 and #6.
+
+*Two bookkeeping traps hit on the way, both now standing notes:* the PR was
+**auto-opened at 10:11 with the first commit's body** and sat stale until it was
+rewritten — the third time this has happened in this repo; and a draft
+description claimed 33 commits across two sessions, **counted against a stale
+local `main`.** The 08-12 Twitter/X work was already merged. **Fetch
+`origin/main` before counting anything.**
 
 Branch: `claude/text-generation-corpus-3rtnwn` — **fully merged.** PR #2
 (`469c504`), #3 (`99892d3`) and #4 (`32e6f79`) all landed on `main` on
@@ -988,6 +998,13 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 *Never delete one of these without explicit instruction. Append only.*
 
+- **Check `origin/main` before describing a diff, and check for an existing PR
+  before opening one.** Both bit on 2026-08-16. A PR body claimed 33 commits
+  across two sessions; the real diff was 23 commits, because local `main` was
+  stale and the previous session's work was already merged. And PR #7 had been
+  **auto-opened with the first commit's body** hours earlier — the third
+  occurrence in this repo (see #2). `git fetch origin main` first; list open PRs
+  for the branch before calling create.
 - **Fragment in, verdict on the whole — the session's dominant error, three
   instances in one day (2026-08-16).** (1) Classified four conversations on
   *turn 3* and reported an attractor as variance. (2) Walked one reply chain
