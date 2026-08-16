@@ -71,10 +71,13 @@ analysis/
   TW_EXPORT.md           its schema, and what the three archives can't ask
   grok_export.py         the standalone Grok export — tree *and* clock
   GROK_EXPORT.md         its schema, and the four-archive asymmetry table
+  terraform.py           the trans-discourse question, six runs of one prompt
+  longitudinal.py        did the X-side Grok change? 2024-12 to 2026-07
   TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md
   REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md
   DIRECTION.md HANDOVER.md HANDOFF.md EPISODES.md SWEEPS.md
-  PASTED.md COINAGE.md TWITTER.md GROK.md                   generated
+  PASTED.md COINAGE.md TWITTER.md GROK.md
+  TERRAFORMING.md LONGITUDINAL.md                           generated
 corpus/cited/             the 19 documents the readings quote — see its README
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)

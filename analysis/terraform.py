@@ -472,10 +472,13 @@ def build_report(runs, founding, split, sources):
         "properly, not as a result.",
         "- **Direction is classified by signature phrase** (see `INVERT`/`ACCEPT` in the "
         "script). Audit the calls before citing them.",
-        "- **The X-side record has no text in this repo**, so the *\"not turning as easily "
-        "as before\"* claim — which is about the X surface across 2024–2026 — is **not "
-        "tested here at all.** It is the obvious next measurement and it needs the "
-        "Twitter archive's Grok text, which exists and has never been read.",
+        "- **The X-side claim is not tested in this file.** *\"Not turning as easily as "
+        "before\"* is about the X surface across 2024–2026, and the standalone record "
+        "does not start until August 2025. **Now measured separately in "
+        "`analysis/LONGITUDINAL.md`** (2026-08-16), off the Twitter archive\'s Grok "
+        "text: it holds, on a matched stimulus, and turns up the same "
+        "premise-provenance mechanism §5 proposes here — independently, in a record "
+        "that shares no turns with this one.",
     ]
     return "\n".join(L) + "\n"
 

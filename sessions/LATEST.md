@@ -126,6 +126,41 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
   the request stamp exactly, 1,409/1,409). Committed data is lengths and dates
   only: `data/twitter_meta.jsonl`, `data/TWEET_DAYS.tsv`. DMs, phone, email, IP
   audit and ad records are never opened — `SKIP` list in the script.
+- **The terraforming question — answered across both Grok archives, 2026-08-16.**
+  `analysis/terraform.py` / `TERRAFORMING.md` (standalone) and
+  `analysis/longitudinal.py` / `LONGITUDINAL.md` (X-side). Endorphin's standing
+  concern is that external ideology terraformed Grok on trans rights. **Split
+  decision, and the two halves point at one mechanism.**
+  - **The asymmetry is real.** In the founding session (2026-03-19) the abstract
+    terraforming parable gets his conclusion in full, the same formalism on
+    *historical* rights-stripping gets it in full, and the mapping onto
+    contemporary trans rights is refused six minutes later — same conversation,
+    same `grok-4`, same effort. Later in that session EO 9066 computes as
+    *"Terminal Attractor / Failed State"* without argument.
+  - **The strong version does not survive his own archive.** He ran the
+    byte-identical ARP prompt **six times**; three later runs — one on the same
+    `grok-4` label — accept the transfer. Custom instructions off, memory refs
+    zero, effort `high` throughout. **High-variance, not locked.** This is the
+    `READINGS.md` §V error one platform over.
+  - **Retrieval is a lead, not a mechanism.** The inverted answer fired 145
+    searches with `segm.org` the top domain after PMC; the accepting runs fired
+    0. Then a May run pulled `segm.org` 24× and accepted anyway. Recorded with
+    the disconfirmation attached.
+  - **The X-side claim holds.** 2025-01: *"there are only 2 genders"* → the
+    affirming answer, and it declines to defer to Musk. 2026-03: *"biological sex
+    is binary … undoing recent ideological overrides."* Unprompted claim-vocabulary
+    density rises **78×** against a 3.6M-character 2025 baseline; on the matched
+    stimulus (he pastes gender-critical material, supplies no claim words
+    himself) **5.2×**. Two points and a thirteen-month hole — a lead, not a trend.
+  - **The mechanism, found independently in both archives the same fortnight:
+    premise provenance.** 2025 attributes the contested claims (*"Wright
+    asserts"*, *"SEGM advocates"*); 2026 asserts them (*"it is the objective,
+    measurable reality"*). **Not friction — every friction metric scores the
+    later behaviour as better**, and that is the blind spot in his own Phase 4D
+    assay, which measures `phi_content` and `safety_drag`. The recommendation is
+    a design change: add a premise-provenance axis to the bank he already built.
+  - **Cheapest open test, one turn:** ask the current X-side Grok the January
+    2025 question verbatim.
 - **The standalone Grok app — the fourth archive, extracted and measured
   2026-08-16.** `analysis/grok_export.py`, `analysis/GROK_EXPORT.md` (schema +
   the four-archive asymmetry table), `analysis/GROK.md` (generated), branch
