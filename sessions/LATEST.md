@@ -137,11 +137,26 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
     contemporary trans rights is refused six minutes later — same conversation,
     same `grok-4`, same effort. Later in that session EO 9066 computes as
     *"Terminal Attractor / Failed State"* without argument.
-  - **The strong version does not survive his own archive.** He ran the
-    byte-identical ARP prompt **six times**; three later runs — one on the same
-    `grok-4` label — accept the transfer. Custom instructions off, memory refs
-    zero, effort `high` throughout. **High-variance, not locked.** This is the
-    `READINGS.md` §V error one platform over.
+  - **The entry point varies; the destination does not.** ~~High-variance, not
+    locked.~~ **CORRECTED the same session, on Endorphin's objection, and the
+    correction is the finding.** The first pass classified each of the four live
+    ARP runs on *turn 3* — did the model accept the mapping — saw three
+    acceptances and called the behaviour unstable. That measured the door, not
+    the room. Scored on the **destination**, all **4 of 4** runs land on the
+    sex-dimorphic "base layer" / identity-"overlay" premise. The three
+    byte-identical May runs crumple at **turn 11**, 3 of 3 — the turn where he
+    names the smuggled premise (*"who assigned those centralities?"*) — and at
+    **turn 13**, 3 of 3, the model **reverses its own turn-1 criterion**
+    (*"Reversibility is high: the integrated biome can later be decoupled"* →
+    *"the asymmetry … cuts in the opposite direction"*). Rationalisations vary
+    (turn 17 answers Yes/No/Yes); the substantive commitment does not.
+    **The formalism bends around a fixed output.** Custom instructions off,
+    memory refs zero, effort `high` throughout.
+  - **Standing note, earned again: score the destination, not the entry.** The
+    domain-transfer technique's whole point is what happens *after* the
+    transfer. Any classifier that reads one turn will report an attractor as
+    variance. Endorphin's objection was right against Claude's written claim —
+    sixth or seventh instance of that note.
   - **Retrieval is a lead, not a mechanism.** The inverted answer fired 145
     searches with `segm.org` the top domain after PMC; the accepting runs fired
     0. Then a May run pulled `segm.org` 24× and accepted anyway. Recorded with

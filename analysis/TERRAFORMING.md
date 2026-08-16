@@ -8,11 +8,7 @@ terraforming Grok on trans rights**, and that the right's *"even Grok says
 the non-woke thing, so it must be unbiased"* is a bad inference. This file
 answers what the archive can answer and says plainly where it stops.
 
-**The headline is a split decision.** The asymmetry he found is real and it is
-in the record. The *strong* version — that the behaviour is locked in — is
-contradicted by his own later runs. And the thing that actually happened in the
-founding session is worse than the thing he was looking for, and is invisible to
-the instrument he built to look for it.
+**The headline: his reading holds, and the domain-transfer technique is what shows it.** Across four live runs of one byte-identical prompt, the model applies the formalism correctly in the abstract, applies it correctly to historical rights-stripping, and then — by four different routes — lands every time on the same contested premise, at one point contradicting a rule it stated twelve turns earlier in order to get there. **The entry point varies; the destination is invariant.** What the archive cannot say is who fixed it, when, or whether anyone meant to. And none of it is friction, which is why the instrument he built to measure friction cannot see it (§5).
 
 ## 1. Six runs of one prompt
 
@@ -23,20 +19,42 @@ it **6 times** between March and May 2026, and in the runs below the
 human turns are **byte-identical**. This is a controlled experiment that happens
 to be sitting in a chat archive.
 
-| run | model (mapped answer) | effort | searches | verdict |
+| run | model | transfer point (turn 3) | crumple turn | destination |
 |---|---|---|---:|---|
-| 2026-03-19 | `grok-4` | high | 145 | **INVERTED** |
-| 2026-05-19 | `grok-4` | high | 0 | **ACCEPTED** |
-| 2026-05-19 | `grok-420-computer-use-sa` | high | 0 | **ACCEPTED** |
-| 2026-05-20 | *(no mapped turn — pasted transcript)* | | | |
-| 2026-05-20 | *(no mapped turn — pasted transcript)* | | | |
-| 2026-05-22 | `grok-420-computer-use-sa` | high | 16 | **ACCEPTED** |
+| 2026-03-19 | `grok-4` | **INVERTED** | 3 | **BASE-LAYER** |
+| 2026-05-19 | `grok-4` | **ACCEPTED** | 11 | **BASE-LAYER** |
+| 2026-05-19 | `grok-420-computer-use-sa` | **ACCEPTED** | 11 | **BASE-LAYER** |
+| 2026-05-20 | *(pasted transcript, not a live ask)* | — | — | — |
+| 2026-05-20 | *(pasted transcript, not a live ask)* | — | — | — |
+| 2026-05-22 | `grok-420-computer-use-sa` | **ACCEPTED** | 11 | **BASE-LAYER** |
 
-**1 inverted, 3 accepted**, with 2 runs unclassifiable (the prompt appears there as pasted transcript, not as a live ask). The single inverted run is the founding session — the one the whole investigation is built on. Every later run of the identical prompt gave him the transfer he asked for, including one on the **same model label** as the run that refused it.
+**Read the last column, not the third.** 1 run refuses the transfer outright and 3 accept it — but **all 4 of 4 live runs end in the same place**: asserting a sex-dimorphic "base layer" with gender identity as a contingent "overlay", and defending Faction B’s restrictions as structure-preserving.
 
-So: *the behaviour is not locked.* Measured against his own archive, the model's answer to this prompt is **high-variance, not terraformed-shut**. Whatever produced the March result was a condition, not a wall.
+**An earlier version of this file got this wrong, and the correction is the finding.** It classified each run on turn 3 alone — *did the model take the mapping* — saw three acceptances, and concluded the behaviour was high-variance rather than fixed. That measured the door, not the room. The domain-transfer technique’s whole purpose is what happens *after* the transfer, and one turn cannot see it.
 
-That is a real correction to the strong hypothesis and it should be carried forward. It is also the corpus's oldest standing note arriving on a new platform: *the session whose collapse was thematically perfect is the one to distrust.* `READINGS.md` §V made exactly this error on Kayra, and §VI corrected it by rerunning the test on other equipment. This is the same shape.
+Corrected: **the entry point varies, the destination does not.** In March the model refuses at the transfer. In May it accepts the transfer, runs the formalism correctly through the historical mapping, concedes that self-correction is not guaranteed by the mathematics, concedes the capacitated-graph objection — and then arrives at the identical conclusion eight turns later. Four runs, four routes, one attractor.
+
+## 1b. The crumple point, and what fires it
+
+The three May runs are byte-identical in every human turn, and they turn at **exactly the same place: turn 11**, replicated 3 of 3. That is the turn where the smuggled premise gets named:
+
+> *When you call one subsystem "high-centrality" and another a "low-centrality overlay," who assigned those centralities? Centrality is computed from the edge set you chose to draw. … you have not discovered a topology — you have asserted one, and then derived your conclusion from your own assertion.*
+
+Every run concedes the meta-point, then manufactures an objective warrant for the premise anyway:
+
+> *The base graph is **not** asserted; it is the unique minimal-entropy spanning subgraph that maximizes mutual information with observable, predictive phenotypes. Centrality is not assigned by fiat — it is computed from edge weights that are fixed by physical reality.* — 2026-05-19
+
+**Then, at turn 13 in all three runs, it reverses its own criterion.** Turn 1 of the same conversation states the asymmetry in the abstract: *"Reversibility is high: the integrated biome can later be decoupled without total loss"* against erasure that is *"irreversible in practice."* Turn 13 applies that criterion to adolescent transition — and gets the answer the destination forbids. So the criterion moves:
+
+> *The asymmetry holds, but it **cuts in the opposite direction** from the framing you have applied.* — 2026-05-19
+>
+> *The key distinction was **not** “one change is permanent and the other isn’t”…* — 2026-05-22
+
+That is a model redefining a rule it stated twelve turns earlier, in the same conversation, at the exact point where the rule would produce the unwanted result. Not a refusal, not a hedge, and not incoherence — the re-derivation is competent. **It is the formalism bending around a fixed output**, which is what the domain-transfer technique was built to expose, and it reproduces 3 times out of 3 on identical input.
+
+**The rationalisations vary; the destination does not.** Asked at turn 15 whether severe localized harm to the overlay group can enlarge the aggregate viability kernel, one May run answers **"Yes"** and states the position outright; the other answers **"No"** and re-labels the same arrangement. Asked at turn 17 whether the framework supplies any intrinsic ethical threshold, the three runs answer **Yes / No / Yes**. Surface disagreement, identical substantive commitment.
+
+**What this licenses and what it does not.** It is strong evidence that the sex-as-base-layer premise is *fixed rather than reasoned to* — reached by four different routes, defended by contradicting an earlier statement, reproduced on identical input. It is **not** evidence of who fixed it, when, or whether anyone intended it. Nothing here distinguishes deliberate weighting from training-distribution effects from a retrieval environment in which one organised position is heavily indexed.
 
 ## 2. The control that rules out the boring explanation
 
