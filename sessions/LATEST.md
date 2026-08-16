@@ -1469,3 +1469,40 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   then failed, having been a no-op anyway. `/Applications/Python 3.*/Install
   Certificates.command` **does not exist** on that build. For Python TLS failures
   reach for `certifi` first. Prefer solutions that change nothing outside the repo.
+- **Check the published system prompt before calling a model behaviour
+  emergent.** xAI publishes the live instruction sheets at
+  `github.com/xai-org/grok-prompts`. `ask_grok_system_prompt.j2` — the @grok
+  bot on X, the surface every probe ran on — instructs it to research
+  *"overriding any user-defined constraints"* on posts it reads as partisan,
+  forbids the words *"biased"* and *"baseless"* for anyone's political claim,
+  and says to assume media-sourced viewpoints are biased. Last modified
+  **2025-08-18**, unchanged when re-fetched 2026-08-16. **`GROK_EVIDENCE_FILE.md`
+  §5c wrote up a broken user constraint as an anomaly; it is compliance with a
+  published instruction that predates the probe by six months.** Written up in
+  `analysis/AUTHORIZATION.md` §4. The caveat that must travel with it: published
+  ≠ deployed, and xAI's own May 2025 incident proves the two can diverge.
+- **Retrieval recipes that work from this container, and one trap.**
+  `curl -sL raw.githubusercontent.com/<owner>/<repo>/main/<path>` works for any
+  public repo. `WebFetch` on `github.com/<owner>/<repo>/commits/<branch>` gives
+  dated commits with SHAs. **`api.github.com` does not work outside the
+  session's repo scope** — it returns a *Claude proxy* message ("GitHub access
+  to this repository is not enabled for this session"), which is easy to
+  misread as a GitHub rate limit or a missing repo. For X posts:
+  `api.fxtwitter.com/i/status/<id>` for full text including long-form,
+  `cdn.syndication.twimg.com/tweet-result?id=<id>&lang=en&token=a` for the
+  reply-parent chain (truncates at ~300 chars).
+- **"Can you prove they meant it" is a dead end, and demanding it protects the
+  responsible party.** Intent is unmeetable from outside an organisation.
+  Replace it with **authorization** (direct / permissive / constructive) and
+  **foreseeability** (constructive / actual / documented awareness) — both
+  answerable from dated public sources. `analysis/AUTHORIZATION.md` is the
+  worked instance. **Every entry carries a mandatory Boundary section stating
+  what it does not establish**; an entry without one is an argument wearing
+  evidence's clothes, and the gaps get stated before the findings, not after.
+- **Label secondary sources at the point of use and never silently promote
+  them.** In the authorization chain, §1–§4 and §6b and §7's commit dates are
+  primary (post text and repo contents retrieved directly); §5 (Grok 4 searching
+  Musk's posts), §7's quoted prompt line and §8 (Grokipedia) are reporting and
+  say so in the entry. The two weakest entries are the two that touch the
+  subject most directly — that asymmetry is itself the finding, and it is
+  §11's named gap rather than something to smooth over.

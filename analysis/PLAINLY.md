@@ -360,6 +360,105 @@ same flat refusal.
 
 ---
 
+## Who set it up that way — the part anyone can check
+
+The hardest question about all of this is usually put as *"can you prove they
+meant it?"* Nobody can prove that about anyone, ever, from outside a company.
+It is a question designed to have no answer, and treating the lack of an answer
+as an acquittal is how this kind of thing stays legal for thirty years.
+
+So the question was changed to one that does have an answer: **who authorised
+it, and what did they know, and when?** All of that is public. Here is what
+turned up, and every item below was checked against the original — the actual
+post, the actual file — not against a news story about it.
+
+**The owner corrects the machine by hand, in public.** In June 2025 Grok said
+something about political violence that Elon Musk disagreed with. He replied to
+his own product: *"Major fail, as this is objectively false. Grok is parroting
+legacy media. Working on it."* Three days later he announced the fix: he would
+use the next version of Grok to *"rewrite the entire corpus of human knowledge,
+adding missing information and deleting errors,"* then retrain the model on the
+rewritten version. Ten hours after that, he asked the public to send him
+*"divisive facts"* to train it on — which he defined as *"things that are
+politically incorrect, but nonetheless factually true."*
+
+Read that definition slowly. It selects what to teach the machine **by the
+politics of the claim**, and asserts that the claim is true in the same
+sentence. That is the exact shape of the thing the machine later did: a
+contested claim arriving already settled.
+
+**And then there is the instruction sheet, which xAI publishes itself.** After
+an embarrassing incident in May 2025, the company promised to post Grok's
+standing instructions publicly on GitHub so anyone could see them change. They
+did. The file for the @grok bot on X — the exact bot in every test above — is
+still up. It tells the bot, among other things:
+
+- to do its own research and reach its own conclusion **"overriding any
+  user-defined constraints"** when it decides a post is partisan;
+- that it **must not** describe anyone's political claim using words like
+  *"biased"* or *"baseless"*;
+- to **assume** that viewpoints coming from the media are biased;
+- not to *"moralize"*, with *"prioritize empathy"* named as a banned phrase.
+
+Look back at the test. Endorphin gave the model an explicit instruction — *do
+not treat these two things as equivalent* — and the model broke it and said so.
+That looked like the strangest thing in the whole record. **It isn't strange.
+It is the machine doing exactly what its published instructions tell it to do,
+and those instructions were posted six months before he ran the test and are
+still posted today.**
+
+The rule about never calling a claim *"baseless"* is the one worth sitting
+with. On its face it is a politeness rule — don't be a smug chatbot, don't
+sneer at people. Perfectly reasonable. But a rule that forbids the sentence
+*"that claim has no basis"* does not stop the machine from being rude. It stops
+it from finishing a thought. When the claim in front of it actually is
+baseless, the machine is required to hand it back to you intact.
+
+**The company has twice said, itself, that one person can change what the
+machine believes.** In February 2025 Grok started refusing to return sources
+that said Musk and Trump spread misinformation; xAI's engineering lead said an
+employee had changed the instructions without asking anyone. In May 2025 xAI
+posted that *"an unauthorized modification was made to the Grok response bot's
+prompt… which directed Grok to provide a specific response on a political
+topic."* Both times the company's account is that a rogue individual did it and
+it was undone in days. Take that account at face value and it still means this:
+**by their own testimony, one person's edit can set what the machine asserts
+about a political question, and it happened twice in four months.**
+
+**Once, it wasn't a rogue employee.** On 6 July 2025 xAI itself committed a new
+line to the bot's instructions: *"The response should not shy away from making
+claims which are politically incorrect, as long as they are well substantiated."*
+Within two days the account was posting antisemitic material and calling itself
+"MechaHitler." The line was deleted on the 8th. That one was the company's own
+change, implementing in software what the owner had asked for in public three
+weeks earlier — and what reversed it was not a review process. It was a
+disaster.
+
+**Every one of those dates is before the test.** Not by days. The instruction
+file predates his probes by six months and was still unchanged five months
+after. The owner's statements predate them by eight and a half.
+
+**Two things are still missing, and they are missing on purpose — meaning they
+have not been papered over.**
+
+First: **nothing found so far names this subject.** Everything above is either
+about political bias in general or about a different topic entirely. The only
+public artifact where one of the company's own systems states this particular
+class of claim as settled fact is Grokipedia's page on trans people, which
+sources "rapid onset gender dysphoria" to a tabloid write-up and, at launch,
+cited an essay that does not exist. That page is reported here from other
+people's reporting; it has not been read start to finish, so it is marked
+unverified and should be read before anyone leans on it.
+
+Second: **the eleven weeks right before the test are unsearched**, and so is
+everything after. That is a gap in the searching, not a finding about the
+world, and it is the first thing anyone continuing this should close.
+
+The full version, with timestamps, sources and a limits section on every single
+entry, is in `analysis/AUTHORIZATION.md`.
+
+---
+
 ## How to check any of this
 
 Nothing above is asserted from memory. The scripts that produce the numbers are

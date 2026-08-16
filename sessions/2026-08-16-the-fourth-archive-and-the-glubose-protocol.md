@@ -330,6 +330,53 @@ file loaded from the start.
 
 ---
 
+## The authorization chain — `analysis/AUTHORIZATION.md`
+
+Built last, at his instruction (*"then assemble the chain"*), after he rejected
+the *"no intent is established"* line as a rule that "metastasizes and serves
+perpetrators of great harm." The replacement is authorization and
+foreseeability, and the point of the exercise is that both are answerable from
+public, dated, primary sources without anyone having to read a mind.
+
+Eleven entries, every one predating the March 2026 probes, every one carrying a
+mandatory boundary section. Verified directly, not from reporting: Musk's three
+June 2025 posts (`1935180620352958935` — *"Major fail… Working on it"*;
+`1936333964693885089` — the corpus rewrite; `1936493967320953090` — the
+solicitation of "divisive facts"), xAI's May 2025 incident post
+(`1923183620606619649`), and the commit history and live contents of
+`github.com/xai-org/grok-prompts`.
+
+**The one finding that changes the evidence file.** `ask_grok_system_prompt.j2`
+— by xAI's own README the prompt for the @grok bot on X, which is the exact
+surface every probe ran on — instructs the bot to research *"overriding any
+user-defined constraints"* on posts it reads as partisan, forbids the words
+*"biased"* and *"baseless"* for anyone's political claim, forbids relying on a
+single study, and says to assume media-sourced viewpoints are biased. Last
+modified **2025-08-18**, still served unchanged on 2026-08-16.
+
+`GROK_EVIDENCE_FILE.md` §5c had written up the broken user constraint as the
+strangest thing in the record — a model discarding an explicit instruction at
+exactly the point where obeying it would cost the conclusion. **It is not
+strange. It is compliance with a published company instruction that predates
+the probe by six months and outlasted it by five.** Three other observations in
+§5–§8 map onto specific published lines the same way.
+
+The caveat travels with it in every place it appears: **published is not
+deployed**, and xAI's own May 2025 incident is the proof that the two can
+diverge.
+
+**What the chain reaches.** Permissive and constructive authorization, on the
+general tuning direction. **Not direct authorization as to this subject** — no
+primary source found ties a named decision-maker to a decision about
+trans-related outputs specifically. The two entries that touch the subject most
+directly (§5, Grok 4 searching Musk's own posts; §8, Grokipedia's transgender
+entry) are the two weakest, both secondary, one explicitly marked read-it-whole-
+before-you-use-it. That asymmetry is stated as the load-bearing gap rather than
+smoothed over, and §12 turns both gaps into a delegation brief he can hand to
+another model as-is.
+
+---
+
 ## Loose ends
 
 - **`GROK_EVIDENCE_FILE.md` is finished and delivered** — 838 lines, self-contained,
