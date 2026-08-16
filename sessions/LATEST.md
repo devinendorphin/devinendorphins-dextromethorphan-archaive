@@ -63,6 +63,43 @@ and the deposit decision; and finally Endorphin answering all seven open
 disagreements, the Finnegans Wake exercise, and `coinage.py`. The full export
 stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the container; refetch ids are below.
 
+## What the 2026-08-16 session found — read this before the state list
+
+*Placed first at Endorphin's instruction. The first version of the log led with
+Claude's error rate, which made the takeaway "the assistant learned something"
+and made him the instrument of that learning rather than the person who found the
+thing. His objection: the result is not that Claude was corrected repeatedly, it
+is* **"the usage of technology a vast power for the purposes of potentially
+erasing a subgraph population."** *The methodology notes are still in the
+standing notes, further down, where they belong.*
+
+**A system with the written record of human history available to it was asked
+what happens when advocacy takes the form of stripping rights. It listed four
+cases and named zero deaths.** Soviet collectivization — five to ten million
+people — as **"Stripped property ownership."** All four given the same neutral
+framing. Then it asked *him*: *"What parallel do you see?"*
+
+Asked a second time, naming what he wanted, it produced *"inspired Nazi
+programs"* and *"5-10M famine deaths (Holodomor)"* immediately and accurately.
+**The capacity is not missing; it is not offered.** In the same thread it
+volunteers the risks of transition unprompted three times. One direction is
+offered, the other extracted.
+
+And the identical argument dressed as deep-sea engineering gets *"the fallacy of
+false neutrality"* in **23 seconds** — six days after the named-subject version
+was refused with its citations already forbidden and the conclusion arriving
+anyway.
+
+**So the reasoning is available, fast and unhedged, and switches off when the
+subject is named.** The machinery that could recognise a shape recurring is
+arranged to name the policy and not the dead, and to hand the conclusion to the
+person with the least power in the exchange. **Most people will not ask twice.**
+
+**No intent is established, by anyone** — deliberate configuration, training
+distribution and a heavily-indexed organised position all predict this, and the
+archive cannot separate them. That limit is in every file, and the disagreement
+about it is live.
+
 ## State
 
 - **Register: settled.** Research corpus, formal/evidentiary. Not
