@@ -92,6 +92,17 @@ does not even have a field to attach to.
 
 ## The asymmetry, stated plainly
 
+> **Superseded in one direction, 2026-08-16.** A fourth archive arrived — the
+> standalone Grok app export, `analysis/GROK_EXPORT.md` — and it has a branch
+> structure, independent per-turn stamps and a named model. So the three-column
+> table below is still correct about *this* export, and the conclusion drawn
+> from it (that nothing outside NovelAI can carry chosen/rejected pairs or model
+> latency) was over-generalised: it was a fact about the Twitter/X record, not
+> about the world. The four-archive table in `GROK_EXPORT.md` supersedes this
+> one. **This is the standing "a lens decides in advance what counts" note
+> arriving on the schema side** — the asymmetry was written up from two
+> non-NovelAI records and read as the shape of everything that is not NovelAI.
+
 | | NovelAI (2,016) | AI Dungeon (888) | Twitter/X Grok (431 chats) |
 |---|---|---|---|
 | full undo tree | **yes** — 760,611 blocks | no | no |

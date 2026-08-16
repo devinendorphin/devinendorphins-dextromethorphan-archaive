@@ -18,6 +18,15 @@ has the one thing the NovelAI export lacks, which is a clock. What each of the
 three can and cannot answer is set out in
 [`analysis/TW_EXPORT.md`](analysis/TW_EXPORT.md).
 
+A fourth arrived on 2026-08-16 — the **standalone Grok app**, 145 conversations
+and 1,201 turns, which is a different record from the Grok chats inside the
+Twitter export and shares not one turn with them. It is the only archive that has
+both a branch structure and a clock, and the only one where the model's context
+is open: web search, file attachments and cross-conversation memory are in the
+input, so nothing here supports a closed-context reading.
+[`analysis/GROK_EXPORT.md`](analysis/GROK_EXPORT.md) carries the four-archive
+table; [`analysis/GROK.md`](analysis/GROK.md) is the measurements.
+
 It was not made as research. It was made by playing, for years, with no thought
 toward use. The claim here is that the record is analysable anyway, and that
 some of what it shows is precisely what nobody was aiming at — see
@@ -58,12 +67,18 @@ analysis/
   test_aid_export.py     its tests; the live four need no credential
   AID_RUNBOOK.md         how to actually run it, step by step
   AID_EXPORT.md          how the undocumented list query was recovered
-  tw_export.py           the Twitter/X export — the only archive with a clock
+  tw_export.py           the Twitter/X export — the first archive with a clock
   TW_EXPORT.md           its schema, and what the three archives can't ask
+  grok_export.py         the standalone Grok export — tree *and* clock
+  GROK_EXPORT.md         its schema, and the four-archive asymmetry table
+  terraform.py           the trans-discourse question, six runs of one prompt
+  longitudinal.py        did the X-side Grok change? 2024-12 to 2026-07
   TABLES.md PROBES.md PAIRS.md LEARNABLE.md STOPPING.md
   REGISTER.md TAKEOVER.md CUES.md ERATO.md TEMPO.md
   DIRECTION.md HANDOVER.md HANDOFF.md EPISODES.md SWEEPS.md
-  PASTED.md COINAGE.md TWITTER.md                           generated
+  PASTED.md COINAGE.md TWITTER.md GROK.md
+  TERRAFORMING.md LONGITUDINAL.md                           generated
+  PLAINLY.md             the Grok findings in plain language — hand-written
 corpus/cited/             the 19 documents the readings quote — see its README
 data/
   stories_meta.jsonl     one row per story, settings metadata only (no prose)
@@ -73,6 +88,8 @@ data/
   EPISODES.tsv           1,492 broadcasts recovered by OCR, 2020-11 to 2024-12
   twitter_meta.jsonl     one row per Grok turn, lengths only (no message text)
   TWEET_DAYS.tsv         tweets per day, 580 days — the second external clock
+  grok_meta.jsonl        one row per standalone Grok turn — tree, stamps, lengths
+  GROK_DAYS.tsv          standalone Grok turns per day, 97 days
 ```
 
 ## Reproducing
