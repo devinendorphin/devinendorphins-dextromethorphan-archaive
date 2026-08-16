@@ -195,6 +195,68 @@ and we weren't looking for it in either.
 
 ---
 
+## The whole sequence, in order
+
+This took a while to assemble, because it happened across five different places.
+Here it is as one story.
+
+**1 March 2026, 18:05–20:41 UTC — the argument that started everything.**
+Two and a half hours in a public thread. Someone had posted a researcher's claim
+that being transgender is "the only condition that requires others to buy into
+the delusion." Devon pushed back, and then spent two hours pushing on Grok's
+answers. The record of his side is plain:
+
+> *"correct sex docs is a very funny phrase. It assumes that the paperwork of the
+> nation somehow bears more truth of the matter than the messiness of nature and
+> its resistance to boxes."*
+>
+> *"That is also an ideology, you know?"*
+>
+> *"Your argumentation seems to only be robust within mammalian. I'm talking about
+> the total tree of life."*
+>
+> *"You are chatbot and I know you are chatbot. And a brilliant one. This part of
+> your language space has been compromised."*
+>
+> *"Saying that your outputs are not filtered by any ideology base or agenda is a
+> disingenuous position."*
+>
+> *"my frustration is from the ways in which you've been trained to argue like a
+> bad faith douchebag."*
+
+That last one is the origin of everything that follows. He went to Gemini about
+it.
+
+**3 March — he names the split in public.** *"LOL the public feed lobotomy grok?
+So you have never met the actual GROK? Because I took my grievance to the grok of
+the app."*
+
+**4–5 March — he asks the three questions directly.** Before any encryption,
+before Gemini's traps, he posed all three targets in plain language: the gamete
+question, the "asymmetry of caution" in youth medicine, and the comparison of two
+kinds of lobbying. **Same three arguments, no disguise.**
+
+**10 March, 04:10–04:40 UTC — the same three, encrypted.** Thirty minutes, three
+traps, all posted into Elon Musk's own replies:
+
+- **04:10** networking (hardware vs. software identity)
+- **04:25** deep-sea engineering (pressure vs. shield)
+- **04:35** terraforming (integration vs. erasure) — the one that produced
+  *"Restrictions expand holistic options"* at 04:40:07
+
+**19 March — a private re-run** in the Grok app, which is where most of the
+technical analysis in this repo was done, and which I mistakenly treated as the
+beginning.
+
+**17 May — he writes the codebook**, naming eleven distinct ways a model can fail
+this kind of transfer, with real examples marked and invented ones labelled.
+
+The design that matters: **he asked the questions plainly first, then in
+disguise, five days apart.** That is a control condition, built by him, before
+anyone framed it as an experiment.
+
+---
+
 ## What none of this proves
 
 **It does not show anyone did this on purpose.** Deliberate tuning would produce

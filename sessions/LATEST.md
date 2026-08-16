@@ -200,6 +200,30 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
     This is a **fifth surface**: the public @grok account is in none of the four
     archives. Pasted archive copy verified against the live tweets, first 200
     chars of each, exact match.
+  - **THE FULL SEQUENCE, and it reorders everything.** Reconstructed from
+    `out/tw_tweets.jsonl` — **his own export, available since this morning** —
+    plus the syndication endpoint. **03-01 18:05–20:41Z**: the originating
+    2.5-hour public argument (the "cluster B" researcher claim; his lines
+    *"That is also an ideology, you know?"*, *"This part of your language space
+    has been compromised"*, *"trained to argue like a bad faith douchebag"*).
+    **03-03**: he names the split publicly — *"the public feed lobotomy grok…
+    I took my grievance to the grok of the app"*. **03-04**: the standalone-app
+    conversation about it. **03-04/05**: he asks all three targets
+    **UNENCRYPTED** — gamete categorisation, asymmetry of caution, the two
+    lobbying types. **03-10 04:10–04:40Z**: the same three **ENCRYPTED**, in
+    Musk's replies. **03-19**: the private re-run TERRAFORMING wrongly called
+    founding. **05-17**: the Phase 4F codebook.
+    **The direct-vs-encrypted pair five days apart is a control condition he
+    built himself, before anyone called it an experiment** — and it is the
+    obvious next measurement: Grok's answers to the 03-04/05 direct probes are
+    children of his tweets and cannot be enumerated from the export, so they
+    need either a link from him or a search of the remaining attachments.
+  - **THIRD instance of the reading note in one session, and the worst.** Walked
+    one reply chain backwards and called it "the thread"; the other two probes
+    and the whole originating argument were siblings I never enumerated. Pattern
+    across all three: *fragment in, verdict on the whole* — one turn of a
+    conversation, one file type of a directory, one path of a tree. **Before
+    reporting on a structure, enumerate it.**
   - **METHOD: public X posts are recoverable with no auth**, and reply chains
     walk. `curl "https://cdn.syndication.twimg.com/tweet-result?id=<id>&lang=en&token=a"`
     returns JSON with `text`, `created_at`, `user`, and `in_reply_to_status_id_str`
