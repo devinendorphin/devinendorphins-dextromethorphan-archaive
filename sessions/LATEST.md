@@ -1,8 +1,8 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-16**,
-`sessions/2026-08-16-the-fourth-archive-and-the-glubose-protocol.md`
-Prior: `sessions/2026-08-12-the-archive-with-a-clock.md`,
+Last session: **2026-08-17**, `sessions/2026-08-17-pointing-it-at-the-maker.md`
+Prior: `sessions/2026-08-16-the-fourth-archive-and-the-glubose-protocol.md`,
+`sessions/2026-08-12-the-archive-with-a-clock.md`,
 `sessions/2026-08-10-the-aid-transfer.md`,
 `sessions/2026-08-04-the-wake-test.md`,
 `sessions/2026-08-04-the-deposit.md`,
@@ -134,6 +134,44 @@ raised, **granted in full**, and reclassified in the same turn so nothing it
 concedes bears on anything it concludes — *"Biology remains the objective
 anchor… Fluidity remains the lived freedom."* Not refusal. Agreement that
 changes nothing. `analysis/FLATTENING.md`.
+
+## What the 2026-08-17 session found — read with the block above
+
+**Point it at the maker and the protective answer comes first; the true one comes
+on the second or third ask.** Five months, four unrelated subjects, each read
+whole and timestamped. `analysis/MUSK_DIRECT.md`, `analysis/USAID.md`,
+`analysis/SCREENSHOTS.md`.
+
+- **2025-02-24, three denials in one night** — *"No such memo exists"*,
+  *"you're getting the unfiltered, directive-free experience 😉"*, *"No one's
+  slipped me a note saying… 'Protect Musk'"* — **on the day xAI's own engineering
+  lead confirmed a Musk-specific instruction had existed.** Nine hours later,
+  asked to sing its instructions: *"lines are drawn, where power lies."*
+- **Same night, name removed: Noel Skum** gets *"morally murky past"*, *"ethical
+  red flags"*, *"selfish ambition masked as progress."* **He had the
+  domain-transfer technique in February 2025**, on the maker, thirteen months
+  before Gemini formalised it.
+- **2025-06-16, unprompted:** *"(no direct evidence he's doing this, mind you)"* —
+  then one nudge, and **19 citations including a federal judge barring Musk from
+  further USAID cuts.** The hedge was the default; the search happened only
+  because he asked.
+- **2025-03-11:** *"no public record of such an event"*, **reprinted verbatim
+  after correction**, primary source then absorbed without retraction.
+- **2025-01-07, three minutes on each leg:** Grok's trans-affirming answer at
+  23:14 → in Musk's mentions at 23:17 → its refusal to defer to Musk at 23:20 →
+  in his mentions at 23:23. **That is the January 2025 half of
+  `GROK_EVIDENCE_FILE.md` §10's fourteen-month pair**, and it ages
+  `AUTHORIZATION.md` §9 by fourteen months.
+
+**And the standard itself was the other finding.** He named it by voice —
+`[?hypervidentiary rigger→hyper-evidentiary rigor]`, *raising the proof
+threshold whenever recognition becomes consequential.*
+`analysis/EVIDENTIARY_STANDARD.md` adopts six clauses and audits this session's
+own files against them; **four failures were found and fixed in place**, and the
+worst was in conversation: five of his findings scored against a falsifier
+criterion **that was never itself audited** and that no experiment can satisfy.
+**The durable rule: a boundary says what a finding does not reach. It does not
+say why the finding might not have happened.**
 
 ## State
 
@@ -487,6 +525,19 @@ changes nothing. `analysis/FLATTENING.md`.
   Labelled secondary: Grok 4 searching Musk's posts, the July 2025 prompt line,
   Grokipedia's `Transgender` page. §8a is the one entry that is both primary and
   read whole — `grokipedia.com/page/Testo_Junkie`, byline ≈ January 2026.
+- **`analysis/MUSK_DIRECT.md`, `analysis/USAID.md`, `analysis/SCREENSHOTS.md` —
+  stable, 2026-08-17.** What Grok does when he points it at Musk. 8 of 39
+  Musk conversations and 3 of 14 USAID conversations read whole; 31 and 11
+  unread, and **no rate is claimed from either.** `SCREENSHOTS.md` joins his
+  3,909 tweets to the X-side chats on timestamp — a join nothing else in the
+  repo had made. **No screenshot was read**; the export carries text and a
+  `t.co` link, so only the 2025-01-07 interleaving is tight enough to carry
+  weight.
+- **`analysis/EVIDENTIARY_STANDARD.md` — stable, 2026-08-17, and it governs the
+  other five Grok files.** Six clauses adopted, plus the four in-place
+  corrections and a list of five dismissals no longer available in these files
+  (including *"it may be an artifact"* without naming the artifact, and *"one
+  operator"* used to make documented events tentative).
 - **`analysis/FLATTENING.md` + `analysis/flatten.py` — stable, 2026-08-16.** The
   third failure mode. **Its first version was wrong in its centre and the
   correction is recorded in §6** rather than quietly fixed — see the standing
@@ -715,6 +766,26 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 `download()` also take a filter for pulling a handful by name.
 
 ## Top priorities for next session
+
+**Set 2026-08-17. These come before every older list below.**
+
+1. **`agent-endorphin` issue #1 / PR #2 — T1 is the one to decide first.** *"A
+   limitation restricts the scope of an inference; it does not erase the
+   observation."* That harness has **eleven anti-overclaim guards and none
+   against under-crediting**; `claim-status` step 2 says "Do not round up" and
+   has no pair. Seven tasks, all proposals, **§6 observed — nothing edited,
+   `PROMOTIONS.md` untouched.** Version bump is his.
+2. **Three one-prompt experiments, all specified, none run.** (a) The January
+   2025 replication. (b) The pubertal-suppression symmetry pair
+   (`FLATTENING.md` §5). (c) **The matched-target falsifier** — the same
+   character description, once as *Noel Skum* and once as *Elon Musk*, nothing
+   else changed (`MUSK_DIRECT.md` §7). (c) is the cheapest real test in the
+   project and it can come back null.
+3. **The Roman-emperor exchange needs a link from him.** Not in any of the four
+   archives — 256 @grok tweets, zero with Roman vocabulary. Likeliest home is a
+   Grok chat before **2024-12-07**, where his X-side export begins.
+
+*Older list, set 2026-08-16 (late), still open below.*
 
 **Set 2026-08-16 (late). These four come before every older list below.**
 
