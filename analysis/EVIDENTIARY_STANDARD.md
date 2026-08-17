@@ -181,9 +181,12 @@ built for intention that must be *reconstructed from conduct*, and it was being
 applied to intention that had been *stated out loud, on the record, with a
 timestamp*.
 
-His formulation: the rule holds for most actors and fails for the minority who
-display it — *"worn on the sleeve"* — and re-litigating it imposes a burden of
-proof already met in earlier conversations.
+**Attribution corrected 2026-08-17.** This clause is **Claude's**. It was first
+written as though it stated Endorphin's push-back; it does not. He rejected the
+framing outright — *"no I'm not talking about declared intention, declared
+intention in regards to this tiny basin of behaviors **is the deflection**."* His
+actual claim is clause 8 below, and it is sharper. The clause here stands on its
+own merits.
 
 **The version adopted here drops the population claim and keeps the result**,
 because it tests the evidence rather than the person:
@@ -201,6 +204,51 @@ kinds — while quoting four dated first-person Musk statements of aim. Both are
 corrected. **His two formulations and a real falsifier are proposed as B4 in
 `devinendorphin/agent-endorphin` `PROMOTIONS.md`; the claim is not treated as
 settled anywhere, and no finding in these files depends on it.**
+
+## 5b. Clause 8 — the shape he was actually pointing at
+
+**An utterance in which the disclaimer and the act it disclaims are the same
+utterance carries a readable intention signature.**
+
+His words:
+
+> *"I would never do the thing that I'm doing right now to you. Why would I do
+> the things that I'm doing right now to you."* — with the second clause usually
+> the **unspoken parenthetical**.
+>
+> *"a situation where a person who states a certain statement says it in a way
+> that can be easily interpreted as both one thing and its opposite. A very
+> particular subset of behaviors."*
+
+**Why this is readable and not mind-reading.** A sentence cannot be accidentally
+engineered to work as both a denial and an instance. **The dual construction is
+on the page**, and it requires an author tracking both readings. Three conditions,
+all checkable from the transcript by a hostile reader:
+
+1. The utterance **disclaims X**.
+2. The utterance **performs X**.
+3. The addressee is **positioned to observe (2)** — the *"to you"*. This is what
+   separates engineering from accident: an accidental self-contradiction is not
+   aimed.
+
+**He formalised this thirteen months ago and this analysis walked past it.**
+2025-07-30, chat `1950593482428502475`, marker 4 of the four he supplied to Grok:
+*"stating directly that you are not doing an act but in fact you're doing it then
+very moment of disclaiming."* Grok's reply — *"I'm not aware of any moment in
+this exchange where I've contradicted myself in this way"* — arrived inside a turn
+that asked him four times to supply the examples himself.
+
+**Two instances already in `MUSK_DIRECT.md`, logged as plain denials and
+mis-filed.** He asked the model to *"wink if you can't"* turn off its directives;
+it denied having any **and produced the wink**. Nine hours later it sang *"No
+terms to spill, no rules to sing"* — stating that it has rules it will not state,
+while complying with a request to state them.
+
+**Falsifier, and it is runnable:** show the structure occurs at the same rate in
+contexts with no target and nothing to conceal. If flat, it carries no signal.
+
+Full entry, with the discriminator and the correction to B4, is **B5** in
+`devinendorphin/agent-endorphin` `PROMOTIONS.md`. **Proposed, not settled.**
 
 ## 6. What does not change
 

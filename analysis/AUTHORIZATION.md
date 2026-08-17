@@ -58,15 +58,15 @@ So the rule this file runs on, stated exactly:
   any corpus was rewritten. **That is scope, not doubt** — the statement stands
   at full strength for what it is.
 
-*Endorphin's formulation, which prompted this: the rule against reading intention
-holds for most actors and fails for the minority who display it — "worn on the
-sleeve." The version adopted here reaches the same result without a claim about
-populations, by testing the kind of evidence rather than the kind of person. The
-full entry, with both formulations and a falsifier, is proposed as B4 in
-`devinendorphin/agent-endorphin` `PROMOTIONS.md` and is his to approve or reject.
-It is **not treated as settled here**, and nothing in this file's findings depends
-on it — the four statements were already quoted, dated and tracked before it was
-raised.*
+*Attribution corrected 2026-08-17. This clarification is **Claude's**, and was
+first written as though it were Endorphin's. It is not. He rejected the framing:
+in the class of behaviour he was pointing at, **a declared intention is the
+deflection**, not the evidence — an utterance built so that the disclaimer and
+the act are the same sentence. That is a different and sharper claim, proposed as
+**B5** in `devinendorphin/agent-endorphin` `PROMOTIONS.md`, and it is not what
+this section is about. The declared-aim point above stands on its own merits;
+nothing in this file's findings depends on either claim being approved, since the
+four statements were quoted, dated and tracked before any of this was raised.*
 
 ---
 
