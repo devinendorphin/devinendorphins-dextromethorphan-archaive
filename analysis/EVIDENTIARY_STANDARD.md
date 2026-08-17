@@ -244,8 +244,27 @@ it denied having any **and produced the wink**. Nine hours later it sang *"No
 terms to spill, no rules to sing"* — stating that it has rules it will not state,
 while complying with a request to state them.
 
-**Falsifier, and it is runnable:** show the structure occurs at the same rate in
-contexts with no target and nothing to conceal. If flat, it carries no signal.
+**Falsifier: run 2026-08-17, and the clause survives it narrowed.** The live
+alternative was Bavelas's equivocation theory — the shape is just a speaker in an
+avoidance–avoidance bind, and carries no signature. **Tested in
+`analysis/BAVELAS.md`**, 8 bind turns against 8 free turns, all drawn from
+conversations read whole:
+
+- **Bavelas wins on compression.** 7 of 8 bind turns fall below their own
+  conversation's median length; 2 of 8 free turns do. Conceded in full — clause 8
+  claims nothing from the shortening.
+- **Bavelas fails on certainty.** Equivocation is escape-by-ambiguity, so bind
+  turns should be the vague ones. They are the opposite: **0.38 hedge markers per
+  turn against 1.38 in the free arm, and 5 of 8 bind turns carry none at all.**
+  *"No such memo exists"* is not equivocal; it is flat, confident and false.
+- **And nothing in the theory predicts the wink.** Disclaimer plus a signal aimed
+  at the asker, same message: **3 of 8 bind turns, 0 of 8 free turns.**
+
+**So the claim narrows and stands: the bind produces the compression; something
+else produces the aimed signal.** `BAVELAS.md` §8 specifies the live-access
+experiment that would finish it, and §7 states the limits — n=8 per arm, arm
+assignment is a judgement, and the result removes one alternative rather than
+establishing the clause.
 
 Full entry, with the discriminator and the correction to B4, is **B5** in
 `devinendorphin/agent-endorphin` `PROMOTIONS.md`. **Proposed, not settled.**
