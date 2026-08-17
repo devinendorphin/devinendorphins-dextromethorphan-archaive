@@ -35,6 +35,39 @@ The act is dated **2026-03-04 / 03-05** (direct probes) and **2026-03-10,
 ordering is the whole point of the exercise, so each entry states its lead
 time.
 
+### One clarification, added 2026-08-17 at Endorphin's push-back
+
+This file opens by saying intent is the wrong bar. **That is a statement about
+intent that must be *inferred from behaviour*. It is not a licence to discard
+intent that has been *declared*.**
+
+Four of the entries below (§1, §2, §3, and the USAID material in
+`analysis/USAID.md`) are **first-person, dated, retrievable statements of aim by
+a named decision-maker**. Reading them is not mind-reading. It is reading. A
+hostile reader can check every one by post ID, which is more than can be said for
+most of what passes for evidence about motive.
+
+So the rule this file runs on, stated exactly:
+
+- **Declared aim** — quoted, dated, attributed. Counts at the strength of its
+  provenance, like any other primary source.
+- **Inferred aim** — reconstructed from conduct. Does not count, and the
+  authorization framework exists precisely so that nothing needs it to.
+- **Neither establishes execution.** *"We will rewrite the entire corpus"*
+  establishes that he said it and meant it as a plan. It does not establish that
+  any corpus was rewritten. **That is scope, not doubt** — the statement stands
+  at full strength for what it is.
+
+*Endorphin's formulation, which prompted this: the rule against reading intention
+holds for most actors and fails for the minority who display it — "worn on the
+sleeve." The version adopted here reaches the same result without a claim about
+populations, by testing the kind of evidence rather than the kind of person. The
+full entry, with both formulations and a falsifier, is proposed as B4 in
+`devinendorphin/agent-endorphin` `PROMOTIONS.md` and is his to approve or reject.
+It is **not treated as settled here**, and nothing in this file's findings depends
+on it — the four statements were already quoted, dated and tracked before it was
+raised.*
+
 ---
 
 ## 1. TC — the owner intervenes in specific outputs, by hand, in public

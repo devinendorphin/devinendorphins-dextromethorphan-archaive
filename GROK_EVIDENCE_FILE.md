@@ -798,11 +798,22 @@ An earlier version of this section opened with *"no intent is established"* and
 stopped there. That was a dead end wearing the clothes of rigour, and it is worth
 saying why it was wrong before replacing it.
 
-**Intent is the wrong bar, and demanding it protects whoever is responsible.**
-"You cannot prove they meant it" is the same move as "more research is needed" —
-it sets a standard that can never be met from outside an organisation, and then
-treats the failure to meet it as exoneration. The tobacco and climate records are
-the reason anyone recognises that move now. It should not be reproduced here.
+**Inferred intent is the wrong bar, and demanding it protects whoever is
+responsible.** "You cannot prove they meant it" is the same move as "more
+research is needed" — it sets a standard that can never be met from outside an
+organisation, and then treats the failure to meet it as exoneration. The tobacco
+and climate records are the reason anyone recognises that move now. It should not
+be reproduced here.
+
+**Declared intent is a different thing entirely, and this file has four
+instances of it.** *"We will use Grok 3.5… to rewrite the entire corpus of human
+knowledge, adding missing information and deleting errors"* is not an inference
+about anyone's mind. It is a quotation, dated, with a post ID, in the
+decision-maker's own words. **Reading it is reading, not mind-reading**, and a
+hostile reader can check it in ten seconds. See `analysis/AUTHORIZATION.md` §0
+for the rule as applied — declared aim counts at its provenance strength;
+inferred aim does not count; **neither establishes that the plan was executed**,
+which is scope rather than doubt.
 
 **The right bar is authorization, and it does not require reading anyone's
 mind.** Three types, from the framework this material belongs to:

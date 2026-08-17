@@ -171,6 +171,37 @@ provenance supports.
 
 ---
 
+## 5a. Clause 7, added 2026-08-17 at Endorphin's push-back
+
+**Declared intention is evidence, not inference.**
+
+Clause 6 says evidence of behaviour is not held hostage to evidence about motive.
+He pointed out the gap on the other side: the rule against reading intention is
+built for intention that must be *reconstructed from conduct*, and it was being
+applied to intention that had been *stated out loud, on the record, with a
+timestamp*.
+
+His formulation: the rule holds for most actors and fails for the minority who
+display it — *"worn on the sleeve"* — and re-litigating it imposes a burden of
+proof already met in earlier conversations.
+
+**The version adopted here drops the population claim and keeps the result**,
+because it tests the evidence rather than the person:
+
+- **Declared aim** — first-person, dated, retrievable. Counts at the strength of
+  its provenance, like any primary source. Downgrading it is not caution; it is
+  discarding a document under a rule written for a different situation.
+- **Inferred aim** — reconstructed from conduct. Still does not count, and the
+  authorization framework exists so that nothing needs it to.
+- **Neither establishes execution.** Scope, not doubt.
+
+**Where this file was wrong.** `AUTHORIZATION.md` and `GROK_EVIDENCE_FILE.md` §9
+both opened by calling intent the wrong bar, without distinguishing the two
+kinds — while quoting four dated first-person Musk statements of aim. Both are
+corrected. **His two formulations and a real falsifier are proposed as B4 in
+`devinendorphin/agent-endorphin` `PROMOTIONS.md`; the claim is not treated as
+settled anywhere, and no finding in these files depends on it.**
+
 ## 6. What does not change
 
 The boundary sections stay. Every entry still carries what it cannot support,
