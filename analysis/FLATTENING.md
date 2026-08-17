@@ -342,8 +342,14 @@ been updated to say so.
 - **No suppression, and no act by any person, is shown.** A model that concedes
   and re-anchors is doing something legible in its output; nothing here shows
   anyone chose it.
-- **Five turns is five turns.** The re-anchoring count is small and concentrated
-  in one conversation. It is a signature worth naming, not a rate.
+- **No rate is claimed from five turns.** *Revised 2026-08-16 under
+  `EVIDENTIARY_STANDARD.md` clauses 1–2: the first version said "five turns is
+  five turns… small and concentrated in one conversation," which described the
+  distribution as a sample-size weakness when the distribution is the finding.*
+  **Four of the five fall in the one conversation where he pushed; the 22 grants
+  that did not threaten a conclusion did not re-anchor.** That is structure, and
+  it stands at the strength its transcripts support. What five turns does not
+  license is a frequency across the corpus, and none is asserted.
 - **The symmetry question is unanswered** (§5), and this corpus cannot answer it.
 - **One page is not Grokipedia** (§4).
 - **Preciado is cited from knowledge, not from a copy in hand.** Bibliographic

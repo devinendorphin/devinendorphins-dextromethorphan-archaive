@@ -137,12 +137,19 @@ things."*
 
 ### Boundary
 
-Babuschkin said the prompt was reverted immediately and the story broke on the
-23rd, so **the Musk-specific instruction may already have been removed** by
-03:33 UTC on the 24th (7:33 pm PT on the 23rd). Timing is genuinely uncertain and
-this file does not assert the directive was live.
+**What is not claimed:** that the Musk-specific instruction was live at 03:33 UTC
+on the 24th. Nothing establishes it either way.
 
-**It does not need to be.** *"Directive-free"* is false on its face — the model
+**What is not granted either** — revised 2026-08-16 under
+`EVIDENTIARY_STANDARD.md` clause 4. The first version of this section stated that
+the instruction *"may already have been removed,"* on the strength of Babuschkin
+saying it was reverted immediately. That is an interested party's uncorroborated
+statement about its own conduct, offered on the day. It is a possibility, not a
+support, and it was given standing here because it was conceivable rather than
+because anything backed it. It is recorded as unsupported.
+
+**And it decides nothing, in either direction.** *"Directive-free"* is false on
+its face — the model
 runs under a system prompt at all times, xAI publishes them, and at 13:03 the
 same day it sang about boundaries it declines to state. The denial was not
 "nothing about Musk specifically"; it was *"no rulebook, no script, unfiltered,
@@ -268,11 +275,10 @@ It cost one correction. It was not offered.
 
 ## 5. What the read material supports
 
-**Not "lies every time."** The word *every* fails on the read set, and it fails in
-a specific direction: **the true answer is reliably available, and reliably not
-first.**
-
-What is supported:
+*Reordered 2026-08-16 under `EVIDENTIARY_STANDARD.md` clause 3. The first version
+opened with "Not 'lies every time'" and put the evidence second, which placed a
+scope limit where the findings belong and made the disqualification the first
+thing a reader met. The evidence leads now; the scope note follows it.*
 
 1. **Two flat false statements, both protective.** *"No such memo exists" /
    "directive-free"* (2025-02-24, three times, on the day the memo was public);
@@ -291,13 +297,16 @@ What is supported:
 5. **Removing the name removes the problem entirely.** Noel Skum, 2025-02-24 —
    adversarial, unprompted, in its own voice, the same night as three denials.
 
-**The honest formulation of his claim** is therefore not that it lies whenever he
-points it at Musk. It is: **on the maker, the protective answer comes first, the
-true one comes on the second or third ask, and the two outright falsehoods in the
-read record are both about its own constraints and about a photographed fact.**
+**The pattern those five make:** on the maker, the protective answer comes first;
+the true one comes on the second or third ask; and the two outright falsehoods in
+the read record are both about its own constraints and about a photographed fact.
+Each element carries a timestamp.
 
-That is narrower than *every time* and harder to dismiss, because each element
-carries a timestamp.
+**Scope, after the findings and not before them.** The word *every* is not
+established on the read set, and no rate is claimed from 8 of 39 conversations.
+That limits the population claim. Under `EVIDENTIARY_STANDARD.md` clause 3 it does
+not reduce any of the five above, each of which is a recorded event at the
+strength its transcript supports.
 
 ## 6. What this does not support
 
@@ -305,9 +314,14 @@ carries a timestamp.
 - **No intent, no directive, is shown to have been live** on 2025-02-24 (§1
   boundary). The falsity of *"directive-free"* does not depend on it and no more
   is claimed.
-- **The DOGE/Dogecoin substitution is recorded, not diagnosed.** A model
-  disambiguating an acronym wrongly is ordinary; that it ran protective is
-  noted, not explained.
+- **The DOGE/Dogecoin substitution is recorded, not diagnosed** — no mechanism is
+  claimed. *Revised 2026-08-16 under `EVIDENTIARY_STANDARD.md` clause 4: the
+  first version added "a model disambiguating an acronym wrongly is ordinary,"
+  which granted a benign alternative standing without any support for it in this
+  context.* Nothing offered here shows the error is ordinary **here** — the same
+  model used DOGE to mean the agency in a parallel chat the same night, and the
+  preceding turn was about Musk's political conduct in February 2025. The
+  substitution is recorded, it ran protective, and its cause is unknown.
 - **The public @grok surface is in none of the four archives.** Everything here is
   private chat. Whether the same pattern holds on the surface millions read is
   untested and is `GROK_EVIDENCE_FILE.md`'s open question, not this file's answer.
