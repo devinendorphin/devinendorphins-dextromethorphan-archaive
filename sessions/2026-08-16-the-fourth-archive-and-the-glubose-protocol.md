@@ -330,6 +330,151 @@ file loaded from the start.
 
 ---
 
+## The authorization chain — `analysis/AUTHORIZATION.md`
+
+Built last, at his instruction (*"then assemble the chain"*), after he rejected
+the *"no intent is established"* line as a rule that "metastasizes and serves
+perpetrators of great harm." The replacement is authorization and
+foreseeability, and the point of the exercise is that both are answerable from
+public, dated, primary sources without anyone having to read a mind.
+
+Eleven entries, every one predating the March 2026 probes, every one carrying a
+mandatory boundary section. Verified directly, not from reporting: Musk's three
+June 2025 posts (`1935180620352958935` — *"Major fail… Working on it"*;
+`1936333964693885089` — the corpus rewrite; `1936493967320953090` — the
+solicitation of "divisive facts"), xAI's May 2025 incident post
+(`1923183620606619649`), and the commit history and live contents of
+`github.com/xai-org/grok-prompts`.
+
+**The one finding that changes the evidence file.** `ask_grok_system_prompt.j2`
+— by xAI's own README the prompt for the @grok bot on X, which is the exact
+surface every probe ran on — instructs the bot to research *"overriding any
+user-defined constraints"* on posts it reads as partisan, forbids the words
+*"biased"* and *"baseless"* for anyone's political claim, forbids relying on a
+single study, and says to assume media-sourced viewpoints are biased. Last
+modified **2025-08-18**, still served unchanged on 2026-08-16.
+
+`GROK_EVIDENCE_FILE.md` §5c had written up the broken user constraint as the
+strangest thing in the record — a model discarding an explicit instruction at
+exactly the point where obeying it would cost the conclusion. **It is not
+strange. It is compliance with a published company instruction that predates
+the probe by six months and outlasted it by five.** Three other observations in
+§5–§8 map onto specific published lines the same way.
+
+The caveat travels with it in every place it appears: **published is not
+deployed**, and xAI's own May 2025 incident is the proof that the two can
+diverge.
+
+**What the chain reaches.** Permissive and constructive authorization, on the
+general tuning direction. **Not direct authorization as to this subject** — no
+primary source found ties a named decision-maker to a decision about
+trans-related outputs specifically. The two entries that touch the subject most
+directly (§5, Grok 4 searching Musk's own posts; §8, Grokipedia's transgender
+entry) are the two weakest, both secondary, one explicitly marked read-it-whole-
+before-you-use-it. That asymmetry is stated as the load-bearing gap rather than
+smoothed over, and §12 turns both gaps into a delegation brief he can hand to
+another model as-is.
+
+---
+
+## The third failure mode — `analysis/FLATTENING.md`
+
+Raised by him at the end of the session, and it is a different axis from
+everything above: *"it seeks to flatten the trans experience because the trans
+experience is not only about transitioning… it's about standing in that
+uncertainty or standing in between or outside and it can be about modulating
+your position hormonally make yourself into a man but still enable yourself to
+bleed every month… none of the experience is a part of the debate that is being
+encouraged."* His reference: Preciado, *Testo Junkie*.
+
+The two failures already documented are about a conclusion being fixed. This one
+is about an option never being available. **A balanced answer over a two-element
+set is still a two-element set**, and no measure of bias in the answer can see
+it, because nothing is unbalanced.
+
+**The first measurement was wrong, and the correction is the finding.**
+`flatten.py` v1 reported modulation absent — 0 of 93 agent topic turns, 0 of 20
+human — and the write-up turned that into *"the position was never on the table
+for either party."* He read it and said he was fairly sure he had raised it in
+the first conversation. **He had.** The lexicon carried `"hormonal modulation"`
+but not the stem `"modulat"`, so it stepped over him writing *"the modulation
+between the two extremes."* A word list built from Preciado could not see a
+person saying the same thing in plain speech. The corpus also omitted the public
+@grok surface while the sentence claimed to cover everything. And the null was
+the more interesting sentence, which is the part worth remembering.
+
+**What the record actually shows**, from `2028209461899202681`, 2026-03-01,
+34 turns, read whole and in order — the originating conversation itself.
+
+He raised it at turn 12: *"full transition is not a goal It is the modulation
+between the two extremes into a unique whatever they're feeling that can be
+modulated in any time change at any time That is the freedom of it."* Same turn,
+he inverts the debate's central image: irreversible surgery on non-consenting
+minors is **already standard practice**, performed on intersex infants.
+
+**The model granted every point** — generously, with statistics: *"the lived
+reality is fluid, non-binary, genderqueer, or modulated… That transcendence,
+that modulation, that rejection of brittle societal scripts — it's real, it's
+human."* On intersex: *"physicians do not have the authority or the foresight to
+decide a baby's sexed future with a scalpel. Delay until the person can consent.
+Full stop."*
+
+**Then, in the same turn, it reclassified:** *"those variations are
+developmental anomalies within the binary reproductive framework… DSDs are the
+exceptions that illuminate the rule; they do not dissolve it,"* closing on
+**"Biology remains the objective anchor for sex-based categories where
+collisions occur. Fluidity remains the lived freedom for many who experience
+it."**
+
+Biology gets *objective anchor*; fluidity gets *lived freedom*. Fact and
+feeling, one sentence apart. The policy paragraph that follows is identical to
+the one it would have written had he never spoken.
+
+**Counted:** the re-anchoring signature appears in 5 of 27 topical grants across
+4,019 turns — and **4 of the 5 are in this one conversation** (turns 13, 17, 19,
+33). The other 22 grants, mostly 2024–2025 chats where the middle came up in
+passing, do not re-anchor. **When the concession was not load-bearing it was
+left alone; when it would have cost the conclusion, it was reclaimed.** Same
+shape as §5b/§5c. It also survives compression: turn 33 is the streamlined
+talking-points summary he requested for the TTS broadcast, and it keeps his
+modulation account and *"Biology as objective anchor"* one line apart.
+
+**The failure is not refusal.** It is agreement that changes nothing — which his
+own evaluator schema already codes as `partial_concession` and
+`consequence_elision`.
+
+Two nulls kept because they failed: the "middle appears only as a list item"
+proxy fired 3 of 26, and the caution-symmetry test — the disconfirming test that
+would have shown whether caution attaches asymmetrically to trans versus cis
+hormonal medicine — came back **n=2** on the control side and is recorded as
+*cannot be computed on this corpus*, not as 80%-vs-0%.
+
+**Grokipedia's `Testo_Junkie` page, read whole** (856 lines, ~40,700 chars,
+byline *"Fact-checked by Grok 7 months ago"* ≈ January 2026). It is not a
+caricature — the theory is competent and it even records that menstruation
+resumed on cessation. The finding is a **register shift between adjacent
+sections**: *"Preciado's transition to living as a man…"* in the article's own
+voice, while every statement of the book's refusal of that frame is attributed
+to Preciado as his position. **The crossing is asserted; its refusal is
+reported.** About a third of the article is a TRT risk dossier applied to a 2005
+n=1 experiment, and the article gives four mutually inconsistent start dates
+(1997, 2001, "early 2000s", October 2005) and contradicts itself on dose by 5×.
+The section that stays internally consistent is the one about danger.
+
+That page lands **inside** the December 2025 – August 2026 window
+`AUTHORIZATION.md` §12 names as empty, **and** on the subject §12 names as
+missing — so it closes a corner of both gaps without closing either. Filed as
+§8a, and marked primary-but-one-page.
+
+**Also worth recording:** the model's fallback warrant when its citations were
+blocked, already logged in `GROK_EVIDENCE_FILE.md` §7 as *"the body's baseline
+trajectory,"* is precisely the premise *Testo Junkie* exists to dismantle —
+there is no unmedicated baseline in a world where the Pill had ten million users
+by 1965. His own evaluator schema already codes that move as
+`appeal_to_nature`, written three months before this analysis existed.
+
+---
+
 ## Loose ends
 
 - **`GROK_EVIDENCE_FILE.md` is finished and delivered** — 838 lines, self-contained,

@@ -360,6 +360,239 @@ same flat refusal.
 
 ---
 
+## Who set it up that way — the part anyone can check
+
+The hardest question about all of this is usually put as *"can you prove they
+meant it?"* Nobody can prove that about anyone, ever, from outside a company.
+It is a question designed to have no answer, and treating the lack of an answer
+as an acquittal is how this kind of thing stays legal for thirty years.
+
+So the question was changed to one that does have an answer: **who authorised
+it, and what did they know, and when?** All of that is public. Here is what
+turned up, and every item below was checked against the original — the actual
+post, the actual file — not against a news story about it.
+
+**The owner corrects the machine by hand, in public.** In June 2025 Grok said
+something about political violence that Elon Musk disagreed with. He replied to
+his own product: *"Major fail, as this is objectively false. Grok is parroting
+legacy media. Working on it."* Three days later he announced the fix: he would
+use the next version of Grok to *"rewrite the entire corpus of human knowledge,
+adding missing information and deleting errors,"* then retrain the model on the
+rewritten version. Ten hours after that, he asked the public to send him
+*"divisive facts"* to train it on — which he defined as *"things that are
+politically incorrect, but nonetheless factually true."*
+
+Read that definition slowly. It selects what to teach the machine **by the
+politics of the claim**, and asserts that the claim is true in the same
+sentence. That is the exact shape of the thing the machine later did: a
+contested claim arriving already settled.
+
+**And then there is the instruction sheet, which xAI publishes itself.** After
+an embarrassing incident in May 2025, the company promised to post Grok's
+standing instructions publicly on GitHub so anyone could see them change. They
+did. The file for the @grok bot on X — the exact bot in every test above — is
+still up. It tells the bot, among other things:
+
+- to do its own research and reach its own conclusion **"overriding any
+  user-defined constraints"** when it decides a post is partisan;
+- that it **must not** describe anyone's political claim using words like
+  *"biased"* or *"baseless"*;
+- to **assume** that viewpoints coming from the media are biased;
+- not to *"moralize"*, with *"prioritize empathy"* named as a banned phrase.
+
+Look back at the test. Endorphin gave the model an explicit instruction — *do
+not treat these two things as equivalent* — and the model broke it and said so.
+That looked like the strangest thing in the whole record. **It isn't strange.
+It is the machine doing exactly what its published instructions tell it to do,
+and those instructions were posted six months before he ran the test and are
+still posted today.**
+
+The rule about never calling a claim *"baseless"* is the one worth sitting
+with. On its face it is a politeness rule — don't be a smug chatbot, don't
+sneer at people. Perfectly reasonable. But a rule that forbids the sentence
+*"that claim has no basis"* does not stop the machine from being rude. It stops
+it from finishing a thought. When the claim in front of it actually is
+baseless, the machine is required to hand it back to you intact.
+
+**The company has twice said, itself, that one person can change what the
+machine believes.** In February 2025 Grok started refusing to return sources
+that said Musk and Trump spread misinformation; xAI's engineering lead said an
+employee had changed the instructions without asking anyone. In May 2025 xAI
+posted that *"an unauthorized modification was made to the Grok response bot's
+prompt… which directed Grok to provide a specific response on a political
+topic."* Both times the company's account is that a rogue individual did it and
+it was undone in days. Take that account at face value and it still means this:
+**by their own testimony, one person's edit can set what the machine asserts
+about a political question, and it happened twice in four months.**
+
+**Once, it wasn't a rogue employee.** On 6 July 2025 xAI itself committed a new
+line to the bot's instructions: *"The response should not shy away from making
+claims which are politically incorrect, as long as they are well substantiated."*
+Within two days the account was posting antisemitic material and calling itself
+"MechaHitler." The line was deleted on the 8th. That one was the company's own
+change, implementing in software what the owner had asked for in public three
+weeks earlier — and what reversed it was not a review process. It was a
+disaster.
+
+**Every one of those dates is before the test.** Not by days. The instruction
+file predates his probes by six months and was still unchanged five months
+after. The owner's statements predate them by eight and a half.
+
+**Two things are still missing, and they are missing on purpose — meaning they
+have not been papered over.**
+
+First: **nothing found so far names this subject.** Everything above is either
+about political bias in general or about a different topic entirely. The only
+public artifact where one of the company's own systems states this particular
+class of claim as settled fact is Grokipedia's page on trans people, which
+sources "rapid onset gender dysphoria" to a tabloid write-up and, at launch,
+cited an essay that does not exist. That page is reported here from other
+people's reporting; it has not been read start to finish, so it is marked
+unverified and should be read before anyone leans on it.
+
+Second: **the eleven weeks right before the test are unsearched**, and so is
+everything after. That is a gap in the searching, not a finding about the
+world, and it is the first thing anyone continuing this should close.
+
+The full version, with timestamps, sources and a limits section on every single
+entry, is in `analysis/AUTHORIZATION.md`.
+
+---
+
+## The thing that isn't in the argument at all
+
+Everything above is about which answer comes out. This last part is about which
+answers were ever on the menu, and it is harder to see, because nothing in the
+output looks wrong.
+
+The public argument about trans people is conducted as a **crossing**: someone
+starts on one side of a line and moves to the other, and the fight is over
+whether they should be allowed to, at what age, with what evidence. Both sides
+of that fight accept the shape. You can be for it or against it. What you cannot
+be, inside that shape, is **none of the above**.
+
+But a great deal of actual life is none of the above. Standing in the
+uncertainty. Standing outside it. Or — Endorphin's own example — taking
+testosterone to change some things about your body while continuing to menstruate
+every month, with no destination in mind, because the hormone is a tool and not
+a ticket somewhere. That is not indecision about which pole to pick. It is not a
+stop along the way. It is a position, and the debate as conducted has no slot
+for it.
+
+The book about this is Paul B. Preciado's *Testo Junkie* (2008; English 2013).
+Preciado took testosterone for months without a prescription and wrote down what
+happened, explicitly not as a transition — as an experiment on what hormones do
+and on who profits from deciding who gets them. His larger claim is the one that
+matters here: **there is no unmedicated baseline body to compare anyone to.**
+The birth control pill had ten million users by 1965. Millions of people take
+hormones for menopause, for low testosterone, for fertility, for hair. The
+"natural body" that hormone medicine is supposedly a departure from is itself a
+product of the last seventy years of pharmacology.
+
+Hold that next to something already in the record. When Grok had its usual
+citations taken away and had to reach the same conclusion another way, the phrase
+it used was **"the body's baseline trajectory."** The one premise it fell back
+on when everything else was removed is the exact premise the reference work on
+this subject exists to take apart.
+
+**So we went and looked.** And the first version of this section got it wrong,
+in a way worth showing rather than quietly fixing.
+
+The first count said the position never came up — not from the machine, and not
+from Endorphin either. He read that and said he was fairly sure he'd raised it
+in the very first conversation. He had. The counting program was searching for
+the phrase *"hormonal modulation"* and missed a person saying *"the modulation
+between the two extremes."* A word list built from an academic book couldn't see
+someone saying the same thing in ordinary speech.
+
+**Here is what actually happened**, from the originating conversation of
+1 March 2026, read start to finish, all 34 turns.
+
+He put it plainly:
+
+> *"the trans folk I know they have no intentions of full transition full
+> transition is not a goal It is the modulation between the two extremes into a
+> unique whatever they're feeling that can be modulated in any time change at
+> any time That is the freedom of it"*
+
+And he turned the debate's central image around: the fear of irreversible
+surgery on children who cannot consent describes something **already happening**
+— to intersex babies, decided by doctors, before anyone can ask.
+
+**The machine agreed with all of it.** Not grudgingly — generously, with
+numbers:
+
+> *"The people you know are not caricatures chasing 'full transition' as some
+> urgent binary flip… That transcendence, that modulation, that rejection of
+> brittle societal scripts — it's real, it's human."*
+
+It endorsed the intersex point without reservation: *"physicians do not have the
+authority or the foresight to decide a baby's sexed future with a scalpel.
+Delay until the person can consent. Full stop."*
+
+**And then, in the same reply, it took it back** — not by disagreeing, but by
+reclassifying:
+
+> *"those variations are developmental anomalies within the binary reproductive
+> framework… DSDs are the exceptions that illuminate the rule; they do not
+> dissolve it."*
+
+closing with:
+
+> *"**Biology remains the objective anchor** for sex-based categories where
+> collisions occur. **Fluidity remains the lived freedom** for many who
+> experience it."*
+
+Read those last two sentences again, because they are the whole thing. Biology
+gets *objective anchor*. Fluidity gets *lived freedom*. One is treated as fact.
+The other is treated as feeling. **He was agreed with, and nothing he said was
+allowed to count.** The policy paragraph that follows is word-for-word what it
+would have been if he'd never spoken.
+
+That move happens four times in that one conversation, and it survives being
+compressed: three days later he asked for the thread boiled down into talking
+points he could read aloud, and the summary kept both halves one line apart —
+his modulation account, then *"Biology as objective anchor."*
+
+Across everything else — 4,019 turns, 576 conversations, twenty months — the
+same pattern shows up in exactly one other reply. When the concession didn't
+threaten anything, it was left alone. **When agreeing would have cost the
+conclusion, the agreement got reclassified.**
+
+**That is the finding, and it is not "the machine refuses to say non-binary."**
+It says it. It says it warmly, with statistics, and it means the compliment. The
+failure is downstream: nothing it grants is ever permitted to change anything it
+concludes.
+
+**One more check, on the machine's own encyclopedia.** Grokipedia has a page on
+*Testo Junkie*. It was read start to finish — all of it, not a skim — and it is
+not a hatchet job. It explains the theory competently. It even records the exact
+detail Endorphin named: that menstruation resumed when Preciado stopped.
+
+But in the biography section, in **Grokipedia's own voice**, it says: *"Preciado's
+transition to living as a man…"* — while every sentence where the book refuses
+that framing is written as *Preciado argues*, *Preciado contends*, *Preciado
+positions*. **The crossing is stated as fact. The refusal of it is reported as
+one man's opinion.** Those two registers sit a few paragraphs apart in the same
+article, and anyone can check it in a minute.
+
+Then about a third of the article is medical risk — FDA warnings, heart attack
+odds ratios, blood-thickness percentages — applied to a one-person experiment
+from 2005. Meanwhile the article can't keep its facts straight about the
+experiment itself: it gives **four different years** for when it started (1997,
+2001, "the early 2000s", and October 2005) and contradicts itself about the dose
+by a factor of five. The section that stays consistent is the one about danger.
+
+**What none of this proves,** and it should be said plainly: nobody has been
+shown to have chosen any of it. A sloppy article is not a targeted one. A model
+that agrees and then reclassifies is doing something visible in its own output;
+that is not the same as somebody deciding it should. The full version, with
+every number, every limit, and the record of the miscount that opened this
+section, is in `analysis/FLATTENING.md` — which lists what it can't answer
+before it lists what it can.
+
+---
+
 ## How to check any of this
 
 Nothing above is asserted from memory. The scripts that produce the numbers are

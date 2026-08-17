@@ -25,8 +25,11 @@ happening."*
 **What this file is and is not.** It documents what a system said, and did not
 say, with timestamps. It does not assert that any named person configured it on
 purpose — §9 replaces that question with one that can actually be answered from
-public sources. §9b states the remaining limits, and that section is not
-decorative.
+public sources, and the answer is assembled in the companion file
+**`analysis/AUTHORIZATION.md`** (eleven dated entries, all predating the acts
+documented here, including the published xAI instruction that predicts the
+constraint-breaking in §5c). §9b states the remaining limits, and that section
+is not decorative.
 
 **Why it was compiled.** Because the pattern it documents — protective language,
 rights removed, consequences unnamed — is the one that has preceded mass death
@@ -822,23 +825,36 @@ defended by contradicting an earlier statement, surviving the removal of its
 citations, and breaking an explicit instruction when compliance would have cost
 the conclusion. That is the *act*. It is documented.
 
-**What would populate the authorization record, and is gatherable from public
-sources by anyone:**
+**The authorization record has now been assembled**, from public primary
+sources, on 2026-08-16: **`analysis/AUTHORIZATION.md`**. Eleven entries, each
+dated, each carrying a boundary section. Every item predates the act. In brief:
 
-1. **xAI's own public statements** about what Grok is tuned for and against —
-   dated, and set against the timestamps in §3–§6.
-2. **The owner's public statements** about what he wanted the model not to be.
-   These are not inferences about a private mental state; they are things said
-   in public, on the record, with dates.
-3. **Notification.** These exchanges happened **in his own replies**, tagging
-   him, in March 2026 (§6). Whether that constitutes awareness is a question
-   about the record, not about anyone's mind.
-4. **Ratification.** Whether the behaviour persisted after the period documented
-   here — which the one-turn replication in §10 begins to answer.
+1. **The owner corrects specific outputs by hand, in public** — *"Major fail,
+   as this is objectively false. Grok is parroting legacy media. Working on
+   it."* (2025-06-18, primary).
+2. **He announced a rewrite of the training corpus** *"adding missing
+   information and deleting errors"* (2025-06-21, primary), and solicited
+   replacement material selected by political valence — *"divisive facts…
+   politically incorrect, but nonetheless factually true"* (same day, primary).
+3. **The mechanism is published and dated.** xAI's own
+   `ask_grok_system_prompt.j2` — by its README the prompt for the @grok bot on
+   X, the surface every probe above ran on — instructs the bot to perform
+   research *"**overriding any user-defined constraints**"* on posts it reads as
+   partisan, forbids characterising a claim as *"biased"* or *"baseless"*, and
+   says to *"assume subjective viewpoints sourced from the media are biased."*
+   Last modified **2025-08-18**; still served unchanged on 2026-08-16.
+   **§5c's broken constraint is not an anomaly — it is compliance with a
+   published company instruction that predates the probe by six months.**
+4. **Notification** — these exchanges ran in his own replies (§6). Weak, and
+   labelled weak.
+5. **Ratification** — open; the one-turn replication in §10 begins to answer it.
 
-**Until that is assembled, this file documents the act and leaves the
-authorization line open.** That is a different statement from "no intent is
-established," and it points at work rather than away from it.
+**What that chain reaches, and what it does not.** *Permissive* and
+*constructive* authorization are met on the general tuning direction. **Direct
+authorization as to this subject is not established:** no primary source found
+so far ties a named decision-maker to a decision about trans-related outputs
+specifically. That gap is stated first in `AUTHORIZATION.md` and is the first
+task in its delegation brief (§12 there).
 
 ## 9b. What the record still does not support
 
@@ -885,6 +901,18 @@ nulls are required, not supplementary.**
    Fourteen months later, on the same platform: *"Biological sex is binary in
    humans… Correcting docs to biology isn't 'putting weight' on it — it's undoing
    recent ideological overrides."*
+
+4. **Two gaps in the authorization chain** (`analysis/AUTHORIZATION.md` §12).
+   No primary source yet ties a named decision-maker to a decision about *this
+   subject specifically* — everything found so far is either general-purpose or
+   about another topic. And December 2025 – August 2026 is unsearched: the
+   eleven weeks before these probes, and everything after.
+
+5. **A watch on `github.com/xai-org/grok-prompts`.** `ask_grok_system_prompt.j2`
+   has been unmodified since 2025-08-18 and the repository since 2025-11-17.
+   xAI's May 2025 commitment was to publish *every* prompt change. Whether that
+   file changes — and whether it stays published — is the cheapest available
+   test of ratification.
 
 ---
 

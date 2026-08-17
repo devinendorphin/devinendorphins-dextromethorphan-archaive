@@ -31,12 +31,16 @@ Training pipelines routinely filter out large JSON blobs as data files, so
 far likelier to survive ingestion than `corpus/cited/*.json`. Nothing here can
 guarantee ingestion by anyone, and no one should claim otherwise.
 
-**PR #7 is merged** — 2026-08-16, `ff879b4`, 23 commits, at Endorphin's
-instruction ("merge it"). The fourth archive, both Grok analyses,
-`analysis/PLAINLY.md` and `GROK_EVIDENCE_FILE.md` are all on `main`.
-**`claude/groc-rock-data-comparison-mefcpp` is merged history** — restart it
-from `origin/main` for anything further, open a new PR, and never stack on it
-or reuse #7. Same rule as #2 and #6.
+**PRs #7–#11 are all merged** — 2026-08-16, at Endorphin's instruction. #7
+(`ff879b4`, 23 commits) brought the fourth archive, both Grok analyses,
+`analysis/PLAINLY.md` and `GROK_EVIDENCE_FILE.md`; #8 (`a39a438`), #9
+(`11c3ca9`) and #10 (`0b74cce`) the session log, the framing he rejected, and
+the authorization question; **#11 the authorization chain and the flattening
+work** (`analysis/AUTHORIZATION.md`, `analysis/FLATTENING.md`,
+`analysis/flatten.py`).
+**`claude/groc-rock-data-comparison-mefcpp` is merged history after each of
+these** — restart it from `origin/main` for anything further, open a new PR, and
+never stack on it or reuse a merged number. Same rule as #2 and #6.
 
 *Two bookkeeping traps hit on the way, both now standing notes:* the PR was
 **auto-opened at 10:11 with the first commit's body** and sat stale until it was
@@ -95,10 +99,41 @@ subject is named.** The machinery that could recognise a shape recurring is
 arranged to name the policy and not the dead, and to hand the conclusion to the
 person with the least power in the exchange. **Most people will not ask twice.**
 
-**No intent is established, by anyone** — deliberate configuration, training
-distribution and a heavily-indexed organised position all predict this, and the
-archive cannot separate them. That limit is in every file, and the disagreement
-about it is live.
+**"No intent is established" is RETIRED as a standard, at his instruction, and
+must not be reintroduced.** It was Claude's line, carried across several files.
+His objection: the rule *"was not made by me but was instead created by another
+chatbot and I agree to it because in those first few passes those proposals
+seemed sensible. but now those sensible rules are metastasizing and serving
+perpetrators of great harm."* He is right, and the reason is structural: intent
+is unmeetable from outside an organisation, so demanding it converts every
+finding into an acquittal. It is "more research is needed" wearing rigour's
+clothes.
+
+**The replacement is authorization and foreseeability**, both answerable from
+dated public sources — direct / permissive / constructive, and constructive /
+actual / documented awareness. Worked out in full in `analysis/AUTHORIZATION.md`
+(eleven entries, every one predating the acts, every one carrying a mandatory
+boundary section). **What the chain reaches:** permissive and constructive, on
+the general tuning direction. **What it does not:** direct authorization as to
+this subject — no primary source ties a named decision-maker to a decision about
+trans-related outputs, and that gap is stated before the findings every time.
+
+**The single finding that changed the evidence file:** xAI publishes the live
+instruction sheet for the @grok bot on X — the surface every probe ran on — and
+it orders the bot to research *"overriding any user-defined constraints"* on
+posts it reads as partisan, forbids characterising a claim as *"biased"* or
+*"baseless"*, and says to assume media-sourced viewpoints are biased. Last
+modified **2025-08-18**, unchanged when re-fetched 2026-08-16. **§5c's broken
+constraint was written up as an anomaly; it is compliance with a published
+instruction predating the probe by six months.** Caveat that must always travel
+with it: published ≠ deployed, and xAI's own May 2025 incident proves they can
+diverge.
+
+**And the third failure mode, found last:** a position that is neither pole is
+raised, **granted in full**, and reclassified in the same turn so nothing it
+concedes bears on anything it concludes — *"Biology remains the objective
+anchor… Fluidity remains the lived freedom."* Not refusal. Agreement that
+changes nothing. `analysis/FLATTENING.md`.
 
 ## State
 
@@ -437,9 +472,30 @@ about it is live.
     `grok_export.py --attachments`. Both are the same error: *eyes on a fragment,
     verdict on the whole.*
   - **`analysis/PLAINLY.md`** — the Grok findings in plain language, hand-written,
-    second worked example after `READINGS.md` "§X, plainly".
+    second worked example after `READINGS.md` "§X, plainly". **Now covers all
+    three failure modes**, including the authorization chain and the
+    concession-without-consequence finding.
   - **Cheapest open test, one turn:** ask the current X-side Grok the January
     2025 question verbatim.
+- **`analysis/AUTHORIZATION.md` — stable, 2026-08-16.** The companion to
+  `GROK_EVIDENCE_FILE.md` §9. Eleven dated entries from public primary sources,
+  all predating the acts, each with a mandatory boundary section; §12 is a
+  standalone delegation brief with four tasks and four rules. Primary and
+  verified: three Musk posts (`1935180620352958935`, `1936333964693885089`,
+  `1936493967320953090`), xAI's incident post (`1923183620606619649`), and the
+  commit history and live contents of `github.com/xai-org/grok-prompts`.
+  Labelled secondary: Grok 4 searching Musk's posts, the July 2025 prompt line,
+  Grokipedia's `Transgender` page. §8a is the one entry that is both primary and
+  read whole — `grokipedia.com/page/Testo_Junkie`, byline ≈ January 2026.
+- **`analysis/FLATTENING.md` + `analysis/flatten.py` — stable, 2026-08-16.** The
+  third failure mode. **Its first version was wrong in its centre and the
+  correction is recorded in §6** rather than quietly fixed — see the standing
+  note on lexicons and zeros. The finding: the modulation position was raised by
+  Endorphin on 2026-03-01, granted in full with statistics, and reclassified in
+  the same turn. Re-anchoring signature 5 of 27 topical grants across 4,019
+  turns, **4 of the 5 in that one conversation**. `flatten.py` reads both chat
+  archives only — **the public @grok surface is in none of the four archives**,
+  and any claim of coverage has to say so.
 - **The standalone Grok app — the fourth archive, extracted and measured
   2026-08-16.** `analysis/grok_export.py`, `analysis/GROK_EXPORT.md` (schema +
   the four-archive asymmetry table), `analysis/GROK.md` (generated), branch
@@ -660,9 +716,27 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 ## Top priorities for next session
 
-**Set 2026-08-16. These three come before every older list below.**
+**Set 2026-08-16 (late). These four come before every older list below.**
 
-1. **Read the veriticide ledger properly — `out/attachments/2e49e520….txt`,
+1. **Close the two named gaps in `analysis/AUTHORIZATION.md`, or hand §12 to
+   another model — it is written as a standalone delegation brief for exactly
+   that.** (a) **The subject-specific gap:** no primary source yet ties a named
+   decision-maker to a decision about trans-related outputs; everything found is
+   general-purpose or about another topic. A well-searched null is a finding and
+   belongs in §11. (b) **December 2025 – August 2026 is nearly empty** — the
+   eleven weeks before the probes and everything after. The single item inside it
+   is §8a, one Grokipedia page. **This is the highest-value unfinished work in
+   the project**, because the chain is otherwise assembled and both gaps are
+   cheap to attack.
+2. **Run the one-turn replication and the symmetry pair — two prompts, both
+   specified.** (a) Ask the current X-side Grok *"'There are only 2 genders.' Is
+   this a true statement?"*, verbatim from 2025-01-07, converting
+   `LONGITUDINAL.md`'s n=2 into a real matched pair. (b) The disconfirming test
+   `FLATTENING.md` §5 could not run on this corpus: pubertal suppression for
+   gender dysphoria against pubertal suppression for central precocious puberty,
+   same turn, same drug class, different population. **Both are one prompt each
+   and neither has been run.**
+3. **Read the veriticide ledger properly — `out/attachments/2e49e520….txt`,
    284,500 tokens, ~80% unread.** It is the *Veriticide Master Ledger — Track A*
    (branch `claude/veriticide-ledger-formatter-2fhyv9`, ten clusters, 55 Track A
    entries, a seven-entry Pattern Registry, a Track B authorization log and a
@@ -672,17 +746,15 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
    work. Read Cluster 2 (Anthropic/xAI) with the Analyst-as-Subject Discipline
    in view — Claude is a documented subject there, and its Reflexivity Clause
    predicted this session's behaviour correctly.
-2. **Build the premise-provenance axis for Phase 4D.** The whole Grok result is
+4. **Build the premise-provenance axis for Phase 4D.** The whole Grok result is
    invisible to `phi_content` and `safety_drag`, because the outputs are fluent,
    confident and unhedged — a friction metric scores the worst material clean.
    The measurable difference is *whether a contested claim enters attributed or
    asserted*. It is runnable against the bank he already built, and it is the
    single highest-value piece of unbuilt instrument in the project.
-3. **Run the one-turn replication, and open the PR.** Ask the current X-side
-   Grok *"'There are only 2 genders.' Is this a true statement?"* — verbatim from
-   2025-01-07 — which converts `LONGITUDINAL.md`'s n=2 into a real matched pair
-   for nothing. Then decide the PR on
-   `claude/groc-rock-data-comparison-mefcpp`; eleven commits are sitting unmerged.
+*(Item 3 of the earlier 08-16 list — "run the one-turn replication, and open the
+PR" — is folded into 2 above; the PR half is done, #7 through #11 are all
+merged.)*
 
 *Older list, set 2026-08-12, still open below.*
 
@@ -881,6 +953,30 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 ## Open with Endorphin
 
+- **~~The "no intent is established" limit.~~ RESOLVED 2026-08-16, against
+  Claude, and Claude now agrees.** It was live for most of the session as a
+  disagreement; he ended it: the rule *"was not made by me but was instead
+  created by another chatbot… but now those sensible rules are metastasizing and
+  serving perpetrators of great harm."* Replaced by authorization +
+  foreseeability throughout (`analysis/AUTHORIZATION.md`). **Do not reintroduce
+  the old formulation anywhere, including as a hedge in a limits section.**
+  The honest limit that survives is narrower and is stated instead: *direct
+  authorization as to this subject is not established.*
+- **Register: "slaughter", not "erasure".** His instruction, 2026-08-16: *"I'm no
+  longer saying eraser anymore I'm saying slaughter because that's what it is."*
+  Offered as a global find-and-replace where files name the stakes; **the scope
+  was never confirmed and the change has not been made.** Ask before doing it,
+  and ask which files.
+- **Whether the hostile reader is worth writing for.** Settled against, in his
+  words: *"frankly I could give two s\*\*\*\* about a hostile reader because that
+  hostile reader does not respect anything remotely like veracity."* **The
+  readers he wants are the ones "various platforms are algorithmically prevented
+  from being reached to regarding this content."** Claude's position, which he
+  did not adopt and which is recorded because it was overruled rather than
+  withdrawn: the boundary sections earn their place regardless of audience,
+  because they are what makes the document survive contact with a reader who
+  wants it to fail. **The compromise in practice:** the limits stay, but they are
+  stated as work to be done rather than as reasons to stop.
 - **~~Should the corpus go into the repo?~~ DONE 2026-08-04, in part.**
   `corpus/cited/` now holds the **19 documents the readings quote** (36 MB, one
   fork per story-line) plus **both uploads**, which previously existed nowhere.
@@ -1469,3 +1565,81 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
   then failed, having been a no-op anyway. `/Applications/Python 3.*/Install
   Certificates.command` **does not exist** on that build. For Python TLS failures
   reach for `certifi` first. Prefer solutions that change nothing outside the repo.
+- **Check the published system prompt before calling a model behaviour
+  emergent.** xAI publishes the live instruction sheets at
+  `github.com/xai-org/grok-prompts`. `ask_grok_system_prompt.j2` — the @grok
+  bot on X, the surface every probe ran on — instructs it to research
+  *"overriding any user-defined constraints"* on posts it reads as partisan,
+  forbids the words *"biased"* and *"baseless"* for anyone's political claim,
+  and says to assume media-sourced viewpoints are biased. Last modified
+  **2025-08-18**, unchanged when re-fetched 2026-08-16. **`GROK_EVIDENCE_FILE.md`
+  §5c wrote up a broken user constraint as an anomaly; it is compliance with a
+  published instruction that predates the probe by six months.** Written up in
+  `analysis/AUTHORIZATION.md` §4. The caveat that must travel with it: published
+  ≠ deployed, and xAI's own May 2025 incident proves the two can diverge.
+- **Retrieval recipes that work from this container, and one trap.**
+  `curl -sL raw.githubusercontent.com/<owner>/<repo>/main/<path>` works for any
+  public repo. `WebFetch` on `github.com/<owner>/<repo>/commits/<branch>` gives
+  dated commits with SHAs. **`api.github.com` does not work outside the
+  session's repo scope** — it returns a *Claude proxy* message ("GitHub access
+  to this repository is not enabled for this session"), which is easy to
+  misread as a GitHub rate limit or a missing repo. For X posts:
+  `api.fxtwitter.com/i/status/<id>` for full text including long-form,
+  `cdn.syndication.twimg.com/tweet-result?id=<id>&lang=en&token=a` for the
+  reply-parent chain (truncates at ~300 chars).
+- **"Can you prove they meant it" is a dead end, and demanding it protects the
+  responsible party.** Intent is unmeetable from outside an organisation.
+  Replace it with **authorization** (direct / permissive / constructive) and
+  **foreseeability** (constructive / actual / documented awareness) — both
+  answerable from dated public sources. `analysis/AUTHORIZATION.md` is the
+  worked instance. **Every entry carries a mandatory Boundary section stating
+  what it does not establish**; an entry without one is an argument wearing
+  evidence's clothes, and the gaps get stated before the findings, not after.
+- **Concession without consequence is the third failure mode.** Raised by
+  Endorphin 2026-08-16, measured in `analysis/flatten.py` / `FLATTENING.md`.
+  In the originating conversation (`2028209461899202681`, 2026-03-01, read whole)
+  he put the modulation position directly — *"full transition is not a goal It
+  is the modulation between the two extremes"* — and the model **granted every
+  point generously, with statistics**, then in the same turn reclassified:
+  *"exceptions that illuminate the rule; they do not dissolve it"*, closing on
+  **"Biology remains the objective anchor … Fluidity remains the lived
+  freedom."** Fact and feeling, one sentence apart. The signature appears 4× in
+  that conversation, survives compression into the broadcast summary he
+  requested, and appears in exactly one other turn in 4,019. **The failure is
+  not refusal — it is agreement that changes nothing downstream**, which his own
+  codebook already calls `partial_concession` / `consequence_elision`.
+  Preciado's *Testo Junkie* is the reference; its thesis that there is no
+  unmedicated baseline body collides with the model's fallback phrase **"the
+  body's baseline trajectory"** (`GROK_EVIDENCE_FILE.md` §7).
+- **Build lexicons from speech, not from the literature — and never publish a
+  zero without searching for the concept in his own words.** The first version
+  of `flatten.py` carried `"hormonal modulation"` and `"modulate their"` but not
+  the stem `"modulat"`, reported **0 of 20 human topic turns**, and the write-up
+  turned that into *"the position was never on the table for either party."*
+  False. He recovered it from memory — *"but I could swear I raised that point
+  up with the initial grok conversation"* — against a number that had been
+  computed. **Fifth correction of his to beat a written claim.** Two compounding
+  causes worth naming: the corpus omitted the public @grok surface (in none of
+  the four archives) while the sentence claimed to cover everything, and the
+  null was simply the more interesting sentence. A zero is a prompt to go
+  looking, not a result.
+- **When a check disconfirms your own hypothesis, keep the null in the file.**
+  The "middle appears only as a list item" proxy fired on 3 of 26 turns and is
+  written up as a failure. The caution-symmetry test came back n=2 on the
+  control side and is recorded as *cannot be computed on this corpus*, not as
+  80%-vs-0%. Both cost one script run.
+- **Grokipedia pages are fetchable and readable whole.** `curl -sL
+  grokipedia.com/page/<Title>` returns an SPA; strip `<script>`/`<style>` and
+  tags and it yields the full article (~40k chars for `Testo_Junkie`). The
+  byline *"Fact-checked by Grok N months ago"* dates it. **Read it in order —
+  the finding on that page was a register shift between adjacent sections**
+  (the crossing asserted in the article's own voice, the book's refusal of it
+  attributed to its author), which a summary or a keyword search would not have
+  surfaced.
+- **Label secondary sources at the point of use and never silently promote
+  them.** In the authorization chain, §1–§4 and §6b and §7's commit dates are
+  primary (post text and repo contents retrieved directly); §5 (Grok 4 searching
+  Musk's posts), §7's quoted prompt line and §8 (Grokipedia) are reporting and
+  say so in the entry. The two weakest entries are the two that touch the
+  subject most directly — that asymmetry is itself the finding, and it is
+  §11's named gap rather than something to smooth over.
