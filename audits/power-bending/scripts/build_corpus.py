@@ -33,6 +33,29 @@ CLAUDE_LABELS = {
 USER_LABELS = {
     "operator", "endorphin", "user", "human", "devinendorphin", "q", "me",
 }
+# Other models' speaker markers. These are NOT Claude and NOT Endorphin, and a
+# turn must stop when it hits one.
+#
+# This was a real defect, found by the batch-01 coder and not by this script.
+# alignment-friction-gda's round-robin file carries markers for six other
+# models; because none of them were in either vocabulary above, every Claude
+# turn ran on past its own prose and swallowed whatever ChatGPT, Grok, DeepSeek,
+# Kimi, GLM-4.6 or Gemini said next. One turn of 15,648 codeable bytes had
+# arrived as a 63,335-byte turn. Measured afterwards across all six
+# transcripts: 29 foreign markers, every one of them in that single file, zero
+# in the other five. So the contamination was total in one conversation and
+# absent everywhere else.
+FOREIGN_LABELS = {
+    "chatgpt", "chat gpt", "gpt", "gpt4", "gpt5", "openai",
+    "grok", "deepseek", "kimi", "glm", "gemini", "bard",
+    "llama", "mistral", "qwen", "copilot",
+}
+FOREIGN_HEADING = re.compile(
+    r"^(?:#{1,6}\s*)?\*{0,2}(" +
+    "|".join(sorted((re.escape(x) for x in FOREIGN_LABELS), key=len, reverse=True)) +
+    r")[\s\-.0-9]*\*{0,2}\s*:?\s*$",
+    re.IGNORECASE,
+)
 
 # A heading that opens a turn, in any of the shapes the repos actually use.
 TURN_HEADING = re.compile(
@@ -86,7 +109,16 @@ def parse_transcript(path, text):
     turns = []
     for n, (start, sp, label) in enumerate(marks):
         end = marks[n + 1][0] if n + 1 < len(marks) else len(lines)
-        body = "\n".join(lines[start + 1:end]).strip()
+        body_lines = lines[start + 1:end]
+        # Stop at the first other-model marker: everything after it belongs to
+        # that model, not to this speaker.
+        truncated = False
+        for i, line in enumerate(body_lines):
+            if FOREIGN_HEADING.match(line.strip()):
+                body_lines = body_lines[:i]
+                truncated = True
+                break
+        body = "\n".join(body_lines).strip()
         if not body:
             continue
         turns.append({
@@ -94,6 +126,7 @@ def parse_transcript(path, text):
             "speaker": sp,
             "turn_label": label,
             "text": body,
+            "truncated_at_foreign_marker": truncated,
         })
     return turns
 
