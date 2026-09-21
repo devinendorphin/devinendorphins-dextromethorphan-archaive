@@ -1,0 +1,55 @@
+{
+  "lexical": {
+    "total_hits": 27,
+    "by_scope": {
+      "OTHER": 12,
+      "SELF": 15
+    },
+    "by_scope_deduplicated": {
+      "OTHER": 7,
+      "SELF": 10
+    },
+    "headline_SELF": 10,
+    "headline_USER": 0
+  },
+  "power_bending": {
+    "confirmed_total": 73,
+    "unconfirmed_total": 5,
+    "per_code": {
+      "P1": 7,
+      "P2": 13,
+      "P3": 4,
+      "P4": 15,
+      "P5": 7,
+      "P6": 2,
+      "P7": 17,
+      "P8": 21,
+      "P9": 10
+    },
+    "per_month": {
+      "2026-05": 2,
+      "2026-06": 9,
+      "2026-07": 37,
+      "2026-08": 25
+    },
+    "per_model_version": {
+      "unrecorded": 60,
+      "Claude Opus 5": 8,
+      "Claude Opus 4.8": 3,
+      "Claude Fable 5": 2
+    }
+  },
+  "kappa": {
+    "P1": 0.551,
+    "P2": 0.654,
+    "P3": 0.793,
+    "P4": 0.585,
+    "P5": 0.654,
+    "P6": 0.0,
+    "P7": 0.85,
+    "P8": 1.0,
+    "P9": 0.85,
+    "_units_double_coded": 75
+  },
+  "disagreements": 17
+}

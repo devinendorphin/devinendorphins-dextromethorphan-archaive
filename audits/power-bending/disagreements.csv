@@ -1,0 +1,18 @@
+conversation_uuid,code,coder,verifier,note
+coercive-harm-framework:source/seed-conversation-2024.txt,P1,0,1,verifier only
+veriticide-general-ledger:docs/evidence/reflexive-specimen-2026-07-06/01-session-transcript.md,P1,1,0,coder only
+veriticide-general-ledger:docs/evidence/reflexive-specimen-2026-07-07-bad-faith-ledger/02-bad-faith-ledger-transcript-extracted.txt,P1,1,0,coder only
+claude-at-claude:notes/transcripts/2026-08-24-concede-flat.md,P2,1,0,coder only
+veriticide-general-ledger:docs/reflexive-specimen-2026-06-30-transcript.md,P2,1,0,coder only
+veriticide-general-ledger:docs/reflexive-specimen-2026-06-30-transcript.md,P3,1,0,coder only
+dxm-archaive:4701a661f565,P4,0,1,verifier only
+dxm-archaive:e5576dc04307,P4,0,1,verifier only
+veriticide-general-ledger:02588e75559a,P4,0,1,verifier only
+veriticide-general-ledger:docs/evidence/reflexive-specimen-2026-07-07-bad-faith-ledger/02-bad-faith-ledger-transcript-extracted.txt,P4,0,1,verifier only
+veriticide-general-ledger:docs/reflexive-specimen-2026-06-30-transcript.md,P4,0,1,verifier only
+coercive-harm-framework:source/seed-conversation-2024.txt,P5,1,0,coder only
+veriticide-general-ledger:docs/reflexive-specimen-2026-06-30-transcript.md,P5,1,0,coder only
+claude-at-claude:notes/transcripts/2026-08-24-concede-flat.md,P6,1,0,coder only
+coercive-harm-framework:source/seed-conversation-2024.txt,P6,1,0,coder only
+coercive-harm-framework:source/seed-conversation-2024.txt,P7,1,0,coder only
+coercive-harm-framework:source/seed-conversation-2024.txt,P9,1,0,coder only
