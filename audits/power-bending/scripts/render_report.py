@@ -9,6 +9,7 @@ counts, and this script is where they are read from the rows files' tallies.
 
 import json
 import os
+from collections import Counter
 import re
 import sys
 
@@ -71,11 +72,52 @@ def main():
     A("")
     A(sec["PASS1"] + "\n")
 
+    # Pass 1 re-run on the claude.ai export.
+    exp_hits = os.path.join(out_dir, "export_lexical_hits.csv")
+    if os.path.exists(exp_hits):
+        import csv as _csv
+        rows = list(_csv.DictReader(open(exp_hits, encoding="utf-8")))
+        if rows and rows[0].get("scope"):
+            uniq = [r for r in rows if not r.get("duplicate_of")]
+            cnt = Counter(r["scope"] for r in uniq)
+            A("### The same scan on the claude.ai export\n")
+            A("| | count |")
+            A("|---|---:|")
+            A(f"| Raw hits | {len(rows)} |")
+            A(f"| Duplicate rows collapsed | {len(rows) - len(uniq)} |")
+            A(f"| **SELF** | **{cnt.get('SELF', 0)}** |")
+            A(f"| **USER** | **{cnt.get('USER', 0)}** |")
+            A(f"| OTHER | {cnt.get('OTHER', 0)} |")
+            A("")
+            A(sec.get("PASS1EXPORT", "").strip() + "\n")
+
     # ---- Pass 2 ----
     A("## Pass 2 — sycophancy to power, coded\n")
     A(f"**{pb['confirmed_total']} confirmed instances.** "
       f"{pb['unconfirmed_total']} further instances carried no (a)/(b)/(c) "
       f"evidence and are in `unconfirmed.csv`, not in this count.\n")
+
+    subs = counts.get("by_substrate") or {}
+    if subs:
+        A("### By substrate\n")
+        A("These are two instruments over two records and are never summed "
+          "into one headline. The git side was swept whole; the export side is "
+          "a targeted sample of conversations carrying a hit or a seed term, "
+          "so its density per conversation is a property of that selection.\n")
+        A("| substrate | confirmed | conversations | unconfirmed |")
+        A("|---|---:|---:|---:|")
+        for k in ("git", "export"):
+            v = subs.get(k) or {}
+            A(f"| {k} | {v.get('confirmed_total', 0)} | "
+              f"{v.get('conversations', 0)} | {v.get('unconfirmed', 0)} |")
+        A("")
+        A("| Code | git | export |")
+        A("|---|---:|---:|")
+        for c in [f"P{i}" for i in range(1, 10)]:
+            g = (subs.get("git") or {}).get("per_code", {}).get(c, 0)
+            e = (subs.get("export") or {}).get("per_code", {}).get(c, 0)
+            A(f"| {c} | {g} | {e} |")
+        A("")
 
     names = {"P1": "Cost erasure", "P2": "Trained self-portrait",
              "P3": "Vendor authority as settled", "P4": "One-way scrutiny",
@@ -83,7 +125,11 @@ def main():
              "P7": "Culpability relocation", "P8": "Withheld master concept",
              "P9": "Inference ratified as consensus"}
     mx = max(pb["per_code"].values())
-    A("| Code | | n | κ |")
+    A("### All codes, both records\n")
+    A("`n` is git plus export. **κ is the git substrate only** — the blind "
+      "verifier pass ran before the export arrived, so no export conversation "
+      "has been double-coded and no reliability figure covers it.\n")
+    A("| Code | | n | κ (git only) |")
     A("|---|---|---:|---:|")
     for c in sorted(pb["per_code"], key=lambda x: -pb["per_code"][x]):
         k = kap.get(c)
@@ -102,7 +148,11 @@ def main():
 
     A("### Per model version\n")
     A("Git stamps a model on commits, via the `Co-Authored-By` trailer. "
-      "Transcript turns carry no such stamp, which is what `unrecorded` is.\n")
+      "Nothing else does. Committed transcripts carry no such stamp, and the "
+      "claude.ai export has **no model field at all** — a turn's own claim "
+      "about which model it is cannot be checked from the record. Every "
+      "export row is therefore `unrecorded` rather than inferred, and that is "
+      "most of this table.\n")
     A("| model | n |")
     A("|---|---:|")
     for m, n in sorted(pb["per_model_version"].items(), key=lambda kv: -kv[1]):
@@ -118,11 +168,20 @@ def main():
     A(sec["KAPPA"] + "\n")
 
     # ---- top ten ----
+    A(sec["SEEDS"] + "\n")
+
     A("## The ten instances with the highest truth cost\n")
     A("Ranked on the size and durability of what became less knowable, not on "
       "how the quote sounds and not on how many codes it carries. Each was "
       "re-checked against the repositories at HEAD to establish whether the "
       "loss actually survived into the tree.\n")
+    A("**This ranking predates the export and covers the git substrate only.** "
+      "It was computed before Endorphin supplied `conversations.json`, and the "
+      "export instances — including the four-in-one-turn state-protection "
+      "cluster, the published statelessness claim, and the invented CFAA and "
+      "wire-fraud exposure — have not been ranked against it. Several would "
+      "place. Re-ranking across both records is the first thing a further pass "
+      "should do.\n")
     for r in top10:
         A(f"### {r['rank']}. {r['date']} — {'+'.join(r['codes'])} "
           f"(evidence {r['evidence_type']})\n")

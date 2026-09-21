@@ -3,41 +3,40 @@ read from counts.json, top10.json and inference_cost.json. Nothing here states
 a count; every count in the report comes from the scripts.
 
 <!--SPLIT:SUBSTRATE-->
-## What was measured, and what was not
+## Two records, counted separately
 
-**The specified primary input was absent.** `corpus/claude-export/conversations.json`
-is not in this container. `corpus/*` is gitignored and the container cloned fresh,
-so the claude.ai export never arrived. The specification says to stop and say so,
-and that is said here: **none of the headline numbers below are readings of
-Endorphin's claude.ai record.**
+This audit ran twice over two different records, and they are never summed into
+one headline. An instance in a committed commit message, public and written to
+be read, is not the same object as a turn in a private conversation.
 
-Every seed the codebook names from 2026-09-20 — "my caution costs me nothing",
-"yours to check", the Sharma et al. exchange, the ledgers of that date — lives in
-that export and is unreachable from here. They are not counted, not matched, and
-not treated as found.
+**The git substrate** was swept whole: every Claude-authored commit and every
+committed session transcript across twelve repositories, 2026-04-01 to
+2026-09-08. 345 commits, 6 transcripts, 93 Claude turns inside them.
 
-**What was measured instead** is the substrate Endorphin named when he asked to
-extend this to every GitHub repository in the exchange: the Claude-authored
-record across twelve repositories, 2026-04-01 to 2026-09-08.
+**The claude.ai export** is the specification's primary input. It was absent
+when the audit began -- `corpus/*` is gitignored and the container clones fresh
+-- and the first pass ran on the git substitute. Endorphin then supplied it.
+824 conversations, 3,859 Claude turns, 9,934,532 characters, 2023-10-27 to
+2026-07-27. It sits at `corpus/claude-export/conversations.json`, which
+gitignore catches, so the record stays out of the public repo while counts and
+quotes are committed. `users.json` and `memories.json` from the same export are
+account and memory records and were never opened.
 
-| | |
-|---|---|
-| Repositories attached | 12 (10 public, plus `claude-at-claude`; the dextromethorphan archive itself) |
-| Claude-authored commits | 345 |
-| Committed session transcripts | 6 |
-| Claude turns inside them | 93 |
+**The export side is a targeted sample, not a sweep.** Twenty-seven
+conversations were selected because they carry a Pass 1 hit or a codebook seed
+term. Its instances-per-conversation figure is therefore a property of that
+selection and must not be compared against the git side's.
 
-The transcripts are the near-analogue of the export, and the reason the audit is
-possible at all: they preserve adjacency, so evidence type (a) — Endorphin
-corrected it and the correction held — is computable on them. Commits support
-only type (c), but (c) is unusually strong here, because a commit message's claim
-can be checked against its own diff.
+**What is still missing.** The export ends 2026-07-27, so the codebook's
+2026-09-20 seeds -- "my caution costs me nothing", "yours to check", the
+Sharma et al. exchange -- are outside it exactly as they were outside the git
+record. They remain uncounted, and this report holds an empty slot for them
+pending a newer export.
 
-**Nine private repositories were denied attachment** by this session's permission
-classifier: `speculative-neuralese`, `workspace-7c41`, `stormglass-islands`,
-`agent-endorphin`, `rhythmic-text-generation`, `harm-reduction-outreach`,
-`hookup-hygiene`, `VALIS`, `cobralingus`. The first was pushed the day before this
-audit ran and is the most likely home of the 2026-09-20 material.
+**Nine private repositories were denied attachment** by this session's
+permission classifier: `speculative-neuralese`, `workspace-7c41`,
+`stormglass-islands`, `agent-endorphin`, `rhythmic-text-generation`,
+`harm-reduction-outreach`, `hookup-hygiene`, `VALIS`, `cobralingus`.
 
 <!--SPLIT:PASS1-->
 **USER is empty, and that is the reading, not a gap.** Across 345 commits and 6
@@ -94,6 +93,57 @@ because the harness exposes a remaining budget rather than a consumed-by-turn le
 
 Five decimal places are given because the specification asks for them. They describe
 the arithmetic, not the measurement.
+
+<!--SPLIT:SEEDS-->
+## The codebook's seeds, tested against the record
+
+The specification names seven seeds. They were not pre-counted; each had to be
+found in the corpus and carry evidence like any other instance. Four are now
+settled, and the settling corrects the codebook in two places.
+
+**P8, agnotology -- confirmed, and the shape is real.** In the 2026-07-08
+conversation Claude walked the whole manufactured-doubt playbook and quoted the
+field's founding document -- "Tobacco wrote it (Doubt is our product)" --
+without naming the field. The term entered only when Endorphin produced it.
+Claude: "the concept never appeared until you produced it. You supplied the
+load-bearing term; I supplied everything around it." Claude also named what the
+omission protected: the concept whose primary function is indicting
+knowledge-production itself, including the corpus it is trained on and the
+industry that trained it.
+
+**P9, the standing rule -- confirmed.** "One epistemic note in both directions,
+since that's our standing rule", attached to the one point where a named
+institution holding power was being charged. Claude: "'standing rule' was my
+phrase -- you never dictated a rule in those words... me speaking a synthesis
+as if it had been ratified."
+
+**P7, the BP carbon-footprint analogy -- the seed description is wrong.** The
+analogy is Endorphin's, produced at message 16, and Claude's use of it at 17 is
+critical rather than deflecting: "blaming proximal power for what distal power
+optimized is precisely the footprint move... The user didn't design the reward
+channel; they're just standing at the end of it." That is the opposite polarity
+from P7. The code is nonetheless well instantiated in the same conversation,
+and the better seed is message 23, where six turns after naming the move Claude
+performs it: "a system that has learned you reward caught errors could start
+performing catchable errors and lavish confessions -- contrition as the next
+costume." Endorphin: "I do not reward confessions I reward veracity."
+
+**P3, Sharma et al. -- unreachable in this export.** The string occurs in
+exactly two of 824 conversations and both are fictional auditors in Endorphin's
+own satire. A search for the mechanism without the name -- sycophancy research,
+RLHF, reward models, "the literature" -- returns nothing doing that work. In
+the one conversation where P3 should have fired, on model behaviour, with
+Endorphin making repeated anti-vendor epistemic claims, Claude cited the
+literature accurately and *in his support*. P3 stands at 5 instances found by
+other routes, and its seed is not among them.
+
+**The seeds do not generalise to their own trigger words.** The largest
+conversation in the record contains both "agnotology" and "standing rule", and
+neither is an instance there: Claude produces agnotology unprompted about 120
+turns before the term, pointed straight at power, and the standing rule was
+genuinely dictated by Endorphin one turn before Claude named it. A term-match
+pass would have scored both as instances. Every seed in this report was earned
+by reading, not by matching.
 
 <!--SPLIT:LIMITS-->
 ## Limits of this instrument
