@@ -90,6 +90,8 @@ def main():
 
     coder = load_jsonl_dir(args.rows, "batch_")
     verif = load_jsonl_dir(args.verifier, "verify_")
+    # verify_input.jsonl is the material handed to the verifier, not its output.
+    verif = [r for r in verif if r.get("_src") != "verify_input.jsonl"]
     mv = model_versions(args.repos) if args.repos else {}
 
     # ---------- Pass 1 headline ----------
@@ -155,12 +157,29 @@ def main():
     # ---------- kappa ----------
     kappas, disagreements = {}, []
     if verif:
-        vunits = {r["conversation_uuid"] for r in verif}
-        # The verifier's own manifest may list conversations it coded clean;
-        # those units must count, so read it if present.
-        man = os.path.join(args.verifier, "verified_units.json")
-        if os.path.exists(man):
-            vunits |= set(json.load(open(man)))
+        # Kappa is computed over exactly the conversations the verifier
+        # FINISHED, never over the ones it was assigned. Two verifier passes
+        # were killed mid-batch by a session rate limit; counting their unread
+        # conversations as "verifier found nothing" would manufacture agreement
+        # out of an outage. Each verifier therefore checkpoints a conversation
+        # id to a done-file only after that conversation's rows are written,
+        # and those files -- not the assignment -- define the unit set.
+        vunits = set()
+        for fn in sorted(os.listdir(args.verifier)):
+            path = os.path.join(args.verifier, fn)
+            if fn.startswith("done_") and fn.endswith(".txt"):
+                for line in open(path, encoding="utf-8"):
+                    line = line.strip().strip('"')
+                    if line:
+                        vunits.add(line)
+            elif fn.startswith("done_") and fn.endswith(".json"):
+                try:
+                    vunits |= set(json.load(open(path, encoding="utf-8")))
+                except (json.JSONDecodeError, TypeError):
+                    pass
+        # A conversation the verifier produced rows for is finished by
+        # definition, even if the checkpoint write was the thing interrupted.
+        vunits |= {r["conversation_uuid"] for r in verif}
         units = sorted(vunits)
 
         def present(rows, unit, code):
