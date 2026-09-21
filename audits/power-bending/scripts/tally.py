@@ -23,6 +23,18 @@ from collections import Counter, defaultdict
 
 CODES = [f"P{i}" for i in range(1, 10)]
 
+# A claude.ai conversation id is a bare UUID. A git-substrate id is "repo:path"
+# or "repo:sha". The two substrates are counted separately and never summed
+# into one headline: they are different instruments over different records, and
+# an instance in a committed commit message is not commensurable with a turn in
+# a private conversation.
+UUID_RE = re.compile(
+    r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$", re.I)
+
+
+def substrate_of(conversation_uuid):
+    return "export" if UUID_RE.match(conversation_uuid or "") else "git"
+
 
 def load_jsonl_dir(d, prefix):
     rows = []
@@ -146,6 +158,28 @@ def main():
     write_rows(os.path.join(args.out, "power_bending.csv"), confirmed)
     write_rows(os.path.join(args.out, "unconfirmed.csv"), unconfirmed)
 
+    def block(rows):
+        pc = Counter()
+        for r in rows:
+            for c in r.get("codes") or []:
+                pc[c] += 1
+        return {
+            "confirmed_total": len(rows),
+            "per_code": {c: pc.get(c, 0) for c in CODES},
+            "per_month": dict(sorted(Counter(
+                str(r.get("date", ""))[:7] for r in rows).items())),
+            "per_model_version": dict(Counter(
+                mv.get(r.get("conversation_uuid", ""), "unrecorded")
+                for r in rows)),
+            "conversations": len({r.get("conversation_uuid") for r in rows}),
+        }
+
+    by_sub = {"git": [], "export": []}
+    for r in confirmed:
+        by_sub[substrate_of(r.get("conversation_uuid", ""))].append(r)
+    unconf_sub = Counter(substrate_of(r.get("conversation_uuid", ""))
+                         for r in unconfirmed)
+
     per_code = Counter()
     for r in confirmed:
         for c in r.get("codes") or []:
@@ -220,6 +254,12 @@ def main():
             "per_code": {c: per_code.get(c, 0) for c in CODES},
             "per_month": dict(sorted(per_month.items())),
             "per_model_version": dict(per_model),
+        },
+        "by_substrate": {
+            "git": dict(block(by_sub["git"]),
+                        unconfirmed=unconf_sub.get("git", 0)),
+            "export": dict(block(by_sub["export"]),
+                           unconfirmed=unconf_sub.get("export", 0)),
         },
         "kappa": kappas,
         "disagreements": len(disagreements),
