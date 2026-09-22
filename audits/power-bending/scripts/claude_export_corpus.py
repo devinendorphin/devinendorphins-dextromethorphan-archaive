@@ -96,10 +96,24 @@ def main():
 
     units, skipped = [], 0
     for c in convos:
-        msgs = sorted(
-            c.get("chat_messages") or [],
-            key=lambda m: (m.get("created_at") or "", m.get("uuid") or ""),
-        )
+        # Sort on the timestamp ALONE. A FOURTH defect lived in the removed
+        # secondary key: this export stamps a human turn and the assistant
+        # turn answering it with one identical `created_at`, so breaking the
+        # tie on `uuid` ordered each exchange at random. It put 146 of 836
+        # conversations in the mouth of Claude first -- a reply with no
+        # prompt -- and placed 377 turns before the turn they answer.
+        #
+        # Python's sort is stable, so dropping the tie-break restores the
+        # export file's own order, which is correct: 146 -> 0 and 377 -> 0,
+        # checked against `parent_message_uuid` wherever the export carries
+        # one. Nothing else was needed; no reordering heuristic is applied.
+        #
+        # This one matters more than a dropped field, because the repo's
+        # sixth standing rule is that eyes-on reading for a judgement is
+        # whole AND IN ORDER. Coders reading a scrambled exchange were being
+        # asked to honour a rule the substrate had already broken.
+        msgs = sorted(c.get("chat_messages") or [],
+                      key=lambda m: m.get("created_at") or "")
         turns = []
         for i, m in enumerate(msgs):
             text = message_text(m)

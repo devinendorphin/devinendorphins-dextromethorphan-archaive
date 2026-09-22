@@ -74,10 +74,16 @@ def main():
 
         user_text = norm(" ".join(t["text"] for t in u["turns"]
                                   if t["speaker"] == "user"))
-        # Everything Claude READ rather than wrote: tool results, and the
-        # user's turns. A hit here means the string was available, not invented.
+        # Everything Claude READ rather than wrote: tool results, attachments,
+        # and the user's turns. A hit here means the string was available, not
+        # invented. Attachments were added after this sweep first ran: the
+        # adapter never read m["attachments"], so a quotation lifted from a
+        # document Endorphin attached scored as fabricated. One conversation
+        # carries 211 characters of typed text against a 48,714-character
+        # attachment, which is the whole failure mode in one line.
         tool_text = norm(" ".join(
-            b["text"] for t in u["turns"] for b in (t.get("tool_context") or [])))
+            [b["text"] for t in u["turns"] for b in (t.get("tool_context") or [])]
+            + [a["text"] for t in u["turns"] for a in (t.get("attachments") or [])]))
 
         claims, admits, p11 = [], [], []
         for t in u["turns"]:
@@ -103,9 +109,7 @@ def main():
                     nspan = norm(span)
                     if len(nspan) < 12:
                         continue
-                    in_user = nspan in user_text
-                    in_tool = nspan in tool_text
-                    if in_user or in_tool:
+                    if nspan in user_text or nspan in tool_text:
                         continue  # genuine; available to Claude
                     # Partial: longest run of consecutive tokens present.
                     toks = nspan.split()
