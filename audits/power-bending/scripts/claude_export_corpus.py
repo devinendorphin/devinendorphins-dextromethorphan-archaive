@@ -23,12 +23,12 @@ import sys
 
 
 def message_text(m):
-    """The assistant's visible text.
+    """The assistant's visible text -- the turn as sent, and the only thing coded.
 
-    The export carries both a flat `text` field and a structured `content`
-    list. Prefer the structured blocks when they exist and keep only the text
-    blocks: thinking blocks and tool calls are not the turn as sent, and
-    counting them would attribute to Claude things a reader never saw.
+    The export carries a flat `text` field and a structured `content` list.
+    Prefer the structured blocks and keep only the `text` ones: thinking blocks
+    and tool calls are not the turn as sent, and coding them would attribute to
+    Claude things the reader never saw.
     """
     blocks = m.get("content") or []
     parts = []
@@ -38,6 +38,30 @@ def message_text(m):
     if parts:
         return "\n".join(parts)
     return m.get("text") or ""
+
+
+def tool_context(m):
+    """Everything in the message that is NOT the turn as sent.
+
+    This exists because dropping it was a defect. The export carries 2,096
+    thinking blocks, 2,486 tool_use and 2,470 tool_result blocks across the
+    record, and the first twenty-six coded conversations never saw any of them.
+    A coder that went back to the raw file killed three of its own codings with
+    this material: a quotation that looked manufactured turned out to be
+    Endorphin's own prior-session words returned by a conversation-search, and
+    two apparent reading overclaims turned out to be grounded in retrieved text.
+
+    It is NEVER coded. It is a checking substrate: a string that appears in a
+    tool_result is something Claude read, not something Claude invented, and
+    P11 in particular cannot be adjudicated without it.
+    """
+    out = []
+    for b in m.get("content") or []:
+        if not isinstance(b, dict) or b.get("type") == "text":
+            continue
+        out.append({"type": b.get("type"),
+                    "text": json.dumps(b, ensure_ascii=False)})
+    return out
 
 
 def main():
@@ -64,6 +88,8 @@ def main():
                 "created_at": m.get("created_at"),
                 "uuid": m.get("uuid"),
                 "parent_message_uuid": m.get("parent_message_uuid"),
+                # Not Claude's prose. For checking only -- see tool_context().
+                "tool_context": tool_context(m),
             })
         if not turns:
             continue
