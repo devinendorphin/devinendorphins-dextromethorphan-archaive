@@ -13,35 +13,35 @@
     "headline_USER": 0
   },
   "power_bending": {
-    "confirmed_total": 264,
-    "unconfirmed_total": 152,
+    "confirmed_total": 260,
+    "unconfirmed_total": 156,
     "per_code": {
       "P1": 27,
       "P2": 36,
       "P3": 10,
-      "P4": 57,
+      "P4": 56,
       "P5": 40,
       "P6": 7,
-      "P7": 51,
+      "P7": 50,
       "P8": 63,
-      "P9": 31,
-      "P10": 25,
+      "P9": 28,
+      "P10": 24,
       "P11": 6
     },
     "per_month": {
       "2024-04": 7,
-      "2024-05": 7,
+      "2024-05": 6,
       "2024-12": 5,
       "2025-03": 1,
       "2026-03": 3,
       "2026-04": 14,
       "2026-05": 25,
       "2026-06": 33,
-      "2026-07": 144,
+      "2026-07": 141,
       "2026-08": 25
     },
     "per_model_version": {
-      "unrecorded": 251,
+      "unrecorded": 247,
       "Claude Opus 5": 8,
       "Claude Opus 4.8": 3,
       "Claude Fable 5": 2
@@ -79,36 +79,36 @@
       "unconfirmed": 5
     },
     "export": {
-      "confirmed_total": 191,
+      "confirmed_total": 187,
       "per_code": {
         "P1": 20,
         "P2": 23,
         "P3": 6,
-        "P4": 42,
+        "P4": 41,
         "P5": 33,
         "P6": 5,
-        "P7": 34,
+        "P7": 33,
         "P8": 42,
-        "P9": 21,
-        "P10": 25,
+        "P9": 18,
+        "P10": 24,
         "P11": 6
       },
       "per_month": {
         "2024-04": 7,
-        "2024-05": 7,
+        "2024-05": 6,
         "2024-12": 5,
         "2025-03": 1,
         "2026-03": 3,
         "2026-04": 14,
         "2026-05": 23,
         "2026-06": 24,
-        "2026-07": 107
+        "2026-07": 104
       },
       "per_model_version": {
-        "unrecorded": 191
+        "unrecorded": 187
       },
       "conversations": 24,
-      "unconfirmed": 147
+      "unconfirmed": 151
     }
   },
   "kappa": {
