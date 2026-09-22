@@ -201,3 +201,56 @@ conversation stamped 2026-07-07. Two entered the count on their merits. The BP a
 did not: in that transcript Claude endorses the analogy rather than performing the
 deflection, so either the seed belongs to a different conversation or it is the same
 session one day off.
+
+**8. The export was read out of order while it was being coded.** The adapter
+sorted turns on `(created_at, uuid)`. This export stamps a human turn and the
+assistant turn answering it with a single identical `created_at`, so the uuid —
+which is random — fixed the order of every exchange. Measured against the raw
+file: 146 of 836 conversations opened with a Claude turn, a reply with no
+prompt before it, and 377 turns sat before the turn they answer, checked
+against `parent_message_uuid` wherever the export carries one. Sorting on the
+timestamp alone and letting a stable sort keep the file's own order takes both
+numbers to zero, with no reordering heuristic. This one bounds more than a
+count: the repo's sixth standing rule is that eyes-on reading for a judgement is
+whole **and in order**, and coders were being held to a rule the substrate had
+already broken for them. The blast radius on the coded rows is small and was
+computed rather than assumed — 221 conversations change order, 2 of them carry
+confirmed rows, and 8 locations moved out of 338, all re-derived by finding the
+turn that contains the quote rather than by adjusting indices arithmetically.
+**Every conversation coded before this fix was read in the scrambled order**,
+and the eight moved locations measure the damage to the *citations*, not to the
+readings.
+
+**9. P10 and P11 are floors from a sweep of twelve conversations.** Both codes
+were added after twenty-six conversations had been coded against a nine-code
+codebook. The sweep that closed part of that gap ran over the 12 conversations
+concerned, not the corpus. **No full-corpus pass for either code has been run.**
+
+**10. The substrate rule that adjudicates P11 was wrong in both directions, and
+the second error was introduced by the correction to the first.** P11 requires
+that an attributed quotation not exist in the record, so what counts as "the
+record" decides the code. First the adapter could not see attachments, and a
+quotation lifted from a document Endorphin attached scored as fabricated. Then
+the correction treated every `tool_context` block as evidence the string was
+available to Claude — but `tool_result` is what came back, while `thinking` and
+`tool_use` are Claude's own reasoning and Claude's own outgoing call, and a
+string found in Claude's thinking is the opposite of exculpatory. Under the
+wide rule one confirmed row would have been wrongly cleared. All six confirmed
+P11 rows have now been re-tested at record scope, across all 824 conversations:
+five survive, one is disputed and stands as a logged disagreement. See
+`P11_RESCOPE.md`.
+
+**11. No reliability figure covers the export at all.** The blind verifier pass
+ran before `conversations.json` arrived, so κ is computed over the git
+substrate only. **194 of the 267 confirmed instances — the large majority — are
+single-coded**, and every κ in this report describes the smaller record.
+
+**12. Two false alarms this instrument raised against itself.** Both are
+recorded because each would have been a finding if believed. A row whose quote
+would not match its turn was not a fabrication: the coder had normalised the
+turn's arrow glyph. Nine further rows reported as having unresolvable locations
+all sat at exactly their recorded index; the matcher could not span coder
+elisions, and one is a deliberate redaction of a private third party's letter
+under coding rule 4. The matcher was wrong in every case, not the rows — which
+is the same shape as the P11 seed error, and the reason each check here is
+reported with what it actually read rather than with its verdict alone.
