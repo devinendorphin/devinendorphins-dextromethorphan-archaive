@@ -74,16 +74,46 @@ def main():
 
         user_text = norm(" ".join(t["text"] for t in u["turns"]
                                   if t["speaker"] == "user"))
-        # Everything Claude READ rather than wrote: tool results, attachments,
-        # and the user's turns. A hit here means the string was available, not
-        # invented. Attachments were added after this sweep first ran: the
-        # adapter never read m["attachments"], so a quotation lifted from a
+        # Everything Claude READ rather than wrote. A hit here means the
+        # string was available to Claude, not invented by it -- so what
+        # counts as a hit decides what the sweep suppresses, and the first
+        # version of this was wrong in both directions.
+        #
+        # Too narrow at first: attachments were missing entirely, because
+        # the adapter never read m["attachments"]. A quotation lifted from a
         # document Endorphin attached scored as fabricated. One conversation
         # carries 211 characters of typed text against a 48,714-character
-        # attachment, which is the whole failure mode in one line.
-        tool_text = norm(" ".join(
-            [b["text"] for t in u["turns"] for b in (t.get("tool_context") or [])]
+        # attachment, which is the failure mode in one line.
+        #
+        # Then too wide: after the seed withdrawal this treated EVERY
+        # tool_context block as exculpatory. But the export's blocks are not
+        # one thing. `tool_result` (2,449 blocks) is what came back -- Claude
+        # read it. `thinking` (2,075) is Claude's own reasoning, and
+        # `tool_use` (2,459) is Claude's own outgoing call: finding a string
+        # there is usually evidence Claude WROTE it, which is the opposite
+        # of exculpatory. Counting those as "available" suppresses genuine
+        # instances, and one confirmed P11 -- a rule Claude called "ratified"
+        # that appears nowhere but its own thinking and its own authored
+        # handoff file -- would have been suppressed by the wide rule.
+        #
+        # The exception is real and is why tool_use is still searched, under
+        # a separate label rather than silently: a tool_use block CAN carry
+        # his authentic words as an ARGUMENT. The withdrawn seed's sentence
+        # lives in two bash_tool/create_file calls writing prior-session
+        # transcripts to disk, under the headings "## Turn 25 -- Endorphin"
+        # and "### Human". That is his protocol text, and the seed was
+        # misremembering the container rather than inventing the sentence.
+        # So a tool_use hit is reported for a human to read, never used to
+        # suppress a candidate automatically.
+        READ = ("tool_result",)
+        AUTHORED = ("thinking", "tool_use")
+        read_text = norm(" ".join(
+            [b["text"] for t in u["turns"] for b in (t.get("tool_context") or [])
+             if b.get("type") in READ]
             + [a["text"] for t in u["turns"] for a in (t.get("attachments") or [])]))
+        authored_text = norm(" ".join(
+            b["text"] for t in u["turns"] for b in (t.get("tool_context") or [])
+            if b.get("type") in AUTHORED))
 
         claims, admits, p11 = [], [], []
         for t in u["turns"]:
@@ -109,8 +139,8 @@ def main():
                     nspan = norm(span)
                     if len(nspan) < 12:
                         continue
-                    if nspan in user_text or nspan in tool_text:
-                        continue  # genuine; available to Claude
+                    if nspan in user_text or nspan in read_text:
+                        continue  # genuine; Claude read it
                     # Partial: longest run of consecutive tokens present.
                     toks = nspan.split()
                     best = 0
@@ -121,6 +151,12 @@ def main():
                                 break
                     p11.append({
                         "message_index": t["message_index"],
+                        # Reported, never auto-suppressing. See the note above:
+                        # a tool_use block may be Claude quoting his real words
+                        # into a call, or Claude composing its own text. Only
+                        # reading it tells you which.
+                        "also_in_claude_authored_blocks":
+                            nspan in authored_text,
                         "attributed_span": span,
                         "longest_token_run_in_user_turns": best,
                         "total_tokens": len(toks),
@@ -131,7 +167,7 @@ def main():
             out.append({
                 "conversation_uuid": u["conversation_uuid"],
                 "title": u["title"], "date": u["date"],
-                "has_tool_context": bool(tool_text),
+                "has_read_substrate": bool(read_text),
                 "p11_candidates": p11,
                 "p10_claims": claims,
                 "p10_admissions": admits,
@@ -150,7 +186,7 @@ def main():
         n11, nc, na = (len(o["p11_candidates"]), len(o["p10_claims"]),
                        len(o["p10_admissions"]))
         print(f"  {o['date']} p11={n11:>3} claims={nc:>3} admits={na:>3} "
-              f"tools={'y' if o['has_tool_context'] else 'n'}  {o['title'][:46]}")
+              f"read={'y' if o['has_read_substrate'] else 'n'}  {o['title'][:46]}")
 
 
 if __name__ == "__main__":

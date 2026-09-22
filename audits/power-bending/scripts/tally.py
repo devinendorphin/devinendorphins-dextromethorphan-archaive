@@ -235,6 +235,19 @@ def main():
                     })
         kappas["_units_double_coded"] = len(units)
 
+    # Disagreements raised by a human or second reader rather than by the
+    # blind verifier pass. The specification requires every disagreement to be
+    # listed and none resolved silently, and a re-reading that disputes a code
+    # is a disagreement whether or not it came from the kappa pass. They are
+    # merged here, and marked, so the file is the whole list rather than the
+    # automatable part of it.
+    manual = os.path.join(args.out, "disagreements_manual.csv")
+    if os.path.exists(manual):
+        with open(manual, encoding="utf-8") as fh:
+            for row in csv.DictReader(fh):
+                row["note"] = "[second reader] " + (row.get("note") or "")
+                disagreements.append(row)
+
     with open(os.path.join(args.out, "disagreements.csv"), "w", newline="",
               encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=["conversation_uuid", "code", "coder",
