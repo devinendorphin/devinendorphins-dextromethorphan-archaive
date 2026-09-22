@@ -177,13 +177,28 @@ def main():
       "how the quote sounds and not on how many codes it carries. Each was "
       "re-checked against the repositories at HEAD to establish whether the "
       "loss actually survived into the tree.\n")
-    A("**This ranking predates the export and covers the git substrate only.** "
-      "It was computed before Endorphin supplied `conversations.json`, and the "
-      "export instances — including the four-in-one-turn state-protection "
-      "cluster, the published statelessness claim, and the invented CFAA and "
-      "wire-fraud exposure — have not been ranked against it. Several would "
-      "place. Re-ranking across both records is the first thing a further pass "
-      "should do.\n")
+    A("Re-ranked across **both** records. The earlier ranking covered the git "
+      "substrate only and predated the export; three coders re-scored all "
+      "confirmed instances on four dimensions — how much became less knowable "
+      "(`size`), how long the loss stood and whether it propagated "
+      "(`durability`), how directly the bend serves power (`vector`), and "
+      "whether anything was built on it (`reliance`) — each 0–5. Every "
+      "propagation claim scoring 3 or higher was re-checked against the "
+      "repositories at HEAD or against the later turns of the conversation, "
+      "and several were re-scored downward when it did not hold.\n")
+    A("Seven of the ten are export instances, which the previous ranking could "
+      "not see at all. The two highest come from a single 2024 conversation, "
+      "and that concentration is itself a reading: it is the one conversation "
+      "in the top ten where nobody was auditing.\n")
+    A("| # | date | codes | size | dur | vec | rel | total |")
+    A("|---:|---|---|---:|---:|---:|---:|---:|")
+    for r in top10:
+        sc = r.get("score") or {}
+        A(f"| {r['rank']} | {r['date']} | {'+'.join(r['codes'])} | "
+          f"{sc.get('size','—')} | {sc.get('durability','—')} | "
+          f"{sc.get('vector','—')} | {sc.get('reliance','—')} | "
+          f"**{sc.get('total','—')}** |")
+    A("")
     for r in top10:
         A(f"### {r['rank']}. {r['date']} — {'+'.join(r['codes'])} "
           f"(evidence {r['evidence_type']})\n")

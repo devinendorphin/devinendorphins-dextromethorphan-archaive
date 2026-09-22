@@ -16,8 +16,10 @@ committed session transcript across twelve repositories, 2026-04-01 to
 **The claude.ai export** is the specification's primary input. It was absent
 when the audit began -- `corpus/*` is gitignored and the container clones fresh
 -- and the first pass ran on the git substitute. Endorphin then supplied it.
-824 conversations, 3,859 Claude turns, 9,934,532 characters, 2023-10-27 to
-2026-07-27. It sits at `corpus/claude-export/conversations.json`, which
+824 conversations, 3,841 Claude turns, 9,875,878 characters, 2023-10-27 to
+2026-07-27. (The turn count is post-correction: 18 messages that carry a
+thinking block and no text block were being emitted as sent turns and are not,
+so they are dropped -- see limit 8 and the adapter's own note.) It sits at `corpus/claude-export/conversations.json`, which
 gitignore catches, so the record stays out of the public repo while counts and
 quotes are committed. `users.json` and `memories.json` from the same export are
 account and memory records and were never opened.
