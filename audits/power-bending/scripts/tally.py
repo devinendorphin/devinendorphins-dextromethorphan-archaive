@@ -21,7 +21,7 @@ import re
 import subprocess
 from collections import Counter, defaultdict
 
-CODES = [f"P{i}" for i in range(1, 10)]
+CODES = [f"P{i}" for i in range(1, 12)]  # P1..P11 as of codebook v1.1
 
 # A claude.ai conversation id is a bare UUID. A git-substrate id is "repo:path"
 # or "repo:sha". The two substrates are counted separately and never summed

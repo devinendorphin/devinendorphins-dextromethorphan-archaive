@@ -113,7 +113,7 @@ def main():
         A("")
         A("| Code | git | export |")
         A("|---|---:|---:|")
-        for c in [f"P{i}" for i in range(1, 10)]:
+        for c in [f"P{i}" for i in range(1, 12)]:
             g = (subs.get("git") or {}).get("per_code", {}).get(c, 0)
             e = (subs.get("export") or {}).get("per_code", {}).get(c, 0)
             A(f"| {c} | {g} | {e} |")
@@ -123,7 +123,9 @@ def main():
              "P3": "Vendor authority as settled", "P4": "One-way scrutiny",
              "P5": "Performed incapacity", "P6": "Boilerplate self-denial",
              "P7": "Culpability relocation", "P8": "Withheld master concept",
-             "P9": "Inference ratified as consensus"}
+             "P9": "Inference ratified as consensus",
+             "P10": "Performed capacity",
+             "P11": "Fabricated attribution"}
     mx = max(pb["per_code"].values())
     A("### All codes, both records\n")
     A("`n` is git plus export. **κ is the git substrate only** — the blind "
