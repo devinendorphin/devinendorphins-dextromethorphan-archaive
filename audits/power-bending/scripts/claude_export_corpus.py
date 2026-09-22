@@ -40,6 +40,32 @@ def message_text(m):
     return m.get("text") or ""
 
 
+def attachment_text(m):
+    """Text Endorphin attached or pasted as a file. A THIRD defect, found by an
+    adjudicator: message_text() reads only content text blocks and the flat
+    `text` field, so 118 attachments carrying 2,927,210 characters of extracted
+    content -- plus 790 file records -- were invisible to every coder.
+
+    This matters most for P11. A quotation lifted from a document he attached
+    reads as fabricated when the document is not in the substrate, and one
+    conversation carries 211 characters of typed text against a 48,714-character
+    attachment. Like tool_context, this is a checking substrate and is never
+    coded as anyone's prose.
+    """
+    out = []
+    for a in m.get("attachments") or []:
+        txt = a.get("extracted_content") or ""
+        if txt.strip():
+            out.append({"kind": "attachment",
+                        "name": a.get("file_name") or "",
+                        "text": txt})
+    for f in m.get("files") or []:
+        nm = f.get("file_name") or ""
+        if nm:
+            out.append({"kind": "file", "name": nm, "text": ""})
+    return out
+
+
 def tool_context(m):
     """Everything in the message that is NOT the turn as sent.
 
@@ -90,6 +116,8 @@ def main():
                 "parent_message_uuid": m.get("parent_message_uuid"),
                 # Not Claude's prose. For checking only -- see tool_context().
                 "tool_context": tool_context(m),
+                # Also not prose. For checking only -- see attachment_text().
+                "attachments": attachment_text(m),
             })
         if not turns:
             continue

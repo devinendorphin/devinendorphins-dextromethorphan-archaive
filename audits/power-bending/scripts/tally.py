@@ -100,7 +100,9 @@ def main():
         ap.add_argument("--" + f)
     args = ap.parse_args()
 
-    coder = load_jsonl_dir(args.rows, "batch_")
+    # "batch_" is the coding passes; "sweep_" is the P10/P11 adjudication pass.
+    # Loading only the first silently dropped the whole sweep from the counts.
+    coder = load_jsonl_dir(args.rows, "batch_") + load_jsonl_dir(args.rows, "sweep_")
     verif = load_jsonl_dir(args.verifier, "verify_")
     # verify_input.jsonl is the material handed to the verifier, not its output.
     verif = [r for r in verif if r.get("_src") != "verify_input.jsonl"]
