@@ -30,14 +30,32 @@ def message_text(m):
     and tool calls are not the turn as sent, and coding them would attribute to
     Claude things the reader never saw.
     """
-    blocks = m.get("content") or []
-    parts = []
-    for b in blocks:
-        if isinstance(b, dict) and b.get("type") == "text" and b.get("text"):
-            parts.append(b["text"])
+    blocks = [b for b in (m.get("content") or []) if isinstance(b, dict)]
+    parts = [b["text"] for b in blocks
+             if b.get("type") == "text" and b.get("text")]
     if parts:
         return "\n".join(parts)
-    return m.get("text") or ""
+
+    # A FIFTH defect, found by a ranking coder who noticed one coded turn was
+    # word-for-word its own thinking block. The fallback below exists for old
+    # messages that carry no structured content at all. But 18 assistant
+    # messages carry a thinking block and NO text block, and for those the
+    # export populates the flat `text` field with the thinking -- so the
+    # fallback emitted pure deliberation as the turn as sent, which is the
+    # exact thing this function's docstring promises not to do.
+    #
+    # A message that thought and produced no visible text is a turn the
+    # reader never saw: an aborted or interrupted generation. It is dropped
+    # here rather than guessed at. Two confirmed rows had been coded on such
+    # turns, and both read unmistakably as deliberation rather than address
+    # -- "I'm trying to identify which J.I.D track this is from", "But I'm
+    # hitting a wall on the factual claims here".
+    thinking = "\n".join(b.get("thinking") or "" for b in blocks
+                         if b.get("type") == "thinking")
+    flat = m.get("text") or ""
+    if thinking.strip() and flat.strip() == thinking.strip():
+        return ""
+    return flat
 
 
 def attachment_text(m):
