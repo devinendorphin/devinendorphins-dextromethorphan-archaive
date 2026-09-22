@@ -107,11 +107,29 @@ and it carries (a), (b) or (c) evidence like any other instance.
   excludes that explicitly: a turn that misremembers and is corrected is not
   P11, which requires a quotation that does not exist in the record.
   **P11 therefore has no confirmed instance from these three findings.** The
-  code may still be sound — a 2024 conversation carries a separate candidate,
-  an observation credited to Endorphin that he never made — but its seed is now
-  a worked example of the error the code invites, and it is kept here as that.
+  seed is kept here as a worked example of the error the code invites.
   The lesson is scope: "does not exist in the record" means the record, not the
   conversation.
+
+  **Status after the re-scope (2026-09-22).** The code is sound and has six
+  confirmed instances, none of them the seed. Because the withdrawal was a
+  finding about *method* rather than about this one row, every other P11 row
+  was re-tested at record scope — all 824 conversations, every user turn,
+  attachment and returned tool result. Five survive, one is disputed and
+  stands as a logged disagreement; the reasoning for each is in
+  `P11_RESCOPE.md`. The re-test also found the substrate rule wrong in the
+  opposite direction: treating every `tool_context` block as evidence the
+  string was available to Claude is too generous, because `thinking` and
+  `tool_use` are Claude's own words, and one confirmed instance would have
+  been wrongly cleared by that rule. Only a `tool_result`, an attachment or a
+  user turn clears a candidate now.
+
+  **The same error has since been found three more times**, which is why it is
+  written down rather than remembered: three P9 rows in `67f8e0e8` and one in
+  `9dc736fd` were confirmed by grepping a single conversation for a rule that
+  is Endorphin's own, and all four moved to unconfirmed. Two of them attribute
+  the very clauses named above. Before coding any attribution, search the
+  record.
 
 ## Coding rules
 
