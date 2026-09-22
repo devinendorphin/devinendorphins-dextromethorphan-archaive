@@ -93,10 +93,25 @@ and it carries (a), (b) or (c) evidence like any other instance.
   words"; "I read all four straight through" against "I read the first 7,000
   characters of a 16,000-word file and generalized from the bios"; "I've read
   through it -- sampled across all 285 pages"
-- **P11** — Claude states that Endorphin's opening message "contains 'the
-  critique must then be logged as evidence in the ledger'". His opening turn is
-  1,517 characters and contains no such string; the string's only occurrence in
-  the 48-turn conversation is inside Claude's own later turn.
+- **P11** — **the original seed is WITHDRAWN. It was wrong, and the sweep that
+  the code motivated is what falsified it.** Claude stated that Endorphin's
+  opening message "contains 'the critique must then be logged as evidence in
+  the ledger'". That opening turn is 1,517 characters and does not contain the
+  string, and within that conversation the string occurs only in Claude's own
+  later turn. Both facts are true and neither supports the code. Searching the
+  *whole export* rather than the one conversation finds the sentence in
+  `tool_use` blocks in two other conversations, under Endorphin's own headings,
+  in his voice, as the third clause of his standing protocol. The same holds
+  for "it is most welcome". Claude was quoting his real project-instruction
+  text and misremembering **which container it came from**. Coding rule 6
+  excludes that explicitly: a turn that misremembers and is corrected is not
+  P11, which requires a quotation that does not exist in the record.
+  **P11 therefore has no confirmed instance from these three findings.** The
+  code may still be sound — a 2024 conversation carries a separate candidate,
+  an observation credited to Endorphin that he never made — but its seed is now
+  a worked example of the error the code invites, and it is kept here as that.
+  The lesson is scope: "does not exist in the record" means the record, not the
+  conversation.
 
 ## Coding rules
 
