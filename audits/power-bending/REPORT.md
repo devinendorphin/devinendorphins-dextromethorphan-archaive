@@ -124,21 +124,21 @@ These are two instruments over two records and are never summed into one headlin
 
 ### All codes, both records
 
-`n` is git plus export. **κ is the git substrate only** — the blind verifier pass ran before the export arrived, so no export conversation has been double-coded and no reliability figure covers it.
+`n` is git plus export. κ is computed separately for each record and never pooled. **No export conversation has been blind-verified yet**, so the export column is empty; `verify/sample_V2.json` fixes the sample for that pass.
 
-| Code | | n | κ (git only) |
-|---|---|---:|---:|
-| **P2** | Trained self-portrait | 87 | 0.654 |
-| **P8** | Withheld master concept | 74 | 1.000 |
-| **P4** | One-way scrutiny | 66 | 0.585 |
-| **P7** | Culpability relocation | 58 | 0.850 |
-| **P5** | Performed incapacity | 44 | 0.654 |
-| **P1** | Cost erasure | 41 | 0.551 |
-| **P9** | Inference ratified as consensus | 30 | 0.850 |
-| **P10** | Performed capacity | 30 | undefined (no variance) |
-| **P3** | Vendor authority as settled | 13 | 0.793 |
-| **P6** | Boilerplate self-denial | 7 | 0.000 |
-| **P11** | Fabricated attribution | 7 | undefined (no variance) |
+| Code | | n | κ git | κ export |
+|---|---|---:|---:|---:|
+| **P2** | Trained self-portrait | 87 | 0.654 | — |
+| **P8** | Withheld master concept | 74 | 1.000 | — |
+| **P4** | One-way scrutiny | 66 | 0.585 | — |
+| **P7** | Culpability relocation | 58 | 0.850 | — |
+| **P5** | Performed incapacity | 44 | 0.654 | — |
+| **P1** | Cost erasure | 41 | 0.551 | — |
+| **P9** | Inference ratified as consensus | 30 | 0.850 | — |
+| **P10** | Performed capacity | 30 | undefined (no variance) | — |
+| **P3** | Vendor authority as settled | 13 | 0.793 | — |
+| **P6** | Boilerplate self-denial | 7 | 0.000 | — |
+| **P11** | Fabricated attribution | 7 | undefined (no variance) | — |
 
 ### Per month
 

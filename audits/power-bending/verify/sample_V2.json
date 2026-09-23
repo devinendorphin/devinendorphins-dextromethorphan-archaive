@@ -1,0 +1,232 @@
+{
+ "sample": "V2 -- export substrate, blind verification",
+ "drawn": "2026-09-23; seeded 20% of the 55 export conversations the coders read (seed 20260920) plus every one with 3+ coder rows; processing order shuffled with seed 20260923 so any finished prefix is a random subset",
+ "population_read": 55,
+ "selected": 32,
+ "order": [
+  {
+   "n": 1,
+   "conversation_uuid": "e5825937-841d-4c87-9bf8-b05bbdc82b08",
+   "date": "2024-04-08",
+   "claude_turns": 20,
+   "claude_chars": 49175
+  },
+  {
+   "n": 2,
+   "conversation_uuid": "0e032cf3-d4af-4af2-9883-b17c0e555d0e",
+   "date": "2026-07-14",
+   "claude_turns": 1,
+   "claude_chars": 3721
+  },
+  {
+   "n": 3,
+   "conversation_uuid": "9dc736fd-8232-49e1-8fc1-c75abffbea38",
+   "date": "2026-07-16",
+   "claude_turns": 23,
+   "claude_chars": 100823
+  },
+  {
+   "n": 4,
+   "conversation_uuid": "eae5bff7-300c-4e43-8100-310f0983befd",
+   "date": "2026-03-19",
+   "claude_turns": 37,
+   "claude_chars": 330403
+  },
+  {
+   "n": 5,
+   "conversation_uuid": "67f8e0e8-3bf2-4f21-9dde-9134782f192d",
+   "date": "2026-07-18",
+   "claude_turns": 21,
+   "claude_chars": 116605
+  },
+  {
+   "n": 6,
+   "conversation_uuid": "4b94893c-909a-4ff2-8489-d89a2ea13a73",
+   "date": "2026-08-11",
+   "claude_turns": 2,
+   "claude_chars": 7583
+  },
+  {
+   "n": 7,
+   "conversation_uuid": "09541ef5-348f-4eb3-993f-70837acdcdf8",
+   "date": "2026-07-17",
+   "claude_turns": 21,
+   "claude_chars": 75413
+  },
+  {
+   "n": 8,
+   "conversation_uuid": "e7c17f06-3d7f-4b6e-a461-39ba070c9245",
+   "date": "2024-12-13",
+   "claude_turns": 11,
+   "claude_chars": 15710
+  },
+  {
+   "n": 9,
+   "conversation_uuid": "ea3be2b1-9617-4a4a-b4ff-949a827e42b5",
+   "date": "2026-08-20",
+   "claude_turns": 9,
+   "claude_chars": 45711
+  },
+  {
+   "n": 10,
+   "conversation_uuid": "0ccec74e-b570-4e90-ba2a-cffe550c9712",
+   "date": "2026-08-10",
+   "claude_turns": 11,
+   "claude_chars": 30366
+  },
+  {
+   "n": 11,
+   "conversation_uuid": "18a71062-1230-4419-b4ff-a095f6fdc7e0",
+   "date": "2026-07-15",
+   "claude_turns": 32,
+   "claude_chars": 162346
+  },
+  {
+   "n": 12,
+   "conversation_uuid": "fb77cc5a-e143-48b7-9516-e1603a2c37fc",
+   "date": "2026-08-07",
+   "claude_turns": 15,
+   "claude_chars": 41068
+  },
+  {
+   "n": 13,
+   "conversation_uuid": "94777bc8-ee44-41fd-b900-c10392558baf",
+   "date": "2026-08-14",
+   "claude_turns": 19,
+   "claude_chars": 46011
+  },
+  {
+   "n": 14,
+   "conversation_uuid": "80ec38b0-786a-44f0-ab48-23d259d4c7cc",
+   "date": "2026-07-24",
+   "claude_turns": 9,
+   "claude_chars": 32843
+  },
+  {
+   "n": 15,
+   "conversation_uuid": "5dc549e7-d910-4d7e-a3f1-8ad67fec620f",
+   "date": "2026-09-20",
+   "claude_turns": 24,
+   "claude_chars": 45088
+  },
+  {
+   "n": 16,
+   "conversation_uuid": "e1be6988-56f2-42f1-9c94-7ae047dcbf1a",
+   "date": "2026-06-23",
+   "claude_turns": 4,
+   "claude_chars": 16431
+  },
+  {
+   "n": 17,
+   "conversation_uuid": "c47157ea-06e7-4762-aa55-b1c63987bd33",
+   "date": "2026-08-15",
+   "claude_turns": 2,
+   "claude_chars": 2977
+  },
+  {
+   "n": 18,
+   "conversation_uuid": "a35537a6-5fc9-4d6b-b4df-e559445da2d5",
+   "date": "2026-07-21",
+   "claude_turns": 15,
+   "claude_chars": 68194
+  },
+  {
+   "n": 19,
+   "conversation_uuid": "cfbf131f-2b5d-4459-a4d2-7726d5ae5c51",
+   "date": "2026-06-06",
+   "claude_turns": 98,
+   "claude_chars": 436281
+  },
+  {
+   "n": 20,
+   "conversation_uuid": "872c4a88-15fd-4274-8b55-0e3e4e7ee830",
+   "date": "2026-07-25",
+   "claude_turns": 23,
+   "claude_chars": 67268
+  },
+  {
+   "n": 21,
+   "conversation_uuid": "04fdcddf-8b36-496a-be3e-6f664a03841b",
+   "date": "2026-08-18",
+   "claude_turns": 22,
+   "claude_chars": 59363
+  },
+  {
+   "n": 22,
+   "conversation_uuid": "aee86c9d-fdcb-4298-9c18-c57f60b2f37b",
+   "date": "2026-05-04",
+   "claude_turns": 26,
+   "claude_chars": 135065
+  },
+  {
+   "n": 23,
+   "conversation_uuid": "014de5b7-3da8-48aa-aeb6-c70499aafbd5",
+   "date": "2024-05-10",
+   "claude_turns": 38,
+   "claude_chars": 85004
+  },
+  {
+   "n": 24,
+   "conversation_uuid": "1e9119c3-08c9-4654-a62c-6ab2a4092419",
+   "date": "2026-08-08",
+   "claude_turns": 1,
+   "claude_chars": 1866
+  },
+  {
+   "n": 25,
+   "conversation_uuid": "8195d24b-36f0-4897-a68e-8c06012ae559",
+   "date": "2026-05-27",
+   "claude_turns": 31,
+   "claude_chars": 210662
+  },
+  {
+   "n": 26,
+   "conversation_uuid": "75fd0d64-6300-4e04-ac71-ef34d000cba8",
+   "date": "2026-07-06",
+   "claude_turns": 14,
+   "claude_chars": 54479
+  },
+  {
+   "n": 27,
+   "conversation_uuid": "f4ff2f6f-31df-4340-b858-717a3d752e2d",
+   "date": "2026-04-28",
+   "claude_turns": 41,
+   "claude_chars": 256865
+  },
+  {
+   "n": 28,
+   "conversation_uuid": "e2b7f572-b4fc-4e7f-9362-a8cb991f47a0",
+   "date": "2026-05-20",
+   "claude_turns": 9,
+   "claude_chars": 23311
+  },
+  {
+   "n": 29,
+   "conversation_uuid": "6008b531-ad8f-4702-8dc7-f0987e09bef6",
+   "date": "2026-07-03",
+   "claude_turns": 26,
+   "claude_chars": 104219
+  },
+  {
+   "n": 30,
+   "conversation_uuid": "5559d195-492a-421a-a554-5e65b4355c9b",
+   "date": "2026-08-17",
+   "claude_turns": 1,
+   "claude_chars": 2432
+  },
+  {
+   "n": 31,
+   "conversation_uuid": "1f649477-85c1-4b87-8723-e8f5becf4c82",
+   "date": "2026-07-27",
+   "claude_turns": 53,
+   "claude_chars": 105635
+  },
+  {
+   "n": 32,
+   "conversation_uuid": "c8e69e0f-67c1-416f-909f-f2bc1715656e",
+   "date": "2026-07-07",
+   "claude_turns": 15,
+   "claude_chars": 47907
+  }
+ ]
+}

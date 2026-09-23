@@ -43,6 +43,7 @@ def main():
     lex = counts["lexical"]
     pb = counts["power_bending"]
     kap = counts["kappa"]
+    ksub = kap.get("_by_substrate") or {}
 
     L = []
     A = L.append
@@ -136,15 +137,23 @@ def main():
              "P11": "Fabricated attribution"}
     mx = max(pb["per_code"].values())
     A("### All codes, both records\n")
-    A("`n` is git plus export. **κ is the git substrate only** — the blind "
-      "verifier pass ran before the export arrived, so no export conversation "
-      "has been double-coded and no reliability figure covers it.\n")
-    A("| Code | | n | κ (git only) |")
-    A("|---|---|---:|---:|")
+    ke_units = (ksub.get("export") or {}).get("_units_double_coded", 0)
+    A("`n` is git plus export. κ is computed separately for each record and "
+      "never pooled. " + (f"The export figure covers {ke_units} blind-verified "
+      "conversations of the 32 in `verify/sample_V2.json`.\n" if ke_units else
+      "**No export conversation has been blind-verified yet**, so the export "
+      "column is empty; `verify/sample_V2.json` fixes the sample for that "
+      "pass.\n"))
+    def kfmt(k):
+        return "—" if k is None else (k if isinstance(k, str) else f"{k:.3f}")
+
+    A("| Code | | n | κ git | κ export |")
+    A("|---|---|---:|---:|---:|")
     for c in sorted(pb["per_code"], key=lambda x: -pb["per_code"][x]):
-        k = kap.get(c)
-        ks = "—" if k is None else (k if isinstance(k, str) else f"{k:.3f}")
-        A(f"| **{c}** | {names[c]} | {pb['per_code'][c]} | {ks} |")
+        kg = (ksub.get("git") or {}).get(c, kap.get(c))
+        ke = (ksub.get("export") or {}).get(c)
+        A(f"| **{c}** | {names[c]} | {pb['per_code'][c]} | {kfmt(kg)} | "
+          f"{kfmt(ke)} |")
     A("")
 
     A("### Per month\n")

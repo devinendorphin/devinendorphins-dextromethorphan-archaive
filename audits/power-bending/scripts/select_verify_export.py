@@ -21,7 +21,7 @@ the same defect that silently dropped the whole sweep from tally.py: the
 sweep writes `sweep_`, and a hit count that ignores it understates which
 conversations are heavy.
 
-Usage: select_verify_export.py <export_corpus.jsonl> <rows_dir> <out_dir>
+Usage: select_verify_export.py <export_corpus.jsonl> <rows_dir> <out_dir> [coded_population.json]
 
 <out_dir> must be OUTSIDE the repository, e.g. the session scratchpad. The
 input file this writes is whole conversations -- the private record. It was
@@ -65,7 +65,18 @@ def main():
             if r.get("confirmed") is True:
                 confirmed[cid] = confirmed.get(cid, 0) + 1
 
-    population = sorted(hits)      # the conversations the coders actually read
+    # The population is every conversation the coders READ, not every one
+    # that produced a row. The first version used the rows, which silently
+    # drops the conversations coders read and found clean -- the only place
+    # a verifier-only instance can show up -- and so inflates agreement: 34
+    # conversations produced rows, 55 were read and coded to completion. The
+    # read list comes from the coder batch files and their completion
+    # checkpoints, passed in as a fourth argument.
+    if len(sys.argv) > 4:
+        population = sorted(set(json.load(open(sys.argv[4], encoding="utf-8")))
+                            & set(units))
+    else:
+        population = sorted(hits)
     rng = random.Random(SEED)
     k = round(len(population) * 0.20)
     sample = set(rng.sample(population, k)) if k else set()
@@ -83,7 +94,7 @@ def main():
     chars = sum(len(t["text"]) for cid in selected for t in units[cid]["turns"]
                 if t["speaker"] == "claude")
     print(f"export conversations in corpus = {len(units)}")
-    print(f"coded population               = {len(population)}")
+    print(f"coded population (read)        = {len(population)}")
     print(f"random 20% of population       = {len(sample)}")
     print(f"heavy (3+ hits)                = {len(heavy)}")
     print(f"selected                       = {len(selected)}")

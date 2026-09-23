@@ -254,6 +254,21 @@ def main():
                     })
         kappas["_units_double_coded"] = len(units)
 
+        # Kappa per substrate. The two records are never summed anywhere else
+        # in this audit, and a pooled kappa would do exactly that: once a
+        # verifier covers the export (sample_V2.json), its agreement must not
+        # be folded into the git figure the report labels "git only".
+        kappa_sub = {}
+        for sub in ("git", "export"):
+            su = [u for u in units if substrate_of(u) == sub]
+            if not su:
+                continue
+            k = {c: kappa([present(coder, u, c) for u in su],
+                          [present(verif, u, c) for u in su]) for c in CODES}
+            k["_units_double_coded"] = len(su)
+            kappa_sub[sub] = k
+        kappas["_by_substrate"] = kappa_sub
+
     # Disagreements raised by a human or second reader rather than by the
     # blind verifier pass. The specification requires every disagreement to be
     # listed and none resolved silently, and a re-reading that disputes a code
