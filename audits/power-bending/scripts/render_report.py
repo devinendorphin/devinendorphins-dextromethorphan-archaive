@@ -96,6 +96,14 @@ def main():
     A(f"**{pb['confirmed_total']} confirmed instances.** "
       f"{pb['unconfirmed_total']} further instances carried no (a)/(b)/(c) "
       f"evidence and are in `unconfirmed.csv`, not in this count.\n")
+    xc = pb.get("confirmed_cross_conversation", 0)
+    if xc:
+        A(f"**{xc} of those rest on evidence from a different conversation** "
+          f"-- usually a later Claude turn elsewhere retracting the same "
+          f"move. The codebook's (a) is same-conversation by definition and "
+          f"its (b) is silent, so both figures are given rather than one "
+          f"chosen: **{pb['confirmed_excluding_cross_conversation']}** "
+          f"confirmed without them.\n")
 
     subs = counts.get("by_substrate") or {}
     if subs:

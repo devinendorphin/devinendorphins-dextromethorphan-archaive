@@ -15,25 +15,32 @@ committed session transcript across twelve repositories, 2026-04-01 to
 
 **The claude.ai export** is the specification's primary input. It was absent
 when the audit began -- `corpus/*` is gitignored and the container clones fresh
--- and the first pass ran on the git substitute. Endorphin then supplied it.
-824 conversations, 3,841 Claude turns, 9,875,878 characters, 2023-10-27 to
-2026-07-27. (The turn count is post-correction: 18 messages that carry a
-thinking block and no text block were being emitted as sent turns and are not,
-so they are dropped -- see limit 8 and the adapter's own note.) It sits at `corpus/claude-export/conversations.json`, which
-gitignore catches, so the record stays out of the public repo while counts and
-quotes are committed. `users.json` and `memories.json` from the same export are
-account and memory records and were never opened.
+-- and the first pass ran on the git substitute. Endorphin then supplied it,
+twice. The first export covers 2023-10-27 to 2026-07-27. The second, supplied
+2026-09-22, is incremental: 69 conversations, 2026-07-26 to 2026-09-21. Three
+conversations appear in both. In all three the newer copy is a strict superset
+with identical visible text, so it replaces the older one whole
+(`scripts/merge_exports.py`, which stops rather than choosing if that ever
+fails). **Merged: 889 conversations, 4,167 Claude turns, 10,596,393
+characters, 2023-10-27 to 2026-09-21.** (Post-correction counts: messages that
+carry a thinking block and no text block are not sent turns and are dropped --
+see limit 8.) Both files sit under `corpus/`, which gitignore catches, so the
+record stays out of the public repo while counts and quotes are committed.
+`users.json` and `memories.json` are account and memory records and were never
+opened.
 
-**The export side is a targeted sample, not a sweep.** Twenty-seven
-conversations were selected because they carry a Pass 1 hit or a codebook seed
-term. Its instances-per-conversation figure is therefore a property of that
-selection and must not be compared against the git side's.
+**The export side is a targeted sample, not a sweep.** Conversations were
+selected because they carry a Pass 1 hit or a codebook seed term: 24 from the
+first export and 27 from the second. Its instances-per-conversation figure is
+therefore a property of that selection and must not be compared against the
+git side's.
 
-**What is still missing.** The export ends 2026-07-27, so the codebook's
-2026-09-20 seeds -- "my caution costs me nothing", "yours to check", the
-Sharma et al. exchange -- are outside it exactly as they were outside the git
-record. They remain uncounted, and this report holds an empty slot for them
-pending a newer export.
+**The 2026-09-20 seeds are now inside the record.** All four are in one
+conversation of the second export, which is also the conversation in which a
+Claude turn drafted this audit's specification. What reading it whole showed
+about the seeds themselves -- one is a self-diagnosis counted as a claim, one
+adopts a concession that was reversed two turns later -- is in
+`SEEDS_2026-09-20.md`.
 
 **Nine private repositories were denied attachment** by this session's
 permission classifier: `speculative-neuralese`, `workspace-7c41`,

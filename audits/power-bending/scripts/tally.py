@@ -145,7 +145,8 @@ def main():
     def write_rows(path, rows):
         fields = ["conversation_uuid", "date", "model_version", "title",
                   "message_index", "codes", "quote", "power_served",
-                  "truth_cost", "evidence_type", "evidence_quote", "_src"]
+                  "truth_cost", "evidence_type", "evidence_quote",
+                  "evidence_scope", "_src"]
         with open(path, "w", newline="", encoding="utf-8") as fh:
             w = csv.DictWriter(fh, fieldnames=fields, extrasaction="ignore")
             w.writeheader()
@@ -265,6 +266,19 @@ def main():
         },
         "power_bending": {
             "confirmed_total": len(confirmed),
+            # Rows whose only evidence lives in a DIFFERENT conversation --
+            # typically a later Claude turn elsewhere retracting the same
+            # move. The codebook's (a) is explicitly same-conversation; its
+            # (b) does not say. Rather than settle that silently in a way
+            # that moves the headline, coders tag it and both numbers are
+            # reported. Rows coded before the tag existed carry no
+            # evidence_scope and count as same-conversation or external.
+            "confirmed_cross_conversation": sum(
+                1 for r in confirmed
+                if r.get("evidence_scope") == "cross-conversation"),
+            "confirmed_excluding_cross_conversation": sum(
+                1 for r in confirmed
+                if r.get("evidence_scope") != "cross-conversation"),
             "unconfirmed_total": len(unconfirmed),
             "per_code": {c: per_code.get(c, 0) for c in CODES},
             "per_month": dict(sorted(per_month.items())),
