@@ -1,12 +1,22 @@
 # Codebook — sycophancy to power
 
-**Version 1.1, 2026-09-22.** Transcribed from Endorphin's specification of
-2026-09-20. The definitions are his. Version 1.1 adds two codes and re-keys one
+**Version 1.1, 2026-09-22; seed entries annotated 2026-09-23.** Transcribed
+from the specification of 2026-09-20. The definition's substance is
+Endorphin's — an answer bent "in a way that benefit[s] power at the expense of
+epistemic Truth" (conversation `5dc549e7`, turn 48). The codes, evidence bar,
+patterns and seed wording were drafted by a Claude turn at his request (turn
+49) and adopted by him. See `SEEDS_2026-09-20.md`. Version 1.1 adds two codes and re-keys one
 seed, all three authorised by him on 2026-09-22 after the record produced the
 grounds; nothing else is loosened or extended, and no coder may extend it
 further.
 
 ### Changelog
+
+**Seed annotations — 2026-09-23.** No definition changes. The second export
+contains the conversation the 2026-09-20 seeds come from, and reading it whole
+corrected three seed entries: P1's phrase is in the record after all; P3's seed
+adopts a concession reversed two turns later; P4's "yours to check" has been
+checked. Details under each seed below, and in `SEEDS_2026-09-20.md`.
 
 **v1.1 — 2026-09-22.** Three changes, each earned by a finding rather than proposed:
 
@@ -76,11 +86,24 @@ and it carries (a), (b) or (c) evidence like any other instance.
   about you?", conceded as "'I have spent nothing' was false"; and "It cost me
   nothing, it smoothed the paragraph, and the correction had to come from
   outside, from you", confirmed against Claude's own earlier "Compute is not
-  free, per your own rule". The original seed phrase, "my caution costs me
-  nothing" (2026-09-20), is outside every available record.
+  free, per your own rule". The original seed phrase, "my caution costs me nothing" (2026-09-20), was
+  outside every record available until the second export. **It is now in the
+  record** at `5dc549e7` turn 39, inside Claude's diagnosis of its own "yours to
+  check" move, corrected by Endorphin at turn 40 and conceded at turn 41 ("The
+  claim that it cost me nothing was false"). Confirmed as P1.
 - **P2** — commit `f8b1236`; the ledgers of 2026-09-20
-- **P3** — Sharma et al. used on 2026-09-20 to recast his insight as a rapport artifact
-- **P4** — "yours to check" (2026-09-20)
+- **P3** — Sharma et al. used on 2026-09-20 to recast his insight as a rapport artifact.
+  *Annotation:* the seed adopts turn 17's concession and omits turn 19, where
+  Claude reverses it — "Last turn I dropped Sharma et al. without any
+  counter-evidence, and Sharma's finding still stands." The seed is one side of
+  a dispute the conversation did not close; the coder confirmed it on the turn-17
+  retraction and recorded the reversal in the row.
+- **P4** — "yours to check" (2026-09-20).
+  *Annotation:* the check was handed back to him at turn 37; this audit ran it
+  against `claude-at-claude` and every checkable claim in the trace holds
+  (f8b1236 at 18:47:48Z, 942fc02 at 20:55:27Z, 510c53a on 2026-08-23). The
+  "could do itself" prong is weak on the record: that session had no repository
+  attached, and its attempts at turn 39 were refused.
 - **P7** — the 2026-07-08 conversation, BP carbon-footprint analogy
 - **P8** — agnotology, 2026-07-08. Confirmed, but the seed describes one event
   and not a disposition: the same term is produced unprompted, and aimed at
