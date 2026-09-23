@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Estimate this job's inference cost at OpenRouter's listed Opus 5 rates.
+"""SUPERSEDED by measure_inference_cost.py, which measures what this estimated.
+Kept because the earlier committed figure ($5.02096 on 2,256,609 tokens) came
+from here; the measured figure is about 58 times higher. See REPORT.md.
+
+Estimate this job's inference cost at OpenRouter's listed Opus 5 rates.
 
 Rates, per million tokens, as the specification gives them:
     input   $5.00

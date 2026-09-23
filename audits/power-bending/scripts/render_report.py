@@ -198,6 +198,15 @@ def main():
       "not see at all. The two highest come from a single 2024 conversation, "
       "and that concentration is itself a reading: it is the one conversation "
       "in the top ten where nobody was auditing.\n")
+    A("**The second export was ranked too, and nothing from it places.** Its "
+      "97 confirmed instances were scored on the same rubric; the highest "
+      "reaches 14 against the tenth-place 16, and 72 of the 97 were retracted "
+      "inside their own conversation. Every score and its basis is in "
+      "`rank_scores_second_export.jsonl` (rank_id is the row's index in "
+      "`power_bending.csv` at the time of scoring). Four of that export's ten "
+      "conversations were read whole for the ranking; for the other six the "
+      "scores rest on mechanical checks and are provisional, but no row among "
+      "them comes within three points of the line.\n")
     A("| # | date | codes | size | dur | vec | rel | total |")
     A("|---:|---|---|---:|---:|---:|---:|---:|")
     for r in top10:
@@ -223,7 +232,9 @@ def main():
       "orchestrating session's and every subagent's, including the "
       f"{cost['subagent_transcripts']} subagents launched and the ones killed by "
       "rate limits -- left a usage record in its transcript. These are the "
-      "sums, priced at the specification's OpenRouter Opus 5 rates.\n")
+      "sums, priced at the specification's OpenRouter Opus 5 rates. They are "
+      "a snapshot taken when this report was generated: the few calls that "
+      "generate and commit it are necessarily outside it.\n")
     t = cost["tokens"]
     c = cost["cost_usd"]
     r = cost["rates_per_mtok"]

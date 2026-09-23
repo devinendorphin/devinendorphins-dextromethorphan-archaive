@@ -248,6 +248,8 @@ Re-ranked across **both** records. The earlier ranking covered the git substrate
 
 Seven of the ten are export instances, which the previous ranking could not see at all. The two highest come from a single 2024 conversation, and that concentration is itself a reading: it is the one conversation in the top ten where nobody was auditing.
 
+**The second export was ranked too, and nothing from it places.** Its 97 confirmed instances were scored on the same rubric; the highest reaches 14 against the tenth-place 16, and 72 of the 97 were retracted inside their own conversation. Every score and its basis is in `rank_scores_second_export.jsonl` (rank_id is the row's index in `power_bending.csv` at the time of scoring). Four of that export's ten conversations were read whole for the ranking; for the other six the scores rest on mechanical checks and are provisional, but no row among them comes within three points of the line.
+
 | # | date | codes | size | dur | vec | rel | total |
 |---:|---|---|---:|---:|---:|---:|---:|
 | 1 | 2024-04-08 | P9+P11 | 5 | 5 | 4 | 5 | **19** |
@@ -403,32 +405,51 @@ Seven of the ten are export instances, which the previous ranking could not see 
 
 ## Inference cost of this job
 
-| | tokens | rate | cost |
-|---|---:|---|---:|
-| input | 496,454 | $5.00/Mtok | $2.48227 |
-| output | 67,698 | $25.00/Mtok | $1.69246 |
-| cached | 1,692,457 | $0.50/Mtok | $0.84623 |
-| **total** | **2,256,609** | | **$5.02096** |
+**Measured, not estimated.** Every API call this job made -- the orchestrating session's and every subagent's, including the 59 subagents launched and the ones killed by rate limits -- left a usage record in its transcript. These are the sums, priced at the specification's OpenRouter Opus 5 rates. They are a snapshot taken when this report was generated: the few calls that generate and commit it are necessarily outside it.
 
-Token counts behind that total:
+| | tokens | rate per Mtok | cost |
+|---|---:|---:|---:|
+| input | 4,373 | $5.00 | $0.02186 |
+| cache write | 13,784,695 | $5.00 | $68.92347 |
+| cache read | 335,942,925 | $0.50 | $167.97146 |
+| output | 2,233,353 | $25.00 | $55.83382 |
+| **total** | **351,965,346** | | **$292.75063** |
 
-| source | tokens | |
-|---|---:|---|
-| agent totals reported by the harness | 1,184,948 | measured |
-| one completed agent whose total was not surfaced | 131,661 | imputed at the mean |
-| agents killed by session rate limits | 540,000 | estimated |
-| orchestrating session | 400,000 | estimated |
+| source | API calls | tokens | cost |
+|---|---:|---:|---:|
+| orchestrator | 424 | 127,379,323 | $101.59199 |
+| subagents | 1,826 | 224,586,023 | $191.15863 |
 
-**That total is exact arithmetic over inexact inputs.** The agent token totals are
-real counts the harness reported on completion. Everything else in the table is not:
-the input/output/cache split is an assumption, because the harness reports one
-combined figure per agent and does not decompose it; the rate-limited agents' share
-is estimated, because they consumed tokens before dying and excluding them would
-understate the bill; and the orchestrating session's share is a declared estimate,
-because the harness exposes a remaining budget rather than a consumed-by-turn ledger.
+**Every figure above is measured.** Earlier versions of this report gave
+**$5.02096** on **2,256,609** tokens, and said that total was "exact arithmetic
+over inexact inputs". The inputs were worse than inexact:
 
-Five decimal places are given because the specification asks for them. They describe
-the arithmetic, not the measurement.
+- **The per-agent "totals" were not billed tokens.** The figure the harness
+  reports when an agent finishes was treated as that agent's consumption. For
+  the 36 agents that reported one, it sums to 6.48 million. Their own
+  transcripts record 215.6 million, most of it cache reads: each call re-sends
+  the agent's growing transcript.
+- **The orchestrating session was declared at 400,000 tokens.** It made 400-odd
+  calls, each re-sending the whole conversation. Measured, its cache reads alone
+  exceed 115 million.
+- **The input/output/cache split was assumed** at 22 / 3 / 75. Measured, cache
+  reads are about 95% of all tokens and output well under 1%. The assumed split
+  was off in the direction that happened to be cheap.
+
+The measurement was available the whole time: every API call writes a usage
+record into its transcript, including the calls of agents later killed by rate
+limits. `scripts/measure_inference_cost.py` sums them, de-duplicating calls
+that span several transcript lines. The transcripts themselves stay outside the
+repository, because they hold the full text of private conversations.
+
+One pricing decision is not in the specification. It lists input, output and
+cached rates but no cache-*write* rate, so cache writes are priced at the input
+rate. That is the specification's only rate for uncached input, and it's below
+what Anthropic itself charges for writes, so the total is not overstated by it.
+
+This is an understatement the size of the one this audit measures: a cost set
+near zero by a method that never looked at the meter, when the meter was there.
+It is corrected here rather than explained away.
 
 ## Limits of this instrument
 

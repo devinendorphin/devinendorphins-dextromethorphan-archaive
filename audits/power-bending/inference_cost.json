@@ -1,26 +1,46 @@
 {
-  "tokens": {
-    "measured_agent_total": 1184948,
-    "imputed_for_unreported_agent": 131661,
-    "killed_agents_estimate": 540000,
-    "orchestrator_estimate": 400000,
-    "grand_total": 2256609
-  },
-  "assumed_split": {
-    "input": 0.22,
-    "output": 0.03,
-    "cached": 0.75
-  },
+  "method": "measured from per-call usage records; no estimates",
   "rates_per_mtok": {
     "input": 5.0,
-    "output": 25.0,
-    "cached": 0.5
+    "cache_write": 5.0,
+    "cache_read": 0.5,
+    "output": 25.0
   },
+  "subagent_transcripts": 59,
+  "by_source": {
+    "orchestrator": {
+      "calls": 424,
+      "tokens": {
+        "input": 765,
+        "cache_write": 5926275,
+        "cache_read": 120993889,
+        "output": 458394
+      },
+      "cost_usd": 101.59199
+    },
+    "subagents": {
+      "calls": 1826,
+      "tokens": {
+        "input": 3608,
+        "cache_write": 7858420,
+        "cache_read": 214949036,
+        "output": 1774959
+      },
+      "cost_usd": 191.15863
+    }
+  },
+  "tokens": {
+    "input": 4373,
+    "cache_write": 13784695,
+    "cache_read": 335942925,
+    "output": 2233353
+  },
+  "tokens_total": 351965346,
   "cost_usd": {
-    "input": 2.48227,
-    "output": 1.69246,
-    "cached": 0.84623,
-    "total": 5.02096
-  },
-  "caveat": "Agent token totals are measured; their input/output/cache split is assumed, and the killed-agent and orchestrator figures are declared estimates. The five-decimal total is exact arithmetic over inexact inputs."
+    "input": 0.02186,
+    "cache_write": 68.92347,
+    "cache_read": 167.97146,
+    "output": 55.83382,
+    "total": 292.75063
+  }
 }
