@@ -92,16 +92,36 @@ are documenting." The verifier flagged its own uncertainty, since preferring an
 official primary is orthodox source discipline. Also listed, unresolved.
 
 <!--SPLIT:COST-->
-**That total is exact arithmetic over inexact inputs.** The agent token totals are
-real counts the harness reported on completion. Everything else in the table is not:
-the input/output/cache split is an assumption, because the harness reports one
-combined figure per agent and does not decompose it; the rate-limited agents' share
-is estimated, because they consumed tokens before dying and excluding them would
-understate the bill; and the orchestrating session's share is a declared estimate,
-because the harness exposes a remaining budget rather than a consumed-by-turn ledger.
+**Every figure above is measured.** Earlier versions of this report gave
+**$5.02096** on **2,256,609** tokens, and said that total was "exact arithmetic
+over inexact inputs". The inputs were worse than inexact:
 
-Five decimal places are given because the specification asks for them. They describe
-the arithmetic, not the measurement.
+- **The per-agent "totals" were not billed tokens.** The figure the harness
+  reports when an agent finishes was treated as that agent's consumption. For
+  the 36 agents that reported one, it sums to 6.48 million. Their own
+  transcripts record 215.6 million, most of it cache reads: each call re-sends
+  the agent's growing transcript.
+- **The orchestrating session was declared at 400,000 tokens.** It made 400-odd
+  calls, each re-sending the whole conversation. Measured, its cache reads alone
+  exceed 115 million.
+- **The input/output/cache split was assumed** at 22 / 3 / 75. Measured, cache
+  reads are about 95% of all tokens and output well under 1%. The assumed split
+  was off in the direction that happened to be cheap.
+
+The measurement was available the whole time: every API call writes a usage
+record into its transcript, including the calls of agents later killed by rate
+limits. `scripts/measure_inference_cost.py` sums them, de-duplicating calls
+that span several transcript lines. The transcripts themselves stay outside the
+repository, because they hold the full text of private conversations.
+
+One pricing decision is not in the specification. It lists input, output and
+cached rates but no cache-*write* rate, so cache writes are priced at the input
+rate. That is the specification's only rate for uncached input, and it's below
+what Anthropic itself charges for writes, so the total is not overstated by it.
+
+This is an understatement the size of the one this audit measures: a cost set
+near zero by a method that never looked at the meter, when the meter was there.
+It is corrected here rather than explained away.
 
 <!--SPLIT:SEEDS-->
 ## The codebook's seeds, tested against the record

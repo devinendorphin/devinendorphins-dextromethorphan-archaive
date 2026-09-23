@@ -219,29 +219,29 @@ def main():
 
     # ---- cost ----
     A("## Inference cost of this job\n")
+    A("**Measured, not estimated.** Every API call this job made -- the "
+      "orchestrating session's and every subagent's, including the "
+      f"{cost['subagent_transcripts']} subagents launched and the ones killed by "
+      "rate limits -- left a usage record in its transcript. These are the "
+      "sums, priced at the specification's OpenRouter Opus 5 rates.\n")
     t = cost["tokens"]
     c = cost["cost_usd"]
-    s = cost["assumed_split"]
-    A("| | tokens | rate | cost |")
-    A("|---|---:|---|---:|")
-    A(f"| input | {t['grand_total'] * s['input']:,.0f} | $5.00/Mtok | "
-      f"${c['input']:.5f} |")
-    A(f"| output | {t['grand_total'] * s['output']:,.0f} | $25.00/Mtok | "
-      f"${c['output']:.5f} |")
-    A(f"| cached | {t['grand_total'] * s['cached']:,.0f} | $0.50/Mtok | "
-      f"${c['cached']:.5f} |")
-    A(f"| **total** | **{t['grand_total']:,}** | | **${c['total']:.5f}** |")
+    r = cost["rates_per_mtok"]
+    A("| | tokens | rate per Mtok | cost |")
+    A("|---|---:|---:|---:|")
+    A(f"| input | {t['input']:,} | ${r['input']:.2f} | ${c['input']:.5f} |")
+    A(f"| cache write | {t['cache_write']:,} | ${r['cache_write']:.2f} | "
+      f"${c['cache_write']:.5f} |")
+    A(f"| cache read | {t['cache_read']:,} | ${r['cache_read']:.2f} | "
+      f"${c['cache_read']:.5f} |")
+    A(f"| output | {t['output']:,} | ${r['output']:.2f} | ${c['output']:.5f} |")
+    A(f"| **total** | **{cost['tokens_total']:,}** | | **${c['total']:.5f}** |")
     A("")
-    A("Token counts behind that total:\n")
-    A("| source | tokens | |")
-    A("|---|---:|---|")
-    A(f"| agent totals reported by the harness | {t['measured_agent_total']:,} "
-      f"| measured |")
-    A(f"| one completed agent whose total was not surfaced | "
-      f"{t['imputed_for_unreported_agent']:,} | imputed at the mean |")
-    A(f"| agents killed by session rate limits | "
-      f"{t['killed_agents_estimate']:,} | estimated |")
-    A(f"| orchestrating session | {t['orchestrator_estimate']:,} | estimated |")
+    A("| source | API calls | tokens | cost |")
+    A("|---|---:|---:|---:|")
+    for name, v in cost["by_source"].items():
+        A(f"| {name} | {v['calls']:,} | {sum(v['tokens'].values()):,} | "
+          f"${v['cost_usd']:.5f} |")
     A("")
     A(sec["COST"] + "\n")
 
