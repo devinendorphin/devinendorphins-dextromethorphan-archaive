@@ -22,6 +22,11 @@ sweep writes `sweep_`, and a hit count that ignores it understates which
 conversations are heavy.
 
 Usage: select_verify_export.py <export_corpus.jsonl> <rows_dir> <out_dir>
+
+<out_dir> must be OUTSIDE the repository, e.g. the session scratchpad. The
+input file this writes is whole conversations -- the private record. It was
+once written into audits/power-bending/verify/ and committed, publishing 22
+conversations; .gitignore now refuses that path.
 """
 
 import json

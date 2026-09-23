@@ -10,3 +10,8 @@ exports/
 *.jsonl.gz
 blocks.jsonl
 __pycache__/
+
+# Verifier INPUT is whole conversations -- the private record itself, not a
+# finding about it. It belongs in the scratchpad, never here. Committed once by
+# mistake (c4c1f2f, 22 conversations); see audits/power-bending/REPORT.md.
+audits/power-bending/verify/verify_input*
