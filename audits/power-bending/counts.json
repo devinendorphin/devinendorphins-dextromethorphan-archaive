@@ -13,20 +13,22 @@
     "headline_USER": 0
   },
   "power_bending": {
-    "confirmed_total": 260,
-    "unconfirmed_total": 156,
+    "confirmed_total": 357,
+    "confirmed_cross_conversation": 17,
+    "confirmed_excluding_cross_conversation": 340,
+    "unconfirmed_total": 168,
     "per_code": {
-      "P1": 27,
-      "P2": 36,
-      "P3": 10,
-      "P4": 56,
-      "P5": 40,
+      "P1": 41,
+      "P2": 87,
+      "P3": 13,
+      "P4": 66,
+      "P5": 44,
       "P6": 7,
-      "P7": 50,
-      "P8": 63,
-      "P9": 28,
-      "P10": 24,
-      "P11": 6
+      "P7": 58,
+      "P8": 74,
+      "P9": 30,
+      "P10": 30,
+      "P11": 7
     },
     "per_month": {
       "2024-04": 7,
@@ -37,11 +39,12 @@
       "2026-04": 14,
       "2026-05": 25,
       "2026-06": 33,
-      "2026-07": 141,
-      "2026-08": 25
+      "2026-07": 154,
+      "2026-08": 96,
+      "2026-09": 13
     },
     "per_model_version": {
-      "unrecorded": 247,
+      "unrecorded": 344,
       "Claude Opus 5": 8,
       "Claude Opus 4.8": 3,
       "Claude Fable 5": 2
@@ -79,19 +82,19 @@
       "unconfirmed": 5
     },
     "export": {
-      "confirmed_total": 187,
+      "confirmed_total": 284,
       "per_code": {
-        "P1": 20,
-        "P2": 23,
-        "P3": 6,
-        "P4": 41,
-        "P5": 33,
+        "P1": 34,
+        "P2": 74,
+        "P3": 9,
+        "P4": 51,
+        "P5": 37,
         "P6": 5,
-        "P7": 33,
-        "P8": 42,
-        "P9": 18,
-        "P10": 24,
-        "P11": 6
+        "P7": 41,
+        "P8": 53,
+        "P9": 20,
+        "P10": 30,
+        "P11": 7
       },
       "per_month": {
         "2024-04": 7,
@@ -102,28 +105,30 @@
         "2026-04": 14,
         "2026-05": 23,
         "2026-06": 24,
-        "2026-07": 104
+        "2026-07": 117,
+        "2026-08": 71,
+        "2026-09": 13
       },
       "per_model_version": {
-        "unrecorded": 187
+        "unrecorded": 284
       },
-      "conversations": 24,
-      "unconfirmed": 151
+      "conversations": 34,
+      "unconfirmed": 163
     }
   },
   "kappa": {
-    "P1": 0.156,
-    "P2": 0.193,
-    "P3": 0.38,
-    "P4": 0.17,
-    "P5": 0.18,
+    "P1": 0.551,
+    "P2": 0.654,
+    "P3": 0.793,
+    "P4": 0.585,
+    "P5": 0.654,
     "P6": 0.0,
-    "P7": 0.232,
-    "P8": 0.313,
-    "P9": 0.261,
-    "P10": 0.0,
-    "P11": -0.0,
-    "_units_double_coded": 97
+    "P7": 0.85,
+    "P8": 1.0,
+    "P9": 0.85,
+    "P10": "undefined (no variance)",
+    "P11": "undefined (no variance)",
+    "_units_double_coded": 75
   },
-  "disagreements": 157
+  "disagreements": 39
 }

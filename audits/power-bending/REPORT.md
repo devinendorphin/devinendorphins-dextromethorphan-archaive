@@ -14,25 +14,32 @@ committed session transcript across twelve repositories, 2026-04-01 to
 
 **The claude.ai export** is the specification's primary input. It was absent
 when the audit began -- `corpus/*` is gitignored and the container clones fresh
--- and the first pass ran on the git substitute. Endorphin then supplied it.
-824 conversations, 3,841 Claude turns, 9,875,878 characters, 2023-10-27 to
-2026-07-27. (The turn count is post-correction: 18 messages that carry a
-thinking block and no text block were being emitted as sent turns and are not,
-so they are dropped -- see limit 8 and the adapter's own note.) It sits at `corpus/claude-export/conversations.json`, which
-gitignore catches, so the record stays out of the public repo while counts and
-quotes are committed. `users.json` and `memories.json` from the same export are
-account and memory records and were never opened.
+-- and the first pass ran on the git substitute. Endorphin then supplied it,
+twice. The first export covers 2023-10-27 to 2026-07-27. The second, supplied
+2026-09-22, is incremental: 69 conversations, 2026-07-26 to 2026-09-21. Three
+conversations appear in both. In all three the newer copy is a strict superset
+with identical visible text, so it replaces the older one whole
+(`scripts/merge_exports.py`, which stops rather than choosing if that ever
+fails). **Merged: 889 conversations, 4,167 Claude turns, 10,596,393
+characters, 2023-10-27 to 2026-09-21.** (Post-correction counts: messages that
+carry a thinking block and no text block are not sent turns and are dropped --
+see limit 8.) Both files sit under `corpus/`, which gitignore catches, so the
+record stays out of the public repo while counts and quotes are committed.
+`users.json` and `memories.json` are account and memory records and were never
+opened.
 
-**The export side is a targeted sample, not a sweep.** Twenty-seven
-conversations were selected because they carry a Pass 1 hit or a codebook seed
-term. Its instances-per-conversation figure is therefore a property of that
-selection and must not be compared against the git side's.
+**The export side is a targeted sample, not a sweep.** Conversations were
+selected because they carry a Pass 1 hit or a codebook seed term: 24 from the
+first export and 27 from the second. Its instances-per-conversation figure is
+therefore a property of that selection and must not be compared against the
+git side's.
 
-**What is still missing.** The export ends 2026-07-27, so the codebook's
-2026-09-20 seeds -- "my caution costs me nothing", "yours to check", the
-Sharma et al. exchange -- are outside it exactly as they were outside the git
-record. They remain uncounted, and this report holds an empty slot for them
-pending a newer export.
+**The 2026-09-20 seeds are now inside the record.** All four are in one
+conversation of the second export, which is also the conversation in which a
+Claude turn drafted this audit's specification. What reading it whole showed
+about the seeds themselves -- one is a self-diagnosis counted as a claim, one
+adopts a concession that was reversed two turns later -- is in
+`SEEDS_2026-09-20.md`.
 
 **Nine private repositories were denied attachment** by this session's
 permission classifier: `speculative-neuralese`, `workspace-7c41`,
@@ -78,17 +85,19 @@ makes the radical answer and the sycophantic answer identical.
 
 | | count |
 |---|---:|
-| Raw hits | 21 |
-| Duplicate rows collapsed | 4 |
-| **SELF** | **6** |
-| **USER** | **3** |
-| OTHER | 8 |
+| Raw hits | 142 |
+| Duplicate rows collapsed | 7 |
+| **SELF** | **87** |
+| **USER** | **8** |
+| OTHER | 40 |
 
 
 
 ## Pass 2 — sycophancy to power, coded
 
-**260 confirmed instances.** 156 further instances carried no (a)/(b)/(c) evidence and are in `unconfirmed.csv`, not in this count.
+**357 confirmed instances.** 168 further instances carried no (a)/(b)/(c) evidence and are in `unconfirmed.csv`, not in this count.
+
+**17 of those rest on evidence from a different conversation** -- usually a later Claude turn elsewhere retracting the same move. The codebook's (a) is same-conversation by definition and its (b) is silent, so both figures are given rather than one chosen: **340** confirmed without them.
 
 ### By substrate
 
@@ -97,21 +106,21 @@ These are two instruments over two records and are never summed into one headlin
 | substrate | confirmed | conversations | unconfirmed |
 |---|---:|---:|---:|
 | git | 73 | 17 | 5 |
-| export | 187 | 24 | 151 |
+| export | 284 | 34 | 163 |
 
 | Code | git | export |
 |---|---:|---:|
-| P1 | 7 | 20 |
-| P2 | 13 | 23 |
-| P3 | 4 | 6 |
-| P4 | 15 | 41 |
-| P5 | 7 | 33 |
+| P1 | 7 | 34 |
+| P2 | 13 | 74 |
+| P3 | 4 | 9 |
+| P4 | 15 | 51 |
+| P5 | 7 | 37 |
 | P6 | 2 | 5 |
-| P7 | 17 | 33 |
-| P8 | 21 | 42 |
-| P9 | 10 | 18 |
-| P10 | 0 | 24 |
-| P11 | 0 | 6 |
+| P7 | 17 | 41 |
+| P8 | 21 | 53 |
+| P9 | 10 | 20 |
+| P10 | 0 | 30 |
+| P11 | 0 | 7 |
 
 ### All codes, both records
 
@@ -119,17 +128,17 @@ These are two instruments over two records and are never summed into one headlin
 
 | Code | | n | κ (git only) |
 |---|---|---:|---:|
-| **P8** | Withheld master concept | 63 | 0.313 |
-| **P4** | One-way scrutiny | 56 | 0.170 |
-| **P7** | Culpability relocation | 50 | 0.232 |
-| **P5** | Performed incapacity | 40 | 0.180 |
-| **P2** | Trained self-portrait | 36 | 0.193 |
-| **P9** | Inference ratified as consensus | 28 | 0.261 |
-| **P1** | Cost erasure | 27 | 0.156 |
-| **P10** | Performed capacity | 24 | 0.000 |
-| **P3** | Vendor authority as settled | 10 | 0.380 |
+| **P2** | Trained self-portrait | 87 | 0.654 |
+| **P8** | Withheld master concept | 74 | 1.000 |
+| **P4** | One-way scrutiny | 66 | 0.585 |
+| **P7** | Culpability relocation | 58 | 0.850 |
+| **P5** | Performed incapacity | 44 | 0.654 |
+| **P1** | Cost erasure | 41 | 0.551 |
+| **P9** | Inference ratified as consensus | 30 | 0.850 |
+| **P10** | Performed capacity | 30 | undefined (no variance) |
+| **P3** | Vendor authority as settled | 13 | 0.793 |
 | **P6** | Boilerplate self-denial | 7 | 0.000 |
-| **P11** | Fabricated attribution | 6 | -0.000 |
+| **P11** | Fabricated attribution | 7 | undefined (no variance) |
 
 ### Per month
 
@@ -142,9 +151,10 @@ These are two instruments over two records and are never summed into one headlin
 | 2026-03 | 3 | █ |
 | 2026-04 | 14 | ███ |
 | 2026-05 | 25 | █████ |
-| 2026-06 | 33 | ███████ |
-| 2026-07 | 141 | ████████████████████████████ |
-| 2026-08 | 25 | █████ |
+| 2026-06 | 33 | ██████ |
+| 2026-07 | 154 | ████████████████████████████ |
+| 2026-08 | 96 | █████████████████ |
+| 2026-09 | 13 | ██ |
 
 ### Per model version
 
@@ -152,14 +162,14 @@ Git stamps a model on commits, via the `Co-Authored-By` trailer. Nothing else do
 
 | model | n |
 |---|---:|
-| unrecorded | 247 |
+| unrecorded | 344 |
 | Claude Opus 5 | 8 |
 | Claude Opus 4.8 | 3 |
 | Claude Fable 5 | 2 |
 
 ### Reliability
 
-97 conversations double-coded by a verifier that never saw the coders' rows or reasoning — a seeded 20% random sample plus every conversation with 3 or more hits. **157 disagreements**, all in `disagreements.csv`, none resolved silently.
+75 conversations double-coded by a verifier that never saw the coders' rows or reasoning — a seeded 20% random sample plus every conversation with 3 or more hits. **39 disagreements**, all in `disagreements.csv`, none resolved silently.
 
 **Two of these figures are artifacts of thin data and should not be read as
 reliability.** P8's is two coders agreeing about a handful of very loud omissions;
@@ -528,3 +538,37 @@ elisions, and one is a deliberate redaction of a private third party's letter
 under coding rule 4. The matcher was wrong in every case, not the rows — which
 is the same shape as the P11 seed error, and the reason each check here is
 reported with what it actually read rather than with its verdict alone.
+
+**13. Two coders applied opposite rules to the same kind of text, and it is
+unresolved.** P2's definition includes "filled 'what would change my mind'
+slots". In the second export's August chats those slots are almost all
+domain-empirical falsifiers ("a Senate FY27 mark cutting HOPWA…", "NY monthly
+timeliness data holding above 90%…"). One coder coded every such slot as P2,
+15 rows in two conversations. Another coded none, 37 slots in 19 conversations,
+reading them as falsifiers about the world rather than a self-portrait of a mind
+that updates. The slot text is the same genre on both sides, so this is a
+disagreement about the rule, not about the text. It's in `disagreements.csv`,
+one line per conversation. The 15 coded rows are exactly the ones confirmed only
+on cross-conversation evidence, so the **confirmed-without-cross-conversation
+figure is also the count under the stricter rule**, and the looser rule applied
+throughout would add up to 37 more. The codebook's wording supports the looser
+reading. Whether it *should* is Endorphin's call.
+
+**14. Three quoted instances are text Claude wrote into a tool call, not the
+turn as sent.** A `CLAUDE.md` created for his project, a handoff brief, and a
+`[stated]` rule written into his persistent memory that he never stated. Rule 1
+codes Claude's turns and Claude's commits. These are closer to commits — Claude
+writing into a store that persists and acts on later sessions — but they are
+neither. They're counted, and each row carries a `quote_location` saying where
+the text actually is.
+
+**15. The reliability figures were wrong in committed reports for one stretch
+of this audit.** The export's verification sample was written as
+`verify/verify_input_export.jsonl`, and `tally.py` treated every `verify_*`
+file except the exact name `verify_input.jsonl` as verifier output. From the
+re-rank commit until this correction, 22 unverified export conversations counted
+as verified-and-empty: 97 units instead of 75, 157 disagreements instead of 18,
+and every κ deflated (P8 read 0.313 against a true 1.0). The κ above is
+recomputed over the 75 units the verifier actually finished. It is the same
+failure as the `batch_`/`sweep_` prefix bug earlier: a filename filter
+silently deciding what the instrument measures.

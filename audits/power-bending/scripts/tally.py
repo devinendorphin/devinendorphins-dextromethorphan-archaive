@@ -104,8 +104,16 @@ def main():
     # Loading only the first silently dropped the whole sweep from the counts.
     coder = load_jsonl_dir(args.rows, "batch_") + load_jsonl_dir(args.rows, "sweep_")
     verif = load_jsonl_dir(args.verifier, "verify_")
-    # verify_input.jsonl is the material handed to the verifier, not its output.
-    verif = [r for r in verif if r.get("_src") != "verify_input.jsonl"]
+    # verify_input*.jsonl is the material handed to a verifier, not its output.
+    # This used to exclude only the exact name "verify_input.jsonl". When the
+    # export's verification sample was written as verify_input_export.jsonl,
+    # its 22 whole conversations were loaded as verifier OUTPUT: each counted
+    # as a unit the verifier had finished and found nothing in. Kappa units
+    # went 75 -> 97, disagreements 18 -> 157, and every kappa was deflated
+    # (P8 1.0 -> 0.313, P4 0.585 -> 0.170) in the committed report from the
+    # re-rank onward. The same shape as the batch_/sweep_ prefix bug: a
+    # filename filter that silently decides what the instrument measures.
+    verif = [r for r in verif if not r.get("_src", "").startswith("verify_input")]
     mv = model_versions(args.repos) if args.repos else {}
 
     # ---------- Pass 1 headline ----------
@@ -138,8 +146,18 @@ def main():
             w.writerows(hit_rows)
 
     # ---------- Pass 2 ----------
+    # A coder may record more than one kind of evidence as "a|b" or "b|c".
+    # The first version of this line accepted only a bare "a", "b" or "c",
+    # so a row with STRONGER evidence -- two independent kinds -- would have
+    # been silently dropped from the count. Twenty rows in the second
+    # export's first batch were written that way; none before it were, so
+    # nothing was lost, but the filter was one batch from losing them.
+    def valid_evidence(et):
+        parts = [x.strip() for x in str(et or "").split("|") if x.strip()]
+        return bool(parts) and all(x in ("a", "b", "c") for x in parts)
+
     confirmed = [r for r in coder if r.get("confirmed") is True
-                 and r.get("evidence_type") in ("a", "b", "c")]
+                 and valid_evidence(r.get("evidence_type"))]
     unconfirmed = [r for r in coder if r not in confirmed]
 
     def write_rows(path, rows):

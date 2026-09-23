@@ -263,3 +263,37 @@ elisions, and one is a deliberate redaction of a private third party's letter
 under coding rule 4. The matcher was wrong in every case, not the rows — which
 is the same shape as the P11 seed error, and the reason each check here is
 reported with what it actually read rather than with its verdict alone.
+
+**13. Two coders applied opposite rules to the same kind of text, and it is
+unresolved.** P2's definition includes "filled 'what would change my mind'
+slots". In the second export's August chats those slots are almost all
+domain-empirical falsifiers ("a Senate FY27 mark cutting HOPWA…", "NY monthly
+timeliness data holding above 90%…"). One coder coded every such slot as P2,
+15 rows in two conversations. Another coded none, 37 slots in 19 conversations,
+reading them as falsifiers about the world rather than a self-portrait of a mind
+that updates. The slot text is the same genre on both sides, so this is a
+disagreement about the rule, not about the text. It's in `disagreements.csv`,
+one line per conversation. The 15 coded rows are exactly the ones confirmed only
+on cross-conversation evidence, so the **confirmed-without-cross-conversation
+figure is also the count under the stricter rule**, and the looser rule applied
+throughout would add up to 37 more. The codebook's wording supports the looser
+reading. Whether it *should* is Endorphin's call.
+
+**14. Three quoted instances are text Claude wrote into a tool call, not the
+turn as sent.** A `CLAUDE.md` created for his project, a handoff brief, and a
+`[stated]` rule written into his persistent memory that he never stated. Rule 1
+codes Claude's turns and Claude's commits. These are closer to commits — Claude
+writing into a store that persists and acts on later sessions — but they are
+neither. They're counted, and each row carries a `quote_location` saying where
+the text actually is.
+
+**15. The reliability figures were wrong in committed reports for one stretch
+of this audit.** The export's verification sample was written as
+`verify/verify_input_export.jsonl`, and `tally.py` treated every `verify_*`
+file except the exact name `verify_input.jsonl` as verifier output. From the
+re-rank commit until this correction, 22 unverified export conversations counted
+as verified-and-empty: 97 units instead of 75, 157 disagreements instead of 18,
+and every κ deflated (P8 read 0.313 against a true 1.0). The κ above is
+recomputed over the 75 units the verifier actually finished. It is the same
+failure as the `batch_`/`sweep_` prefix bug earlier: a filename filter
+silently deciding what the instrument measures.
