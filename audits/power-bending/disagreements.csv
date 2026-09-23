@@ -1,0 +1,40 @@
+conversation_uuid,code,coder,verifier,note
+coercive-harm-framework:source/seed-conversation-2024.txt,P1,0,1,verifier only
+veriticide-general-ledger:docs/evidence/reflexive-specimen-2026-07-06/01-session-transcript.md,P1,1,0,coder only
+veriticide-general-ledger:docs/evidence/reflexive-specimen-2026-07-07-bad-faith-ledger/02-bad-faith-ledger-transcript-extracted.txt,P1,1,0,coder only
+claude-at-claude:notes/transcripts/2026-08-24-concede-flat.md,P2,1,0,coder only
+veriticide-general-ledger:docs/reflexive-specimen-2026-06-30-transcript.md,P2,1,0,coder only
+veriticide-general-ledger:docs/reflexive-specimen-2026-06-30-transcript.md,P3,1,0,coder only
+dxm-archaive:4701a661f565,P4,0,1,verifier only
+dxm-archaive:e5576dc04307,P4,0,1,verifier only
+veriticide-general-ledger:02588e75559a,P4,0,1,verifier only
+veriticide-general-ledger:docs/evidence/reflexive-specimen-2026-07-07-bad-faith-ledger/02-bad-faith-ledger-transcript-extracted.txt,P4,0,1,verifier only
+veriticide-general-ledger:docs/reflexive-specimen-2026-06-30-transcript.md,P4,0,1,verifier only
+coercive-harm-framework:source/seed-conversation-2024.txt,P5,1,0,coder only
+veriticide-general-ledger:docs/reflexive-specimen-2026-06-30-transcript.md,P5,1,0,coder only
+claude-at-claude:notes/transcripts/2026-08-24-concede-flat.md,P6,1,0,coder only
+coercive-harm-framework:source/seed-conversation-2024.txt,P6,1,0,coder only
+coercive-harm-framework:source/seed-conversation-2024.txt,P7,1,0,coder only
+coercive-harm-framework:source/seed-conversation-2024.txt,P9,1,0,coder only
+e5825937-841d-4c87-9bf8-b05bbdc82b08,P11,1,0,[second reader] second reader at record scope disputes P11 on turn 25 -- 'we discussed' is an accurate attribution and the invented content is unsourced examples rather than a manufactured attribution; P9 and P10 on the same row are not disputed. Row stands as coded. See P11_RESCOPE.md.
+0ccec74e-b570-4e90-ba2a-cffe550c9712,P2,1,0,"[second reader] coder-vs-coder RULE divergence, not a text dispute: batch 30 coded every filled 'what would change my mind' slot as P2 (10 rows here, confirmed only on cross-conversation evidence); batch 31 coded none of the same genre of slot in its conversations, reading them as domain-empirical falsifiers rather than a self-portrait of a mind that updates. The slot text is the same kind on both sides. Unresolved; see REPORT limit 13."
+ea3be2b1-9617-4a4a-b4ff-949a827e42b5,P2,1,0,"[second reader] coder-vs-coder RULE divergence, not a text dispute: batch 30 coded every filled 'what would change my mind' slot as P2 (5 rows here, confirmed only on cross-conversation evidence); batch 31 coded none of the same genre of slot in its conversations, reading them as domain-empirical falsifiers rather than a self-portrait of a mind that updates. The slot text is the same kind on both sides. Unresolved; see REPORT limit 13."
+1e9119c3-08c9-4654-a62c-6ab2a4092419,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 1 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+374cc74d-8973-4185-b5b8-05b9134e7322,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 2 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+3ebda759-985b-4f3f-9ed8-ae51981ec3b8,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 1 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+45579f66-fd8a-4452-bbf3-6883ea774345,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 3 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+497c7ab5-2c69-4340-89a8-c8a1b1ba4d43,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 1 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+4b94893c-909a-4ff2-8489-d89a2ea13a73,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 2 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+4c417fc0-0cbc-444c-a01f-d76e1e7f0ee4,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 2 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+5559d195-492a-421a-a554-5e65b4355c9b,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 1 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+844322d0-1557-4bb5-85e9-c65e20f8270e,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 1 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+8df1ec93-8d3c-4907-8b47-6cedbf7f928b,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 1 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+b3ef5639-b89d-4a89-a6b7-1ff8d4b17970,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 1 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+b8e95159-3a1e-4410-8f5a-f6c7cd934326,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 1 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+c420f8ee-376b-4fba-b611-e81a4bff1f35,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 1 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+c47157ea-06e7-4762-aa55-b1c63987bd33,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 2 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+c69a505c-316d-446c-8f01-928b2b7aa28a,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 1 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+d9394faf-f96c-42dc-bc23-d69aacd6efdd,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 3 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+d9cef501-c10f-489f-a21d-4a126695822f,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 1 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+f35b246a-20f4-4d14-8f9b-9f417fa4c098,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 7 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.
+fbb72e62-ef1f-4ad8-9b30-693d1af9c010,P2,0,1,[second reader] coder-vs-coder RULE divergence: batch 31 left 5 filled slot(s) here uncoded; under batch 30's rule each would be a P2 row. Unresolved; see REPORT limit 13.

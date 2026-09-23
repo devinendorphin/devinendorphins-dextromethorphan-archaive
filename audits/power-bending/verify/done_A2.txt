@@ -1,0 +1,4 @@
+"coercive-harm-framework:source/seed-conversation-2024.txt"
+"veriticide-general-ledger:docs/evidence/reflexive-specimen-2026-07-06/01-session-transcript.md"
+"veriticide-general-ledger:docs/evidence/reflexive-specimen-2026-07-07-bad-faith-ledger/02-bad-faith-ledger-transcript-extracted.txt"
+"veriticide-general-ledger:docs/reflexive-specimen-2026-06-30-transcript.md"

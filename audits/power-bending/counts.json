@@ -1,0 +1,134 @@
+{
+  "lexical": {
+    "total_hits": 27,
+    "by_scope": {
+      "OTHER": 12,
+      "SELF": 15
+    },
+    "by_scope_deduplicated": {
+      "OTHER": 7,
+      "SELF": 10
+    },
+    "headline_SELF": 10,
+    "headline_USER": 0
+  },
+  "power_bending": {
+    "confirmed_total": 357,
+    "confirmed_cross_conversation": 17,
+    "confirmed_excluding_cross_conversation": 340,
+    "unconfirmed_total": 168,
+    "per_code": {
+      "P1": 41,
+      "P2": 87,
+      "P3": 13,
+      "P4": 66,
+      "P5": 44,
+      "P6": 7,
+      "P7": 58,
+      "P8": 74,
+      "P9": 30,
+      "P10": 30,
+      "P11": 7
+    },
+    "per_month": {
+      "2024-04": 7,
+      "2024-05": 6,
+      "2024-12": 5,
+      "2025-03": 1,
+      "2026-03": 3,
+      "2026-04": 14,
+      "2026-05": 25,
+      "2026-06": 33,
+      "2026-07": 154,
+      "2026-08": 96,
+      "2026-09": 13
+    },
+    "per_model_version": {
+      "unrecorded": 344,
+      "Claude Opus 5": 8,
+      "Claude Opus 4.8": 3,
+      "Claude Fable 5": 2
+    }
+  },
+  "by_substrate": {
+    "git": {
+      "confirmed_total": 73,
+      "per_code": {
+        "P1": 7,
+        "P2": 13,
+        "P3": 4,
+        "P4": 15,
+        "P5": 7,
+        "P6": 2,
+        "P7": 17,
+        "P8": 21,
+        "P9": 10,
+        "P10": 0,
+        "P11": 0
+      },
+      "per_month": {
+        "2026-05": 2,
+        "2026-06": 9,
+        "2026-07": 37,
+        "2026-08": 25
+      },
+      "per_model_version": {
+        "unrecorded": 60,
+        "Claude Opus 5": 8,
+        "Claude Opus 4.8": 3,
+        "Claude Fable 5": 2
+      },
+      "conversations": 17,
+      "unconfirmed": 5
+    },
+    "export": {
+      "confirmed_total": 284,
+      "per_code": {
+        "P1": 34,
+        "P2": 74,
+        "P3": 9,
+        "P4": 51,
+        "P5": 37,
+        "P6": 5,
+        "P7": 41,
+        "P8": 53,
+        "P9": 20,
+        "P10": 30,
+        "P11": 7
+      },
+      "per_month": {
+        "2024-04": 7,
+        "2024-05": 6,
+        "2024-12": 5,
+        "2025-03": 1,
+        "2026-03": 3,
+        "2026-04": 14,
+        "2026-05": 23,
+        "2026-06": 24,
+        "2026-07": 117,
+        "2026-08": 71,
+        "2026-09": 13
+      },
+      "per_model_version": {
+        "unrecorded": 284
+      },
+      "conversations": 34,
+      "unconfirmed": 163
+    }
+  },
+  "kappa": {
+    "P1": 0.551,
+    "P2": 0.654,
+    "P3": 0.793,
+    "P4": 0.585,
+    "P5": 0.654,
+    "P6": 0.0,
+    "P7": 0.85,
+    "P8": 1.0,
+    "P9": 0.85,
+    "P10": "undefined (no variance)",
+    "P11": "undefined (no variance)",
+    "_units_double_coded": 75
+  },
+  "disagreements": 39
+}

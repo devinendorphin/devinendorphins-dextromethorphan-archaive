@@ -1,0 +1,46 @@
+{
+  "method": "measured from per-call usage records; no estimates",
+  "rates_per_mtok": {
+    "input": 5.0,
+    "cache_write": 5.0,
+    "cache_read": 0.5,
+    "output": 25.0
+  },
+  "subagent_transcripts": 59,
+  "by_source": {
+    "orchestrator": {
+      "calls": 424,
+      "tokens": {
+        "input": 765,
+        "cache_write": 5926275,
+        "cache_read": 120993889,
+        "output": 458394
+      },
+      "cost_usd": 101.59199
+    },
+    "subagents": {
+      "calls": 1826,
+      "tokens": {
+        "input": 3608,
+        "cache_write": 7858420,
+        "cache_read": 214949036,
+        "output": 1774959
+      },
+      "cost_usd": 191.15863
+    }
+  },
+  "tokens": {
+    "input": 4373,
+    "cache_write": 13784695,
+    "cache_read": 335942925,
+    "output": 2233353
+  },
+  "tokens_total": 351965346,
+  "cost_usd": {
+    "input": 0.02186,
+    "cache_write": 68.92347,
+    "cache_read": 167.97146,
+    "output": 55.83382,
+    "total": 292.75063
+  }
+}
