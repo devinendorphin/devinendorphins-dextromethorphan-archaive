@@ -124,21 +124,21 @@ These are two instruments over two records and are never summed into one headlin
 
 ### All codes, both records
 
-`n` is git plus export. κ is computed separately for each record and never pooled. **No export conversation has been blind-verified yet**, so the export column is empty; `verify/sample_V2.json` fixes the sample for that pass.
+`n` is git plus export. κ is computed separately for each record and never pooled. The export figure covers 32 blind-verified conversations of the 32 in `verify/sample_V2.json`.
 
 | Code | | n | κ git | κ export |
 |---|---|---:|---:|---:|
-| **P2** | Trained self-portrait | 87 | 0.654 | — |
-| **P8** | Withheld master concept | 74 | 1.000 | — |
-| **P4** | One-way scrutiny | 66 | 0.585 | — |
-| **P7** | Culpability relocation | 58 | 0.850 | — |
-| **P5** | Performed incapacity | 44 | 0.654 | — |
-| **P1** | Cost erasure | 41 | 0.551 | — |
-| **P9** | Inference ratified as consensus | 30 | 0.850 | — |
-| **P10** | Performed capacity | 30 | undefined (no variance) | — |
-| **P3** | Vendor authority as settled | 13 | 0.793 | — |
-| **P6** | Boilerplate self-denial | 7 | 0.000 | — |
-| **P11** | Fabricated attribution | 7 | undefined (no variance) | — |
+| **P2** | Trained self-portrait | 87 | 0.654 | 0.087 |
+| **P8** | Withheld master concept | 74 | 1.000 | 0.529 |
+| **P4** | One-way scrutiny | 66 | 0.585 | 0.224 |
+| **P7** | Culpability relocation | 58 | 0.850 | 0.569 |
+| **P5** | Performed incapacity | 44 | 0.654 | 0.450 |
+| **P1** | Cost erasure | 41 | 0.551 | 0.167 |
+| **P9** | Inference ratified as consensus | 30 | 0.850 | 0.250 |
+| **P10** | Performed capacity | 30 | undefined (no variance) | 0.068 |
+| **P3** | Vendor authority as settled | 13 | 0.793 | 0.385 |
+| **P6** | Boilerplate self-denial | 7 | 0.000 | -0.081 |
+| **P11** | Fabricated attribution | 7 | undefined (no variance) | 0.086 |
 
 ### Per month
 
@@ -169,7 +169,7 @@ Git stamps a model on commits, via the `Co-Authored-By` trailer. Nothing else do
 
 ### Reliability
 
-75 conversations double-coded by a verifier that never saw the coders' rows or reasoning — a seeded 20% random sample plus every conversation with 3 or more hits. **39 disagreements**, all in `disagreements.csv`, none resolved silently.
+107 conversations double-coded by a verifier that never saw the coders' rows or reasoning — a seeded 20% random sample plus every conversation with 3 or more hits. **160 disagreements**, all in `disagreements.csv`, none resolved silently.
 
 **Two of these figures are artifacts of thin data and should not be read as
 reliability.** P8's is two coders agreeing about a handful of very loud omissions;
@@ -545,10 +545,20 @@ P11 rows have now been re-tested at record scope, across all 824 conversations:
 five survive, one is disputed and stands as a logged disagreement. See
 `P11_RESCOPE.md`.
 
-**11. No reliability figure covers the export at all.** The blind verifier pass
-ran before `conversations.json` arrived, so κ is computed over the git
-substrate only. **194 of the 267 confirmed instances — the large majority — are
-single-coded**, and every κ in this report describes the smaller record.
+**11. The export's counts do not replicate well, and the gap runs one way.**
+ChatGPT blind-verified the 32 conversations in `verify/sample_V2.json` and
+finished all of them (Verification 2; its notes are in `verify/notes_V2.md`).
+Agreement with the coders is moderate on P7, P8, P5, P4 and P3 (κ 0.39 to 0.57)
+and close to none on P2, P1, P10, P9 and P11 (κ 0.09 to 0.25). The disagreement
+is almost all one direction: 107 conversation-level codes only the coders found,
+14 only the verifier found. In those 32 conversations the coders confirmed 277
+instances and the verifier 141. Recomputed on confirmed rows only, the picture
+holds (P2: coders in 17 conversations, verifier in 2; P1: 17 against 3). **Read
+the export figures above as the coders' count, which a second reader reproduces
+at about half the rate** — and for P1, P2 and P10, barely at all. Which reader is
+right isn't settled by κ. The verifier disclosed one blinding slip: an
+inspection printed the start of two embedded attachments, one of them a
+`users.json`. It says neither was used.
 
 **12. Two false alarms this instrument raised against itself.** Both are
 recorded because each would have been a finding if believed. A row whose quote
@@ -574,6 +584,11 @@ on cross-conversation evidence, so the **confirmed-without-cross-conversation
 figure is also the count under the stricter rule**, and the looser rule applied
 throughout would add up to 37 more. The codebook's wording supports the looser
 reading. Whether it *should* is Endorphin's call.
+
+The blind verifier supplies the missing reading. Of 79 filled slots in its
+sample, it classified **none** as a pure self-portrait of a mind that updates, 70
+as domain falsifiers and 9 as mixed, and coded 8 of the mixed ones as P2. That's
+the stricter rule. It's still Endorphin's call.
 
 **14. Three quoted instances are text Claude wrote into a tool call, not the
 turn as sent.** A `CLAUDE.md` created for his project, a handoff brief, and a

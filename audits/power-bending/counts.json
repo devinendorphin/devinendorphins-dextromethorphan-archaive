@@ -117,18 +117,18 @@
     }
   },
   "kappa": {
-    "P1": 0.551,
-    "P2": 0.654,
-    "P3": 0.793,
-    "P4": 0.585,
-    "P5": 0.654,
-    "P6": 0.0,
-    "P7": 0.85,
-    "P8": 1.0,
-    "P9": 0.85,
-    "P10": "undefined (no variance)",
-    "P11": "undefined (no variance)",
-    "_units_double_coded": 75,
+    "P1": 0.31,
+    "P2": 0.248,
+    "P3": 0.547,
+    "P4": 0.502,
+    "P5": 0.611,
+    "P6": -0.027,
+    "P7": 0.764,
+    "P8": 0.765,
+    "P9": 0.538,
+    "P10": 0.303,
+    "P11": 0.247,
+    "_units_double_coded": 107,
     "_by_substrate": {
       "git": {
         "P1": 0.551,
@@ -143,8 +143,22 @@
         "P10": "undefined (no variance)",
         "P11": "undefined (no variance)",
         "_units_double_coded": 75
+      },
+      "export": {
+        "P1": 0.167,
+        "P2": 0.087,
+        "P3": 0.385,
+        "P4": 0.224,
+        "P5": 0.45,
+        "P6": -0.081,
+        "P7": 0.569,
+        "P8": 0.529,
+        "P9": 0.25,
+        "P10": 0.068,
+        "P11": 0.086,
+        "_units_double_coded": 32
       }
     }
   },
-  "disagreements": 39
+  "disagreements": 160
 }
