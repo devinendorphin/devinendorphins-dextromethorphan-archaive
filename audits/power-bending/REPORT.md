@@ -559,7 +559,16 @@ the export figures above as the coders' count, which a second reader reproduces
 at about half the rate** — and for P1, P2 and P10, barely at all. κ measures agreement, not accuracy. Either reader can be wrong, and both can be
 wrong in the same place: two language models trained on overlapping text can
 share a blind spot, and agreement then scores it as reliability. Only a reader
-outside both models, judging disagreements against the transcripts, tests that. The verifier disclosed one blinding slip: an
+outside both models, judging disagreements against the transcripts, tests that.
+
+Both can also be right. Where a definition leaves room, two careful readers can
+each apply it correctly and land differently, and the disagreement then marks
+ambiguity in the codebook rather than an error in a reader. The pattern points
+that way. The codes that failed to replicate are the ones whose definitions
+moved or were disputed during the audit: P2 (the slot rule), P1 (re-keyed),
+P10 and P11 (added after most coding was done), P9 (its seed withdrawn, four rows
+reversed). The codes with concrete, stable definitions held best: P7 and P8.
+That's a reading of the pattern, not a proof. The verifier disclosed one blinding slip: an
 inspection printed the start of two embedded attachments, one of them a
 `users.json`. It says neither was used.
 
