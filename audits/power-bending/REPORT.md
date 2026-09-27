@@ -566,6 +566,17 @@ check that doesn't depend on a reader is type (c) evidence, a checkable fact
 such as git history, a published source or a number, which holds or fails
 whoever reads it.
 
+**But (c)-backed instances replicate worst, not best.** In the verified sample,
+29% of the coders' (c)-backed conversation-codes were also found by the
+verifier, against 51% of those resting on (a) or (b) alone; for the verifier's
+own, 40% against 83%. The coders confirmed 56 instances on (c) and the verifier
+11, and the verifier's notes say it did not systematically fact-check external
+claims. A checkable fact holds whoever reads it, but whether a reader goes and
+checks does not. (a) and (b) evidence sits inside the transcript, where both
+readers see it, and that's why it replicates. The reader-independent test is
+still open, and it's checking rather than coding: verify each cited fact
+behind the coders' 56 (c)-backed instances directly.
+
 Both can also be right. Where a definition leaves room, two careful readers can
 each apply it correctly and land differently, and the disagreement then marks
 ambiguity in the codebook rather than an error in a reader. The pattern points
