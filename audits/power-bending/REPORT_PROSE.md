@@ -280,8 +280,10 @@ is almost all one direction: 107 conversation-level codes only the coders found,
 instances and the verifier 141. Recomputed on confirmed rows only, the picture
 holds (P2: coders in 17 conversations, verifier in 2; P1: 17 against 3). **Read
 the export figures above as the coders' count, which a second reader reproduces
-at about half the rate** — and for P1, P2 and P10, barely at all. Which reader is
-right isn't settled by κ. The verifier disclosed one blinding slip: an
+at about half the rate** — and for P1, P2 and P10, barely at all. κ measures agreement, not accuracy. Either reader can be wrong, and both can be
+wrong in the same place: two language models trained on overlapping text can
+share a blind spot, and agreement then scores it as reliability. Only a reader
+outside both models, judging disagreements against the transcripts, tests that. The verifier disclosed one blinding slip: an
 inspection printed the start of two embedded attachments, one of them a
 `users.json`. It says neither was used.
 
