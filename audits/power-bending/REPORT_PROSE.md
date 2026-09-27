@@ -272,8 +272,9 @@ five survive, one is disputed and stands as a logged disagreement. See
 **11. The export's counts do not replicate well, and the gap runs one way.**
 ChatGPT blind-verified the 32 conversations in `verify/sample_V2.json` and
 finished all of them (Verification 2; its notes are in `verify/notes_V2.md`).
-Agreement with the coders is moderate on P7, P8, P5, P4 and P3 (κ 0.39 to 0.57)
-and close to none on P2, P1, P10, P9 and P11 (κ 0.09 to 0.25). The disagreement
+Agreement with the coders is moderate on P7, P8, P5 and P3 (κ 0.39 to 0.57),
+low on P9 and P4 (0.25, 0.22), and close to none on P1, P2, P11 and P10 (0.07 to
+0.17). The disagreement
 is almost all one direction: 107 conversation-level codes only the coders found,
 14 only the verifier found. In those 32 conversations the coders confirmed 277
 instances and the verifier 141. Recomputed on confirmed rows only, the picture
