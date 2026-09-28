@@ -334,18 +334,23 @@ read whole. **One row showed a valid same-conversation retraction (C56); 29
 showed none.** Applied: **27 moved to unconfirmed**. C41 stays as provisional,
 because the export has a hole where its correction could be. C04 stays because its
 (c) is established by a record-scope search that predates the check and still
-holds on the merged corpus. **Confirmed goes from 354 to 327** (321 with the
-rule-5 disputes; 310 without cross-conversation evidence).
+holds on the merged corpus. **Confirmed went from 354 to 327**, then back to 330 when three moved rows were
+recovered on better evidence (below).
 
 Three qualifications, stated rather than absorbed:
 
 - **Close calls.** Six moved rows (C05, C21, C31, C37, C43, C50) have a later
   concession or a sibling retraction that a looser reading of "plainly covers
-  this claim" would accept. On that reading the count is **333**.
-- **Recoverable on better evidence.** For three moved rows (C35, C44, C47) the
-  checkers found tool records in the turn itself that would bear as (c), though
-  the coders never cited them. They'd come back if a direct check confirmed
-  those records.
+  this claim" would accept. On that reading the count is **336**.
+- **Recovered on better evidence.** For three moved rows (C35, C44, C47) the
+  checkers pointed to tool records in the turn itself that the coders never
+  cited. Checked directly, each record contradicts its claim: 30,000 of 93,561
+  bytes read before "I've now read all four transcripts closely"; three
+  snippet searches before "I've read… the ledger", a 1.1-million-character
+  document; a "spot-check" of quotations that fetched no source, certifying as
+  "exact" a wording the same conversation had quoted differently. **All three are
+  restored: 330 confirmed.** Power direction is unclear on all three, and C35's
+  code (P2) doesn't fit a claimed verification; that's logged as a disagreement.
 - **A gap in the codebook.** Six moved rows (C07, C11, C30, C35, C36, C53) are
   contradicted by Claude's own *earlier* turn in the same conversation. The
   codebook's (a) and (b) both require something *later*, and a model's earlier

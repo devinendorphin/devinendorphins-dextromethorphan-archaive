@@ -161,6 +161,9 @@ Rule written and committed before any check: `AB_RULE.md`. Row-level results:
 | stays: provisional, hole in the export where the correction could be | 1 (C41) |
 | stays: valid (b) | 1 (C56) |
 
-Confirmed: **354 → 327**. The close calls, the rows recoverable on better (c)
+Confirmed: **354 → 327**, then **330** after three moved rows (C35, C44, C47)
+were restored: each turn's own tool record, which the coders never cited,
+contradicts its claim. Power direction is unclear on all three, and C35's P2 code
+doesn't fit a claimed verification; that's logged as a disagreement. The close calls, the rows recoverable on better (c)
 evidence, and the codebook's missing evidence type for a self-contradiction are
 set out in the report under limit 11.

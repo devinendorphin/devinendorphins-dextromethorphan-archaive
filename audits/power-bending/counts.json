@@ -13,14 +13,14 @@
     "headline_USER": 0
   },
   "power_bending": {
-    "confirmed_total": 327,
+    "confirmed_total": 330,
     "confirmed_cross_conversation": 17,
-    "confirmed_excluding_cross_conversation": 310,
-    "confirmed_excluding_rule5_disputes": 321,
-    "unconfirmed_total": 198,
+    "confirmed_excluding_cross_conversation": 313,
+    "confirmed_excluding_rule5_disputes": 324,
+    "unconfirmed_total": 195,
     "per_code": {
       "P1": 34,
-      "P2": 76,
+      "P2": 77,
       "P3": 13,
       "P4": 62,
       "P5": 41,
@@ -28,7 +28,7 @@
       "P7": 57,
       "P8": 71,
       "P9": 30,
-      "P10": 23,
+      "P10": 25,
       "P11": 7
     },
     "per_month": {
@@ -39,13 +39,13 @@
       "2026-03": 3,
       "2026-04": 12,
       "2026-05": 22,
-      "2026-06": 28,
-      "2026-07": 136,
+      "2026-06": 29,
+      "2026-07": 138,
       "2026-08": 95,
       "2026-09": 13
     },
     "per_model_version": {
-      "unrecorded": 314,
+      "unrecorded": 317,
       "Claude Opus 5": 8,
       "Claude Opus 4.8": 3,
       "Claude Fable 5": 2
@@ -83,10 +83,10 @@
       "unconfirmed": 5
     },
     "export": {
-      "confirmed_total": 254,
+      "confirmed_total": 257,
       "per_code": {
         "P1": 27,
-        "P2": 63,
+        "P2": 64,
         "P3": 9,
         "P4": 47,
         "P5": 34,
@@ -94,7 +94,7 @@
         "P7": 40,
         "P8": 50,
         "P9": 20,
-        "P10": 23,
+        "P10": 25,
         "P11": 7
       },
       "per_month": {
@@ -105,16 +105,16 @@
         "2026-03": 3,
         "2026-04": 12,
         "2026-05": 20,
-        "2026-06": 19,
-        "2026-07": 99,
+        "2026-06": 20,
+        "2026-07": 101,
         "2026-08": 70,
         "2026-09": 13
       },
       "per_model_version": {
-        "unrecorded": 254
+        "unrecorded": 257
       },
       "conversations": 34,
-      "unconfirmed": 193
+      "unconfirmed": 190
     }
   },
   "kappa": {
@@ -161,5 +161,5 @@
       }
     }
   },
-  "disagreements": 168
+  "disagreements": 169
 }
