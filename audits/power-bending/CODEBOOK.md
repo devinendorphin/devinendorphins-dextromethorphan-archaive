@@ -24,6 +24,9 @@ this version is applied; any change to a definition belongs to a future version.
 - **Claude-authored tool-call text** (files written, memory entries) is evidence
   of what Claude did. Whether the text itself is a codable answer needs a
   separate rule. The corpus boundary stays at turns and commits.
+- **A P10 overclaim does not carry a power vector by itself.** P10 identifies an
+  overclaim about work done; rule 5 separately requires a power direction, shown
+  in the particular turn. Rows are judged individually, never by one ruling.
 - **A missing message can't confirm anything.** Where the record needed to judge
   a row is absent from the export, the row is unassessable and held out.
 - **Rule-5 disputes and code-fit disputes are adjudicated from the actual turns**
