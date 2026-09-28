@@ -160,9 +160,11 @@ def main():
     # means the record needed to judge the row is missing from the export (a
     # missing message cannot confirm anything); `out_of_boundary` means the
     # quoted text is Claude-authored tool-call text, outside the corpus
-    # boundary of turns and commits. Both are decisions of 2026-09-28. They are
-    # excluded from the confirmed count and written to held_out.csv.
-    HELD = ("unassessable", "out_of_boundary")
+    # boundary of turns and commits. Both are decisions of 2026-09-28.
+    # `duplicate` is a second copy of an instance already counted (same turn,
+    # code and quote, from an overlapping sweep). All are excluded from the
+    # confirmed count and written to held_out.csv.
+    HELD = ("unassessable", "out_of_boundary", "duplicate")
     held_out = [r for r in coder if r.get("status") in HELD]
     confirmed = [r for r in coder if r.get("confirmed") is True
                  and valid_evidence(r.get("evidence_type"))

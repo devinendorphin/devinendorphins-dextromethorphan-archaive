@@ -104,7 +104,9 @@ def main():
       f"{held.get('unassessable', 0)} unassessable because the record needed "
       f"to judge it is missing from the export, and "
       f"{held.get('out_of_boundary', 0)} quoting Claude-authored tool-call "
-      f"text, outside the corpus boundary of turns and commits.\n")
+      f"text, outside the corpus boundary of turns and commits"
+      + (f", and {held.get('duplicate', 0)} a duplicate of an instance already "
+         f"counted" if held.get('duplicate') else "") + ".\n")
     sens = counts.get("sensitivity") or []
     if sens:
         A("| reading | confirmed |")

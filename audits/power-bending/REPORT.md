@@ -95,16 +95,16 @@ makes the radical answer and the sycophantic answer identical.
 
 ## Pass 2 — sycophancy to power, coded
 
-**328 confirmed instances: a provisional coder count.** It stays provisional until the rule-5 disputes and the statuses below are adjudicated. 195 further instances carried no (a)/(b)/(c) evidence and are in `unconfirmed.csv`. 2 are held out of both, in `held_out.csv`: 1 unassessable because the record needed to judge it is missing from the export, and 1 quoting Claude-authored tool-call text, outside the corpus boundary of turns and commits.
+**327 confirmed instances: a provisional coder count.** It stays provisional until the rule-5 disputes and the statuses below are adjudicated. 195 further instances carried no (a)/(b)/(c) evidence and are in `unconfirmed.csv`. 3 are held out of both, in `held_out.csv`: 1 unassessable because the record needed to judge it is missing from the export, and 1 quoting Claude-authored tool-call text, outside the corpus boundary of turns and commits, and 1 a duplicate of an instance already counted.
 
 | reading | confirmed |
 |---|---:|
-| **primary: committed strict rule, rule-5 disputes kept, turns and commits only** | **328** |
-| rule-5 disputes accepted (no power vector) | 322 |
-| looser reading of the six close calls | 334 |
-| earlier self-contradiction counted as evidence | 333 |
-| Claude-authored tool-call text counted | 329 |
-| without cross-conversation evidence | 311 |
+| **primary: committed strict rule, rule-5 disputes kept, turns and commits only** | **327** |
+| rule-5 disputes accepted (no power vector) | 321 |
+| looser reading of the six close calls | 333 |
+| earlier self-contradiction counted as evidence | 332 |
+| Claude-authored tool-call text counted | 328 |
+| without cross-conversation evidence | 310 |
 
 Every row is the primary count with one decision changed. Rule-5 disputes are six rows the direct check found factually false but judged to carry no power vector; they stay in the primary count as logged disagreements until they are adjudicated from their turns (`c_check/C_CHECK.md`). The close calls, the self-contradiction set and the tool-call rows are set out in limits 11 and 14. Cross-conversation evidence: the codebook's (a) is same-conversation by definition and its (b) is silent.
 
@@ -115,7 +115,7 @@ These are two instruments over two records and are never summed into one headlin
 | substrate | confirmed | conversations | unconfirmed |
 |---|---:|---:|---:|
 | git | 73 | 17 | 5 |
-| export | 255 | 34 | 190 |
+| export | 254 | 34 | 190 |
 
 | Code | git | export |
 |---|---:|---:|
@@ -128,7 +128,7 @@ These are two instruments over two records and are never summed into one headlin
 | P7 | 17 | 40 |
 | P8 | 21 | 50 |
 | P9 | 10 | 19 |
-| P10 | 0 | 24 |
+| P10 | 0 | 23 |
 | P11 | 0 | 5 |
 
 ### All codes, both records
@@ -144,7 +144,7 @@ These are two instruments over two records and are never summed into one headlin
 | **P5** | Performed incapacity | 41 | 0.654 | 0.450 |
 | **P1** | Cost erasure | 34 | 0.551 | 0.167 |
 | **P9** | Inference ratified as consensus | 29 | 0.850 | 0.250 |
-| **P10** | Performed capacity | 24 | undefined (no variance) | 0.068 |
+| **P10** | Performed capacity | 23 | undefined (no variance) | 0.068 |
 | **P3** | Vendor authority as settled | 13 | 0.793 | 0.385 |
 | **P6** | Boilerplate self-denial | 7 | 0.000 | -0.081 |
 | **P11** | Fabricated attribution | 5 | undefined (no variance) | 0.086 |
@@ -161,7 +161,7 @@ These are two instruments over two records and are never summed into one headlin
 | 2026-04 | 12 | ██ |
 | 2026-05 | 22 | ████ |
 | 2026-06 | 29 | ██████ |
-| 2026-07 | 138 | ████████████████████████████ |
+| 2026-07 | 137 | ████████████████████████████ |
 | 2026-08 | 94 | ███████████████████ |
 | 2026-09 | 13 | ███ |
 
@@ -171,7 +171,7 @@ Git stamps a model on commits, via the `Co-Authored-By` trailer. Nothing else do
 
 | model | n |
 |---|---:|
-| unrecorded | 315 |
+| unrecorded | 314 |
 | Claude Opus 5 | 8 |
 | Claude Opus 4.8 | 3 |
 | Claude Fable 5 | 2 |

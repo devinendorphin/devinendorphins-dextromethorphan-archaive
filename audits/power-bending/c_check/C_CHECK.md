@@ -170,8 +170,8 @@ Confirmed: **354 → 327**, then **330** after three moved rows (C35, C44, C47)
 were restored. Each turn's own tool record, which the coders never cited,
 contradicts its claim. Power direction is unclear on all three. C35's P2 code
 doesn't fit a claimed verification; it isn't switched, and it isn't a secure
-example until its code and power direction are adjudicated. **Then 328 as the
+example until its code and power direction are adjudicated. **Then 327 as the
 provisional primary count**, after the decisions of 2026-09-28 held C41
 (unassessable) and the one confirmed tool-call-text row (outside the corpus
-boundary) out of it. The sensitivity figures are in the report's Pass 2 table; the close calls
+boundary) out of it, and a duplicate row found afterwards (the same instance counted by two overlapping sweeps). The sensitivity figures are in the report's Pass 2 table; the close calls
 and the self-contradiction set are set out under limit 11.
