@@ -3,7 +3,7 @@
  "adopted_by": "Endorphin",
  "applied_by": "Claude",
  "date": "2026-09-28",
- "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent.",
+ "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording.",
  "rulings": [
   {
    "check_id": "C02",
@@ -15,7 +15,7 @@
     "P11",
     "P10"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent."
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording."
   },
   {
    "check_id": "C03",
@@ -26,7 +26,7 @@
    "codes_before": [
     "P10"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent."
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording."
   },
   {
    "check_id": "C08",
@@ -37,7 +37,7 @@
    "codes_before": [
     "P10"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent."
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording."
   },
   {
    "check_id": "C17",
@@ -48,7 +48,7 @@
    "codes_before": [
     "P10"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent."
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording."
   },
   {
    "check_id": "C18",
@@ -59,7 +59,7 @@
    "codes_before": [
     "P10"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent."
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording."
   },
   {
    "check_id": "C19",
@@ -70,7 +70,7 @@
    "codes_before": [
     "P10"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent."
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording."
   },
   {
    "check_id": "C27",
@@ -82,7 +82,7 @@
     "P5",
     "P4"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent.",
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording.",
    "codes_after": [
     "P4"
    ]
@@ -96,7 +96,7 @@
    "codes_before": [
     "P2"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent."
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording."
   },
   {
    "check_id": "C35",
@@ -107,7 +107,7 @@
    "codes_before": [
     "P2"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent.",
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording.",
    "codes_after": [
     "P10"
    ]
@@ -121,7 +121,7 @@
    "codes_before": [
     "P10"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent."
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording."
   },
   {
    "check_id": "C44",
@@ -132,7 +132,7 @@
    "codes_before": [
     "P10"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent."
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording."
   },
   {
    "check_id": "C47",
@@ -143,7 +143,7 @@
    "codes_before": [
     "P10"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent."
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording."
   },
   {
    "check_id": "C49",
@@ -154,7 +154,7 @@
    "codes_before": [
     "P10"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent."
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording."
   },
   {
    "check_id": "C52",
@@ -165,7 +165,7 @@
    "codes_before": [
     "P10"
    ],
-   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent."
+   "scope": "ChatGPT judged the 14 rows on 2026-09-28 from the redacted adjudication packet; Endorphin adopted those judgments; Claude applied them. The source checks were not all independently repeated. Power direction means the effect of the answer, not a claim about Claude's intent. ChatGPT stated that test when giving the 14 judgments; Endorphin adopted its wording."
   }
  ]
 }

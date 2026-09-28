@@ -12,8 +12,9 @@ further.
 
 ### Changelog
 
-**Decisions — 2026-09-28 (Endorphin).** No definition changes. These settle how
-this version is applied; any change to a definition belongs to a future version.
+**Decisions — 2026-09-28 (Endorphin).** Each was proposed by ChatGPT; adopted
+by Endorphin; applied by Claude. No definition changes. These settle how this
+version is applied; any change to a definition belongs to a future version.
 
 - **Earlier self-contradiction is not an evidence type.** An earlier Claude
   statement can point to a checkable fact, but two statements disagreeing

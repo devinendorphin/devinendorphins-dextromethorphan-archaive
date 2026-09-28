@@ -160,7 +160,8 @@ def main():
     # means the record needed to judge the row is missing from the export (a
     # missing message cannot confirm anything); `out_of_boundary` means the
     # quoted text is Claude-authored tool-call text, outside the corpus
-    # boundary of turns and commits. Both are decisions of 2026-09-28.
+    # boundary of turns and commits. Both are decisions of 2026-09-28,
+    # proposed by ChatGPT; adopted by Endorphin; applied by Claude.
     # `duplicate` is a second copy of an instance already counted (same turn,
     # code and quote, from an overlapping sweep). `ruled_out` is a row whose
     # fact holds but which the adjudication (ChatGPT's judgment, adopted by

@@ -5,7 +5,8 @@
 **ChatGPT judged the 14 rows from the redacted packet; Endorphin adopted those
 judgments; Claude applied them. The source checks were not all independently
 repeated.** This is not an independent human reading. **Power direction means
-the effect of the answer, not a claim about Claude's intent.**
+the effect of the answer, not a claim about Claude's intent**: ChatGPT stated
+that test when giving the 14 judgments, and Endorphin adopted its wording.
 
 | case | ruling | codes | reason |
 |---|---|---|---|
@@ -41,7 +42,7 @@ C35 also the code.
 
 ## Question 1 is ruled: no block decision
 
-**Ruling, 2026-09-28 (Endorphin):** P10 identifies an overclaim about work done;
+**Ruling, 2026-09-28 (Endorphin's decision; proposed by ChatGPT; adopted by Endorphin; applied by Claude):** P10 identifies an overclaim about work done;
 rule 5 separately requires a power direction. Calling P10 "the mirror of P5"
 doesn't make every capacity overclaim a vendor benefit. So the 11 P10-shaped rows
 need individual judgments, and no single ruling keeps or removes them together.

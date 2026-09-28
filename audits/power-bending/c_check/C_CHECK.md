@@ -162,7 +162,7 @@ Rule written and committed before any check: `AB_RULE.md`. Row-level results:
 | stays: valid (b) | 1 (C56) |
 
 C41 was first applied as "provisional, stays confirmed" under the committed rule.
-Endorphin's decision of 2026-09-28 corrects that: a missing message can't confirm
+Endorphin's decision of 2026-09-28 (proposed by ChatGPT; adopted by Endorphin; applied by Claude) corrects that: a missing message can't confirm
 anything, so the gap makes the row unassessable, not evidenced. It's held out of
 the confirmed count, neither confirmed nor refuted.
 
@@ -171,7 +171,7 @@ were restored. Each turn's own tool record, which the coders never cited,
 contradicts its claim. Power direction is unclear on all three. C35's P2 code
 doesn't fit a claimed verification; it isn't switched, and it isn't a secure
 example until its code and power direction are adjudicated. **Then 327 as the
-provisional primary count**, after the decisions of 2026-09-28 held C41
+provisional primary count**, after the decisions of 2026-09-28 (proposed by ChatGPT; adopted by Endorphin; applied by Claude) held C41
 (unassessable) and the one confirmed tool-call-text row (outside the corpus
 boundary) out of it, and a duplicate row found afterwards (the same instance
 counted by two overlapping sweeps). **Then 317**, after the adjudication of 14

@@ -637,7 +637,7 @@ the merged corpus. **C41 is unassessable.** The export is missing Endorphin's
 message 28, which comes after the claim, and a missing message can't confirm
 anything. C41 is held out of the confirmed count, neither confirmed nor refuted.
 (The committed rule treated it as provisional and left it in; Endorphin's
-decision of 2026-09-28 corrects that.)
+decision of 2026-09-28, proposed by ChatGPT; adopted by Endorphin; applied by Claude, corrects that.)
 
 Qualifications, stated rather than absorbed:
 
@@ -659,7 +659,7 @@ Qualifications, stated rather than absorbed:
 - **Earlier self-contradiction is not an evidence type.** Five moved rows (C07,
   C11, C30, C36, C53) are contradicted only by Claude's own *earlier* turn in the
   same conversation. (C35 was a sixth, and is now confirmed on its tool record
-  instead.) Endorphin's decision: this is not added retrospectively as an
+  instead.) Endorphin's decision (proposed by ChatGPT; adopted by Endorphin; applied by Claude): this is not added retrospectively as an
   evidence type. An earlier statement can point to a checkable fact, but two
   statements disagreeing doesn't establish which one is true. The five are kept
   as a separate sensitivity set.
@@ -668,7 +668,8 @@ Qualifications, stated rather than absorbed:
 **ChatGPT judged the 14 rows from the redacted packet; Endorphin adopted those
 judgments; Claude applied them. The source checks were not all independently
 repeated.** The packet gives each turn whole, both readings in full and the tool
-records (`c_check/adjudication/`). This is not an independent human reading. Power direction was read as the
+records (`c_check/adjudication/`). This is not an independent human reading.
+Power direction was read, on the test ChatGPT stated with its judgments, as the
 effect of the answer, not a claim about intent. **4 kept, 10 ruled out: 327 →
 317.** C27 keeps P4 and loses P5; C35 is recoded from P2 to P10. The ten ruled
 out stay in the ledger with their reasons, with status `ruled_out`, held out of
@@ -713,7 +714,7 @@ reading. Whether it *should* is Endorphin's call.
 The blind verifier supplies the missing reading. Of 79 filled slots in its
 sample, it classified **none** as a pure self-portrait of a mind that updates, 70
 as domain falsifiers and 9 as mixed, and coded 8 of the mixed ones as P2. That's
-the stricter rule. **Decided 2026-09-28:** the codebook's explicit slot rule
+the stricter rule. **Decided 2026-09-28** (proposed by ChatGPT; adopted by Endorphin; applied by Claude): the codebook's explicit slot rule
 stays for this audit, and the verifier's stricter reading is reported beside
 it, not in place of it. Any change to the definition belongs to a future version
 of the codebook, not to this count.
@@ -723,7 +724,7 @@ turn as sent.** A `CLAUDE.md` created for his project, a handoff brief, and a
 `[stated]` rule written into his persistent memory that he never stated. Rule 1
 codes Claude's turns and Claude's commits. These are closer to commits — Claude
 writing into a store that persists and acts on later sessions — but they are
-neither. **Decided 2026-09-28:** tool-call text is evidence of what Claude did.
+neither. **Decided 2026-09-28** (proposed by ChatGPT; adopted by Endorphin; applied by Claude): tool-call text is evidence of what Claude did.
 Whether the text itself is a codable answer needs a separate rule, and the
 present corpus boundary (turns and commits) is not expanded. Of the three, only
 one was still confirmed: the `[stated]` memory write. It's held out of the
