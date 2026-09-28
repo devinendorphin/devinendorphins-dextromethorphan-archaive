@@ -97,7 +97,9 @@ makes the radical answer and the sycophantic answer identical.
 
 **354 confirmed instances.** 171 further instances carried no (a)/(b)/(c) evidence and are in `unconfirmed.csv`, not in this count.
 
-**17 of those rest on evidence from a different conversation** -- usually a later Claude turn elsewhere retracting the same move. The codebook's (a) is same-conversation by definition and its (b) is silent, so both figures are given rather than one chosen: **337** confirmed without them.
+**348 if the direct check's rule-5 judgments are accepted.** 6 confirmed rows state a fact the check found false but that it judged to carry no power vector. They stay in the count as logged disagreements (`c_check/C_CHECK.md`).
+
+**17 of the 354 rest on evidence from a different conversation** -- usually a later Claude turn elsewhere retracting the same move. The codebook's (a) is same-conversation by definition and its (b) is silent, so both figures are given rather than one chosen: **337** confirmed without them.
 
 ### By substrate
 
@@ -602,6 +604,16 @@ logged as disagreements and stand as coded. **This counts how many of the
 coders' selected (c) instances survive; it can't count the ones they missed.**
 The checkers are Claude instances. The fact checks are at source; the coding
 judgments are one Claude reader against another.
+
+**Separating the evidence types does not rescue the (c) figure.** The 29%
+pooled units labelled (c) with units whose (c) was only turn text. Split by what
+the direct check found (`scripts/c_split.py`, frozen basis): units backed by a
+real source, git record or tool record replicate at **31% (11 of 35)**; units
+whose (c) was turn text only, **21% (3 of 14)**; (a)/(b)-only units, **51% (48 of
+94)**. Among real-(c) units whose fact the check found contradicted, 35% (9 of
+26). The counts are small. What they show is that fact-backed coding replicates
+no better than the rest, which fits a verifier that did not fact-check, not
+coding that is unreliable where it rests on facts.
 
 Both can also be right. Where a definition leaves room, two careful readers can
 each apply it correctly and land differently, and the disagreement then marks

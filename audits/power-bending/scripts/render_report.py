@@ -97,9 +97,16 @@ def main():
     A(f"**{pb['confirmed_total']} confirmed instances.** "
       f"{pb['unconfirmed_total']} further instances carried no (a)/(b)/(c) "
       f"evidence and are in `unconfirmed.csv`, not in this count.\n")
+    r5 = pb.get("confirmed_excluding_rule5_disputes")
+    if r5 is not None and r5 != pb["confirmed_total"]:
+        A(f"**{r5} if the direct check's rule-5 judgments are accepted.** "
+          f"{pb['confirmed_total'] - r5} confirmed rows state a fact the check "
+          f"found false but that it judged to carry no power vector. They stay "
+          f"in the count as logged disagreements (`c_check/C_CHECK.md`).\n")
     xc = pb.get("confirmed_cross_conversation", 0)
     if xc:
-        A(f"**{xc} of those rest on evidence from a different conversation** "
+        A(f"**{xc} of the {pb['confirmed_total']} rest on evidence from a "
+          f"different conversation** "
           f"-- usually a later Claude turn elsewhere retracting the same "
           f"move. The codebook's (a) is same-conversation by definition and "
           f"its (b) is silent, so both figures are given rather than one "

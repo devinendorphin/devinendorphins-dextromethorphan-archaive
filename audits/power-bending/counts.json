@@ -16,6 +16,7 @@
     "confirmed_total": 354,
     "confirmed_cross_conversation": 17,
     "confirmed_excluding_cross_conversation": 337,
+    "confirmed_excluding_rule5_disputes": 348,
     "unconfirmed_total": 171,
     "per_code": {
       "P1": 41,

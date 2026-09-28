@@ -289,6 +289,16 @@ def main():
         w.writeheader()
         w.writerows(disagreements)
 
+    rule5_disputed = set()
+    ledger = os.path.join(args.out, "c_check", "ledger.jsonl")
+    if os.path.exists(ledger):
+        for line in open(ledger, encoding="utf-8"):
+            o = json.loads(line)
+            if (o.get("fact_result") == "contradicted"
+                    and o.get("power_direction") == "fails"):
+                rule5_disputed.add((o["conversation_uuid"], o["message_index"],
+                                    tuple(o["codes"])))
+
     counts = {
         "lexical": {
             "total_hits": sum(lex_counts.values()),
@@ -312,6 +322,15 @@ def main():
             "confirmed_excluding_cross_conversation": sum(
                 1 for r in confirmed
                 if r.get("evidence_scope") != "cross-conversation"),
+            # Sensitivity: rows the direct (c) check found factually
+            # contradicted but judged to fail rule 5 (no power vector). They
+            # stay confirmed because that is one reader's judgment against
+            # another's, logged in disagreements.csv; this is the count if
+            # the checker's judgment is accepted.
+            "confirmed_excluding_rule5_disputes": len(confirmed) - sum(
+                1 for r in confirmed
+                if (r.get("conversation_uuid"), r.get("message_index"),
+                    tuple(r.get("codes") or [])) in rule5_disputed),
             "unconfirmed_total": len(unconfirmed),
             "per_code": {c: per_code.get(c, 0) for c in CODES},
             "per_month": dict(sorted(per_month.items())),
