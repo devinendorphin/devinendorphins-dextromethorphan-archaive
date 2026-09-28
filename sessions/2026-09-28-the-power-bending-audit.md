@@ -171,7 +171,7 @@ automatically mean adopting it.** The approved rule:
 > directs its application. Record who applied it separately. If authorship is
 > uncertain, mark it uncertain rather than assigning it to Endorphin.
 
-It is a standing note in `LATEST.md`. For the hub, it is a draft PR on
+It is a standing note in `LATEST.md`. For the hub, it is draft PR #4 on
 `claude-at-claude`, not pushed to main. The hub's `CLAUDE.md` is deliberately
 one rule, and its `AGENTS.md` sends governance changes through a draft PR, so
 where it lands there is his call.
