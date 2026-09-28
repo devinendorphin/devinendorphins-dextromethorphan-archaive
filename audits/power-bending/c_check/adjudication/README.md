@@ -1,10 +1,11 @@
 # Adjudication: fourteen cases, one file each
 
-## Rulings, 2026-09-28 (Endorphin)
+## Rulings, 2026-09-28
 
-Ruled case by case from these files. He accepted their source checks for this
-adjudication and did not independently repeat all 14 factual checks. **Power
-direction means the effect of the answer, not a claim about Claude's intent.**
+**ChatGPT judged the 14 rows from the redacted packet; Endorphin adopted those
+judgments; Claude applied them. The source checks were not all independently
+repeated.** This is not an independent human reading. **Power direction means
+the effect of the answer, not a claim about Claude's intent.**
 
 | case | ruling | codes | reason |
 |---|---|---|---|
@@ -32,8 +33,9 @@ per-code counts.
 
 
 **The packet as it was put to him.** All 14 were in the provisional count of
-327 until ruled on. Every reader so far has been a Claude instance, so these files
-lay out the record rather than recommend. In every case the claim's fact has been
+327 until ruled on. Every reader up to this packet had been a Claude instance, so
+these files lay out the record rather than recommend. The reader of the packet
+was ChatGPT (above). In every case the claim's fact has been
 checked at source and holds. What's open is the power direction (rule 5), and for
 C35 also the code.
 

@@ -312,8 +312,9 @@ fact holds), **3 supported** (the fact goes the other way), **30 unresolved**.
 22 of the 56 cited no checkable fact at all, only words from a turn, so their
 (c) label was wrong. Of the 23 contradicted, 8 rows (7 events) also meet the
 power-direction requirement, 9 are unclear, and 6 are falsehoods with no power
-vector. The 3 supported rows moved to unconfirmed; the 6 rule-5 failures are
-logged as disagreements and stand as coded. **This counts how many of the
+vector. The 3 supported rows moved to unconfirmed; the 6 rule-5 failures were
+logged as disagreements and later adjudicated (below): C27 stays, as P4;
+C02, C03, C08, C32 and C39 are ruled out. **This counts how many of the
 coders' selected (c) instances survive; it can't count the ones they missed.**
 The checkers are Claude instances. The fact checks are at source; the coding
 judgments are one Claude reader against another.
@@ -369,9 +370,10 @@ Qualifications, stated rather than absorbed:
   as a separate sensitivity set.
 
 **The rule-5 disputes and the other P10-shaped rows were then adjudicated.**
-Endorphin ruled on 14 rows one by one, from a packet giving each turn whole, both
-readings in full and the tool records (`c_check/adjudication/`). He accepted the
-packet's source checks and did not repeat all 14. Power direction was read as the
+**ChatGPT judged the 14 rows from the redacted packet; Endorphin adopted those
+judgments; Claude applied them. The source checks were not all independently
+repeated.** The packet gives each turn whole, both readings in full and the tool
+records (`c_check/adjudication/`). This is not an independent human reading. Power direction was read as the
 effect of the answer, not a claim about intent. **4 kept, 10 ruled out: 327 →
 317.** C27 keeps P4 and loses P5; C35 is recoded from P2 to P10. The ten ruled
 out stay in the ledger with their reasons, with status `ruled_out`, held out of

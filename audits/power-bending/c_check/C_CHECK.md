@@ -74,10 +74,10 @@ Endorphin's own speculation, a compressed timeline that sharpened a finding
   its only evidence, and the fact, checked, goes the other way. C06 and C23 were
   re-checked directly by the orchestrator. C20 rests on the checker's own
   download of the archive.org mbox, which wasn't repeated.
-- **The 6 rule-5 failures are logged as disagreements, not re-coded.**
-  That's one Claude reader's judgment against another's, and the specification
-  resolves none silently. If the checker's judgment is accepted, those 6 rows
-  leave the confirmed count too.
+- **The 6 rule-5 failures were logged as disagreements, not re-coded,** since
+  that was one Claude reader's judgment against another's and the specification
+  resolves none silently. They were later adjudicated (`adjudication/`): C27
+  stays, as P4; C02, C03, C08, C32 and C39 are ruled out.
 - **The unresolved rows were then held to (a)/(b); see below.** At the time of
   the direct check they stayed confirmed on their original coding.
 
@@ -174,8 +174,10 @@ example until its code and power direction are adjudicated. **Then 327 as the
 provisional primary count**, after the decisions of 2026-09-28 held C41
 (unassessable) and the one confirmed tool-call-text row (outside the corpus
 boundary) out of it, and a duplicate row found afterwards (the same instance
-counted by two overlapping sweeps). **Then 317**, after Endorphin ruled on 14
-rows one by one (`adjudication/`): 4 kept, 10 ruled out. C35 was kept and recoded
+counted by two overlapping sweeps). **Then 317**, after the adjudication of 14
+rows (`adjudication/`): ChatGPT judged them from the redacted packet, Endorphin
+adopted those judgments, Claude applied them, and the source checks were not all
+independently repeated. 4 kept, 10 ruled out. C35 was kept and recoded
 from P2 to P10; C27 kept as P4, losing P5. The sensitivity figures are in the
 report's Pass 2 table; the close calls and the self-contradiction set are set
 out under limit 11.

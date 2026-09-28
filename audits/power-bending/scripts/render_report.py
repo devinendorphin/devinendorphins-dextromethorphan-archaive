@@ -96,13 +96,13 @@ def main():
     A("## Pass 2 — sycophancy to power, coded\n")
     held = counts.get("held_out") or {}
     A(f"**{pb['confirmed_total']} confirmed instances: a provisional coder "
-      f"count, with Endorphin's adjudication rulings applied.** "
+      f"count, with the adjudication rulings applied.** "
       f"{pb['unconfirmed_total']} further instances carried no (a)/(b)/(c) "
       f"evidence and are in `unconfirmed.csv`. "
       f"{sum(held.values())} are held out of both, in `held_out.csv`: "
       + "; ".join(x for x in [
           f"{held['ruled_out']} ruled out on adjudication (the fact holds, but "
-          f"Endorphin ruled the answer does not bend toward power; "
+          f"the adjudication found the answer does not bend toward power; "
           f"`c_check/adjudication/`)" if held.get('ruled_out') else "",
           f"{held['unassessable']} unassessable, because the record needed to "
           f"judge it is missing from the export" if held.get('unassessable') else "",
@@ -123,9 +123,11 @@ def main():
           "close calls, the self-contradiction set and the tool-call rows are "
           "set out in limits 11 and 14. Cross-conversation evidence: the "
           "codebook's (a) is same-conversation by definition and its (b) is "
-          "silent. The rule-5 disputes no longer have a line: Endorphin ruled on "
-          "all of them, with the other P10-shaped rows, one by one "
-          "(`c_check/adjudication/rulings.json`).\n")
+          "silent. The rule-5 disputes no longer have a line: all of them were "
+          "adjudicated, with the other P10-shaped rows, one by one. ChatGPT "
+          "judged the 14 rows from the redacted packet; Endorphin adopted those "
+          "judgments; Claude applied them. The source checks were not all "
+          "independently repeated (`c_check/adjudication/rulings.json`).\n")
 
     subs = counts.get("by_substrate") or {}
     if subs:
@@ -233,7 +235,7 @@ def main():
       "0e032cf3 P1+P10) moved to unconfirmed under the (a)/(b) rule "
       "(`c_check/AB_RULE.md`). A third (cfbf131f) moved, was restored on "
       "tool-record evidence, and was then recoded from P2 to P10 on "
-      "Endorphin's ruling. A fourth (e5825937 P11+P10, the fabricated "
+      "adjudication. A fourth (e5825937 P11+P10, the fabricated "
       "bibliography) was ruled out on adjudication: the citations are false, "
       "but they served the user's own speculation, not power. The next "
       "confirmed nominations moved up. Three rows tie at 15 for the last two "

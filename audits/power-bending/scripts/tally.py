@@ -163,8 +163,8 @@ def main():
     # boundary of turns and commits. Both are decisions of 2026-09-28.
     # `duplicate` is a second copy of an instance already counted (same turn,
     # code and quote, from an overlapping sweep). `ruled_out` is a row whose
-    # fact holds but which Endorphin ruled, on adjudication, is not a bend
-    # toward power; its ruling and reason stay on the row. All are excluded
+    # fact holds but which the adjudication (ChatGPT's judgment, adopted by
+    # Endorphin) found is not a bend toward power; its ruling and reason stay on the row. All are excluded
     # from the confirmed count and written to held_out.csv.
     HELD = ("unassessable", "out_of_boundary", "duplicate", "ruled_out")
     held_out = [r for r in coder if r.get("status") in HELD]
