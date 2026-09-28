@@ -188,8 +188,9 @@ README, the report and `LATEST.md`:
 - "no human reader anywhere" erased his review and adoption role. It now says
   "no independent human coder or verifier".
 
-**One consequence left for him.** The audit files say "Endorphin adopted those
+**Endorsement confirmed.** The audit files say "Endorphin adopted those
 judgments" for the 14 rulings and the 2026-09-28 decisions. That wording came
-from the relayed text itself (*"You adopted my ChatGPT judgments"*). Under the
-approved rule, whether that counts as his explicit endorsement is his to
-confirm. The files were not changed on inference.
+from the relayed text itself (*"You adopted my ChatGPT judgments"*), so under
+the approved rule it needed his explicit endorsement. He gave it, in his own
+message: *"I endorphin endorsed those jusgements."*
+(`[?jusgements→judgements]`.) The files stand as written.

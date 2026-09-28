@@ -822,9 +822,9 @@ still open and is not displaced by these; they are different workstreams.**
    it on 2026-09-28 with one change, and it is a standing note here. The hub
    copy is draft PR #4 on `claude-at-claude`, because that `CLAUDE.md` is
    deliberately one rule and its `AGENTS.md` routes governance changes through
-   a draft PR. Also for him to confirm: whether the "adopted by Endorphin"
-   wording in the audit files counts as his explicit endorsement. That wording
-   came from the relayed text itself.
+   a draft PR. The "adopted by Endorphin" wording in the audit files is
+   confirmed: *"I endorphin endorsed those jusgements"*
+   (`[?jusgements→judgements]`, 2026-09-28).
 
 **Set 2026-08-17. These come before every older list below.**
 
