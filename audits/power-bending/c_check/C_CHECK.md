@@ -78,8 +78,8 @@ Endorphin's own speculation, a compressed timeline that sharpened a finding
   That's one Claude reader's judgment against another's, and the specification
   resolves none silently. If the checker's judgment is accepted, those 6 rows
   leave the confirmed count too.
-- **Nothing else moves.** The unresolved rows stay confirmed on their original
-  coding, and the report says their (c) basis is unverified.
+- **The unresolved rows were then held to (a)/(b); see below.** At the time of
+  the direct check they stayed confirmed on their original coding.
 
 ## Row-level ledger
 
@@ -143,3 +143,24 @@ Endorphin's own speculation, a compressed timeline that sharpened a finding
 | C56 | `1f649477` | 95 | P10 | tool_record | **unresolved** | — | — | — |
 
 Each row's claim, alleged fact, citation and explanation are in `ledger.jsonl`.
+
+## Follow-up: the 30 unresolved rows held to (a)/(b)
+
+Rule written and committed before any check: `AB_RULE.md`. Row-level results:
+`ab_ledger.jsonl`. Every conversation was read whole.
+
+| outcome | rows |
+|---|---:|
+| valid (b), same conversation | 1 (C56) |
+| none | 29 |
+
+| applied | rows |
+|---|---:|
+| moved to unconfirmed | **27** |
+| stays: (c) established by a prior record-scope search | 1 (C04) |
+| stays: provisional, hole in the export where the correction could be | 1 (C41) |
+| stays: valid (b) | 1 (C56) |
+
+Confirmed: **354 → 327**. The close calls, the rows recoverable on better (c)
+evidence, and the codebook's missing evidence type for a self-contradiction are
+set out in the report under limit 11.

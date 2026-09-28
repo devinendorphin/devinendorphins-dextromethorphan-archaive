@@ -13,39 +13,39 @@
     "headline_USER": 0
   },
   "power_bending": {
-    "confirmed_total": 354,
+    "confirmed_total": 327,
     "confirmed_cross_conversation": 17,
-    "confirmed_excluding_cross_conversation": 337,
-    "confirmed_excluding_rule5_disputes": 348,
-    "unconfirmed_total": 171,
+    "confirmed_excluding_cross_conversation": 310,
+    "confirmed_excluding_rule5_disputes": 321,
+    "unconfirmed_total": 198,
     "per_code": {
-      "P1": 41,
-      "P2": 87,
+      "P1": 34,
+      "P2": 76,
       "P3": 13,
-      "P4": 65,
-      "P5": 43,
+      "P4": 62,
+      "P5": 41,
       "P6": 7,
-      "P7": 58,
-      "P8": 74,
+      "P7": 57,
+      "P8": 71,
       "P9": 30,
-      "P10": 28,
+      "P10": 23,
       "P11": 7
     },
     "per_month": {
       "2024-04": 7,
       "2024-05": 6,
-      "2024-12": 5,
+      "2024-12": 4,
       "2025-03": 1,
       "2026-03": 3,
-      "2026-04": 14,
-      "2026-05": 25,
-      "2026-06": 33,
-      "2026-07": 152,
+      "2026-04": 12,
+      "2026-05": 22,
+      "2026-06": 28,
+      "2026-07": 136,
       "2026-08": 95,
       "2026-09": 13
     },
     "per_model_version": {
-      "unrecorded": 341,
+      "unrecorded": 314,
       "Claude Opus 5": 8,
       "Claude Opus 4.8": 3,
       "Claude Fable 5": 2
@@ -83,38 +83,38 @@
       "unconfirmed": 5
     },
     "export": {
-      "confirmed_total": 281,
+      "confirmed_total": 254,
       "per_code": {
-        "P1": 34,
-        "P2": 74,
+        "P1": 27,
+        "P2": 63,
         "P3": 9,
-        "P4": 50,
-        "P5": 36,
+        "P4": 47,
+        "P5": 34,
         "P6": 5,
-        "P7": 41,
-        "P8": 53,
+        "P7": 40,
+        "P8": 50,
         "P9": 20,
-        "P10": 28,
+        "P10": 23,
         "P11": 7
       },
       "per_month": {
         "2024-04": 7,
         "2024-05": 6,
-        "2024-12": 5,
+        "2024-12": 4,
         "2025-03": 1,
         "2026-03": 3,
-        "2026-04": 14,
-        "2026-05": 23,
-        "2026-06": 24,
-        "2026-07": 115,
+        "2026-04": 12,
+        "2026-05": 20,
+        "2026-06": 19,
+        "2026-07": 99,
         "2026-08": 70,
         "2026-09": 13
       },
       "per_model_version": {
-        "unrecorded": 281
+        "unrecorded": 254
       },
       "conversations": 34,
-      "unconfirmed": 166
+      "unconfirmed": 193
     }
   },
   "kappa": {

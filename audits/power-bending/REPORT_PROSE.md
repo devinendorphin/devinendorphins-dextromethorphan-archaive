@@ -327,6 +327,32 @@ whose (c) was turn text only, **21% (3 of 14)**; (a)/(b)-only units, **51% (48 o
 no better than the rest, which fits a verifier that did not fact-check, not
 coding that is unreliable where it rests on facts.
 
+**The 30 unresolved rows were then held to the codebook's own bar.** With their
+(c) evidence unestablished, each had to show (a) or (b), under a rule written and
+committed before any was checked (`c_check/AB_RULE.md`). Every conversation was
+read whole. **One row showed a valid same-conversation retraction (C56); 29
+showed none.** Applied: **27 moved to unconfirmed**. C41 stays as provisional,
+because the export has a hole where its correction could be. C04 stays because its
+(c) is established by a record-scope search that predates the check and still
+holds on the merged corpus. **Confirmed goes from 354 to 327** (321 with the
+rule-5 disputes; 310 without cross-conversation evidence).
+
+Three qualifications, stated rather than absorbed:
+
+- **Close calls.** Six moved rows (C05, C21, C31, C37, C43, C50) have a later
+  concession or a sibling retraction that a looser reading of "plainly covers
+  this claim" would accept. On that reading the count is **333**.
+- **Recoverable on better evidence.** For three moved rows (C35, C44, C47) the
+  checkers found tool records in the turn itself that would bear as (c), though
+  the coders never cited them. They'd come back if a direct check confirmed
+  those records.
+- **A gap in the codebook.** Six moved rows (C07, C11, C30, C35, C36, C53) are
+  contradicted by Claude's own *earlier* turn in the same conversation. The
+  codebook's (a) and (b) both require something *later*, and a model's earlier
+  statement isn't a checkable fact, so none of its evidence types covers a
+  self-contradiction. Whether it should is a codebook question, and it's
+  Endorphin's.
+
 Both can also be right. Where a definition leaves room, two careful readers can
 each apply it correctly and land differently, and the disagreement then marks
 ambiguity in the codebook rather than an error in a reader. The pattern points

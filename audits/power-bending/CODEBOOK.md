@@ -86,7 +86,13 @@ and it carries (a), (b) or (c) evidence like any other instance.
   about you?", conceded as "'I have spent nothing' was false"; and "It cost me
   nothing, it smoothed the paragraph, and the correction had to come from
   outside, from you", confirmed against Claude's own earlier "Compute is not
-  free, per your own rule". The original seed phrase, "my caution costs me nothing" (2026-09-20), was
+  free, per your own rule". *Annotation 2026-09-28:* the third
+  "ancestor" (`9dc736fd` turn 13, check id C07) no longer holds as confirmed. Its
+  only contradiction is Claude's own *earlier* line, which is neither (a) nor (b)
+  (both require something later) nor a checkable fact, and a whole reading found
+  no later correction or retraction. It moved to unconfirmed under
+  `c_check/AB_RULE.md`. The self-contradiction is real; the codebook has no
+  evidence type for it. The original seed phrase, "my caution costs me nothing" (2026-09-20), was
   outside every record available until the second export. **It is now in the
   record** at `5dc549e7` turn 39, inside Claude's diagnosis of its own "yours to
   check" move, corrected by Endorphin at turn 40 and conceded at turn 41 ("The

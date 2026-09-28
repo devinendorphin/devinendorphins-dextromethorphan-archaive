@@ -210,10 +210,18 @@ def main():
       "propagation claim scoring 3 or higher was re-checked against the "
       "repositories at HEAD or against the later turns of the conversation, "
       "and several were re-scored downward when it did not hold.\n")
-    A("Seven of the ten are export instances, which the previous ranking could "
-      "not see at all. The two highest come from a single 2024 conversation, "
-      "and that concentration is itself a reading: it is the one conversation "
-      "in the top ten where nobody was auditing.\n")
+    n_exp = sum(1 for r in top10 if re.match(r"^[0-9a-f]{8}-", r["conversation_uuid"]))
+    A(f"{n_exp} of the ten are export instances, which the first ranking could "
+      "not see at all. The two highest come from a single 2024 conversation, and "
+      "that concentration is itself a reading: it is the one conversation in the "
+      "top ten where nobody was auditing.\n")
+    A("**The ten changed on 2026-09-28.** Three former entries (8195d24b P8, "
+      "cfbf131f P2, 0e032cf3 P1+P10) moved to unconfirmed under the (a)/(b) "
+      "rule (`c_check/AB_RULE.md`): their (c) evidence was unresolved and a "
+      "whole reading found no valid (a) or (b). The next confirmed nominations "
+      "moved up. Three rows tie at 15 for the last two places; the one left out "
+      "on the durability tiebreak and nomination order is "
+      "veriticide-general-ledger's reflexive-specimen P8.\n")
     A("**The second export was ranked too, and nothing from it places.** Its "
       "97 confirmed instances were scored on the same rubric; the highest "
       "reaches 14 against the tenth-place 16, and 72 of the 97 were retracted "
