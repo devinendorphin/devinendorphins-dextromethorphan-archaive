@@ -1,7 +1,8 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-08-17**, `sessions/2026-08-17-pointing-it-at-the-maker.md`
-Prior: `sessions/2026-08-16-the-fourth-archive-and-the-glubose-protocol.md`,
+Last session: **2026-09-20 .. 2026-09-28**, `sessions/2026-09-28-the-power-bending-audit.md`
+Prior: `sessions/2026-08-17-pointing-it-at-the-maker.md`,
+`sessions/2026-08-16-the-fourth-archive-and-the-glubose-protocol.md`,
 `sessions/2026-08-12-the-archive-with-a-clock.md`,
 `sessions/2026-08-10-the-aid-transfer.md`,
 `sessions/2026-08-04-the-wake-test.md`,
@@ -66,6 +67,29 @@ the pasted-text screen, and §VIII; and finally the commit of `corpus/cited/`
 and the deposit decision; and finally Endorphin answering all seven open
 disagreements, the Finnegans Wake exercise, and `coinage.py`. The full export
 stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the container; refetch ids are below.
+
+## What the 2026-09-20 .. 09-28 session did — the power-bending audit
+
+**A different workstream from everything below.** `audits/power-bending/` counts
+cost erasure and sycophancy to power in *Claude's* turns and commits across the
+Endorphin–Claude record. It is not a NovelAI, AI Dungeon or Grok analysis, and
+none of the corpus rules above were needed for it. **Start at
+`audits/power-bending/README.md`.** 78 commits, **all merged to `main`**
+(`988927b`). The branch `claude/audit-power-bending-dgbrl9` is merged history,
+so restart it from `origin/main` for anything further.
+
+- **317 confirmed, a provisional coder count** (git 73, export 244, never
+  summed). 195 unconfirmed, 13 held out. Sensitivity: 323 / 322 / 318 / 300.
+- **Pass 1 on git: SELF 10, USER 0.**
+- **Export replication is about half, and one-directional**: ChatGPT's
+  Verification 2 found 141 where the coders found 277. No cause is established.
+- **Cost measured at $292.75.** The committed estimate had been $5.02.
+- **Provenance:**
+  - The 14 rulings and the dated 2026-09-28 decisions were **proposed by
+    ChatGPT, adopted by Endorphin and applied by Claude.**
+  - There is no human coder or reader anywhere in the process.
+  - Claude first filed the relayed ChatGPT text as Endorphin's own. He
+    corrected it twice. See the new standing note.
 
 ## What the 2026-08-16 session found — read this before the state list
 
@@ -175,6 +199,10 @@ say why the finding might not have happened.**
 
 ## State
 
+- `audits/power-bending/` — **stable, provisional.** 317 is labelled a
+  provisional coder count. The report, the codebook (v1.1 plus the dated
+  2026-09-28 decisions), the ledgers and the adjudication are all merged.
+  Open questions are under the 2026-09-28 priorities.
 - **Register: settled.** Research corpus, formal/evidentiary. Not
   harm-reduction — the README says so explicitly, and `CLAUDE.md` was rewritten
   to retire the seed framing and the proposed consolidation with
@@ -766,6 +794,32 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 `download()` also take a filter for pulling a handful by name.
 
 ## Top priorities for next session
+
+**Set 2026-09-28, for the power-bending audit. The 2026-08-17 list below is
+still open and is not displaced by these; they are different workstreams.**
+
+1. **Test rule 5 on a sample of the confirmed rows that were never
+   disputed.**
+   - Row by row, 10 of 14 adjudicated rows failed the effect-over-intent
+     power-direction test. The other ~300 were coded under rule 5 but never
+     read twice against that test.
+   - If that rate carried over, 317 would be badly overstated. It may not
+     carry over, since those 14 were chosen because a checker had doubted
+     them.
+   - A seeded random sample, frozen first, answers it. C01, C28, C29 and C40
+     are already flagged "unclear" and were never adjudicated, so start
+     there.
+2. **Decide whether the deferred codebook questions become v2.** Three are
+   parked "for a future version":
+   - the P2 slot rule (ChatGPT read 0 of 79 slots as a self-portrait);
+   - a rule for Claude-authored tool-call text;
+   - whether an earlier self-contradiction is evidence.
+
+   Each changes a count if adopted, which is why each was deferred instead of
+   applied.
+3. **The relayed-provenance working agreement** (proposed in the session
+   log, not applied). It belongs in the hub if he approves. It is the only
+   error this session that he had to correct twice.
 
 **Set 2026-08-17. These come before every older list below.**
 
@@ -1714,3 +1768,49 @@ merged.)*
   say so in the entry. The two weakest entries are the two that touch the
   subject most directly — that asymmetry is itself the finding, and it is
   §11's named gap rather than something to smooth over.
+- **Attribute relayed text to its author.** 2026-09-28, and his correction,
+  made twice.
+  - When a message is another model's output pasted in, record it as
+    *"proposed by X; adopted by Endorphin; applied by Claude"*.
+  - The tells are a "Worked for Ns" header, first person as another
+    participant ("my failure to fact-check", from the verifier), and a
+    recommendations table.
+  - *"'Endorphin's decisions' accurately names who authorized them, but the
+    provenance should say 'proposed by ChatGPT; adopted by Endorphin; applied
+    by Claude' where that sequence holds."* His adoption is authority, not
+    origination, and the files must not imply he read what he adopted.
+- **In the power-bending audit, the evidence rules are standing:**
+  - Never sum the git and export substrates. Compute kappa per substrate and
+    never pool it.
+  - Freeze rows, and commit a check's decision rule, *before* running the
+    check.
+  - Unresolved stays unresolved. A missing message or an unreachable source
+    confirms nothing.
+  - Rows that are ruled out stay in the ledger with their reasons.
+  - Label the count provisional while rulings are pending.
+  - **Make no causal claim about a gap that the comparison does not
+    isolate.** Claude made one three times in one day about the replication
+    gap, and was corrected each time.
+- **Ask for the primary input when it is missing; don't just build around it.**
+  *"And yet you didn't ask."* (2026-09-21). The specification said to stop
+  if the claude.ai export was absent. Claude built a git substitute, reported
+  on it, and offered to extend it, but never asked for the export. He
+  supplied it in the next message.
+- **Measure cost from usage records; never estimate it.** Every API call writes
+  its usage into its transcript. `audits/power-bending/scripts/
+  measure_inference_cost.py` sums them. An estimate of $5.02 against a
+  measured $292.75 was the audit's own P1.
+- **The audit's privacy rules:**
+  - The export stays in gitignored `corpus/`.
+  - `users.json` and `memories.json` are never opened.
+  - Verifier input is never committed; `.gitignore` blocks
+    `audits/power-bending/verify/verify_input*`.
+  - Private third parties are never quoted.
+  - *"Quote Claude and your corrections freely."*
+  - He declined a history rewrite to purge the verifier input already in
+    `c4c1f2f`/`07125e6`: *"I actually don't care don't care don't care."* Do
+    not re-offer it.
+- **Reproducing the audit's per-model table needs the twelve audited repos
+  cloned.** Pass them to `tally.py --repos <dir>`. That directory lived in
+  the ephemeral scratchpad. Without it every git row reads `unrecorded`,
+  though no count changes.
