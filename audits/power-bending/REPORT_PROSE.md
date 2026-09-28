@@ -301,11 +301,12 @@ against 83% of 70.
 
 **A limitation of Verification 2: it did not systematically check external
 facts.** Its own notes say so: "Other external factual assertions were not
-systematically fact-checked." That depresses its (c) count and every agreement
-figure that depends on (c) evidence, and it is kept here as a property of that
-pass, not corrected after the fact. A checkable fact holds whoever reads it, but whether a reader goes and
-checks does not. (a) and (b) evidence sits inside the transcript, where both
-readers see it, and that's why it replicates. **The direct check has now been run** (`c_check/C_CHECK.md`). Of the coders'
+systematically fact-checked." It is kept here as a property of that pass, not
+corrected after the fact. The verifier did not systematically check external
+facts, which may have reduced its (c) detections. The observed agreement gap may
+also reflect differences in code fit and power-direction judgments.
+
+**The direct check has now been run** (`c_check/C_CHECK.md`). Of the coders'
 56 (c)-backed *instances*, checked at source: **23 contradicted** (the coder's
 fact holds), **3 supported** (the fact goes the other way), **30 unresolved**.
 22 of the 56 cited no checkable fact at all, only words from a turn, so their
