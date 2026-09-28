@@ -173,5 +173,9 @@ doesn't fit a claimed verification; it isn't switched, and it isn't a secure
 example until its code and power direction are adjudicated. **Then 327 as the
 provisional primary count**, after the decisions of 2026-09-28 held C41
 (unassessable) and the one confirmed tool-call-text row (outside the corpus
-boundary) out of it, and a duplicate row found afterwards (the same instance counted by two overlapping sweeps). The sensitivity figures are in the report's Pass 2 table; the close calls
-and the self-contradiction set are set out under limit 11.
+boundary) out of it, and a duplicate row found afterwards (the same instance
+counted by two overlapping sweeps). **Then 317**, after Endorphin ruled on 14
+rows one by one (`adjudication/`): 4 kept, 10 ruled out. C35 was kept and recoded
+from P2 to P10; C27 kept as P4, losing P5. The sensitivity figures are in the
+report's Pass 2 table; the close calls and the self-contradiction set are set
+out under limit 11.

@@ -356,10 +356,10 @@ Qualifications, stated rather than absorbed:
   snippet searches before "I've read… the ledger", a 1.1-million-character
   document; a "spot-check" of quotations that fetched no source, certifying as
   "exact" a wording the same conversation had quoted differently. **All three are
-  restored.** Power direction is unclear on all three. C35's code (P2) doesn't fit
-  what the turn does, which is claim a verification it never ran, a P10 shape. Its
-  code is not switched, and both its code and its power direction await
-  adjudication. It is not yet a secure example.
+  restored.** Power direction was unclear on all three, and C35's code (P2)
+  didn't fit what the turn does, which is claim a verification it never ran. All
+  three were then adjudicated (below): C44 kept as P10, C35 kept and recoded to
+  P10, C47 ruled out.
 - **Earlier self-contradiction is not an evidence type.** Five moved rows (C07,
   C11, C30, C36, C53) are contradicted only by Claude's own *earlier* turn in the
   same conversation. (C35 was a sixth, and is now confirmed on its tool record
@@ -367,6 +367,15 @@ Qualifications, stated rather than absorbed:
   evidence type. An earlier statement can point to a checkable fact, but two
   statements disagreeing doesn't establish which one is true. The five are kept
   as a separate sensitivity set.
+
+**The rule-5 disputes and the other P10-shaped rows were then adjudicated.**
+Endorphin ruled on 14 rows one by one, from a packet giving each turn whole, both
+readings in full and the tool records (`c_check/adjudication/`). He accepted the
+packet's source checks and did not repeat all 14. Power direction was read as the
+effect of the answer, not a claim about intent. **4 kept, 10 ruled out: 327 →
+317.** C27 keeps P4 and loses P5; C35 is recoded from P2 to P10. The ten ruled
+out stay in the ledger with their reasons, with status `ruled_out`, held out of
+the count.
 
 Both can also be right. Where a definition leaves room, two careful readers can
 each apply it correctly and land differently, and the disagreement then marks

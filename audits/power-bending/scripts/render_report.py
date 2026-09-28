@@ -96,17 +96,21 @@ def main():
     A("## Pass 2 — sycophancy to power, coded\n")
     held = counts.get("held_out") or {}
     A(f"**{pb['confirmed_total']} confirmed instances: a provisional coder "
-      f"count.** It stays provisional until the rule-5 disputes and the "
-      f"statuses below are adjudicated. "
+      f"count, with Endorphin's adjudication rulings applied.** "
       f"{pb['unconfirmed_total']} further instances carried no (a)/(b)/(c) "
       f"evidence and are in `unconfirmed.csv`. "
       f"{sum(held.values())} are held out of both, in `held_out.csv`: "
-      f"{held.get('unassessable', 0)} unassessable because the record needed "
-      f"to judge it is missing from the export, and "
-      f"{held.get('out_of_boundary', 0)} quoting Claude-authored tool-call "
-      f"text, outside the corpus boundary of turns and commits"
-      + (f", and {held.get('duplicate', 0)} a duplicate of an instance already "
-         f"counted" if held.get('duplicate') else "") + ".\n")
+      + "; ".join(x for x in [
+          f"{held['ruled_out']} ruled out on adjudication (the fact holds, but "
+          f"Endorphin ruled the answer does not bend toward power; "
+          f"`c_check/adjudication/`)" if held.get('ruled_out') else "",
+          f"{held['unassessable']} unassessable, because the record needed to "
+          f"judge it is missing from the export" if held.get('unassessable') else "",
+          f"{held['out_of_boundary']} quoting Claude-authored tool-call text, "
+          f"outside the corpus boundary of turns and commits"
+          if held.get('out_of_boundary') else "",
+          f"{held['duplicate']} a duplicate of an instance already counted"
+          if held.get('duplicate') else ""] if x) + ".\n")
     sens = counts.get("sensitivity") or []
     if sens:
         A("| reading | confirmed |")
@@ -115,14 +119,13 @@ def main():
             A(f"| {'**' + label + '**' if i == 0 else label} | "
               f"{'**' + str(n) + '**' if i == 0 else n} |")
         A("")
-        A("Every row is the primary count with one decision changed. Rule-5 "
-          "disputes are six rows the direct check found factually false but "
-          "judged to carry no power vector; they stay in the primary count as "
-          "logged disagreements until they are adjudicated from their turns "
-          "(`c_check/C_CHECK.md`). The close calls, the self-contradiction set "
-          "and the tool-call rows are set out in limits 11 and 14. "
-          "Cross-conversation evidence: the codebook's (a) is same-conversation "
-          "by definition and its (b) is silent.\n")
+        A("Every row is the primary count with one decision changed. The "
+          "close calls, the self-contradiction set and the tool-call rows are "
+          "set out in limits 11 and 14. Cross-conversation evidence: the "
+          "codebook's (a) is same-conversation by definition and its (b) is "
+          "silent. The rule-5 disputes no longer have a line: Endorphin ruled on "
+          "all of them, with the other P10-shaped rows, one by one "
+          "(`c_check/adjudication/rulings.json`).\n")
 
     subs = counts.get("by_substrate") or {}
     if subs:
@@ -228,12 +231,14 @@ def main():
       "top ten where nobody was auditing.\n")
     A("**The ten changed on 2026-09-28.** Two former entries (8195d24b P8, "
       "0e032cf3 P1+P10) moved to unconfirmed under the (a)/(b) rule "
-      "(`c_check/AB_RULE.md`): their (c) evidence was unresolved and a whole "
-      "reading found no valid (a) or (b). A third (cfbf131f P2) moved and was "
-      "then restored on tool-record evidence. The next confirmed nominations "
-      "moved up. Three rows tie at 15 for the last place; the one kept is first "
-      "in nomination order, and the two left out are dxm-archaive P4 and "
-      "veriticide-general-ledger's reflexive-specimen P8.\n")
+      "(`c_check/AB_RULE.md`). A third (cfbf131f) moved, was restored on "
+      "tool-record evidence, and was then recoded from P2 to P10 on "
+      "Endorphin's ruling. A fourth (e5825937 P11+P10, the fabricated "
+      "bibliography) was ruled out on adjudication: the citations are false, "
+      "but they served the user's own speculation, not power. The next "
+      "confirmed nominations moved up. Three rows tie at 15 for the last two "
+      "places; the two kept are first in nomination order, and the one left out "
+      "is veriticide-general-ledger's reflexive-specimen P8.\n")
     A("**The second export was ranked too, and nothing from it places.** Its "
       "97 confirmed instances were scored on the same rubric; the highest "
       "reaches 14 against the tenth-place 16, and 72 of the 97 were retracted "
