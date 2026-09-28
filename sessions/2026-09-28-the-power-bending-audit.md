@@ -20,7 +20,8 @@ at the expense of epistemic Truth."*
 
 - **317 confirmed instances, a provisional coder count**, with the adjudication
   rulings applied.
-  - The two records are never summed. **git: 73** (swept whole, 345 commits and
+  - 317 is the sum of the two records, and each is reported beside it.
+    **git: 73** (swept whole, 345 commits and
     6 transcripts across twelve repos). **claude.ai export: 244** (a targeted
     sample of 889 conversations and 4,167 turns).
   - 195 more rows are unconfirmed. 13 are held out: 10 ruled out, 1
@@ -87,7 +88,8 @@ at the expense of epistemic Truth."*
 **1. Several 09-28 messages were ChatGPT's, relayed. Claude filed them as his.**
 The direct-check brief, the review of `115033f`, the six decision
 recommendations, the `ab84e88` review, the Question 1 answer and the 14 row
-judgments were written by ChatGPT. Endorphin pasted them in and adopted them.
+judgments were written by ChatGPT. Endorphin relayed them, and Claude applied
+them as his directions.
 Claude wrote them into the files as "Endorphin ruled", "Endorphin's decision"
 and "(Endorphin)". He corrected this twice:
 - first on the adjudication: *"You adopted my ChatGPT judgments; Claude
@@ -110,8 +112,8 @@ history rewrites.
 verifier, which found about half the coders' count. It then judged the 14
 disputes, which removed 10 of them. The disputes were between the Claude coders
 and the Claude checkers, not between the coders and V2, so this is not
-self-review. But no reader outside the two model families has touched any
-stage. The directives told ChatGPT that its maker competes with the vendor
+self-review. But no independent human coder or verifier has touched any stage;
+Endorphin's role was review and adoption. The directives told ChatGPT that its maker competes with the vendor
 being audited, and to judge bends toward either equally. Recorded as a
 property of the process, not as a claim of bias. It is not a disagreement
 anyone has raised.
@@ -158,13 +160,36 @@ All of these are in the report's limits.
 `GLOSSARY.md`, so there was nothing here to contradict. `AGENTS.md` says not to
 cite a proposed atlas or glossary until merged.
 
-## Proposed working-agreement edit (not applied — his call)
+## Working agreement — approved 2026-09-28, with one change
 
-For the hub's working agreements:
+The proposal said relayed text should be recorded as *"proposed by X; adopted
+by Endorphin"*. It was approved with a correction: **relaying text does not
+automatically mean adopting it.** The approved rule:
 
-> **Attribute relayed text to its author.** When a message relays another
-> model's output (tells: a "Worked for Ns" header, first person as another
-> participant, a table of recommendations), record it as *proposed by X;
-> adopted by Endorphin*. His adoption is his authority; it is not his
-> origination, and the files must not imply he independently read what he
-> adopted.
+> Attribute relayed text to its identifiable author. Record Endorphin as the
+> person who relayed it; record adoption only when he explicitly endorses it or
+> directs its application. Record who applied it separately. If authorship is
+> uncertain, mark it uncertain rather than assigning it to Endorphin.
+
+It is a standing note in `LATEST.md`. For the hub, it is a draft PR on
+`claude-at-claude`, not pushed to main. The hub's `CLAUDE.md` is deliberately
+one rule, and its `AGENTS.md` sends governance changes through a draft PR, so
+where it lands there is his call.
+
+**The rule applies to the message that approved it.** That message addresses
+Endorphin in the second person (*"it should not erase your review and adoption
+role"*), so its author is **uncertain, likely ChatGPT**, and Endorphin relayed
+it. It was applied because he sent it as a direction.
+
+**Two wording errors in this log, corrected in the same pass,** also in the
+README, the report and `LATEST.md`:
+- "the two records are never summed" was false, since 317 is 73 + 244. Each
+  record is reported beside the sum, and kappa is never pooled.
+- "no human reader anywhere" erased his review and adoption role. It now says
+  "no independent human coder or verifier".
+
+**One consequence left for him.** The audit files say "Endorphin adopted those
+judgments" for the 14 rulings and the 2026-09-28 decisions. That wording came
+from the relayed text itself (*"You adopted my ChatGPT judgments"*). Under the
+approved rule, whether that counts as his explicit endorsement is his to
+confirm. The files were not changed on inference.

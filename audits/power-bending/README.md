@@ -15,8 +15,9 @@ The findings are instrument readings. Each number is bounded by the limits in
 
 ## Current readings
 
-**Two records, never summed.** A line in a public commit and a turn in a
-private conversation are different objects.
+**Two records, each reported separately.** The headline is their sum, but a
+line in a public commit and a turn in a private conversation are different
+objects, so each record's count always appears beside it.
 
 | record | coverage | confirmed | unconfirmed |
 |---|---|---:|---:|
@@ -53,8 +54,9 @@ low. The report keeps that figure and explains how it went wrong.
 
 ## Who read what
 
-**There is no human coder anywhere in this process.** Each stage was done by
-a model:
+**There is no independent human coder or verifier in this process.** Each
+coding and verification stage was done by a model. Endorphin's role was review
+and adoption:
 
 | stage | reader |
 |---|---|
@@ -166,7 +168,8 @@ needs files that are deliberately not in the repository:
 
 ## Standing rules
 
-- **Two substrates, never summed** into one headline. Kappa is computed per
+- **Two substrates, each reported separately.** The headline sums them, and
+  each substrate's count always appears beside it. Kappa is computed per
   substrate and never pooled.
 - **Rows are frozen before they are checked.** A rule for a check is committed
   before the check runs.

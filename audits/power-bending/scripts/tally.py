@@ -24,10 +24,10 @@ from collections import Counter, defaultdict
 CODES = [f"P{i}" for i in range(1, 12)]  # P1..P11 as of codebook v1.1
 
 # A claude.ai conversation id is a bare UUID. A git-substrate id is "repo:path"
-# or "repo:sha". The two substrates are counted separately and never summed
-# into one headline: they are different instruments over different records, and
-# an instance in a committed commit message is not commensurable with a turn in
-# a private conversation.
+# or "repo:sha". The two substrates are counted separately. The headline count
+# is their sum, and each is always reported beside it: they are different
+# instruments over different records, and an instance in a committed commit
+# message is not commensurable with a turn in a private conversation.
 UUID_RE = re.compile(
     r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$", re.I)
 
@@ -270,8 +270,8 @@ def main():
                     })
         kappas["_units_double_coded"] = len(units)
 
-        # Kappa per substrate. The two records are never summed anywhere else
-        # in this audit, and a pooled kappa would do exactly that: once a
+        # Kappa per substrate, never pooled. A pooled kappa would blend two
+        # readers over two differently sampled records: once a
         # verifier covers the export (sample_V2.json), its agreement must not
         # be folded into the git figure the report labels "git only".
         kappa_sub = {}

@@ -5,9 +5,11 @@ a count; every count in the report comes from the scripts.
 <!--SPLIT:SUBSTRATE-->
 ## Two records, counted separately
 
-This audit ran twice over two different records, and they are never summed into
-one headline. An instance in a committed commit message, public and written to
-be read, is not the same object as a turn in a private conversation.
+This audit ran twice over two different records. The headline confirmed count
+is their sum, and each record's count is always reported beside it, because
+they are not the same kind of object: an instance in a committed commit message,
+public and written to be read, is not a turn in a private conversation, and the
+two were sampled differently. Kappa is never pooled across them.
 
 **The git substrate** was swept whole: every Claude-authored commit and every
 committed session transcript across twelve repositories, 2026-04-01 to
@@ -283,9 +285,11 @@ the export figures above as the coders' count, which a second reader reproduces
 at about half the rate** — and for P1, P2 and P10, barely at all. κ measures agreement, not accuracy. Either reader can be wrong, and both can be
 wrong in the same place: two language models trained on overlapping text can
 share a blind spot, and agreement then scores it as reliability. **There is no
-human reader anywhere in this audit, and none is available**: every coder,
-verifier and ranker is a language model, and no human coder has the capacity to
-read 10.6 million characters of one person's private conversations. The only
+independent human coder or verifier in this audit, and none is available**:
+every coder, verifier and ranker is a language model, and no human coder has the
+capacity to read 10.6 million characters of one person's private conversations.
+Endorphin's role is review and adoption of decisions, not coding or
+verification. The only
 check that doesn't depend on a reader is type (c) evidence, a checkable fact
 such as git history, a published source or a number, which holds or fails
 whoever reads it.

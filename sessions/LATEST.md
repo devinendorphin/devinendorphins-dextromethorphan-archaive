@@ -78,8 +78,8 @@ none of the corpus rules above were needed for it. **Start at
 (`988927b`). The branch `claude/audit-power-bending-dgbrl9` is merged history,
 so restart it from `origin/main` for anything further.
 
-- **317 confirmed, a provisional coder count** (git 73, export 244, never
-  summed). 195 unconfirmed, 13 held out. Sensitivity: 323 / 322 / 318 / 300.
+- **317 confirmed, a provisional coder count** (the sum of git 73 and
+  export 244, each always reported beside it). 195 unconfirmed, 13 held out. Sensitivity: 323 / 322 / 318 / 300.
 - **Pass 1 on git: SELF 10, USER 0.**
 - **Export replication is about half, and one-directional**: ChatGPT's
   Verification 2 found 141 where the coders found 277. No cause is established.
@@ -87,7 +87,8 @@ so restart it from `origin/main` for anything further.
 - **Provenance:**
   - The 14 rulings and the dated 2026-09-28 decisions were **proposed by
     ChatGPT, adopted by Endorphin and applied by Claude.**
-  - There is no human coder or reader anywhere in the process.
+  - There is no independent human coder or verifier. Endorphin's role was
+    review and adoption.
   - Claude first filed the relayed ChatGPT text as Endorphin's own. He
     corrected it twice. See the new standing note.
 
@@ -817,9 +818,13 @@ still open and is not displaced by these; they are different workstreams.**
 
    Each changes a count if adopted, which is why each was deferred instead of
    applied.
-3. **The relayed-provenance working agreement** (proposed in the session
-   log, not applied). It belongs in the hub if he approves. It is the only
-   error this session that he had to correct twice.
+3. **Settle where the relayed-provenance rule lives in the hub.** He approved
+   it on 2026-09-28 with one change, and it is a standing note here. The hub
+   copy is a draft PR on `claude-at-claude`, because that `CLAUDE.md` is
+   deliberately one rule and its `AGENTS.md` routes governance changes through
+   a draft PR. Also for him to confirm: whether the "adopted by Endorphin"
+   wording in the audit files counts as his explicit endorsement. That wording
+   came from the relayed text itself.
 
 **Set 2026-08-17. These come before every older list below.**
 
@@ -1768,20 +1773,21 @@ merged.)*
   say so in the entry. The two weakest entries are the two that touch the
   subject most directly — that asymmetry is itself the finding, and it is
   §11's named gap rather than something to smooth over.
-- **Attribute relayed text to its author.** 2026-09-28, and his correction,
-  made twice.
-  - When a message is another model's output pasted in, record it as
-    *"proposed by X; adopted by Endorphin; applied by Claude"*.
-  - The tells are a "Worked for Ns" header, first person as another
-    participant ("my failure to fact-check", from the verifier), and a
-    recommendations table.
-  - *"'Endorphin's decisions' accurately names who authorized them, but the
-    provenance should say 'proposed by ChatGPT; adopted by Endorphin; applied
-    by Claude' where that sequence holds."* His adoption is authority, not
-    origination, and the files must not imply he read what he adopted.
+- **Attribute relayed text to its author.** 2026-09-28. He corrected the
+  provenance twice, then approved this rule with one change: relaying text
+  does not automatically mean adopting it.
+  > Attribute relayed text to its identifiable author. Record Endorphin as the
+  > person who relayed it; record adoption only when he explicitly endorses it
+  > or directs its application. Record who applied it separately. If
+  > authorship is uncertain, mark it uncertain rather than assigning it to
+  > Endorphin.
+  - Tells that text is relayed: a "Worked for Ns" header; first person as
+    another participant ("my failure to fact-check", from the verifier);
+    Endorphin addressed in the second person; a recommendations table.
 - **In the power-bending audit, the evidence rules are standing:**
-  - Never sum the git and export substrates. Compute kappa per substrate and
-    never pool it.
+  - The headline sums the git and export counts, and each is always
+    reported beside it, never folded in silently. Compute kappa per
+    substrate and never pool it.
   - Freeze rows, and commit a check's decision rule, *before* running the
     check.
   - Unresolved stays unresolved. A missing message or an unreachable source

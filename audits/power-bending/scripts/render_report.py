@@ -132,8 +132,9 @@ def main():
     subs = counts.get("by_substrate") or {}
     if subs:
         A("### By substrate\n")
-        A("These are two instruments over two records and are never summed "
-          "into one headline. The git side was swept whole; the export side is "
+        A("These are two instruments over two records. The headline count is "
+          "their sum; each is reported here beside it because they are not "
+          "comparable. The git side was swept whole; the export side is "
           "a targeted sample of conversations carrying a hit or a seed term, "
           "so its density per conversation is a property of that selection.\n")
         A("| substrate | confirmed | conversations | unconfirmed |")
