@@ -818,13 +818,13 @@ still open and is not displaced by these; they are different workstreams.**
 
    Each changes a count if adopted, which is why each was deferred instead of
    applied.
-3. **Settle where the relayed-provenance rule lives in the hub.** He approved
-   it on 2026-09-28 with one change, and it is a standing note here. The hub
-   copy is draft PR #4 on `claude-at-claude`, because that `CLAUDE.md` is
-   deliberately one rule and its `AGENTS.md` routes governance changes through
-   a draft PR. The "adopted by Endorphin" wording in the audit files is
+3. **Merge hub draft PR #4 when he says so.** The relayed-provenance rule was
+   approved on 2026-09-28, and he placed it in `AGENTS.md`, not in
+   `CLAUDE.md`, which stays one rule. The PR is `claude-at-claude#4`, still a
+   draft. The hub requires his explicit instruction for that PR before merging.
+   His endorsement of the "adopted by Endorphin" wording in the audit files is
    confirmed: *"I endorphin endorsed those jusgements"*
-   (`[?jusgements→judgements]`, 2026-09-28).
+   (`[?jusgements→judgements]`).
 
 **Set 2026-08-17. These come before every older list below.**
 
