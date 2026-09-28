@@ -158,12 +158,20 @@ Rule written and committed before any check: `AB_RULE.md`. Row-level results:
 |---|---:|
 | moved to unconfirmed | **27** |
 | stays: (c) established by a prior record-scope search | 1 (C04) |
-| stays: provisional, hole in the export where the correction could be | 1 (C41) |
+| held out, unassessable: the export is missing the message that could correct it | 1 (C41) |
 | stays: valid (b) | 1 (C56) |
 
+C41 was first applied as "provisional, stays confirmed" under the committed rule.
+Endorphin's decision of 2026-09-28 corrects that: a missing message can't confirm
+anything, so the gap makes the row unassessable, not evidenced. It's held out of
+the confirmed count, neither confirmed nor refuted.
+
 Confirmed: **354 → 327**, then **330** after three moved rows (C35, C44, C47)
-were restored: each turn's own tool record, which the coders never cited,
-contradicts its claim. Power direction is unclear on all three, and C35's P2 code
-doesn't fit a claimed verification; that's logged as a disagreement. The close calls, the rows recoverable on better (c)
-evidence, and the codebook's missing evidence type for a self-contradiction are
-set out in the report under limit 11.
+were restored. Each turn's own tool record, which the coders never cited,
+contradicts its claim. Power direction is unclear on all three. C35's P2 code
+doesn't fit a claimed verification; it isn't switched, and it isn't a secure
+example until its code and power direction are adjudicated. **Then 328 as the
+provisional primary count**, after the decisions of 2026-09-28 held C41
+(unassessable) and the one confirmed tool-call-text row (outside the corpus
+boundary) out of it. The sensitivity figures are in the report's Pass 2 table; the close calls
+and the self-contradiction set are set out under limit 11.

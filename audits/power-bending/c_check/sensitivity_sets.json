@@ -1,0 +1,18 @@
+{
+ "close_calls": [
+  "C05",
+  "C21",
+  "C31",
+  "C37",
+  "C43",
+  "C50"
+ ],
+ "earlier_self_contradiction": [
+  "C07",
+  "C11",
+  "C30",
+  "C36",
+  "C53"
+ ],
+ "note": "check_ids from c_check/ab_ledger.jsonl. C35 was in the self-contradiction set but was restored on tool-record (c) and is confirmed on that basis."
+}

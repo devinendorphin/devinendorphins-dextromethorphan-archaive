@@ -156,9 +156,19 @@ def main():
         parts = [x.strip() for x in str(et or "").split("|") if x.strip()]
         return bool(parts) and all(x in ("a", "b", "c") for x in parts)
 
+    # Held out: rows that are neither confirmed nor unconfirmed. `unassessable`
+    # means the record needed to judge the row is missing from the export (a
+    # missing message cannot confirm anything); `out_of_boundary` means the
+    # quoted text is Claude-authored tool-call text, outside the corpus
+    # boundary of turns and commits. Both are decisions of 2026-09-28. They are
+    # excluded from the confirmed count and written to held_out.csv.
+    HELD = ("unassessable", "out_of_boundary")
+    held_out = [r for r in coder if r.get("status") in HELD]
     confirmed = [r for r in coder if r.get("confirmed") is True
-                 and valid_evidence(r.get("evidence_type"))]
-    unconfirmed = [r for r in coder if r not in confirmed]
+                 and valid_evidence(r.get("evidence_type"))
+                 and r.get("status") not in HELD]
+    unconfirmed = [r for r in coder if r not in confirmed
+                   and r.get("status") not in HELD]
 
     def write_rows(path, rows):
         fields = ["conversation_uuid", "date", "model_version", "title",
@@ -178,6 +188,7 @@ def main():
     os.makedirs(args.out, exist_ok=True)
     write_rows(os.path.join(args.out, "power_bending.csv"), confirmed)
     write_rows(os.path.join(args.out, "unconfirmed.csv"), unconfirmed)
+    write_rows(os.path.join(args.out, "held_out.csv"), held_out)
 
     def block(rows):
         pc = Counter()
@@ -299,7 +310,51 @@ def main():
                 rule5_disputed.add((o["conversation_uuid"], o["message_index"],
                                     tuple(o["codes"])))
 
+    # Sensitivity sets from the (a)/(b) check: rows currently unconfirmed that
+    # a looser reading would restore. Keyed by check_id through ab_frozen_30.
+    def rows_for(check_ids):
+        keys = set()
+        frozen = os.path.join(args.out, "c_check", "ab_frozen_30.jsonl")
+        if os.path.exists(frozen):
+            for line in open(frozen, encoding="utf-8"):
+                o = json.loads(line)
+                if o["check_id"] in check_ids:
+                    keys.add((o["conversation_uuid"], o["message_index"],
+                              tuple(o["codes"])))
+        # Count each frozen check once. Matching rows instead would count a
+        # turn twice wherever another batch coded the same turn with the same
+        # codes -- which is how the first version of this reported 336 for a
+        # five-row set.
+        unconf_keys = {(r.get("conversation_uuid"), r.get("message_index"),
+                        tuple(r.get("codes") or [])) for r in unconfirmed}
+        return len(keys & unconf_keys)
+
+    sets = {}
+    sp = os.path.join(args.out, "c_check", "sensitivity_sets.json")
+    if os.path.exists(sp):
+        sets = json.load(open(sp, encoding="utf-8"))
+    n_close = rows_for(set(sets.get("close_calls", [])))
+    n_self = rows_for(set(sets.get("earlier_self_contradiction", [])))
+    n_r5 = sum(1 for r in confirmed
+               if (r.get("conversation_uuid"), r.get("message_index"),
+                   tuple(r.get("codes") or [])) in rule5_disputed)
+    held_counts = Counter(r.get("status") for r in held_out)
+    sensitivity = [
+        ["primary: committed strict rule, rule-5 disputes kept, turns and commits only",
+         len(confirmed)],
+        ["rule-5 disputes accepted (no power vector)", len(confirmed) - n_r5],
+        ["looser reading of the six close calls", len(confirmed) + n_close],
+        ["earlier self-contradiction counted as evidence", len(confirmed) + n_self],
+        ["Claude-authored tool-call text counted",
+         len(confirmed) + held_counts.get("out_of_boundary", 0)],
+        ["without cross-conversation evidence",
+         sum(1 for r in confirmed
+             if r.get("evidence_scope") != "cross-conversation")],
+    ]
+
     counts = {
+        "sensitivity": sensitivity,
+        "held_out": dict(held_counts),
         "lexical": {
             "total_hits": sum(lex_counts.values()),
             "by_scope": dict(lex_counts),

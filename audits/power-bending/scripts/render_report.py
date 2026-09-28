@@ -94,24 +94,33 @@ def main():
 
     # ---- Pass 2 ----
     A("## Pass 2 — sycophancy to power, coded\n")
-    A(f"**{pb['confirmed_total']} confirmed instances.** "
+    held = counts.get("held_out") or {}
+    A(f"**{pb['confirmed_total']} confirmed instances: a provisional coder "
+      f"count.** It stays provisional until the rule-5 disputes and the "
+      f"statuses below are adjudicated. "
       f"{pb['unconfirmed_total']} further instances carried no (a)/(b)/(c) "
-      f"evidence and are in `unconfirmed.csv`, not in this count.\n")
-    r5 = pb.get("confirmed_excluding_rule5_disputes")
-    if r5 is not None and r5 != pb["confirmed_total"]:
-        A(f"**{r5} if the direct check's rule-5 judgments are accepted.** "
-          f"{pb['confirmed_total'] - r5} confirmed rows state a fact the check "
-          f"found false but that it judged to carry no power vector. They stay "
-          f"in the count as logged disagreements (`c_check/C_CHECK.md`).\n")
-    xc = pb.get("confirmed_cross_conversation", 0)
-    if xc:
-        A(f"**{xc} of the {pb['confirmed_total']} rest on evidence from a "
-          f"different conversation** "
-          f"-- usually a later Claude turn elsewhere retracting the same "
-          f"move. The codebook's (a) is same-conversation by definition and "
-          f"its (b) is silent, so both figures are given rather than one "
-          f"chosen: **{pb['confirmed_excluding_cross_conversation']}** "
-          f"confirmed without them.\n")
+      f"evidence and are in `unconfirmed.csv`. "
+      f"{sum(held.values())} are held out of both, in `held_out.csv`: "
+      f"{held.get('unassessable', 0)} unassessable because the record needed "
+      f"to judge it is missing from the export, and "
+      f"{held.get('out_of_boundary', 0)} quoting Claude-authored tool-call "
+      f"text, outside the corpus boundary of turns and commits.\n")
+    sens = counts.get("sensitivity") or []
+    if sens:
+        A("| reading | confirmed |")
+        A("|---|---:|")
+        for i, (label, n) in enumerate(sens):
+            A(f"| {'**' + label + '**' if i == 0 else label} | "
+              f"{'**' + str(n) + '**' if i == 0 else n} |")
+        A("")
+        A("Every row is the primary count with one decision changed. Rule-5 "
+          "disputes are six rows the direct check found factually false but "
+          "judged to carry no power vector; they stay in the primary count as "
+          "logged disagreements until they are adjudicated from their turns "
+          "(`c_check/C_CHECK.md`). The close calls, the self-contradiction set "
+          "and the tool-call rows are set out in limits 11 and 14. "
+          "Cross-conversation evidence: the codebook's (a) is same-conversation "
+          "by definition and its (b) is silent.\n")
 
     subs = counts.get("by_substrate") or {}
     if subs:

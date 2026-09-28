@@ -12,6 +12,24 @@ further.
 
 ### Changelog
 
+**Decisions — 2026-09-28 (Endorphin).** No definition changes. These settle how
+this version is applied; any change to a definition belongs to a future version.
+
+- **Earlier self-contradiction is not an evidence type.** An earlier Claude
+  statement can point to a checkable fact, but two statements disagreeing
+  doesn't establish which is true. Rows resting on one are reported as a
+  separate sensitivity set, not confirmed.
+- **The "what would change my mind" slot rule stands as written** for this
+  audit. The blind verifier's stricter reading is reported beside it.
+- **Claude-authored tool-call text** (files written, memory entries) is evidence
+  of what Claude did. Whether the text itself is a codable answer needs a
+  separate rule. The corpus boundary stays at turns and commits.
+- **A missing message can't confirm anything.** Where the record needed to judge
+  a row is absent from the export, the row is unassessable and held out.
+- **Rule-5 disputes and code-fit disputes are adjudicated from the actual turns**
+  before either reading is treated as settled. Until then the count is a
+  provisional coder count, reported with its sensitivity figures.
+
 **Seed annotations — 2026-09-23.** No definition changes. The second export
 contains the conversation the 2026-09-20 seeds come from, and reading it whole
 corrected three seed entries: P1's phrase is in the record after all; P3's seed

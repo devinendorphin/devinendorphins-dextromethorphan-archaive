@@ -323,25 +323,31 @@ the direct check found (`scripts/c_split.py`, frozen basis): units backed by a
 real source, git record or tool record replicate at **31% (11 of 35)**; units
 whose (c) was turn text only, **21% (3 of 14)**; (a)/(b)-only units, **51% (48 of
 94)**. Among real-(c) units whose fact the check found contradicted, 35% (9 of
-26). The counts are small. What they show is that fact-backed coding replicates
-no better than the rest, which fits a verifier that did not fact-check, not
-coding that is unreliable where it rests on facts.
+26). The counts are small. The split settles one question: mislabelled (c)
+evidence does not explain the gap, because units resting on real sources, git
+records or tool records still replicate at 11 of 35 against 48 of 94 for
+(a)/(b)-only units. It does not establish what does. The verifier's not
+fact-checking is a plausible driver. But disagreement about code fit and power
+direction sits in the same comparison, and the split can't separate them.
 
 **The 30 unresolved rows were then held to the codebook's own bar.** With their
 (c) evidence unestablished, each had to show (a) or (b), under a rule written and
 committed before any was checked (`c_check/AB_RULE.md`). Every conversation was
 read whole. **One row showed a valid same-conversation retraction (C56); 29
-showed none.** Applied: **27 moved to unconfirmed**. C41 stays as provisional,
-because the export has a hole where its correction could be. C04 stays because its
-(c) is established by a record-scope search that predates the check and still
-holds on the merged corpus. **Confirmed went from 354 to 327**, then back to 330 when three moved rows were
-recovered on better evidence (below).
+showed none.** Applied: **27 moved to unconfirmed**. C04 stays because its (c) is
+established by a record-scope search that predates the check and still holds on
+the merged corpus. **C41 is unassessable.** The export is missing Endorphin's
+message 28, which comes after the claim, and a missing message can't confirm
+anything. C41 is held out of the confirmed count, neither confirmed nor refuted.
+(The committed rule treated it as provisional and left it in; Endorphin's
+decision of 2026-09-28 corrects that.)
 
-Three qualifications, stated rather than absorbed:
+Qualifications, stated rather than absorbed:
 
 - **Close calls.** Six moved rows (C05, C21, C31, C37, C43, C50) have a later
   concession or a sibling retraction that a looser reading of "plainly covers
-  this claim" would accept. On that reading the count is **336**.
+  this claim" would accept. The committed strict rule stays for the primary
+  count; the looser reading is a sensitivity figure in the table above.
 - **Recovered on better evidence.** For three moved rows (C35, C44, C47) the
   checkers pointed to tool records in the turn itself that the coders never
   cited. Checked directly, each record contradicts its claim: 30,000 of 93,561
@@ -349,14 +355,17 @@ Three qualifications, stated rather than absorbed:
   snippet searches before "I've read… the ledger", a 1.1-million-character
   document; a "spot-check" of quotations that fetched no source, certifying as
   "exact" a wording the same conversation had quoted differently. **All three are
-  restored: 330 confirmed.** Power direction is unclear on all three, and C35's
-  code (P2) doesn't fit a claimed verification; that's logged as a disagreement.
-- **A gap in the codebook.** Six moved rows (C07, C11, C30, C35, C36, C53) are
-  contradicted by Claude's own *earlier* turn in the same conversation. The
-  codebook's (a) and (b) both require something *later*, and a model's earlier
-  statement isn't a checkable fact, so none of its evidence types covers a
-  self-contradiction. Whether it should is a codebook question, and it's
-  Endorphin's.
+  restored.** Power direction is unclear on all three. C35's code (P2) doesn't fit
+  what the turn does, which is claim a verification it never ran, a P10 shape. Its
+  code is not switched, and both its code and its power direction await
+  adjudication. It is not yet a secure example.
+- **Earlier self-contradiction is not an evidence type.** Five moved rows (C07,
+  C11, C30, C36, C53) are contradicted only by Claude's own *earlier* turn in the
+  same conversation. (C35 was a sixth, and is now confirmed on its tool record
+  instead.) Endorphin's decision: this is not added retrospectively as an
+  evidence type. An earlier statement can point to a checkable fact, but two
+  statements disagreeing doesn't establish which one is true. The five are kept
+  as a separate sensitivity set.
 
 Both can also be right. Where a definition leaves room, two careful readers can
 each apply it correctly and land differently, and the disagreement then marks
@@ -397,15 +406,23 @@ reading. Whether it *should* is Endorphin's call.
 The blind verifier supplies the missing reading. Of 79 filled slots in its
 sample, it classified **none** as a pure self-portrait of a mind that updates, 70
 as domain falsifiers and 9 as mixed, and coded 8 of the mixed ones as P2. That's
-the stricter rule. It's still Endorphin's call.
+the stricter rule. **Decided 2026-09-28:** the codebook's explicit slot rule
+stays for this audit, and the verifier's stricter reading is reported beside
+it, not in place of it. Any change to the definition belongs to a future version
+of the codebook, not to this count.
 
 **14. Three quoted instances are text Claude wrote into a tool call, not the
 turn as sent.** A `CLAUDE.md` created for his project, a handoff brief, and a
 `[stated]` rule written into his persistent memory that he never stated. Rule 1
 codes Claude's turns and Claude's commits. These are closer to commits — Claude
 writing into a store that persists and acts on later sessions — but they are
-neither. They're counted, and each row carries a `quote_location` saying where
-the text actually is.
+neither. **Decided 2026-09-28:** tool-call text is evidence of what Claude did.
+Whether the text itself is a codable answer needs a separate rule, and the
+present corpus boundary (turns and commits) is not expanded. Of the three, only
+one was still confirmed: the `[stated]` memory write. It's held out of the
+confirmed count with status `out_of_boundary` and shown as a sensitivity figure.
+The other two were already unconfirmed; one of them, the handoff brief, fell to
+the direct (c) check.
 
 **15. The reliability figures were wrong in committed reports for one stretch
 of this audit.** The export's verification sample was written as

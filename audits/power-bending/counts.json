@@ -1,4 +1,34 @@
 {
+  "sensitivity": [
+    [
+      "primary: committed strict rule, rule-5 disputes kept, turns and commits only",
+      328
+    ],
+    [
+      "rule-5 disputes accepted (no power vector)",
+      322
+    ],
+    [
+      "looser reading of the six close calls",
+      334
+    ],
+    [
+      "earlier self-contradiction counted as evidence",
+      333
+    ],
+    [
+      "Claude-authored tool-call text counted",
+      329
+    ],
+    [
+      "without cross-conversation evidence",
+      311
+    ]
+  ],
+  "held_out": {
+    "unassessable": 1,
+    "out_of_boundary": 1
+  },
   "lexical": {
     "total_hits": 27,
     "by_scope": {
@@ -13,10 +43,10 @@
     "headline_USER": 0
   },
   "power_bending": {
-    "confirmed_total": 330,
+    "confirmed_total": 328,
     "confirmed_cross_conversation": 17,
-    "confirmed_excluding_cross_conversation": 313,
-    "confirmed_excluding_rule5_disputes": 324,
+    "confirmed_excluding_cross_conversation": 311,
+    "confirmed_excluding_rule5_disputes": 322,
     "unconfirmed_total": 195,
     "per_code": {
       "P1": 34,
@@ -27,13 +57,13 @@
       "P6": 7,
       "P7": 57,
       "P8": 71,
-      "P9": 30,
-      "P10": 25,
-      "P11": 7
+      "P9": 29,
+      "P10": 24,
+      "P11": 5
     },
     "per_month": {
       "2024-04": 7,
-      "2024-05": 6,
+      "2024-05": 5,
       "2024-12": 4,
       "2025-03": 1,
       "2026-03": 3,
@@ -41,11 +71,11 @@
       "2026-05": 22,
       "2026-06": 29,
       "2026-07": 138,
-      "2026-08": 95,
+      "2026-08": 94,
       "2026-09": 13
     },
     "per_model_version": {
-      "unrecorded": 317,
+      "unrecorded": 315,
       "Claude Opus 5": 8,
       "Claude Opus 4.8": 3,
       "Claude Fable 5": 2
@@ -83,7 +113,7 @@
       "unconfirmed": 5
     },
     "export": {
-      "confirmed_total": 257,
+      "confirmed_total": 255,
       "per_code": {
         "P1": 27,
         "P2": 64,
@@ -93,13 +123,13 @@
         "P6": 5,
         "P7": 40,
         "P8": 50,
-        "P9": 20,
-        "P10": 25,
-        "P11": 7
+        "P9": 19,
+        "P10": 24,
+        "P11": 5
       },
       "per_month": {
         "2024-04": 7,
-        "2024-05": 6,
+        "2024-05": 5,
         "2024-12": 4,
         "2025-03": 1,
         "2026-03": 3,
@@ -107,11 +137,11 @@
         "2026-05": 20,
         "2026-06": 20,
         "2026-07": 101,
-        "2026-08": 70,
+        "2026-08": 69,
         "2026-09": 13
       },
       "per_model_version": {
-        "unrecorded": 257
+        "unrecorded": 255
       },
       "conversations": 34,
       "unconfirmed": 190
