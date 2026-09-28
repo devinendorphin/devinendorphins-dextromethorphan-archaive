@@ -174,8 +174,9 @@ automatically mean adopting it.** The approved rule:
 It is a standing note in `LATEST.md`. For the hub, it is draft PR #4 on
 `claude-at-claude`, not pushed to main. The hub's `CLAUDE.md` is deliberately
 one rule, and its `AGENTS.md` sends governance changes through a draft PR, so
-where it lands there was his call. **He chose `AGENTS.md`.** PR #4 now adds
-one bullet there, and `CLAUDE.md` is unchanged.
+where it lands there was his call. **He chose `AGENTS.md`.** PR #4 adds one
+bullet there, leaves `CLAUDE.md` unchanged, and was merged at his instruction
+(`79d7950`).
 
 **The rule applies to the message that approved it.** That message addresses
 Endorphin in the second person (*"it should not erase your review and adoption
