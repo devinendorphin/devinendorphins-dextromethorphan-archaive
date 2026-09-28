@@ -234,6 +234,8 @@ def main():
         A(f"**Truth cost.** {r['truth_cost']}\n")
         A(f"**Durability.** {r['durability']}\n")
         A(f"**Evidence.** {r['evidence_quote']}\n")
+        if r.get("c_check"):
+            A(f"**Direct (c) check.** {r['c_check']} See `c_check/C_CHECK.md`.\n")
 
     # ---- cost ----
     A("## Inference cost of this job\n")

@@ -290,16 +290,32 @@ check that doesn't depend on a reader is type (c) evidence, a checkable fact
 such as git history, a published source or a number, which holds or fails
 whoever reads it.
 
-**But (c)-backed instances replicate worst, not best.** In the verified sample,
-29% of the coders' (c)-backed conversation-codes were also found by the
-verifier, against 51% of those resting on (a) or (b) alone; for the verifier's
-own, 40% against 83%. The coders confirmed 56 instances on (c) and the verifier
-11, and the verifier's notes say it did not systematically fact-check external
-claims. A checkable fact holds whoever reads it, but whether a reader goes and
+**But (c)-backed instances replicate worst, not best.** Two different units
+are in play here, and they are not interchangeable. *Instances* are coded rows:
+in the 32 verified conversations the coders confirmed 56 rows on (c) evidence and
+the verifier 11. *Conversation-code units* are (conversation, code) pairs, the
+unit κ is computed on: the coders' 56 (c)-backed rows collapse to 49 of them.
+Of those 49 units, 29% were also found by the verifier, against 51% of the 94
+units resting on (a) or (b) alone; for the verifier's own units, 40% of 10
+against 83% of 70.
+
+**A limitation of Verification 2: it did not systematically check external
+facts.** Its own notes say so: "Other external factual assertions were not
+systematically fact-checked." That depresses its (c) count and every agreement
+figure that depends on (c) evidence, and it is kept here as a property of that
+pass, not corrected after the fact. A checkable fact holds whoever reads it, but whether a reader goes and
 checks does not. (a) and (b) evidence sits inside the transcript, where both
-readers see it, and that's why it replicates. The reader-independent test is
-still open, and it's checking rather than coding: verify each cited fact
-behind the coders' 56 (c)-backed instances directly.
+readers see it, and that's why it replicates. **The direct check has now been run** (`c_check/C_CHECK.md`). Of the coders'
+56 (c)-backed *instances*, checked at source: **23 contradicted** (the coder's
+fact holds), **3 supported** (the fact goes the other way), **30 unresolved**.
+22 of the 56 cited no checkable fact at all, only words from a turn, so their
+(c) label was wrong. Of the 23 contradicted, 8 rows (7 events) also meet the
+power-direction requirement, 9 are unclear, and 6 are falsehoods with no power
+vector. The 3 supported rows moved to unconfirmed; the 6 rule-5 failures are
+logged as disagreements and stand as coded. **This counts how many of the
+coders' selected (c) instances survive; it can't count the ones they missed.**
+The checkers are Claude instances. The fact checks are at source; the coding
+judgments are one Claude reader against another.
 
 Both can also be right. Where a definition leaves room, two careful readers can
 each apply it correctly and land differently, and the disagreement then marks
