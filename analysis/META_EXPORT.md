@@ -72,8 +72,12 @@ enumerated.
 2. **Silent years.** Zero posts in 2012 and 2017; very sparse 2011–2018. These
    are real zeros in what the API returns, not fetch failures.
 3. **No Facebook stories archive** — the skill has no archive endpoint.
-4. **No instant messages.** Messenger Companion and Instagram Messages are both
+4. **No instant messages — partially superseded 2026-10-08.** Messenger Companion and Instagram Messages are both
    unconnected as of 2026-10-07, so the user's DMs are not in this corpus.
+   *Amendment 2026-10-08:* Messenger Companion was connected that morning;
+   the retained history only reaches back ~13 days (20 self-authored messages,
+   2026-09-25 → 2026-10-07; others' words never collected). See
+   `analysis/META_MESSAGES.md`. Instagram Messages remain unconnected.
 5. **Only one of two Facebook profiles.** The user historically kept two
    profiles (glubose@aol.com, glubose@gmail.com); only one account can be
    linked at a time. The linked profile is the one he ties to the AOL account
@@ -95,7 +99,8 @@ and the rest of the undo-tree measurements cannot be run on it — the data does
 not exist — which is the same asymmetry `TW_EXPORT.md` stated for Twitter,
 one archive further along.
 
-**Cannot.** It cannot answer anything about his messaging life (gap 4), about
+**Cannot.** It cannot answer much about his messaging life — gap 4 now admits only
+a 13-day, 20-message window of his own sent texts (`META_MESSAGES.md`) — about
 the other profile (gap 5), or about the visual content of his videos and
 photos — only 17 videos carry transcripts, and no image content was described.
 It cannot date when the pre-2020 videos disappeared (gap 1). And like every
