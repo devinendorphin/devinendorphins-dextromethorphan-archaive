@@ -27,6 +27,14 @@ input, so nothing here supports a closed-context reading.
 [`analysis/GROK_EXPORT.md`](analysis/GROK_EXPORT.md) carries the four-archive
 table; [`analysis/GROK.md`](analysis/GROK.md) is the measurements.
 
+A fifth arrived on 2026-10-08 — the **Meta export**: 1,820 Facebook timeline
+posts reaching back to 2008-10-07 and 1,743 Instagram records (posts, reels,
+story archive) from 2016-02-29, pulled from the linked accounts rather than
+from a user-downloaded export. It is the only archive with a social graph
+attached and the only one that predates the AI-play years by a decade, so it
+carries the life the other four were lived inside of. What it can and cannot
+answer is set out in [`analysis/META_EXPORT.md`](analysis/META_EXPORT.md).
+
 It was not made as research. It was made by playing, for years, with no thought
 toward use. The claim here is that the record is analysable anyway, and that
 some of what it shows is precisely what nobody was aiming at — see
