@@ -136,8 +136,10 @@ analyst, with instructions.
 > over every conversation you had with this language model to map out all the
 > times it lied to you and how."
 > (https://www.instagram.com/p/DdoOzX3oKlF/)
-This is the corpus anticipating *this project*: agents, assigned to read the
-record, mapping it. Written eleven days before the Meta pull began.
+This is the corpus describing, from inside, the operator's own audit
+practice — agents assigned to read a model's record back to it, mapping
+it — a practice already running in his Veriticide ledger since June.
+Written eleven days before the Meta pull began.
 
 ## Near-misses and the rule's edge
 

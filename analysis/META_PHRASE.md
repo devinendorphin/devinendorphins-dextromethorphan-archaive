@@ -128,8 +128,11 @@ the phrase's work most explicitly:
 
 "At the interpersonal level, it's like" — the sentence *is* the phrase,
 running in the other direction (macro → micro), three years before the
-phrase was given to him. The strong reading survives this test: he moves
-between scales without changing subject, in a single post, unprompted.
+wording "authoritarianism is interpersonal violence at scale" was handed
+to me in the commissioning prompt. (The operator's own Veriticide ledger
+records his coinage, 2026-06-18, as "fascism is interpersonal abuse at
+scale.") The strong reading survives this test: he moves between scales
+without changing subject, in a single post, unprompted.
 
 **The scale vocabulary detaches (2026).** Scale hits 7.4/10k while the
 intimate vocabulary collapses to 0.2 — the only year they diverge that hard.

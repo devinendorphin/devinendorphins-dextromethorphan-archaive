@@ -156,7 +156,7 @@ https://facebook.com/723125492/posts/pfbid0ea3a2RWGeiGipskKw97GvHgpdEfQFL8AYvZ31
 > ever oscillating cycle of conqueror-enslaved." (2024-11-25,
 https://facebook.com/723125492/posts/pfbid07MtTUSQvmNXSS8zSNBZBYDzFXk1ce2yuBCPiUtAMaWCFoNPufCc1beS9HKfdNCdWl/)
 >
-> "The powers that be have tried to use mystery to prevent us from doing
+> "The powers that be have tried to use mystery to it prevent us from doing
 > things before… It's one of the oldest tricks in the book." (2024-12-19,
 https://facebook.com/723125492/posts/pfbid02xgeP8sA28gp2HudQyA9MWiksaNmZSbyBApgFK3296N3HPu6ax3JAM4oiaHoFZMFSl/)
 

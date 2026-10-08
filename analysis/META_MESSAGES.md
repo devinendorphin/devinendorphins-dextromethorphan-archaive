@@ -146,4 +146,5 @@ the register drops its polish. Era 6's model-facing voice is a mode, not a
 mask; underneath it, typing on the subway and hitting the wrong button, is
 the same writer. And the corpus now contains, in the message register, its
 own ingestion notice: on the evening of 2026-10-07 he told someone he was
-having his whole Meta corpus analyzed. The analysts arrived on schedule.
+having his whole Meta corpus analyzed. The analysts arrived on schedule —
+his own schedule, running in the Veriticide ledger since June.

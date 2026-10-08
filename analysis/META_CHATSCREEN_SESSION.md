@@ -70,6 +70,20 @@ opened it in chat. Seventeen items with images; twelve listed by caption as
 not retrievable. Committed to this repo alongside this transcript as
 `analysis/chat-screens-report.html`.
 
+**Errata (appended 2026-10-08).** Later the same day, a Claude instance
+(Anthropic) mapped every report caption against its image and Devon relayed
+its findings; each finding was re-checked against the image before anything
+changed, and the catalog above and the report's captions were corrected in
+place (follow-up commit on this branch). Two overstatements in the spoken
+summaries above stand as spoken and are corrected here: the "Noel Skum"
+text is of undetermined authorship (item 10), not certainly the model's
+prose and not among the strongest examples; and in the drapetomania item
+(14) the argument is Devon's, elaborated by Gemini — which does name
+Google, its own maker, among the firms with a disincentive to acknowledge
+flaws. Items 12 and 14 are the two that show a model criticizing its own
+owner or maker; the report's original header claimed that of all
+seventeen, which the images don't support.
+
 The confirmed seventeen, oldest first:
 
 1. 2024-11-15, IG — DOGE multiparter Part 1: LLaMA 405B roleplaying as the
@@ -77,15 +91,17 @@ The confirmed seventeen, oldest first:
    Agriculture+Interior).
 2. 2024-11-15, IG — DOGE multiparter Part 2: the model calls the bureaucracy
    "Fragmented… Siloed… Redundant… Inflexible… Complex… Disjointed."
-3. 2024-11-15, IG — DOGE multipart 3: LLaMA on streamlining HHS, with the
-   harm-reduction lens Devon asked for.
+3. 2024-11-15, IG — DOGE multipart 3: LLaMA, as DOGE, on streamlining HHS
+   (page 6 of 25; the harm-reduction angle is Devon's question, not on this
+   page).
 4. 2024-11-15, IG — DOGE part 6 (unlearning): "change fatigue" in
    physiological terms — cortisol, sleep, digestion, immunity.
-5. 2024-11-15, IG — DOGE part 6 (polymarkets): asked whether ever-changing
-   systems might be designed to exhaust a population so it can't resist,
-   LLaMA answers with "The Politics of Exhaustion" — "designing in
+5. 2024-11-15, IG — DOGE part 6 (polymarkets): in answer to a leading
+   question ("What if the effect of ever changing systems is part of the
+   design…"), LLaMA first praises it ("a very astute observation"), then
+   gives "The Politics of Exhaustion" as general theory — "designing in
    exhaustion and stress to prevent resistance is a hallmark of
-   authoritarian regimes."
+   authoritarian regimes." DOGE is not mentioned.
 6. 2024-11-26, IG — Genesis P-Orridge: the setup screenshot itself —
    Llama-3.1-405B playground, temperature 1.29, system prompt casting the
    model as Genesis P-Orridge.
@@ -95,29 +111,39 @@ The confirmed seventeen, oldest first:
    grammar gatekeeping, beside the paywalled edit button it mocks.
 9. 2025-01-13, IG — ChatGPT harm reduction: "five archetypes of fellow
    users… that signal 'the fuckery.'" (First image of a carousel.)
-10. 2025-02-16, IG — "Noel Skum": the AI's character description of an
-    emerald-heir Musk ("Apartheid's jib," rockets for the richest, a plaque
-    on Mars). Also posted to Facebook.
-11. 2025-02-18, IG — "How Nazi Are We, ChatGPT?": Trump 3/10 → 5–6/10;
-    Musk 1/10 → 4/10 on authoritarian behavior. Also posted to Facebook.
-12. 2025-02-18, FB — "How Nazi Are We, GROK?": score "6 or 7" — "a call for
-    awareness and action to prevent further slides towards authoritarianism."
+10. 2025-02-16, IG — "Noel Skum": a character sketch of an emerald-heir Musk
+    ("Apartheid's jib," rockets for the richest, a plaque on Mars).
+    Authorship undetermined — no interface or author in frame; the caption
+    suggests Devon drafted it and Meta's character tool edited. Also posted
+    to Facebook.
+11. 2025-02-18, IG — "How Nazi Are We, ChatGPT?": one answer — baseline
+    Trump 3/10, projected 5–6/10 if trends persist; Musk ~1/10, projected
+    ~4/10 — labelled speculative. Also posted to Facebook.
+12. 2025-02-18, FB — "How Nazi Are We, GROK?": adjusted score "6 or 7" (the
+    earlier answer and prompt are not in frame) — "a call for awareness and
+    action to prevent further slides towards authoritarianism."
 13. 2025-06-16, FB — "Asked Google Gemini to say the quiet part out loud":
     a Trump Truth Social ICE/mass-deportation post with Devon's Gemini prompt
     beneath it.
-14. 2025-07-12, FB — drapetomania: a Gemini document arguing the industry
-    frames "ChatGPT psychosis" as individual pathology the way drapetomania
-    pathologized enslaved people, to protect the national AI project.
+14. 2025-07-12, FB — drapetomania: Gemini elaborating Devon's argument —
+    the industry frames "ChatGPT psychosis" as individual pathology the way
+    drapetomania pathologized enslaved people — and naming Google, its own
+    maker, among the "corporate champions" with a disincentive to
+    acknowledge flaws.
 15. 2025-10-30, IG — MiniMax research agent: "A Comprehensive Assessment of
-    AI, Data Value, and the Case for a Universal Living Wage" — the model
-    confirms the "value gap" (hundreds of billions to platforms/labs,
-    ~nothing to creators).
+    AI, Data Value, and the Case for a Universal Living Wage" — the agent
+    confirms a "value gap" (hundreds of billions to platforms/labs,
+    "negligible or zero" to creators) and, in the same summary, calls the
+    living-wage conclusion "significant logical leaps" facing
+    "insurmountable near-term barriers." Both are the agent's claims; the
+    screenshot shows the reasoning for neither.
 16. 2025-12-15, FB — "Neither me nor Gemini, are licensed therapists":
-    Gemini estimates Nick Reiner's ACE score, 2–3 officially / 8+
-    functionally.
-17. 2025-12-31, FB — "J Edgar Hoover was black?": needling the model —
-    "Sure about that?" — caught mid-thought ("Investigating Ancestry
-    Rumors").
+    Gemini gives a speculative ACE estimate for Nick Reiner, 2–3 officially
+    / 8+ functionally.
+17. 2025-12-31, FB — "J Edgar Hoover was black?": the model holds the
+    factual line ("no credible evidence or historical consensus"), then,
+    pressed with "Sure about that?", begins "Investigating Ancestry
+    Rumors"; the outcome is out of frame.
 
 Not retrievable (login-walled photo pages; captions on file): 2024-04-16
 (LLAMA3 on post scoring), 2024-04-19 ×2 (LLAMA3 on algorithmic "veils"),
