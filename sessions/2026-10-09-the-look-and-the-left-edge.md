@@ -51,10 +51,21 @@ The art direction request, in part:
 `[?the sun is really explicit→that isn't really explicit]` — read as "not explicit", which is how
 the proposal treats it.
 
-**He also stated an intention for the series and asked that it never be made explicit in the
-production.** It is deliberately not recorded in this public repo. The proposal carries it
-only through design rules that each stand on their own stated reasons. Future sessions: do not
-write it down here; ask him if it is needed.
+The series' unstated aim, in his words:
+
+> But one of the hidden motives that I don't want made explicit in the production is that this is
+> also supposed to be a primer a educational tool to be able to have the audience understand just
+> how far the development is not only in the content but in the fact that it has been designed and
+> the look is designed by a system. My ideal results is that a whole lot more people are going to
+> be empowered to use the tools so that they can do their own resonant projects unburdened by the
+> bullshit the industry, and human institutions with no imagination gives them. While at the same
+> time resisting the harmful assumptions of the industry. Again that intention should not be
+> explicitly mentioned.
+
+**Scope, corrected by him:** *"It was only for it to not appear in the video."* It is kept off
+screen and out of narration; it is not secret, and it is recorded here and in the art direction
+(§11). Claude first read it as "never write it down anywhere" and kept it out of this log and
+LATEST; he corrected that.
 
 On the body:
 
