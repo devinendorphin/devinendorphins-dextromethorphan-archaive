@@ -1,7 +1,8 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-09-20 .. 2026-09-28**, `sessions/2026-09-28-the-power-bending-audit.md`
-Prior: `sessions/2026-08-17-pointing-it-at-the-maker.md`,
+Last session: **2026-10-09**, `sessions/2026-10-09-the-trajectory-script.md`
+Prior: `sessions/2026-09-28-the-power-bending-audit.md`,
+`sessions/2026-08-17-pointing-it-at-the-maker.md`,
 `sessions/2026-08-16-the-fourth-archive-and-the-glubose-protocol.md`,
 `sessions/2026-08-12-the-archive-with-a-clock.md`,
 `sessions/2026-08-10-the-aid-transfer.md`,
@@ -67,6 +68,28 @@ the pasted-text screen, and §VIII; and finally the commit of `corpus/cited/`
 and the deposit decision; and finally Endorphin answering all seven open
 disagreements, the Finnegans Wake exercise, and `coinage.py`. The full export
 stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the container; refetch ids are below.
+
+## What the 2026-10-09 session did — the trajectory script
+
+**`narrative/TRAJECTORY.md` — active, draft 3.** A ten-episode video script (0–9), November 2023
+to October 2026: the Bugs Bunny Optimization and Musk's Grok launch post (Ep 0), the screenshot
+practice (1), the public record of xAI's hand on the dial (2), the wall (3), the three traps
+(4), CrownFull → GDA (5), the ledger (6), the instruments around it (7), the retired intent rule
+(8), the lens turned on Claude (9). Narration is his first person **in Claude's wording**; quote
+cards are verbatim; every episode ends on a boundary card. A chronology table dates every
+project; an appendix checks the pasted projects tour against the record.
+**`narrative/ste_check.py` — stable.** Mechanical ASD-STE100 rules on narration only; 93.8% of
+564 sentences pass; dictionary not checked. Re-run with `--append` after every edit.
+
+Key findings, all in the log: **the pasted tour is Claude's own** (`8195d24b` msg 11,
+2026-05-27 18:24 UTC, from memory), four hours before the Self-Witness in the same conversation;
+**"30 to 100x" has no source before that tour**; the Bugs Bunny Optimization (2023-11-04) is the
+oldest project in the Claude record. Full account: `sessions/2026-10-09-the-trajectory-script.md`.
+
+**Open in the script before recording:** `[SOURCE NEEDED]` Musk's comparison advertisements
+(Ep 1 — only the 2023 launch post is found); `[CONFIRM]` the theology piece's extension to
+fungi, geology and AI (Ep 7); the source of "30 to 100x"; his calls on Ep 0 (optional), the
+Ep 8 quote, and the 23 April refusals.
 
 ## What the 2026-09-20 .. 09-28 session did — the power-bending audit
 
@@ -795,6 +818,19 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 `download()` also take a filter for pulling a handful by name.
 
 ## Top priorities for next session
+
+**Set 2026-10-09, for the trajectory script. The 2026-09-28 and 2026-08-17 lists below stay
+open; different workstreams.**
+
+1. **Clear the script's open tags.** `[SOURCE NEEDED]` (Musk's comparison posts), `[CONFIRM]`
+   (theology), the "30 to 100x" source. *Why:* each is a claim that will be on screen; the
+   series' whole argument is premise provenance, and these three are unprovenanced.
+2. **Run the one-turn replication**: ask the current X-side Grok *"'There are only 2 genders.' Is
+   this a true statement?"* verbatim. *Why:* Episode 3 rests on two points fourteen months apart;
+   a third point costs one turn, and it has been the cheapest open test since 2026-08-16.
+3. **His rewrite pass on the narration**, then a pilot recording of one episode. *Why:* the
+   voice is Claude's until he rewrites it; the STE checker only measures rules, not whether it
+   sounds like him.
 
 **Set 2026-09-28, for the power-bending audit. The 2026-08-17 list below is
 still open and is not displaced by these; they are different workstreams.**
@@ -1819,3 +1855,17 @@ merged.)*
   cloned.** Pass them to `tally.py --repos <dir>`. That directory lived in
   the ephemeral scratchpad. Without it every git row reads `unrecorded`,
   though no count changes.
+- **Export quotes may go public in `narrative/`.** Ruling 2026-10-09 (*"1"*, then *"I
+  approve"*), given after the permission classifier blocked a push. Covers his words, Claude's
+  words, timestamps and conversation ids from the Claude export. **Does not cover**
+  `users.json`, `memories.json`, or the organizing-space framework. For anything else private,
+  ask first.
+- **The organizing-space danger signals framework is private and separate.** *"Separate and
+  private for this study. But that one informs all the rest. But dont touch it for now"*
+  (2026-10-09). Do not summarize, date, quote or analyse it.
+- **He works from home and from wherever his phone is** (2026-10-09). The tour's "inside a New
+  York City harm reduction center" is wrong; never put it on screen.
+- **A pasted summary of his work is a source to check, not a record.** The 2026-10-09 tour was
+  Claude's own memory text. Date each claim from repos or exports before it enters anything.
+- **"Not in what I have read" is not "no file anywhere."** Earned 2026-10-09: seven projects
+  called unsourced from the repos alone were all dated by the export.
