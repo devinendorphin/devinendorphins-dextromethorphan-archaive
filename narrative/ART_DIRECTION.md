@@ -40,7 +40,7 @@ bottom, like sediment:
 
 | Band (bottom → top) | Daily count from | In the repo now? |
 |---|---|---|
-| AI Dungeon | actions per day, from the export | **No** — export is gitignored; needs a dates-only extract |
+| AI Dungeon | actions per day, `data/AID_DAYS.tsv` (`analysis/aid_days.py`) | Yes — from 2020-08-11 |
 | NovelAI | stories created per day, `data/stories_meta.jsonl` `created_at` | Yes |
 | X posts | `data/TWEET_DAYS.tsv` | Yes |
 | Grok on X | turns per day, `data/twitter_meta.jsonl` `created_at` | Yes |
@@ -450,8 +450,12 @@ Credits state roles plainly, in the type grammar of §4.1:
 
 ## 10. What this proposal does not settle
 
-- **Two bands need extracts that do not exist yet:** AI Dungeon and Claude, as dates-and-counts
-  files. Until then those layers are absent, and the frame says so with a slate.
+- **The Claude band needs an extract that does not exist yet**, as a dates-and-counts file.
+  Until then that layer is absent, and the frame says so with a slate.
+- **The left edge of the Horizon.** The full AI Dungeon scan (2026-10-09) puts the first
+  timestamped action at **2020-08-11**, not 2020-12-07: 216 adventures and 15,254 actions come
+  before 7 December. The script, `CLAUDE.md` and this proposal still say 7 December 2020.
+  Endorphin's call before anything is changed.
 - **The Twitch catalogue.** `data/EPISODES.tsv` holds 1,492 dated broadcasts, from
   **2020-11-27 to 2024-12-25**. It could be a seventh band. If it is, the Horizon begins ten
   days before the 7 December 2020 date the script uses as the start. Endorphin's call.

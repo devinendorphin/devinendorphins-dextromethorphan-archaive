@@ -70,7 +70,27 @@ and the deposit decision; and finally Endorphin answering all seven open
 disagreements, the Finnegans Wake exercise, and `coinage.py`. The full export
 stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the container; refetch ids are below.
 
-## What the 2026-10-09 sessions did — the trajectory script, drafts 1–4
+## Found 2026-10-09 — the AI Dungeon record starts 2020-08-11, not 2020-12-07
+
+**The archive's start date was never a scan.** The 08-10 session searched the export for
+*Dr. Knubble* and dated the archive from that one adventure. On 2026-10-09 Endorphin asked
+whether the earliest usage had actually been identified; it had not. `analysis/aid_days.py`
+then read all 888 adventures' `raw.json` from the Drive mirror (`10Sg5PJ-sfOSP8T_HFDPlEtnVxX5G5-Dq`):
+- **first timestamped action: 2020-08-11T03:17Z** (`c6vRCwyRwyzM`, 173 actions over two days,
+  his own `do`/`say` turns throughout);
+- **216 adventures and 15,254 actions predate 2020-12-07**, 2,403 of them `do`/`say`, across
+  100 days; by month of first action: Aug 9, Sep 29, Oct 66, Nov 79;
+- last first-action 2026-03-07; 347 active days; 48,348 timestamped actions; 21 adventures have
+  zero actions; `actionWindow` length equals `actionCount` on all 888.
+- Self-titled early pieces include *"First Foray into Engaging GPT-3 in the Pre-Selfware-Era"*
+  (2020-08-29). Titles are not committed.
+Committed: `data/AID_DAYS.tsv` (date, count — nothing else). **Not yet corrected, pending his
+word:** `CLAUDE.md` ("The archive starts on AI Dungeon in December 2020"), `narrative/TRAJECTORY.md`
+Ep 0 and the chronology table, `narrative/ART_DIRECTION.md`. Also untested: whether he used AI
+Dungeon before August 2020 in adventures that were deleted and so are absent from the export —
+**earliest in the export is not earliest use.** The Twitch catalogue (`data/EPISODES.tsv`)
+starts 2020-11-27, so it no longer predates the corpus.
+
 
 **`narrative/TRAJECTORY.md` — active, draft 4.** Rewritten in the second 10-09 session as one
 linear chronology at his request (*"a more simpler linear narrative that deals with everything
