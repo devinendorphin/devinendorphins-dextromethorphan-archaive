@@ -1924,9 +1924,14 @@ merged.)*
   *"if it was all in the order it is it wouldn't need to go oh but hold the thought on that."*
   When adding material to `narrative/`, insert it at its date and join it backward; an analysis
   goes in the month it was made. Additive passes are what produced the pointers.
-- **The series has an intention he asked never to be made explicit in the production**
-  (2026-10-09). The repo is public, so it is **not written down anywhere here**, by design. Do
-  not record it, paraphrase it, or infer it into a document; if a decision needs it, ask him.
+- **The series' unstated aim stays off screen — only off screen.** A primer that shows how far
+  the development has come, including that the look is designed by a system, so that more people
+  are empowered to make their own resonant projects with these tools, unburdened by the industry
+  and by institutions with no imagination, while resisting the industry's harmful assumptions.
+  **It must not appear in the video, narration or captions.** It is not secret: it is recorded
+  verbatim in `sessions/2026-10-09-the-look-and-the-left-edge.md` and served by
+  `narrative/ART_DIRECTION.md` §11. Correction 2026-10-09: *"It was only for it to not appear in
+  the video"* — Claude had first kept it out of the repo entirely.
 - **No faces in the series, his included** (2026-10-09): *"it's not about me."*
 - **A date others rest on gets re-derived from the whole record before reuse.** Earned
   2026-10-09: the 2020-12-07 start date came from one searched adventure and was repeated for

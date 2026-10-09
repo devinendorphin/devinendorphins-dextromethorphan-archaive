@@ -459,3 +459,27 @@ Credits state roles plainly, in the type grammar of §4.1:
   Test both on the real data before choosing.
 - **Rights.** Executive Order 9066 and other US federal documents are public domain; every other
   archival item, and every reference image, needs a check before it goes on screen.
+
+---
+
+## 11. The unstated aim — for the production, never for the screen
+
+Endorphin's aim for the series, which **must not be stated in the video, the narration or the
+captions** (his words, 2026-10-09, in `sessions/2026-10-09-the-look-and-the-left-edge.md`): the
+series is also a primer. It should let the audience see how far the development has come — in
+the content, and in the fact that the look itself was designed by a system — so that many more
+people feel able to use these tools for their own resonant projects, unburdened by the industry
+and by institutions with no imagination, while resisting the industry's harmful assumptions.
+
+How the look carries it without saying it:
+- **Designed by a system, shown not told:** the credits name Claude for art direction in the
+  same mono face as every other model's words (§9); Episode 10 shows this document and the
+  frame prompts on screen as material (§5).
+- **Reproducible by anyone:** every prompt for every generated frame is published (§4.6); the
+  whole look is producible with free tools on a phone or a modest laptop (§4.7); the final card
+  is the repo address.
+- **Learnable by watching:** the type grammar teaches source-reading by repetition (§4.1); slates
+  and registration marks show that each frame was made, and how (§4.2).
+- **Against the industry's assumptions:** no faces, no robot bodies, no glowing brains (§4.5);
+  the model's body is the whole circuit, with a person in it and a second hand at the far end
+  (§3).
