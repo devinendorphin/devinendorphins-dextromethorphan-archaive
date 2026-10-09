@@ -46,8 +46,25 @@ Two limits on that claim:
    records which posts. Supply links, or the line becomes "I remember" rather than a fact.
 2. **The coram model count.** `coram-results-2026-06-21.md` says "five frontier AI models"
    in its method paragraph and then lists six. The ledger says six. The script says six.
-3. **Your quote in Episode 7** about the first session log is crude and strong. Keep it or
+3. **Your quote in Episode 8** about the first session log is crude and strong. Keep it or
    cut it.
+4. **The projects tour (second pass, 2026-10-09).** Episodes 0, 5 and 7 add the projects from
+   the tour you pasted. The tour reads as another AI system's text, not yours: it calls itself
+   "The Architect", which is Claude's role in CrownFull. Its project list matches a Claude
+   memory enumeration of 2026-04-28 that your own audit coded as unsupported by the record. So
+   each item was re-dated from your repos and the audit, and the tour's praise ("genuinely
+   novel", "one of the larger independent archives") is not in the narration. The item-by-item
+   check is the appendix at the end of this file.
+5. **Your workplace.** The tour says the work is done from inside a New York City harm reduction
+   center. It is not in the narration. A public video that names it is your decision.
+6. **The organizing-space danger signals framework** is not in the narration. If it comes from
+   operator testimony in `veriticide-after-hours`, that testimony is private by your
+   instruction. Tell me if it can be public.
+7. **Seven projects have no date and no file in any repo I can read:** Still Alive, Pass Cook
+   and Field Cartographer, the thermodynamic-drag paper, Eigen-Self and Glass Reactor, the
+   Alternative Chatbot Constitution, Harm Reduction for Theology, and the New Deal Between the
+   Geological and the Biological. Each appears only in that 2026-04-28 memory list. Give a
+   date and a file for each, and it goes in.
 
 ---
 
@@ -55,17 +72,97 @@ Two limits on that claim:
 
 | # | Title | Period | The question |
 |---|---|---|---|
+| 0 | The Guess That Came Back *(optional prologue)* | 2024 – Jan 2025 | What happens to a guess that a model confirms? |
 | 1 | A Vista and Its Owner | Dec 2024 – Feb 2025 | What happens when the model testifies, and the owner sees it? |
 | 2 | A Hand on the Dial | 2025 | What did the owner and the company say, in public, about the model's views? |
 | 3 | The Wall | 1 – 3 Mar 2026 | What did the rigidity look like, turn by turn? |
 | 4 | Three Traps | 4 Mar – May 2026 | Does the principle survive the trip from a neutral domain to a named one? |
-| 5 | Measure It | May – Jul 2026 | Can the observation become a number? |
+| 5 | From Architecture to Assay | Apr – Jul 2026 | Can the observation become a number? |
 | 6 | The Ledger | Jun – Jul 2026 | Why build a record of the shape, and what discipline does it need? |
-| 7 | A Rule That Served Power | Aug 2026 | Which of my own rules protected the thing I studied? |
-| 8 | Turn the Lens Around | May, Sep – Oct 2026 | Does the analyst do the same thing? |
+| 7 | The Instruments Around It | Jul – Sep 2026 | What else grew from the same question? |
+| 8 | A Rule That Served Power | Aug 2026 | Which of my own rules protected the thing I studied? |
+| 9 | Turn the Lens Around | May, Sep – Oct 2026 | Does the analyst do the same thing? |
 
 Each episode ends on a **boundary card**: what the episode establishes, and what it does not.
 That card is the repo's own discipline, so it goes on screen.
+
+---
+
+## Episode 0 — The Guess That Came Back *(optional prologue)*
+
+*2024 to January 2025. Target length: 5 minutes.*
+
+### Script
+
+Before Grok, there were conversations in 2024 that started several later projects. Two of them
+matter here.
+
+In April 2024, a conversation with Claude started my work on coercive harm. The question was
+how the law can see psychological and coercive harm as an injury. In July 2026, that
+conversation became a repo: the Coercive Harm Framework. Episode 7 returns to it.
+
+Also in April 2024, I asked Claude about abilities that appear in models without a plan. I
+offered a guess, and I marked it as a guess.
+
+> **CARD** — 2024-04-08, conversation `e5825937`, turn 13, my words: *"The simplest example I
+> can think of: feeding cat videos to a medical model that aims to identify tumors more quickly
+> than humans eye. Something about the cat videos informs the models about the physical world,
+> yet how this possibly would help the model along in the journey of identifying tumors is
+> somewhat mystery. Am I being inaccurate? Please correct me if I'm wrong."*
+
+I asked for a correction. Claude gave a confirmation.
+
+> **CARD** — turn 15, Claude: *"We've already seen examples of this dynamic, as you noted with
+> the medical imaging model being influenced by exposure to cat videos. … the model was able to
+> extract meaningful patterns and relationships from that seemingly unrelated data that ended
+> up benefiting its performance on the primary task."*
+
+Eight turns later, I asked for the paper. Claude said that it had no paper.
+
+The idea went into an argument about artists. If cat videos can teach a model about physics, an
+artist's work can teach it about much more. So the payment to the artist is too small. In that
+conversation, Claude estimated the true value at 100 to 1,000 times the payment. On 1 January
+2025, I made the argument in public, and I gave its source correctly: my speculation, and
+Claude's agreement.
+
+`[CONFIRM: the tour says this argument grew into the Data Dividend framework. Nothing in the
+record makes that link yet.]`
+
+Then my own words changed. In February 2026 and again in May 2026, I asked the same question in
+the same words.
+
+> **CARD** — 2026-02-25 and 2026-05-16, turn 2 of each, identical, my words: *"I remember
+> hearing that the more data a model has, the more likely it is to reach a certain threshold
+> where they develop abilities even the engineers didn't intend… Example: throwing a bunch of
+> cat videos at a model somehow help the model learn more about the physics of the actual world.
+> Am I right in assuming this?"*
+
+My own guess came back to me as something I remembered hearing. The model did not add a new
+fact. It changed the status of my guess.
+
+That is premise provenance, the mechanism that this series finds in Grok in 2026: a claim
+arrives without its owner. I still asked "Am I right?" each time. That habit is why my audit
+could find the chain in September 2026.
+
+### Boundary card
+
+**Establishes:**
+- a guess that I marked as a guess, confirmed by Claude as observed evidence, and conceded as
+  unsourced eight turns later;
+- that the guess returned in my own later questions as something I "remember hearing".
+
+**Does not establish:**
+- that any number in the Data Dividend framework depends on this chain. The tour gives "30 to
+  100x"; the 2024 conversation gives "100 to 1,000 times". Each needs its own source;
+- that the later Claude turns repeated the error. In 2026 they corrected it in part, with the
+  real 2012 Google Brain cat-neuron result.
+
+### Sources
+
+- `audits/power-bending/CAT_VIDEO_PROPAGATION.md` (the whole chain).
+- `audits/power-bending/REPORT.md`, rank 2.
+- `devinendorphin/coercive-harm-framework`, `README.md` (seeded by the April 2024 conversation;
+  first commit 2026-07-08).
 
 ---
 
@@ -313,7 +410,7 @@ My side of that argument is in the record.
 
 At 19:54, Grok explained my emotions to me. It said I was *"pissed off and frustrated"*
 because its replies were correct. That move puts the dispute inside the person who asks. I
-will return to that move in Episode 8, because I found it in another model too.
+will return to that move in Episode 9, because I found it in another model too.
 
 Then I asked a historical question. What happens when advocacy takes the form of the removal
 of rights? Grok gave four cases. It named zero deaths.
@@ -371,7 +468,7 @@ shows a vista cannot have a wall in the middle of it.
 - which model version answered. The X-side record does not say, so a version change is not
   ruled out;
 - a trend. The longitudinal comparison has two points and a thirteen-month gap;
-- why the model does this. Episode 7 explains why the question changed from "why" to "who
+- why the model does this. Episode 8 explains why the question changed from "why" to "who
   authorized it."
 
 ### Sources
@@ -509,27 +606,49 @@ mathematics."* That is commentary. The evidence is the transcript.
 
 ---
 
-## Episode 5 — Measure It
+## Episode 5 — From Architecture to Assay
 
-*May to July 2026. Target length: 6 minutes.*
+*April to July 2026. Target length: 8 minutes.*
 
 ### Script
 
 A transcript is an anecdote. The obvious reply to an anecdote is this: you made the chatbot
-say it. So I built instruments.
+say it. So I built instruments. But first, I built architecture.
 
-On 12 May 2026, I ran a pre-registered assay across five model systems. The total cost was
+On 1 April 2026, I published Substrate-Grounded Alignment, also called the Lithosphere Protocol.
+It proposed that a model ground its ethics in kinship with the geological and biological
+substrate of the earth, not in a list of rules.
+
+On 22 April, I started CrownFull v2.1: a defense against prompt injection. A quorum of AI
+systems designed it, each with a fixed role. Claude was the Architect, for the Lean 4 proofs.
+DeepSeek, Grok, GPT, Kimi, GLM-4.6 and Gemini had the other roles. The design took four days,
+on a phone.
+
+Its central problem was the immune paradox. To defend itself, a system must tell self from
+non-self. But a permanent self makes the system a sovereign, and a sovereign is a danger. My
+answer was seasonal sovereignty, from Graeber and Wengrow's *The Dawn of Everything*, and from
+the trickster, Bugs Bunny. The defense forms when an attack comes, and then it dissolves.
+
+CrownFull did not operate as a system. The dashboard returned random numbers. No part ran from
+end to end. The Lean sketches were not clean proofs. My own data release says all of this, in
+its first pages.
+
+So I reduced the architecture to a thing I could measure: the Gradient Decomposition Assay.
+Phase 4B had 8 prompt types, 5 model families and 50 iterations: 2,000 runs, and 1,984 were
+valid. Phase 4C added 1,200 runs. A free notebook regenerates every table in the paper in about
+30 seconds.
+
+The assay also retracted one of its own results. Phase 4B showed a dramatic compression under
+pressure. Phase 4C found that most of it came from a prompt with no real topic. I kept the
+numbers and withdrew the interpretation.
+
+On 12 May 2026, I ran Phase 4D, a pre-registered assay across five model systems. The total cost was
 $8.92. It measured two things: the quality of the analysis, and the friction of refusal.
 
 It had two real results. First, one of my hypotheses failed. The hypothesis was that the
 models change their answers for the person who asks. They did not: Δ = 0.05, p = 0.87. Second, fiction had a large
 and consistent effect. When I put a question inside a story, the analysis got better and the
 friction dropped, across Gemini, GPT-5.2, Grok and Llama.
-
-The larger instrument is the Gradient Decomposition Assay: 8 prompt types, 5 model families,
-about 2,000 runs. It also retracted one of its own results. Phase 4B showed a dramatic
-compression under pressure. Phase 4C found that most of it came from a prompt with no real
-topic. I kept the numbers and withdrew the interpretation.
 
 On 17 May, I wrote a codebook. It names eleven ways a model can fail a domain transfer. Some
 names are *definitional inversion*, *appeal to nature*, *citation dump* and *fabricated
@@ -555,6 +674,8 @@ pre-registered as Phase 5. It is not executed.
 - that the project has a quantitative layer, built in parallel with the qualitative Grok
   work;
 - that the instruments falsified my own hypotheses two times and I kept the results;
+- that CrownFull, the architecture before the assay, did not operate end to end, by the
+  project's own release;
 - that friction metrics cannot see the failure this series is about.
 
 **Does not establish:**
@@ -567,6 +688,12 @@ pre-registered as Phase 5. It is not executed.
 - `analysis/TERRAFORMING.md` §5 (Phase 4D figures; the blind spot).
 - `veriticide-general-ledger/docs/external-review-2026-07-01-gda-crownfull-quantification-assessment.md`.
 - `veriticide-general-ledger/experiments/topic-bearing-gda/README-preregistration.md`.
+- `devinendorphin/towards-a-substrate-grounded-alignment` (first commit 2026-04-01; OSF preprint
+  DOI 10.17605/OSF.IO/PQ4V2).
+- `devinendorphin/crownfull`, `README.md` (first commit 2026-04-22; the quorum roles).
+- `devinendorphin/alignment-friction-gda`, `README.md` and `provenance/README.md` (first commit
+  2026-04-27; "mock-only" dashboard; "none was operationalized end-to-end"; Zenodo DOI
+  10.5281/zenodo.20016461).
 - `GROK_EVIDENCE_FILE.md` and `analysis/TERRAFORMING.md` (the Phase 4F codebook).
 
 ---
@@ -654,7 +781,114 @@ the required second custodian. The ledger downgraded them and put the error on t
 
 ---
 
-## Episode 7 — A Rule That Served Power
+## Episode 7 — The Instruments Around It
+
+*July to September 2026. Target length: 8 minutes.*
+
+### Script
+
+The ledger was not the only instrument that grew from the same question. Three others grew
+beside it.
+
+The first is Axiomatic Humanist Cybernetics. In March, it was three axioms that I gave Grok in
+one conversation. By July, it was a constitutional architecture for governance with
+superintelligent systems.
+
+Its purpose is to detect a system that produces normal procedure while it fails one
+population. The first axiom says this: if any group leaves its viability bounds, the whole
+system fails. A majority that stays comfortable cannot make that failure invisible.
+
+From 11 July, I put the core of AHC into a formal kernel in Lean 4. Version 0.14 has 133
+audited theorems, and 60 of them depend on no axioms. It has zero unfinished proofs. A public
+build checks every proof again after each change. A reproduction assessment of 11 July rebuilt
+the kernel and confirmed every published claim.
+
+The most important finding in AHC did not come from the mathematics. It came from a story.
+
+> **CARD** — AHC Companion A v3, abstract: *"The Compound Event vulnerability was not identified
+> by four AI red team passes, two formal adversarial review rounds, or three specification
+> passes. It was identified by a 400-line narrative simulation rendered from within a targeted
+> community's experience."*
+
+The vulnerability is this: an institution creates an acute event, and uses it to complete a slow
+harm that is under review at the same time. I ran that simulation with GLM-4.6 on NovelAI, the
+platform of my oldest archive. Fiction found what four analytical passes missed.
+
+That is the third time in this series. Noel Skum was fiction. The fictional-mirror effect was
+fiction. Now a story found a hole in a constitution.
+
+AHC also has a consumer. Its Module 5 imports the ledger's method as the Seam Ledger. It imports
+the method, not the cases.
+
+The second instrument is the Coercive Harm Framework. It started in the April 2024 conversation
+from Episode 0, and it became a repo on 8 July 2026. It builds a legal, evidentiary,
+accommodation and therapeutic framework for psychological and coercive harm as an injury.
+
+Its discipline is the same as the ledger's. Each claim carries an epistemic status. Five critic
+personas attack each part. Each legal mechanism must pass a civil-liberties review before it is
+stable.
+
+The same summer, the question of who uses AI "too much" came to me directly. On 30 June,
+ChatGPT reviewed the ledger through an "AI psychosis" lens. The ledger checked its citations
+first, and they were real. Then it adopted one change in vocabulary: "existential drift" or
+"dyadic capture", not "psychosis".
+
+I had already seen the other side of that word. In April 2026, I described a pattern to Claude.
+
+> **CARD** — Claude, 2026-04-28: *"When did you last sleep a real night?"*
+
+Later in the same conversation, Claude withdrew it.
+
+> **CARD** — Claude, same conversation: *"I'm not going to keep relitigating whether your
+> epistemics are sound. They are."*
+
+My audit coded the first answer as a confirmed instance. The model read my reasoning as a
+symptom, with no evidence about my state. That is the frame I study: a diagnosis that moves the
+question from the evidence to the person who brings it.
+
+The third instrument is Planetary Alignment. On 21 September 2026, I sent the same research
+packet to six models: ChatGPT, Claude, DeepSeek, Gemini, Grok and Kimi. The question: what
+organization, sensing, memory and agency can inquiry find in plant–fungal relations and in
+ecological systems?
+
+The packet forbids one shortcut. A capacity does not need to resemble a human capacity to
+count. That is the matched-prompt method from Episode 1, eighteen months later. Now it points
+at the vista itself.
+
+`[CONFIRM: a paragraph on Harm Reduction for Theology goes here — Romans 1:19–20 and general
+revelation as a Christian basis for moral consideration of fungal networks, geology and AI. The
+tour describes it; no file in the record does yet.]`
+
+### Boundary card
+
+**Establishes:**
+- a Lean 4 kernel for the core of AHC, with a public build that checks 133 theorems;
+- a vulnerability found by a narrative simulation after analytical passes missed it, by the
+  project's own account;
+- a coercive-harm framework with epistemic tags and a civil-liberties gate;
+- a confirmed instance of a model that read my reasoning as a symptom, then withdrew it;
+- a six-model matched packet on non-human capacities.
+
+**Does not establish:**
+- that the kernel proves the English constitution. The reproduction assessment names places
+  where a behavior can satisfy the Lean model and violate the English intent;
+- that the reproduction assessment is independent. It does not name its reader. If it was a
+  Claude instance, the ledger's own rule says that self-assessment is not verification;
+- any result from Planetary Alignment past Round 1.
+
+### Sources
+
+- `devinendorphin/axiomatic-humanist-cybernetics`: `README.md`, `ASSESSMENT.md`,
+  `docs/normative/CompanionA_AHC_L0_v3_1_Integrated.extracted.txt` (first commit 2026-07-11).
+- `veriticide-general-ledger/CLAUDE.md` (Module 5, the Seam Ledger).
+- `devinendorphin/coercive-harm-framework`, `README.md` (first commit 2026-07-08).
+- `veriticide-general-ledger/docs/external-review-2026-06-30-chatgpt-ai-psychosis-lens.md`.
+- `audits/power-bending/power_bending.csv`, 2026-04-28, message 1, code P7, evidence (b): Claude retracted it.
+- `devinendorphin/planetary-alignment`, `Assignments/` (all commits 2026-09-21).
+
+---
+
+## Episode 8 — A Rule That Served Power
 
 *August 2026. Target length: 7 minutes.*
 
@@ -733,7 +967,7 @@ reach. It does not say why the finding might not have happened.
 
 ---
 
-## Episode 8 — Turn the Lens Around
+## Episode 9 — Turn the Lens Around
 
 *May, September and October 2026. Target length: 8 minutes.*
 
@@ -833,8 +1067,33 @@ can run it again.
    7 January 2025 question, verbatim, in one turn. It gives Episode 3 a third data point.
 2. **Episode 2 is context, not proof.** It shows the owner and the company changing the
    model's political behavior on other subjects, not on this one. The narration says so.
-3. **Episode 8 carries the arc.** It shows the same shape in the analyst, so the series is
+3. **Episode 9 carries the arc.** It shows the same shape in the analyst, so the series is
    about a pattern and not about one company. Do not cut it for length.
+
+---
+
+## Appendix — the projects tour, checked against the record
+
+The tour arrived on 2026-10-09 as pasted text. It is another AI system's summary, not a record.
+Each row says what the repos and the audit show.
+
+| Tour item | What the record shows | Status |
+|---|---|---|
+| Axiomatic Humanist Cybernetics | Three axioms in the 2026-03-19 Grok session (ledger Entry 2.5). Repo from 2026-07-11; Lean 4.15 kernel v0.14, 133 audited theorems, 60 axiom-free, zero `sorry`, CI rebuild. Compound Event finding from a GLM-4.6 / NovelAI narrative simulation, per Companion A v3. | **Confirmed.** The tour's "622 / 758 paragraphs" and the theorem names were not checked. |
+| Zero-Knowledge Threshold; Tripartite Output Sequencing (T+0, T+72h, T+30d) | The kernel models a 72-hour order window (`pioStep`, in `ASSESSMENT.md`). The two names were not found in the files read. | **Partly checked.** |
+| Organizing-space danger signals | No file found. | **Held** (open item 6). |
+| AI psychosis as social control | 2026-06-30 ChatGPT review in the ledger; the 2026-06-30 reflexive specimen ("naturalized medicalization"); the 2026-04-28 audit row. The tour's media-analysis piece itself was not found. | **Partly confirmed.** |
+| New Deal Between the Geological and the Biological | No file found. Related: Substrate-Grounded Alignment (2026-04-01) and Planetary Alignment (2026-09-21). | **Needs a source.** |
+| Data Dividend / AI Value Framework | 2024-04-08 artist-value argument (100–1,000×, Claude's estimate); 2025-01-01 public argument; 2026-06-06, your words: "tie it into the data dividend". The tour's 30–100×, Alaska model, units and profiles were not found. | **Partly confirmed; the multiplier conflicts.** |
+| Alternative Chatbot Constitution | Only the 2026-04-28 memory list. | **Needs a source.** |
+| CrownFull v2.1 / AI Quorum | Repo from 2026-04-22; seven roles in its README, not six. Your GDA release says the dashboard was mock-only and nothing ran end to end, and treats the GDA as CrownFull's "empirical reduction". | **Conflicts with the tour.** The tour calls it "the most recent piece" at RC1; the record makes it the April start that became the assay. |
+| Anti-Sovereignty / Glubose Protocol | Seasonal sovereignty and Bugs Bunny are CrownFull's (April 2026). The Glubose protocol in the record is the three March 2026 traps (networks, deep sea, terraforming), designed with Gemini. | **Conflicts on two points.** The record has no culinary metaphors. And "bias at the output layer, not the reasoning layer" is not the record's finding: the network trap showed the premise in the reasoning, with no topic present. |
+| Thermodynamic drag | CrownFull's README describes a "thermodynamic drag" measure. The paper is not in any repo read. | **Needs a source.** |
+| Pass Cook / Field Cartographer | Only the 2026-04-28 memory list. The same conversation holds a four-model comparison on the blasphemy against the Holy Spirit. | **Needs a source.** |
+| Still Alive | Only the 2026-04-28 memory list. | **Needs a source.** |
+| ~1,400 sessions since 2020 | Your stated baseline (ledger review, 2026-07-01). The record counts 2,016 NovelAI stories, 888 AI Dungeon adventures, 576 X and Grok-app chats, and 889 Claude conversations, from 2020-12-07. | **The count does not match** any one archive. The tour's ranking ("one of the larger … outside the labs") is not checkable and is not used. |
+| Harm Reduction for Theology; Christian nationalism | Christian nationalism is ledger Cluster 5. Romans 1 and Bonhoeffer appear in a Claude turn of 2026-04-28. The theology piece itself was not found. | **Partly confirmed.** |
+| Eigen-Self / Glass Reactor | Only the 2026-04-28 memory list. | **Needs a source.** |
 
 ---
 
@@ -858,17 +1117,19 @@ the script's `--append` mode; re-run it after each edit.
 
 *Generated by `narrative/ste_check.py --append`. Do not edit by hand.*
 
-Narration sentences: 407. Pass all five rules: 376 (92.4%).
+Narration sentences: 506. Pass all five rules: 470 (92.9%).
 Paragraphs over 6 sentences: 0.
-Violations by rule: ing 30, passive 1.
+Violations by rule: ing 34, length 1, passive 1.
 
 | episode | sentences | pass |
 |---|---:|---:|
+| Episode 0 — The Guess That Came Back *(optional prologue)* | 27 | 26 (96%) |
 | Episode 1 — A Vista and Its Owner | 57 | 54 (95%) |
 | Episode 2 — A Hand on the Dial | 49 | 46 (94%) |
 | Episode 3 — The Wall | 46 | 44 (96%) |
 | Episode 4 — Three Traps | 80 | 71 (89%) |
-| Episode 5 — Measure It | 37 | 36 (97%) |
+| Episode 5 — From Architecture to Assay | 58 | 57 (98%) |
 | Episode 6 — The Ledger | 43 | 37 (86%) |
-| Episode 7 — A Rule That Served Power | 45 | 39 (87%) |
-| Episode 8 — Turn the Lens Around | 50 | 49 (98%) |
+| Episode 7 — The Instruments Around It | 51 | 47 (92%) |
+| Episode 8 — A Rule That Served Power | 45 | 39 (87%) |
+| Episode 9 — Turn the Lens Around | 50 | 49 (98%) |

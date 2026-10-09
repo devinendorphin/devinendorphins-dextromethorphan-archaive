@@ -84,6 +84,15 @@ source; every episode ends on a boundary card.
   its method and lists six; (3) his call on the Episode 7 quote.
 - **Not verified:** that Karpathy uses ASD-STE100. Do not attribute it until he supplies the
   source.
+- **Second pass, same day: the projects tour.** Endorphin pasted a tour of his other projects,
+  written by another AI system (it calls itself "The Architect", Claude's CrownFull role; its
+  list matches the 2026-04-28 Claude memory enumeration the audit coded as unsupported). Added
+  Episode 0 (the cat-video chain as a prologue), rebuilt Episode 5 as CrownFull → GDA, and added
+  Episode 7 (AHC kernel, Coercive Harm Framework, the AI-psychosis frame, Planetary Alignment).
+  Each item dated from its own repo; the tour's praise is not in the narration. The appendix of
+  `narrative/TRAJECTORY.md` checks the tour item by item: **CrownFull and the Glubose definition
+  conflict with the record; seven projects have no file anywhere**; the workplace line and the
+  organizing-space framework are held for his privacy call.
 
 ## What the 2026-09-20 .. 09-28 session did — the power-bending audit
 
