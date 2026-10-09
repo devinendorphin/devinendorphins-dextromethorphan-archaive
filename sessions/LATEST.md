@@ -1,7 +1,8 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-10-09 (second)**, `sessions/2026-10-09-the-linear-draft.md`
-Prior: `sessions/2026-10-09-the-trajectory-script.md`,
+Last session: **2026-10-09 (third)**, `sessions/2026-10-09-the-look-and-the-left-edge.md`
+Prior: `sessions/2026-10-09-the-linear-draft.md`,
+`sessions/2026-10-09-the-trajectory-script.md`,
 `sessions/2026-09-28-the-power-bending-audit.md`,
 `sessions/2026-08-17-pointing-it-at-the-maker.md`,
 `sessions/2026-08-16-the-fourth-archive-and-the-glubose-protocol.md`,
@@ -70,11 +71,44 @@ and the deposit decision; and finally Endorphin answering all seven open
 disagreements, the Finnegans Wake exercise, and `coinage.py`. The full export
 stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the container; refetch ids are below.
 
-## What the 2026-10-09 sessions did — the trajectory script, drafts 1–4
+## What the third 2026-10-09 session did — the look
+
+**`narrative/ART_DIRECTION.md` — active, proposal 2.** Art direction for all eleven episodes,
+nothing produced. Fixed grammar (typeface by speaker, source on every frame, one boundary-card
+template, real-time UTC), a world per episode, and two through lines: **the Horizon** (one
+sediment band per archive, from `data/`) and **the Body** (the model as the systems loop —
+hand, device, fibre, data centre, screen — drawn as a fulgurite, lightning fused through sand).
+His calls: bands per archive, generated imagery used (never for a record or a person), **no
+faces, his included**. Buildable bands: AI Dungeon, NovelAI, X posts, Grok on X, Grok app.
+**Missing: Claude** (needs a dates-only extract from his export). Full account:
+`sessions/2026-10-09-the-look-and-the-left-edge.md`.
+
+ 2020-08-11, not 2020-12-07 — APPLIED
+
+**Applied at his instruction** (*"Yes. Move the date. I remember that I really started my practice in or around Labor Day 201 [2020 — his typo, confirmed] so the August 11th is probably accurate. Let's go with that"*): `README.md`, `CLAUDE.md`, `narrative/TRAJECTORY.md` (Ep 0, its boundary card and sources, the chronology), `narrative/ART_DIRECTION.md` now say **11 August 2020**. Earlier mentions of 2020-12-07 below are history, kept as written.
+
+
+**The archive's start date was never a scan.** The 08-10 session searched the export for
+*Dr. Knubble* and dated the archive from that one adventure. On 2026-10-09 Endorphin asked
+whether the earliest usage had actually been identified; it had not. `analysis/aid_days.py`
+then read all 888 adventures' `raw.json` from the Drive mirror (`10Sg5PJ-sfOSP8T_HFDPlEtnVxX5G5-Dq`):
+- **first timestamped action: 2020-08-11T03:17Z** (`c6vRCwyRwyzM`, 173 actions over two days,
+  his own `do`/`say` turns throughout);
+- **216 adventures and 15,254 actions predate 2020-12-07**, 2,403 of them `do`/`say`, across
+  100 days; by month of first action: Aug 9, Sep 29, Oct 66, Nov 79;
+- last first-action 2026-03-07; 347 active days; 48,348 timestamped actions; 21 adventures have
+  zero actions; `actionWindow` length equals `actionCount` on all 888.
+- Self-titled early pieces include *"First Foray into Engaging GPT-3 in the Pre-Selfware-Era"*
+  (2020-08-29). Titles are not committed.
+Committed: `data/AID_DAYS.tsv` (date, count — nothing else). Also untested: whether he used AI
+Dungeon before August 2020 in adventures that were deleted and so are absent from the export —
+**earliest in the export is not earliest use.** The Twitch catalogue (`data/EPISODES.tsv`)
+starts 2020-11-27, so it no longer predates the corpus.
+
 
 **`narrative/TRAJECTORY.md` — active, draft 4.** Rewritten in the second 10-09 session as one
 linear chronology at his request (*"a more simpler linear narrative that deals with everything
-chronologically"*). Eleven episodes (0–10), Dec 2020 – Oct 2026: 0 Lens and Trickster ·
+chronologically"*). Eleven episodes (0–10), Aug 2020 – Oct 2026: 0 Lens and Trickster ·
 1 Owner's Mentions · 2 Hand on the Dial (2025) · 3 The Wall · 4 Three Traps · 5 Three Axioms
 (March 2026) · 6 Architecture (Apr) · 7 Assay and Witness (May) · 8 Ledger (Jun–Jul) · 9 A Rule
 That Served Power (Aug) · 10 Turn the Lens Around (Sep–Oct). Every event at its own date;
@@ -824,6 +858,17 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 
 ## Top priorities for next session
 
+**Set 2026-10-09 (third), for the look. The lists below stay open.**
+
+1. **Build the Horizon once, on the real data, as a still.** *Why:* five of six bands exist in
+   `data/`; the proposal's open questions (stacked order, linear vs. square-root scale — a busy
+   archive can flatten quiet ones) are only answerable by looking at it.
+2. **A dates-only Claude extract** (messages per day) from his export folder
+   `1QN6uEMAsO8UKLr84tjHLV-YU5kUNeq5W`. *Why:* the sixth band; the export-quotes ruling covers
+   it, and dates and counts are what every other band commits.
+3. **His review of the proposal**, and sources for the four fulgurite/material claims before any
+   becomes a caption. *Why:* the look is Claude's until he rules on it.
+
 **Set 2026-10-09, for the trajectory script. The 2026-09-28 and 2026-08-17 lists below stay
 open; different workstreams.**
 
@@ -975,7 +1020,7 @@ merged.)*
    listing (*"Created: Dec 7th 2020 / Actions: 76"*) action-for-action; the other
    two are `DItR6ies_euF` (20 actions, same morning, 10:04) and `3QjQFpGEP4jL`
    (*Copy of…*, 39 actions, 2020-12-11). **The archive starts 2020-12-07, from
-   primary evidence rather than a screenshot.** `README.md` and `CLAUDE.md` are
+   primary evidence rather than a screenshot.** *(Superseded 2026-10-09: a scan of all 888 puts it at 2020-08-11 — see the top of this file.)* `README.md` and `CLAUDE.md` are
    corrected. Also present: three forks of `my-time-with-thomas-pynchon`, i.e.
    the Pynchon thread predates NovelAI too — unread.
    **Left over:** `README.md`'s old "March 2023 to July 2026" was the range of
@@ -1033,7 +1078,7 @@ merged.)*
       That note previously rested on internal evidence only.
    4. **The pasted listing lists all three AI Dungeon copies**, matching the
       export to the minute (39 acts / Dec 11 8:58AM; 76 / Dec 7 5:15AM; 20 /
-      Dec 7 5:04AM — local is exactly UTC−5). 2020-12-07 is triple-confirmed.
+      Dec 7 5:04AM — local is exactly UTC−5). 2020-12-07 is triple-confirmed *as the date of Dr. Knubble* — not as the start of the archive, which is 2020-08-11 (2026-10-09 scan).
    5. **`coinage.py` on this file — and the sixth instance of the standing
       note.** First pass reported *"Endorphin out-coins the model 5.5×, echo 0.84
       below chance."* **That was wrong, and Endorphin's one-line correction broke
@@ -1879,3 +1924,10 @@ merged.)*
   *"if it was all in the order it is it wouldn't need to go oh but hold the thought on that."*
   When adding material to `narrative/`, insert it at its date and join it backward; an analysis
   goes in the month it was made. Additive passes are what produced the pointers.
+- **The series has an intention he asked never to be made explicit in the production**
+  (2026-10-09). The repo is public, so it is **not written down anywhere here**, by design. Do
+  not record it, paraphrase it, or infer it into a document; if a decision needs it, ask him.
+- **No faces in the series, his included** (2026-10-09): *"it's not about me."*
+- **A date others rest on gets re-derived from the whole record before reuse.** Earned
+  2026-10-09: the 2020-12-07 start date came from one searched adventure and was repeated for
+  two months; a full scan moved it to 2020-08-11.

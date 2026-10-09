@@ -2,7 +2,7 @@
 
 **Register: formal/evidentiary.** This is a **research corpus**, not a seed — 2,016 NovelAI
 story exports (created June 2021 – July 2026), with the full edit history preserved, plus
-888 AI Dungeon adventures reaching back to **7 December 2020**. The question this file used
+888 AI Dungeon adventures reaching back to **11 August 2020**. The question this file used
 to ask (*personal record, phenomenological writing, literature collection, or harm-reduction
 reference?*) was settled on 2026-08-03: none of those. It is an instrumented record of how
 one person drove text generation models over five years, and it is analysed as such.
@@ -49,13 +49,17 @@ Dungeon side is extracted too — 888 adventures and 169 scenarios, via
 It is **unanalysed**. `exports/` is gitignored for the same reason `corpus/` is, but the
 export is mirrored to a link-readable Drive folder — see `sessions/LATEST.md` for the id.
 
-**It also dates the archive.** `dxqLiJrw55P2`, *Dr. Knubble And The Fangs Of The Love
+**It once dated the archive, wrongly.** `dxqLiJrw55P2`, *Dr. Knubble And The Fangs Of The Love
 Sharks* — note the spelling: the NovelAI copy is *Doctor Knubb**ins** and the **Fins***, and
 neither string matches the other corpus, so search both — opens **2020-12-07T10:04:05Z with
 76 actions** — matching action-for-action the AI
 Dungeon listing pasted into block 1 of the NovelAI Pynchon × Tingle story, which until now
-was the only evidence that layer existed. The archive starts on AI Dungeon in December 2020,
-eighteen months before the first NovelAI story.
+was the only evidence that layer existed. That date came from a search for one adventure.
+**A scan of all 888 (2026-10-09, `analysis/aid_days.py`, `data/AID_DAYS.tsv`) puts the first
+timestamped action at 2020-08-11T03:17Z**; 216 adventures and 15,254 actions predate
+7 December. Endorphin, asked: he started *"in or around Labor Day"* 2020. **The archive starts
+on AI Dungeon on 11 August 2020**, more than ten months before the first NovelAI story. It is
+the earliest date *in the export* — deleted adventures would not be in it.
 
 The first five rules above are NovelAI rules and most of them do not transfer (the sixth
 is about reading and transfers everywhere). NovelAI preserves
