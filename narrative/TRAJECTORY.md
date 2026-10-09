@@ -2,6 +2,7 @@
 
 **Status:** draft 4, 2026-10-09. Written for Endorphin to edit, cut and voice.
 **Covers:** December 2020 to October 2026, in date order.
+**Look:** `narrative/ART_DIRECTION.md` (proposal 1) — the art direction for all eleven episodes.
 
 **What changed from draft 3.** Draft 3 grew by addition, so its early episodes pointed
 forward ("Episode 5 returns to it", "I will return to that move in Episode 9"). This draft
