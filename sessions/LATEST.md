@@ -105,6 +105,12 @@ source; every episode ends on a boundary card.
     no earlier source in the Claude record.
   - Rulings: he works from home and from wherever his phone is (the tour's workplace line is
     wrong); the organizing-space framework is **private, separate, and not to be touched**.
+- **Fourth pass: the Bugs Bunny Optimization** (his addition). Oldest project in the Claude
+  record: `f4e5d724`, **2023-11-04** — a trickster persona instead of a flat refusal. Claude's
+  first reply refused flatly; the same conversation holds his paste of the news report of
+  Musk's Grok launch post ("based & loves sarcasm", a joke refusal of a cocaine recipe), the
+  only dated Musk advertisement found so far. Returns as CrownFull's Tier 3 (2026-04-20) and as
+  "Bugs Bunny the cyberhero" (`fb77cc5a`, 2026-08-07). Now opens Episode 0.
 
 ## What the 2026-09-20 .. 09-28 session did — the power-bending audit
 

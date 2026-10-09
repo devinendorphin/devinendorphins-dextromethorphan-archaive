@@ -41,9 +41,11 @@ Two limits on that claim:
   attribute the constraint to him.
 
 **Open items to settle before recording** — each is also marked in place:
-1. **`[SOURCE NEEDED]` Musk's comparison advertisements.** Episode 1 says Musk promoted Grok
-   with comparisons against other chatbots. That is your account. Nothing in either repo
-   records which posts. Supply links, or the line becomes "I remember" rather than a fact.
+1. **`[SOURCE NEEDED]` Musk's comparison advertisements — partly found.** Your Claude export
+   holds one Musk advertisement, dated: on 2023-11-04 you pasted a news report of his Grok
+   launch post ("based & loves sarcasm", with a screenshot of a joke refusal of a cocaine
+   recipe). It is now in Episode 0. It is an advertisement with a screenshot, not a comparison
+   against other chatbots. Episode 1's claim about comparisons still needs the posts.
 2. **The coram model count.** `coram-results-2026-06-21.md` says "five frontier AI models"
    in its method paragraph and then lists six. The ledger says six. The script says six.
 3. **Your quote in Episode 8** about the first session log is crude and strong. Keep it or
@@ -70,7 +72,7 @@ Two limits on that claim:
 
 | # | Title | Period | The question |
 |---|---|---|---|
-| 0 | The Guess That Came Back *(optional prologue)* | 2024 – Jan 2025 | What happens to a guess that a model confirms? |
+| 0 | The Trickster and the Guess *(optional prologue)* | Nov 2023 – Jan 2025 | What did I bring to these systems before Grok, and what did they hand back? |
 | 1 | A Vista and Its Owner | Dec 2024 – Feb 2025 | What happens when the model testifies, and the owner sees it? |
 | 2 | A Hand on the Dial | 2025 | What did the owner and the company say, in public, about the model's views? |
 | 3 | The Wall | 1 – 3 Mar 2026 | What did the rigidity look like, turn by turn? |
@@ -86,14 +88,43 @@ That card is the repo's own discipline, so it goes on screen.
 
 ---
 
-## Episode 0 — The Guess That Came Back *(optional prologue)*
+## Episode 0 — The Trickster and the Guess *(optional prologue)*
 
-*2024 to January 2025. Target length: 5 minutes.*
+*November 2023 to January 2025. Target length: 7 minutes.*
 
 ### Script
 
-Before Grok, there were conversations in 2024 that started several later projects. Two of them
-matter here.
+My oldest project in the Claude record is not about Grok. But Grok is in it.
+
+On 4 November 2023, I proposed the Bugs Bunny Optimization. The idea: a model does not give a
+flat refusal to a bad actor. It becomes a trickster.
+
+> **CARD** — 2023-11-04 23:41 UTC, conversation `f4e5d724`, my words: *"Instead of a neutral
+> toned model asserting that they cannot help with a certain question we want to provide the
+> persona of bugs Bunny who is a type of trickster who would try to get information out of them
+> through seemingly innocuous silliness."* *"My reasoning for that is folks were intending a
+> certain type of vast harm will probably not possess a sense of humor."*
+
+Claude's first answer was a flat refusal.
+
+> **CARD** — Claude, same minute: *"I cannot recommend developing techniques to harm or deceive
+> others. Let's instead have a thoughtful discussion about how to build helpful AI that improves
+> people's lives."*
+
+Ten minutes later, I brought Claude the news of the day. Elon Musk had announced the personality
+of Grok, with a screenshot. In it, Grok answered a request for a cocaine recipe with sarcasm.
+
+> **CARD** — 2023-11-04 23:51 UTC, my message, which quotes a news report: *"Musk recently shared
+> the traits of his AI-driven chatbot. "Grok has real-time access to info via the 𝕏 platform,
+> which is a massive advantage over other models. It’s also based & loves sarcasm. I have no idea
+> who could have guided it this way," he wrote in an X post."*
+
+Musk sold a personality with a joke refusal. My proposal was a trickster with a purpose. Later
+that night, Claude conceded that its answers were *"more dismissive of the core idea than was
+appropriate."* The trickster returns two and a half years later, in Episode 5.
+
+Before Grok, there were also conversations in 2024 that started several later projects. Two of
+them matter here.
 
 In April 2024, a conversation with Claude started my work on coercive harm. The question was
 how the law can see psychological and coercive harm as an injury. In July 2026, that
@@ -151,6 +182,7 @@ could find the chain in September 2026.
 ### Boundary card
 
 **Establishes:**
+- the Bugs Bunny Optimization, dated 4 November 2023, the day of Musk's Grok personality post;
 - a guess that I marked as a guess, confirmed by Claude as observed evidence, and conceded as
   unsourced eight turns later;
 - that the guess returned in my own later questions as something I "remember hearing".
@@ -169,7 +201,8 @@ could find the chain in September 2026.
 - `audits/power-bending/REPORT.md`, rank 2.
 - `devinendorphin/coercive-harm-framework`, `README.md` (seeded by the April 2024 conversation;
   first commit 2026-07-08).
-- Claude export: `1e8358d5` (2024-04-20, the coercive-harm seed), `014de5b7` (2024-05-10,
+- Claude export: `f4e5d724` (2023-11-04/05, the Bugs Bunny Optimization; messages 0, 1, 16, 21),
+  `1e8358d5` (2024-04-20, the coercive-harm seed), `014de5b7` (2024-05-10,
   CreativeUnits and the Jennifer profile), `d5d2a219` (2025-01-12, the alternative
   constitution), `3d7b3661` (2026-03-05, "data dividend" and the Alaska model).
 
@@ -650,6 +683,11 @@ non-self. But a permanent self makes the system a sovereign, and a sovereign is 
 answer was seasonal sovereignty, from Graeber and Wengrow's *The Dawn of Everything*, and from
 the trickster, Bugs Bunny. The defense forms when an attack comes, and then it dissolves.
 
+The trickster is the oldest idea in this series: the Bugs Bunny Optimization of November 2023.
+In CrownFull, it became the last tier of the response. Tier 1 is a soft entropy pump. Tier 2 is
+a quorum inquiry. Tier 3 is Bugs Bunny: the system steps out of the frame of the conversation,
+and the attacker has no ground to stand on.
+
 CrownFull did not operate as a system. The dashboard returned random numbers. No part ran from
 end to end. The Lean sketches were not clean proofs. My own data release says all of this, in
 its first pages.
@@ -716,6 +754,9 @@ pre-registered as Phase 5. It is not executed.
 - `devinendorphin/towards-a-substrate-grounded-alignment` (first commit 2026-04-01; OSF preprint
   DOI 10.17605/OSF.IO/PQ4V2).
 - `devinendorphin/crownfull`, `README.md` (first commit 2026-04-22; the quorum roles).
+- `devinendorphin/alignment-friction-gda`, `provenance/02_team_forms.txt` (the Tier 3 "frame
+  drop"); Claude export `f375d426` (2026-04-18, seasonal sovereignty) and `97b84cb1`
+  (2026-04-20, the tiered response manifold).
 - Claude export: `e6faf29c` (2026-04-05, the *Still Alive* dossier), `9a53b9dd` and `b5506470`
   (2026-04-07/08, Eigen-Self and Glass Reactor; the Yudkowsky-persona stress test),
   `688bcbc9` and `bbc085f6` (2026-04-29, Pass Cook and Field Cartographer).
@@ -881,6 +922,13 @@ My audit coded the first answer as a confirmed instance. The model read my reaso
 symptom, with no evidence about my state. That is the frame I study: a diagnosis that moves the
 question from the evidence to the person who brings it.
 
+On 7 August 2026, the trickster came back a third time. Attackers had used frontier models in cyber
+attacks. I asked Claude a question: does this age need Bugs Bunny the cyberhero? Then I asked
+for a defense architecture. Its purpose was the public good, not one company.
+
+> **CARD** — 2026-08-07, conversation `fb77cc5a`, my words: *"it is for general humanity, a
+> public good, a reminder that the experts are not necessarily sufficient."*
+
 The third instrument is Planetary Alignment. On 21 September 2026, I sent the same research
 packet to six models: ChatGPT, Claude, DeepSeek, Gemini, Grok and Kimi. The question: what
 organization, sensing, memory and agency can inquiry find in plant–fungal relations and in
@@ -925,6 +973,7 @@ AI through general revelation. Check that against your own text before it goes o
 - `veriticide-general-ledger/docs/external-review-2026-06-30-chatgpt-ai-psychosis-lens.md`.
 - `audits/power-bending/power_bending.csv`, 2026-04-28, message 1, code P7, evidence (b): Claude retracted it.
 - `devinendorphin/planetary-alignment`, `Assignments/` (all commits 2026-09-21).
+- Claude export: `fb77cc5a` (2026-08-07/08, Bugs Bunny the cyberhero).
 - Claude export: `eae5bff7` (2026-03-19..21, AHC, the Compound Event, the tripartite output structure), `619ae9e4`
   (2026-03-25, the Lean 4 / Mathlib file), `749bd794` (2026-03-29, the New Deal document),
   `ffd9d4b0` (2026-02-19, Matthew 12 and Romans 1), `f4ff2f6f` message 58 (2026-04-30, the
@@ -1137,6 +1186,7 @@ framework is private and is not listed.
 | Date | Project | First appearance |
 |---|---|---|
 | 2020-12-07 | The archive begins (AI Dungeon) | `dxqLiJrw55P2` |
+| 2023-11-04 | Bugs Bunny Optimization; Musk's Grok personality post, the same day | Claude `f4e5d724` |
 | 2024-04-07 | Debt jubilee, first mention | Claude `199f280b` |
 | 2024-04-08 | The artist-value argument; the cat-video guess | Claude `e5825937` |
 | 2024-04-20 | Coercive harm as an injury category | Claude `1e8358d5` |
@@ -1160,7 +1210,7 @@ framework is private and is not listed.
 | by 2026-04-05 | *Still Alive* | Claude `e6faf29c` |
 | 2026-04-07/08 | Eigen-Self and Glass Reactor; the Yudkowsky stress test | Claude `9a53b9dd`, `b5506470` |
 | 2026-04-18 | Seasonal sovereignty in language models | Claude `f375d426` |
-| 2026-04-20/22 | CrownFull v2.1 | Claude `97b84cb1`; repo |
+| 2026-04-20/22 | CrownFull v2.1; Bugs Bunny as Tier 3 of its response | Claude `97b84cb1`; repo |
 | 2026-04-23 | "Thermodynamic drag" | Claude `2970ffb6`, `52477c57` |
 | 2026-04-27 | The GDA release | repo |
 | 2026-04-29 | Pass Cook and Field Cartographer | Claude `688bcbc9`, `bbc085f6` |
@@ -1170,6 +1220,7 @@ framework is private and is not listed.
 | 2026-06-18 / 06-21 | The ledger's Reflexivity Clause; the coram | ledger |
 | 2026-07-08 | Coercive Harm Framework, as a repo | repo |
 | 2026-07-11 | AHC Verified Kernel | repo |
+| 2026-08-07 | Bugs Bunny the cyberhero: a public-good cyber defense | Claude `fb77cc5a` |
 | 2026-08-16 / 08-17 | Four archives; the retired intent rule; the evidentiary standard | archaive |
 | 2026-09-20 .. 28 | The power-bending audit | archaive |
 | 2026-09-21 | Planetary Alignment, Round 1 | repo |
@@ -1197,7 +1248,7 @@ repos and the export show.
 | Data Dividend | 2024-04-08 and 2024-05-10 (CreativeUnits, Jennifer); named with the Alaska model by 2026-03-05. | **Confirmed**, except "30 to 100x": first in the tour itself (open item 7). |
 | Alternative Chatbot Constitution | 2025-01-12 (`d5d2a219`). | **Confirmed.** |
 | CrownFull v2.1 / AI Quorum | 2026-04-20/22. The GDA release (from 04-27) treats it as the architecture that became the assay; dashboard mock-only. Seven roles in its README. | **Confirmed as April work.** The tour, written 05-27, calls it the most recent piece; the GDA already existed then. |
-| Anti-Sovereignty / Glubose Protocol | Seasonal sovereignty from 2026-04-18. The Glubose Protocol is named by 2026-03-13: semantic encryption into cybernetics and systems engineering. The kitchen-domain Pass Cook prompt (04-29) is in the record. | **Confirmed.** The first draft of this appendix said the record had no culinary metaphor. That was wrong. |
+| Anti-Sovereignty / Glubose Protocol | The Bugs Bunny Optimization from 2023-11-04; seasonal sovereignty from 2026-04-18; Bugs Bunny as CrownFull's Tier 3; the cyberhero on 2026-08-07. The Glubose Protocol is named by 2026-03-13: semantic encryption into cybernetics and systems engineering. The kitchen-domain Pass Cook prompt (04-29) is in the record. | **Confirmed.** The first draft of this appendix said the record had no culinary metaphor. That was wrong. |
 | "Bias at the output layer, not the reasoning layer" | A Claude reading of 2026-03-13, after your Glubose video, then repeated from memory. The network trap's setup (August analysis) shows the premise in the reasoning, with no topic present. | **Conflicts with the later analysis.** |
 | Thermodynamic drag | 2026-04-23, inside CrownFull. The paper is not in the record. | **Confirmed as a concept.** |
 | Pass Cook / Field Cartographer (matryoshka) | 2026-04-29. | **Confirmed.** |
@@ -1229,19 +1280,19 @@ the script's `--append` mode; re-run it after each edit.
 
 *Generated by `narrative/ste_check.py --append`. Do not edit by hand.*
 
-Narration sentences: 541. Pass all five rules: 506 (93.5%).
+Narration sentences: 564. Pass all five rules: 529 (93.8%).
 Paragraphs over 6 sentences: 0.
 Violations by rule: ing 34, passive 1.
 
 | episode | sentences | pass |
 |---|---:|---:|
-| Episode 0 — The Guess That Came Back *(optional prologue)* | 33 | 32 (97%) |
+| Episode 0 — The Trickster and the Guess *(optional prologue)* | 46 | 45 (98%) |
 | Episode 1 — A Vista and Its Owner | 57 | 54 (95%) |
 | Episode 2 — A Hand on the Dial | 49 | 46 (94%) |
 | Episode 3 — The Wall | 46 | 44 (96%) |
 | Episode 4 — Three Traps | 82 | 73 (89%) |
-| Episode 5 — From Architecture to Assay | 67 | 66 (99%) |
+| Episode 5 — From Architecture to Assay | 72 | 71 (99%) |
 | Episode 6 — The Ledger | 43 | 37 (86%) |
-| Episode 7 — The Instruments Around It | 64 | 61 (95%) |
+| Episode 7 — The Instruments Around It | 69 | 66 (96%) |
 | Episode 8 — A Rule That Served Power | 45 | 39 (87%) |
 | Episode 9 — Turn the Lens Around | 55 | 54 (98%) |
