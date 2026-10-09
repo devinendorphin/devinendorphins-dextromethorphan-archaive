@@ -68,6 +68,23 @@ and the deposit decision; and finally Endorphin answering all seven open
 disagreements, the Finnegans Wake exercise, and `coinage.py`. The full export
 stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the container; refetch ids are below.
 
+## What the 2026-10-09 session did — the trajectory script (draft 1)
+
+**`narrative/TRAJECTORY.md`** — an eight-episode video script that makes the research
+trajectory legible, from the December 2024 Grok screenshots to the October 2026 audit of the
+analyst. Written at Endorphin's request, for him to edit and voice. Narration is in his first
+person **but in Claude's wording**; every quote card is verbatim from the record and cites its
+source; every episode ends on a boundary card.
+
+- **Language constraint: ASD-STE100 (Simplified Technical English), 80% target.**
+  `narrative/ste_check.py` measures the five mechanical writing rules on the narration only.
+  The STE dictionary is not available here and is not checked. Re-run after every edit.
+- **Open before recording:** (1) `[SOURCE NEEDED]` for Musk's Grok-versus-other-chatbot
+  advertisements, which no file in either repo records; (2) the coram file says five models in
+  its method and lists six; (3) his call on the Episode 7 quote.
+- **Not verified:** that Karpathy uses ASD-STE100. Do not attribute it until he supplies the
+  source.
+
 ## What the 2026-09-20 .. 09-28 session did — the power-bending audit
 
 **A different workstream from everything below.** `audits/power-bending/` counts
