@@ -111,6 +111,10 @@ source; every episode ends on a boundary card.
   Musk's Grok launch post ("based & loves sarcasm", a joke refusal of a cocaine recipe), the
   only dated Musk advertisement found so far. Returns as CrownFull's Tier 3 (2026-04-20) and as
   "Bugs Bunny the cyberhero" (`fb77cc5a`, 2026-08-07). Now opens Episode 0.
+- **Ruling, 2026-10-09: quotes from his Claude export may go public in `narrative/`.** Asked
+  after the permission classifier blocked the push; he chose to publish as is. The ruling covers
+  his words, Claude's words, timestamps and conversation ids from the export. It does not cover
+  `users.json`, `memories.json`, or the private organizing-space framework.
 
 ## What the 2026-09-20 .. 09-28 session did — the power-bending audit
 
