@@ -71,7 +71,7 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
 
 ## What the 2026-10-09 session did — the trajectory script
 
-**`narrative/TRAJECTORY.md` — active, draft 3.** A ten-episode video script (0–9), November 2023
+**`narrative/TRAJECTORY.md` — active, draft 4 (2026-10-09, later the same day): rewritten as one linear chronology, eleven episodes (0–10), Dec 2020 – Oct 2026, every event at its own date, analyses in the month they were made, no forward pointers. Draft 3's episode list below is superseded.** Draft 3 was: A ten-episode video script (0–9), November 2023
 to October 2026: the Bugs Bunny Optimization and Musk's Grok launch post (Ep 0), the screenshot
 practice (1), the public record of xAI's hand on the dial (2), the wall (3), the three traps
 (4), CrownFull → GDA (5), the ledger (6), the instruments around it (7), the retired intent rule
