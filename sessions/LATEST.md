@@ -72,7 +72,7 @@ stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the 
 
 ## Found 2026-10-09 — the AI Dungeon record starts 2020-08-11, not 2020-12-07 — APPLIED
 
-**Applied at his instruction** (*"Yes. Move the date. I remember that I really started my practice in or around Labor Day [?201→2020] so the August 11th is probably accurate. Let's go with that"*): `README.md`, `CLAUDE.md`, `narrative/TRAJECTORY.md` (Ep 0, its boundary card and sources, the chronology), `narrative/ART_DIRECTION.md` now say **11 August 2020**. Earlier mentions of 2020-12-07 below are history, kept as written.
+**Applied at his instruction** (*"Yes. Move the date. I remember that I really started my practice in or around Labor Day 201 [2020 — his typo, confirmed] so the August 11th is probably accurate. Let's go with that"*): `README.md`, `CLAUDE.md`, `narrative/TRAJECTORY.md` (Ep 0, its boundary card and sources, the chronology), `narrative/ART_DIRECTION.md` now say **11 August 2020**. Earlier mentions of 2020-12-07 below are history, kept as written.
 
 
 **The archive's start date was never a scan.** The 08-10 session searched the export for
