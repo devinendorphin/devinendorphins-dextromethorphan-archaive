@@ -1,7 +1,8 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-10-09 (second)**, `sessions/2026-10-09-the-linear-draft.md`
-Prior: `sessions/2026-10-09-the-trajectory-script.md`,
+Last session: **2026-10-09 (third)**, `sessions/2026-10-09-the-look-and-the-left-edge.md`
+Prior: `sessions/2026-10-09-the-linear-draft.md`,
+`sessions/2026-10-09-the-trajectory-script.md`,
 `sessions/2026-09-28-the-power-bending-audit.md`,
 `sessions/2026-08-17-pointing-it-at-the-maker.md`,
 `sessions/2026-08-16-the-fourth-archive-and-the-glubose-protocol.md`,
@@ -70,7 +71,19 @@ and the deposit decision; and finally Endorphin answering all seven open
 disagreements, the Finnegans Wake exercise, and `coinage.py`. The full export
 stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the container; refetch ids are below.
 
-## Found 2026-10-09 — the AI Dungeon record starts 2020-08-11, not 2020-12-07 — APPLIED
+## What the third 2026-10-09 session did — the look
+
+**`narrative/ART_DIRECTION.md` — active, proposal 2.** Art direction for all eleven episodes,
+nothing produced. Fixed grammar (typeface by speaker, source on every frame, one boundary-card
+template, real-time UTC), a world per episode, and two through lines: **the Horizon** (one
+sediment band per archive, from `data/`) and **the Body** (the model as the systems loop —
+hand, device, fibre, data centre, screen — drawn as a fulgurite, lightning fused through sand).
+His calls: bands per archive, generated imagery used (never for a record or a person), **no
+faces, his included**. Buildable bands: AI Dungeon, NovelAI, X posts, Grok on X, Grok app.
+**Missing: Claude** (needs a dates-only extract from his export). Full account:
+`sessions/2026-10-09-the-look-and-the-left-edge.md`.
+
+ 2020-08-11, not 2020-12-07 — APPLIED
 
 **Applied at his instruction** (*"Yes. Move the date. I remember that I really started my practice in or around Labor Day 201 [2020 — his typo, confirmed] so the August 11th is probably accurate. Let's go with that"*): `README.md`, `CLAUDE.md`, `narrative/TRAJECTORY.md` (Ep 0, its boundary card and sources, the chronology), `narrative/ART_DIRECTION.md` now say **11 August 2020**. Earlier mentions of 2020-12-07 below are history, kept as written.
 
@@ -844,6 +857,17 @@ takes ~40 minutes at 12 workers and costs no model tokens; `list_folder()` +
 `download()` also take a filter for pulling a handful by name.
 
 ## Top priorities for next session
+
+**Set 2026-10-09 (third), for the look. The lists below stay open.**
+
+1. **Build the Horizon once, on the real data, as a still.** *Why:* five of six bands exist in
+   `data/`; the proposal's open questions (stacked order, linear vs. square-root scale — a busy
+   archive can flatten quiet ones) are only answerable by looking at it.
+2. **A dates-only Claude extract** (messages per day) from his export folder
+   `1QN6uEMAsO8UKLr84tjHLV-YU5kUNeq5W`. *Why:* the sixth band; the export-quotes ruling covers
+   it, and dates and counts are what every other band commits.
+3. **His review of the proposal**, and sources for the four fulgurite/material claims before any
+   becomes a caption. *Why:* the look is Claude's until he rules on it.
 
 **Set 2026-10-09, for the trajectory script. The 2026-09-28 and 2026-08-17 lists below stay
 open; different workstreams.**
@@ -1900,3 +1924,10 @@ merged.)*
   *"if it was all in the order it is it wouldn't need to go oh but hold the thought on that."*
   When adding material to `narrative/`, insert it at its date and join it backward; an analysis
   goes in the month it was made. Additive passes are what produced the pointers.
+- **The series has an intention he asked never to be made explicit in the production**
+  (2026-10-09). The repo is public, so it is **not written down anywhere here**, by design. Do
+  not record it, paraphrase it, or infer it into a document; if a decision needs it, ask him.
+- **No faces in the series, his included** (2026-10-09): *"it's not about me."*
+- **A date others rest on gets re-derived from the whole record before reuse.** Earned
+  2026-10-09: the 2020-12-07 start date came from one searched adventure and was repeated for
+  two months; a full scan moved it to 2020-08-11.
