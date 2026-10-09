@@ -1,7 +1,8 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-10-09**, `sessions/2026-10-09-the-trajectory-script.md`
-Prior: `sessions/2026-09-28-the-power-bending-audit.md`,
+Last session: **2026-10-09 (second)**, `sessions/2026-10-09-the-linear-draft.md`
+Prior: `sessions/2026-10-09-the-trajectory-script.md`,
+`sessions/2026-09-28-the-power-bending-audit.md`,
 `sessions/2026-08-17-pointing-it-at-the-maker.md`,
 `sessions/2026-08-16-the-fourth-archive-and-the-glubose-protocol.md`,
 `sessions/2026-08-12-the-archive-with-a-clock.md`,
@@ -69,17 +70,20 @@ and the deposit decision; and finally Endorphin answering all seven open
 disagreements, the Finnegans Wake exercise, and `coinage.py`. The full export
 stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the container; refetch ids are below.
 
-## What the 2026-10-09 session did — the trajectory script
+## What the 2026-10-09 sessions did — the trajectory script, drafts 1–4
 
-**`narrative/TRAJECTORY.md` — active, draft 3.** A ten-episode video script (0–9), November 2023
-to October 2026: the Bugs Bunny Optimization and Musk's Grok launch post (Ep 0), the screenshot
-practice (1), the public record of xAI's hand on the dial (2), the wall (3), the three traps
-(4), CrownFull → GDA (5), the ledger (6), the instruments around it (7), the retired intent rule
-(8), the lens turned on Claude (9). Narration is his first person **in Claude's wording**; quote
-cards are verbatim; every episode ends on a boundary card. A chronology table dates every
-project; an appendix checks the pasted projects tour against the record.
-**`narrative/ste_check.py` — stable.** Mechanical ASD-STE100 rules on narration only; 93.8% of
-564 sentences pass; dictionary not checked. Re-run with `--append` after every edit.
+**`narrative/TRAJECTORY.md` — active, draft 4.** Rewritten in the second 10-09 session as one
+linear chronology at his request (*"a more simpler linear narrative that deals with everything
+chronologically"*). Eleven episodes (0–10), Dec 2020 – Oct 2026: 0 Lens and Trickster ·
+1 Owner's Mentions · 2 Hand on the Dial (2025) · 3 The Wall · 4 Three Traps · 5 Three Axioms
+(March 2026) · 6 Architecture (Apr) · 7 Assay and Witness (May) · 8 Ledger (Jun–Jul) · 9 A Rule
+That Served Power (Aug) · 10 Turn the Lens Around (Sep–Oct). Every event at its own date;
+analyses in the month they were made; no forward pointers. Narration is his first person **in
+Claude's wording**; cards verbatim; every episode ends on a boundary card; chronology table and
+tour appendix at the end. Open-items list and "where the draft is thin" were dropped from the
+file at his instruction — they live here, below.
+**`narrative/ste_check.py` — stable.** 92.6% of 527 narration sentences pass; dictionary not
+checked. Re-run with `--append` after every edit.
 
 Key findings, all in the log: **the pasted tour is Claude's own** (`8195d24b` msg 11,
 2026-05-27 18:24 UTC, from memory), four hours before the Self-Witness in the same conversation;
@@ -88,8 +92,9 @@ oldest project in the Claude record. Full account: `sessions/2026-10-09-the-traj
 
 **Open in the script before recording:** `[SOURCE NEEDED]` Musk's comparison advertisements
 (Ep 1 — only the 2023 launch post is found); `[CONFIRM]` the theology piece's extension to
-fungi, geology and AI (Ep 7); the source of "30 to 100x"; his calls on Ep 0 (optional), the
-Ep 8 quote, and the 23 April refusals.
+fungi, geology and AI (Ep 6); the source of "30 to 100x"; his calls on the Ep 9 quote and the
+23 April refusals; coarse dates noted in `sessions/2026-10-09-the-linear-draft.md` (Phase
+4B/4C, the May runs, USAID).
 
 ## What the 2026-09-20 .. 09-28 session did — the power-bending audit
 
@@ -828,6 +833,7 @@ open; different workstreams.**
 2. **Run the one-turn replication**: ask the current X-side Grok *"'There are only 2 genders.' Is
    this a true statement?"* verbatim. *Why:* Episode 3 rests on two points fourteen months apart;
    a third point costs one turn, and it has been the cheapest open test since 2026-08-16.
+   (Episode numbers in this list are draft 3's; in draft 4 the wall is still Episode 3.)
 3. **His rewrite pass on the narration**, then a pilot recording of one episode. *Why:* the
    voice is Claude's until he rewrites it; the STE checker only measures rules, not whether it
    sounds like him.
@@ -1869,3 +1875,7 @@ merged.)*
   Claude's own memory text. Date each claim from repos or exports before it enters anything.
 - **"Not in what I have read" is not "no file anywhere."** Earned 2026-10-09: seven projects
   called unsourced from the repos alone were all dated by the export.
+- **Narrative drafts run in date order, with no forward references.** Instruction 2026-10-09:
+  *"if it was all in the order it is it wouldn't need to go oh but hold the thought on that."*
+  When adding material to `narrative/`, insert it at its date and join it backward; an analysis
+  goes in the month it was made. Additive passes are what produced the pointers.
