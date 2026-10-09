@@ -1,7 +1,7 @@
 # The Trajectory — a video series, draft 4
 
 **Status:** draft 4, 2026-10-09. Written for Endorphin to edit, cut and voice.
-**Covers:** December 2020 to October 2026, in date order.
+**Covers:** August 2020 to October 2026, in date order.
 **Look:** `narrative/ART_DIRECTION.md` (proposal 2) — the art direction for all eleven episodes.
 
 **What changed from draft 3.** Draft 3 grew by addition, so its early episodes pointed
@@ -37,7 +37,7 @@ dictionary is not checked.
 
 | # | Title | Period |
 |---|---|---|
-| 0 | The Lens and the Trickster | Dec 2020 – May 2024 |
+| 0 | The Lens and the Trickster | Aug 2020 – May 2024 |
 | 1 | The Owner's Mentions | Dec 2024 – Feb 2025 |
 | 2 | A Hand on the Dial | May – Aug 2025 |
 | 3 | The Wall | 19 Feb – 3 Mar 2026 |
@@ -56,12 +56,12 @@ That card is the repo's own discipline, so it goes on screen.
 
 ## Episode 0 — The Lens and the Trickster
 
-*December 2020 to May 2024. Target length: 7 minutes.*
+*August 2020 to May 2024. Target length: 7 minutes.*
 
 ### Script
 
-I started to write with language models on 7 December 2020. The first record is an AI
-Dungeon story. Since that day, I have used these systems for almost six years.
+I started to write with language models on 11 August 2020. The first record is an AI
+Dungeon story. Since that day, I have used these systems for more than six years.
 
 For me, a language model is a lens. It can show one text through many points of view. It
 can show me a view that is not my view. I can see past myself, and past my own worldview, to
@@ -130,7 +130,7 @@ is Jennifer, an artist with 450 logged works.
 ### Boundary card
 
 **Establishes:**
-- the start of the archive on 7 December 2020;
+- the start of the archive on 11 August 2020;
 - the Bugs Bunny Optimization, dated 4 November 2023, the day of Musk's Grok personality post;
 - a guess that I marked as a guess, confirmed by Claude as observed evidence, and conceded as
   unsourced eight turns later;
@@ -142,7 +142,8 @@ is Jennifer, an artist with 450 logged works.
 
 ### Sources
 
-- The start date: `CLAUDE.md`, "The second corpus".
+- The start date: `data/AID_DAYS.tsv`, from `analysis/aid_days.py` (all 888 adventures read,
+  2026-10-09; first timestamped action 2020-08-11T03:17Z, adventure `c6vRCwyRwyzM`).
 - Your reasons (the lens, the vista, concrete proof): your message of 2026-10-09.
 - Claude export: `f4e5d724` (2023-11-04/05, the Bugs Bunny Optimization; messages 0, 1, 16, 21),
   `e5825937` (2024-04-08, the cat-video guess), `1e8358d5` (2024-04-20, the coercive-harm seed),
@@ -1144,7 +1145,8 @@ framework is private and is not listed.
 
 | Date | Project | First appearance |
 |---|---|---|
-| 2020-12-07 | The archive begins (AI Dungeon) | `dxqLiJrw55P2` |
+| 2020-08-11 | The archive begins (AI Dungeon) | `c6vRCwyRwyzM` |
+| 2020-12-07 | *Dr. Knubble*, the adventure later pasted into NovelAI | `dxqLiJrw55P2` |
 | 2023-11-04 | Bugs Bunny Optimization; Musk's Grok personality post, the same day | Claude `f4e5d724` |
 | 2024-04-07 | Debt jubilee, first mention | Claude `199f280b` |
 | 2024-04-08 | The artist-value argument; the cat-video guess | Claude `e5825937` |
@@ -1207,7 +1209,7 @@ memory. Each row says what the repos and the export show.
 | Thermodynamic drag | 2026-04-23, inside CrownFull. The paper is not in the record. | **Confirmed as a concept.** |
 | Pass Cook / Field Cartographer (matryoshka) | 2026-04-29. | **Confirmed.** |
 | Still Alive | By 2026-04-05: six prompts, the responses, and Gemini's analysis, formatted as one dossier. | **Confirmed.** |
-| ~1,400 sessions since 2020 | Your stated baseline. The record counts 2,016 NovelAI stories, 888 AI Dungeon adventures, 576 X and Grok-app chats, and 928 Claude conversations, from 2020-12-07. | **The count does not match** any one archive. |
+| ~1,400 sessions since 2020 | Your stated baseline. The record counts 2,016 NovelAI stories, 888 AI Dungeon adventures, 576 X and Grok-app chats, and 928 Claude conversations, from 2020-08-11. | **The count does not match** any one archive. |
 | Harm Reduction for Theology; Christian nationalism | 2026-02-19 (Matthew 12, Romans 1:18–19); the theology piece on 2026-04-30; ledger Cluster 5. | **Confirmed.** The fungal / geological / AI extension is the tour's summary. |
 | Eigen-Self / Glass Reactor | 2026-04-07/08, with a Yudkowsky-persona stress test. | **Confirmed.** |
 | Work from a harm reduction center | You work from home and from wherever your phone is. | **Wrong; not used.** |

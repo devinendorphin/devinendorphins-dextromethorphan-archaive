@@ -26,7 +26,7 @@ So the look has one fixed rule: **every element on screen shows where it came fr
 carry their speaker in their typeface. Numbers carry their source. Generated images carry
 their prompt. Each episode has its own visual world, taken from the material of its period.
 Under all eleven worlds run two lines. **The Horizon** is the record in time: a cross-section of
-sediment, one layer per archive, laid down day by day from December 2020. **The Body** is the
+sediment, one layer per archive, laid down day by day from August 2020. **The Body** is the
 system in space: one loop of sand and lightning that runs from a fingertip to a data centre and
 back. In the last minute of the series the two turn out to be the same ground.
 
@@ -34,7 +34,7 @@ back. In the last minute of the series the two turn out to be the same ground.
 
 ## 2. The first through line: the Horizon
 
-**What it is.** A cross-section of layered ground, 7 December 2020 to October 2026, read left to
+**What it is.** A cross-section of layered ground, 11 August 2020 to October 2026, read left to
 right. **Each archive is its own band**, stacked in the order the archives begin, oldest at the
 bottom, like sediment:
 
@@ -141,7 +141,7 @@ data centre and back.
 
 It does not appear in every shot. It appears where the script is about the circuit itself:
 
-- **Episode 0** — the first full drawing. On 7 December 2020, the first keystroke: the strike
+- **Episode 0** — the first full drawing. On 11 August 2020, the first keystroke: the strike
   forms from the hand outward, branch by branch, fibre to data centre, and the first pulse
   returns. Slow, once, no caption. After that the series can show any part of it and the viewer
   knows the whole.
@@ -163,7 +163,7 @@ It does not appear in every shot. It appears where the script is about the circu
 
 Episode 10 opens on the Horizon through the lens, as usual. The camera pulls back past the rim.
 The lens is a small glass object at the right end of the ground. The whole Horizon is visible
-for the first time: every band, every episode's tint, one cross-section from December 2020 to
+for the first time: every band, every episode's tint, one cross-section from August 2020 to
 now. The bar is gone.
 
 Then the camera drops below the surface line. Under the strata runs the fulgurite — the Body —
@@ -273,9 +273,9 @@ Generated imagery is used, and it carries the same discipline as the rest of the
 Each episode takes its look from the dominant material of its period. Palettes are given as
 ground / ink / accent. The accent is the light that episode leaves on the Horizon's surface.
 
-### Episode 0 — The Lens and the Trickster *(Dec 2020 – May 2024)*
+### Episode 0 — The Lens and the Trickster *(Aug 2020 – May 2024)*
 **World: the text adventure.** Near-black ground, phosphor text, a blinking block cursor. The
-AI Dungeon start date appears as a prompt line: `> 2020-12-07`. The cards type themselves on at
+AI Dungeon start date appears as a prompt line: `> 2020-08-11`. The cards type themselves on at
 reading speed.
 **Palette:** `#0B0F0C` / `#CFE9D6` / phosphor green `#6FE39A`. In the 2023–2024 section the
 accent warms to amber `#FFB347` — a different era of chat, the same cursor.
@@ -452,13 +452,8 @@ Credits state roles plainly, in the type grammar of §4.1:
 
 - **The Claude band needs an extract that does not exist yet**, as a dates-and-counts file.
   Until then that layer is absent, and the frame says so with a slate.
-- **The left edge of the Horizon.** The full AI Dungeon scan (2026-10-09) puts the first
-  timestamped action at **2020-08-11**, not 2020-12-07: 216 adventures and 15,254 actions come
-  before 7 December. The script, `CLAUDE.md` and this proposal still say 7 December 2020.
-  Endorphin's call before anything is changed.
 - **The Twitch catalogue.** `data/EPISODES.tsv` holds 1,492 dated broadcasts, from
-  **2020-11-27 to 2024-12-25**. It could be a seventh band. If it is, the Horizon begins ten
-  days before the 7 December 2020 date the script uses as the start. Endorphin's call.
+  **2020-11-27 to 2024-12-25**. It could be a seventh band; it starts inside the Horizon's range.
 - **Band order and scale.** The proposal stacks by start date on a shared linear scale. A very
   busy archive can flatten the quiet ones; a square-root scale would keep thin layers visible.
   Test both on the real data before choosing.

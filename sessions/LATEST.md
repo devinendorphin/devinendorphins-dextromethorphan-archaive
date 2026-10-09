@@ -70,7 +70,10 @@ and the deposit decision; and finally Endorphin answering all seven open
 disagreements, the Finnegans Wake exercise, and `coinage.py`. The full export
 stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the container; refetch ids are below.
 
-## Found 2026-10-09 — the AI Dungeon record starts 2020-08-11, not 2020-12-07
+## Found 2026-10-09 — the AI Dungeon record starts 2020-08-11, not 2020-12-07 — APPLIED
+
+**Applied at his instruction** (*"Yes. Move the date. I remember that I really started my practice in or around Labor Day [?201→2020] so the August 11th is probably accurate. Let's go with that"*): `README.md`, `CLAUDE.md`, `narrative/TRAJECTORY.md` (Ep 0, its boundary card and sources, the chronology), `narrative/ART_DIRECTION.md` now say **11 August 2020**. Earlier mentions of 2020-12-07 below are history, kept as written.
+
 
 **The archive's start date was never a scan.** The 08-10 session searched the export for
 *Dr. Knubble* and dated the archive from that one adventure. On 2026-10-09 Endorphin asked
@@ -84,9 +87,7 @@ then read all 888 adventures' `raw.json` from the Drive mirror (`10Sg5PJ-sfOSP8T
   zero actions; `actionWindow` length equals `actionCount` on all 888.
 - Self-titled early pieces include *"First Foray into Engaging GPT-3 in the Pre-Selfware-Era"*
   (2020-08-29). Titles are not committed.
-Committed: `data/AID_DAYS.tsv` (date, count — nothing else). **Not yet corrected, pending his
-word:** `CLAUDE.md` ("The archive starts on AI Dungeon in December 2020"), `narrative/TRAJECTORY.md`
-Ep 0 and the chronology table, `narrative/ART_DIRECTION.md`. Also untested: whether he used AI
+Committed: `data/AID_DAYS.tsv` (date, count — nothing else). Also untested: whether he used AI
 Dungeon before August 2020 in adventures that were deleted and so are absent from the export —
 **earliest in the export is not earliest use.** The Twitch catalogue (`data/EPISODES.tsv`)
 starts 2020-11-27, so it no longer predates the corpus.
@@ -94,7 +95,7 @@ starts 2020-11-27, so it no longer predates the corpus.
 
 **`narrative/TRAJECTORY.md` — active, draft 4.** Rewritten in the second 10-09 session as one
 linear chronology at his request (*"a more simpler linear narrative that deals with everything
-chronologically"*). Eleven episodes (0–10), Dec 2020 – Oct 2026: 0 Lens and Trickster ·
+chronologically"*). Eleven episodes (0–10), Aug 2020 – Oct 2026: 0 Lens and Trickster ·
 1 Owner's Mentions · 2 Hand on the Dial (2025) · 3 The Wall · 4 Three Traps · 5 Three Axioms
 (March 2026) · 6 Architecture (Apr) · 7 Assay and Witness (May) · 8 Ledger (Jun–Jul) · 9 A Rule
 That Served Power (Aug) · 10 Turn the Lens Around (Sep–Oct). Every event at its own date;
@@ -995,7 +996,7 @@ merged.)*
    listing (*"Created: Dec 7th 2020 / Actions: 76"*) action-for-action; the other
    two are `DItR6ies_euF` (20 actions, same morning, 10:04) and `3QjQFpGEP4jL`
    (*Copy of…*, 39 actions, 2020-12-11). **The archive starts 2020-12-07, from
-   primary evidence rather than a screenshot.** `README.md` and `CLAUDE.md` are
+   primary evidence rather than a screenshot.** *(Superseded 2026-10-09: a scan of all 888 puts it at 2020-08-11 — see the top of this file.)* `README.md` and `CLAUDE.md` are
    corrected. Also present: three forks of `my-time-with-thomas-pynchon`, i.e.
    the Pynchon thread predates NovelAI too — unread.
    **Left over:** `README.md`'s old "March 2023 to July 2026" was the range of
@@ -1053,7 +1054,7 @@ merged.)*
       That note previously rested on internal evidence only.
    4. **The pasted listing lists all three AI Dungeon copies**, matching the
       export to the minute (39 acts / Dec 11 8:58AM; 76 / Dec 7 5:15AM; 20 /
-      Dec 7 5:04AM — local is exactly UTC−5). 2020-12-07 is triple-confirmed.
+      Dec 7 5:04AM — local is exactly UTC−5). 2020-12-07 is triple-confirmed *as the date of Dr. Knubble* — not as the start of the archive, which is 2020-08-11 (2026-10-09 scan).
    5. **`coinage.py` on this file — and the sixth instance of the standing
       note.** First pass reported *"Endorphin out-coins the model 5.5×, echo 0.84
       below chance."* **That was wrong, and Endorphin's one-line correction broke
