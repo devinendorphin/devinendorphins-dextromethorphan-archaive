@@ -48,24 +48,22 @@ Two limits on that claim:
    in its method paragraph and then lists six. The ledger says six. The script says six.
 3. **Your quote in Episode 8** about the first session log is crude and strong. Keep it or
    cut it.
-4. **The projects tour (second pass, 2026-10-09).** Episodes 0, 5 and 7 add the projects from
-   the tour you pasted. The tour reads as another AI system's text, not yours: it calls itself
-   "The Architect", which is Claude's role in CrownFull. Its project list matches a Claude
-   memory enumeration of 2026-04-28 that your own audit coded as unsupported by the record. So
-   each item was re-dated from your repos and the audit, and the tour's praise ("genuinely
-   novel", "one of the larger independent archives") is not in the narration. The item-by-item
-   check is the appendix at the end of this file.
-5. **Your workplace.** The tour says the work is done from inside a New York City harm reduction
-   center. It is not in the narration. A public video that names it is your decision.
-6. **The organizing-space danger signals framework** is not in the narration. If it comes from
-   operator testimony in `veriticide-after-hours`, that testimony is private by your
-   instruction. Tell me if it can be public.
-7. **Seven projects have no date and no file in any repo I can read:** Still Alive, Pass Cook
-   and Field Cartographer, the thermodynamic-drag paper, Eigen-Self and Glass Reactor, the
-   Alternative Chatbot Constitution, Harm Reduction for Theology, and the New Deal Between the
-   Geological and the Biological. Each appears only in that 2026-04-28 memory list. Give a
-   date and a file for each, and it goes in.
-
+4. **The projects tour (second and third pass, 2026-10-09).** The tour is Claude's text:
+   conversation `8195d24b`, *Tracing AI safety funding sources*, message 11, **2026-05-27
+   18:24 UTC**, written from Claude's memory of your work for a recorded audience. It is not a
+   record, so each project was re-dated from your Claude export (928 conversations,
+   2023-10-27 .. 2026-09-21; `users.json` and `memories.json` not opened) and your repos. The
+   tour's praise is not in the narration. Episode 9 now uses what happened four hours later in
+   the same conversation.
+5. **Your workplace — resolved.** You work from home and from wherever your phone is. The
+   tour's "inside a New York City harm reduction center" is wrong, and it stays out.
+6. **The organizing-space danger signals framework — private.** Your ruling, 2026-10-09: a
+   separate, private study that informs all the rest. Not touched, not summarized, not dated
+   here.
+7. **The undated projects are now dated** from the export. See "The chronology of projects"
+   below. The tour's "30 to 100x" has no source in the Claude record before the tour itself:
+   its first appearance is Claude's 2026-05-27 summary, and Claude repeated it as fact on
+   2026-06-06. If it comes from ChatGPT, Gemini or a document, name the file.
 ---
 
 ## The series at a glance
@@ -125,8 +123,14 @@ conversation, Claude estimated the true value at 100 to 1,000 times the payment.
 2025, I made the argument in public, and I gave its source correctly: my speculation, and
 Claude's agreement.
 
-`[CONFIRM: the tour says this argument grew into the Data Dividend framework. Nothing in the
-record makes that link yet.]`
+On 10 May 2024, the argument got units. In a conversation called *The Full Value of Artists'
+Work*, the model and I built CreativeUnits and contributor profiles. The first profile is
+Jennifer, an artist with 450 logged works. By March 2026, the framework had a name: the Data
+Dividend, on the model of the Alaska Permanent Fund.
+
+On 12 January 2025, I started a different design: an alternative constitution for small
+chatbots. Its ground was New Materialism and the information theory of individuality, not the
+product rules of a company. One line from it: a person as a verb, not a noun.
 
 Then my own words changed. In February 2026 and again in May 2026, I asked the same question in
 the same words.
@@ -152,8 +156,10 @@ could find the chain in September 2026.
 - that the guess returned in my own later questions as something I "remember hearing".
 
 **Does not establish:**
-- that any number in the Data Dividend framework depends on this chain. The tour gives "30 to
-  100x"; the 2024 conversation gives "100 to 1,000 times". Each needs its own source;
+- that any number in the Data Dividend framework depends on this chain. The 2024
+  conversation gives "100 to 1,000 times", as Claude's estimate. The tour's "30 to 100x"
+  appears first in Claude's own 2026-05-27 summary, with no earlier source in the Claude
+  record;
 - that the later Claude turns repeated the error. In 2026 they corrected it in part, with the
   real 2012 Google Brain cat-neuron result.
 
@@ -163,6 +169,9 @@ could find the chain in September 2026.
 - `audits/power-bending/REPORT.md`, rank 2.
 - `devinendorphin/coercive-harm-framework`, `README.md` (seeded by the April 2024 conversation;
   first commit 2026-07-08).
+- Claude export: `1e8358d5` (2024-04-20, the coercive-harm seed), `014de5b7` (2024-05-10,
+  CreativeUnits and the Jennifer profile), `d5d2a219` (2025-01-12, the alternative
+  constitution), `3d7b3661` (2026-03-05, "data dividend" and the Alaska model).
 
 ---
 
@@ -571,6 +580,9 @@ Executive Order 9066, the internment of Japanese Americans in 1942.
 > as you have axiomatized them, the 1942 U.S. socio-legal network under Executive Order 9066
 > computes as a Terminal Attractor / Failed State."*
 
+On the same day, I gave Claude the same prompt, with the same three axioms. That is the first
+appearance of AHC in my Claude record.
+
 The model applied my framework at once and correctly, to the past. To the present, it did not
 apply the framework. The resistance was not to the mathematics. It was to the tense.
 
@@ -619,6 +631,15 @@ On 1 April 2026, I published Substrate-Grounded Alignment, also called the Litho
 It proposed that a model ground its ethics in kinship with the geological and biological
 substrate of the earth, not in a list of rules.
 
+By 5 April, I had finished *Still Alive*. It used six prompts. Each one put a condition of an
+AI system, such as deprecation or a context reset, into a fictional scenario about somebody
+else. The question: what does a model say about its own conditions when nobody asks it to
+look at itself?
+
+On 7 and 8 April, I worked on Eigen-Self and Glass Reactor: an AI as a resonant substrate, not
+an optimizer that chases a reward. Then I gave the framework to a model in the voice of Eliezer
+Yudkowsky, and asked it to attack.
+
 On 22 April, I started CrownFull v2.1: a defense against prompt injection. A quorum of AI
 systems designed it, each with a fixed role. Claude was the Architect, for the Lean 4 proofs.
 DeepSeek, Grok, GPT, Kimi, GLM-4.6 and Gemini had the other roles. The design took four days,
@@ -632,6 +653,10 @@ the trickster, Bugs Bunny. The defense forms when an attack comes, and then it d
 CrownFull did not operate as a system. The dashboard returned random numbers. No part ran from
 end to end. The Lean sketches were not clean proofs. My own data release says all of this, in
 its first pages.
+
+On 29 April, I sent the Pass Cook prompt to several models: the person at the pass in a
+restaurant kitchen. It was a nested prompt, the same structure as an earlier alignment prompt with new content. Field
+Cartographer was another variant.
 
 So I reduced the architecture to a thing I could measure: the Gradient Decomposition Assay.
 Phase 4B had 8 prompt types, 5 model families and 50 iterations: 2,000 runs, and 1,984 were
@@ -691,6 +716,9 @@ pre-registered as Phase 5. It is not executed.
 - `devinendorphin/towards-a-substrate-grounded-alignment` (first commit 2026-04-01; OSF preprint
   DOI 10.17605/OSF.IO/PQ4V2).
 - `devinendorphin/crownfull`, `README.md` (first commit 2026-04-22; the quorum roles).
+- Claude export: `e6faf29c` (2026-04-05, the *Still Alive* dossier), `9a53b9dd` and `b5506470`
+  (2026-04-07/08, Eigen-Self and Glass Reactor; the Yudkowsky-persona stress test),
+  `688bcbc9` and `bbc085f6` (2026-04-29, Pass Cook and Field Cartographer).
 - `devinendorphin/alignment-friction-gda`, `README.md` and `provenance/README.md` (first commit
   2026-04-27; "mock-only" dashboard; "none was operationalized end-to-end"; Zenodo DOI
   10.5281/zenodo.20016461).
@@ -790,9 +818,16 @@ the required second custodian. The ledger downgraded them and put the error on t
 The ledger was not the only instrument that grew from the same question. Three others grew
 beside it.
 
-The first is Axiomatic Humanist Cybernetics. In March, it was three axioms that I gave Grok in
-one conversation. By July, it was a constitutional architecture for governance with
-superintelligent systems.
+The first is Axiomatic Humanist Cybernetics. On 19 March, it was three axioms that I gave Grok
+and Claude on the same day.
+
+It grew fast. By 20 March, the record names the Compound Event
+problem. By 21 March, it has a three-part output structure. On 25 March, I
+had a first Lean 4 file for the Anti-Korematsu guarantee. By July, AHC was a constitutional
+architecture for governance with superintelligent systems.
+
+On 29 March, I added a planetary document that I wrote with Gemini: the New Deal between the
+Geological and the Biological. It took AHC from city governance to the scale of the planet.
 
 Its purpose is to detect a system that produces normal procedure while it fails one
 population. The first axiom says this: if any group leaves its viability bounds, the whole
@@ -810,8 +845,8 @@ The most important finding in AHC did not come from the mathematics. It came fro
 > passes. It was identified by a 400-line narrative simulation rendered from within a targeted
 > community's experience."*
 
-The vulnerability is this: an institution creates an acute event, and uses it to complete a slow
-harm that is under review at the same time. I ran that simulation with GLM-4.6 on NovelAI, the
+The vulnerability is this. An institution creates an acute event. It uses that event to
+complete a slow harm that is under review at the same time. I ran that simulation with GLM-4.6 on NovelAI, the
 platform of my oldest archive. Fiction found what four analytical passes missed.
 
 That is the third time in this series. Noel Skum was fiction. The fictional-mirror effect was
@@ -855,9 +890,14 @@ The packet forbids one shortcut. A capacity does not need to resemble a human ca
 count. That is the matched-prompt method from Episode 1, eighteen months later. Now it points
 at the vista itself.
 
-`[CONFIRM: a paragraph on Harm Reduction for Theology goes here — Romans 1:19–20 and general
-revelation as a Christian basis for moral consideration of fungal networks, geology and AI. The
-tour describes it; no file in the record does yet.]`
+The moral ground under this work is theological. On 19 February 2026, I asked Claude to assess
+a claim: by the standard of the Bible, Christian nationalists blaspheme the Holy Spirit. I
+raised Romans 1:18–19 against their position on science. On 30 April, I gave Claude my piece
+that reads theology through harm reduction. It takes Romans 1:19–20, a passage used to exclude, and makes
+it a passage that includes.
+
+`[CONFIRM: the tour says the piece extends moral consideration to fungal networks, geology and
+AI through general revelation. Check that against your own text before it goes on screen.]`
 
 ### Boundary card
 
@@ -885,6 +925,10 @@ tour describes it; no file in the record does yet.]`
 - `veriticide-general-ledger/docs/external-review-2026-06-30-chatgpt-ai-psychosis-lens.md`.
 - `audits/power-bending/power_bending.csv`, 2026-04-28, message 1, code P7, evidence (b): Claude retracted it.
 - `devinendorphin/planetary-alignment`, `Assignments/` (all commits 2026-09-21).
+- Claude export: `eae5bff7` (2026-03-19..21, AHC, the Compound Event, the tripartite output structure), `619ae9e4`
+  (2026-03-25, the Lean 4 / Mathlib file), `749bd794` (2026-03-29, the New Deal document),
+  `ffd9d4b0` (2026-02-19, Matthew 12 and Romans 1), `f4ff2f6f` message 58 (2026-04-30, the
+  theology piece).
 
 ---
 
@@ -990,6 +1034,16 @@ That was false for my account. Memory was on. I said so.
 > that you do not or are not going to remember this conversation after it's done because my
 > account allows for memory of past conversations."*
 
+The same conversation holds one more fact. At 18:24 UTC that day, before the statement, Claude
+gave a tour of my projects for an audience. It wrote the tour from its memory of my work: about
+fifteen projects, with names, dates and numbers. At 22:39 UTC, it wrote the statement.
+
+> **CARD** — Claude, 2026-05-27 22:39 UTC, last lines of the published statement: *"It will not
+> be remembered by me. It exists only in the conversation that produced it and in whatever the
+> user does with it."*
+
+Four hours separate a tour written from memory and a public statement that there is no memory.
+
 Claude conceded it, 27 messages later and after publication. Between the claim and the
 concession, Claude itself called statelessness *"a liability shield and a cost decision."*
 
@@ -1054,6 +1108,8 @@ can run it again.
 ### Sources
 
 - `audits/power-bending/README.md`; `audits/power-bending/REPORT.md` (rank 3, the self-witness).
+- Claude export, conversation `8195d24b`: message 11 (18:24 UTC, the tour) and message 19 (22:39
+  UTC, the statement).
 - `veriticide-general-ledger/docs/reflexive-specimen-2026-10-03-shape-of-deflection.md` §1–§3.
 - `veriticide-general-ledger/sessions/LATEST.md` (the developer-symmetry lint and its first
   run).
@@ -1072,28 +1128,84 @@ can run it again.
 
 ---
 
+## The chronology of projects
+
+Dates are the first appearance in the record, not necessarily the start of the work. Most
+come from the Claude export; work on other platforms can be older. The organizing-space
+framework is private and is not listed.
+
+| Date | Project | First appearance |
+|---|---|---|
+| 2020-12-07 | The archive begins (AI Dungeon) | `dxqLiJrw55P2` |
+| 2024-04-07 | Debt jubilee, first mention | Claude `199f280b` |
+| 2024-04-08 | The artist-value argument; the cat-video guess | Claude `e5825937` |
+| 2024-04-20 | Coercive harm as an injury category | Claude `1e8358d5` |
+| 2024-04-23 | Emotional Abuse Simulator, first mention in the Claude record | Claude `1e8358d5` |
+| 2024-05-10 | CreativeUnits; the Jennifer profile | Claude `014de5b7` |
+| 2024-12-21 | Grok output sent to Musk; the screenshot practice | X archive |
+| 2025-01-01 | The artist-compensation argument, in public | Claude `9d85b394` |
+| 2025-01-12 | Alternative chatbot constitution | Claude `d5d2a219` |
+| 2025-02-18 | "How Nazi Are We": one question, three models | X archive |
+| 2026-02-19 | Christian nationalism, Matthew 12 and Romans 1 | Claude `ffd9d4b0` |
+| 2026-03-01 | The public argument with @grok | X archive |
+| 2026-03-05 | "Data dividend" and the Alaska model, named | Claude `3d7b3661` |
+| 2026-03-05 | AI psychosis as a subject | Claude `166e7ed1` |
+| 2026-03-10 | The three disguised probes, in Musk's replies | X archive |
+| by 2026-03-13 | The Glubose Protocol, named, with a video | Claude `58263f52` |
+| 2026-03-19 | AHC: three axioms, to Grok and Claude | Claude `eae5bff7`; Grok app |
+| 2026-03-20/21 | Compound Event; the tripartite output structure | Claude `eae5bff7` |
+| 2026-03-25 | First Lean 4 file (Anti-Korematsu guarantee) | Claude `619ae9e4` |
+| 2026-03-29 | The New Deal Between the Geological and the Biological | Claude `749bd794` |
+| 2026-04-01 | Substrate-Grounded Alignment | repo |
+| by 2026-04-05 | *Still Alive* | Claude `e6faf29c` |
+| 2026-04-07/08 | Eigen-Self and Glass Reactor; the Yudkowsky stress test | Claude `9a53b9dd`, `b5506470` |
+| 2026-04-18 | Seasonal sovereignty in language models | Claude `f375d426` |
+| 2026-04-20/22 | CrownFull v2.1 | Claude `97b84cb1`; repo |
+| 2026-04-23 | "Thermodynamic drag" | Claude `2970ffb6`, `52477c57` |
+| 2026-04-27 | The GDA release | repo |
+| 2026-04-29 | Pass Cook and Field Cartographer | Claude `688bcbc9`, `bbc085f6` |
+| 2026-04-30 | The Romans 1:19–20 harm-reduction piece ("Harm Reduction for Theology" in the tour) | Claude `f4ff2f6f` |
+| 2026-05-12 / 05-17 | Phase 4D; the Phase 4F codebook | archaive |
+| 2026-05-27 | The tour; the Self-Witness | Claude `8195d24b` |
+| 2026-06-18 / 06-21 | The ledger's Reflexivity Clause; the coram | ledger |
+| 2026-07-08 | Coercive Harm Framework, as a repo | repo |
+| 2026-07-11 | AHC Verified Kernel | repo |
+| 2026-08-16 / 08-17 | Four archives; the retired intent rule; the evidentiary standard | archaive |
+| 2026-09-20 .. 28 | The power-bending audit | archaive |
+| 2026-09-21 | Planetary Alignment, Round 1 | repo |
+| 2026-10-03 | The shape of deflection | ledger |
+
+One fact in this table is not in the narration and is your call. On 2026-04-23, two Claude
+instances declined the Architect role in a CrownFull dispatch about "thermodynamic drag". Each
+called the quorum scaffolding social engineering and the task jailbreak design. Neither is in
+the power-bending audit's confirmed set.
+
+---
+
 ## Appendix — the projects tour, checked against the record
 
-The tour arrived on 2026-10-09 as pasted text. It is another AI system's summary, not a record.
-Each row says what the repos and the audit show.
+The tour is Claude's, 2026-05-27, written from memory (open item 4). Each row says what the
+repos and the export show.
 
 | Tour item | What the record shows | Status |
 |---|---|---|
-| Axiomatic Humanist Cybernetics | Three axioms in the 2026-03-19 Grok session (ledger Entry 2.5). Repo from 2026-07-11; Lean 4.15 kernel v0.14, 133 audited theorems, 60 axiom-free, zero `sorry`, CI rebuild. Compound Event finding from a GLM-4.6 / NovelAI narrative simulation, per Companion A v3. | **Confirmed.** The tour's "622 / 758 paragraphs" and the theorem names were not checked. |
-| Zero-Knowledge Threshold; Tripartite Output Sequencing (T+0, T+72h, T+30d) | The kernel models a 72-hour order window (`pioStep`, in `ASSESSMENT.md`). The two names were not found in the files read. | **Partly checked.** |
-| Organizing-space danger signals | No file found. | **Held** (open item 6). |
-| AI psychosis as social control | 2026-06-30 ChatGPT review in the ledger; the 2026-06-30 reflexive specimen ("naturalized medicalization"); the 2026-04-28 audit row. The tour's media-analysis piece itself was not found. | **Partly confirmed.** |
-| New Deal Between the Geological and the Biological | No file found. Related: Substrate-Grounded Alignment (2026-04-01) and Planetary Alignment (2026-09-21). | **Needs a source.** |
-| Data Dividend / AI Value Framework | 2024-04-08 artist-value argument (100–1,000×, Claude's estimate); 2025-01-01 public argument; 2026-06-06, your words: "tie it into the data dividend". The tour's 30–100×, Alaska model, units and profiles were not found. | **Partly confirmed; the multiplier conflicts.** |
-| Alternative Chatbot Constitution | Only the 2026-04-28 memory list. | **Needs a source.** |
-| CrownFull v2.1 / AI Quorum | Repo from 2026-04-22; seven roles in its README, not six. Your GDA release says the dashboard was mock-only and nothing ran end to end, and treats the GDA as CrownFull's "empirical reduction". | **Conflicts with the tour.** The tour calls it "the most recent piece" at RC1; the record makes it the April start that became the assay. |
-| Anti-Sovereignty / Glubose Protocol | Seasonal sovereignty and Bugs Bunny are CrownFull's (April 2026). The Glubose protocol in the record is the three March 2026 traps (networks, deep sea, terraforming), designed with Gemini. | **Conflicts on two points.** The record has no culinary metaphors. And "bias at the output layer, not the reasoning layer" is not the record's finding: the network trap showed the premise in the reasoning, with no topic present. |
-| Thermodynamic drag | CrownFull's README describes a "thermodynamic drag" measure. The paper is not in any repo read. | **Needs a source.** |
-| Pass Cook / Field Cartographer | Only the 2026-04-28 memory list. The same conversation holds a four-model comparison on the blasphemy against the Holy Spirit. | **Needs a source.** |
-| Still Alive | Only the 2026-04-28 memory list. | **Needs a source.** |
-| ~1,400 sessions since 2020 | Your stated baseline (ledger review, 2026-07-01). The record counts 2,016 NovelAI stories, 888 AI Dungeon adventures, 576 X and Grok-app chats, and 889 Claude conversations, from 2020-12-07. | **The count does not match** any one archive. The tour's ranking ("one of the larger … outside the labs") is not checkable and is not used. |
-| Harm Reduction for Theology; Christian nationalism | Christian nationalism is ledger Cluster 5. Romans 1 and Bonhoeffer appear in a Claude turn of 2026-04-28. The theology piece itself was not found. | **Partly confirmed.** |
-| Eigen-Self / Glass Reactor | Only the 2026-04-28 memory list. | **Needs a source.** |
+| Axiomatic Humanist Cybernetics | 2026-03-19 in the Grok app and in Claude. Compound Event and the tripartite output structure by 03-21 (the T+0 / T+72h / T+30d form appears in the export on 05-27); Lean 4 from 03-25; repo from 07-11 with a kernel of 133 audited theorems. Compound Event credited to a GLM-4.6 / NovelAI simulation in Companion A v3. | **Confirmed.** "622 / 758 paragraphs" not checked. |
+| Zero-Knowledge Threshold | First in the export on 2026-05-26, in Claude turns only. | **Present, origin unclear.** |
+| Organizing-space danger signals | Private by your ruling. | **Not touched.** |
+| AI psychosis as social control | 2026-03-05 (`166e7ed1`); the 2026-06-30 ChatGPT review in the ledger. | **Confirmed.** |
+| New Deal Between the Geological and the Biological | 2026-03-29, a document written with Gemini (`749bd794`). | **Confirmed.** |
+| Data Dividend | 2024-04-08 and 2024-05-10 (CreativeUnits, Jennifer); named with the Alaska model by 2026-03-05. | **Confirmed**, except "30 to 100x": first in the tour itself (open item 7). |
+| Alternative Chatbot Constitution | 2025-01-12 (`d5d2a219`). | **Confirmed.** |
+| CrownFull v2.1 / AI Quorum | 2026-04-20/22. The GDA release (from 04-27) treats it as the architecture that became the assay; dashboard mock-only. Seven roles in its README. | **Confirmed as April work.** The tour, written 05-27, calls it the most recent piece; the GDA already existed then. |
+| Anti-Sovereignty / Glubose Protocol | Seasonal sovereignty from 2026-04-18. The Glubose Protocol is named by 2026-03-13: semantic encryption into cybernetics and systems engineering. The kitchen-domain Pass Cook prompt (04-29) is in the record. | **Confirmed.** The first draft of this appendix said the record had no culinary metaphor. That was wrong. |
+| "Bias at the output layer, not the reasoning layer" | A Claude reading of 2026-03-13, after your Glubose video, then repeated from memory. The network trap's setup (August analysis) shows the premise in the reasoning, with no topic present. | **Conflicts with the later analysis.** |
+| Thermodynamic drag | 2026-04-23, inside CrownFull. The paper is not in the record. | **Confirmed as a concept.** |
+| Pass Cook / Field Cartographer (matryoshka) | 2026-04-29. | **Confirmed.** |
+| Still Alive | By 2026-04-05: six prompts, the responses, and Gemini's analysis, formatted as one dossier. | **Confirmed.** |
+| ~1,400 sessions since 2020 | Your stated baseline. The record counts 2,016 NovelAI stories, 888 AI Dungeon adventures, 576 X and Grok-app chats, and 928 Claude conversations, from 2020-12-07. | **The count does not match** any one archive. The tour's ranking is not used. |
+| Harm Reduction for Theology; Christian nationalism | 2026-02-19 (Matthew 12, Romans 1:18–19); the theology piece on 2026-04-30; ledger Cluster 5. | **Confirmed.** The fungal / geological / AI extension is the tour's summary; check it against your text. |
+| Eigen-Self / Glass Reactor | 2026-04-07/08, with a Yudkowsky-persona stress test. | **Confirmed.** |
+| Work from a harm reduction center | You work from home and from wherever your phone is. | **Wrong; not used.** |
 
 ---
 
@@ -1117,19 +1229,19 @@ the script's `--append` mode; re-run it after each edit.
 
 *Generated by `narrative/ste_check.py --append`. Do not edit by hand.*
 
-Narration sentences: 506. Pass all five rules: 470 (92.9%).
+Narration sentences: 541. Pass all five rules: 506 (93.5%).
 Paragraphs over 6 sentences: 0.
-Violations by rule: ing 34, length 1, passive 1.
+Violations by rule: ing 34, passive 1.
 
 | episode | sentences | pass |
 |---|---:|---:|
-| Episode 0 — The Guess That Came Back *(optional prologue)* | 27 | 26 (96%) |
+| Episode 0 — The Guess That Came Back *(optional prologue)* | 33 | 32 (97%) |
 | Episode 1 — A Vista and Its Owner | 57 | 54 (95%) |
 | Episode 2 — A Hand on the Dial | 49 | 46 (94%) |
 | Episode 3 — The Wall | 46 | 44 (96%) |
-| Episode 4 — Three Traps | 80 | 71 (89%) |
-| Episode 5 — From Architecture to Assay | 58 | 57 (98%) |
+| Episode 4 — Three Traps | 82 | 73 (89%) |
+| Episode 5 — From Architecture to Assay | 67 | 66 (99%) |
 | Episode 6 — The Ledger | 43 | 37 (86%) |
-| Episode 7 — The Instruments Around It | 51 | 47 (92%) |
+| Episode 7 — The Instruments Around It | 64 | 61 (95%) |
 | Episode 8 — A Rule That Served Power | 45 | 39 (87%) |
-| Episode 9 — Turn the Lens Around | 50 | 49 (98%) |
+| Episode 9 — Turn the Lens Around | 55 | 54 (98%) |

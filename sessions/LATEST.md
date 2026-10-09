@@ -93,6 +93,18 @@ source; every episode ends on a boundary card.
   `narrative/TRAJECTORY.md` checks the tour item by item: **CrownFull and the Glubose definition
   conflict with the record; seven projects have no file anywhere**; the workplace line and the
   organizing-space framework are held for his privacy call.
+- **Third pass, same day: the Claude export.** Endorphin pointed at his full Anthropic export
+  (Drive folder `1QN6uEMAsO8UKLr84tjHLV-YU5kUNeq5W`: `conversations.json` 862 conversations to
+  2026-07-27, plus `conversations-000.zip` 69 to 2026-09-21; 928 unique). `users.json` and
+  `memories.json` were not opened. Findings:
+  - **The tour is Claude's**: `8195d24b` message 11, 2026-05-27 18:24 UTC, written from memory.
+    The Self-Witness ("It will not be remembered by me") is message 19 of the same conversation,
+    22:39 UTC. Now in Episode 9.
+  - **Every project is now dated** (table "The chronology of projects" in `narrative/TRAJECTORY.md`).
+  - **"30 to 100x" first appears in that Claude tour** and was repeated by Claude on 2026-06-06;
+    no earlier source in the Claude record.
+  - Rulings: he works from home and from wherever his phone is (the tour's workplace line is
+    wrong); the organizing-space framework is **private, separate, and not to be touched**.
 
 ## What the 2026-09-20 .. 09-28 session did — the power-bending audit
 
