@@ -209,6 +209,19 @@ def build(a):
 
 # ---------------------------------------------------------------- picture
 
+class Blend:
+    """Pillow blends alpha for shapes but not for text: pre-mix text colours against the ground."""
+    def __init__(self, d):
+        self.d = d
+    def __getattr__(self, k):
+        return getattr(self.d, k)
+    def text(self, xy, txt, fill=None, **kw):
+        if fill is not None and len(fill) == 4:
+            a = fill[3] / 255
+            fill = tuple(int(c * a + g * (1 - a)) for c, g in zip(fill[:3], GROUND))
+        return self.d.text(xy, txt, fill=fill, **kw)
+
+
 class Pic:
     def __init__(self, events, turns, F):
         self.ev, self.turns, self.F = events, turns, F
@@ -255,7 +268,7 @@ class Pic:
 
     def render(self, t):
         e = self.at(t)
-        img = Image.new("RGBA", (W, H), (*GROUND, 255)); d = ImageDraw.Draw(img, "RGBA")
+        img = Image.new("RGB", (W, H), GROUND); d = Blend(ImageDraw.Draw(img, "RGBA"))
         getattr(self, "r_" + e["kind"])(d, t, e)
         reg_marks(d)
         return img.convert("RGB")
