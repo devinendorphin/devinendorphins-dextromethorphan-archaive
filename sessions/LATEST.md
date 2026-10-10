@@ -79,7 +79,7 @@ narration (3:43 screen recording, 2026-10-09 23:58 UTC) at **1.3×**, long pause
 five cards voiced by **Kokoro**, one voice per speaker (`am_michael` his words, `af_heart`
 Claude, `bm_george` the record and the boundary card). His on-the-fly changes are kept as
 spoken, in `narration.txt`. The picture is type, `data/` and drawing; no generated imagery.
-Media is not committed. **Then the origin.** Endorphin judged Episode 0 *"a good attempt but it gets in the way of itself"*
+Media is not committed. **Then the origin.** Endorphin judged Episode 0 *"a good attempt but it gets in the way of itself"* — *"we are too wide-lens at the moment"* —
 and pointed to conversation `8195d24b` (*Tracing AI safety funding sources*, 2026-05-27..06-04,
 public share link) as **the origin of the veriticide stack**. Read whole and in order:
 `narrative/ORIGIN_8195d24b.md`. The word "veriticide" is not in it; the mechanism is,

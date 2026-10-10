@@ -150,8 +150,8 @@ coherent output, and a human turn that does or does not check it.
 
 ## For the episode
 
-You said Episode 0 *"gets in the way of itself"* and that [?virtue wide lands about it→the
-veriticide stack lands abruptly] at the moment. Read whole, this conversation is a better origin
+You said Episode 0 *"gets in the way of itself"*, and then, correcting the dictation: *"we are
+too wide-lens at the moment."* Read whole, this conversation is a better origin
 than any narration about it, because its form is the claim: 29 short human turns steering 29
 long machine turns, over five days, with the corrections dated. Ways to use that, unbuilt:
 - **Your turns as the spine.** Your own words, verbatim, typos and dictation intact, set as
