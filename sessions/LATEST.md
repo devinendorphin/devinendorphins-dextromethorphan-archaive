@@ -89,6 +89,16 @@ direction; eight are corrections or challenges. Four honesty items for any origi
 200M–1B and ~70,000 figures are Claude's estimates; the "I do remember" correction (msg 45) was
 itself unverified, and the only memory search (msg 49) returned nothing; the no-to-yes flip on
 the second Self-Witness; unsourced assertions such as the lab-leak line.
+**Then ORIGIN, built: `narrative/origin/`.** His direction: summarize the whole conversation, keep the
+spirit of *both* sides (cutting Claude to a stub *"is human exceptionalism, and a tendency to not show
+yourself doing things you do on the regular. That is the very reason why the stack exists"*), all TTS
+(*"my voice is already in the words"*). `script.txt` has every one of the 58 messages: his words
+lightly repaired, Claude's condensed in its own voice, signature lines verbatim (70 of 293 longer
+Claude sentences are word for word). 6,166 words, **40:23** read by Kokoro (`am_michael` him,
+`af_heart` Claude, `bm_george` title and boundary card). On screen: each message in its speaker's
+typeface, lit sentence by sentence, beside a ladder of all 58 messages at original length. Media not
+committed. **Episode 0 carries a rendering bug that ORIGIN fixed:** Pillow does not blend text alpha,
+so Ep 0's dimmed text (sources, registration marks) rendered at full brightness.
 **Five open items in `narrative/ep0/README.md`**, the sharpest:
 - the recording is missing "I started to write", worked around with a typed prompt line;
 - "Claude said that [?I→it] had no paper";
