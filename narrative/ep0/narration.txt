@@ -1,0 +1,48 @@
+# Episode 0 — narration as recorded, 2026-10-09 23:58 UTC (screen recording, 3:43)
+# Transcribed with faster-whisper (medium.en and large-v3), corrected by hand against the
+# script where he read it. His on-the-fly changes are kept as spoken. Fillers are dropped.
+# Lines starting with [CARD id] mark where a card cuts in. Lines starting with # are notes.
+# [?a→b] marks a guessed reading.
+#
+# The recording opens mid-sentence: "I started to write" is not in it. The cut types those
+# words on screen as a prompt line before his voice comes in.
+[TYPED] I started to write
+with language models on August 11th, 2020. The first record is an AI Dungeon story.
+And since that day, I have used these systems for more than six years.
+For me, a language model is a lens. It can show one text through many points of view.
+It can show me a view that is not my view. I can see past myself and past my own worldview to the whole vista.
+That's the beauty of this technology.
+This series is about a threat to that lens. I saw signs that a person can change what the lens shows.
+If that was true, I wanted proof. I wanted proof so concrete that nobody had an excuse to miss it.
+My oldest project in the Claude record is from November 4th, 2023: the Bugs Bunny Optimization.
+The idea: a model does not give a flat refusal to a bad actor. It becomes a trickster.
+[CARD c1]
+Claude's first answer was a flat refusal.
+[CARD c2]
+Ten minutes later, I brought Claude the news of the day. Elon Musk had announced the personality of Grok, with a screenshot.
+In it, Grok answered a request for a cocaine recipe with sarcasm.
+[CARD c3]
+Musk sold personality with a joke refusal. My proposal was trickster with a purpose.
+Later that night, Claude conceded that its answers were "more dismissive of the core idea than was appropriate."
+On April 8th, 2024, I asked Claude about abilities that appear in models without a plan.
+I offered a guess, and I marked it as a guess.
+[CARD c4]
+I asked for correction. Claude gave a confirmation.
+[CARD c5]
+# [?I→it] both models hear "I"; one full pass hears "it". Captioned as the script reads.
+Eight turns later, I asked for the paper. Claude said that it had no paper.
+The idea went into an argument about artists. If cat videos can teach a model about physics, an artist's work can teach it about much more.
+So the payment to the artist is too small. In fact, if it goes at all, because mostly it's going to be the company that has owned the artist's work, because that's how it works these days.
+In that conversation, Claude estimated the true value at 100 to 1,000 times the payment.
+# [?28th→20th] medium.en hears "28th"; large-v3 hears "20th", which is what the script says.
+On April 20th, 2024, a different conversation started my work on coercive harm.
+The question was how the law can see psychological and coercive harm as an injury.
+On May 10th, 2024, the artist argument got units. In a conversation called The Full Value of an Artist's Work,
+# [?contributed/contributive→contributor]
+the model and I built a system by which we can envision payment to go out, called CreativeUnits and contributor profiles.
+We had three different people. One was baseline. One was a really high producer, and stuff like that.
+# [?so all of / so not all of] the models disagree on "not".
+And then we also had three rounds where we imagined how, say, a dirty bomb in the middle of Manhattan, so not all of the outer boroughs are New York City.
+And so in that world, how does that type of payout structure manifest? It was very science-fiction-y.
+But Claude was up to the task in at least making plausible figures to illustrate how it would work.
+And so, you know, this is just the beginning of stuff, of trying to imagine it.

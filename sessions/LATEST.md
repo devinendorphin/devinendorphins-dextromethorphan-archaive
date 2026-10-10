@@ -1,6 +1,7 @@
 # LATEST — devinendorphins-dextromethorphan-archaive
 
-Last session: **2026-10-09 (third)**, `sessions/2026-10-09-the-look-and-the-left-edge.md`
+Last session: **2026-10-10**, Episode 0 first cut — `narrative/ep0/README.md` (no session log yet)
+Before that: **2026-10-09 (third)**, `sessions/2026-10-09-the-look-and-the-left-edge.md`
 Prior: `sessions/2026-10-09-the-linear-draft.md`,
 `sessions/2026-10-09-the-trajectory-script.md`,
 `sessions/2026-09-28-the-power-bending-audit.md`,
@@ -70,6 +71,20 @@ the pasted-text screen, and §VIII; and finally the commit of `corpus/cited/`
 and the deposit decision; and finally Endorphin answering all seven open
 disagreements, the Finnegans Wake exercise, and `coinage.py`. The full export
 stays gitignored — `corpus/*` with `!corpus/cited/`. The mirror died with the container; refetch ids are below.
+
+## What the 2026-10-10 session did — Episode 0, first cut
+
+**`narrative/ep0/` — Episode 0 produced as a first cut** (about 5:07), from Endorphin's recorded
+narration (3:43 screen recording, 2026-10-09 23:58 UTC) at **1.3×**, long pauses cut, with the
+five cards voiced by **Kokoro**, one voice per speaker (`am_michael` his words, `af_heart`
+Claude, `bm_george` the record and the boundary card). His on-the-fly changes are kept as
+spoken, in `narration.txt`. The picture is type, `data/` and drawing; no generated imagery.
+Media is not committed. **Five open items in `narrative/ep0/README.md`**, the sharpest:
+- the recording is missing "I started to write", worked around with a typed prompt line;
+- "Claude said that [?I→it] had no paper";
+- the ad-lib replacing the Jennifer line is unchecked against `014de5b7`;
+- that ad-lib praises "plausible figures" in a conversation whose turn 15 the audit records as
+  inventing PwC/McKinsey ranges.
 
 ## What the third 2026-10-09 session did — the look
 
