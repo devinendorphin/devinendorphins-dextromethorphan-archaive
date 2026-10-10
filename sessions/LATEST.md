@@ -79,7 +79,17 @@ narration (3:43 screen recording, 2026-10-09 23:58 UTC) at **1.3×**, long pause
 five cards voiced by **Kokoro**, one voice per speaker (`am_michael` his words, `af_heart`
 Claude, `bm_george` the record and the boundary card). His on-the-fly changes are kept as
 spoken, in `narration.txt`. The picture is type, `data/` and drawing; no generated imagery.
-Media is not committed. **Five open items in `narrative/ep0/README.md`**, the sharpest:
+Media is not committed. **Then the origin.** Endorphin judged Episode 0 *"a good attempt but it gets in the way of itself"*
+and pointed to conversation `8195d24b` (*Tracing AI safety funding sources*, 2026-05-27..06-04,
+public share link) as **the origin of the veriticide stack**. Read whole and in order:
+`narrative/ORIGIN_8195d24b.md`. The word "veriticide" is not in it; the mechanism is,
+assembled over five days, with the care/protection laundering move arriving last (30 May, out
+of Facebook flagging his veracity video). His 29 turns are 1/14 of the text and set its
+direction; eight are corrections or challenges. Four honesty items for any origin episode: the
+200M–1B and ~70,000 figures are Claude's estimates; the "I do remember" correction (msg 45) was
+itself unverified, and the only memory search (msg 49) returned nothing; the no-to-yes flip on
+the second Self-Witness; unsourced assertions such as the lab-leak line.
+**Five open items in `narrative/ep0/README.md`**, the sharpest:
 - the recording is missing "I started to write", worked around with a typed prompt line;
 - "Claude said that [?I→it] had no paper";
 - the ad-lib replacing the Jennifer line is unchecked against `014de5b7`;
