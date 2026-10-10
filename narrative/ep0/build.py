@@ -31,6 +31,7 @@ W, H, FPS = 1920, 1080, 24
 COL_W = round(H * 9 / 16)            # the centred 9:16 column (ART_DIRECTION 4.7)
 COL_X = (W - COL_W) // 2
 PAD = 26
+STRIKE, PULSE = 2.0, 1.2   # the Body forms, then one pulse out and back, inside the opening
 
 GROUND, INK = (11, 15, 12), (207, 233, 214)
 PHOS, AMBER = (111, 227, 154), (255, 179, 71)
@@ -574,10 +575,10 @@ class Renderer:
         # the first full drawing of the Body, on the first keystroke; slow, once, no caption
         k = sc["strike"]
         if t >= k:
-            prog = min(1, (t - k) / 3.2)
+            prog = min(1, (t - k) / STRIKE)
             pulse = None
             if prog >= 1:
-                p = (t - k - 3.2) / 2.6
+                p = (t - k - STRIKE) / PULSE
                 pulse = p if 0 <= p <= 2 else None
             draw_body(img, prog, pulse, alpha=0.55, data=self.body)
             d = ImageDraw.Draw(img, "RGBA")
@@ -847,7 +848,7 @@ def plan_scenes(edit):
     edit["scenes"] = S
     edit["amber_at"] = t_bbo
     o = S[0]
-    edit["cracks"] = [o["strike"] + 3.2 + 2.6, o["strike"] + 3.2 + 5.2]   # pulse out, pulse back
+    edit["cracks"] = [o["strike"] + STRIKE + PULSE, o["strike"] + STRIKE + 2 * PULSE]   # pulse out, back
 
 
 # ---------------------------------------------------------------- main
