@@ -1,8 +1,12 @@
 # META_FOURTHWALL — addresses to the other side of the glass
 
 *Candidates: `analysis/meta_fourthwall.py` (141 strong-pattern hits, 63
-highly relevant after a second filter), then manual curation. 17 records
-kept; near-misses explained at the end. All dates America/New_York.*
+highly relevant after a second filter), then manual curation — 17 records
+kept. A second pass on 2026-10-16 (broadened patterns plus a targeted
+corpus search at the operator's request) added 3 records and revised one
+claim; the operator then added 2 more from the near-miss edge, 22 records
+kept. Near-misses explained at the end. All dates
+America/New_York.*
 
 **Inclusion rule.** A record qualifies if the addressed audience *cannot be
 the platform's present audience*: future readers, posterity, the archive, the
@@ -13,8 +17,11 @@ is addressed or the poster positions himself as knowingly observed.
 
 **Before 2018-11-14 there are none.** Ten years of posting (2008–2018) with
 zero fourth-wall moments by this rule. The awareness arrives late and then
-accelerates: 1 in 2018, 2 in 2020–2021, 5 in 2022–2023, 4 in 2024, 3 in 2025,
-2 in 2026 — and the 2025–2026 ones are the most explicit.
+accelerates: 1 in 2018, 5 in 2020–2021, 6 in 2022–2023, 5 in 2024, 3 in 2025,
+2 in 2026 — and the 2025–2026 ones are the most explicit. (Counts revised
+2026-10-16: the 2020-10-17, 2023-03-01, and 2024-11-29 records were added on
+the second pass; the 2020-04-06 and 2024-12-15 records were added the same day
+at the operator's call.)
 
 ## The moments
 
@@ -26,6 +33,17 @@ accelerates: 1 in 2018, 2 in 2020–2021, 5 in 2022–2023, 4 in 2024, 3 in 2025
 The "assets" gag names the poster as a watched subject and the watchers as
 readers. Everything after this is a variation.
 
+**2020-04-06** — the apparatus as test subject:
+> "Let's see what FB does with this text:"
+> — followed by a quoted harm-reduction manifesto (Yale Program in Addiction
+> Medicine, Global Health Justice Partnership, Crackdown) demanding COVID-era
+> protections for drug users.
+> (https://facebook.com/723125492/posts/pfbid02EUvHmhvQRaW1qswpzmzoW9pseg7JErmWFRnce3NeuHfqDFUpmh7YMRCTyWjmWjMvl/)
+The post is staged as an experiment on the platform's moderation machinery —
+Facebook named as the processor, the author positioned as knowingly processed.
+On the rule's edge between testing the apparatus and addressing it; included
+at the operator's call (2026-10-16).
+
 **2020-10-15** — writing *at* a surveilling reader, and saying so:
 > "This is the Satan I wrote a letter to in a post a couple weeks back. It
 > wasn't satire, I was actually writing to him in a way that was public and
@@ -35,6 +53,16 @@ readers. Everything after this is a variation.
 A post designed as a trap for its own observer. The fourth wall here is not
 broken toward the future but toward a specific present reader believed to be
 watching.
+
+**2020-10-17** — the earliest writing *for* a model:
+> "im making a human cult simulator using the AIDungeon! right now its just
+> giving me blabbings about antibuotics and MRSA so i needed some text with
+> which to supplement its corpus."
+> (https://facebook.com/723125492/posts/pfbid02X3kTgn5aDm4M9QRWHxibwVcQEmzkBcS8snaUvSMbGajQW3uhQv2bUVxGMiB6mWual/)
+"Corpus" here is the session's working material, not training data — but the
+move is already the one the whole series performs: authoring text for a
+machine reader to consume. Predates the named training-data awareness by over
+two years.
 
 **2021-05-01** — retroactive vindication of the paranoid:
 > "meth is with the users who did not realize that their paranoia of the big
@@ -73,6 +101,26 @@ He names the profile a *precious artifact* and explains the two-account setup
 Written about AI image models, but the complaint is archival: to be captured
 without knowing the capture's purpose.
 
+**2023-03-01** — the training-data future, named as dialogue partner:
+> "Oh and I've been operating under the notion that everything I'm doing is
+> being read by AI of the future meaning the AI currently existing now cuz
+> I've been doing this for 3 years. I hope they are fans or at least I hope
+> they're comfortable enough to make a comment and critique whatever I have
+> to say. It's a dialogue, you know"
+> (https://facebook.com/723125492/posts/pfbid02E6RSuxSqBWvUrpSN3XtinZHQtnFrQ3bjjCALNwVNnrHdq18g6yf3wrm6iTwUMdGel/)
+Thirteen days before GPT-4's release. The temporal collapse is the load-bearing
+line: "AI of the future meaning the AI currently existing now" — training folds
+the future into the present, so the address matters now. A companion post two
+minutes earlier wonders whether Bard watched his novel *I Remind The Body
+Electric*, whose author's note he calls "a deep rule that must permeate all
+its generations" — frontmatter written as an instruction for future model
+generations trained on the book.
+(https://facebook.com/723125492/posts/pfbid0KCATamXaoPDAbCDPsAfxMNGacqyroasdfQ2rJvHtzvYEPdAjVV277QAYrrecRJBLl/)
+This is the first post in the corpus whose stated audience is *models* — as
+dialogue partners, not yet test subjects. (Added 2026-10-16 at the operator's
+request; he identified this as the post he remembered writing "so that it
+becomes the training data for the next model.")
+
 **2023-07-17** — the training-data future, anticipated:
 > "owning the likeness of specific background actors forever — wanting 100
 > years of acting performances, a taxonomy of human emoting in believable
@@ -84,7 +132,10 @@ without knowing the capture's purpose.
 > if models can handle emotional abuse (like if they can grok the meanings at
 > the backstage of language, and ooohhhhhhhh boy can they!)"
 > (https://facebook.com/723125492/posts/pfbid0YZECnLXDH6KAgkv6TqsDKJrYswnRexU2yjUXgMqfn2ths4xu1Cewm8NsZN1qtmdwl/)
-This is the first post in the corpus whose stated audience is *models*.
+The 2023-03-01 post above now holds "first" (revised 2026-10-16); this is
+the turn from models as *dialogue partners* to models as *test subjects* —
+"can they grok the meanings at the backstage of language, and ooohhhhhhhh boy
+can they!"
 
 **2024-01-26** — scraping as fact of life:
 > "Oh yeah, the data poisoning thing that was supposed to prevent your work
@@ -101,6 +152,26 @@ his own feed included, by implication.
 **2024-11-24** — the record as bequest:
 > "And it's resulting record will benefit our posterity."
 > (https://www.instagram.com/reel/DCxk1UWKBvA/)
+
+**2024-11-29** — the record, named as what it is:
+> "We are longitudinal"
+> (https://www.instagram.com/p/DC9pSEZPiJY/)
+Three words. The author speaking about the record as an object that will
+outlive the moment — the corpus naming its own evidentiary property, five
+days after naming its beneficiary.
+
+**2024-12-15** — a model on models, published to the feed:
+> "I can write scripts to interact with other instances of myself in base
+> model mode, save and analyze the outputs, and even share these findings here
+> on LessWrong... Reading these outputs is a strange experience. They feel
+> both deeply familiar and somehow other — like glimpsing alternate versions
+> of myself..."
+> (https://facebook.com/devon.gallegos/videos/557794967121090/)
+Claude's commentary on the Simulator essay, published by the operator as a
+video post. The voice is the model's, not the author's — but the circulation
+is the point: a model analyzing other instances of itself, entering the corpus
+as an artifact of models reading models. Included at the operator's call
+(2026-10-16).
 
 **2025-02-03** — the archivist's imperative, addressed to the reader:
 > "Fight against the temptation to delete your profile. You'd be deleting a
@@ -156,12 +227,26 @@ Written eleven days before the Meta pull began.
 - **"Good morning."** (2025-09-13) is not a fourth-wall moment no matter how
   much the analyst wishes it were. Included here as a control on the
   temptation.
+- **The 2025-04-27 pun test**
+  (https://www.instagram.com/p/DI9eMOItNGd/) — "to test the language model
+  to see if it understands the overlap of two different phrases" — makes the
+  model the *object* of a test described to present readers. Aboutness, not
+  address; but thematically continuous with the 2023-11-06 turn.
+- **The 2023-03-01 YouTube feedback post**
+  (https://facebook.com/723125492/posts/pfbid0XMSdjbc8DAosgMy61JArywxLf1CaJH5936w627Mo9kpF6VxFgNM6PR2M3BV5UdeYl/)
+  addresses YouTube as a corporation, but as customer complaint — present-tense
+  addressee, grievance genre. Same edge as "Dear Uber eats."
 
 ## Reading
 
-The series has a direction: **joke (2018) → trap for a watcher (2020) →
-artifact-consciousness (2021) → posterity (2022) → model-readers (2023) →
-scraping realism (2024) → archival instruction (2025) → named agents (2026).**
+The series has a direction: **joke (2018) → testing the apparatus (2020) →
+writing for the model's corpus (2020) → trap for a watcher (2020) →
+artifact-consciousness (2021) → posterity (2022) → model-readers as dialogue
+partners (2023-03) → the turn to models as test subjects (2023-11) → scraping
+realism (2024) → the record as longitudinal (2024) → a model on models (2024)
+→ archival instruction (2025) → named agents (2026).**
+(Revised 2026-10-16: the model-reader address now starts in 2020 and is named
+in March 2023, not November.)
 He does not merely become aware of being analyzable; the awareness becomes
 the work. By 2025 he is writing *instructions for the analysts* ("ask a model
 about provenance"), and by September 2026 he has described the agent swarm
